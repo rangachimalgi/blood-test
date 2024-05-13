@@ -1,7 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 import { Col, Container, Row } from "react-bootstrap";
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa"; // Importing social media icons
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa"; // Importing social media icons
 
 const Footer = () => {
   return (
@@ -25,7 +31,22 @@ const Footer = () => {
               {/* <li>Careers</li>
               <li>Our Centres</li>
               <li>Our Cares</li> */}
-              <li>Terms & Conditions</li>
+              <li>
+                <Link
+                  to="/terms-and-conditions"
+                  style={{ color: "inherit", textDecoration: "none" }}
+                >
+                  Terms & Conditions
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/refund-policy"
+                  style={{ color: "inherit", textDecoration: "none" }}
+                >
+                  Refund Policy
+                </Link>
+              </li>
               <li>Privacy Policy</li>
             </ul>
           </Col>
@@ -48,7 +69,6 @@ const Footer = () => {
             </ul>
           </Col>
           <Col md={3} sm={5} className="box">
-            
             {/* Social Media Links */}
             <div className="social-links">
               <a href="https://facebook.com" target="_blank" rel="noreferrer">

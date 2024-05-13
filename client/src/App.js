@@ -20,6 +20,8 @@ const HealthList = lazy(() => import("./pages/HealthPackageList"));
 
 const Cart = lazy(() => import("./pages/Cart"));
 const ProductDetails = lazy(() => import("./pages/ProductDetails"));
+const TermsAndConditions = lazy(() => import("./pages/TermsAndConditions"));
+const RefundPolicy = lazy(() => import("./pages/RefundPolicy"))
 export const DataContainer = createContext();
 function App() {
   const [CartItem, setCartItem] = useState([]);
@@ -107,6 +109,8 @@ function App() {
             <Route path="/admin/view-users" element={<ViewUsers />} />
             <Route path="/admin/total-revenue" element={<TotalRevenue />} />
             <Route path="/user-dashboard" element={<UserDashboard />} />
+            <Route path="/terms-and-conditions" element={<TermsAndConditions />} /> {/* New Route for Terms and Conditions */}
+            <Route path="/refund-policy" element={<RefundPolicy />} />
           </Routes>
           <Footer />
         </Router>

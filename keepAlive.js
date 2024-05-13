@@ -12,5 +12,3 @@ function pingServer() {
 
 // Set an interval to run the pingServer function every 15 minutes
 setInterval(pingServer, 900000);
-
-// Since you're not exporting anything, there's no need to export

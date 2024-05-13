@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_ecommerce=self.webpackChunkreact_ecommerce||[]).push([[144],{144:function(e,s,t){t.r(s);t(2791),t(2258);var r=t(184);s.default=function(){return(0,r.jsxs)("div",{className:"terms-container",children:[(0,r.jsx)("h1",{className:"terms-title",children:"Terms and Conditions"}),(0,r.jsx)("p",{className:"terms-text",children:"This website is operated by Fortune Home Health Care LLP."})]})}},2258:function(){}}]);
+//# sourceMappingURL=144.be910540.chunk.js.map

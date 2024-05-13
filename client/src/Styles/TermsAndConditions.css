@@ -1,0 +1,55 @@
+.terms-container {
+    padding: 20px;
+    margin: auto;
+    max-width: 800px; /* Limits the width and centers the text for better readability */
+    font-family: 'Arial', sans-serif; /* Uses a simple and clean font */
+    color: #333; /* Dark gray color for better readability */
+    margin-bottom: 230px;
+}
+
+.terms-title {
+    color: #0a0a0a; /* Dark color for the title */
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.terms-text {
+    font-size: 30px; /* Sets an appropriate font size */
+    line-height: 1.6; /* Improves readability by increasing line height */
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify; /* Justifies the text for a clean look */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .terms-container {
+        padding: 15px; /* Slightly less padding for tablets */
+        margin-bottom: 100px;
+    }
+
+    .terms-title {
+        font-size: 32px; /* Smaller font size for the title on tablets */
+    }
+
+    .terms-text {
+        font-size: 18px; /* Smaller text size for better readability on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .terms-container {
+        padding: 10px; /* Reduced padding for mobile devices */
+        margin-bottom: 50px;
+    }
+
+    .terms-title {
+        font-size: 28px; /* Even smaller font size for the title on mobile */
+    }
+
+    .terms-text {
+        font-size: 16px; /* Adjusted text size for mobile readability */
+    }
+}
