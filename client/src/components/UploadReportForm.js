@@ -31,10 +31,11 @@ const UploadReportForm = ({ orderId }) => {
 
   const handleGenerateInvoice = async () => {
     try {
+      const apiUrl = `${process.env.REACT_APP_API_URL}/api/orders/${orderId}`;
+      console.log('API URL:', apiUrl); // Log the API URL for debugging
+  
       // Fetch the order details and generate the invoice
-      const response = await axios.get(
-        `http://localhost:8080/api/orders/${orderId}`
-      );
+      const response = await axios.get(apiUrl);
       console.log("API Response:", response); // Log the response for debugging
       const order = response.data;
       console.log("Fetched order:", order);
