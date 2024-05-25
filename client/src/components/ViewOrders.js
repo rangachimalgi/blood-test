@@ -5,9 +5,6 @@ import "font-awesome/css/font-awesome.min.css";
 import "../Styles/ViewOrders.css";
 
 function ViewOrders() {
-  console.log("reached the view orders");
-  console.log('All Env:', process.env);
-  console.log("API URL:", process.env.REACT_APP_API_URL);
   const [orders, setOrders] = useState([]);
   const [hiddenReports, setHiddenReports] = useState([]);
 
@@ -15,13 +12,13 @@ function ViewOrders() {
     setHiddenReports((prevState) => [...prevState, { orderId, reportLink }]);
   };
 
-  const sendReportsByEmail = async (orderId, Email) => {
+  const sendReportsByEmail = async (orderId, email) => {
     try {
       const response = await axios.post(
         `${process.env.REACT_APP_API_URL}/api/orders/${orderId}/send-reports-by-email`
       );
       if (response.status === 200) {
-        alert(`Reports sent to ${Email} successfully!`);
+        alert(`Reports sent to ${email} successfully!`);
       } else {
         alert("Failed to send reports. Please try again later.");
       }
@@ -35,7 +32,6 @@ function ViewOrders() {
     async function fetchOrders() {
       try {
         const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/orders`);
-        console.log('Fetched orders:', response.data);
         setOrders(response.data);
       } catch (error) {
         console.error("Error fetching orders:", error);
@@ -58,14 +54,14 @@ function ViewOrders() {
               <th>Name</th>
               <th>Email</th>
               <th>Address</th>
-              <th>PhoneNo</th>
+              <th>Phone No</th>
               <th>Age</th>
               <th>Products</th>
               <th>Upload Report</th>
               <th>Status</th>
               <th>Report</th>
               <th>Download Reports</th>
-              <th>Send Reports to user</th>
+              <th>Send Reports to User</th>
             </tr>
           </thead>
           <tbody>
@@ -102,7 +98,6 @@ function ViewOrders() {
                               >
                                 View Report
                               </a>
-                              {/* Close button for each report */}
                               <button
                                 style={{
                                   position: "absolute",
@@ -118,7 +113,6 @@ function ViewOrders() {
                       )
                     : "Not uploaded"}
                 </td>
-
                 <td>
                   {order.reports && order.reports.length > 0 ? (
                     <a
