@@ -13,6 +13,8 @@ import ViewUsers from "./components/ViewUsers";
 import TotalRevenue from "./components/TotalRevenue";
 import UserDashboard from "./components/UserDashboard";
 import { products } from "./utils/products";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 const Home = lazy(() => import("./pages/Home"));
 const Shop = lazy(() => import("./pages/Shop"));
 const Health = lazy(() => import("./pages/HealthPackagesDetails"));

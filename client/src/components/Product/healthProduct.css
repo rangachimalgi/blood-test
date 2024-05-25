@@ -1,0 +1,88 @@
+.slick-slide {
+    padding: 10px; /* Adjust the padding to add gap between items */
+  }
+  
+  .health-product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent; /* Set background to transparent */
+    padding: 0; /* Remove padding */
+    border-radius: 8px;
+    box-shadow: none; /* Remove box shadow */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    width: auto; /* Adjust as per your design */
+  }
+  
+  .health-product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .health-product-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; /* Ensure the container takes full height */
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .health-product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .health-product-details {
+    display: none; /* Hide product details if only image is needed */
+  }
+  
+  .health-discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #0f3460;
+    padding: 3px 10px;
+    font-size: 12px;
+    border-radius: 50px;
+    color: #fff;
+  }
+  
+  .health-product-like {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #0f3460;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: white;
+    border-radius: 50px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .health-product-card:hover .health-product-like {
+    opacity: 1;
+  }
+  
+  .health-product-like ion-icon {
+    font-size: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+  /* Responsive adjustments */
+@media (max-width: 768px) {
+  .slick-slide {
+    padding: 5px; /* Adjust padding for smaller screens */
+  }
+  
+  .health-product-image-container {
+    height: 150px; /* Adjust height for smaller screens */
+  }
+}
+
+  

@@ -44,6 +44,14 @@ import seniorcitizen from "../Images/seniorcitizen.jpg"
 import GenaralHealthPackage from "../Images/GenaralHealthPackage.jpg"
 import labtestslider from "../Images/labtestslider.png"
 import Untitleddesign from "../Images/Untitleddesign.png"
+import fullBody from "../Images/fullBody.png"
+import heart from "../Images/heart.png"
+import diabetes from "../Images/diabetes.png"
+import fever from "../Images/fever.png"
+import thyroid from "../Images/thyroid.png"
+import cancer from "../Images/cancer.png"
+import hair from "../Images/hair.png"
+import std from "../Images/std.png"
 
 export const SliderData = [
   {
@@ -143,6 +151,41 @@ export const popularTests = [
       "FT4 and FT3 are also two of the most important tests. Knowingly, T3 only represents just 5% of normal thyroid hormone. Measurement of free triiodothyronine is the prime reason why this test is run. Decreasing amount of FT4 may cause hypothyroidism, which may cause several types of disorders. FT4 is known for comprising a little fraction of total thyroxine that remains available to the body tissues. Free T3 and T4 blood tests are included in all kinds of FT4 tests. You must inform your doctor before the test if you are already on medication or having any kind of allergies. No other specific preparations are needed for these tests. However, 10-12 hours of complete fasting is necessary before appearing for the test. The test results may vary depending upon gender and age or the health condition of the patient.",
   },
 
+]
+
+export const healthConcerns = [
+  {
+    id:"01",
+    imgUrl: fullBody
+  },
+  {
+    id:"02",
+    imgUrl: heart
+  },
+  {
+    id:"03",
+    imgUrl: diabetes
+  },
+  {
+    id:"04",
+    imgUrl: fever
+  },
+  {
+    id:"05",
+    imgUrl: thyroid
+  },
+  {
+    id:"06",
+    imgUrl: cancer
+  },
+  {
+    id:"07",
+    imgUrl: hair
+  },
+  {
+    id:"08",
+    imgUrl: std
+  }
 ]
 
 export const discoutProducts = [
