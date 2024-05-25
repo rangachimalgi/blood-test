@@ -41,22 +41,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get('/:orderId', async (req, res) => {
-  try {
-    const orderId = req.params.orderId;
-    const order = await Order.findById(orderId);
-
-    if (!order) {
-      return res.status(404).json({ message: 'Order not found' });
-    }
-
-    res.json(order);
-  } catch (error) {
-    console.error('Error fetching order:', error.message);
-    res.status(500).json({ message: 'Error fetching order', error: error.message });
-  }
-});
-
 router.post('/:orderId/upload-report', upload.array('report'), uploadReport);
 router.get("/:orderId/download-reports", downloadReports);
 router.post("/:orderId/send-reports-by-email", sendReportsByEmail);
