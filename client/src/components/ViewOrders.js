@@ -12,13 +12,13 @@ function ViewOrders() {
     setHiddenReports((prevState) => [...prevState, { orderId, reportLink }]);
   };
 
-  const sendReportsByEmail = async (orderId, email) => {
+  const sendReportsByEmail = async (orderId, Email) => {
     try {
       const response = await axios.post(
         `${process.env.REACT_APP_API_URL}/api/orders/${orderId}/send-reports-by-email`
       );
       if (response.status === 200) {
-        alert(`Reports sent to ${email} successfully!`);
+        alert(`Reports sent to ${Email} successfully!`);
       } else {
         alert("Failed to send reports. Please try again later.");
       }
@@ -32,6 +32,7 @@ function ViewOrders() {
     async function fetchOrders() {
       try {
         const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/orders`);
+        console.log('Fetched orders:', response.data);
         setOrders(response.data);
       } catch (error) {
         console.error("Error fetching orders:", error);
@@ -54,14 +55,14 @@ function ViewOrders() {
               <th>Name</th>
               <th>Email</th>
               <th>Address</th>
-              <th>Phone No</th>
+              <th>PhoneNo</th>
               <th>Age</th>
               <th>Products</th>
               <th>Upload Report</th>
               <th>Status</th>
               <th>Report</th>
               <th>Download Reports</th>
-              <th>Send Reports to User</th>
+              <th>Send Reports to user</th>
             </tr>
           </thead>
           <tbody>

@@ -1,41 +1,50 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const UploadReportForm = ({ orderId }) => {
-  const [file, setFile] = useState(null);
+function UploadReportForm({ orderId }) {
+  const [files, setFiles] = useState(null);
 
   const handleFileChange = (e) => {
-    setFile(e.target.files[0]);
-  };
+    if (e.target.files) {
+      setFiles(Array.from(e.target.files));
+    }
+  }
 
-  const handleUpload = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData();
-    formData.append("file", file);
+    files.forEach((file, index) => {
+      formData.append("report", file);
+    });
+
     try {
-      const response = await axios.post(
+      await axios.post(
         `${process.env.REACT_APP_API_URL}/api/orders/${orderId}/upload-report`,
-        formData
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
       );
-      if (response.status === 200) {
-        alert("Report uploaded successfully!");
-      } else {
-        alert("Failed to upload report. Please try again later.");
-      }
+      alert("Report uploaded successfully!");
     } catch (error) {
       console.error("Error uploading report:", error);
-      alert("Error occurred while uploading report.");
+      alert("Error uploading report. Please try again.");
     }
   };
 
   return (
-    <div>
-      <form onSubmit={handleUpload}>
-        <input type="file" onChange={handleFileChange} />
-        <button type="submit">Upload Report</button>
-      </form>
-    </div>
-  );
-};
-
-export default UploadReportForm;
+    <form onSubmit={handleSubmit}>
+      <input
+        type="file"
+        multiple
+        name="report"
+        onChange={handleFileChange}
+        required
+      />
+      <button type="submit">Upload Report</button>
+    </form>
+    );
+  }
+  export default UploadReportForm;
