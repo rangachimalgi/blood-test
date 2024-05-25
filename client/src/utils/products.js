@@ -52,6 +52,14 @@ import thyroid from "../Images/thyroid.png"
 import cancer from "../Images/cancer.png"
 import hair from "../Images/hair.png"
 import std from "../Images/std.png"
+import underTwentyFive from "../Images/underTwentyFive.png"
+import twentyFive from "../Images/twentyFive.png"
+import aboveFifty from "../Images/aboveFifty.png"
+import moreMenPackages from "../Images/moreMenPackages.png"
+import underTwentyFiveWomen from "../Images/underTwentyFiveWomen.png"
+import twentyFiveWomen from "../Images/TwentyFiveWomen.png"
+import aboveFiftyWomen from "../Images/aboveFiftyWomen.png"
+import moreWomenPackages from "../Images/moreWomenPackages.png"
 
 export const SliderData = [
   {
@@ -188,6 +196,45 @@ export const healthConcerns = [
   }
 ]
 
+export const checkupsMen = [
+  {
+    id:"01",
+    imgUrl: underTwentyFive
+  },
+  {
+    id:"02",
+    imgUrl: twentyFive
+  },
+  {
+    id:"03",
+    imgUrl: aboveFifty
+  },
+  {
+    id:"04",
+    imgUrl: moreMenPackages
+  },
+]
+
+export const checkupsWomen = [
+  {
+    id:"01",
+    imgUrl: underTwentyFiveWomen
+  },
+  {
+    id:"02",
+    imgUrl: twentyFiveWomen
+  },
+  {
+    id:"03",
+    imgUrl: aboveFiftyWomen
+  },
+  {
+    id:"04",
+    imgUrl: moreWomenPackages
+  }
+]
+
+
 export const discoutProducts = [
   {
     id: "01",
@@ -209,7 +256,7 @@ export const discoutProducts = [
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Thyrocare offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
     reviews: [
       {
         rating: 4.7,
@@ -301,7 +348,7 @@ export const discoutProducts = [
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Thyrocare offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
     reviews: [
       {
         rating: 4.7,
@@ -330,7 +377,7 @@ export const discoutProducts = [
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Thyrocare offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
     reviews: [
       {
         rating: 4.7,
@@ -359,7 +406,7 @@ export const discoutProducts = [
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Thyrocare offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
     reviews: [
       {
         rating: 4.7,

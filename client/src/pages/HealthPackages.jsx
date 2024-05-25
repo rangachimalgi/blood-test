@@ -29,7 +29,7 @@ export const healthPackagesArray = [
       discount: 30,
       shortDesc: "Sample Type: Blood",
       description:
-        "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Thyrocare offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+        "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
       reviews: [
         {
           rating: 4.7,
@@ -91,7 +91,7 @@ export const healthPackagesArray = [
         discount: 30,
         shortDesc: "Sample Type: Blood",
         description:
-          "The THYROCARE MALE HEALTH PACKAGE is a comprehensive health checkup package consisting of 70 fundamental tests to screen for the overall health status of men aged from 25 to 45 years. It includes tests for Lipid, Liver, Thyroid, Iron, Diabetic, Kidney, Complete Hemogram, Hormone, Vitamin D & B12.",
+          "The FORTUNE BLOOD TEST MALE HEALTH PACKAGE is a comprehensive health checkup package consisting of 70 fundamental tests to screen for the overall health status of men aged from 25 to 45 years. It includes tests for Lipid, Liver, Thyroid, Iron, Diabetic, Kidney, Complete Hemogram, Hormone, Vitamin D & B12.",
         reviews: [
           {
             rating: 4.7,

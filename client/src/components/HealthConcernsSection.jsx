@@ -1,12 +1,12 @@
 import React from 'react';
 import Slider from 'react-slick';
-import HealthProduct from "./Product/HealthProduct"
-import { Container } from "react-bootstrap";
+import HealthProduct from './Product/HealthProduct';
+import { Container } from 'react-bootstrap';
 
 const HealthConcernsSection = ({ title, bgColor, productItems, addToCart }) => {
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: false, // Set to false to avoid infinite scrolling
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 1,
@@ -18,7 +18,7 @@ const HealthConcernsSection = ({ title, bgColor, productItems, addToCart }) => {
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
-          infinite: true,
+          infinite: false, // Ensure this is false to avoid infinite scrolling
         },
       },
       {
@@ -26,6 +26,7 @@ const HealthConcernsSection = ({ title, bgColor, productItems, addToCart }) => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          infinite: false, // Ensure this is false to avoid infinite scrolling
         },
       },
       {
@@ -33,13 +34,15 @@ const HealthConcernsSection = ({ title, bgColor, productItems, addToCart }) => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          infinite: false, // Ensure this is false to avoid infinite scrolling
         },
       },
       {
         breakpoint: 360,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
+          infinite: false, // Ensure this is false to avoid infinite scrolling
         },
       },
     ],
@@ -71,7 +74,7 @@ const SampleNextArrow = (props) => {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "black" }}
+      style={{ ...style, display: 'block', background: 'black' }}
       onClick={onClick}
     />
   );
@@ -82,7 +85,7 @@ const SamplePrevArrow = (props) => {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "black" }}
+      style={{ ...style, display: 'block', background: 'black' }}
       onClick={onClick}
     />
   );
