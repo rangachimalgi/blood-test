@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import generateInvoice from "../components/generateInvoice.js"; // Update the path accordingly
 
 const UploadReportForm = ({ orderId }) => {
   const [file, setFile] = useState(null);
@@ -29,43 +28,12 @@ const UploadReportForm = ({ orderId }) => {
     }
   };
 
-  const handleGenerateInvoice = async () => {
-    try {
-      const apiUrl = `${process.env.REACT_APP_API_URL}/api/orders/${orderId}`;
-      console.log('API URL:', apiUrl); // Log the API URL for debugging
-  
-      // Fetch the order details and generate the invoice
-      const response = await axios.get(apiUrl);
-      console.log("API Response:", response); // Log the response for debugging
-      const order = response.data;
-      console.log("Fetched order:", order);
-
-      // Check if the order object has the required fields
-      if (!order || !order.cartItems || !Array.isArray(order.cartItems)) {
-        console.error("Invalid order object:", order);
-        return;
-      }
-
-      const doc = generateInvoice(order);
-      const blob = doc.output("blob");
-      const file = new File([blob], `${orderId}-invoice.pdf`, {
-        type: "application/pdf",
-      });
-      setFile(file);
-    } catch (error) {
-      console.error("Error fetching order details:", error);
-    }
-  };
-
   return (
     <div>
       <form onSubmit={handleUpload}>
         <input type="file" onChange={handleFileChange} />
         <button type="submit">Upload Report</button>
       </form>
-      <button onClick={handleGenerateInvoice}>
-        Generate and Upload Invoice
-      </button>
     </div>
   );
 };
