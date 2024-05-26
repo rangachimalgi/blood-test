@@ -28,6 +28,30 @@ function ViewOrders() {
     }
   };
 
+  const generateInvoice = async (orderId) => {
+    try {
+      const response = await axios.post(
+        `${process.env.REACT_APP_API_URL}/api/orders/${orderId}/generate-invoice`,
+        {},
+        {
+          responseType: 'blob',
+        }
+      );
+
+      const blob = new Blob([response.data], { type: 'application/pdf' });
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', `invoice_${orderId}.pdf`);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error("Error generating invoice:", error);
+      alert("Error generating invoice. Please try again.");
+    }
+  };
+
   useEffect(() => {
     async function fetchOrders() {
       try {
@@ -63,6 +87,7 @@ function ViewOrders() {
               <th>Report</th>
               <th>Download Reports</th>
               <th>Send Reports to user</th>
+              <th>Generate Invoice</th>
             </tr>
           </thead>
           <tbody>
@@ -135,6 +160,14 @@ function ViewOrders() {
                     disabled={!(order.reports && order.reports.length > 0)}
                   >
                     <i className="fa fa-envelope"></i>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    className="custom-button"
+                    onClick={() => generateInvoice(order._id)}
+                  >
+                    Generate Invoice
                   </button>
                 </td>
               </tr>
