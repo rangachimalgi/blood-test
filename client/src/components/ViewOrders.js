@@ -46,6 +46,7 @@ function ViewOrders() {
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
+      refreshOrders();
     } catch (error) {
       console.error("Error generating invoice:", error);
       alert("Error generating invoice. Please try again.");
