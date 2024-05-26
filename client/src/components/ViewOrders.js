@@ -34,15 +34,15 @@ function ViewOrders() {
         `${process.env.REACT_APP_API_URL}/api/orders/${orderId}/generate-invoice`,
         {},
         {
-          responseType: 'blob',
+          responseType: "blob",
         }
       );
 
-      const blob = new Blob([response.data], { type: 'application/pdf' });
+      const blob = new Blob([response.data], { type: "application/pdf" });
       const url = window.URL.createObjectURL(blob);
-      const link = document.createElement('a');
+      const link = document.createElement("a");
       link.href = url;
-      link.setAttribute('download', `invoice_${orderId}.pdf`);
+      link.setAttribute("download", `invoice_${orderId}.pdf`);
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -52,11 +52,24 @@ function ViewOrders() {
     }
   };
 
+  const refreshOrders = async () => {
+    try {
+      const response = await axios.get(
+        `${process.env.REACT_APP_API_URL}/api/orders`
+      );
+      setOrders(response.data);
+    } catch (error) {
+      console.error("Error fetching orders:", error);
+    }
+  };
+
   useEffect(() => {
     async function fetchOrders() {
       try {
-        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/orders`);
-        console.log('Fetched orders:', response.data);
+        const response = await axios.get(
+          `${process.env.REACT_APP_API_URL}/api/orders`
+        );
+        console.log("Fetched orders:", response.data);
         setOrders(response.data);
       } catch (error) {
         console.error("Error fetching orders:", error);
@@ -64,6 +77,10 @@ function ViewOrders() {
     }
 
     fetchOrders();
+  }, []);
+
+  useEffect(() => {
+    refreshOrders();
   }, []);
 
   return (
@@ -103,7 +120,10 @@ function ViewOrders() {
                   {order.cartItems.map((item) => item.productName).join(", ")}
                 </td>
                 <td>
-                  <UploadReportForm orderId={order._id} />
+                  <UploadReportForm
+                    orderId={order._id}
+                    onReportUpload={refreshOrders}
+                  />
                 </td>
                 <td>{order.status}</td>
                 <td>

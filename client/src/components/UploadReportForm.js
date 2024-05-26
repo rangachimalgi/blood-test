@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-function UploadReportForm({ orderId }) {
+function UploadReportForm({ orderId, onReportUpload }) {
   const [files, setFiles] = useState(null);
 
   const handleFileChange = (e) => {
@@ -28,6 +28,7 @@ function UploadReportForm({ orderId }) {
         }
       );
       alert("Report uploaded successfully!");
+      onReportUpload();
     } catch (error) {
       console.error("Error uploading report:", error);
       alert("Error uploading report. Please try again.");
