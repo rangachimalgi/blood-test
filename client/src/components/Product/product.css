@@ -29,6 +29,7 @@
   box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
   margin: 10px;
   margin-top: 20px;
+  overflow: hidden;
 }
 
 .product h3 {
@@ -106,3 +107,64 @@ button.add {
 .product:hover .product-like {
   opacity: 1;
 }
+
+/* Specific styles for Popular Packages section */
+#popular-packages .product-image-container {
+  position: relative;
+  width: 100%;
+  height: 150px; /* Ensure this matches the height of the image */
+  overflow: hidden;
+}
+
+#popular-packages .product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+#popular-packages .hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 255, 0.8); /* Semi-transparent blue */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+#popular-packages .product-image-container:hover .hover-overlay {
+  opacity: 1;
+}
+
+#popular-packages .hover-overlay h2 {
+  font-size: 14px; /* Adjust font size as needed */
+  margin-bottom: 10px; /* Optional: Add margin for spacing */
+}
+
+#popular-packages .hover-overlay ul {
+  padding: 0;
+  list-style: none;
+  font-size: 11px; /* Adjust font size for overlayDetails */
+}
+
+#popular-packages .hover-overlay li {
+  margin-bottom: 5px; /* Optional: Add margin for spacing between items */
+}
+
+.product-description {
+  font-size: 18px; /* Adjust as needed */
+  color: #555;
+  margin-top: 10px;
+  font-size: 13px; /* Adjust font size as needed */
+  font-weight: 700;
+}
+

@@ -239,6 +239,7 @@ export const discoutProducts = [
   {
     id: "01",
     productName: "BASIC HEALTH PACKAGE (66 Tests)",
+    desc: "Tests includes Cardiac Risk Markers, CBC, HbA1c, Iron, Lipid, Liver, Kidney, Thyroid, Vitamin, Pancreas, Electrolytes.",
     includedTests: [
       {
         categoryName: "Thyroid Profile",
@@ -264,6 +265,8 @@ export const discoutProducts = [
       },
     ],
     avgRating: 4.5,
+    overlayTitle: "Aarogyam Male (99 Tests) @ Rs. 2199.00",
+    overlayDetails: ["Cardiac Risk Markers (5)", "Complete Hemogram (24)", "Diabetics (2)", "Iron (4)", "Lipid Profile (10)"],
   },
   {
     id: "02",
