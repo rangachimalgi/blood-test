@@ -38,19 +38,16 @@ h2 {
     color: #333;
 }
 
-.package-card .package-link {
-    display: block;
-    text-decoration: none; 
-    color: #333;
-}
-
-.package-link { 
-    text-decoration: none;
+.package-image-container {
+    position: relative;
+    width: 100%;
+    height: 150px; /* Ensure this matches the height of the image */
+    overflow: hidden;
 }
 
 .package-image {
     width: 100%;
-    height: 150px;
+    height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -69,4 +66,82 @@ h2 {
 .package-card:hover .package-name {
     background-color: #7a8693;
     color: #fff;
+}
+
+.package-desc {
+    font-size: 12px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.package-details {
+    padding: 0.5rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.price-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.package-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.add-to-cart-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+    color: #0056b3;
+}
+
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.8); /* Semi-transparent blue */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.package-image-container:hover .hover-overlay {
+    opacity: 1;
+}
+
+.hover-overlay h2 {
+    font-size: 14px; /* Adjust font size as needed */
+    margin-bottom: 5px; /* Optional: Adjust margin for spacing */
+}
+
+.hover-overlay ul {
+    padding: 0;
+    list-style: none;
+    font-size: 12px; /* Adjust font size */
+}
+
+.hover-overlay li {
+    margin-bottom: 3px; /* Optional: Adjust margin for spacing between items */
 }

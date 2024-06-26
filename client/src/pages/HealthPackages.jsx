@@ -36,6 +36,14 @@ export const healthPackagesArray = [
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
       ],
+      overlayTitle: "jshd",
+      overlayDetails: [
+        "Cardiac Risk Markers (5)",
+        "Complete Hemogram (24)",
+        "Diabetics (2)",
+        "Iron (4)",
+        "Lipid Profile (10)"
+      ],
       avgRating: 4.5,
     },
 
