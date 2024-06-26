@@ -23,7 +23,7 @@ export const healthPackagesArray = [
         },
         // ... more categories can be added similarly
       ],
-      desc: "SJDKK",
+      desc: "SJDKK KJDKD",
       imgUrl: populartest01,
       category: "Basic",
       price: 1199.0,
