@@ -23,6 +23,7 @@ export const healthPackagesArray = [
         },
         // ... more categories can be added similarly
       ],
+      desc: "SJDKK",
       imgUrl: populartest01,
       category: "Basic",
       price: 1199.0,
@@ -36,7 +37,7 @@ export const healthPackagesArray = [
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
       ],
-      overlayTitle: "jshd",
+      overlayTitle: "JSHJD",
       overlayDetails: [
         "Cardiac Risk Markers (5)",
         "Complete Hemogram (24)",
