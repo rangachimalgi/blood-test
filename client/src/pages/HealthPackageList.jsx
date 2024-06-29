@@ -39,8 +39,11 @@ const HealthPackagesList = () => {
               </div>
             </Link>
             <div className="package-details">
+            <div className="package-name">
+                <span className="product-name">{pkg.productName}</span>
+              </div>
               <div className="package-desc">{pkg.desc}</div>
-              <div className="package-name">{pkg.productName}</div>
+              
               <div className="price-cart">
                 <div className="package-price">&#8377;{pkg.price}</div>
                 <button

@@ -1,18 +1,15 @@
 import React, { Fragment, useContext, useEffect, useState } from "react";
 import Banner from "../components/Banner/Banner";
 import { DataContainer } from "../App";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Collapse } from "react-bootstrap";
 import { healthPackagesArray } from "./HealthPackages";
 import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
-import { products } from "../utils/products";
-import { Collapse } from "react-bootstrap";
 import "../Styles/productDetails.css";
 
 const HealthPackageDetails = () => {
   const [quantity, setQuantity] = useState(1);
-  const { selectedProduct, setSelectedProduct, addToCart } =
-    useContext(DataContainer);
+  const { selectedProduct, setSelectedProduct, addToCart } = useContext(DataContainer);
   const [openCategoryId, setOpenCategoryId] = useState(null);
   const { id } = useParams();
 
@@ -76,7 +73,7 @@ const HealthPackageDetails = () => {
             <Container>
               <h3>Included Tests</h3>
               {selectedProduct.includedTests.map((category) => (
-                <div key={category.categoryName}>
+                <div key={category.categoryName} className="category-box">
                   <h4
                     onClick={() =>
                       setOpenCategoryId(
@@ -85,31 +82,21 @@ const HealthPackageDetails = () => {
                           : null
                       )
                     }
-                    style={{
-                      cursor: "pointer",
-                      display: "flex",
-                      alignItems: "center",
-                    }}
+                    className="category-title"
                   >
-                    <span style={{ marginLeft: "10px" }}>
-                      {openCategoryId === category.categoryName ? "v" : ">"}
+                    <span className="toggle-icon">
+                      {openCategoryId === category.categoryName ? "-" : "+"}
                     </span>
                     {category.categoryName}
                   </h4>
 
                   <Collapse in={openCategoryId === category.categoryName}>
-                    <div>
-                      {category.tests.map((testId) => {
-                        const testDetail = products.find(
-                          (product) => product.id === testId
-                        );
-                        return (
-                          <div key={testId} className="test-item">
-                            <h5>{testDetail?.productName}</h5>
-                            <p>{testDetail?.shortDesc}</p>
-                          </div>
-                        );
-                      })}
+                    <div className="test-list">
+                      {category.tests.map((testName, index) => (
+                        <div key={index} className="test-item">
+                          {testName}
+                        </div>
+                      ))}
                     </div>
                   </Collapse>
                 </div>
