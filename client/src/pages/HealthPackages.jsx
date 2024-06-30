@@ -82,7 +82,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes Lipid, Thyroid, Liver, Renal, Iron Deficiency, Cardiac Risk Markers",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 1399.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -145,7 +145,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes Lipid, Complete Hemogram, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 1699.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -216,7 +216,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes Lipid, Complete Hemogram, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 2499.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -269,7 +269,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes Lipid, Toxic Elements, Thyroid, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 1499.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -335,7 +335,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes Lipid, Toxic Elements, Thyroid, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 1999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -414,7 +414,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 2999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -501,7 +501,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes Diabetes, Lipid, Pancreatic, Complete Hemogram, Toxic Elements, Thyroid, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Electrolytes, Elements, Hormone ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 3499.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -588,7 +588,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes Diabetes, Lipid, Pancreatic, Complete Hemogram, Toxic Elements, Thyroid, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Electrolytes, Elements, Hormone ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 3499.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -678,7 +678,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes Diabetes, Lipid, Pancreatic, Complete Hemogram, Toxic Elements, Thyroid, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Electrolytes, Elements, Hormone ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 4499.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -768,7 +768,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes Diabetes, Lipid, Pancreatic, Complete Hemogram, Toxic Elements, Thyroid, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Electrolytes, Elements, Hormone, Arthritis ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 4999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -854,7 +854,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes CARDIAC RISK MARKERS, COMPLETE HEMOGRAM, DIABETES, ELECTROLYTES, ELEMENTS, HORMONE, IRON DEFICIENCY, LIPID, LIVER, PANCREATIC, RENAL, THYROID, TOXIC ELEMENTS, VITAMINS ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 5999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -1148,7 +1148,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes CARDIAC RISK MARKERS, COMPLETE HEMOGRAM, DIABETES, ELEMENTS, HORMONE, IRON DEFICIENCY, LIPID, LIVER, PANCREATIC, RENAL, THYROID, VITAMINS ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 1699.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -1314,7 +1314,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes CARDIAC RISK MARKERS, COMPLETE HEMOGRAM, DIABETES, ELECTROLYTES, ELEMENTS, HORMONE, IRON DEFICIENCY, LIPID, LIVER, PANCREATIC, RENAL, THYROID, VITAMIN ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 3999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -1550,7 +1550,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes ARTHRITIS, CARDIAC RISK MARKERS, COMPLETE HEMOGRAM, DIABETES, ELECTROLYTES, ELEMENTS, HORMONE, IRON DEFICIENCY, LIPID, LIVER, METABOLIC, PANCREATIC, RENAL, THYROID, TOXIC ELEMENTS, URINOGRAM, VITAMIN ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 6999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -1695,7 +1695,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes COMPLETE HEMOGRAM, COMPLETE URINE ANALYSIS, DIABETES, LIPID, LIVER, RENAL, THYROID ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 950.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -1853,7 +1853,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes COMPLETE HEMOGRAM, COMPLETE URINE ANALYSIS, DIABETES, IRON DEFICIENCY, LIPID, LIVER, RENAL, THYROID ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 1050.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -2047,7 +2047,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes CANCER MARKERS, CARDIAC RISK MARKERS, COMPLETE HEMOGRAM, DIABETES, ELECTROLYTES, HORMONE, IRON DEFICIENCY, LIPID, LIVER, PANCREATIC, PANCREATIC, RENAL, THYROID, TOXIC ELEMENTS, VITAMIN, VITAMINS ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 2400.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -2241,7 +2241,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes CARDIAC RISK MARKERS, COMPLETE HEMOGRAM, DIABETES, ELECTROLYTES, HORMONE, INFERTILITY, IRON DEFICIENCY, LIPID, LIVER, PANCREATIC, RENAL, THYROID, TOXIC ELEMENTS, VITAMIN, VITAMINS ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 2600.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -2379,7 +2379,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes DIABETES, HORMONE, HYPERTENSION, INFERTILITY, STEROID, THYROID, VITAMINS, ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 1999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -2486,7 +2486,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes COMPLETE HEMOGRAM, DIABETES, INFERTILITY, LIPID, PREGNANCY, THYROID ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 1999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -2625,7 +2625,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes COMPLETE HEMOGRAM, DIABETES, HORMONE, INFERTILITY, LIPID, LIVER, PREGNANCY, RENAL, THYROID",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 4999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -2770,7 +2770,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes COMPLETE HEMOGRAM, DIABETES, HORMONE, INFERTILITY, LIPID, LIVER, PREGNANCY, RENAL, STEROID HORMONE, THYROID ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 5999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -2911,7 +2911,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes COMPLETE HEMOGRAM, DIABETES, ELECTROLYTES, IRON DEFICIENCY, LIPID, LIVER, RENAL, THYROID",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 2499.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -3101,7 +3101,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes CARDIAC RISK MARKERS, COMPLETE HEMOGRAM, DIABETES, ELECTROLYTES, IRON DEFICIENCY, LIPID, LIVER, PANCREATIC, RENAL, THYROID, TOXIC ELEMENTS, VITAMINS",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 4999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -3150,7 +3150,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes CANCER MARKERS, CARDIAC RISK MARKERS, PREGNANCY",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 1999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -3198,7 +3198,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes CANCER MARKERS, OTHERS, PREGNANCY",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 1999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -3239,7 +3239,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes THYROID",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 499.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -3289,7 +3289,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes AUTOIMMUNE DISORDERS, AUTOIMMUNITY, THYROID",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 2499.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -3399,7 +3399,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes CARDIAC, CARDIAC RISK MARKERS, COMPLETE HEMOGRAM, DIABETES, ELECTROLYTES, HEMATOLOGY, LIPID",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 2999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -3496,7 +3496,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes CARDIAC RISK MARKERS, COMPLETE HEMOGRAM, DIABETES, ELECTROLYTES, LIPID",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 1499.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -3552,7 +3552,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes HEPATITIS PANEL, INFECTIOUS DISEASES, OTHERS, PREGNANCY",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 2499.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
