@@ -39,20 +39,17 @@ const HealthPackagesList = () => {
               </div>
             </Link>
             <div className="package-details">
-            <div className="package-name">
-                <span className="product-name">{pkg.productName}</span>
-              </div>
+              <div className="package-name">{pkg.productName}</div>
               <div className="package-desc">{pkg.desc}</div>
-              
-              <div className="price-cart">
-                <div className="package-price">&#8377;{pkg.price}</div>
-                <button
-                  className="add-to-cart-button"
-                  onClick={() => handleAddToCart(pkg)}
-                >
-                  <ion-icon name="add"></ion-icon>
-                </button>
-              </div>
+            </div>
+            <div className="price-cart-box">
+              <div className="package-price">&#8377;{pkg.price}</div>
+              <button
+                className="add-to-cart-button"
+                onClick={() => handleAddToCart(pkg)}
+              >
+                <ion-icon name="add"></ion-icon>
+              </button>
             </div>
           </div>
         ))}
