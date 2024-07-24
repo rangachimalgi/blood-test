@@ -97,8 +97,11 @@ function ViewOrders() {
               <th>Name</th>
               <th>Email</th>
               <th>Address</th>
-              <th>PhoneNo</th>
+              <th>Phone No</th>
               <th>Age</th>
+              <th>Number of Persons</th>
+              <th>Appointment Date</th>
+              <th>Beneficiaries</th>
               <th>Products</th>
               <th>Upload Report</th>
               <th>Status</th>
@@ -117,8 +120,23 @@ function ViewOrders() {
                 <td>{order.address}</td>
                 <td>{order.phoneno}</td>
                 <td>{order.age}</td>
+                <td>{order.noOfPersons}</td>
+                <td>{order.appointmentDate}</td>
                 <td>
-                  {order.cartItems.map((item) => item.productName).join(", ")}
+                  {order.beneficiaries && order.beneficiaries.length > 0
+                    ? order.beneficiaries.map((beneficiary, index) => (
+                        <div key={index}>
+                          <p>
+                            Name: {beneficiary.name}, Age: {beneficiary.age}, Gender: {beneficiary.gender}
+                          </p>
+                        </div>
+                      ))
+                    : "No beneficiaries"}
+                </td>
+                <td>
+                  {order.cartItems && order.cartItems.length > 0
+                    ? order.cartItems.map((item) => item.productName).join(", ")
+                    : "No products"}
                 </td>
                 <td>
                   <UploadReportForm

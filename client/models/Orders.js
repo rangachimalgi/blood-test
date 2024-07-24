@@ -1,5 +1,20 @@
 import mongoose from 'mongoose';
 
+const beneficiarySchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true,
+    },
+    age: {
+        type: String,
+        required: true,
+    },
+    gender: {
+        type: String,
+        required: true,
+    },
+});
+
 const orderSchema = new mongoose.Schema({
     pincode: {
         type: String,
@@ -35,10 +50,19 @@ const orderSchema = new mongoose.Schema({
         description: String,
         qty: Number
     }],
-    reports: [String],
-      status: {
+    beneficiaries: [beneficiarySchema],
+    noOfPersons: {
+        type: Number,
+        required: true,
+    },
+    appointmentDate: {
         type: String,
-        default: "Pending"  
+        required: true,
+    },
+    reports: [String],
+    status: {
+        type: String,
+        default: "Pending"
     }
 });
 

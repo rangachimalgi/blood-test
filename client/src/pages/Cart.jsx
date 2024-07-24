@@ -1,30 +1,9 @@
-import { useContext, useEffect, useState } from "react";
-import { DataContainer } from "../App";
-import {
-  Col,
-  Container,
-  Row,
-  Modal,
-  Button,
-  InputGroup,
-  Form,
-} from "react-bootstrap";
-import { availablePincodes } from "../components/availablePincodes.js";
-import axios from "axios";
-
+import React, { useContext, useEffect, useState } from 'react';
+import { DataContainer } from '../App';
+import { Col, Container, Row, Button } from 'react-bootstrap';
+import CheckoutForm from '../components/CheckoutForm.js';
 const Cart = () => {
   const [showModal, setShowModal] = useState(false);
-  const [orderData, setOrderData] = useState({
-    name: "",
-    email: "",
-    address: "",
-    phoneno: "",
-    age: "",
-    gender: "",
-    date: "",
-  });
-  const handleClose = () => setShowModal(false);
-  const handleShow = () => setShowModal(true);
   const { CartItem, setCartItem, addToCart, decreaseQty, deleteProduct } =
     useContext(DataContainer);
   const totalPrice = CartItem.reduce(
@@ -32,61 +11,16 @@ const Cart = () => {
     0
   );
 
-  const [pincode, setPincode] = useState("");
-  const [pincodeMessage, setPincodeMessage] = useState("");
-
-  const checkAvailability = () => {
-    if (availablePincodes.includes(pincode)) {
-      setPincodeMessage("Service is available in your pincode!");
-    } else {
-      setPincodeMessage("Sorry, service is not available in your pincode.");
-    }
-  };
-
   useEffect(() => {
     window.scrollTo(0, 0);
     if (CartItem.length === 0) {
-      const storedCart = localStorage.getItem("cartItem");
+      const storedCart = localStorage.getItem('cartItem');
       setCartItem(JSON.parse(storedCart));
     }
-  }, []);
+  }, [CartItem, setCartItem]);
 
-  const handleSubmitOrder = async () => {
-    if (!availablePincodes.includes(pincode)) {
-      alert("Service is not available in your pincode.");
-      return;
-    }
-
-    const orderForm = document.querySelector("form");
-    const formData = new FormData(orderForm);
-
-    const orderDetails = {
-      pincode: formData.get("pincode"),
-      name: formData.get("name"),
-      email: formData.get("email"),
-      address: formData.get("address"),
-      phoneno: formData.get("phoneno"),
-      age: formData.get("age"),
-      cartItems: CartItem,
-    };
-
-    try {
-      const response = await axios.post(
-        `${process.env.REACT_APP_API_URL}/api/orders`,
-        orderDetails
-      );
-      if (response.data.success) {
-        setCartItem([]);
-        handleClose();
-        // Navigate to success page or show success message here
-      } else {
-        // Handle error (e.g., show an error message to the user)
-      }
-    } catch (error) {
-      console.error("Error submitting order:", error);
-      // Handle error (e.g., show an error message to the user)
-    }
-  };
+  const handleShow = () => setShowModal(true);
+  const handleClose = () => setShowModal(false);
 
   return (
     <section className="cart-items">
@@ -94,7 +28,7 @@ const Cart = () => {
         <Row className="justify-content-center">
           <Col md={8}>
             {CartItem.length === 0 && (
-              <h1 className="no-items product">No Items are add in Cart</h1>
+              <h1 className="no-items product">No Items are added in Cart</h1>
             )}
             {CartItem.map((item) => {
               const productQty = item.price * item.qty;
@@ -147,17 +81,16 @@ const Cart = () => {
                 <h4>Total Price :</h4>
                 <h3>{`\u20B9${totalPrice}.00`}</h3>
               </div>
-              {/* Styled Checkout Button */}
               <Button
                 onClick={handleShow}
                 style={{
-                  marginTop: "15px",
-                  backgroundColor: "#4CAF50",
-                  border: "none",
-                  padding: "10px 20px",
-                  borderRadius: "5px",
-                  boxShadow: "0 2px 5px rgba(0,0,0,0.2)",
-                  fontSize: "16px",
+                  marginTop: '15px',
+                  backgroundColor: '#4CAF50',
+                  border: 'none',
+                  padding: '10px 20px',
+                  borderRadius: '5px',
+                  boxShadow: '0 2px 5px rgba(0,0,0,0.2)',
+                  fontSize: '16px',
                 }}
               >
                 Checkout
@@ -166,121 +99,12 @@ const Cart = () => {
           </Col>
         </Row>
       </Container>
-      {/* Checkout Form Modal */}
-      <Modal show={showModal} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Checkout Form</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Form>
-            <Form.Group controlId="formPincode">
-              <InputGroup>
-                <Form.Control
-                  type="text"
-                  placeholder="Enter Pincode"
-                  value={pincode}
-                  onChange={(e) => setPincode(e.target.value)}
-                  name="pincode"
-                />
-                <Button variant="outline-secondary" onClick={checkAvailability}>
-                  Check Availability
-                </Button>
-              </InputGroup>
-              <Form.Text className="text-muted">{pincodeMessage}</Form.Text>
-              <br />
-              <Form.Label>Name</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Enter your name"
-                value={orderData.name}
-                onChange={(e) =>
-                  setOrderData((prevState) => ({
-                    ...prevState,
-                    name: e.target.value,
-                  }))
-                }
-                name="name"
-              />{" "}
-              {/* added name attribute */}
-            </Form.Group>
-            <Form.Group>
-              <Form.Label>Email</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="Enter your email"
-                value={orderData.email}
-                onChange={(e) =>
-                  setOrderData((prevState) => ({
-                    ...prevState,
-                    email: e.target.value,
-                  }))
-                }
-                name="email"
-              />{" "}
-              {/* added name attribute */}
-            </Form.Group>
-            <Form.Group>
-              <Form.Label>Address</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Enter your address"
-                value={orderData.address}
-                onChange={(e) =>
-                  setOrderData((prevState) => ({
-                    ...prevState,
-                    address: e.target.value,
-                  }))
-                }
-                name="address"
-              />{" "}
-              {/* added name attribute */}
-            </Form.Group>
-            <Form.Group>
-              <Form.Label>Phone No</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Enter your phone no"
-                value={orderData.phoneno}
-                onChange={(e) =>
-                  setOrderData((prevState) => ({
-                    ...prevState,
-                    phoneno: e.target.value,
-                  }))
-                }
-                name="phoneno"
-              />{" "}
-              {/* added name attribute */}
-            </Form.Group>
-            <Form.Group>
-              <Form.Label> Age </Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Enter your age"
-                value={orderData.age}
-                onChange={(e) =>
-                  setOrderData((prevState) => ({
-                    ...prevState,
-                    age: e.target.value,
-                  }))
-                }
-                name="age"
-              />{" "}
-              {/* added name attribute */}
-            </Form.Group>
-            {/* ... [Any other form fields you need] */}
-          </Form>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleSubmitOrder}>
-            {" "}
-            {/* replaced handleClose with handleSubmitOrder */}
-            Confirm Purchase
-          </Button>
-        </Modal.Footer>
-      </Modal>
+      <CheckoutForm
+        show={showModal}
+        handleClose={handleClose}
+        CartItem={CartItem}
+        setCartItem={setCartItem}
+      />
     </section>
   );
 };
