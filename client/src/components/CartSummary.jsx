@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { DataContainer } from "../App";
 import { Button, Card } from "react-bootstrap";
+import { FaMinus } from 'react-icons/fa';
 import "../Styles/cartSummary.css"; 
 
 const CartSummary = ({ onBookNow }) => {
@@ -19,15 +20,18 @@ const CartSummary = ({ onBookNow }) => {
           <p>No items in the cart.</p>
         ) : (
           <ul>
-            {CartItem.map((item) => (
-              <li key={item.id}>
-                {item.productName} x {item.qty} = &#8377;{item.price * item.qty}
+            {CartItem.map((item, index) => (
+              <li key={item.id} className="cart-item">
+                <span className="serial-number">{index + 1}. </span>
+                <span>
+                  {item.productName} x {item.qty} = &#8377;{item.price * item.qty}
+                </span>
                 <Button 
                   variant="danger" 
                   onClick={() => deleteProduct(item)}
-                  style={{ marginLeft: '10px' }}
+                  className="remove-icon-button"
                 >
-                  Remove
+                  <FaMinus className="remove-icon" />
                 </Button>
               </li>
             ))}
@@ -35,8 +39,8 @@ const CartSummary = ({ onBookNow }) => {
         )}
         <h4>Total Price: &#8377;{totalPrice}</h4>
         <Button
-          variant="primary"
           onClick={onBookNow}
+          className="book-now-button"
         >
           Book Now
         </Button>

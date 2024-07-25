@@ -4,74 +4,52 @@
     padding: 20px; /* Space inside the box */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
     background-color: #fff; /* White background */
-    margin-top: 20px; /* Space from the top */
   }
   
-  .cart-summary h4 {
-    margin-top: 20px;
-    font-weight: bold;
-  }
-  
-  .cart-summary ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  .cart-summary ul li {
-    margin-bottom: 10px;
-  }
-
-  /* cartSummary.css */
-.custom-modal .modal-dialog {
-    max-width: 800px; /* Adjust the width as needed */
-  }
-  
-  .form-control {
-    font-weight: bold; /* Make text bold */
-    margin-bottom: 15px; /* Add space after each field */
-  }
-  
-  .form-group {
-    margin-bottom: 20px; /* Add space between form groups */
-  }
-  
-  .input-group {
+  .cart-item {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px; /* Space between items */
   }
   
-  .input-group .form-control {
-    flex: 1;
+  .serial-number {
+    margin-right: 10px; /* Space between serial number and item details */
+    font-weight: bold; /* Bold text */
   }
   
-  .input-group .btn {
-    margin-left: 10px; /* Add space between input and button */
+  .remove-icon-button {
+    background-color: transparent; /* Transparent background */
+    border: none; /* Remove border */
+    padding: 5px; /* Adjust padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
   }
   
-  .modal-body {
-    overflow-y: auto;
+  .remove-icon {
+    font-size: 1.2rem; /* Adjust icon size */
+    color: #dc3545; /* Red color */
   }
   
-  .confirm-button {
-    background-color: #0F3460; /* Blue background */
+  .remove-icon-button:hover .remove-icon {
+    color: #ff0000; /* Brighter red on hover */
+    transform: scale(1.2); /* Slightly increase the size on hover */
+  }
+  
+  .book-now-button {
+    background-color: #0F3460; /* Dark blue background */
     border: none; /* Remove default border */
-    color: white; /* White text */
     padding: 10px 20px; /* Padding */
     font-size: 16px; /* Font size */
     border-radius: 8px; /* Rounded corners */
+    color: #fff; /* White text */
     cursor: pointer; /* Pointer cursor on hover */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    width: 100%; /* Full width button */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Space above the button */
   }
   
-  .confirm-button:hover {
-    background-color: #0F3460; /* Darker blue on hover */
-    transform: translateY(-2px); /* Slight lift on hover */
+  .book-now-button:hover {
+    background-color: #072c54; /* Darker blue on hover */
   }
-  
-  .confirm-button:active {
-    background-color: #0F3460; /* Even darker blue on click */
-    transform: translateY(0); /* Remove lift on click */
-  }
-  
   
