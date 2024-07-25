@@ -1,175 +1,197 @@
-/* HealthPackageList.css */
-
 /* General styling */
 .packages-list {
-    width: 80%; /* Adjust the width to leave 10% margin on both sides */
-    margin: 2rem auto;
-    font-family: Arial, sans-serif;
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #333;
-  }
-  
+  width: 80%; /* Adjust the width to leave 10% margin on both sides */
+  margin: 2rem auto;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 1rem;
+  justify-content: center;
+}
+
+.package-card {
+  position: relative; /* Ensure the card is the relative container */
+  width: 100%; /* Make sure it takes full width in the grid column */
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures the content is spaced properly */
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.package-link {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.package-image-container {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Decrease the height of the image */
+  overflow: hidden;
+}
+
+.package-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover .package-image {
+  transform: scale(1.05);
+}
+
+.package-details {
+  padding: 1rem; /* Increase padding for better spacing */
+  background-color: #fff;
+  text-align: left; /* Align text to the left */
+  flex-grow: 1; /* Ensures the details section grows to fill available space */
+  margin-bottom: 70px; /* Ensure there's space for the price-cart box */
+}
+
+.package-name {
+  font-weight: 500;
+  padding: 0.5rem 0;
+  background-color: #fff;
+  color: #5c6671;
+  text-align: left; /* Align text to the left */
+  white-space: normal; /* Allow text to wrap */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.package-desc {
+  font-size: 14px; /* Increase font size */
+  color: #555;
+  margin-bottom: 15px; /* Increase the margin-bottom to add more space */
+  text-align: left; /* Align the text to the left */
+}
+
+/* Price and Add to Cart box fixed at the bottom */
+.price-cart-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.package-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.add-to-cart-button {
+  background: #007bff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+}
+
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 255, 0.9); /* Increase opacity of the background color */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  padding: 1rem; /* Add padding for better readability */
+}
+
+.package-image-container:hover .hover-overlay {
+  opacity: 1;
+}
+
+.hover-overlay h2 {
+  font-size: 16px; /* Increase font size */
+  margin-bottom: 10px; /* Adjust margin for spacing */
+  color: #ffcc00; /* Change font color */
+}
+
+.hover-overlay ul {
+  padding: 0;
+  list-style: none;
+  font-size: 10px; /* Increase font size */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribute the content evenly */
+}
+
+.hover-overlay li {
+  margin-bottom: 5px; /* Adjust margin for spacing between items */
+  width: 48%; /* Make each list item take 48% of the width */
+  text-align: left; /* Align text to the left */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
   .packages-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
-    gap: 1rem;
-    justify-content: center;
+    grid-template-columns: 1fr; /* 1 card per row on smaller screens */
   }
-  
+
   .package-card {
-    position: relative; /* Ensure the card is the relative container */
-    width: 100%; /* Make sure it takes full width in the grid column */
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Ensures the content is spaced properly */
+    margin-bottom: 1rem; /* Add margin-bottom for spacing between cards */
   }
-  
-  .package-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
-  }
-  
-  .package-link {
-    display: block;
-    text-decoration: none;
-    color: #333;
-  }
-  
+
   .package-image-container {
-    position: relative;
-    width: 100%;
-    height: 200px; /* Decrease the height of the image */
-    overflow: hidden;
+    height: 150px; /* Adjust the height of the image */
   }
-  
-  .package-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .package-card:hover .package-image {
-    transform: scale(1.05);
-  }
-  
+
   .package-details {
-    padding: 1rem; /* Increase padding for better spacing */
-    background-color: #fff;
-    text-align: left; /* Align text to the left */
-    flex-grow: 1; /* Ensures the details section grows to fill available space */
-    margin-bottom: 70px; /* Ensure there's space for the price-cart box */
+    margin-bottom: 60px; /* Adjust space for price-cart box */
   }
-  
-  .package-name {
-    font-weight: 500;
-    padding: 0.5rem 0;
-    background-color: #fff;
-    color: #5c6671;
-    text-align: left; /* Align text to the left */
-    white-space: normal; /* Allow text to wrap */
-    overflow: hidden;
-    text-overflow: ellipsis;
+}
+
+@media (max-width: 992px) {
+  .packages-grid {
+    grid-template-columns: repeat(1, 1fr); /* 2 cards per row on medium screens */
   }
-  
-  .package-desc {
-    font-size: 14px; /* Increase font size */
-    color: #555;
-    margin-bottom: 15px; /* Increase the margin-bottom to add more space */
-    text-align: left; /* Align the text to the left */
-  }
-  
-  /* Price and Add to Cart box fixed at the bottom */
-  .price-cart-box {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    padding: 0.5rem;
-    border-top: 1px solid #e0e0e0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .package-price {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .add-to-cart-button {
-    background: #007bff;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 20px;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s ease;
-  }
-  
-  .add-to-cart-button:hover {
-    background-color: #0056b3;
-  }
-  
-  .hover-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 255, 0.9); /* Increase opacity of the background color */
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-    padding: 1rem; /* Add padding for better readability */
-  }
-  
-  .package-image-container:hover .hover-overlay {
-    opacity: 1;
-  }
-  
-  .hover-overlay h2 {
-    font-size: 16px; /* Increase font size */
-    margin-bottom: 10px; /* Adjust margin for spacing */
-    color: #ffcc00; /* Change font color */
-  }
-  
-  .hover-overlay ul {
-    padding: 0;
-    list-style: none;
-    font-size: 10px; /* Increase font size */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Distribute the content evenly */
-  }
-  
-  .hover-overlay li {
-    margin-bottom: 5px; /* Adjust margin for spacing between items */
-    width: 48%; /* Make each list item take 48% of the width */
-    text-align: left; /* Align text to the left */
-  }
-  
+}
