@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import path, { dirname } from "path";
 import multer from "multer";
+import bodyParser from 'body-parser';
 import { fileURLToPath } from "url";
 import connectDB from "./config/db.js";
 import cors from "cors";
@@ -26,6 +27,8 @@ const app = express();
 
 // Middlewares
 app.use(cors());
+app.use(bodyParser.json({ limit: '10mb' })); // Adjust the limit as needed
+app.use(bodyParser.urlencoded({ limit: '10mb', extended: true })); // Adjust the limit as needed
 app.use(express.json());
 
 //use specific routes

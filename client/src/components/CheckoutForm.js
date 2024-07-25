@@ -1,38 +1,38 @@
-import React, { useState, useEffect } from 'react';
-import { Modal, Button, InputGroup, Form } from 'react-bootstrap';
-import axios from 'axios';
-import { availablePincodes } from '../components/availablePincodes.js';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { Modal, Button, InputGroup, Form } from "react-bootstrap";
+import { availablePincodes } from "../components/availablePincodes.js";
 
 const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
   const [orderData, setOrderData] = useState({
-    pincode: '',
-    name: '',
-    email: '',
-    address: '',
-    phoneno: '',
-    age: '',
+    pincode: "",
+    name: "",
+    email: "",
+    address: "",
+    phoneno: "",
+    age: "",
     noOfPersons: 1,
-    appointmentDate: '',
+    appointmentDate: "",
     beneficiaries: [],
   });
-  const [pincodeMessage, setPincodeMessage] = useState('');
+  const [pincodeMessage, setPincodeMessage] = useState("");
 
   useEffect(() => {
     setOrderData((prevState) => ({
       ...prevState,
       beneficiaries: Array.from({ length: prevState.noOfPersons }, () => ({
-        name: '',
-        age: '',
-        gender: '',
+        name: "",
+        age: "",
+        gender: "",
       })),
     }));
   }, [orderData.noOfPersons]);
 
   const checkAvailability = () => {
     if (availablePincodes.includes(orderData.pincode)) {
-      setPincodeMessage('Service is available in your pincode!');
+      setPincodeMessage("Service is available in your pincode!");
     } else {
-      setPincodeMessage('Sorry, service is not available in your pincode.');
+      setPincodeMessage("Sorry, service is not available in your pincode.");
     }
   };
 
@@ -44,7 +44,7 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
 
   const handleSubmitOrder = async () => {
     if (!availablePincodes.includes(orderData.pincode)) {
-      alert('Service is not available in your pincode.');
+      alert("Service is not available in your pincode.");
       return;
     }
 
@@ -61,7 +61,11 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
       cartItems: CartItem,
     };
 
-    console.log("Order Details: ", orderDetails); // Log the order details
+    console.log("Order Details: ", orderDetails); // Add this line to log order details
+
+    // Log the size of the payload
+    const payloadSize = JSON.stringify(orderDetails).length;
+    console.log(`Payload size: ${payloadSize} bytes`);
 
     try {
       const response = await axios.post(
@@ -71,13 +75,13 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
       if (response.data.success) {
         setCartItem([]);
         handleClose();
-        alert('Order submitted successfully!');
+        alert("Order submitted successfully!");
       } else {
-        alert('Error submitting order. Please try again.');
+        alert("Error submitting order. Please try again.");
       }
     } catch (error) {
-      console.error('Error submitting order:', error);
-      alert('Error submitting order. Please try again.');
+      console.error("Error submitting order:", error);
+      alert("Error submitting order. Please try again.");
     }
   };
 
@@ -87,10 +91,10 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
     for (let i = 0; i < 7; i++) {
       const date = new Date();
       date.setDate(currentDate.getDate() + i);
-      const dateString = date.toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric',
+      const dateString = date.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
       });
       options.push(
         <option key={i} value={dateString}>
@@ -197,7 +201,7 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
                   noOfPersons: newNoOfPersons,
                   beneficiaries: Array.from(
                     { length: newNoOfPersons },
-                    (_, i) => orderData.beneficiaries[i] || { name: '', age: '', gender: '' }
+                    (_, i) => orderData.beneficiaries[i] || { name: "", age: "", gender: "" }
                   ),
                 });
               }}
@@ -233,7 +237,7 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
                   placeholder="Enter name"
                   value={beneficiary.name}
                   onChange={(e) =>
-                    handleBeneficiariesChange(index, 'name', e.target.value)
+                    handleBeneficiariesChange(index, "name", e.target.value)
                   }
                   name={`beneficiaryName${index}`}
                 />
@@ -245,7 +249,7 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
                   placeholder="Enter age"
                   value={beneficiary.age}
                   onChange={(e) =>
-                    handleBeneficiariesChange(index, 'age', e.target.value)
+                    handleBeneficiariesChange(index, "age", e.target.value)
                   }
                   name={`beneficiaryAge${index}`}
                 />
@@ -256,7 +260,7 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
                   as="select"
                   value={beneficiary.gender}
                   onChange={(e) =>
-                    handleBeneficiariesChange(index, 'gender', e.target.value)
+                    handleBeneficiariesChange(index, "gender", e.target.value)
                   }
                   name={`beneficiaryGender${index}`}
                 >
@@ -275,7 +279,7 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
           Close
         </Button>
         <Button variant="primary" onClick={handleSubmitOrder}>
-          Book Now
+          Confirm Purchase
         </Button>
       </Modal.Footer>
     </Modal>
