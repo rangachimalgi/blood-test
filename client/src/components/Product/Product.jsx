@@ -3,10 +3,9 @@ import { Col } from "react-bootstrap";
 import "./product.css";
 import { useNavigate } from "react-router-dom";
 import { DataContainer } from "../../App";
-import { toast } from "react-toastify";
 import CheckoutForm from "../CheckoutForm.js";
 
-const Product = ({ title, productItem, addToCart, showImage = true, desc, enableHoverEffect }) => {
+const Product = ({ title, productItem, addToCart, showImage = true, desc, enableHoverEffect, handleAddToCart }) => {
   const { setSelectedProduct } = useContext(DataContainer);
   const router = useNavigate();
   const [count, setCount] = useState(0);
@@ -22,11 +21,6 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
       JSON.stringify(productItem)
     );
     router(`/shop/${productItem.id}`);
-  };
-
-  const handelAdd = (productItem) => {
-    addToCart(productItem);
-    toast.success("Product has been added to cart!");
   };
 
   return (
@@ -61,7 +55,7 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
           </div>
         )}
       </div>
-      {desc&& <p className="product-description">{desc}</p>}
+      {desc && <p className="product-description">{desc}</p>}
       <div className="product-like">
         <label>{count}</label> <br />
         <ion-icon name="heart-outline" onClick={increment}></ion-icon>
@@ -74,7 +68,7 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
             aria-label="Add"
             type="submit"
             className="add"
-            onClick={() => handelAdd(productItem)}
+            onClick={() => handleAddToCart(productItem)}
           >
             <ion-icon name="add"></ion-icon>
           </button>
