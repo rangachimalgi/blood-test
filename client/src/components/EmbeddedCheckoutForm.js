@@ -104,6 +104,7 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
     <Container className="embedded-checkout-form">
       <Row>
         <Col md={12}>
+        <h3 className="form-heading">Booking Form</h3>
           <Form>
             <Form.Group controlId="formPincode">
               <InputGroup>
@@ -115,6 +116,7 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                     setOrderData({ ...orderData, pincode: e.target.value })
                   }
                   name="pincode"
+                  className="form-control"
                 />
                 <Button variant="outline-secondary" onClick={checkAvailability}>
                   Check Availability
@@ -123,7 +125,7 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
               <Form.Text className="text-muted">{pincodeMessage}</Form.Text>
             </Form.Group>
             <Form.Group controlId="formName">
-              <Form.Label>Name</Form.Label>
+              <Form.Label>Name :</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter your name"
@@ -132,6 +134,7 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                   setOrderData({ ...orderData, name: e.target.value })
                 }
                 name="name"
+                className="form-control"
               />
             </Form.Group>
             <Form.Group controlId="formEmail">
@@ -144,6 +147,7 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                   setOrderData({ ...orderData, email: e.target.value })
                 }
                 name="email"
+                className="form-control"
               />
             </Form.Group>
             <Form.Group controlId="formAddress">
@@ -156,6 +160,7 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                   setOrderData({ ...orderData, address: e.target.value })
                 }
                 name="address"
+                className="form-control"
               />
             </Form.Group>
             <Form.Group controlId="formPhoneNo">
@@ -168,6 +173,7 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                   setOrderData({ ...orderData, phoneno: e.target.value })
                 }
                 name="phoneno"
+                className="form-control"
               />
             </Form.Group>
             <Form.Group controlId="formAge">
@@ -180,6 +186,7 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                   setOrderData({ ...orderData, age: e.target.value })
                 }
                 name="age"
+                className="form-control"
               />
             </Form.Group>
             <Form.Group controlId="formNoOfPersons">
@@ -199,6 +206,7 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                   });
                 }}
                 name="noOfPersons"
+                className="form-control"
               >
                 {[...Array(10).keys()].map((num) => (
                   <option key={num + 1} value={num + 1}>
@@ -216,6 +224,7 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                   setOrderData({ ...orderData, appointmentDate: e.target.value })
                 }
                 name="appointmentDate"
+                className="form-control"
               >
                 {generateDateOptions()}
               </Form.Control>
@@ -233,6 +242,7 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                       handleBeneficiariesChange(index, 'name', e.target.value)
                     }
                     name={`beneficiaryName${index}`}
+                    className="form-control"
                   />
                 </Form.Group>
                 <Form.Group controlId={`formBeneficiaryAge${index}`}>
@@ -245,6 +255,7 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                       handleBeneficiariesChange(index, 'age', e.target.value)
                     }
                     name={`beneficiaryAge${index}`}
+                    className="form-control"
                   />
                 </Form.Group>
                 <Form.Group controlId={`formBeneficiaryGender${index}`}>
@@ -256,6 +267,7 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                       handleBeneficiariesChange(index, 'gender', e.target.value)
                     }
                     name={`beneficiaryGender${index}`}
+                    className="form-control"
                   >
                     <option value="">Select Gender</option>
                     <option value="Male">Male</option>
@@ -265,8 +277,8 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                 </Form.Group>
               </div>
             ))}
-            <Button variant="primary" onClick={handleSubmitOrder}>
-              Confirm Purchase
+            <Button variant="primary" onClick={handleSubmitOrder} className="confirm-button">
+              Book Now
             </Button>
           </Form>
         </Col>

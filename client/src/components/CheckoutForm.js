@@ -275,7 +275,7 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
           Close
         </Button>
         <Button variant="primary" onClick={handleSubmitOrder}>
-          Confirm Purchase
+          Book Now
         </Button>
       </Modal.Footer>
     </Modal>

@@ -98,7 +98,7 @@ const ProductDetails = () => {
                   </Col>
                 </Row>
               </section>
-
+              
               {/* Included Tests section */}
               {selectedProduct?.includedTests &&
                 selectedProduct.includedTests.length > 0 && (
@@ -180,10 +180,10 @@ const ProductDetails = () => {
                 )}
               </section>
 
-              <section className="related-products">
+              {/* <section className="related-products">
                 <h3>You might also like</h3>
                 <ShopList productItems={relatedProducts} addToCart={addToCart} />
-              </section>
+              </section> */}
             </div>
           </Col>
           <Col md={4}>
