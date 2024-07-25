@@ -76,3 +76,24 @@
 .category-title:hover {
   color: #000000; /* Change this to any color you desire */
 }
+
+.product-box, .checkout-box {
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Space inside the box */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  background-color: #fff; /* White background */
+  margin-bottom: 20px; /* Space between boxes */
+}
+
+.embedded-checkout-form {
+  margin-top: 20px; /* Adjust this value as needed */
+  width: 100%; /* Ensure the form takes up the full width of its container */
+}
+
+.product-page .form-container {
+  display: flex;
+  justify-content: flex-end; /* Align the form to the right */
+  padding-right: 0; /* Remove any padding on the right */
+}
+

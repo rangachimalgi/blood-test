@@ -4,6 +4,7 @@ import "./product.css";
 import { useNavigate } from "react-router-dom";
 import { DataContainer } from "../../App";
 import { toast } from "react-toastify";
+import CheckoutForm from "../CheckoutForm.js";
 
 const Product = ({ title, productItem, addToCart, showImage = true, desc, enableHoverEffect }) => {
   const { setSelectedProduct } = useContext(DataContainer);
