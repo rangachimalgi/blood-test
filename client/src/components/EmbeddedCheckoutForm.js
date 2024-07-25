@@ -214,6 +214,9 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                   </option>
                 ))}
               </Form.Control>
+              <Form.Text className="text-warning">
+                 Note : The same set of tests/packages will be added for all persons.
+              </Form.Text>
             </Form.Group>
             <Form.Group controlId="formAppointmentDate">
               <Form.Label>Appointment Date</Form.Label>

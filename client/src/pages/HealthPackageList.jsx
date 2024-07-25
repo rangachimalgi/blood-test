@@ -1,17 +1,30 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { healthPackagesArray } from "./HealthPackages";
 import { DataContainer } from "../App";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import CheckoutForm from "../components/CheckoutForm";
 import "../Styles/HealthPackageList.css";
 
 const HealthPackagesList = () => {
   const { addToCart } = useContext(DataContainer);
+  const [showCheckout, setShowCheckout] = useState(false);
+  const [selectedPackage, setSelectedPackage] = useState(null);
 
   const handleAddToCart = (pkg) => {
     addToCart(pkg);
     toast.success("Product has been added to cart!");
+  };
+
+  const handleBookNow = (pkg) => {
+    setSelectedPackage(pkg);
+    setShowCheckout(true);
+  };
+
+  const handleCloseCheckout = () => {
+    setShowCheckout(false);
+    setSelectedPackage(null);
   };
 
   return (
@@ -45,15 +58,23 @@ const HealthPackagesList = () => {
             <div className="price-cart-box">
               <div className="package-price">&#8377;{pkg.price}</div>
               <button
-                className="add-to-cart-button"
-                onClick={() => handleAddToCart(pkg)}
+                className="book-now-button"
+                onClick={() => handleBookNow(pkg)}
               >
-                <ion-icon name="add"></ion-icon>
+                Book Now
               </button>
             </div>
           </div>
         ))}
       </div>
+      {showCheckout && (
+        <CheckoutForm
+          show={showCheckout}
+          handleClose={handleCloseCheckout}
+          CartItem={selectedPackage ? [selectedPackage] : []}
+          setCartItem={() => {}}
+        />
+      )}
     </div>
   );
 };

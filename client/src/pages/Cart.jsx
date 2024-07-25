@@ -93,7 +93,7 @@ const Cart = () => {
                   fontSize: '16px',
                 }}
               >
-                Checkout
+                Book Now
               </Button>
             </div>
           </Col>
