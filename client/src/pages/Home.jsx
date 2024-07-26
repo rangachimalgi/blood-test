@@ -30,12 +30,12 @@ const Home = () => {
       <Wrapper />
       {/* <HealthConcernsSection title="Recommended checkups for men" bgColor="#f6f9fc" productItems={checkupsMen} addToCart={addToCart} />
       <HealthConcernsSection title="Recommended checkups for women" bgColor="#f6f9fc" productItems={checkupsWomen} addToCart={addToCart} /> */}
-      <HealthConcernsSection
+      {/* <HealthConcernsSection
         title="Browse by Health Concerns"
         bgColor="#f6f9fc"
         productItems={healthConcerns}
         addToCart={addToCart}
-      />
+      /> */}
       <Section
         id="popular-packages"
         title="Popular Packages"

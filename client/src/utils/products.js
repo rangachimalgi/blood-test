@@ -137,7 +137,7 @@ export const popularTests = [
       "This test is merely done to measure the level of Thyroid Stimulating Hormone quickly. This is one specific kind of pituitary hormone that stimulates the thyroid gland. This test is also necessary for everyone as thyroid disorders are also known for turning incurable if not detected or treated on time. The prime objective of this test is to determine that the thyroid gland is hyperactive or underactive. If you are having any kind of thyroid disorders, then your doctor may suggest you to go for a test. If the thyroid gland starts to produce huge amount of Thyroid Stimulating Hormone, then a specific health condition starts to occur that is known as hypothyroidism. No specific preparations are required for this test. You just need to follow the instructions of your doctor in a proper manner. The thyroid gland functionality remains different in every person, which impacts the test results. Besides, the test results may also vary depending upon age, gender or health condition.",
   },
   {
-    id: "26",
+    id: "04",
     productName: "ERYTHROCYTE SEDIMENTATION RATE (ESR)",
     imgUrl: bloodTest01,
     category: "sofa",
@@ -148,7 +148,7 @@ export const popularTests = [
       "An erythrocyte sedimentation rate (ESR) is a type of blood test that measures how quickly erythrocytes (red blood cells) settle at the bottom of a test tube that contains a blood sample. Normally, red blood cells settle relatively slowly. A faster-than-normal rate may indicate inflammation in the body.",
   },
   {
-    id: "04",
+    id: "05",
     productName: "FREE THYROXINE (FT4)",
     imgUrl: bloodTest01,
     category: "sofa",
@@ -303,7 +303,7 @@ export const discoutProducts = [
     avgRating: 4.7,
   },
   {
-    id: "01",
+    id: "03",
     productName: "Male Advanced Health Package (105 Tests)",
     includedTests: [
       {
@@ -332,7 +332,7 @@ export const discoutProducts = [
     avgRating: 4.5,
   },
   {
-    id: "01",
+    id: "04",
     productName: "Female Senior Citizen Health Package (108 Tests)",
     includedTests: [
       {
@@ -361,7 +361,7 @@ export const discoutProducts = [
     avgRating: 4.5,
   },
   {
-    id: "01",
+    id: "05",
     productName: "Male Senior Citizen Health Package (108 Tests)",
     includedTests: [
       {
@@ -390,7 +390,7 @@ export const discoutProducts = [
     avgRating: 4.5,
   },
   {
-    id: "01",
+    id: "06",
     productName: "General Health Package (111)",
     includedTests: [
       {

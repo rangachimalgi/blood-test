@@ -3,9 +3,9 @@ import { Col } from "react-bootstrap";
 import "./product.css";
 import { useNavigate } from "react-router-dom";
 import { DataContainer } from "../../App";
-import CheckoutForm from "../CheckoutForm.js";
+import { toast } from "react-toastify";
 
-const Product = ({ title, productItem, addToCart, showImage = true, desc, enableHoverEffect, handleAddToCart }) => {
+const Product = ({ title, productItem, addToCart, showImage = true, desc, enableHoverEffect }) => {
   const { setSelectedProduct } = useContext(DataContainer);
   const router = useNavigate();
   const [count, setCount] = useState(0);
@@ -14,13 +14,18 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
     setCount(count + 1);
   };
 
-  const handelClick = () => {
+  const handleClick = () => {
     setSelectedProduct(productItem);
     localStorage.setItem(
       `selectedProduct-${productItem.id}`,
       JSON.stringify(productItem)
     );
     router(`/shop/${productItem.id}`);
+  };
+
+  const handleAddToCart = () => {
+    addToCart(productItem);
+    toast.success("Product has been added to cart!");
   };
 
   return (
@@ -38,7 +43,7 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
         {showImage && (
           <img
             loading="lazy"
-            onClick={handelClick}
+            onClick={handleClick}
             src={productItem.imgUrl}
             alt={productItem.productName}
             className="product-image"
@@ -61,14 +66,14 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
         <ion-icon name="heart-outline" onClick={increment}></ion-icon>
       </div>
       <div className="product-details">
-        <h3 onClick={handelClick}>{productItem.productName}</h3>
+        <h3 onClick={handleClick}>{productItem.productName}</h3>
         <div className="price">
           <h4>&#8377;{productItem.price}</h4>
           <button
             aria-label="Add"
             type="submit"
             className="add"
-            onClick={() => handleAddToCart(productItem)}
+            onClick={handleAddToCart}
           >
             <ion-icon name="add"></ion-icon>
           </button>
