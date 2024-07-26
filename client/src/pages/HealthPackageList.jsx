@@ -5,6 +5,7 @@ import { DataContainer } from "../App";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import CheckoutForm from "../components/CheckoutForm";
+import Highlight from "../components/Highlight";
 import "../Styles/HealthPackageList.css";
 
 const HealthPackagesList = () => {
@@ -27,6 +28,12 @@ const HealthPackagesList = () => {
     setSelectedPackage(null);
   };
 
+  // Extract the number before the word "Tests"
+  const extractNumberOfTests = (productName) => {
+    const match = productName.match(/(\d+)\s*Tests/i);
+    return match ? match[1] : '';
+  };
+
   return (
     <div className="packages-list">
       <ToastContainer />
@@ -34,6 +41,7 @@ const HealthPackagesList = () => {
       <div className="packages-grid">
         {healthPackagesArray.map((pkg) => (
           <div key={pkg.id} className="package-card">
+            <Highlight number={extractNumberOfTests(pkg.productName)} />
             <Link to={`/health/${pkg.id}`} className="package-link">
               <div className="package-image-container">
                 <img
