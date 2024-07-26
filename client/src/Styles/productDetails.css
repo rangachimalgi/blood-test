@@ -156,3 +156,175 @@
 .text-warning {
   color: red !important; ; 
 }
+.fixed-book-appointment-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0F3460;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  z-index: 1000; /* Ensure it stays on top */
+  display: none; /* Hide the button by default */
+}
+
+.fixed-book-appointment-button:hover {
+  background-color: #072a48;
+}
+
+/* Ensure the button is visible on mobile devices */
+@media (max-width: 768px) {
+  .fixed-book-appointment-button {
+    display: block; /* Show the button on screens with a max width of 768px */
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* General styling for the included tests section */
+.included-tests {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Styling for each category box */
+.category-box {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the category title */
+.category-title {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Styling for the toggle icon in the category title */
+.category-title .toggle-icon {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+/* Styling for the test list */
+.test-list {
+  padding-left: 20px;
+}
+
+/* Styling for each test item */
+.test-item {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #333;
+  position: relative;
+  padding-left: 20px; /* Add space for the bullet */
+}
+
+/* Add custom bullet using ::before pseudo-element */
+.test-item::before {
+  content: '\2022'; /* Unicode for bullet character */
+  color: #000000; /* Bullet color */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem; /* Adjust bullet size */
+}
+
+.test-item h5 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #333;
+}
+
+.test-item:hover {
+  color: #000000; /* Optional: Change color on hover */
+}
+
+/* Styling for the category title on hover */
+.category-title:hover {
+  color: #000000; /* Change this to any color you desire */
+}
+
+.product-box, .checkout-box {
+  border: 2px solid #b6f3fb; /* Blue border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Space inside the box */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  background-color: #fff; /* White background */
+  margin-bottom: 20px; /* Space between boxes */
+}
+
+.embedded-checkout-form {
+  margin-top: 20px; /* Adjust this value as needed */
+  width: 100%; /* Ensure the form takes up the full width of its container */
+}
+
+.product-page .form-container {
+  display: flex;
+  justify-content: flex-end; /* Align the form to the right */
+  padding-right: 0; /* Remove any padding on the right */
+}
+
+.confirm-button {
+  background-color: #0F3460; /* Blue background */
+  border: none; /* Remove default border */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding */
+  font-size: 16px; /* Font size */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.confirm-button:hover {
+  background-color: #0F3460; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.confirm-button:active {
+  background-color: #0F3460; /* Even darker blue on click */
+  transform: translateY(0); /* Remove lift on click */
+}
+
+.form-control {
+  font-weight: bold; /* Make text bold */
+  margin-bottom: 15px; /* Add space after each field */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Add space between form groups */
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-group .form-control {
+  flex: 1;
+}
+
+.input-group .btn {
+  margin-left: 10px; /* Add space between input and button */
+}
+

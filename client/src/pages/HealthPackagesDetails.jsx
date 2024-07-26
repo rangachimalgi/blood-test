@@ -31,6 +31,10 @@ const HealthPackageDetails = () => {
     toast.success("Package has been added to cart!");
   };
 
+  const scrollToCheckoutForm = () => {
+    document.getElementById("checkout-form").scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <Fragment>
       <Banner title={selectedProduct?.productName} />
@@ -119,7 +123,7 @@ const HealthPackageDetails = () => {
             </div>
           </Col>
           <Col md={4}>
-            <div className="checkout-box form-container">
+            <div className="checkout-box form-container" id="checkout-form">
               <EmbeddedCheckoutForm
                 CartItem={selectedProduct ? [selectedProduct] : []}
                 setCartItem={setSelectedProduct}
@@ -128,6 +132,12 @@ const HealthPackageDetails = () => {
           </Col>
         </Row>
       </Container>
+      <button
+        className="fixed-book-appointment-button"
+        onClick={scrollToCheckoutForm}
+      >
+        Book Appointment
+      </button>
     </Fragment>
   );
 };
