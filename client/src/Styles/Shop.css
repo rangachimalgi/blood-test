@@ -1,0 +1,19 @@
+.fixed-view-cart-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0F3460;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    z-index: 1000; /* Ensure it stays on top */
+  }
+  
+  .fixed-view-cart-button:hover {
+    background-color: #072a48;
+  }
+  
