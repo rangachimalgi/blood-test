@@ -201,7 +201,12 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
                   noOfPersons: newNoOfPersons,
                   beneficiaries: Array.from(
                     { length: newNoOfPersons },
-                    (_, i) => orderData.beneficiaries[i] || { name: "", age: "", gender: "" }
+                    (_, i) =>
+                      orderData.beneficiaries[i] || {
+                        name: "",
+                        age: "",
+                        gender: "",
+                      }
                   ),
                 });
               }}
@@ -213,6 +218,10 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
                 </option>
               ))}
             </Form.Control>
+            <Form.Text className="text-warning">
+              Note : The same set of tests/packages will be added for all
+              persons.
+            </Form.Text>
           </Form.Group>
           <Form.Group controlId="formAppointmentDate">
             <Form.Label>Appointment Date</Form.Label>
