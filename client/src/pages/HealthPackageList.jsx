@@ -63,6 +63,7 @@ const HealthPackagesList = () => {
               <div className="package-name">{pkg.productName}</div>
               <div className="package-desc">{pkg.desc}</div>
             </div>
+            
             <div className="price-cart-box">
               <div className="package-price">&#8377;{pkg.price}</div>
               <button
@@ -71,6 +72,13 @@ const HealthPackagesList = () => {
               >
                 Book Now
               </button>
+            </div>
+            <div className="extra-details">
+              <ul>
+                <li><i className="fa fa-check-circle"></i> NABL, CAP, ISO 9001</li>
+                <li><i className="fa fa-check-circle"></i> Free Home Sample Pickup</li>
+                <li><i className="fa fa-check-circle"></i> Online Report Delivery</li>
+              </ul>
             </div>
           </div>
         ))}
