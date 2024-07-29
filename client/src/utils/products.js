@@ -234,7 +234,6 @@ export const checkupsWomen = [
   }
 ]
 
-
 export const discoutProducts = [
   {
     id: "01",
