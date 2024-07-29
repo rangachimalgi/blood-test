@@ -17,6 +17,34 @@
   .fixed-view-cart-button:hover {
     background-color: #072a48;
   }
+
+  /* Shop.css */
+
+/* Shop.css */
+
+/* Button styles specific to ShopList */
+.shop-list-book-button,
+.shop-list-add-to-cart-button {
+  background-color: #0F3460;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.shop-list-book-button:hover,
+.shop-list-add-to-cart-button:hover {
+  background-color: #072a48;
+}
+
+.shop-list-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
   
   /* Ensure the "View Cart" button is visible on mobile devices */
   @media (max-width: 768px) {

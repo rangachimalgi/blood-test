@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { DataContainer } from "../../App";
 import { toast } from "react-toastify";
 
-const Product = ({ title, productItem, addToCart, showImage = true, desc, enableHoverEffect }) => {
+const Product = ({ title, productItem, addToCart, showImage = true, desc, enableHoverEffect, isShopList }) => {
   const { setSelectedProduct } = useContext(DataContainer);
   const router = useNavigate();
   const [count, setCount] = useState(0);
@@ -72,12 +72,28 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
           <button
             aria-label="Add"
             type="submit"
-            className="add"
+            className={`add ${isShopList ? 'shop-list-add-button' : ''}`}
             onClick={handleAddToCart}
           >
             <ion-icon name="add"></ion-icon>
           </button>
         </div>
+        {isShopList && (
+          <div className="shop-list-buttons">
+            <button
+              className="shop-list-book-button"
+              onClick={handleClick}
+            >
+              Book Now
+            </button>
+            <button
+              className="shop-list-add-to-cart-button"
+              onClick={handleAddToCart}
+            >
+              Add To Cart
+            </button>
+          </div>
+        )}
       </div>
     </Col>
   );

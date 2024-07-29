@@ -5,6 +5,7 @@ import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import Product from "./Product/Product";
 import { DataContainer } from "../App";
+import "../Styles/Shop.css";
 
 const ShopList = ({ productItems }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -67,6 +68,7 @@ const ShopList = ({ productItems }) => {
                 addToCart={addToCart}
                 handleAddToCart={handleAddToCart}
                 showImage={false}
+                isShopList={true} // Pass the prop to indicate this is a ShopList
               />
             );
           })}
