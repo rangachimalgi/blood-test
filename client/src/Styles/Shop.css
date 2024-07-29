@@ -52,7 +52,6 @@
   padding: 10px;
   border-bottom: 1px solid #ddd;
   margin-bottom: 10px;
-  margin-top: 40px;
   transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Transition for smooth hover effect */
 }
 
@@ -100,6 +99,29 @@
 /* Specific styles for the Add To Cart button */
 .add-to-cart {
   background-color: #0F3460;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .product-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-info,
+  .product-price {
+    width: 100%;
+    text-align: left;
+  }
+
+  .product-price {
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .product-buttons {
+    margin-left: 0; /* Remove left margin on mobile */
+  }
 }
   
   /* Ensure the "View Cart" button is visible on mobile devices */
