@@ -45,6 +45,62 @@
   justify-content: space-between;
   margin-top: 10px;
 }
+.product-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Transition for smooth hover effect */
+}
+
+.product-list-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+  background-color: #f9f9f9; /* Optional: Change background color on hover */
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+}
+
+.product-buttons {
+  display: flex;
+  gap: 10px; /* Adjust the gap between buttons */
+  margin-left: 20px; /* Add margin to the left of the buttons to create space between price and buttons */
+}
+
+.product-button {
+  background-color: #0F3460;  /* Match the Cart Summary button background */
+  border: none;  /* Remove border */
+  color: white;  /* White text color */
+  padding: 10px 20px;  /* Padding */
+  border-radius: 5px;  /* Border radius */
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.product-button:hover {
+  background-color: #072a48;  /* Darker shade on hover */
+  color: white;  /* Keep the text color white */
+}
+
+/* Specific styles for the Book Now button */
+.book-now {
+  background-color: #0F3460;
+}
+
+/* Specific styles for the Add To Cart button */
+.add-to-cart {
+  background-color: #0F3460;
+}
   
   /* Ensure the "View Cart" button is visible on mobile devices */
   @media (max-width: 768px) {
