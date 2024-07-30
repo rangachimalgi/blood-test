@@ -80,7 +80,7 @@ const ProductDetails = () => {
                       <span>category: {selectedProduct?.category}</span>
                     </div>
                     <p>{selectedProduct?.shortDesc}</p>
-                    <input
+                    {/* <input
                       className="qty-input"
                       type="number"
                       placeholder="Qty"
@@ -94,7 +94,7 @@ const ProductDetails = () => {
                       onClick={() => handleAdd(selectedProduct, quantity)}
                     >
                       Add To Cart
-                    </button>
+                    </button> */}
                   </Col>
                 </Row>
               </section>
