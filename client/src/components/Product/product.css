@@ -1,12 +1,23 @@
+/* Common styles for Product component */
+.product {
+  background: #fff;
+  padding: 10px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
+  margin: 10px;
+  overflow: hidden;
+}
+
 .product img {
   width: 100%;
-  max-height: 150px !important;
+  height: auto;
   object-fit: cover;
   cursor: pointer;
 }
 
 .product-details {
-  padding: 10px; /* Adjust padding inside the card */
+  padding: 10px;
 }
 
 .discount {
@@ -19,17 +30,6 @@
   border-radius: 50px;
   color: #fff;
   margin: 10px;
-}
-
-.product {
-  background: #fff;
-  padding: 10px;
-  position: relative;
-  border-radius: 8px;
-  box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
-  margin: 10px;
-  margin-top: 20px;
-  overflow: hidden;
 }
 
 .product h3 {
@@ -109,6 +109,15 @@ button.add {
 }
 
 /* Specific styles for Popular Packages section */
+#popular-packages .product {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#popular-packages .product:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
 #popular-packages .product-image-container {
   position: relative;
   width: 100%;
@@ -129,7 +138,7 @@ button.add {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 255, 0.8); /* Semi-transparent blue */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
   color: white;
   display: flex;
   flex-direction: column;
@@ -160,7 +169,7 @@ button.add {
   margin-bottom: 5px; /* Optional: Add margin for spacing between items */
 }
 
-.product-description {
+#popular-packages .product-description {
   font-size: 18px; /* Adjust as needed */
   color: #555;
   margin-top: 10px;
@@ -168,3 +177,46 @@ button.add {
   font-weight: 700;
 }
 
+#popular-packages .product-buttons {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the start */
+  align-items: center; /* Center the buttons vertically */
+  margin-top: 10px;
+}
+
+#popular-packages .product-button {
+  background-color: #0F3460;
+  border: none;
+  color: white;
+  padding: 10px 20px; /* Ensure enough padding */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#popular-packages .product-button:hover {
+  background-color: #072a48;
+  color: white;
+}
+
+#popular-packages .extra-details {
+  padding: 10px 15px;
+  background-color: #f9f9f9;
+}
+
+#popular-packages .extra-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+#popular-packages .extra-details li {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+#popular-packages .extra-details i {
+  color: #0F3460;
+  margin-right: 5px;
+}

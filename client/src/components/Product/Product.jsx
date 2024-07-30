@@ -4,11 +4,14 @@ import "./product.css";
 import { useNavigate } from "react-router-dom";
 import { DataContainer } from "../../App";
 import { toast } from "react-toastify";
+import CheckoutForm from "../CheckoutForm";
 
 const Product = ({ title, productItem, addToCart, showImage = true, desc, enableHoverEffect, isShopList }) => {
   const { setSelectedProduct } = useContext(DataContainer);
   const router = useNavigate();
   const [count, setCount] = useState(0);
+  const [showCheckout, setShowCheckout] = useState(false);
+  const [selectedPackage, setSelectedPackage] = useState(null);
 
   const increment = () => {
     setCount(count + 1);
@@ -27,6 +30,18 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
     addToCart(productItem);
     toast.success("Product has been added to cart!");
   };
+
+  const handleBookNow = (pkg) => {
+    setSelectedPackage(pkg);
+    setShowCheckout(true);
+  };
+
+  const handleCloseCheckout = () => {
+    setShowCheckout(false);
+    setSelectedPackage(null);
+  };
+
+  const isPopularPackage = title === "Popular Packages";
 
   if (isShopList) {
     return (
@@ -67,7 +82,7 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
         md={4}
         sm={6}
         xs={12}
-        className={`product mtop ${enableHoverEffect ? 'hover-enabled' : ''}`}
+        className={`product mtop ${enableHoverEffect ? 'hover-enabled' : ''} ${isPopularPackage ? 'popular-packages' : ''}`}
       >
         {title === "Big Discount" && (
           <span className="discount">{productItem.discount}% Off</span>
@@ -102,16 +117,45 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
           <h3 onClick={handleClick}>{productItem.productName}</h3>
           <div className="price">
             <h4>&#8377;{productItem.price}</h4>
-            <button
-              aria-label="Add"
-              type="submit"
-              className={`add ${isShopList ? 'shop-list-add-button' : ''}`}
-              onClick={handleAddToCart}
-            >
-              <ion-icon name="add"></ion-icon>
-            </button>
+            {!isPopularPackage && (
+              <button
+                aria-label="Add"
+                type="submit"
+                className="add"
+                onClick={handleAddToCart}
+              >
+                <ion-icon name="add"></ion-icon>
+              </button>
+            )}
           </div>
+          {isPopularPackage && (
+            <>
+              <div className="product-buttons">
+                <button
+                  className="product-button book-now"
+                  onClick={() => handleBookNow(productItem)}
+                >
+                  Book Now
+                </button>
+              </div>
+              <div className="extra-details">
+                <ul>
+                  <li><i className="fa fa-check-circle"></i> NABL, CAP, ISO 9001</li>
+                  <li><i className="fa fa-check-circle"></i> Free Home Sample Pickup</li>
+                  <li><i className="fa fa-check-circle"></i> Online Report Delivery</li>
+                </ul>
+              </div>
+            </>
+          )}
         </div>
+        {showCheckout && (
+          <CheckoutForm
+            show={showCheckout}
+            handleClose={handleCloseCheckout}
+            CartItem={selectedPackage ? [selectedPackage] : []}
+            setCartItem={() => {}}
+          />
+        )}
       </Col>
     );
   }

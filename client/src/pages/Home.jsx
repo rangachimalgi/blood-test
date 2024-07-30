@@ -44,6 +44,7 @@ const Home = () => {
         addToCart={addToCart}
       />
       <Section
+        id="popular-tests"
         title="Popular Tests"
         bgColor="#f6f9fc"
         productItems={popularTests}
