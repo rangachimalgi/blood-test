@@ -1,24 +1,33 @@
 .fixed-view-cart-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #0F3460;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    font-size: 16px;
-    z-index: 1000; /* Ensure it stays on top */
-    display: none; /* Hide the button by default */
-  }
-  
-  .fixed-view-cart-button:hover {
-    background-color: #072a48;
-  }
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #8d704b; /* New color for the button */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  z-index: 1000; /* Ensure it stays on top */
+  display: none; /* Hide the button by default */
+}
 
-  /* Shop.css */
+.fixed-view-cart-button:hover {
+  background-color: #000000; /* Darker shade on hover */
+}
+
+/* Ensure the "View Cart" button is visible on mobile devices */
+@media (max-width: 768px) {
+  .fixed-view-cart-button {
+      display: block; /* Show the button on screens with a max width of 768px */
+      bottom: 10px;
+      right: 10px;
+      width: 350px;
+      font-size: 14px;
+  }
+}
 
 /* Shop.css */
 
@@ -45,6 +54,7 @@
   justify-content: space-between;
   margin-top: 10px;
 }
+
 .product-list-item {
   display: flex;
   justify-content: space-between;
@@ -104,34 +114,22 @@
 /* Mobile view adjustments */
 @media (max-width: 768px) {
   .product-list-item {
-    flex-direction: column;
-    align-items: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
   }
 
   .product-info,
   .product-price {
-    width: 100%;
-    text-align: left;
+      width: 100%;
+      text-align: left;
   }
 
   .product-price {
-    justify-content: space-between;
-    margin-top: 10px;
+      justify-content: space-between;
+      margin-top: 10px;
   }
 
   .product-buttons {
-    margin-left: 0; /* Remove left margin on mobile */
+      margin-left: 0; /* Remove left margin on mobile */
   }
 }
-  
-  /* Ensure the "View Cart" button is visible on mobile devices */
-  @media (max-width: 768px) {
-    .fixed-view-cart-button {
-      display: block; /* Show the button on screens with a max width of 768px */
-      bottom: 10px;
-      right: 10px;
-      padding: 8px 16px;
-      font-size: 14px;
-    }
-  }
-  
