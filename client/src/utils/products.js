@@ -390,7 +390,7 @@ export const discoutProducts = [
   },
   {
     id: "06",
-    productName: "General Health Package (111)",
+    productName: "General Health Package (111 Tests)",
     includedTests: [
       {
         categoryName: "Thyroid Profile",

@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { DataContainer } from "../../App";
 import { toast } from "react-toastify";
 import CheckoutForm from "../CheckoutForm";
+import Highlight from "../../components/Highlight"; // Import Highlight component
 
 const Product = ({ title, productItem, addToCart, showImage = true, desc, enableHoverEffect, isShopList }) => {
   const { setSelectedProduct } = useContext(DataContainer);
@@ -57,6 +58,11 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
   const handleCloseCheckout = () => {
     setShowCheckout(false);
     setSelectedPackage(null);
+  };
+
+  const extractNumberOfTests = (productName) => {
+    const match = productName.match(/\((\d+)\s*Tests\)/i);
+    return match ? match[1] : '';
   };
 
   const isPopularPackage = title === "Popular Packages";
@@ -128,6 +134,9 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
           )}
         </div>
         {desc && <p className="product-description">{desc}</p>}
+        {isPopularPackage && (
+          <Highlight number={extractNumberOfTests(productItem.productName)} />
+        )}
         <div className="product-like">
           <label>{count}</label> <br />
           <ion-icon name="heart-outline" onClick={increment}></ion-icon>
