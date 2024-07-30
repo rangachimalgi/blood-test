@@ -42,6 +42,7 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
   };
 
   const isPopularPackage = title === "Popular Packages";
+  const isPopularTest = title === "Popular Tests";
 
   if (isShopList) {
     return (
@@ -121,10 +122,10 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
               <button
                 aria-label="Add"
                 type="submit"
-                className="add"
+                className={`add ${isPopularTest ? 'add-to-cart-full' : ''}`}
                 onClick={handleAddToCart}
               >
-                <ion-icon name="add"></ion-icon>
+                {isPopularTest ? 'Add to Cart' : <ion-icon name="add"></ion-icon>}
               </button>
             )}
           </div>
