@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { Col } from "react-bootstrap";
 import "./product.css";
 import { useNavigate } from "react-router-dom";
@@ -12,6 +12,18 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
   const [count, setCount] = useState(0);
   const [showCheckout, setShowCheckout] = useState(false);
   const [selectedPackage, setSelectedPackage] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const increment = () => {
     setCount(count + 1);
@@ -29,6 +41,12 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
   const handleAddToCart = () => {
     addToCart(productItem);
     toast.success("Product has been added to cart!");
+
+    if (isMobile && title === "Popular Tests") {
+      setTimeout(() => {
+        router('/cart');
+      }, 1000); // Delay to allow the toast message to be seen
+    }
   };
 
   const handleBookNow = (pkg) => {

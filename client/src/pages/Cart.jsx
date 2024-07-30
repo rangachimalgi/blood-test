@@ -1,7 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { DataContainer } from '../App';
 import { Col, Container, Row, Button } from 'react-bootstrap';
 import CheckoutForm from '../components/CheckoutForm.js';
+
 const Cart = () => {
   const [showModal, setShowModal] = useState(false);
   const { CartItem, setCartItem, addToCart, decreaseQty, deleteProduct } =
@@ -10,6 +12,8 @@ const Cart = () => {
     (price, item) => price + item.qty * item.price,
     0
   );
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,6 +25,10 @@ const Cart = () => {
 
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
+
+  const handleAddMoreTests = () => {
+    navigate('/shop');
+  };
 
   return (
     <section className="cart-items">
@@ -77,7 +85,7 @@ const Cart = () => {
           <Col md={4}>
             <div className="cart-total">
               <h2>Cart Summary</h2>
-              <div className=" d_flex">
+              <div className="d_flex">
                 <h4>Total Price :</h4>
                 <h3>{`\u20B9${totalPrice}.00`}</h3>
               </div>
@@ -94,6 +102,21 @@ const Cart = () => {
                 }}
               >
                 Book Now
+              </Button>
+              <Button
+                onClick={handleAddMoreTests}
+                style={{
+                  marginTop: '15px',
+                  backgroundColor: '#0F3460',
+                  border: 'none',
+                  padding: '10px 20px',
+                  borderRadius: '5px',
+                  boxShadow: '0 2px 5px rgba(0,0,0,0.2)',
+                  fontSize: '16px',
+                  marginLeft: '10px'
+                }}
+              >
+                Add More Tests
               </Button>
             </div>
           </Col>
