@@ -1,4 +1,7 @@
-import { Fragment, useContext, useEffect } from "react";
+import React, { Fragment, useContext, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import Wrapper from "../components/wrapper/Wrapper";
 import Section from "../components/Section";
 import {
@@ -15,6 +18,7 @@ import HealthConcernsSection from "../components/HealthConcernsSection.jsx";
 
 const Home = () => {
   const { addToCart } = useContext(DataContainer);
+  const navigate = useNavigate();
   const newArrivalData = products.filter(
     (item) => item.category === "mobile" || item.category === "wireless"
   );
@@ -24,31 +28,57 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  // Unique toast ID
+  const toastId = useRef(null);
+
+  // Custom toast content with a button
+  const CustomToastWithLink = ({ closeToast }) => (
+    <div>
+      <button onClick={() => {
+        navigate('/cart');
+        toast.dismiss(toastId.current); // Dismiss the toast
+      }}>
+        Go to Cart
+      </button>
+    </div>
+  );
+
+  // Updated addToCart function
+  const handleAddToCart = (item) => {
+    addToCart(item);
+    if (!toast.isActive(toastId.current)) {
+      toastId.current = toast.success(<CustomToastWithLink />, {
+        autoClose: false // Disable the timer for this toast
+      });
+    }
+  };
+
   return (
     <Fragment>
+      <ToastContainer />
       <SliderHome />
       <Wrapper />
-      {/* <HealthConcernsSection title="Recommended checkups for men" bgColor="#f6f9fc" productItems={checkupsMen} addToCart={addToCart} />
-      <HealthConcernsSection title="Recommended checkups for women" bgColor="#f6f9fc" productItems={checkupsWomen} addToCart={addToCart} /> */}
+      {/* <HealthConcernsSection title="Recommended checkups for men" bgColor="#f6f9fc" productItems={checkupsMen} addToCart={handleAddToCart} />
+      <HealthConcernsSection title="Recommended checkups for women" bgColor="#f6f9fc" productItems={checkupsWomen} addToCart={handleAddToCart} /> */}
       {/* <HealthConcernsSection
         title="Browse by Health Concerns"
         bgColor="#f6f9fc"
         productItems={healthConcerns}
-        addToCart={addToCart}
+        addToCart={handleAddToCart}
       /> */}
       <Section
         id="popular-packages"
         title="Popular Packages"
         bgColor="#f6f9fc"
         productItems={discoutProducts}
-        addToCart={addToCart}
+        addToCart={handleAddToCart}
       />
       <Section
         id="popular-tests"
         title="Popular Tests"
         bgColor="#f6f9fc"
         productItems={popularTests}
-        addToCart={addToCart}
+        addToCart={handleAddToCart}
       />
     </Fragment>
   );
