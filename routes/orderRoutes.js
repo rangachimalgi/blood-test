@@ -13,11 +13,13 @@ router.post("/", async (req, res) => {
     age, 
     noOfPersons, 
     appointmentDate, 
+    tests,
     beneficiaries, 
     cartItems 
   } = req.body;
 
   console.log("Received Order Data: ", req.body); // Log received data
+  console.log("Received beneficiaries: ", beneficiaries);
 
   const order = new Order({
     pincode,
@@ -28,6 +30,7 @@ router.post("/", async (req, res) => {
     age,
     noOfPersons,
     appointmentDate,
+    tests,
     beneficiaries,
     cartItems
   });

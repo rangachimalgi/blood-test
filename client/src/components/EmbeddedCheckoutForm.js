@@ -1,38 +1,41 @@
-import React, { useState, useEffect } from 'react';
-import { Button, InputGroup, Form, Container, Row, Col } from 'react-bootstrap';
-import axios from 'axios';
-import { availablePincodes } from '../components/availablePincodes.js';
+import React, { useState, useEffect } from "react";
+import { Button, InputGroup, Form, Container, Row, Col } from "react-bootstrap";
+import axios from "axios";
+import { availablePincodes } from "../components/availablePincodes.js";
 
 const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
   const [orderData, setOrderData] = useState({
-    pincode: '',
-    name: '',
-    email: '',
-    address: '',
-    phoneno: '',
-    age: '',
+    pincode: "",
+    name: "",
+    email: "",
+    address: "",
+    phoneno: "",
+    age: "",
     noOfPersons: 1,
-    appointmentDate: '',
-    beneficiaries: [],
+    appointmentDate: "",
+    beneficiaries: [
+      { name: "", age: "", gender: "" }, // Keeping the beneficiary details
+    ],
+    tests: [], // Separate tests array for the order
   });
-  const [pincodeMessage, setPincodeMessage] = useState('');
+  const [pincodeMessage, setPincodeMessage] = useState("");
 
   useEffect(() => {
     setOrderData((prevState) => ({
       ...prevState,
       beneficiaries: Array.from({ length: prevState.noOfPersons }, () => ({
-        name: '',
-        age: '',
-        gender: '',
+        name: "",
+        age: "",
+        gender: "",
       })),
     }));
   }, [orderData.noOfPersons]);
 
   const checkAvailability = () => {
     if (availablePincodes.includes(orderData.pincode)) {
-      setPincodeMessage('Service is available in your pincode!');
+      setPincodeMessage("Service is available in your pincode!");
     } else {
-      setPincodeMessage('Sorry, service is not available in your pincode.');
+      setPincodeMessage("Sorry, service is not available in your pincode.");
     }
   };
 
@@ -42,11 +45,23 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
     setOrderData({ ...orderData, beneficiaries: newBeneficiaries });
   };
 
-  const handleSubmitOrder = async () => {
-    if (!availablePincodes.includes(orderData.pincode)) {
-      alert('Service is not available in your pincode.');
-      return;
+  const handleTestChange = (test, isChecked) => {
+    let updatedTests = [...orderData.tests];
+    if (isChecked) {
+      if (!updatedTests.includes(test)) {
+        updatedTests.push(test);
+      }
+    } else {
+      updatedTests = updatedTests.filter((t) => t !== test);
     }
+    setOrderData({ ...orderData, tests: updatedTests });
+
+    // Log to verify the update
+    console.log("Updated Tests Array: ", updatedTests);
+  };
+
+  const handleSubmitOrder = async () => {
+    console.log("Order Data before submission:", orderData);
 
     const orderDetails = {
       pincode: orderData.pincode,
@@ -57,11 +72,14 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
       age: orderData.age,
       noOfPersons: orderData.noOfPersons,
       appointmentDate: orderData.appointmentDate,
-      beneficiaries: orderData.beneficiaries,
+      beneficiaries: orderData.beneficiaries.map((beneficiary) => ({
+        name: beneficiary.name,
+        age: beneficiary.age,
+        gender: beneficiary.gender,
+      })),
+      tests: orderData.tests, // Include tests here
       cartItems: CartItem,
     };
-
-    console.log("Order Details: ", orderDetails); // Log the order details
 
     try {
       const response = await axios.post(
@@ -70,13 +88,13 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
       );
       if (response.data.success) {
         setCartItem([]);
-        alert('Order submitted successfully!');
+        alert("Order submitted successfully!");
       } else {
-        alert('Error submitting order. Please try again.');
+        alert("Error submitting order. Please try again.");
       }
     } catch (error) {
-      console.error('Error submitting order:', error);
-      alert('Error submitting order. Please try again.');
+      console.error("Error submitting order:", error);
+      alert("Error submitting order. Please try again.");
     }
   };
 
@@ -86,10 +104,10 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
     for (let i = 0; i < 7; i++) {
       const date = new Date();
       date.setDate(currentDate.getDate() + i);
-      const dateString = date.toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric',
+      const dateString = date.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
       });
       options.push(
         <option key={i} value={dateString}>
@@ -104,7 +122,7 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
     <Container className="embedded-checkout-form">
       <Row>
         <Col md={12}>
-        <h3 className="form-heading">Booking Form</h3>
+          <h3 className="form-heading">Booking Form</h3>
           <Form>
             <Form.Group controlId="formPincode">
               <InputGroup>
@@ -201,7 +219,12 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                     noOfPersons: newNoOfPersons,
                     beneficiaries: Array.from(
                       { length: newNoOfPersons },
-                      (_, i) => orderData.beneficiaries[i] || { name: '', age: '', gender: '' }
+                      (_, i) =>
+                        orderData.beneficiaries[i] || {
+                          name: "",
+                          age: "",
+                          gender: "",
+                        }
                     ),
                   });
                 }}
@@ -215,7 +238,8 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                 ))}
               </Form.Control>
               <Form.Text className="text-warning">
-                 Note : The same set of tests/packages will be added for all persons.
+                Note : The same set of tests/packages will be added for all
+                persons.
               </Form.Text>
             </Form.Group>
             <Form.Group controlId="formAppointmentDate">
@@ -224,7 +248,10 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                 as="select"
                 value={orderData.appointmentDate}
                 onChange={(e) =>
-                  setOrderData({ ...orderData, appointmentDate: e.target.value })
+                  setOrderData({
+                    ...orderData,
+                    appointmentDate: e.target.value,
+                  })
                 }
                 name="appointmentDate"
                 className="form-control"
@@ -242,7 +269,7 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                     placeholder="Enter name"
                     value={beneficiary.name}
                     onChange={(e) =>
-                      handleBeneficiariesChange(index, 'name', e.target.value)
+                      handleBeneficiariesChange(index, "name", e.target.value)
                     }
                     name={`beneficiaryName${index}`}
                     className="form-control"
@@ -255,7 +282,7 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                     placeholder="Enter age"
                     value={beneficiary.age}
                     onChange={(e) =>
-                      handleBeneficiariesChange(index, 'age', e.target.value)
+                      handleBeneficiariesChange(index, "age", e.target.value)
                     }
                     name={`beneficiaryAge${index}`}
                     className="form-control"
@@ -267,7 +294,7 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                     as="select"
                     value={beneficiary.gender}
                     onChange={(e) =>
-                      handleBeneficiariesChange(index, 'gender', e.target.value)
+                      handleBeneficiariesChange(index, "gender", e.target.value)
                     }
                     name={`beneficiaryGender${index}`}
                     className="form-control"
@@ -280,7 +307,68 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                 </Form.Group>
               </div>
             ))}
-            <Button variant="primary" onClick={handleSubmitOrder} className="confirm-button">
+
+            <h5>Select Additional Tests (Optional)</h5>
+            <Form.Group controlId="formAdditionalTests">
+              <Form.Check
+                type="checkbox"
+                label="Fasting Blood Sugar (FBS) @ Rs. 80 / Person"
+                checked={orderData.tests.includes("Fasting Blood Sugar (FBS)")}
+                onChange={(e) =>
+                  handleTestChange(
+                    "Fasting Blood Sugar (FBS)",
+                    e.target.checked
+                  )
+                }
+              />
+              <Form.Check
+                type="checkbox"
+                label="CRP Test @ Rs. 480 / Person"
+                checked={orderData.tests.includes("CRP Test")}
+                onChange={(e) => handleTestChange("CRP Test", e.target.checked)}
+              />
+              <Form.Check
+                type="checkbox"
+                label="ESR Test @ Rs. 120 / Person"
+                checked={orderData.tests.includes("ESR Test")}
+                onChange={(e) => handleTestChange("ESR Test", e.target.checked)}
+              />
+              <Form.Check
+                type="checkbox"
+                label="Covid Antibody IgG @ Rs. 400 / Person"
+                checked={orderData.tests.includes("Covid Antibody IgG")}
+                onChange={(e) =>
+                  handleTestChange("Covid Antibody IgG", e.target.checked)
+                }
+              />
+              <Form.Check
+                type="checkbox"
+                label="Complete Urine Analysis @ Rs. 510 / Person"
+                checked={orderData.tests.includes("Complete Urine Analysis")}
+                onChange={(e) =>
+                  handleTestChange("Complete Urine Analysis", e.target.checked)
+                }
+              />
+              <Form.Check
+                type="checkbox"
+                label="Troponin - Heart Attack Risk Test (ACTNI) @ Rs. 650 / Person"
+                checked={orderData.tests.includes(
+                  "Troponin - Heart Attack Risk Test (ACTNI)"
+                )}
+                onChange={(e) =>
+                  handleTestChange(
+                    "Troponin - Heart Attack Risk Test (ACTNI)",
+                    e.target.checked
+                  )
+                }
+              />
+            </Form.Group>
+
+            <Button
+              variant="primary"
+              onClick={handleSubmitOrder}
+              className="confirm-button"
+            >
               Book Now
             </Button>
           </Form>

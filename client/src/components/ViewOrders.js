@@ -103,7 +103,7 @@ function ViewOrders() {
               <th>Appointment Date</th>
               <th>Beneficiaries</th>
               <th>Products</th>
-              <th>Upload Report</th>
+              <th>Additional Tests</th> <th>Upload Report</th>
               <th>Status</th>
               <th>Report</th>
               <th>Download Reports</th>
@@ -127,7 +127,8 @@ function ViewOrders() {
                     ? order.beneficiaries.map((beneficiary, index) => (
                         <div key={index}>
                           <p>
-                            Name: {beneficiary.name}, Age: {beneficiary.age}, Gender: {beneficiary.gender}
+                            Name: {beneficiary.name}, Age: {beneficiary.age},
+                            Gender: {beneficiary.gender}
                           </p>
                         </div>
                       ))
@@ -138,6 +139,12 @@ function ViewOrders() {
                     ? order.cartItems.map((item) => item.productName).join(", ")
                     : "No products"}
                 </td>
+                <td>
+                  {order.tests && order.tests.length > 0
+                    ? order.tests.join(", ")
+                    : "No tests selected"}
+                </td>
+
                 <td>
                   <UploadReportForm
                     orderId={order._id}

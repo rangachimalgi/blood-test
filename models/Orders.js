@@ -49,6 +49,10 @@ const orderSchema = new mongoose.Schema({
         required: true,
     },
     beneficiaries: [beneficiarySchema],
+    tests: {
+        type: [String],  // Array of strings for tests selected for the entire order
+        default: [],
+    },
     cartItems: [{
         id: String,
         productName: String,
