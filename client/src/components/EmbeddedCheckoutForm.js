@@ -56,8 +56,6 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
     }
     setOrderData({ ...orderData, tests: updatedTests });
 
-    // Log to verify the update
-    console.log("Updated Tests Array: ", updatedTests);
   };
 
   const handleSubmitOrder = async () => {

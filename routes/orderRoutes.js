@@ -19,7 +19,6 @@ router.post("/", async (req, res) => {
   } = req.body;
 
   console.log("Received Order Data: ", req.body); // Log received data
-  console.log("Received beneficiaries: ", beneficiaries);
 
   const order = new Order({
     pincode,
@@ -35,11 +34,8 @@ router.post("/", async (req, res) => {
     cartItems
   });
 
-  console.log("Order to Save: ", order); // Log order before saving
-
   try {
     const savedOrder = await order.save();
-    console.log("Saved Order: ", savedOrder); // Log saved order
     res.json({
       success: true,
       message: "Order processed successfully",
