@@ -7,6 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import CheckoutForm from "../components/CheckoutForm";
 import Highlight from "../components/Highlight";
 import "../Styles/HealthPackageList.css";
+import logo from "../Images/logo.png"
 
 const HealthPackagesList = () => {
   const { addToCart } = useContext(DataContainer);
@@ -31,7 +32,7 @@ const HealthPackagesList = () => {
   // Extract the number before the word "Tests"
   const extractNumberOfTests = (productName) => {
     const match = productName.match(/(\d+)\s*Tests/i);
-    return match ? match[1] : '';
+    return match ? match[1] : "";
   };
 
   return (
@@ -63,7 +64,7 @@ const HealthPackagesList = () => {
               <div className="package-name">{pkg.productName}</div>
               <div className="package-desc">{pkg.desc}</div>
             </div>
-            
+
             <div className="price-cart-box">
               <div className="package-price">&#8377;{pkg.price}</div>
               <button
@@ -73,12 +74,25 @@ const HealthPackagesList = () => {
                 Book Now
               </button>
             </div>
-            <div className="extra-details">
-              <ul>
-                <li><i className="fa fa-check-circle"></i> NABL, CAP, ISO 9001</li>
-                <li><i className="fa fa-check-circle"></i> Free Home Sample Pickup</li>
-                <li><i className="fa fa-check-circle"></i> Online Report Delivery</li>
-              </ul>
+            <div className="extra-details-with-logo">
+              <div className="logo-container">
+                <img src={logo} alt="Logo" className="package-logo" />
+              </div>
+              <div className="extra-details">
+                <ul>
+                  <li>
+                    <i className="fa fa-check-circle"></i> NABL, CAP, ISO 9001
+                  </li>
+                  <li>
+                    <i className="fa fa-check-circle"></i> Free Home Sample
+                    Pickup
+                  </li>
+                  <li>
+                    <i className="fa fa-check-circle"></i> Online Report
+                    Delivery
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         ))}

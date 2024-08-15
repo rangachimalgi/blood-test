@@ -124,3 +124,34 @@
 .book-now-button:hover {
   background-color: #072a48;
 }
+
+.extra-details-with-logo {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 0;
+}
+
+.logo-container {
+  margin-right: 15px;
+}
+
+.package-logo {
+  width: 100px;  /* Adjust the size of the logo */
+  height: auto;
+}
+
+.extra-details {
+  flex-grow: 1;
+}
+
+.extra-details ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.extra-details li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
