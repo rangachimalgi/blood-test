@@ -14,6 +14,7 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
     noOfPersons: 1,
     appointmentDate: "",
     beneficiaries: [],
+    tests: [], // Separate tests array for the order
   });
   const [pincodeMessage, setPincodeMessage] = useState("");
 
@@ -42,6 +43,18 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
     setOrderData({ ...orderData, beneficiaries: newBeneficiaries });
   };
 
+  const handleTestChange = (test, isChecked) => {
+    let updatedTests = [...orderData.tests];
+    if (isChecked) {
+      if (!updatedTests.includes(test)) {
+        updatedTests.push(test);
+      }
+    } else {
+      updatedTests = updatedTests.filter((t) => t !== test);
+    }
+    setOrderData({ ...orderData, tests: updatedTests });
+  };
+
   const handleSubmitOrder = async () => {
     if (!availablePincodes.includes(orderData.pincode)) {
       alert("Service is not available in your pincode.");
@@ -58,6 +71,7 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
       noOfPersons: orderData.noOfPersons,
       appointmentDate: orderData.appointmentDate,
       beneficiaries: orderData.beneficiaries,
+      tests: orderData.tests, // Include tests here
       cartItems: CartItem,
     };
 
@@ -229,7 +243,10 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
               as="select"
               value={orderData.appointmentDate}
               onChange={(e) =>
-                setOrderData({ ...orderData, appointmentDate: e.target.value })
+                setOrderData({
+                  ...orderData,
+                  appointmentDate: e.target.value,
+                })
               }
               name="appointmentDate"
             >
@@ -281,6 +298,68 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
               </Form.Group>
             </div>
           ))}
+          <h5>Select Additional Tests (Optional)</h5>
+          <Form.Group controlId="formAdditionalTests">
+            <Form.Check
+              type="checkbox"
+              label="Fasting Blood Sugar (FBS) @ Rs. 80 / Person"
+              checked={orderData.tests.includes("Fasting Blood Sugar (FBS)")}
+              onChange={(e) =>
+                handleTestChange(
+                  "Fasting Blood Sugar (FBS)",
+                  e.target.checked
+                )
+              }
+            />
+            <Form.Check
+              type="checkbox"
+              label="CRP Test @ Rs. 480 / Person"
+              checked={orderData.tests.includes("CRP Test")}
+              onChange={(e) =>
+                handleTestChange("CRP Test", e.target.checked)
+              }
+            />
+            <Form.Check
+              type="checkbox"
+              label="ESR Test @ Rs. 120 / Person"
+              checked={orderData.tests.includes("ESR Test")}
+              onChange={(e) =>
+                handleTestChange("ESR Test", e.target.checked)
+              }
+            />
+            <Form.Check
+              type="checkbox"
+              label="Covid Antibody IgG @ Rs. 400 / Person"
+              checked={orderData.tests.includes("Covid Antibody IgG")}
+              onChange={(e) =>
+                handleTestChange("Covid Antibody IgG", e.target.checked)
+              }
+            />
+            <Form.Check
+              type="checkbox"
+              label="Complete Urine Analysis @ Rs. 510 / Person"
+              checked={orderData.tests.includes("Complete Urine Analysis")}
+              onChange={(e) =>
+                handleTestChange(
+                  "Complete Urine Analysis",
+                  e.target.checked
+                )
+              }
+            />
+            <Form.Check
+              type="checkbox"
+              label="Troponin - Heart Attack Risk Test (ACTNI) @ Rs. 650 / Person"
+              checked={orderData.tests.includes(
+                "Troponin - Heart Attack Risk Test (ACTNI)"
+              )}
+              onChange={(e) =>
+                handleTestChange(
+                  "Troponin - Heart Attack Risk Test (ACTNI)",
+                  e.target.checked
+                )
+              }
+            />
+          </Form.Group>
         </Form>
       </Modal.Body>
       <Modal.Footer>
