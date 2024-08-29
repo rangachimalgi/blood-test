@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button, InputGroup, Form, Container, Row, Col } from "react-bootstrap";
 import axios from "axios";
 import { availablePincodes } from "../components/availablePincodes.js";
+import "../Styles/embeddedCheckoutForm.css";
 
 const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
   const [orderData, setOrderData] = useState({
@@ -55,7 +56,6 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
       updatedTests = updatedTests.filter((t) => t !== test);
     }
     setOrderData({ ...orderData, tests: updatedTests });
-
   };
 
   const handleSubmitOrder = async () => {
@@ -227,7 +227,7 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                   });
                 }}
                 name="noOfPersons"
-                className="form-control"
+                className="form-control large-select" // Add custom class here
               >
                 {[...Array(10).keys()].map((num) => (
                   <option key={num + 1} value={num + 1}>
@@ -240,6 +240,7 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                 persons.
               </Form.Text>
             </Form.Group>
+
             <Form.Group controlId="formAppointmentDate">
               <Form.Label>Appointment Date</Form.Label>
               <Form.Control
@@ -252,11 +253,12 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                   })
                 }
                 name="appointmentDate"
-                className="form-control"
+                className="form-control large-select" // Add custom class here
               >
                 {generateDateOptions()}
               </Form.Control>
             </Form.Group>
+
             <h5>Beneficiaries</h5>
             {orderData.beneficiaries.map((beneficiary, index) => (
               <div key={index}>
@@ -295,7 +297,7 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                       handleBeneficiariesChange(index, "gender", e.target.value)
                     }
                     name={`beneficiaryGender${index}`}
-                    className="form-control"
+                    className="form-control large-select" // Add custom class here
                   >
                     <option value="">Select Gender</option>
                     <option value="Male">Male</option>
