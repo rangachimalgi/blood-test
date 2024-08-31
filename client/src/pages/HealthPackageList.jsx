@@ -97,7 +97,7 @@ const HealthPackagesList = () => {
           </div>
         ))}
       </div>
-      {showCheckout && (
+      {showCheckout && selectedPackage && (
         <CheckoutForm
           show={showCheckout}
           handleClose={handleCloseCheckout}
