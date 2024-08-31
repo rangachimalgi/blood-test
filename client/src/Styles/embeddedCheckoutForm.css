@@ -1,5 +1,73 @@
 .large-select {
-    height: 50px; /* Adjust the height as needed */
-    font-size: 16px; /* Optionally adjust the font size */
+  height: auto; /* Ensure it matches the height of other inputs */
+  padding: 10px 12px; /* Ensure padding is consistent with other fields */
+  border-radius: 5px; /* Ensure the border-radius matches */
+  border: 1px solid #ced4da; /* Match the border style */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Match the shadow */
+  background-color: #f8f9fa; /* Match the background */
+}
+
+.form-control::placeholder {
+  font-weight: 300; /* Adjust this value to make it lighter */
+  color: #6c757d; /* Optional: a lighter gray color for the placeholder */
+}
+
+/* Bolden the Form Label */
+.form-label {
+  font-weight: 700; /* Makes the label bolder */
+  color: #333; /* Optional: a darker shade for better contrast */
+}
+
+  .embedded-checkout-form {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-control {
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .large-select {
+    height: 50px;
+    padding: 10px 12px;
+  }
+  
+  .confirm-button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .confirm-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .form-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .text-warning {
+    color: #dc3545 !important;
+  }
+  
+  .text-muted {
+    margin-top: 10px;
+    font-size: 0.875rem;
   }
   
