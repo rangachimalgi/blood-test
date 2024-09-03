@@ -38,17 +38,15 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
     );
     router(`/shop/${productItem.id}`);
   };
-
   const handleAddToCart = () => {
-    addToCart(productItem);
-    toast.success("Product has been added to cart!");
-
+    addToCart(productItem); // Only call the addToCart function passed from the parent
     if (isMobile && title === "Popular Tests") {
       setTimeout(() => {
         router('/cart');
       }, 1000); // Delay to allow the toast message to be seen
     }
   };
+  
 
   const handleBookNow = (pkg) => {
     setSelectedPackage(pkg);

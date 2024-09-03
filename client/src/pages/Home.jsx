@@ -1,7 +1,7 @@
 import React, { Fragment, useContext, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 import Wrapper from "../components/wrapper/Wrapper";
 import Section from "../components/Section";
 import {
@@ -34,10 +34,15 @@ const Home = () => {
   // Custom toast content with a button
   const CustomToastWithLink = ({ closeToast }) => (
     <div>
-      <button onClick={() => {
-        navigate('/cart');
-        toast.dismiss(toastId.current); // Dismiss the toast
-      }}>
+      <button
+        onClick={() => {
+          navigate("/cart");
+          if (toastId.current) {
+            toast.dismiss(toastId.current); // Dismiss the toast
+            toastId.current = null; // Reset toastId
+          }
+        }}
+      >
         Go to Cart
       </button>
     </div>
@@ -48,7 +53,10 @@ const Home = () => {
     addToCart(item);
     if (!toast.isActive(toastId.current)) {
       toastId.current = toast.success(<CustomToastWithLink />, {
-        autoClose: false // Disable the timer for this toast
+        autoClose: false, // Disable the timer for this toast
+        onClose: () => {
+          toastId.current = null; // Reset the toastId after it's closed
+        },
       });
     }
   };
