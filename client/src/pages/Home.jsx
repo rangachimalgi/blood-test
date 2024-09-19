@@ -68,12 +68,12 @@ const Home = () => {
       <Wrapper />
       {/* <HealthConcernsSection title="Recommended checkups for men" bgColor="#f6f9fc" productItems={checkupsMen} addToCart={handleAddToCart} />
       <HealthConcernsSection title="Recommended checkups for women" bgColor="#f6f9fc" productItems={checkupsWomen} addToCart={handleAddToCart} /> */}
-      {/* <HealthConcernsSection
+      <HealthConcernsSection
         title="Browse by Health Concerns"
         bgColor="#f6f9fc"
         productItems={healthConcerns}
         addToCart={handleAddToCart}
-      /> */}
+      />
       <Section
         id="popular-packages"
         title="Popular Packages"
