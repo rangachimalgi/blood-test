@@ -182,7 +182,9 @@ export const healthConcerns = [
   },
   {
     id:"04",
-    imgUrl: fever
+    imgUrl: fever,
+    name: "Fever",
+    packageIds: ["150","151","152"]
   },
   {
     id:"05",

@@ -6972,7 +6972,7 @@ export const healthPackagesArray = [
     type: "package",
     includedTests: [
       {
-        categoryName: "Fever (Includes 28 tests)",
+        categoryName: "Fever (Includes 2 tests)",
         tests: ["Chikungunya - igg rapid test", "Chikungunya - igm rapid test"],
       },
     ],
@@ -13228,7 +13228,9 @@ export const healthPackagesArray = [
       "Infertility (4)",
       "Iron Deficiency (5)",
       "Metabolic (2)",
-      "Renal (1)","Thyroid (3)","Vitamins (2)"
+      "Renal (1)",
+      "Thyroid (3)",
+      "Vitamins (2)",
     ],
     avgRating: 4.5,
   },
@@ -13240,12 +13242,8 @@ export const healthPackagesArray = [
     includedTests: [
       {
         categoryName: "troponin i heart attack risk",
-        tests: [
-          "troponin i heart attack risk",
-         
-        ],
+        tests: ["troponin i heart attack risk"],
       },
-      
     ],
     desc: "Tests Includes troponin i heart attack risk",
     imgUrl: populartest01,
@@ -13273,11 +13271,8 @@ export const healthPackagesArray = [
     includedTests: [
       {
         categoryName: "high sensitivity c-reactive protein (hs-crp)",
-        tests: [
-          "high sensitivity c-reactive protein (hs-crp)",
-        ],
+        tests: ["high sensitivity c-reactive protein (hs-crp)"],
       },
-      
     ],
     desc: "Tests Includes high sensitivity c-reactive protein (hs-crp)",
     imgUrl: populartest01,
@@ -13340,7 +13335,9 @@ export const healthPackagesArray = [
       {
         categoryName: "Diabetes (3)",
         tests: [
-          "Average blood glucose (abg)","Fasting blood sugar(glucose)","Hba1c"
+          "Average blood glucose (abg)",
+          "Fasting blood sugar(glucose)",
+          "Hba1c",
         ],
       },
       {
@@ -13386,7 +13383,12 @@ export const healthPackagesArray = [
       },
     ],
     overlayTitle: "jaanch - diabetic screen",
-    overlayDetails: ["COMPLETE HEMOGRAM (28)","Diabetes (3)","Lipid (10)","Renal (7)"],
+    overlayDetails: [
+      "COMPLETE HEMOGRAM (28)",
+      "Diabetes (3)",
+      "Lipid (10)",
+      "Renal (7)",
+    ],
     avgRating: 4.5,
   },
 
@@ -13397,11 +13399,8 @@ export const healthPackagesArray = [
     includedTests: [
       {
         categoryName: "hba1c",
-        tests: [
-          "hba1c",
-        ],
+        tests: ["hba1c"],
       },
-      
     ],
     desc: "Tests Includes hba1c",
     imgUrl: populartest01,
@@ -13419,6 +13418,264 @@ export const healthPackagesArray = [
     ],
     overlayTitle: "hba1c",
     overlayDetails: ["hba1c"],
+    avgRating: 4.5,
+  },
+
+  {
+    id: "150",
+    productName: "jaanch monsoon fever panel - advanced (40 Tests)",
+    type: "package",
+    includedTests: [
+      {
+        categoryName: "Cardiac Risk Markers (1)",
+        tests: ["C-reactive protein (crp)"],
+      },
+      {
+        categoryName: "COMPLETE HEMOGRAM (28)",
+        tests: [
+          "Basophils - absolute count",
+          "Eosinophils - absolute count",
+          "Lymphocytes - absolute count",
+          "Monocytes - absolute count",
+          "Neutrophils - absolute count",
+          "Basophils",
+          "Eosinophils",
+          "Hemoglobin",
+          "Immature granulocytes(ig)",
+          "Immature granulocyte percentage(ig%)",
+          "Total leucocytes count (wbc)",
+          "Lymphocyte",
+          "Mean corpuscular hemoglobin(mch)",
+          "Mean corp.hemo.conc(mchc)",
+          "Mean corpuscular volume(mcv)",
+          "Monocytes",
+          "Mean platelet volume(mpv)",
+          "Neutrophils",
+          "Nucleated red blood cells",
+          "Nucleated red blood cells %",
+          "Plateletcrit(pct)",
+          "Hematocrit(pcv)",
+          "Platelet distribution width(pdw)",
+          "Platelet to large cell ratio(plcr)",
+          "Platelet count",
+          "Total rbc",
+          "Red cell distribution width (rdw-cv)",
+          "Red cell distribution width - sd(rdw-sd)",
+        ],
+      },
+      {
+        categoryName: "Fever (5)",
+        tests: [
+          "Chikungunya-igm",
+          "Plasmodium falciparum",
+          "Plasmodium vivax",
+          "Typhoid-igg",
+          "Typhoid-igm",
+        ],
+      },
+      {
+        categoryName: "Infection (1)",
+        tests: ["Dengue-igm - elisa"],
+      },
+      {
+        categoryName: "Infectious Diseases (1)",
+        tests: ["Dengue ns1 antigen - elisa"],
+      },
+      {
+        categoryName: "Liver (3)",
+        tests: [
+          "Sgot / sgpt ratio",
+          "Aspartate aminotransferase (sgot )",
+          "Alanine transaminase (sgpt)",
+        ],
+      },
+      {
+        categoryName: "Other Counts (1)",
+        tests: ["Erythrocyte sedimentation rate (esr)"],
+      },
+    ],
+    desc: "Tests Includes Cardiac Risk Markers, Complete Hemogram, Fever, Infection, Infectious Diseases, Liver, Other Counts",
+    imgUrl: populartest01,
+    category: "Basic",
+    price: 650.0,
+    discount: 30,
+    shortDesc: "Sample Type: Blood",
+    description:
+      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+    reviews: [
+      {
+        rating: 4.7,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    overlayTitle: "jaanch monsoon fever panel - advanced",
+    overlayDetails: [
+      "Cardiac Risk Markers (1)",
+      "Complete Hemogram (28)",
+      "Fever (5)",
+      "Infection (1)",
+      "Infectious Diseases (1)",
+      "Liver (3)",
+      "Other Counts (1)",
+    ],
+    avgRating: 4.5,
+  },
+
+  {
+    id: "151",
+    productName: "jaanch monsoon fever mini (34 Tests)",
+    type: "package",
+    includedTests: [
+      {
+        categoryName: "COMPLETE HEMOGRAM (28)",
+        tests: [
+          "Basophils - absolute count",
+          "Eosinophils - absolute count",
+          "Lymphocytes - absolute count",
+          "Monocytes - absolute count",
+          "Neutrophils - absolute count",
+          "Basophils",
+          "Eosinophils",
+          "Hemoglobin",
+          "Immature granulocytes(ig)",
+          "Immature granulocyte percentage(ig%)",
+          "Total leucocytes count (wbc)",
+          "Lymphocyte",
+          "Mean corpuscular hemoglobin(mch)",
+          "Mean corp.hemo.conc(mchc)",
+          "Mean corpuscular volume(mcv)",
+          "Monocytes",
+          "Mean platelet volume(mpv)",
+          "Neutrophils",
+          "Nucleated red blood cells",
+          "Nucleated red blood cells %",
+          "Plateletcrit(pct)",
+          "Hematocrit(pcv)",
+          "Platelet distribution width(pdw)",
+          "Platelet to large cell ratio(plcr)",
+          "Platelet count",
+          "Total rbc",
+          "Red cell distribution width (rdw-cv)",
+          "Red cell distribution width - sd(rdw-sd)",
+        ],
+      },
+      {
+        categoryName: "Fever (6)",
+        tests: [
+          "Plasmodium falciparum",
+          "Plasmodium vivax",
+          "Salmonella paratyphi – a (h)",
+          "Salmonella paratyphi – b (h)","Salmonella typhi – h","Salmonella typhi - o"
+        ],
+      },
+    ],
+    desc: "Tests Includes COMPLETE HEMOGRAM, Fever",
+    imgUrl: populartest01,
+    category: "Basic",
+    price: 650.0,
+    discount: 30,
+    shortDesc: "Sample Type: Blood",
+    description:
+      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+    reviews: [
+      {
+        rating: 4.7,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    overlayTitle: "jaanch monsoon fever mini",
+    overlayDetails: ["COMPLETE HEMOGRAM (28)","Fever (6)"],
+    avgRating: 4.5,
+  },
+
+  {
+    id: "152",
+    productName: "jaanch monsoon fever panel - basic (38 Tests)",
+    type: "package",
+    includedTests: [
+      {
+        categoryName: "Cardiac Risk Markers (1)",
+        tests: [
+          "C-reactive protein (crp)",
+        ],
+      },
+      {
+        categoryName: "COMPLETE HEMOGRAM (28)",
+        tests: [
+          "Basophils - absolute count",
+          "Eosinophils - absolute count",
+          "Lymphocytes - absolute count",
+          "Monocytes - absolute count",
+          "Neutrophils - absolute count",
+          "Basophils",
+          "Eosinophils",
+          "Hemoglobin",
+          "Immature granulocytes(ig)",
+          "Immature granulocyte percentage(ig%)",
+          "Total leucocytes count (wbc)",
+          "Lymphocyte",
+          "Mean corpuscular hemoglobin(mch)",
+          "Mean corp.hemo.conc(mchc)",
+          "Mean corpuscular volume(mcv)",
+          "Monocytes",
+          "Mean platelet volume(mpv)",
+          "Neutrophils",
+          "Nucleated red blood cells",
+          "Nucleated red blood cells %",
+          "Plateletcrit(pct)",
+          "Hematocrit(pcv)",
+          "Platelet distribution width(pdw)",
+          "Platelet to large cell ratio(plcr)",
+          "Platelet count",
+          "Total rbc",
+          "Red cell distribution width (rdw-cv)",
+          "Red cell distribution width - sd(rdw-sd)",
+        ],
+      },
+      {
+        categoryName: "Fever (Includes 4 tests)",
+        tests: [
+          "Plasmodium falciparum",
+          "Plasmodium vivax",
+          "Typhoid-igg",
+          "Typhoid-igm",
+        ],
+      },
+      {
+        categoryName: "Infectious Diseases (Includes 1 tests)",
+        tests: [
+          "Dengue ns1 antigen - elisa",
+        ],
+      },
+      {
+        categoryName: "Liver (Includes 3 tests)",
+        tests: [
+          "Sgot / sgpt ratio","Aspartate aminotransferase (sgot )","Alanine transaminase (sgpt)"
+        ],
+      },
+      {
+        categoryName: "Other Counts (Includes 1 tests)",
+        tests: [
+          "Erythrocyte sedimentation rate (esr)"
+        ],
+      },
+    ],
+    desc: "Tests Includes Cardiac Risk Markers, COMPLETE HEMOGRAM, Fever, Infectious Diseases, Liver, Other Counts",
+    imgUrl: populartest01,
+    category: "Basic",
+    price: 650.0,
+    discount: 30,
+    shortDesc: "Sample Type: Blood",
+    description:
+      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+    reviews: [
+      {
+        rating: 4.7,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    overlayTitle: "jaanch monsoon fever panel - basic",
+    overlayDetails: ["Cardiac Risk Markers(1)","COMPLETE HEMOGRAM (28)","Fever (4)","Infectious Diseases (1)","Liver (3)","Other Counts (1)"],
     avgRating: 4.5,
   },
 
