@@ -13232,4 +13232,194 @@ export const healthPackagesArray = [
     ],
     avgRating: 4.5,
   },
+
+  {
+    id: "146",
+    productName: "troponin i heart attack risk",
+    type: "package",
+    includedTests: [
+      {
+        categoryName: "troponin i heart attack risk",
+        tests: [
+          "troponin i heart attack risk",
+         
+        ],
+      },
+      
+    ],
+    desc: "Tests Includes troponin i heart attack risk",
+    imgUrl: populartest01,
+    category: "Basic",
+    price: 650.0,
+    discount: 30,
+    shortDesc: "Sample Type: Blood",
+    description:
+      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+    reviews: [
+      {
+        rating: 4.7,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    overlayTitle: "troponin i heart attack risk",
+    overlayDetails: ["troponin i heart attack risk"],
+    avgRating: 4.5,
+  },
+
+  {
+    id: "147",
+    productName: "high sensitivity c-reactive protein (hs-crp)",
+    type: "package",
+    includedTests: [
+      {
+        categoryName: "high sensitivity c-reactive protein (hs-crp)",
+        tests: [
+          "high sensitivity c-reactive protein (hs-crp)",
+        ],
+      },
+      
+    ],
+    desc: "Tests Includes high sensitivity c-reactive protein (hs-crp)",
+    imgUrl: populartest01,
+    category: "Basic",
+    price: 650.0,
+    discount: 30,
+    shortDesc: "Sample Type: Blood",
+    description:
+      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+    reviews: [
+      {
+        rating: 4.7,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    overlayTitle: "high sensitivity c-reactive protein (hs-crp)",
+    overlayDetails: ["high sensitivity c-reactive protein (hs-crp)"],
+    avgRating: 4.5,
+  },
+
+  {
+    id: "148",
+    productName: "jaanch - diabetic screen (48 Tests)",
+    type: "package",
+    includedTests: [
+      {
+        categoryName: "COMPLETE HEMOGRAM (28)",
+        tests: [
+          "Basophils - absolute count",
+          "Eosinophils - absolute count",
+          "Lymphocytes - absolute count",
+          "Monocytes - absolute count",
+          "Neutrophils - absolute count",
+          "Basophils",
+          "Eosinophils",
+          "Hemoglobin",
+          "Immature granulocytes(ig)",
+          "Immature granulocyte percentage(ig%)",
+          "Total leucocytes count (wbc)",
+          "Lymphocyte",
+          "Mean corpuscular hemoglobin(mch)",
+          "Mean corp.hemo.conc(mchc)",
+          "Mean corpuscular volume(mcv)",
+          "Monocytes",
+          "Mean platelet volume(mpv)",
+          "Neutrophils",
+          "Nucleated red blood cells",
+          "Nucleated red blood cells %",
+          "Plateletcrit(pct)",
+          "Hematocrit(pcv)",
+          "Platelet distribution width(pdw)",
+          "Platelet to large cell ratio(plcr)",
+          "Platelet count",
+          "Total rbc",
+          "Red cell distribution width (rdw-cv)",
+          "Red cell distribution width - sd(rdw-sd)",
+        ],
+      },
+
+      {
+        categoryName: "Diabetes (3)",
+        tests: [
+          "Average blood glucose (abg)","Fasting blood sugar(glucose)","Hba1c"
+        ],
+      },
+      {
+        categoryName: "LIPID (Includes 10 Tests)",
+        tests: [
+          "Total cholesterol",
+          "Hdl cholesterol - direct",
+          "Hdl / ldl ratio",
+          "Ldl cholesterol - direct",
+          "Ldl / hdl ratio",
+          "Non-hdl cholesterol",
+          "Tc/ hdl cholesterol ratio",
+          "Trig / hdl ratio",
+          "Triglycerides",
+          "Vldl cholesterol",
+        ],
+      },
+      {
+        categoryName: "RENAL (Includes 7 Tests)",
+        tests: [
+          "Bun / sr.creatinine ratio",
+          "Blood urea nitrogen (bun)",
+          "Calcium",
+          "Creatinine - serum",
+          "Urea / sr.creatinine ratio",
+          "Urea (calculated)",
+          "Uric acid",
+        ],
+      },
+    ],
+    desc: "Tests Includes COMPLETE HEMOGRAM, Diabetes, Lipid, Renal",
+    imgUrl: populartest01,
+    category: "Basic",
+    price: 650.0,
+    discount: 30,
+    shortDesc: "Sample Type: Blood",
+    description:
+      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+    reviews: [
+      {
+        rating: 4.7,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    overlayTitle: "jaanch - diabetic screen",
+    overlayDetails: ["COMPLETE HEMOGRAM (28)","Diabetes (3)","Lipid (10)","Renal (7)"],
+    avgRating: 4.5,
+  },
+
+  {
+    id: "149",
+    productName: "hba1c",
+    type: "package",
+    includedTests: [
+      {
+        categoryName: "hba1c",
+        tests: [
+          "hba1c",
+        ],
+      },
+      
+    ],
+    desc: "Tests Includes hba1c",
+    imgUrl: populartest01,
+    category: "Basic",
+    price: 650.0,
+    discount: 30,
+    shortDesc: "Sample Type: Blood",
+    description:
+      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+    reviews: [
+      {
+        rating: 4.7,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    overlayTitle: "hba1c",
+    overlayDetails: ["hba1c"],
+    avgRating: 4.5,
+  },
+
 ];

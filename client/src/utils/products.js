@@ -166,17 +166,19 @@ export const healthConcerns = [
     id:"01",
     imgUrl: fullBody,
     name: "Full Body Checkups",
-    packageIds: ["01", "02"],
+    packageIds: ["80", "42","41","59","48","06","05","04"],
   },
   {
     id:"02",
     imgUrl: heart,
     name: "Heart",
-    packageIds: ["03"],
+    packageIds: ["32","31","94","146","57","147","06"],
   },
   {
     id:"03",
-    imgUrl: diabetes
+    imgUrl: diabetes,
+    name: "Diabetes",
+    packageIds: ["25","26","148","149"]
   },
   {
     id:"04",
