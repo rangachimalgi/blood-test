@@ -2,8 +2,10 @@ import React from 'react';
 import Slider from 'react-slick';
 import HealthProduct from './Product/HealthProduct';
 import { Container } from 'react-bootstrap';
+import { useNavigate } from "react-router-dom";
 
 const HealthConcernsSection = ({ title, bgColor, productItems, addToCart }) => {
+  const navigate = useNavigate();
   const settings = {
     dots: false,
     infinite: false, // Set to false to avoid infinite scrolling
@@ -48,6 +50,10 @@ const HealthConcernsSection = ({ title, bgColor, productItems, addToCart }) => {
     ],
   };
 
+  const handleHealthConcernClick = (concernId) => {
+    navigate(`/health-concern/${concernId}`);
+  };
+
   return (
     <section style={{ background: bgColor }}>
       <Container>
@@ -59,6 +65,7 @@ const HealthConcernsSection = ({ title, bgColor, productItems, addToCart }) => {
                 title={title}
                 productItem={productItem}
                 addToCart={addToCart}
+                onClick={() => handleHealthConcernClick(productItem.id)}
               />
             </div>
           ))}

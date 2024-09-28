@@ -1,50 +1,33 @@
-import { useContext, useState } from "react";
+import React from "react";
 import "./healthProduct.css";
-import { useNavigate } from "react-router-dom";
-import { DataContainer } from "../../App";
-import { toast } from "react-toastify";
 
-const HealthProduct = ({ title, productItem, addToCart, showImage = true }) => {
-  const { setSelectedProduct } = useContext(DataContainer);
-  const router = useNavigate();
-  const [count, setCount] = useState(0);
-
-  const increment = () => {
-    setCount(count + 1);
-  };
-
-  const handleClick = () => {
-    setSelectedProduct(productItem);
-    localStorage.setItem(
-      `selectedProduct-${productItem.id}`,
-      JSON.stringify(productItem)
-    );
-    router(`/shop/${productItem.id}`);
-  };
-
-  const handleAdd = (productItem) => {
-    addToCart(productItem);
-    toast.success("Product has been added to cart!");
-  };
+const HealthProduct = ({
+  title,
+  productItem,
+  addToCart,
+  showImage = true,
+  onClick,
+}) => {
+  const name = productItem.name || productItem.productName;
+  const imageUrl = productItem.imgUrl;
 
   return (
-    <div className="health-product-card">
-      {title === "Big Discount" ? (
+    <div className="health-product-card" onClick={onClick}>
+      {title === "Big Discount" && (
         <span className="health-discount">{productItem.discount}% Off</span>
-      ) : null}
+      )}
       {showImage && (
         <div className="health-product-image-container">
           <img
             loading="lazy"
-            onClick={handleClick}
-            src={productItem.imgUrl}
-            alt=""
+            src={imageUrl}
+            alt={name}
             className="health-product-image"
           />
         </div>
       )}
       <div className="health-product-details">
-        <h3 onClick={handleClick}>{productItem.productName}</h3>
+        <h3>{name}</h3>
       </div>
     </div>
   );

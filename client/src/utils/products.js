@@ -164,11 +164,15 @@ export const popularTests = [
 export const healthConcerns = [
   {
     id:"01",
-    imgUrl: fullBody
+    imgUrl: fullBody,
+    name: "Full Body Checkups",
+    packageIds: ["01", "02"],
   },
   {
     id:"02",
-    imgUrl: heart
+    imgUrl: heart,
+    name: "Heart",
+    packageIds: ["03"],
   },
   {
     id:"03",

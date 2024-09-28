@@ -1,6 +1,6 @@
 import { useState, createContext, useEffect, lazy, Suspense } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useParams } from "react-router-dom";
 import NavBar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Loader from "./components/Loader/Loader";
@@ -12,8 +12,9 @@ import ViewOrders from "./components/ViewOrders";
 import ViewUsers from "./components/ViewUsers";
 import TotalRevenue from "./components/TotalRevenue";
 import UserDashboard from "./components/UserDashboard";
-import { products } from "./utils/products";
-import "slick-carousel/slick/slick.css"; 
+import HealthPackagesList from "./pages/HealthPackageList";
+import {healthConcerns, products } from "./utils/products";
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const Home = lazy(() => import("./pages/Home"));
 const Shop = lazy(() => import("./pages/Shop"));
@@ -23,7 +24,21 @@ const HealthList = lazy(() => import("./pages/HealthPackageList"));
 const Cart = lazy(() => import("./pages/Cart"));
 const ProductDetails = lazy(() => import("./pages/ProductDetails"));
 const TermsAndConditions = lazy(() => import("./pages/TermsAndConditions"));
-const RefundPolicy = lazy(() => import("./pages/RefundPolicy"))
+const RefundPolicy = lazy(() => import("./pages/RefundPolicy"));
+
+const HealthPackagesListWrapper = () => {
+  const { id } = useParams();
+
+  // Find the selected health concern
+  const selectedConcern = healthConcerns.find((concern) => concern.id === id);
+
+  if (!selectedConcern) {
+    return <p>Health concern not found.</p>;
+  }
+
+  return <HealthPackagesList packageIds={selectedConcern.packageIds} />;
+};
+
 export const DataContainer = createContext();
 function App() {
   const [CartItem, setCartItem] = useState([]);
@@ -101,17 +116,28 @@ function App() {
           <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/shop/:id" element={<ProductDetails key={window.location.pathname} />} />
+            <Route
+              path="/shop/:id"
+              element={<ProductDetails key={window.location.pathname} />}
+            />
             <Route path="/shop" element={<Shop />} />
             <Route path="/health-list" element={<HealthList />} />
             <Route path="/health/:id" element={<Health />} />
+            <Route
+              path="/health-concern/:id"
+              element={<HealthPackagesListWrapper />}
+            />
             <Route path="/cart" element={<Cart />} />
             <Route path="/admin/*" element={<AdminPanel />} />
             <Route path="/admin/view-orders" element={<ViewOrders />} />
             <Route path="/admin/view-users" element={<ViewUsers />} />
             <Route path="/admin/total-revenue" element={<TotalRevenue />} />
             <Route path="/user-dashboard" element={<UserDashboard />} />
-            <Route path="/terms-and-conditions" element={<TermsAndConditions />} /> {/* New Route for Terms and Conditions */}
+            <Route
+              path="/terms-and-conditions"
+              element={<TermsAndConditions />}
+            />{" "}
+            {/* New Route for Terms and Conditions */}
             <Route path="/refund-policy" element={<RefundPolicy />} />
           </Routes>
           <Footer />

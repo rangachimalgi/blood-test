@@ -7,9 +7,9 @@ import "react-toastify/dist/ReactToastify.css";
 import CheckoutForm from "../components/CheckoutForm";
 import Highlight from "../components/Highlight";
 import "../Styles/HealthPackageList.css";
-import logo from "../Images/logo.png"
+import logo from "../Images/logo.png";
 
-const HealthPackagesList = () => {
+const HealthPackagesList = ({ packageIds }) => {
   const { addToCart } = useContext(DataContainer);
   const [showCheckout, setShowCheckout] = useState(false);
   const [selectedPackage, setSelectedPackage] = useState(null);
@@ -29,6 +29,11 @@ const HealthPackagesList = () => {
     setSelectedPackage(null);
   };
 
+  // Filter packages based on the provided packageIds
+  const displayedPackages = packageIds
+    ? healthPackagesArray.filter((pkg) => packageIds.includes(pkg.id))
+    : healthPackagesArray;
+
   // Extract the number before the word "Tests"
   const extractNumberOfTests = (productName) => {
     const match = productName.match(/(\d+)\s*Tests/i);
@@ -38,9 +43,11 @@ const HealthPackagesList = () => {
   return (
     <div className="packages-list">
       <ToastContainer />
-      <h2>Available Health Packages</h2>
+      <h2>
+        {packageIds ? "Selected Health Packages" : "Available Health Packages"}
+      </h2>
       <div className="packages-grid">
-        {healthPackagesArray.map((pkg) => (
+        {displayedPackages.map((pkg) => (
           <div key={pkg.id} className="package-card">
             <Highlight number={extractNumberOfTests(pkg.productName)} />
             <Link to={`/health/${pkg.id}`} className="package-link">
@@ -88,8 +95,7 @@ const HealthPackagesList = () => {
                     Pickup
                   </li>
                   <li>
-                    <i className="fa fa-check-circle"></i> Online Report
-                    Delivery
+                    <i className="fa fa-check-circle"></i> Online Report Delivery
                   </li>
                 </ul>
               </div>
