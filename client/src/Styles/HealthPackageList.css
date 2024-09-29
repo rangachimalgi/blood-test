@@ -52,16 +52,43 @@
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start; /* Align content at the top */
   text-align: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+  padding: 20px;
 }
 
 .package-image-container:hover .hover-overlay {
   opacity: 1;
 }
+
+.hover-overlay h2 {
+  margin: 0;
+  padding: 5px 0;
+  margin-top: -25px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.hover-overlay ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 2px; /* Reduced spacing between columns */
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.hover-overlay li {
+  text-align: left; /* Align text to the left */
+  font-size: 11px; /* Set font size for the details */
+  font-weight: 700;
+  margin-bottom: 5px; /* Reduce margin between list items */
+}
+
+
 
 .package-details {
   padding: 15px;
