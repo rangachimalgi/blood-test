@@ -188,15 +188,21 @@ export const healthConcerns = [
   },
   {
     id:"05",
-    imgUrl: thyroid
+    imgUrl: thyroid,
+    name: "Thyroid",
+    packageIds: ["30","29","60","127"]
   },
   {
     id:"06",
-    imgUrl: cancer
+    imgUrl: cancer,
+    name: "Cancer",
+    packageIds: ["27","28","18","19"]
   },
   {
     id:"07",
-    imgUrl: hair
+    imgUrl: hair,
+    name: "Hair",
+    packageIds: ["153","154","155","156"]
   },
   {
     id:"08",
