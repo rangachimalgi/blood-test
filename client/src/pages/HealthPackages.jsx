@@ -88,11 +88,10 @@ export const healthPackagesArray = [
     desc: "Tests Includes Lipid, Thyroid, Liver, Renal, Iron Deficiency, Cardiac Risk Markers",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1399.0,
+    price: 1499.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
-    description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+    description: "AAROGYAM A.",
     reviews: [
       {
         rating: 4.7,
@@ -116,6 +115,58 @@ export const healthPackagesArray = [
     productName: "AAROGYAM B (71 Tests)",
     type: "package",
     includedTests: [
+      {
+        categoryName: "CARDIAC RISK MARKERS (Includes 5 Tests)",
+        tests: [
+          "APOLIPOPROTEIN - B (APO-B)",
+          "APO B / APO A1 RATIO(APO B/A1)",
+          "LIPOPROTEIN (a) [Lp(a)]",
+          "HIGH SENSITIVITY C-REACTIVE PROTEIN (HS-CRP)",
+          "APOLIPOPROTEIN - A1 (APO-A1)",
+        ],
+      },
+      {
+        categoryName: "COMPLETE HEMOGRAM (28)",
+        tests: [
+          "Basophils - absolute count",
+          "Eosinophils - absolute count",
+          "Lymphocytes - absolute count",
+          "Monocytes - absolute count",
+          "Neutrophils - absolute count",
+          "Basophils",
+          "Eosinophils",
+          "Hemoglobin",
+          "Immature granulocytes(ig)",
+          "Immature granulocyte percentage(ig%)",
+          "Total leucocytes count (wbc)",
+          "Lymphocyte",
+          "Mean corpuscular hemoglobin(mch)",
+          "Mean corp.hemo.conc(mchc)",
+          "Mean corpuscular volume(mcv)",
+          "Monocytes",
+          "Mean platelet volume(mpv)",
+          "Neutrophils",
+          "Nucleated red blood cells",
+          "Nucleated red blood cells %",
+          "Plateletcrit(pct)",
+          "Hematocrit(pcv)",
+          "Platelet distribution width(pdw)",
+          "Platelet to large cell ratio(plcr)",
+          "Platelet count",
+          "Total rbc",
+          "Red cell distribution width (rdw-cv)",
+          "Red cell distribution width - sd(rdw-sd)",
+        ],
+      },
+      {
+        categoryName: "IRON DEFICIENCY (Includes 4 Tests)",
+        tests: [
+          "% transferrin saturation",
+          "Iron",
+          "Total iron binding capacity (tibc)",
+          "Unsat.iron-binding capacity(uibc)",
+        ],
+      },
       {
         categoryName: "LIPID (Includes 10 tests)",
         tests: [
@@ -164,29 +215,23 @@ export const healthPackagesArray = [
       {
         categoryName: "RENAL (Includes 7 tests)",
         tests: [
-          "UREA / SR.CREATININE RATIO",
-          "CALCIUM",
           "BUN / Sr.CREATININE RATIO",
-          "URIC ",
+          "Blood urea nitrogen (bun)",
+          "Calcium",
+          "Creatinine - serum",
+          "UREA / SR.CREATININE RATIO",
+          "Urea (calculated)",
+          "Uric Acid",
         ],
       },
-      {
-        categoryName: "IRON DEFICIENCY (Includes 4 tests)",
-        tests: ["03", "04", "05"],
-      },
-      {
-        categoryName: "CARDIAC RISK MARKERS (Includes 5 tests)",
-        tests: ["03", "04", "05"],
-      },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, ",
+    desc: "Tests Includes Cardiac Risk Markers, Complete Hemogram, Diabetes, Iron Deficiency, Lipid, Liver, Renal, Thyroid",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1699.0,
+    price: 1749.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
-    description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+    description: "AAROGYAM B",
     reviews: [
       {
         rating: 4.7,
@@ -196,10 +241,13 @@ export const healthPackagesArray = [
     overlayTitle: "AAROGYAM B",
     overlayDetails: [
       "Cardiac Risk Markers (5)",
-      "Complete Hemogram (24)",
+      "Complete Hemogram (28)",
       "Diabetics (2)",
-      "Iron (4)",
-      "Lipid Profile (10)",
+      "Iron Deficiency (4)",
+      "Lipid (10)",
+      "Liver (12)",
+      "Renal (7)",
+      "Thyroid (3)",
     ],
     avgRating: 4.5,
   },
@@ -210,50 +258,126 @@ export const healthPackagesArray = [
     type: "package",
     includedTests: [
       {
-        categoryName: "LIPID ",
-        tests: ["01", "02"],
-      },
-      {
-        categoryName: "COMPLETE HEMOGRAM",
-        tests: ["03", "04", "05"],
-      },
-      {
-        categoryName: "THYROID",
-        tests: ["03", "04", "05"],
-      },
-      {
-        categoryName: "DIABETES",
-        tests: ["03", "04", "05"],
-      },
-      {
-        categoryName: "LIVER",
-        tests: ["03", "04", "05"],
-      },
-      {
-        categoryName: "RENAL",
-        tests: ["03", "04", "05"],
-      },
-      {
-        categoryName: "IRON DEFICIENCY",
-        tests: ["03", "04", "05"],
-      },
-      {
         categoryName: "CARDIAC RISK MARKERS",
-        tests: ["03", "04", "05"],
+        tests: [
+          "Apo b / apo a1 ratio (apo b/a1)",
+          "Apolipoprotein - a1 (apo-a1)",
+          "Apolipoprotein - b (apo-b)",
+          "High sensitivity c-reactive protein (hs-crp)",
+          "Lipoprotein (a) [lp(a)]",
+        ],
       },
       {
-        categoryName: "VITAMINS",
-        tests: ["03", "04", "05"],
+        categoryName: "COMPLETE HEMOGRAM (28)",
+        tests: [
+          "Basophils - absolute count",
+          "Eosinophils - absolute count",
+          "Lymphocytes - absolute count",
+          "Monocytes - absolute count",
+          "Neutrophils - absolute count",
+          "Basophils",
+          "Eosinophils",
+          "Hemoglobin",
+          "Immature granulocytes(ig)",
+          "Immature granulocyte percentage(ig%)",
+          "Total leucocytes count (wbc)",
+          "Lymphocyte",
+          "Mean corpuscular hemoglobin(mch)",
+          "Mean corp.hemo.conc(mchc)",
+          "Mean corpuscular volume(mcv)",
+          "Monocytes",
+          "Mean platelet volume(mpv)",
+          "Neutrophils",
+          "Nucleated red blood cells",
+          "Nucleated red blood cells %",
+          "Plateletcrit(pct)",
+          "Hematocrit(pcv)",
+          "Platelet distribution width(pdw)",
+          "Platelet to large cell ratio(plcr)",
+          "Platelet count",
+          "Total rbc",
+          "Red cell distribution width (rdw-cv)",
+          "Red cell distribution width - sd(rdw-sd)",
+        ],
+      },
+      {
+        categoryName: "DIABETES (Includes 2 tests)",
+        tests: ["HbA1c", "AVERAGE BLOOD GLUCOSE (ABG)"],
       },
       {
         categoryName: "HORMONE",
-        tests: ["03", "04", "05"],
+        tests: ["Testosterone"],
+      },
+      {
+        categoryName: "IRON DEFICIENCY (Includes 4 Tests)",
+        tests: [
+          "% transferrin saturation",
+          "Iron",
+          "Total iron binding capacity (tibc)",
+          "Unsat.iron-binding capacity(uibc)",
+        ],
+      },
+      {
+        categoryName: "LIPID (Includes 10 tests)",
+        tests: [
+          "LDL CHOLESTEROL - DIRECT",
+          "LDL / HDL RATIO",
+          "NON-HDL CHOLESTEROL",
+          "VLDL CHOLESTEROL RATIO",
+          "TRIG / HDL RATIO",
+          "TC / HDL CHOLESTEROL RATIO",
+          "HDL / LDL RATIO",
+          "HDL CHOLESTEROL - DIRECT",
+          "TRIGLYCERIDES",
+          "TOTAL CHOLESTEROL",
+        ],
+      },
+      {
+        categoryName: "LIVER (Includes 12 tests)",
+        tests: [
+          "SERUM GLOBULIN",
+          "GAMMA GLUTAMYL TRANSFERASE(GGT)",
+          "BILIRUBIN-TOTAL",
+          "ALANINE TRANSAMINASE (SGPT)",
+          "BILIRUBIN-DIRECT",
+          "ALKALINE PHOSPHATESE",
+          "PROTEIN-TOTAL",
+          "SERUM ALB/GLOBULIN RATIO",
+          "SGOT/SGPT RATIO",
+          "BILIRUBIN (INDIRECT)",
+          "ALBUMIN-SERUM",
+          "ASPARTATE AMINOTRANSFERASE (SGOT)",
+        ],
+      },
+      {
+        categoryName: "RENAL (Includes 7 tests)",
+        tests: [
+          "BUN / Sr.CREATININE RATIO",
+          "Blood urea nitrogen (bun)",
+          "Calcium",
+          "Creatinine - serum",
+          "UREA / SR.CREATININE RATIO",
+          "Urea (calculated)",
+          "Uric Acid",
+        ],
+      },
+      {
+        categoryName: "THYROID (Includes 3 tests)",
+        tests: [
+          "TOTAL THYROXINE (T4)",
+          "TSH - ULTRASENSITIVE",
+          "TOTAL TRIIODOTHYRONINE (T3)",
+        ],
+      },
+      {
+        categoryName: "Vitmains (Includes 2 tests)",
+        tests: ["Vitamin b-12", "25-oh vitamin d (total)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, ",
+    desc: "Tests Includes Cardiac Risk Markers, Complete Hemogram, Diabetes, Hormone, Iron Deficiency, Lipid, Liver, Renal, Thyroid, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2499.0,
+    price: 2549.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
@@ -265,7 +389,7 @@ export const healthPackagesArray = [
       },
     ],
     overlayTitle: "AAROGYAM C",
-    overlayDetails: [],
+    overlayDetails: ["Cardiac Risk Markers (5)","Complete Hemogram (28)","Diabetes (2)","Hormone (1)","Iron Deficiency (4)","Lipid (10)","Liver (12)","Renal (7)","Thyroid (3)","Vitamins (2)"],
     avgRating: 4.5,
   },
 
@@ -373,14 +497,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Toxic Elements, Thyroid, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, ",
+    desc: "Tests Includes Cardiac Risk Markers, Iron Deficiency, Lipid, Liver, Renal, Thyroid, Toxic Elements",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1499.0,
+    price: 1599.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+        "Fortune Blood Test offers an Aarogyam 1.1 profile which is a diagnostic package that enables early diagnosis of disorders necessary for effective and timely treatment. Individuals who are in their late 40s and 50s are advised to take up the Aarogyam 1.1 package which consists of a total of 62 such Lipid Profile, UTSH, etc test parameters that aid in monitoring their health conditions and keeping themselves away from any serious illness. To help you with affordable health checkups, Thyrocare provides Aarogyam 1.1 Profile.",
     reviews: [
       {
         rating: 4.7,
@@ -540,14 +664,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Toxic Elements, Thyroid, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, ",
+    desc: "Tests Includes Cardiac Risk Markers, Complete Hemogram, Diabetes, Iron Deficiency, Lipid, Liver, Renal, Thyroid, Toxic Elements",
     imgUrl: populartest01,
     category: "Basic",
     price: 1999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+        "We believe, rather than worrying about disease conditions and treatment costs, it is important to shift the focus towards preventive checkups. Aarogyam 1.2 profile offered by Thyrocare is one such diagnostic health check-up package that aids in monitoring your health conditions, thereby preventing any lifestyle-related or metabolic health issues. This Aarogyam 1.2 profile includes 83 test parameters such as Total Triiodothyronine (T3) at a very reasonable price. Aarogyam 1.2 profile provided by Thyrocare offers all of the Aarogyam 1.1 and a few additional profiles like Diabetic Screening and a Complete Hemogram, which enables you to keep an eye on your sugar levels and infections. Book this Aarogyam 1.2 Profile from Thyrocare at a very low cost and get home collection services.",
     reviews: [
       {
         rating: 4.7,
@@ -724,14 +848,14 @@ export const healthPackagesArray = [
         tests: ["Testosterone"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Cardiac Risk Markers, Complete Hemogram, Diabetes, Elements, Hormone, Iron Deficiency,Lipid, Liver, Renal, Thyroid, Toxic Elements, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 3199.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Aarogyam 1.3 package covers a series of tests and profiles for preventing risk arising from nutritional deficiencies, lifestyle, and growth. Aarogyam 1.3 consists of basic health check-up profiles that include 96 test parameters such as Thyroid profile, Iron deficiency profile, Liver profile, Lipid profile, Kidney profile, Cardiac Risk Markers, Diabetic Screening, and Complete Hemogram. Additional profiles for bone disorders, element toxicity, and vitamins, and Thyrocare offers the Aarogyam 1.3 at the most affordable price. Sample collection at home is available.",
     reviews: [
       {
         rating: 4.7,
@@ -925,14 +1049,14 @@ export const healthPackagesArray = [
         tests: ["Testosterone"],
       },
     ],
-    desc: "Tests Includes Diabetes, Lipid, Pancreatic, Complete Hemogram, Toxic Elements, Thyroid, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Electrolytes, Elements, Hormone ",
+    desc: "Tests Includes Cardiac Risk Markers, Complete Hemogram, Diabetes, Electrolytes, Elements, Hormone, Iron Deficiency, Lipid, Liver, Pancreatic, Renal, Thyroid, Toxic Elements, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 3499.0,
+    price: 3699.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+    "Aarogyam 1.4 is a package of 103 tests and profiles that steer towards a diagnosis of a severe diabetic condition, pancreatic disorders, and electrolyte balance in your body to ensure the proper functioning of the body. Aarogyam 1.4 consists of basic health check-up profiles that include Thyroid profile, Iron deficiency profile, Liver profile, Lipid profile, Kidney profile, Cardiac risk markers, Diabetic Screening, Complete Hemogram, bone disorders, element toxicity, vitamins, and testosterone. Additional tests and profiles for advanced diabetes screening, pancreatic profile, and serum electrolyte test. Avail of the service by booking the Aarogyam 1.4 Profile online at an affordable rate, at your doorstep.",
     reviews: [
       {
         rating: 4.7,
@@ -1130,14 +1254,14 @@ export const healthPackagesArray = [
         tests: ["Testosterone"],
       },
     ],
-    desc: "Tests Includes Diabetes, Lipid, Pancreatic, Complete Hemogram, Toxic Elements, Thyroid, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Electrolytes, Elements, Hormone ",
+    desc: "Tests Includes Cardiac Risk Markers, Complete Hemogram, Diabetes, Electrolytes, Elements, Hormone, Iron Deficiency, Lipid, Liver, Pancreatic, Renal, Thyroid, Toxic Elements, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 3499.0,
+    price: 4199.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Aarogyam 1.5 is an umbrella of 106 tests and profiles which tells people about their risk of disorders like prediabetes, a severe form of Anemia, and Heart Diseases, including tests required during pregnancy. Aarogyam 1.5 consists of health check-up profiles that include Thyroid Profile, Iron Deficiency Profile, Liver Profile, Lipid Profile, Kidney Profile, Cardiac Risk Markers, Diabetic Screening, Complete Hemogram, Bone Disorders, Element Toxicity, Vitamins, Testosterone, Cystatin C, Pancreas profile and Serum Electrolytes Profile. Additional tests and profiles for Insulin Fasting, Ferritin, and Folate. Book your Aarogyam 1.5 Profile at an affordable cost at your home.",
     reviews: [
       {
         rating: 4.7,
@@ -1338,14 +1462,14 @@ export const healthPackagesArray = [
         tests: ["Anti ccp (accp)", "Anti nuclear antibodies (ana)"],
       },
     ],
-    desc: "Tests Includes Diabetes, Lipid, Pancreatic, Complete Hemogram, Toxic Elements, Thyroid, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Electrolytes, Elements, Hormone ",
+    desc: "Tests Includes Arthritis, Cardiac Risk Markers, Complete Hemogram, Diabetes, Electrolytes, Elements, Hormone, Iron Deficiency, Lipid, Liver, Pancreatic, Renal, Thyroid, Toxic Elements, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
     price: 4499.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Aarogyam 1.6 is one such health check-up package that allows prevention and early detection of health issues, thereby reducing the chances of getting serious health issues. Aarogyam 1.6 consists of 108 tests of basic health check-up profiles that include Thyroid Profile, Iron Deficiency Profile, Liver Profile, Lipid Profile, Kidney Profile, Cardiac Risk Markers, Diabetic Screening, Complete Hemogram, Bone Disorders, Element Toxicity, Vitamins, Testosterone, Homocysteine, Cystatin C, Pancreas Profile, Electrolyte Profile, Insulin Fasting, Ferritin, and Folate. Additional profiles include Arthritis Profile. Book this Aarogyam 1.6 Profile from Thyrocare at a very low cost and get home collection services.",
     reviews: [
       {
         rating: 4.7,
@@ -1548,14 +1672,14 @@ export const healthPackagesArray = [
         tests: ["Anti ccp (accp)", "Anti nuclear antibodies (ana)"],
       },
     ],
-    desc: "Tests Includes Diabetes, Lipid, Pancreatic, Complete Hemogram, Toxic Elements, Thyroid, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Electrolytes, Elements, Hormone, Arthritis ",
+    desc: "Tests Includes Arthritis, Cardiac Risk Markers, Complete Hemogram, Diabetes, Electrolytes, Elements, Hormone, Iron Deficiency, Lipid, Liver, Pancreatic, Renal, Thyroid, Toxic Elements, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 4999.0,
+    price: 5499.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Aarogyam 1.7 is a multidisciplinary package covering a series of 109 tests and profiles that help in screening disorders related to nutritional deficiencies, sedentary lifestyle, and growth. Thyrocare offers an Aarogyam 1.7 profile that consists of 108 parameters, at a cost-effective rate. Aarogyam 1.7 contains all of the tests included in Aarogyam 1.6, along with the Lp-PLA2 test, which aids in determining the risk of developing heart disease. Thyrocare offers the Aarogyam 1.7 at the most affordable price. Sample collection at home available.",
     reviews: [
       {
         rating: 4.7,
@@ -1756,7 +1880,7 @@ export const healthPackagesArray = [
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Aarogyam 1.8 offered by Thyrocare is a customized health check-up package that includes 117 test parameters to assess your overall wellness. Aarogyam 1.8 is designed in a way to suit the requirements of the individual in being one step ahead of diagnosing disorders and managing health in a better way. Aarogyam's 1.8 profile is inclusive of the tests in Aarogyam 1.4, with a few additional tests such as the Complete Vitamin Profile, Lp-PLA2, and Insulin fasting test to identify issues related to heart and development of the body. Avail of the service by booking the Aarogyam 1.8 Profile online at an affordable rate, at your doorstep.",
     reviews: [
       {
         rating: 4.7,
@@ -1898,11 +2022,11 @@ export const healthPackagesArray = [
     desc: "Tests Includes COMPLETE HEMOGRAM, DIABETES, ELECTROLYTES, IRON DEFICIENCY, LIPID, LIVER, RENAL, THYROID, VITAMIN, VITAMINS ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 1249.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "aarogyam winter basic with utsh",
     reviews: [
       {
         rating: 4.7,
@@ -2060,11 +2184,11 @@ export const healthPackagesArray = [
     desc: "Tests Includes CARDIAC RISK MARKERS, COMPLETE HEMOGRAM, DIABETES, ELEMENTS, HORMONE, IRON DEFICIENCY, LIPID, LIVER, PANCREATIC, RENAL, THYROID, VITAMINS ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1699.0,
+    price: 1749.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Aarogyam Winter Advanced With Utsh",
     reviews: [
       {
         rating: 4.7,
@@ -2232,11 +2356,11 @@ export const healthPackagesArray = [
     desc: "Tests Includes CARDIAC RISK MARKERS, COMPLETE HEMOGRAM, DIABETES, ELECTROLYTES, ELEMENTS, HORMONE, IRON DEFICIENCY, LIPID, LIVER, PANCREATIC, RENAL, THYROID, VITAMIN ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 3999.0,
+    price: 2499.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Aarogyam Tax Saver - Basic With UTSH comprises 79 parameters. It contains liver, complete hemogram, diabetes, cardiac risk markers, kidney, thyroid, hormones, vitamins, and many other important tests essential to check the functioning of vital organs & identify signs and symptoms of different health conditions at an early stage. This ideal full-body health checkup package is highly recommended for all at affordable prices that help claim tax deductions up to Rs. 5000 under section 80D.",
     reviews: [
       {
         rating: 4.7,
@@ -2247,7 +2371,7 @@ export const healthPackagesArray = [
     overlayDetails: [
       "Cardiac Risk Markers (6)",
       "Complete Hemogram (28)",
-      "Diabetics (4)",
+      "Diabetes (4)",
       "ELECTROLYTES (2)",
       "ELEMENTS (2)",
       "HORMONE (1)",
@@ -2476,11 +2600,11 @@ export const healthPackagesArray = [
     desc: "Tests Includes ARTHRITIS, CARDIAC RISK MARKERS, COMPLETE HEMOGRAM, DIABETES, ELECTROLYTES, ELEMENTS, HORMONE, IRON DEFICIENCY, LIPID, LIVER, METABOLIC, PANCREATIC, RENAL, THYROID, TOXIC ELEMENTS, URINOGRAM, VITAMIN ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 6999.0,
+    price: 4999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Aarogyam Tax Saver - Advanced With UTSH is a preventive care full body health checkup, comprising 132 parameters. It is an enhanced version of Aarogyam Tax Saver - Basic With UTSH with additional profiles like arthritis, toxic elements, metabolic, and urinogram tests. It’s a complete health checkup package that identifies signs and symptoms of health issues and provides detailed information about an individual’s overall health status. Aarogyam Tax Saver Advanced Profile can benefit individuals who wish to undergo a health assessment and can also help with tax deductions up to Rs. 5000 under section 80D.",
     reviews: [
       {
         rating: 4.7,
@@ -2637,7 +2761,7 @@ export const healthPackagesArray = [
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Regular health checkups are important because early diagnosis and treatment allow better patient management. Aarogyam Basic 1 is a comprehensive preventive healthcare package. It comes with 74 parameters, including Complete urine analysis, diabetes, complete hemogram, renal health, lipid profile, liver analysis, and thyroid function test(UTSH), that identify and minimize the risk factors by detecting illness at an early stage. Book Aarogyam basic 1 and avail free sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -2994,7 +3118,7 @@ export const healthPackagesArray = [
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Thyrocare’s Aarogyam Male Profile is a comprehensive set of 99 parameters for evaluating the overall health of males. It includes basic tests for determining health risks that might arise due to lifestyle, dietary habits as well as nutritional deficiencies like Complete hemogram, Iron deficiency, Kidney profile, Lipid profile, Liver profile, Thyroid profile, Vitamin profile. Along with these, the profile also contains tests for Diabetes screening and Cardiac risk markers as well as tests for assessing the levels of electrolytes, various elements, lipase, and prostate-specific antigen that aids in determining the risk as well as early detection of various ailments.Book Aarogyam Male Profile at Thyrocare with a home collection facility or walk-in at a centre near you.",
     reviews: [
       {
         rating: 4.7,
@@ -3199,7 +3323,7 @@ export const healthPackagesArray = [
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Thyrocare offers Aarogyam Female Profile, a set of 101 parameters that aid in evaluating the overall health of women. It includes basic health check-up tests like Complete hemogram, Cardiac risk markers, Diabetes Profile, Iron deficiency, Kidney profile, Lipid profile, Liver profile, Thyroid profile with UTSH, Vitamin profile that aid in evaluating risks posed due to lifestyle, dietary habits as well as nutritional deficiencies. Apart from the mentioned tests, the profile also contains tests for assessing the levels of electrolytes, various elements, lipase, and hormones like Luteinizing hormone, Follicle-stimulating hormone, and Prolactin that aid in evaluating the risk as well as early detection of various ailments.Book Aarogyam Females Profile at Thyrocare with a home collection facility or walk-in at a centre near you.",
     reviews: [
       {
         rating: 4.7,
@@ -3254,11 +3378,11 @@ export const healthPackagesArray = [
     desc: "Tests Includes INFERTILITY, THYROID",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1199.0,
+    price: 1999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Curated by doctors and medical experts, Jaanch - Infertility Profile Basic profile with 7 crucial parameters helps you better understand the levels and functioning of important reproductive hormones. This helps you better understand if there are any potential pregnancy or infertility-related conditions that require medical attention. If you and your partner are having issues conceiving a baby, book Jaanch - Infertility Profile Basic now at an affordable price and get a FREE sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -3275,35 +3399,22 @@ export const healthPackagesArray = [
     productName: "Jaanch - Infertility Profile Advanced (29 Tests)",
     type: "package",
     includedTests: [
-      {
-        categoryName: "DIABETES (Includes 3 tests)",
-        tests: [
-          "Average blood glucose (abg)",
-          "Fasting blood sugar(glucose)",
-          "Hba1c",
-        ],
-      },
-      {
-        categoryName: "HORMONE (Includes 2 tests)",
-        tests: ["Free androgen index", "Testosterone"],
-      },
+      
       {
         categoryName: "HYPERTENSION (Includes 1 tests)",
         tests: ["Aldosterone"],
       },
       {
-        categoryName: "INFERTILITY (Includes 1 tests)",
+        categoryName: "INFERTILITY (Includes 4 tests)",
         tests: [
           "Anti mullerian hormone (amh)",
           "Follicle stimulating hormone (fsh)",
-          "Free testosterone",
           "Luteinising hormone (lh)",
           "Prolactin (prl)",
-          "Sex hormone binding globulin (shbg)",
         ],
       },
       {
-        categoryName: "STEROID (Includes 9 tests)",
+        categoryName: "STEROID (Includes 10 tests)",
         tests: [
           "Androstenedione",
           "17-hydroxyprogesterone",
@@ -3314,6 +3425,7 @@ export const healthPackagesArray = [
           "Dhea - sulphate (dheas)",
           "Estradiol",
           "Progesterone",
+          "Testosterone",
         ],
       },
       {
@@ -3325,24 +3437,22 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "VITAMINS (Includes 5 tests)",
+        categoryName: "VITAMINS (Includes 3 tests)",
         tests: [
-          "Folate",
           "Vitamin d total",
           "Vitamin d2",
           "Vitamin d3",
-          "Vitamin b-12",
         ],
       },
     ],
-    desc: "Tests Includes DIABETES, HORMONE, HYPERTENSION, INFERTILITY, STEROID, THYROID, VITAMINS ",
+    desc: "Tests Includes HYPERTENSION, INFERTILITY, STEROID, THYROID, VITAMINS ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 1999.0,
+    price: 4499.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Jaanch - Infertility Profile Advanced includes 21 tests curated by experienced doctors. The profile checks the levels and functioning of important reproductive hormones. This helps you better understand if there are any potential pregnancy or infertility-related conditions that require medical attention. If you and your partner are having issues conceiving a baby, book Jaanch - Infertility Profile Advanced now at an affordable price and get a FREE sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -3351,11 +3461,9 @@ export const healthPackagesArray = [
     ],
     overlayTitle: "Jaanch - Infertility Profile Advanced",
     overlayDetails: [
-      "DIABETES (3)",
-      "HORMONE (2)",
       "HYPERTENSION (1)",
-      "INFERTILITY (1)",
-      "STEROID (9)",
+      "INFERTILITY (4)",
+      "STEROID (10)",
       "THYROID (3)",
       "VITAMINS (5)",
     ],
@@ -3451,7 +3559,7 @@ export const healthPackagesArray = [
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "jaanch - pcod (mini)",
     reviews: [
       {
         rating: 4.7,
@@ -3591,7 +3699,7 @@ export const healthPackagesArray = [
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Jaanch - PCOD Basic profile includes 65 tests that evaluate the levels and functioning of hormones important for your reproductive health as well as assess the presence and severity of PCOD in girls and women. If you experience symptoms like irregular periods, heavy bleeding during periods, acne, excessive hair growth on the body, hair fall, weight gain, and skin darkening, book Jaanch - PCOD Basic profile now. It will help your doctor diagnose the problem and get you focused on treatment. Get a FREE home sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -3740,7 +3848,7 @@ export const healthPackagesArray = [
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Jaanch - PCOD Advanced includes important blood tests that help diagnose and understand the severity of PCOD in girls and women. Consisting of 69 parameters, the profile evaluates the levels of multiple hormones in your body like Follicular Stimulating Hormone (FSH), Luteinizing Hormone (LH), Prolactin and Testosterone important for maintaining reproductive health. If detected early, PCOS can be managed better to prevent severe health conditions like diabetes and abnormal blood pressure. These hormones are curated by doctors exclusively for your menstruation cycles and pregnancies.",
     reviews: [
       {
         rating: 4.7,
@@ -3886,7 +3994,7 @@ export const healthPackagesArray = [
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Jaanch - Diabetic Profile Basic helps monitor blood sugar levels and keep track of overall bodily functions. This profile, containing 69 parameters, aids in complete diabetic care with lipid profile, liver function tests, iron deficiency profile, kidney profile, and thyroid function tests. Early detection is important to minimize the risk of diabetes and manage it better. Diabetes has no cure, but you can manage it with early diagnosis, regular health checkups and timely treatment. Book now and get a FREE sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -4079,7 +4187,7 @@ export const healthPackagesArray = [
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+       "Jaanch - Diabetic Profile Advanced is a doctor-curated comprehensive package of 105 parameters that assess your blood sugar levels. It includes crucial tests for cardiac risk markers, thyroid function tests, lipid/pancreas/kidney profiles, vitamins, liver function tests, complete blood count and more. Diabetes can cause multiple health problems. This profile helps keep track of your overall health and aids physicians to suggest specific treatments based on your medical condition. Book our Jaanch - Diabetic Profile Advanced now at an affordable rate and get a FREE sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -4135,7 +4243,7 @@ export const healthPackagesArray = [
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Jaanch - Tumour Panel (Male) gives you an accurate diagnosis of cancer at an early stage. Consisting of 7 parameters, the panel helps doctors diagnose your cancer, its specific type, plan a treatment or check the progress of treatment. You can also take this test if you have just finished your cancer treatment, if the disease runs in your family or if you are at risk of developing one due to factors like obesity, smoking, old age, and preexisting health conditions. Get Thyrocare's Jaanch - Tumour Panel (Male) at an affordable price with FREE home collection service.",
     reviews: [
       {
         rating: 4.7,
@@ -4181,7 +4289,7 @@ export const healthPackagesArray = [
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Jaanch - Tumour Panel (Female) gives you an accurate diagnosis of cancer at an early stage. Consisting of 6 parameters, the panel helps doctors understand the specific type of cancer, plan a treatment or check the progress of treatment. You can also take this test if you have just finished your cancer treatment, if you have a family history of cancer or if you are at risk due to factors like obesity, smoking, old age, and preexisting health conditions. Get Thyrocare's Jaanch - Tumour Panel (Female) at affordable rates with FREE home sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -4216,7 +4324,7 @@ export const healthPackagesArray = [
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "jaanch thyroid profile - basic",
     reviews: [
       {
         rating: 4.7,
@@ -4260,7 +4368,7 @@ export const healthPackagesArray = [
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "jaanch thyroid profile - advanced",
     reviews: [
       {
         rating: 4.7,
@@ -4368,7 +4476,7 @@ export const healthPackagesArray = [
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "jaanch healthy heart advanced new",
     reviews: [
       {
         rating: 4.7,
@@ -4467,7 +4575,7 @@ export const healthPackagesArray = [
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "jaanch healthy heart basic new",
     reviews: [
       {
         rating: 4.7,
@@ -4526,7 +4634,7 @@ export const healthPackagesArray = [
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Jaanch - STD Profile Basic is a diagnostic package designed by doctors to diagnose the cause of sexually transmitted diseases (STDs). The test consisting of 12 crucial parameters helps identify various types of STDs, like Chlamydia, Syphilis, Herpes, Hepatitis and HIV. This package is suitable for both men and women. Timely diagnosis and immediate treatment by doctors can help lower the risk of any further serious complications.",
     reviews: [
       {
         rating: 4.7,
@@ -4543,221 +4651,221 @@ export const healthPackagesArray = [
     avgRating: 4.5,
   },
 
-  {
-    id: "34",
-    productName: "WOMEN HEALTH PACKAGE (71 Tests)",
-    type: "package",
-    includedTests: [
-      {
-        categoryName: "Thyroid Profile",
-        tests: ["01", "02", "03"],
-      },
-      {
-        categoryName: "Lipid Profile",
-        tests: ["03", "04", "05", "07"],
-      },
-      // ... more categories can be added similarly
-    ],
-    imgUrl: womenhealth,
-    category: "Basic",
-    price: 1799.0,
-    discount: 30,
-    shortDesc: "Sample Type: Blood",
-    description:
-      "The WOMENS HEALTH PACKAGE consists of 71 types of blood tests, including Kidney, Liver, Thyroid, Iron, Lipid, Vitamin D, B12, Folic Acid, Hormones (important PCOD tests), CBC, and many more. This package is recommended for women aged between 16 to 50 years and also for those suffering from PCOD.",
-    reviews: [
-      {
-        rating: 4.7,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.5,
-  },
+  // {
+  //   id: "34",
+  //   productName: "WOMEN HEALTH PACKAGE (71 Tests)",
+  //   type: "package",
+  //   includedTests: [
+  //     {
+  //       categoryName: "Thyroid Profile",
+  //       tests: ["01", "02", "03"],
+  //     },
+  //     {
+  //       categoryName: "Lipid Profile",
+  //       tests: ["03", "04", "05", "07"],
+  //     },
+  //     // ... more categories can be added similarly
+  //   ],
+  //   imgUrl: womenhealth,
+  //   category: "Basic",
+  //   price: 1799.0,
+  //   discount: 30,
+  //   shortDesc: "Sample Type: Blood",
+  //   description:
+  //     "The WOMENS HEALTH PACKAGE consists of 71 types of blood tests, including Kidney, Liver, Thyroid, Iron, Lipid, Vitamin D, B12, Folic Acid, Hormones (important PCOD tests), CBC, and many more. This package is recommended for women aged between 16 to 50 years and also for those suffering from PCOD.",
+  //   reviews: [
+  //     {
+  //       rating: 4.7,
+  //       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //   ],
+  //   avgRating: 4.5,
+  // },
 
-  {
-    id: "35",
-    productName: "MALE HEALTH PACKAGE (70 Tests)",
-    type: "package",
-    includedTests: [
-      {
-        categoryName: "Thyroid Profile",
-        tests: ["01", "02", "03"],
-      },
-      {
-        categoryName: "Lipid Profile",
-        tests: ["03", "04", "05", "07"],
-      },
-      // ... more categories can be added similarly
-    ],
-    imgUrl: menhealth,
-    category: "Basic",
-    price: 1799.0,
-    discount: 30,
-    shortDesc: "Sample Type: Blood",
-    description:
-      "The FORTUNE BLOOD TEST MALE HEALTH PACKAGE is a comprehensive health checkup package consisting of 70 fundamental tests to screen for the overall health status of men aged from 25 to 45 years. It includes tests for Lipid, Liver, Thyroid, Iron, Diabetic, Kidney, Complete Hemogram, Hormone, Vitamin D & B12.",
-    reviews: [
-      {
-        rating: 4.7,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.5,
-  },
+  // {
+  //   id: "35",
+  //   productName: "MALE HEALTH PACKAGE (70 Tests)",
+  //   type: "package",
+  //   includedTests: [
+  //     {
+  //       categoryName: "Thyroid Profile",
+  //       tests: ["01", "02", "03"],
+  //     },
+  //     {
+  //       categoryName: "Lipid Profile",
+  //       tests: ["03", "04", "05", "07"],
+  //     },
+  //     // ... more categories can be added similarly
+  //   ],
+  //   imgUrl: menhealth,
+  //   category: "Basic",
+  //   price: 1799.0,
+  //   discount: 30,
+  //   shortDesc: "Sample Type: Blood",
+  //   description:
+  //     "The FORTUNE BLOOD TEST MALE HEALTH PACKAGE is a comprehensive health checkup package consisting of 70 fundamental tests to screen for the overall health status of men aged from 25 to 45 years. It includes tests for Lipid, Liver, Thyroid, Iron, Diabetic, Kidney, Complete Hemogram, Hormone, Vitamin D & B12.",
+  //   reviews: [
+  //     {
+  //       rating: 4.7,
+  //       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //   ],
+  //   avgRating: 4.5,
+  // },
 
-  {
-    id: "36",
-    productName: "GENERAL HEALTH PACKAGE (111)",
-    type: "package",
-    includedTests: [
-      {
-        categoryName: "Thyroid Profile",
-        tests: ["01", "02", "03"],
-      },
-      {
-        categoryName: "Lipid Profile",
-        tests: ["03", "04", "05", "07"],
-      },
-      // ... more categories can be added similarly
-    ],
-    imgUrl: GenaralHealthPackage,
-    category: "Basic",
-    price: 2399.0,
-    discount: 30,
-    shortDesc: "Sample Type: Blood",
-    description:
-      "Introducing our General Health Package, meticulously crafted with 111 essential parameters for a comprehensive health screening. This package covers all aspects of general health, including Zinc, Copper, Magnesium, Folic Acid, Vitamin D and B12 levels, cholesterol, and other vital blood and urine tests. Ideal for individuals of any age group, it offers a holistic assessment to prioritize your well-being.",
-    reviews: [
-      {
-        rating: 4.7,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.5,
-  },
+  // {
+  //   id: "36",
+  //   productName: "GENERAL HEALTH PACKAGE (111)",
+  //   type: "package",
+  //   includedTests: [
+  //     {
+  //       categoryName: "Thyroid Profile",
+  //       tests: ["01", "02", "03"],
+  //     },
+  //     {
+  //       categoryName: "Lipid Profile",
+  //       tests: ["03", "04", "05", "07"],
+  //     },
+  //     // ... more categories can be added similarly
+  //   ],
+  //   imgUrl: GenaralHealthPackage,
+  //   category: "Basic",
+  //   price: 2399.0,
+  //   discount: 30,
+  //   shortDesc: "Sample Type: Blood",
+  //   description:
+  //     "Introducing our General Health Package, meticulously crafted with 111 essential parameters for a comprehensive health screening. This package covers all aspects of general health, including Zinc, Copper, Magnesium, Folic Acid, Vitamin D and B12 levels, cholesterol, and other vital blood and urine tests. Ideal for individuals of any age group, it offers a holistic assessment to prioritize your well-being.",
+  //   reviews: [
+  //     {
+  //       rating: 4.7,
+  //       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //   ],
+  //   avgRating: 4.5,
+  // },
 
-  {
-    id: "37",
-    productName: "FEMALE ADVANCED HEALTH PACKAGE (108 Tests)",
-    type: "package",
-    includedTests: [
-      {
-        categoryName: "Thyroid Profile",
-        tests: ["01", "02", "03"],
-      },
-      {
-        categoryName: "Lipid Profile",
-        tests: ["03", "04", "05", "07"],
-      },
-      // ... more categories can be added similarly
-    ],
-    imgUrl: FemaleAdvancePackage,
-    category: "Basic",
-    price: 2499.0,
-    discount: 30,
-    shortDesc: "Sample Type: Blood",
-    description:
-      "The FEMALE ADVANCED HEALTH PACKAGE includes 108 vital tests to screen the health status, such as Cardiac Risk Markers, Complete Hemogram, Diabetics, Iron, Lipid, Liver, Kidney, Thyroid, Vitamin, Pancreatic, Electrolytes, Ovarian Cancer, CEA (A Type of Tumour Marker) and Hormones. This package is recommended for women between the ages of 25 and 50 years old.",
-    reviews: [
-      {
-        rating: 4.7,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.5,
-  },
+  // {
+  //   id: "37",
+  //   productName: "FEMALE ADVANCED HEALTH PACKAGE (108 Tests)",
+  //   type: "package",
+  //   includedTests: [
+  //     {
+  //       categoryName: "Thyroid Profile",
+  //       tests: ["01", "02", "03"],
+  //     },
+  //     {
+  //       categoryName: "Lipid Profile",
+  //       tests: ["03", "04", "05", "07"],
+  //     },
+  //     // ... more categories can be added similarly
+  //   ],
+  //   imgUrl: FemaleAdvancePackage,
+  //   category: "Basic",
+  //   price: 2499.0,
+  //   discount: 30,
+  //   shortDesc: "Sample Type: Blood",
+  //   description:
+  //     "The FEMALE ADVANCED HEALTH PACKAGE includes 108 vital tests to screen the health status, such as Cardiac Risk Markers, Complete Hemogram, Diabetics, Iron, Lipid, Liver, Kidney, Thyroid, Vitamin, Pancreatic, Electrolytes, Ovarian Cancer, CEA (A Type of Tumour Marker) and Hormones. This package is recommended for women between the ages of 25 and 50 years old.",
+  //   reviews: [
+  //     {
+  //       rating: 4.7,
+  //       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //   ],
+  //   avgRating: 4.5,
+  // },
 
-  {
-    id: "38",
-    productName: "MALE ADVANCED HEALTH PACKAGE (105 Tests)",
-    type: "package",
-    includedTests: [
-      {
-        categoryName: "Thyroid Profile",
-        tests: ["01", "02", "03"],
-      },
-      {
-        categoryName: "Lipid Profile",
-        tests: ["03", "04", "05", "07"],
-      },
-      // ... more categories can be added similarly
-    ],
-    imgUrl: maleadvancepackage,
-    category: "Basic",
-    price: 2499.0,
-    discount: 30,
-    shortDesc: "Sample Type: Blood",
-    description:
-      "The MALE ADVANCED HEALTH PACKAGE includes 105 vital tests to screen health status, such as Cardiac Risk Markers, Complete Hemogram, Diabetes, Iron, Lipid, Liver, Kidney, Thyroid, Vitamins, Pancreatic, Electrolytes, CEA (a type of Tumour Marker), Prostate Cancer (PSA), and Hormones. This package is recommended for men aged between 25 and 50 years.",
-    reviews: [
-      {
-        rating: 4.7,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.5,
-  },
+  // {
+  //   id: "38",
+  //   productName: "MALE ADVANCED HEALTH PACKAGE (105 Tests)",
+  //   type: "package",
+  //   includedTests: [
+  //     {
+  //       categoryName: "Thyroid Profile",
+  //       tests: ["01", "02", "03"],
+  //     },
+  //     {
+  //       categoryName: "Lipid Profile",
+  //       tests: ["03", "04", "05", "07"],
+  //     },
+  //     // ... more categories can be added similarly
+  //   ],
+  //   imgUrl: maleadvancepackage,
+  //   category: "Basic",
+  //   price: 2499.0,
+  //   discount: 30,
+  //   shortDesc: "Sample Type: Blood",
+  //   description:
+  //     "The MALE ADVANCED HEALTH PACKAGE includes 105 vital tests to screen health status, such as Cardiac Risk Markers, Complete Hemogram, Diabetes, Iron, Lipid, Liver, Kidney, Thyroid, Vitamins, Pancreatic, Electrolytes, CEA (a type of Tumour Marker), Prostate Cancer (PSA), and Hormones. This package is recommended for men aged between 25 and 50 years.",
+  //   reviews: [
+  //     {
+  //       rating: 4.7,
+  //       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //   ],
+  //   avgRating: 4.5,
+  // },
 
-  {
-    id: "39",
-    productName: "FEMALE SENIOR CITIZEN HEALTH PACKAGE (108 Tests)",
-    type: "package",
-    includedTests: [
-      {
-        categoryName: "Thyroid Profile",
-        tests: ["01", "02", "03"],
-      },
-      {
-        categoryName: "Lipid Profile",
-        tests: ["03", "04", "05", "07"],
-      },
-      // ... more categories can be added similarly
-    ],
-    imgUrl: FemaleSeniorCitizen,
-    category: "Basic",
-    price: 3499.0,
-    discount: 30,
-    shortDesc: "Sample Type: Blood",
-    description:
-      "The FEMALE SENIOR CITIZEN HEALTH PACKAGE consists of 108 fundamental tests for screening of health status, including Lipid, Liver, Kidney, Complete Hemogram, Diabetic screen, Iron, Thyroid, Electrolytes, Pancreas, Insulin, C-peptide, Homocysteine, Lp-PLA2 profiles, and CA 125 (Ovarian Cancer). This package is recommended for women aged above 45 years and for anyone suffering from high diabetes.",
-    reviews: [
-      {
-        rating: 4.7,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.5,
-  },
+  // {
+  //   id: "39",
+  //   productName: "FEMALE SENIOR CITIZEN HEALTH PACKAGE (108 Tests)",
+  //   type: "package",
+  //   includedTests: [
+  //     {
+  //       categoryName: "Thyroid Profile",
+  //       tests: ["01", "02", "03"],
+  //     },
+  //     {
+  //       categoryName: "Lipid Profile",
+  //       tests: ["03", "04", "05", "07"],
+  //     },
+  //     // ... more categories can be added similarly
+  //   ],
+  //   imgUrl: FemaleSeniorCitizen,
+  //   category: "Basic",
+  //   price: 3499.0,
+  //   discount: 30,
+  //   shortDesc: "Sample Type: Blood",
+  //   description:
+  //     "The FEMALE SENIOR CITIZEN HEALTH PACKAGE consists of 108 fundamental tests for screening of health status, including Lipid, Liver, Kidney, Complete Hemogram, Diabetic screen, Iron, Thyroid, Electrolytes, Pancreas, Insulin, C-peptide, Homocysteine, Lp-PLA2 profiles, and CA 125 (Ovarian Cancer). This package is recommended for women aged above 45 years and for anyone suffering from high diabetes.",
+  //   reviews: [
+  //     {
+  //       rating: 4.7,
+  //       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //   ],
+  //   avgRating: 4.5,
+  // },
 
-  {
-    id: "40",
-    productName: "MALE SENIOR CITIZEN HEALTH PACKAGE (108 Tests)",
-    type: "package",
-    includedTests: [
-      {
-        categoryName: "Thyroid Profile",
-        tests: ["01", "02", "03"],
-      },
-      {
-        categoryName: "Lipid Profile",
-        tests: ["03", "04", "05", "07"],
-      },
-    ],
-    imgUrl: seniorcitizen,
-    category: "Basic",
-    price: 3499.0,
-    discount: 30,
-    shortDesc: "Sample Type: Blood",
-    description:
-      "The MALE SENIOR CITIZEN HEALTH PACKAGE consists of 108 fundamental tests for screening of health status, including Lipid, Liver, Kidney, Complete Hemogram, Diabetic screen, Iron, Thyroid, Electrolytes, Pancreas, Insulin, C-peptide, Homocysteine, Lp-PLA2 profiles, and PSA (Prostate Cancer). This package is recommended for men aged above 45 years and for anyone suffering from high diabetes.",
-    reviews: [
-      {
-        rating: 4.7,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.5,
-  },
+  // {
+  //   id: "40",
+  //   productName: "MALE SENIOR CITIZEN HEALTH PACKAGE (108 Tests)",
+  //   type: "package",
+  //   includedTests: [
+  //     {
+  //       categoryName: "Thyroid Profile",
+  //       tests: ["01", "02", "03"],
+  //     },
+  //     {
+  //       categoryName: "Lipid Profile",
+  //       tests: ["03", "04", "05", "07"],
+  //     },
+  //   ],
+  //   imgUrl: seniorcitizen,
+  //   category: "Basic",
+  //   price: 3499.0,
+  //   discount: 30,
+  //   shortDesc: "Sample Type: Blood",
+  //   description:
+  //     "The MALE SENIOR CITIZEN HEALTH PACKAGE consists of 108 fundamental tests for screening of health status, including Lipid, Liver, Kidney, Complete Hemogram, Diabetic screen, Iron, Thyroid, Electrolytes, Pancreas, Insulin, C-peptide, Homocysteine, Lp-PLA2 profiles, and PSA (Prostate Cancer). This package is recommended for men aged above 45 years and for anyone suffering from high diabetes.",
+  //   reviews: [
+  //     {
+  //       rating: 4.7,
+  //       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //   ],
+  //   avgRating: 4.5,
+  // },
 
   {
     id: "41",
@@ -4975,18 +5083,18 @@ export const healthPackagesArray = [
     ],
     imgUrl: seniorcitizen,
     category: "Basic",
-    price: 3499.0,
+    price: 6999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "The MALE SENIOR CITIZEN HEALTH PACKAGE consists of 108 fundamental tests for screening of health status, including Lipid, Liver, Kidney, Complete Hemogram, Diabetic screen, Iron, Thyroid, Electrolytes, Pancreas, Insulin, C-peptide, Homocysteine, Lp-PLA2 profiles, and PSA (Prostate Cancer). This package is recommended for men aged above 45 years and for anyone suffering from high diabetes.",
+      "Thyrocare’s Aarogyam X profile tests for 135 parameters and provides an overall snapshot of your health status. Thyrocare’s Aarogyam X profile includes all the tests covered in Aarogyam 1.8 with a few more tests like Fasting Blood Sugar, Magnesium, Electrolyte Profile, Arthritis Profile, and Urinary Microalbumin that aid in assessing your well-being and identifying a potential illness or health risks before they strike. ",
     reviews: [
       {
         rating: 4.7,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    overlayTitle: "AAROGYAM 1.3",
+    overlayTitle: "aarogyam x with utsh",
     overlayDetails: [
       "Cardiac Risk Markers (6)",
       "Complete Hemogram (28)",
@@ -5230,34 +5338,36 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Arthritis, Cardiac Risk Markers, Complete Hemogram, Diabetes, Electrolytes, Elements, Hematology, Iron Deficiency, Lipid, Liver, Metabolic, Pancreatic, Renal, Steroid, Thyroid, Toxic Elements, Urinogram, Vitamin",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 8499.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Aarogyam XL profile offered by Thyrocare is a diagnostic profile of specially curated 145 test parameters to evaluate health in the best possible way. Read on to know more about the Aarogyam XL package offers a unique diagnostic profile of specialized tests to evaluate health in the best possible way. It is a complete diagnostic package of tests and profiles that aids in preventing risk arising from nutritional deficiencies, hormonal imbalance, lifestyle, and growth. This profile includes tests to assess the health of a wide range of individuals depending on their occupation, age, and gender. The Aarogyam XL profile includes all the tests covered in Aarogyam X along with a few more tests to measure the levels of steroids (hormones) in the body. Avail of the service by booking the Aarogyam XL Profile online at an affordable rate, at your doorstep.",
     reviews: [
       {
         rating: 4.7,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    overlayTitle: "AAROGYAM 1.3",
+    overlayTitle: "aarogyam xl with utsh",
     overlayDetails: [
-      "Cardiac Risk Markers (6)",
+      "Arthritis (2)",
+      "Cardiac Risk Markers (7)",
       "Complete Hemogram (28)",
-      "Diabetics (2)",
+      "Diabetes (2)",
+      "Electrolytes (2)",
       "Elements (2)",
-      "Hormone (1)",
-      "Iron Deficiency (4)",
+      "Hematology (1)",
+      "Iron Deficiency (5)",
       "Lipid (10)",
-      "Liver (12)",
-      "Renal (8)",
-      "Thyroid (3)",
-      "Toxic Elements (22)",
-      "Vitamins (2)",
+      "Liver (13)","Metabolic (1)","Pancreatic (2)",
+      "Renal (10)",
+      "Steroid (10)","Thyroid (3)",
+      "Toxic Elements (22)","Urinogram (10)",
+      "Vitamin (14)",
     ],
     avgRating: 4.5,
   },
@@ -5424,21 +5534,21 @@ export const healthPackagesArray = [
         tests: ["Vitamin b-12", "25-oh vitamin d (total)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes  Arthritis, Cardiac Risk Markers, Complete Hemogram, Complete Urine Analysis, Diabetes, Electrolytes, Lipid, Liver, Renal, Thyroid, Toxic Elements, Vitamins ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 5149.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Now you don't need to fast before taking a blood test. Our Aarogyam 24x7 (Non-Fasting) - Advanced Profile - is a package of 107 parameters that you can avail anytime during the day, with no fasting at all. Studies show that kidney, liver, thyroid function, blood counts etc. are not influenced by fasting. We provide an ideal test package that covers majority of blood tests needed for essential health monitoring. These tests help in detecting diseases early, including diabetes, and monitoring how well a person's body responds to treatments. Early diagnosis and prompt treatment by a doctor can greatly reduce complications. Book your test today.",
     reviews: [
       {
         rating: 4.7,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    overlayTitle: "Aarogyam 24x7 (non fasting) - advanced (100 Tests)",
+    overlayTitle: "aarogyam 24x7 (non fasting) - advanced (110 Tests)",
     overlayDetails: [
       "Arthritis (2)",
       "Cardiac Risk Markers (5)",
@@ -5708,14 +5818,14 @@ export const healthPackagesArray = [
         tests: ["Tsh - ultrasensitive"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Complete Hemogram, Complete Urine Analysis, Diabetes, Lipid, Liver, Renal, Thyroid",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 950.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Regular health checkups are important because early diagnosis and treatment allow better patient management. Aarogyam Basic 1 is a comprehensive preventive healthcare package. It comes with 74 parameters, including Complete urine analysis, diabetes, complete hemogram, renal health, lipid profile, liver analysis, and thyroid function test(UTSH), that identify and minimize the risk factors by detecting illness at an early stage. Book Aarogyam basic 1 and avail free sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -5829,14 +5939,14 @@ export const healthPackagesArray = [
         tests: ["Tsh - ultrasensitive"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Complete Hemogram, Diabetes, Lipid, Liver, Renal, Thyroid",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2099.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "aarogyam camp profile 1",
     reviews: [
       {
         rating: 4.7,
@@ -5968,14 +6078,14 @@ export const healthPackagesArray = [
         tests: ["Vitamin b-12", "25-oh vitamin d (total)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Cardiac Risk Markers, Complete Hemogram, Diabetes, Lipid, Liver, Renal, Thyroid, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 3099.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "aarogyam camp profile 2",
     reviews: [
       {
         rating: 4.7,
@@ -5984,12 +6094,13 @@ export const healthPackagesArray = [
     ],
     overlayTitle: "Aarogyam Camp Profile 2",
     overlayDetails: [
+      "Cardiac Risk Markers (5)",
       "Complete Hemogram (28)",
       "Diabetics (2)",
       "Lipid (10)",
       "Liver (12)",
       "Renal (7)",
-      "Thyroid (3)",
+      "Thyroid (3)", "Vitamins (2)"
     ],
     avgRating: 4.5,
   },
@@ -6140,14 +6251,14 @@ export const healthPackagesArray = [
         tests: ["Vitamin b-12", "25-oh vitamin d (total)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Complete Hemogram, Complete Urine Analysis, Diabetes, Electrolytes, Iron Deficiency, Lipid, Liver, Other Counts, Renal, Thyroid, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 1499.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Advanced Full Body Checkup with Vitamins profile is a full-body preventive health checkup that gives you complete understanding of your bodily functions. The profile comprises 92 tests including Thyroid, Liver, Lipid and Kidney profiles, Iron deficiency, Serum Electrolytes, Complete Urine Analysis and more. Additional profiles like Diabetic Screening and CBC help you monitor sugar levels and potential blood infections. Vitamin D and B12 tests help measure vitamin levels. Book this profile at an affordable rate and get a FREE home sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -6173,7 +6284,7 @@ export const healthPackagesArray = [
 
   {
     id: "49",
-    productName: "Amh Advanced Profile (62 Tests)",
+    productName: "Amh Advanced Profile (6 Tests)",
     type: "package",
     includedTests: [
       {
@@ -6194,14 +6305,14 @@ export const healthPackagesArray = [
         tests: ["Tsh - ultrasensitive"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Infertility, Pregnancy, Thyroid",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 3060.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "amh advanced profile",
     reviews: [
       {
         rating: 4.7,
@@ -6259,14 +6370,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Amino Acid",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2060.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Amino acids are the building blocks of proteins and are crucial in several bodily functions. This profile tests for 35 amino acids that help monitor their blood levels, along with identifying any inherited metabolic disorders and urea cycle defects. Get this test at an affordable price and get a better understanding of your overall health. Book now and enjoy free sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -6379,14 +6490,14 @@ export const healthPackagesArray = [
         tests: ["Folate", "Vitamin b-12"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Blood Grouping And Rh Typing, Complete Hemogram, Diabetes, Hepatitis Panel, Infectious Diseases, Iron Deficiency, Thalassemia, Thyroid, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2580.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "antenatal profile - advanced",
     reviews: [
       {
         rating: 4.7,
@@ -6470,14 +6581,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Complete Hemogram, Hepatitis Panel, Infectious Diseases, Thyroid",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 1550.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "antenatal profile - basic",
     reviews: [
       {
         rating: 4.7,
@@ -6650,14 +6761,14 @@ export const healthPackagesArray = [
         tests: ["Folate", "Vitamin b-12", "25-oh vitamin d (total)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Autoimmunity, Blood Grouping And Rh Typing, Cardiac Risk Markers, Coagulation, Complete Hemogram, Complete Urine Analysis, Diabetes, Hepatitis Panel,Infectious Diseases, Iron Deficiency, Pregnancy, Thalassemia, Thyroid, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 4640.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "antenatal profile extended",
     reviews: [
       {
         rating: 4.7,
@@ -6671,9 +6782,10 @@ export const healthPackagesArray = [
       "Cardiac Risk Markers (1)",
       "Coagulation (1)",
       "Complete Hemogram (28)",
+      "Complete Urine Analysis (24)", "Diabetes (3)",
       "Hepatitis Panel (1)",
-      "Infectious Diseases (3)",
-      "Thyroid (3)",
+      "Infectious Diseases (8)", "Iron Deficiency (4)", "Pregnancy (1)", "Thalassemia (5)",
+      "Thyroid (3)", "Vitamins (3)"
     ],
     avgRating: 4.5,
   },
@@ -6785,14 +6897,14 @@ export const healthPackagesArray = [
         tests: ["Vitamin b-12", "25-oh vitamin d (total)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Arthritis, Cardiac Risk Markers, Complete Hemogram, Diabetes, Hb27, Lipid, Liver, Renal, Thyroid, Vitamin",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 5000.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Thyrocare’s arthritis profile covers 55 parameters which help detect problems with your bones and joints. You should book the profile if you are experiencing joint pain, knee problems, stiffness, etc. This profile also helps understand the type of arthritis. Book online and get a free home sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -6852,14 +6964,14 @@ export const healthPackagesArray = [
         tests: ["Vitamin b-12", "25-oh vitamin d (total)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Arthritis, Elements, Liver, Metabolic, Renal, Vitamin",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 3300.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Bone Profile - Advanced checks the health of your bones and joints. It measures the levels of vitamins and minerals required for healthy bones. It also determines uric acid levels as uncontrolled levels may lead to bone issues. Book the Bone Profile - Advanced now at the best rate and get a free home collection service.",
     reviews: [
       {
         rating: 4.7,
@@ -6906,14 +7018,14 @@ export const healthPackagesArray = [
         tests: ["25-oh vitamin d (total)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Arthritis, Elements, Liver, Renal, Vitamin",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2270.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Bone Profile - Basic checks the health of our bones and joints as well as identifies conditions that affect our bone health. It tests for levels of vitamin D and minerals that are essential for healthy bones. Book now at the best rate and get a free home collection service.",
     reviews: [
       {
         rating: 4.7,
@@ -6947,14 +7059,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Cardiac Risk Markers ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 1200.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Cardiac Risk Markers Profile estimates the levels of cardiac risk markers in the body, which help in evaluating the functioning of the heart. The test also evaluates Lipids in the body, abnormal levels of which can lead to heart attacks or other severe heart conditions. The Cardiac Risk Markers Profile is helpful to individuals who have a family history of cardiac disease or where there is an increase in the prevalence of cardiac disease at a young age. Early diagnosis of cardiac disorder can help in the overall prognosis. Thyrocare has priced the profile at just Rs. 1200/- to make it affordable to one and all. Get tested with a cardiac risk marker test at an affordable cost at your home.",
     reviews: [
       {
         rating: 4.7,
@@ -6976,14 +7088,14 @@ export const healthPackagesArray = [
         tests: ["Chikungunya - igg rapid test", "Chikungunya - igm rapid test"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Fever",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 520.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Chikungunya Rapid Test (IgG/IgM) detects IgG and IgM antibodies specific to Chikungunya virus. This test helps in identifying both recent and past infections by distinguishing between IgM antibodies, which indicate a current infection, and IgG antibodies, which suggest a past infection. Book test at affordable rates. Lab visits and FREE home sample collection available. Get accurate and timely diagnosis in less than 6 hours for correct treatment.",
     reviews: [
       {
         rating: 4.7,
@@ -7184,14 +7296,14 @@ export const healthPackagesArray = [
         tests: ["Vitamin b-12", "25-oh vitamin d (total)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Cancer Markers, Cardiac Risk Markers, Complete Hemogram, Complete Urine Analysis, Diabetes, Electrolytes, Iron Deficiency, Lipid, Liver, Renal, Thyroid, Toxic Elements, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 1999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "complete health check with vitamins",
     reviews: [
       {
         rating: 4.7,
@@ -7233,14 +7345,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Thyroid",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 775.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Thyroid gland plays a major role in many bodily functions. Regular thyroid screening is important as thyroid diseases often go undiagnosed. Our Complete Thyroid Care profile covers key parameters like TSH along with free and total T3 and T4. Book now at affordable rates + free home sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -7287,14 +7399,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes COMPLETE URINE ANALYSIS ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 510.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "complete urine analysis",
     reviews: [
       {
         rating: 4.7,
@@ -7331,14 +7443,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Vitamin",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 5000.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Complete Vitamin Profile test is a multidisciplinary package that covers both Fat-Soluble Vitamins and Water-Soluble Vitamins tests to detect a deficiency or excess vitamins required by your body to eliminate health risks, build immunity, and maintain your overall health. Abnormal levels of these vitamins can give rise to lethargy, irritation, muscle spasm, fatigue, anemia, psychological disorders, toxicity, and many more if not given timely attention. Complete vitamin profile is now at the best price with a home collection facility from Thyrocare.",
     reviews: [
       {
         rating: 4.7,
@@ -7360,14 +7472,14 @@ export const healthPackagesArray = [
         tests: ["Covid antibody igg - elisa"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Infectious Diseases",
     imgUrl: populartest01,
     category: "Basic",
     price: 2999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "CAntibodies 1 or COVID antibodies 1 profile offered by Thyrocare is a test for knowing the presence of antibodies in the body against the SARS-CoV-2 virus. Antibodies are developed by the body as a response when exposed to a virus or a viral protein called an antigen. The IgG antibody renders long-term protection and gives an assurance of protection against future viral encounters. The test is recommended for both healthy as well as COVID-19 recovered individuals. Thyrocare has priced the test at just Rs. 400 to make it affordable to one and all.",
     reviews: [
       {
         rating: 4.7,
@@ -7401,14 +7513,14 @@ export const healthPackagesArray = [
         tests: ["Ferritin"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Cardiac Risk Markers, Coagulation, Infection, Iron Deficiency",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2060.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "COVID Infection Monitoring Profile includes all curated tests like D-dimer, Interleukin-6, C-reactive protein, Ferritin, and Lactate dehydrogenase. These tests can help in tracking the overall health during an infection, and check for therapeutic response, disease progression, and disease consequences on other organs by monitoring key biomarkers. Book a COVID Infection Monitoring Profile at Thyrocare with a home collection facility or walk-in at a center near you.",
     reviews: [
       {
         rating: 4.7,
@@ -7503,14 +7615,14 @@ export const healthPackagesArray = [
         tests: ["Creatinine - serum"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Cardiac Risk Markers, Coagulation, Complete Hemogram, Infection, Iron Deficiency, Liver, Other Counts, Renal",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2370.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "COVID Infection Monitoring Advanced is an advanced profile with a comprehensive range of tests including D-dimer, Interleukin-6, C-reactive protein, Ferritin, and Lactate dehydrogenase, Complete hemogram, Aspartate aminotransferase, Alanine transaminase, Gamma-glutamyltransferase, Creatinine - serum, and Erythrocyte sedimentation rate. These tests will keep you reassured about your overall health and keep you from feeling overwhelmed or anxious during the course of the infection. These tests monitor the levels of essential biomarkers that may signal secondary infection or inflammation, as well as disease status, therapeutic response, and disease progression.  Book a COVID Infection Monitoring Advanced Profile at Thyrocare with a home collection facility or walk-in at a center near you.",
     reviews: [
       {
         rating: 4.7,
@@ -7541,14 +7653,14 @@ export const healthPackagesArray = [
         tests: ["Covid-19 rt pcr"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes covid-19",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 400.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "COVID-19 is a contagious respiratory illness caused by SARS-CoV-2 coronavirus. Common symptoms include fever, chills, cough, sore throat, difficulty breathing, fatigue, loss of smell and taste, congestion or runny nose. The test is performed by collecting a throat and nasal sample using a cotton swab. The tests accurately detect and help manage COVID-19 infection and also track your recovery post infection. Book now at affordable rates and get free home sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -7577,14 +7689,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Drug of Abuse",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 820.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Thyrocare’s drug panel 6 includes qualitative tests that use a urine sample to evaluate the presence of any drug abuse. This panel covers most popular illicit drugs, namely amphetamine, barbiturates, benzodiazepines, cocaine, opiates and tetrahydrocannabinol, to evaluate and detect the presence of drug overdose or intoxication. To get this panel at the best price, walk in at our nearest centre or opt for home sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -7733,14 +7845,14 @@ export const healthPackagesArray = [
         tests: ["Vitamin b-12", "25-oh vitamin d (total)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Complete Hemogram, Complete Urine Analysis, Diabetes, Iron Deficiency, Lipid, Liver, Renal, Thyroid, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2580.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+        "doctor recommended full body checkup advanced",
     reviews: [
       {
         rating: 4.7,
@@ -7783,14 +7895,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Drug of Abuse ",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 1960.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Drug panels and urine drug tests are commonly adopted qualitative tests for determining the misuse of prescription medications or abuse of illicit drugs. Drug Panel 10 looks for the presence of 10 common legal and illicit drugs, namely amphetamine, barbiturates, benzodiazepines, cocaine, methadone, methamphetamine, opiates, phencyclidine, propoxyphene and tetrahydrocannabinol, using urine samples. Book the Drug Panel 10 from Thyrocare at an attractive price and get tested from the comfort of your home or walk in at our centre nearest to you.",
     reviews: [
       {
         rating: 4.7,
@@ -7812,14 +7924,14 @@ export const healthPackagesArray = [
         tests: ["Cocaine", "Tetrahydrocannabinol"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Drug of Abuse",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 460.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "A drug panel is a common way to check for the presence of various drugs in a person’s body. It is used to check for the legal and illicit drugs some people abuse. Drug panel 2 includes qualitative tests that analyze the most common drugs, namely cocaine and tetrahydrocannabinol, in the sample. Avail your drug panel 2 today at the comfort of your home only at Thyrocare, you can also visit the nearest collection centre.",
     reviews: [
       {
         rating: 4.7,
@@ -7841,14 +7953,14 @@ export const healthPackagesArray = [
         tests: ["Cocaine", "Opiates", "Tetrahydrocannabinol"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Drug of Abuse",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 620.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Drug panels and urine drug screens are widely qualitative tests for determining drug abuse.  Thyrocare offers Drug Panel 3, a panel that looks for the presence of 3 of most commonly abused drugs, namely cocaine, opiates and tetrahydrocannabinol using urine samples. Get tested at the best rate with Thyrocare’s Drug Panel 3 and avail home collection facility or visit our centre near you.",
     reviews: [
       {
         rating: 4.7,
@@ -7870,14 +7982,14 @@ export const healthPackagesArray = [
         tests: ["Amphetamine", "Cocaine", "Opiates", "Tetrahydrocannabinol"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Drug of Abuse",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 770.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Drug panel 4 is a standard qualitative test that entails the collection of a urine specimen to determine if drug metabolites, such as amphetamine, cocaine, opiates and tetrahydrocannabinol, exist in the sample. Book Drug panel 4 with Thyrocare now and opt for home collection or walk-in at our nearest collection centre.",
     reviews: [
       {
         rating: 4.7,
@@ -7905,14 +8017,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Drug of Abuse",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 980.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Drug abuse or addiction is caused by the habitual taking of addictive substances. Drug panel 5 includes qualitative tests that use urine as the sample to test for the presence of commonly abused drugs, such as amphetamine, cocaine, opiates and tetrahydrocannabinol. Get Thyrocare's drug panel 5 at an affordable price with home collection services or walk-in at our center near you.",
     reviews: [
       {
         rating: 4.7,
@@ -7941,14 +8053,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Drug of Abuse",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 1180.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Thyrocare’s drug panel 6 includes qualitative tests that use a urine sample to evaluate the presence of any drug abuse. This panel covers most popular illicit drugs, namely amphetamine, benzodiazepines, cocaine, opiates, phencyclidine and tetrahydrocannabinol, to evaluate and detect the presence of drug overdose or intoxication. To get this panel at the best price, walk in at our nearest centre or opt for home sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -7978,14 +8090,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Drug of Abuse",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 1180.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Thyrocare’s drug panel 6 includes qualitative tests that use a urine sample to evaluate the presence of any drug abuse. This panel covers most popular illicit drugs, namely amphetamine, benzodiazepines, cocaine, opiates, phencyclidine and tetrahydrocannabinol, to evaluate and detect the presence of drug overdose or intoxication. To get this panel at the best price, walk in at our nearest centre or opt for home sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -8016,14 +8128,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Drug of Abuse",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 1550.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Screening panels and tests using urine samples are widely qualitative tests for detecting improper use of prescription medications or abuse of illicit drugs. Drug Panel 8 screens the presence of 8 legal as well as illicit or street drugs, namely amphetamine, barbiturates, benzodiazepines, cocaine, methamphetamine, opiates, phencyclidine and tetrahydrocannabinol by analyzing a urine sample. Avail Thyrocare’s Drug Panel 8 at an affordable price with a home collection facility or walk-in at our centre near you.",
     reviews: [
       {
         rating: 4.7,
@@ -8055,14 +8167,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Drug of Abuse",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 1750.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Drug screening tests and panels that use urine as a sample are common qualitative tests for determining abuse of prescription medications or use of illicit drugs. Thyrocare’s Drug Panel 9 checks for the presence of 9 legal and illicit drugs, namely amphetamine, barbiturates, benzodiazepines, cocaine, methadone, methamphetamine, opiates, phencyclidine and tetrahydrocannabinol, in the body by analyzing urine samples. Book the Drug Panel 9 from Thyrocare at a discounted price and avail our home collection services or visit the nearest Thyrocare centre.",
     reviews: [
       {
         rating: 4.7,
@@ -8107,14 +8219,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Toxic Elements",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 1000.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "elements 22 (toxic and nutrients)",
     reviews: [
       {
         rating: 4.7,
@@ -8143,14 +8255,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Vitamin",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 1850.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Fat - Soluble Vitamin profile determines how each of the vitamins namely, A, D, E, and K act within the body. These tests included help in understanding levels of fat-soluble vitamins which are micronutrients essential for vitality and good health. High levels of these vitamins could lead to toxicity in the body. This test is available at a discounted rate, along with the home collection.",
     reviews: [
       {
         rating: 4.7,
@@ -8321,14 +8433,14 @@ export const healthPackagesArray = [
         tests: ["Vitamin b-12", "25-oh vitamin d (total)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Complete Hemogram, Complete Urine Analysis, Diabetes, Iron Deficiency, Lipid, Liver, Renal, Thyroid, Toxic Elements, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 1799.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Freedom Healthy Package 2024 is a preventive care routine health checkup package that includes 111 parameters with essential blood and urine tests for routine health monitoring. The package is highly recommended for regular health monitoring, even when there are no health issues. One can detect any potential health problems at an early stage and seek right medical treatment at the right time.",
     reviews: [
       {
         rating: 4.7,
@@ -8365,22 +8477,22 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Thyroid",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 610.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "ft3-ft4-ustsh",
     reviews: [
       {
         rating: 4.7,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    overlayTitle: "complete thyroid checkup",
-    overlayDetails: ["Throid (5)"],
+    overlayTitle: "ft3-ft4-ustsh",
+    overlayDetails: ["Thyroid (3)"],
     avgRating: 4.5,
   },
 
@@ -8444,14 +8556,14 @@ export const healthPackagesArray = [
         tests: ["Amylase", "Lipase"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Complete Hemogram, Liver, Pancreatic",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 820.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "A healthy gut contains healthy bacteria, and their imbalance can cause several infections and health problems, including heart diseases and obesity. Gastro/Gut Health Panel is a comprehensive package of 38 tests that gives a detailed information about your gut health. Book Thyrocare Gastro/Gut Health Panel and know your gut health at affordable rates.",
     reviews: [
       {
         rating: 4.7,
@@ -8478,14 +8590,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Infection",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 4380.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Thyrocare’s H3N2 Plus Influenza Profile includes 4 parameters - H3N2, H1N1, Influenza A and Influenza B. Get tested if you experience symptoms like fever, cough, runny nose, sore throat, fatigue, diarrhea and vomiting. Stay safe in this outbreak. Book now at the best rates and get a free home collection.",
     reviews: [
       {
         rating: 4.7,
@@ -8536,14 +8648,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Complete Hemogram",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 300.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "CBC test is a blood test that measures the levels of different blood cells in your body. Testing white blood cells, red blood cells, platelets and hemoglobin helps determine your overall health status and specific health issues. Book test at affordable rates. Lab visits and FREE home sample collection available. Get accurate and timely diagnosis in less than 6 hours for correct treatment.",
     reviews: [
       {
         rating: 4.7,
@@ -8633,14 +8745,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Complete Hemogram, Diabetes, Hepatitis Panel, Infectious Diseases, Liver",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 5150.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "It is an array of tests used to detect hepatitis infections. The parameters cover various antigens which assesses the presence of Hepatitis A, B, E and C viruses. This profile is generally recommended to people suffering with abdominal pain, dark colored urine, jaundice, vomiting, weight loss, fatigue and general itching. These tests detect current or past infections, how contagious is the infection, as well as whether it has caused liver damage.",
     reviews: [
       {
         rating: 4.7,
@@ -8724,14 +8836,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Cardiac Risk Markers, Coagulation, Complete Hemogram, Infection, Iron Deficiency, Liver",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 3090.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Infection Checkup Profile is a common test used for the detection of any infection in the body. An infection Checkup profile being a combination of tests helps in identifying the early signs of viral or bacterial infections that require fasting blood samples. This profile is suggested for individuals with infection symptoms like fever, chills or sweats, vomiting, nasal congestion, sore throat, diarrhea, pain, unusual vaginal discharge, increased urination, soreness, or swelling. Book Infection Checkup Profile from Thyrocare at an affordable price and get home collection services.",
     reviews: [
       {
         rating: 4.7,
@@ -8816,14 +8928,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Diabetes, Hormone, Hypertension, Infertility, Steroid, Thyroid, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 4640.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "infertility - extended",
     reviews: [
       {
         rating: 4.7,
@@ -8889,14 +9001,14 @@ export const healthPackagesArray = [
         tests: ["Vitamin d total", "Vitamin d2", "Vitamin d3"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Hypertension, Infertility, Steroid, Thyroid, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 4120.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "infertility advanced",
     reviews: [
       {
         rating: 4.7,
@@ -8937,14 +9049,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Infertility, Thyroid",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2270.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "infertility basic",
     reviews: [
       {
         rating: 4.7,
@@ -8979,14 +9091,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Infertility, Thyroid",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2270.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "infertility basic",
     reviews: [
       {
         rating: 4.7,
@@ -9044,14 +9156,14 @@ export const healthPackagesArray = [
         tests: ["Vitamin d total", "Vitamin d2", "Vitamin d3"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Hypertension, Infertility, Steroid, Thyroid, Vitamin",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 4000.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Infertility Profile - Advanced includes 21 tests that help you check levels of hormones that are required for maintaining your reproductive system. This profile helps you better understand your menstrual health and if there are any potential health conditions that require medical attention. You can also learn about your ability to get pregnant at a specific time frame. Book Infertility Profile - Advanced at an affordable price and get a free home collection or walk-in at our centre near you.",
     reviews: [
       {
         rating: 4.7,
@@ -9079,14 +9191,14 @@ export const healthPackagesArray = [
         tests: ["H1n1 influenza a (pdm09)", "Influenza a", "Influenza b"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Infection",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 3090.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Influenza or flu, is a contagious respiratory illness caused by the influenza viruses. These can cause mild to severe illness. The Influenza Panel helps the doctor determine if you have the flu and the type of virus causing it. Book Thyrocare’s Influenza Panel at the best rate and get a free home collection or walk-in at our nearest centre.",
     reviews: [
       {
         rating: 4.7,
@@ -9113,14 +9225,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Iron Deficiency",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 680.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "This profile aids to measure the amount of iron present in the body which helps to detect an iron deficiency or overload. The deficiency of iron leads to anemia, shortness of breath, headache, weakness, chest pain, while iron overload can cause organ damage and toxicity in the body. Thyrocare offers Iron Deficiency Profile at the most affordable price. Sample collection at home available.",
     reviews: [
       {
         rating: 4.7,
@@ -9134,7 +9246,7 @@ export const healthPackagesArray = [
 
   {
     id: "93",
-    productName: "kidpro (5 Tests)",
+    productName: "kidpro (7 Tests)",
     type: "package",
     includedTests: [
       {
@@ -9150,14 +9262,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Renal",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 850.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "A combination of 7 tests helps in determining the health of kidneys, and how well they are filtering the fluids and excreting the waste. Also, it helps to detect the percentage of Calcium in the body. Low levels of Calcium cause muscle pain and spasm or even abnormal heart rhythms whereas, high levels can lead to the formation of kidney stones. Book Kidpro test to avail the service at your doorsteps at a low cost.",
     reviews: [
       {
         rating: 4.7,
@@ -9190,22 +9302,22 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Lipid",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 550.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "This blood measures the levels of good and bad cholesterol in the blood and helps predict your risk of heart disease and stroke. Book this profile now at affordable costs & get a free home sample collection.",
     reviews: [
       {
         rating: 4.7,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    overlayTitle: "complete thyroid checkup",
-    overlayDetails: ["Throid (5)"],
+    overlayTitle: "lipid profile",
+    overlayDetails: ["Lipid (10)"],
     avgRating: 4.5,
   },
 
@@ -9232,14 +9344,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Liver",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 850.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "An unhealthy liver often results in fatigue or weakness and loss of appetite. As the name suggests, the Liver Function Test contains 12 parameters that help in assessing the proper functionality of the liver and detect the presence of any damage or associated diseases. Early detection of abnormality in the liver functions may eliminate further damage to the liver and help avail effective treatment. Book liver function tests from Thyrocare at an affordable price and get home collection services.",
     reviews: [
       {
         rating: 4.7,
@@ -9261,14 +9373,14 @@ export const healthPackagesArray = [
         tests: ["Plasmodium falciparum", "Plasmodium vivax"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Fever",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 580.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+    "malarial antigen",
     reviews: [
       {
         rating: 4.7,
@@ -9301,14 +9413,14 @@ export const healthPackagesArray = [
         tests: ["Percent free psa"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Cancer Markers, Cardiac Risk Markers",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 3090.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "This comprehensive profile aids in screening cancers of various organs, such as the liver, pancreas, lungs, prostate gland, testes, and intestine in men. The package comprises 6 parameters including tests for evaluating proteins like Alpha-Fetoprotein, Cancer antigen 19.9, free and total prostate-specific antigen, Carcinoembryonic antigen, and beta-human chorionic gonadotropin hormone. Get Thyrocare's Male Cancer Screening Profile at an affordable price with free home collection services or walk-in at our center near you.",
     reviews: [
       {
         rating: 4.7,
@@ -9346,14 +9458,14 @@ export const healthPackagesArray = [
         tests: ["Dihydrotestosterone (dht)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Hormone, Infertility, Metabolic, Steroid Hormone",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 3610.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+    "Male Hormone Screening Panel contains 6 tests that evaluate the levels of hormones that are important in maintaining sperm production, sexual functions and sex drive. The test is often recommended when a couple is having trouble conceiving a baby. A hormonal imbalance affects your overall body growth, sexual characteristics and more. Book now at affordable prices and get a free home collection.",
     reviews: [
       {
         rating: 4.7,
@@ -9459,14 +9571,14 @@ export const healthPackagesArray = [
         tests: ["Vitamin b-12", "25-oh vitamin d (total)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Arthritis, Cardiac Risk Markers, Complete Hemogram, Elements, Infertility, Iron Deficiency, Metabolic, Renal, Steroid Hormone, Thyroid, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2749.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+    " Book Men's Hairfall Screening : Too much hair fall and don’t know why? It could be genetic or due to lifestyle factors. Get to the root cause today with Thyrocare’s new MEN’S HAIR FALL SCREENING - ADVANCE profile. It covers 43 tests including thyroid testing, complete blood count, iron deficiency profile, inflammatory markers, vitamins, minerals and essential elements only at Rs 2749/- Book your test now at a reasonable cost and get a free home collection. ",
     reviews: [
       {
         rating: 4.7,
@@ -9562,14 +9674,14 @@ export const healthPackagesArray = [
         tests: ["Erythrocyte sedimentation rate (esr)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Cardiac Risk Markers, Complete Hemogram, Fever, Infection, Infectious Diseases, Liver, Other Counts",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2000.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+    "Monsoon brings hosts of infections. Proper precautions and early diagnosis can help you enjoy the monsoon season with good health. Prepare yourself to fight health problems this rainy season with our Monsoon Fever Panel Advanced, comprising 36 parameters. This includes a complete hemogram, cardiac risk markers and parameters for fever and infectious diseases like dengue, malaria, typhoid and chikungunya at extremely competitive prices. Book this profile and get tested from the comfort of your home with a FREE home sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -9653,14 +9765,14 @@ export const healthPackagesArray = [
         tests: ["Erythrocyte sedimentation rate (esr)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Complete Hemogram, Fever, Infectious Diseases, Liver, Other Counts",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 1500.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+    "monsoon fever panel - basic",
     reviews: [
       {
         rating: 4.7,
@@ -9693,14 +9805,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes New Born Screening",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 1550.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "newborn screening - 4",
     reviews: [
       {
         rating: 4.7,
@@ -9784,14 +9896,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Amino Acid Profile, Biochemical Panel Profile, Fatty Acid Profile, New Born Screening, Organic Acid Profile",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 4000.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "newborn screening profile",
     reviews: [
       {
         rating: 4.7,
@@ -9974,14 +10086,14 @@ export const healthPackagesArray = [
         tests: ["Vitamin b-12", "25-oh vitamin d (total)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Cardiac Risk Markers, Complete Hemogram, Complete Urine Analysis, Diabetes, Electrolytes, Iron Deficiency, Lipid, Liver, Metabolic, Pancreatic, Renal, Thyroid, Vitamin",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 4099.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "paleo profile - advanced",
     reviews: [
       {
         rating: 4.7,
@@ -10151,14 +10263,14 @@ export const healthPackagesArray = [
         tests: ["Vitamin b-12", "25-oh vitamin d (total)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Complete Hemogram, Complete Urine Analysis, Diabetes, Iron Deficiency, Lipid, Liver, Metabolic, Renal, Thyroid, Vitamin",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2699.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+    "paleo profile - basic",
     reviews: [
       {
         rating: 4.7,
@@ -10240,14 +10352,14 @@ export const healthPackagesArray = [
         tests: ["Thyroid stimulating hormone (tsh)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Complete Hemogram, Diabetes, Hormone, Infertility, Thyroid",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 3090.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Thyrocare’s PCOD profile includes 33 tests for measuring the levels of hormones in your body. Abnormal hormonal levels lead to irregular menstrual cycle, multiple cysts formation, infertility, hair and skin problems, diabetes, and much more. Book a PCOD profile to better understand your reproductive health. Get a free home sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -10463,14 +10575,14 @@ export const healthPackagesArray = [
         tests: ["Tsh - ultrasensitive"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Complete Hemogram, Diabetes, Hormone, Infertility, Lipid, Liver, Pregnanacy, Renal, Thyroid",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 3599.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "pcos basic",
     reviews: [
       {
         rating: 4.7,
@@ -10576,14 +10688,14 @@ export const healthPackagesArray = [
         tests: ["Tsh - ultrasensitive"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Complete Hemogram, Diabetes, Infertility, Lipid, Pregnancy, Thyroid",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2599.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "pcos mini",
     reviews: [
       {
         rating: 4.7,
@@ -10674,14 +10786,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Cardiac Risk Markers, Complete Hemogram, Diabetes, Infectious Diseases, Liver, Renal, Thyroid",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 1230.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+    "Thyrocare offers Post COVID Care, a profile that consists of 35 tests and is ideal for individuals who have recovered from COVID-19 infection. It includes routine check-up tests like Complete hemogram, Thyroid profile, Erythrocyte sedimentation rate as well as tests like Aspartate aminotransferase, Alanine transaminase, Gamma-glutamyl transferase, Antibody IgG, Creatinine - serum, and Random blood sugar. SARS-CoV-2, the causative agent of COVID-19 with its variants has become a global health challenge. Because there is so little knowledge about the long-term implications of COVID infection, it is critical to keep track of patients&#39; progress. People who have had a severe SARS-CoV-2 infection develop multiorgan effects, which disrupt the functioning of some important organs such as the heart, brain, lungs, kidneys, and others. Regular monitoring ensures that patients are diagnosed accurately in a timely manner and get prompt medical attention. Book a Post COVID Care Profile at Thyrocare for reliable and affordable health management.",
     reviews: [
       {
         rating: 4.7,
@@ -10807,14 +10919,14 @@ export const healthPackagesArray = [
         tests: ["Folate", "Vitamin b-12", "25-oh vitamin d (total)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Complete Hemogram, Diabetes, Infertility, Iron Deficiency, Lipid, Liver, Metabolic, Pregnancy, Renal, Thyroid, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2580.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "postpartum health checkup - advanced",
     reviews: [
       {
         rating: 4.7,
@@ -10920,14 +11032,14 @@ export const healthPackagesArray = [
         tests: ["Folate", "Vitamin b-12", "25-oh vitamin d (total)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Complete Hemogram, Diabetes, Infertility, Lipid, Liver, Thyroid, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 1550.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "postpartum health checkup - basic",
     reviews: [
       {
         rating: 4.7,
@@ -11035,14 +11147,14 @@ export const healthPackagesArray = [
         tests: ["Creatinine - serum"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Complete Hemogram, Complete Urine Analysis, Liver, Pregnancy, Renal",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 3400.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "preeclampsia profile advanced",
     reviews: [
       {
         rating: 4.7,
@@ -11119,27 +11231,26 @@ export const healthPackagesArray = [
         tests: ["Creatinine - serum"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Complete Hemogram, Liver, Pregnancy, Renal",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 3090.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "preeclampsia profile basic",
     reviews: [
       {
         rating: 4.7,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    overlayTitle: "monsoon fever panel - basic",
+    overlayTitle: "preeclampsia profile basic",
     overlayDetails: [
       "Complete Hemogram (28)",
-      "Fever (4)",
-      "Infectious Disease (1)",
       "Liver (3)",
-      "Other Counts (1)",
+      "Pregnancy (3)",
+      "Renal (1)",
     ],
     avgRating: 4.5,
   },
@@ -11160,14 +11271,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Tuberculosis",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2880.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "quantiferon -tb gold plus",
     reviews: [
       {
         rating: 4.7,
@@ -11204,14 +11315,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Complete Urine Analysis, Urinogram",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 150.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "routine urine analysis",
     reviews: [
       {
         rating: 4.7,
@@ -11233,14 +11344,14 @@ export const healthPackagesArray = [
         tests: ["Chloride", "Potassium", "Sodium"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Electrolytes",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 460.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "serum electrolytes",
     reviews: [
       {
         rating: 4.7,
@@ -11332,14 +11443,14 @@ export const healthPackagesArray = [
         tests: ["25-oh vitamin d (total)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Cardiac Risk Markers, Complete Hemogram, Diabetes, Drugs, Lipid, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 3090.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Smoking causes many life-threatening conditions, including cancer, diabetes and lung and heart diseases. Smoker’s Panel - Advanced, a comprehensive panel of 42 parameters helps you look for early warning signs and smoking-related conditions. It also helps track your overall health. Book Smoker’s Panel - Advanced now and get a free home sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -11382,14 +11493,14 @@ export const healthPackagesArray = [
         tests: ["Nicotine metabolites"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Cardiac Risk Markers, Diabetes, Drugs",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2060.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Smoking harms almost every organ in the body and increases your risk of several health problems, such as cancer, diabetes and lung and heart diseases. Smoker’s Panel - Basic, an 8-parameter package helps detect heart and respiratory damage and health complications caused by smoking. Book Smoker’s Panel - Basic and avail free sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -11610,14 +11721,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Arthritis, Cardiac Risk Markers, Complete Hemogram, Complete Urine Analysis, Diabetes, Electrolytes, Elements, Hematology, Infertility, Iron Deficiency, Lipid, Liver, Metabolic, Renal, Thyroid, Toxic Elements, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 3500.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "sports fitness - advanced",
     reviews: [
       {
         rating: 4.7,
@@ -11784,14 +11895,14 @@ export const healthPackagesArray = [
         tests: ["Vitamin b-12", "25-oh vitamin d (total)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Complete Hemogram, Complete Urine Analysis, Diabetes, Electrolytes, Iron Deficiency, Lipid, Liver, Renal, Thyroid, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 1650.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "sports fitness - basic",
     reviews: [
       {
         rating: 4.7,
@@ -12044,14 +12155,14 @@ export const healthPackagesArray = [
         tests: ["25-oh vitamin d (total)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Arthritis, Cardiac, Cardiac Risk Markers, Complete Hemogram, Complete Urine Analysis, Diabetes, Electrolytes, Elements, Hematology, Hypertension, Infertility, Iron Deficiency, Lipid, Liver, Metabolic, Renal, Steroid, Thyroid, Toxic Elements, Tuberculosis, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 6690.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "sports fitness - comprehensive",
     reviews: [
       {
         rating: 4.7,
@@ -12095,7 +12206,7 @@ export const healthPackagesArray = [
         tests: ["Anti hepatitis c virus (anti hcv) - total"],
       },
       {
-        categoryName: "INFECTIOUS DISEASES (Includes 8 tests)",
+        categoryName: "INFECTIOUS DISEASES (Includes 11 tests)",
         tests: [
           "Anti chlamydia antibody igg",
           "Anti chlamydia antibody igm",
@@ -12111,14 +12222,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Hepatitis Panel, Infectious Diseases",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2580.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "std profile - basic",
     reviews: [
       {
         rating: 4.7,
@@ -12158,21 +12269,21 @@ export const healthPackagesArray = [
         tests: ["Chlamydia trachomatis pcr", "Neisseria gonorrhoeae pcr"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Hepatitis Panel, INFECTIOUS DISEASES, Std",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 5970.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "std profile advanced",
     reviews: [
       {
         rating: 4.7,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    overlayTitle: "smokers panel - basic",
+    overlayTitle: "std profile advanced",
     overlayDetails: [
       "Hepatitis Panel (1)",
       "INFECTIOUS DISEASES (9)",
@@ -12214,21 +12325,21 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Hepatitis Panel, INFECTIOUS DISEASES, Std",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 8760.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "std profile extended",
     reviews: [
       {
         rating: 4.7,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    overlayTitle: "smokers panel - basic",
+    overlayTitle: "std profile extended",
     overlayDetails: [
       "Hepatitis Panel (1)",
       "INFECTIOUS DISEASES (9)",
@@ -12266,14 +12377,14 @@ export const healthPackagesArray = [
         tests: ["Vitamin d total", "Vitamin d2", "Vitamin d3"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Hypertension, STEROID, Vitamin",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 3090.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "A complete diagnostic profile to estimate levels of Testosterone and Progesterone in men and women. This in turn helps in assessing a variety of conditions like hypogonadism in men, genetic diseases, chances of miscarriages, ectopic pregnancy along with fertility problems in both genders. Overall test results of the profile are primarily used to detect hormonal causes associated with infertility.",
     reviews: [
       {
         rating: 4.7,
@@ -12299,14 +12410,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Thyroid",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 360.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "This is a series of tests used to measure how well your thyroid gland is functioning. The test helps diagnose thyroid dysfunction and the cause of it. Changes in TSH act as early-warning signs and you can prevent any potential diseases. Book the panel now and get a free home sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -12347,14 +12458,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Others",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 8240.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Tuberculosis or TB, caused by Mycobacterium tuberculosis is one of the diseases with a high fatality rate. The disease spreads when an infected person spits, coughs or sneezes, dispersing the bacteria in the air. Due to the slow growth pattern and multi-drug resistance of Mycobacterium tuberculosis, the disease presents a major challenge in terms of treatment and quick diagnostic techniques. Tuberculosis- Whole Genome Sequencing is a high sensitivity technique that covers 18 antibiotic resistance profiles with a TAT of 12 days. It aids in detecting co-infection and mixed infection as well as helps in strain identification. It helps in the early detection of infection for better individualized treatment with correct antibiotics at the right time. The TB-WGS test is suggested to individuals with symptoms like - cough for more than three weeks, chills, fever, night sweats, loss of appetite, weakness, weight loss.",
     reviews: [
       {
         rating: 4.7,
@@ -12390,14 +12501,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes INFECTIOUS DISEASES, Pregnancy",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2600.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "A TORCH screen is a panel of tests for detecting a set of viral and parasitic infections in pregnant women. During pregnancy, there are high chances of passing this infections from mother to the fetus through the placenta. Early detection and treatment can prevent various complications in the child like heart defects, mental retardation and movement disorders. TORCH 10 also identifies HSV II infection, which causes congenital diseases.",
     reviews: [
       {
         rating: 4.7,
@@ -12430,14 +12541,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes INFECTIOUS DISEASES",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2640.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "A TORCH profile is group of blood tests to screen infection in fetus as well as in mother. This panel detects for viral and parasitic infections in pregnant women. During pregnancy, there are high chances of passing these infections from mother to the fetus through the placenta. Our TORCH ALL TEN profile includes blood tests for cytomegalovirus, herpes simplex virus I & II, Rubella and Toxoplasma gondii.",
     reviews: [
       {
         rating: 4.7,
@@ -12465,14 +12576,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
-    imgUrl: populartest01,
+    desc: "Tests Includes INFECTIOUS DISEASES",
+        imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 1440.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "torch panel - igg",
     reviews: [
       {
         rating: 4.7,
@@ -12505,14 +12616,14 @@ export const healthPackagesArray = [
         tests: ["Percent free psa"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
-    imgUrl: populartest01,
+    desc: "Tests Includes Cancer Markers, Tumor",
+        imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 3000.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "This panel helps you understand if you have cancer. It also helps doctors diagnose your cancer, its specific type, plan a treatment or check the progress of treatment. You can also take this test if you have just finished your cancer treatment, if the disease runs in your family or if you are at risk of developing one due to factors like obesity, smoking, old age, preexisting health conditions. Get Thyrocare's Male Tumour Panel at an affordable price with free home collection service.",
     reviews: [
       {
         rating: 4.7,
@@ -12534,14 +12645,14 @@ export const healthPackagesArray = [
         tests: ["Typhoid-igg", "Typhoid-igm"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
-    imgUrl: populartest01,
+    desc: "Tests Includes Fever",
+        imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 410.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "typhoid test",
     reviews: [
       {
         rating: 4.7,
@@ -12592,14 +12703,14 @@ export const healthPackagesArray = [
         tests: ["Urine culture and susceptibility"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes COMPLETE URINE ANALYSIS, Microbiology", 
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 1030.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+    "urine analysis and culture",
     reviews: [
       {
         rating: 4.7,
@@ -12629,14 +12740,14 @@ export const healthPackagesArray = [
         tests: ["Tsh - ultrasensitive"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
-    imgUrl: populartest01,
+    desc: "Tests Includes Infertility, Thyroid",
+        imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 1420.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "ustsh-lh-fsh-prl",
     reviews: [
       {
         rating: 4.7,
@@ -12667,21 +12778,21 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Vitamin",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 1850.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+    "A combination of 8 Vitamins namely, B1, B2, B3, B5, B6, B7, B9, and B12 ensures the proper functioning of the body. These vitamins obtained by the body from dietary products, are essential for various body functions like red blood cells production, boosting immunity, overcoming depression and stress, lowering bad cholesterol while increasing good cholesterol, breaking down fats and carbohydrates to produce energy, hormone production, improving skin, hair, and nails. Deficiency of Vitamin B can result in low hemoglobin, depression, weakness, neurological deficits, birth defects in babies, or increased chances of infections. Book a Vitamin B Complex profile at a very low cost. Also, get the home collection for this test.",
     reviews: [
       {
         rating: 4.7,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    overlayTitle: "smokers panel - basic",
+    overlayTitle: "vitamin b complex profile",
     overlayDetails: ["Vitamin (8)"],
     avgRating: 4.5,
   },
@@ -12696,14 +12807,14 @@ export const healthPackagesArray = [
         tests: ["Vitamin d total", "Vitamin d2", "Vitamin d3"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Vitamin",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2100.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Vitamin D helps control the levels of phosphorus and calcium in the body. It also keeps our bones and teeth strong. Vitamin D Profile helps measure the level of Vitamin D using blood sample. Abnormal levels can underline potential health conditions, such as osteoporosis, rickets and osteomalacia. Book the Vitamin D profile now and get a free home sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -12730,14 +12841,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Fever",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 240.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+    "widal",
     reviews: [
       {
         rating: 4.7,
@@ -12764,14 +12875,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Fever",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 410.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Widal Tube Agglutination Test is a serological assay that diagnoses typhoid fever by detecting specific antibodies against Salmonella typhi. This test measures the presence of agglutinins (antibodies) in the serum that react with the bacterial antigens of Salmonella typhi, for diagnosing acute typhoid fever. Book test at affordable rates. Lab visits and FREE home sample collection available. Get accurate and timely diagnosis in less than 6 hrs for correct treatment.",
     reviews: [
       {
         rating: 4.7,
@@ -12850,14 +12961,14 @@ export const healthPackagesArray = [
         tests: ["Erythrocyte sedimentation rate (esr)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Cardiac Risk Markers, COMPLETE HEMOGRAM, Fever, Infection, Liver, Other Counts",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 0.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "winter fever panel advanced",
     reviews: [
       {
         rating: 4.7,
@@ -12876,129 +12987,129 @@ export const healthPackagesArray = [
     avgRating: 4.5,
   },
 
-  {
-    id: "141",
-    productName: "winter fever panel advanced (rapid) (40 Tests)",
-    type: "package",
-    includedTests: [
-      {
-        categoryName: "Cardiac Risk Markers (Includes 1 tests)",
-        tests: ["C-reactive protein (crp)"],
-      },
-      {
-        categoryName: "COMPLETE HEMOGRAM (Includes 28 tests)",
-        tests: [
-          "NEUTROPHILS-ABSOLUTE COUNT",
-          "RED CELL DISTRIBUTION-WIDTH - SD(RDW-SD)",
-          "MONOCYTES-ABSOLUTE COUNT",
-          "TOTAL RBC",
-          "MEAN CORP.HEMO.CONC(MCHC)",
-          "BASOPHILS",
-          "HEMATOCRIT(PCV)",
-          "PLATELET COUNT",
-          "EOSINOPHILS",
-          "RED CELL DISTRIBUTION WIDTH (RDW-CV)",
-          "MEAN CORPUSCULAR HEMOGLOBIN(MCH)",
-          "IMMATURE GRANULOCYTE PERCENTAGE(IG%)",
-          "LYMPHOCYTE",
-          "MEAN CORPUSCULAR VOLUME(MCV)",
-          "PLATELET DISTRIBUTION WIDTH(PDW)",
-          "NUCLEATED RED BLOOD CELLS",
-          "PLATELET TO LARGE CELL RATIO(PLCR)",
-          "HEMOGLOBIN",
-          "MONOCYTES",
-          "BASOPHILS-ABSOLUTE COUNT",
-          "IMMATURE GRANULOCYTES(IG)",
-          "LYMPHOCYTES-ABSOLUTE COUNT",
-          "NUCLEATED RED BLOOD CELLS %",
-          "PLATELETCRIT(PCT)",
-          "MEAN PLATELET VOLUME(MPV)",
-          "TOTAL LEUCOCYTES COUNT (WBC)",
-          "NEUTROPHILS",
-          "EOSINOPHILS-ABSOLUTE COUNT",
-        ],
-      },
-      {
-        categoryName: "Fever (Includes 2 tests)",
-        tests: ["Plasmodium falciparum", "Plasmodium vivax"],
-      },
-      {
-        categoryName: "Infection (Includes 5 tests)",
-        tests: [
-          "Chikungunya - igg rapid test",
-          "Chikungunya - igm rapid test",
-          "Dengue - igg rapid test",
-          "Dengue - igm rapid test",
-          "Dengue ns1 antigen rapid test",
-        ],
-      },
-      {
-        categoryName: "Liver (Includes 3 tests)",
-        tests: [
-          "Sgot / sgpt ratio",
-          "Aspartate aminotransferase (sgot )",
-          "Alanine transaminase (sgpt)",
-        ],
-      },
-      {
-        categoryName: "Other Counts (Includes 1 tests)",
-        tests: ["Erythrocyte sedimentation rate (esr)"],
-      },
-    ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
-    imgUrl: populartest01,
-    category: "Basic",
-    price: 2999.0,
-    discount: 30,
-    shortDesc: "Sample Type: Blood",
-    description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
-    reviews: [
-      {
-        rating: 4.7,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    overlayTitle: "winter fever panel advanced (rapid)",
-    overlayDetails: [
-      "Cardiac Risk Markers (1)",
-      "Complete Hemogram (28)",
-      "Fever (2)",
-      "Infection (5)",
-      "Liver (3)",
-      "Other Counts (1)",
-    ],
-    avgRating: 4.5,
-  },
+  // {
+  //   id: "141",
+  //   productName: "winter fever panel advanced (rapid) (40 Tests)",
+  //   type: "package",
+  //   includedTests: [
+  //     {
+  //       categoryName: "Cardiac Risk Markers (Includes 1 tests)",
+  //       tests: ["C-reactive protein (crp)"],
+  //     },
+  //     {
+  //       categoryName: "COMPLETE HEMOGRAM (Includes 28 tests)",
+  //       tests: [
+  //         "NEUTROPHILS-ABSOLUTE COUNT",
+  //         "RED CELL DISTRIBUTION-WIDTH - SD(RDW-SD)",
+  //         "MONOCYTES-ABSOLUTE COUNT",
+  //         "TOTAL RBC",
+  //         "MEAN CORP.HEMO.CONC(MCHC)",
+  //         "BASOPHILS",
+  //         "HEMATOCRIT(PCV)",
+  //         "PLATELET COUNT",
+  //         "EOSINOPHILS",
+  //         "RED CELL DISTRIBUTION WIDTH (RDW-CV)",
+  //         "MEAN CORPUSCULAR HEMOGLOBIN(MCH)",
+  //         "IMMATURE GRANULOCYTE PERCENTAGE(IG%)",
+  //         "LYMPHOCYTE",
+  //         "MEAN CORPUSCULAR VOLUME(MCV)",
+  //         "PLATELET DISTRIBUTION WIDTH(PDW)",
+  //         "NUCLEATED RED BLOOD CELLS",
+  //         "PLATELET TO LARGE CELL RATIO(PLCR)",
+  //         "HEMOGLOBIN",
+  //         "MONOCYTES",
+  //         "BASOPHILS-ABSOLUTE COUNT",
+  //         "IMMATURE GRANULOCYTES(IG)",
+  //         "LYMPHOCYTES-ABSOLUTE COUNT",
+  //         "NUCLEATED RED BLOOD CELLS %",
+  //         "PLATELETCRIT(PCT)",
+  //         "MEAN PLATELET VOLUME(MPV)",
+  //         "TOTAL LEUCOCYTES COUNT (WBC)",
+  //         "NEUTROPHILS",
+  //         "EOSINOPHILS-ABSOLUTE COUNT",
+  //       ],
+  //     },
+  //     {
+  //       categoryName: "Fever (Includes 2 tests)",
+  //       tests: ["Plasmodium falciparum", "Plasmodium vivax"],
+  //     },
+  //     {
+  //       categoryName: "Infection (Includes 5 tests)",
+  //       tests: [
+  //         "Chikungunya - igg rapid test",
+  //         "Chikungunya - igm rapid test",
+  //         "Dengue - igg rapid test",
+  //         "Dengue - igm rapid test",
+  //         "Dengue ns1 antigen rapid test",
+  //       ],
+  //     },
+  //     {
+  //       categoryName: "Liver (Includes 3 tests)",
+  //       tests: [
+  //         "Sgot / sgpt ratio",
+  //         "Aspartate aminotransferase (sgot )",
+  //         "Alanine transaminase (sgpt)",
+  //       ],
+  //     },
+  //     {
+  //       categoryName: "Other Counts (Includes 1 tests)",
+  //       tests: ["Erythrocyte sedimentation rate (esr)"],
+  //     },
+  //   ],
+  //   desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+  //   imgUrl: populartest01,
+  //   category: "Basic",
+  //   price: 2999.0,
+  //   discount: 30,
+  //   shortDesc: "Sample Type: Blood",
+  //   description:
+  //     "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+  //   reviews: [
+  //     {
+  //       rating: 4.7,
+  //       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //   ],
+  //   overlayTitle: "winter fever panel advanced (rapid)",
+  //   overlayDetails: [
+  //     "Cardiac Risk Markers (1)",
+  //     "Complete Hemogram (28)",
+  //     "Fever (2)",
+  //     "Infection (5)",
+  //     "Liver (3)",
+  //     "Other Counts (1)",
+  //   ],
+  //   avgRating: 4.5,
+  // },
 
-  {
-    id: "142",
-    productName: "winter fever panel basic",
-    type: "package",
-    includedTests: [
-      {
-        categoryName: "winter fever panel basic",
-        tests: [],
-      },
-    ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
-    imgUrl: populartest01,
-    category: "Basic",
-    price: 1499.0,
-    discount: 30,
-    shortDesc: "Sample Type: Blood",
-    description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
-    reviews: [
-      {
-        rating: 4.7,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    overlayTitle: "winter fever panel basic",
-    overlayDetails: ["winter fever panel basic"],
-    avgRating: 4.5,
-  },
+  // {
+  //   id: "142",
+  //   productName: "winter fever panel basic",
+  //   type: "package",
+  //   includedTests: [
+  //     {
+  //       categoryName: "winter fever panel basic",
+  //       tests: [],
+  //     },
+  //   ],
+  //   desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+  //   imgUrl: populartest01,
+  //   category: "Basic",
+  //   price: 1499.0,
+  //   discount: 30,
+  //   shortDesc: "Sample Type: Blood",
+  //   description:
+  //     "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+  //   reviews: [
+  //     {
+  //       rating: 4.7,
+  //       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //     },
+  //   ],
+  //   overlayTitle: "winter fever panel basic",
+  //   overlayDetails: ["winter fever panel basic"],
+  //   avgRating: 4.5,
+  // },
 
   {
     id: "143",
@@ -13039,14 +13150,14 @@ export const healthPackagesArray = [
         tests: ["Chromogranin a"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Cancer Marker, Cancer Markers, Cardiac Risk Markers, Hematology, Pregnancy, Thyroid, Tumor Marker",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 6180.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+    "women cancer screening panel - advanced",
     reviews: [
       {
         rating: 4.7,
@@ -13086,14 +13197,14 @@ export const healthPackagesArray = [
         tests: ["Beta hcg"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Cancer Markers, Pregnancy",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2060.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "women cancer screening panel - basic",
     reviews: [
       {
         rating: 4.7,
@@ -13203,14 +13314,14 @@ export const healthPackagesArray = [
         tests: ["Vitamin b-12", "25-oh vitamin d (total)"],
       },
     ],
-    desc: "Tests Includes Lipid, Complete Hemogram, Toxic Elements, Thyroid, Diabetes, Liver, Renal, Iron Deficiency, Cardiac Risk Markers, Vitamins, Elements, Hormone ",
+    desc: "Tests Includes Arthritis, Cardiac Risk Markers, Complete Hemogram, Elements, Hormone, Infectious Diseases, Infertility, Iron Deficiency, Metabolic, Renal, Thyroid, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 2999.0,
+    price: 2749.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Worried about hair fall? Trying different products but not getting satisfactory results? It's time to stop hear-say methods and get hair fall screening done! Try Thyrocare’s new WOMEN'S HAIR FALL SCREENING - ADVANCE profile, a comprehensive package of 47 tests that covers thyroid testing, complete blood count, iron deficiency profile, inflammatory markers, hormones, vitamins, minerals and essential elements only at Rs 2749/- Book now and get a free home collection.",
     reviews: [
       {
         rating: 4.7,
@@ -13237,7 +13348,7 @@ export const healthPackagesArray = [
 
   {
     id: "146",
-    productName: "troponin i heart attack risk",
+    productName: "troponin i heart attack risk (51 Tests)",
     type: "package",
     includedTests: [
       {
@@ -13252,7 +13363,7 @@ export const healthPackagesArray = [
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "troponin i heart attack risk",
     reviews: [
       {
         rating: 4.7,
@@ -13277,11 +13388,11 @@ export const healthPackagesArray = [
     desc: "Tests Includes high sensitivity c-reactive protein (hs-crp)",
     imgUrl: populartest01,
     category: "Basic",
-    price: 650.0,
+    price: 450.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "high sensitivity c-reactive protein (hs-crp)",
     reviews: [
       {
         rating: 4.7,
@@ -13368,14 +13479,14 @@ export const healthPackagesArray = [
         ],
       },
     ],
-    desc: "Tests Includes COMPLETE HEMOGRAM, Diabetes, Lipid, Renal",
+    desc: "Tests Includes Complete Hemogram, Diabetes, Lipid, Renal",
     imgUrl: populartest01,
     category: "Basic",
-    price: 650.0,
+    price: 1199.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "jaanch - diabetic screen",
     reviews: [
       {
         rating: 4.7,
@@ -13405,11 +13516,11 @@ export const healthPackagesArray = [
     desc: "Tests Includes hba1c",
     imgUrl: populartest01,
     category: "Basic",
-    price: 650.0,
+    price: 350.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "HbA1c, also known as Hemoglobin A1c or A1c, is glycosylated hemoglobin or glycohemoglobin in which the glucose molecule present in the blood non-enzymatically binds to hemoglobin. HbA1c test reflects those RBC that are present in the blood at the time of test and measures average blood glucose concentration over 3-4 months. This gives an indication of long-term blood glucose control which serves as a regular monitoring tool if a person has been diagnosed with diabetes. According to the American Diabetes Association, this test is mandatory for diabetic patients and should be performed four times a year. HbA1c test is available at a discounted rate, along with the home collection.",
     reviews: [
       {
         rating: 4.7,
@@ -13494,14 +13605,14 @@ export const healthPackagesArray = [
         tests: ["Erythrocyte sedimentation rate (esr)"],
       },
     ],
-    desc: "Tests Includes Cardiac Risk Markers, Complete Hemogram, Fever, Infection, Infectious Diseases, Liver, Other Counts",
+    desc: "Tests Includes Cardiac Risk Markers, Complete Hemogram, Fever, Infection, Infectious Disease, Liver, Other Counts",
     imgUrl: populartest01,
     category: "Basic",
-    price: 650.0,
+    price: 2299.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Dengue, Malaria, Typhoid and Chikungunya are common during Monsoons. To keep one safe from them, early and accurate diagnosis is a must. Jaanch Monsoon Fever Panel - Advanced provides tests specifically curated for malaria, typhoid, dengue, chikungunya and more. Get accurate and timely diagnosis in less than 6 hrs for correct treatment.",
     reviews: [
       {
         rating: 4.7,
@@ -13574,11 +13685,11 @@ export const healthPackagesArray = [
     desc: "Tests Includes COMPLETE HEMOGRAM, Fever",
     imgUrl: populartest01,
     category: "Basic",
-    price: 650.0,
+    price: 640.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "The monsoon season brings the risk of health problems like cold and cough along with the danger of diseases such as malaria and typhoid. Make the most of Jaanch Monsoon Fever Mini, a package designed to safeguard overall health. The package includes malaria, typhoid and complete blood count (CBC) tests to help patients stay proactive and protected. Get accurate and timely diagnosis in less than 6 hrs for correct treatment.",
     reviews: [
       {
         rating: 4.7,
@@ -13661,11 +13772,11 @@ export const healthPackagesArray = [
     desc: "Tests Includes Cardiac Risk Markers, COMPLETE HEMOGRAM, Fever, Infectious Diseases, Liver, Other Counts",
     imgUrl: populartest01,
     category: "Basic",
-    price: 650.0,
+    price: 1899.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "The monsoon season brings in many infections. Prepare to fight health problems with our newly launched, doctor-curated Jaanch Monsoon Fever Panel - Basic. This specially designed profile includes parameters for fever and infections like dengue, malaria, typhoid, and more tests at extremely competitive prices. Get accurate and timely diagnosis in less than 6 hrs for correct treatment.",
     reviews: [
       {
         rating: 4.7,
@@ -13781,11 +13892,11 @@ export const healthPackagesArray = [
     desc: "Tests Includes Arthritis, Cardiac Risk Markers, Complete Hemogram, Elements, Infertility, Iron Deficiency, Metabolic, Renal, Steroid Hormone, Thyroid, Vitamin, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 650.0,
+    price: 2999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Too much hair fall and don’t know why? It could be genetic or due to lifestyle factors. Get to the root cause today with Thyrocare’s newly launched Jaanch - Mens Hairfall Screening Advanced profile. It includes 43 crucial parameters for thyroid health, complete blood count, iron deficiency profile, inflammatory markers, vitamins, minerals, and essential elements at extremely affordable prices. Book your test now and get a FREE home sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -13911,34 +14022,32 @@ export const healthPackagesArray = [
         tests: ["Vitamin b-12", "25-oh vitamin d (total)"],
       },
     ],
-    desc: "Tests Includes Arthritis, Cardiac Risk Markers, Complete Hemogram, Elements, Infertility, Iron Deficiency, Metabolic, Renal, Steroid Hormone, Thyroid, Vitamin, Vitamins",
+    desc: "Tests Includes Arthritis, Cardiac Risk Markers, Complete Hemogram, Elements, Hormone, Infectious Disease, Infertility, Iron Deficiency, Metabolic, Renal, Thyroid, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 650.0,
+    price: 2999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Worried about hair fall? Trying different products but not getting satisfactory results? It's time to stop following hear-say methods and get hair fall screening done. Try Thyrocare’s newly launched doctor-curated Jaanch - Womens Hairfall Screening Advanced profile, a comprehensive package of 47 tests that evaluate important health parameters like thyroid health, complete blood count, iron deficiency profile, inflammatory markers, hormones, vitamins, minerals and essential elements at extremely affordable rates. Book now and get a FREE home sample collection.",
     reviews: [
       {
         rating: 4.7,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    overlayTitle: "jaanch - mens hairfall screening advanced",
+    overlayTitle: "jaanch - womens hairfall screening advanced",
     overlayDetails: [
       "Arthritis (2)",
       "Cardiac Risk Markers (1)",
-      "Complete Hemogram (28)",
-      "Elements (1)",
-      "Infertility (1)",
+      "Complete Hemogram (28)","Elements (1)", "Hormone (1)",
+      "Inectious Disease (1)",
+      "Infertility (4)",
       "Iron Deficiency (5)",
       "Metabolic (2)",
       "Renal (1)",
-      "Steroid Hormone (1)",
       "Thyroid (3)",
-      "Vitamin (1)",
-      "Vitamins (1)",
+      "Vitamins (2)",
     ],
     avgRating: 4.5,
   },
@@ -14009,11 +14118,11 @@ export const healthPackagesArray = [
     desc: "Tests Includes Allergy, Arthritis, Autoimmunity, Complete Hemogram, Thyroid, Vitamins",
     imgUrl: populartest01,
     category: "Basic",
-    price: 650.0,
+    price: 2999.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
     description:
-      "Full body checkup is an essential health test that can detect hidden diseases. Reliable pathology labs like Fortune Blood Test offer a perfect solution to this challenge by providing comprehensive health packages with blood test at home services. These preventive health checkups include specific tests recommended by certified doctors and expert pathologists. It is a great way to stay on top of your health and take proactive measures to prevent any potential health issues.",
+      "Skin problems can mean potential health problems. Thyrocare’s newly launched Jaanch - Mens Skin Care Checkup is a doctor-curated profile with 32 parameters that diagnose skin diseases along with any underlying conditions, like thyroid disorders, nutrient deficiencies, allergies, infections and hormonal imbalance. Book this profile today at affordable rates and also avail a FREE sample collection.",
     reviews: [
       {
         rating: 4.7,
@@ -14105,9 +14214,7 @@ export const healthPackagesArray = [
       },
       {
         categoryName: "Thyroid (Includes 3 tests)",
-        tests: [
-          "Tsh - ultrasensitive",
-        ],
+        tests: ["Tsh - ultrasensitive"],
       },
       {
         categoryName: "Vitamins (Includes 2 tests)",
@@ -14133,7 +14240,10 @@ export const healthPackagesArray = [
       "Allergy (1)",
       "Arthritis (1)",
       "Complete Hemogram (28)",
-      "Diabetes (3)","Hormone (1)","Infertility (4)","Pregnancy (2)",
+      "Diabetes (3)",
+      "Hormone (1)",
+      "Infertility (4)",
+      "Pregnancy (2)",
       "Thyroid (1)",
       "Vitamins (2)",
     ],
