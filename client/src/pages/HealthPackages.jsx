@@ -6793,7 +6793,7 @@ export const healthPackagesArray = [
 
   {
     id: "54",
-    productName: "arthritis profile (59 Tests)",
+    productName: "Arthritis Profile (59 Tests)",
     type: "package",
     includedTests: [
       {
@@ -7046,7 +7046,7 @@ export const healthPackagesArray = [
 
   {
     id: "57",
-    productName: "cardiac risk markers (5 Tests)",
+    productName: "Cardiac Risk Markers (5 Tests)",
     type: "package",
     includedTests: [
       {
@@ -7081,7 +7081,7 @@ export const healthPackagesArray = [
 
   {
     id: "58",
-    productName: "chikungunya rapid test (igg/igm) (2 Tests)",
+    productName: "Chikungunya Rapid Test (igg/igm) (2 Tests)",
     type: "package",
     includedTests: [
       {
@@ -7110,7 +7110,7 @@ export const healthPackagesArray = [
 
   {
     id: "59",
-    productName: "complete health check with vitamins (122 Tests)",
+    productName: "Complete Health Check With Vitamins (122 Tests)",
     type: "package",
     includedTests: [
       {
@@ -7332,7 +7332,7 @@ export const healthPackagesArray = [
 
   {
     id: "60",
-    productName: "complete thyroid checkup (5 Tests)",
+    productName: "Complete Thyroid Checkup (5 Tests)",
     type: "package",
     includedTests: [
       {
@@ -7367,7 +7367,7 @@ export const healthPackagesArray = [
 
   {
     id: "61",
-    productName: "complete urine analysis (24 Tests)",
+    productName: "Complete Urine Analysis (24 Tests)",
     type: "package",
     includedTests: [
       {
@@ -7421,7 +7421,7 @@ export const healthPackagesArray = [
 
   {
     id: "62",
-    productName: "complete vitamins profile (14 Tests)",
+    productName: "Complete Vitamins Profile (14 Tests)",
     type: "package",
     includedTests: [
       {
@@ -7465,7 +7465,7 @@ export const healthPackagesArray = [
 
   {
     id: "63",
-    productName: "covid antibody - 1 (1 Tests)",
+    productName: "Covid Antibody - 1 (1 Tests)",
     type: "package",
     includedTests: [
       {
@@ -7494,7 +7494,7 @@ export const healthPackagesArray = [
 
   {
     id: "64",
-    productName: "covid infection monitoring (5 Tests)",
+    productName: "Covid Infection Monitoring (5 Tests)",
     type: "package",
     includedTests: [
       {
@@ -7540,7 +7540,7 @@ export const healthPackagesArray = [
 
   {
     id: "65",
-    productName: "covid infection monitoring - advanced (39 Tests)",
+    productName: "Covid Infection Monitoring - Advanced (39 Tests)",
     type: "package",
     includedTests: [
       {
@@ -7646,7 +7646,7 @@ export const healthPackagesArray = [
 
   {
     id: "66",
-    productName: "covid-19 (1 Tests)",
+    productName: "Covid-19 (1 Tests)",
     type: "package",
     includedTests: [
       {
@@ -7675,7 +7675,7 @@ export const healthPackagesArray = [
 
   {
     id: "67",
-    productName: "doa panel-6 (6 Tests)",
+    productName: "Doa Panel-6 (6 Tests)",
     type: "package",
     includedTests: [
       {
@@ -7711,7 +7711,7 @@ export const healthPackagesArray = [
 
   {
     id: "68",
-    productName: "doctor recommended full body checkup advanced (92 Tests)",
+    productName: "Doctor Recommended Full Body Checkup Advanced (92 Tests)",
     type: "package",
     includedTests: [
       {
@@ -7877,7 +7877,7 @@ export const healthPackagesArray = [
 
   {
     id: "69",
-    productName: "drug panel 10 (10 Tests)",
+    productName: "Drug Panel 10 (10 Tests)",
     type: "package",
     includedTests: [
       {
@@ -7917,7 +7917,7 @@ export const healthPackagesArray = [
 
   {
     id: "70",
-    productName: "drug panel 2 (2 Tests)",
+    productName: "Drug Panel 2 (2 Tests)",
     type: "package",
     includedTests: [
       {
@@ -7946,7 +7946,7 @@ export const healthPackagesArray = [
 
   {
     id: "71",
-    productName: "drug panel 3 (3 Tests)",
+    productName: "Drug Panel 3 (3 Tests)",
     type: "package",
     includedTests: [
       {
@@ -7975,7 +7975,7 @@ export const healthPackagesArray = [
 
   {
     id: "72",
-    productName: "drug panel 4",
+    productName: "Drug Panel 4",
     type: "package",
     includedTests: [
       {
@@ -8004,7 +8004,7 @@ export const healthPackagesArray = [
 
   {
     id: "73",
-    productName: "drug panel 5 (5 Tests)",
+    productName: "Drug Panel 5 (5 Tests)",
     type: "package",
     includedTests: [
       {
@@ -8039,7 +8039,7 @@ export const healthPackagesArray = [
 
   {
     id: "74",
-    productName: "drug panel 6 (6 Tests)",
+    productName: "Drug Panel 6 (6 Tests)",
     type: "package",
     includedTests: [
       {
@@ -8075,7 +8075,7 @@ export const healthPackagesArray = [
 
   {
     id: "75",
-    productName: "drug panel 7 (7 Tests)",
+    productName: "Drug Panel 7 (7 Tests)",
     type: "package",
     includedTests: [
       {
@@ -8112,7 +8112,7 @@ export const healthPackagesArray = [
 
   {
     id: "76",
-    productName: "drug panel 8 (8 Tests)",
+    productName: "Drug Panel 8 (8 Tests)",
     type: "package",
     includedTests: [
       {
@@ -8150,7 +8150,7 @@ export const healthPackagesArray = [
 
   {
     id: "77",
-    productName: "drug panel 9 (9 Tests)",
+    productName: "Drug Panel 9 (9 Tests)",
     type: "package",
     includedTests: [
       {
@@ -8189,7 +8189,7 @@ export const healthPackagesArray = [
 
   {
     id: "78",
-    productName: "elements 22 (toxic and nutrients) (22 Tests)",
+    productName: "Elements 22 (Toxic And Nutrients) (22 Tests)",
     type: "package",
     includedTests: [
       {
@@ -8241,7 +8241,7 @@ export const healthPackagesArray = [
 
   {
     id: "79",
-    productName: "fat - soluble vitamins profile (6 Tests)",
+    productName: "Fat - Soluble Vitamins Profile (6 Tests)",
     type: "package",
     includedTests: [
       {
@@ -8277,7 +8277,7 @@ export const healthPackagesArray = [
 
   {
     id: "80",
-    productName: "freedom healthy package 2024 (111 Tests)",
+    productName: "Freedom Healthy Package 2024 (111 Tests)",
     type: "package",
     includedTests: [
       {
@@ -8466,7 +8466,7 @@ export const healthPackagesArray = [
 
   {
     id: "81",
-    productName: "ft3-ft4-ustsh (3 Tests)",
+    productName: "Ft3-Ft4-Ustsh (3 Tests)",
     type: "package",
     includedTests: [
       {
@@ -8499,7 +8499,7 @@ export const healthPackagesArray = [
 
   {
     id: "82",
-    productName: "gastro / gut health panel (42 Tests)",
+    productName: "Gastro / Gut Health Panel (42 Tests)",
     type: "package",
     includedTests: [
       {
@@ -8578,7 +8578,7 @@ export const healthPackagesArray = [
 
   {
     id: "83",
-    productName: "h3n2 plus influenza profile (4 Tests)",
+    productName: "H3n2 Plus Influenza Profile (4 Tests)",
     type: "package",
     includedTests: [
       {
@@ -8612,7 +8612,7 @@ export const healthPackagesArray = [
 
   {
     id: "84",
-    productName: "hemogram - 6 part (diff) (28 Tests)",
+    productName: "Hemogram - 6 Part (Diff) (28 Tests)",
     type: "package",
     includedTests: [
       {
@@ -8670,7 +8670,7 @@ export const healthPackagesArray = [
 
   {
     id: "84",
-    productName: "hepatitis panel (52 Tests)",
+    productName: "Hepatitis Panel (52 Tests)",
     type: "package",
     includedTests: [
       {
@@ -8773,7 +8773,7 @@ export const healthPackagesArray = [
 
   {
     id: "85",
-    productName: "infection checkup profile (37 Tests)",
+    productName: "Infection Checkup Profile (37 Tests)",
     type: "package",
     includedTests: [
       {
@@ -8865,7 +8865,7 @@ export const healthPackagesArray = [
 
   {
     id: "86",
-    productName: "infertility - extended (30 Tests)",
+    productName: "Infertility - Extended (30 Tests)",
     type: "package",
     includedTests: [
       {
@@ -8958,7 +8958,7 @@ export const healthPackagesArray = [
 
   {
     id: "87",
-    productName: "infertility advanced (21 Tests)",
+    productName: "Infertility Advanced (21 Tests)",
     type: "package",
     includedTests: [
       {
@@ -9029,7 +9029,7 @@ export const healthPackagesArray = [
 
   {
     id: "88",
-    productName: "infertility basic (7 Tests)",
+    productName: "Infertility Basic (7 Tests)",
     type: "package",
     includedTests: [
       {
@@ -9071,7 +9071,7 @@ export const healthPackagesArray = [
 
   {
     id: "89",
-    productName: "infertility basic (7 Tests)",
+    productName: "Infertility Basic (7 Tests)",
     type: "package",
     includedTests: [
       {
@@ -9113,7 +9113,7 @@ export const healthPackagesArray = [
 
   {
     id: "90",
-    productName: "infertility profile - advanced (21 Tests)",
+    productName: "Infertility Profile - Advanced (21 Tests)",
     type: "package",
     includedTests: [
       {
@@ -9184,7 +9184,7 @@ export const healthPackagesArray = [
 
   {
     id: "91",
-    productName: "influenza panel (influenza a and b and h1n1) (3 Tests)",
+    productName: "Influenza Panel (Influenza a and b and h1n1) (3 Tests)",
     type: "package",
     includedTests: [
       {
@@ -9213,7 +9213,7 @@ export const healthPackagesArray = [
 
   {
     id: "92",
-    productName: "iron deficiency profile (4 Tests)",
+    productName: "Iron Deficiency Profile (4 Tests)",
     type: "package",
     includedTests: [
       {
@@ -9247,7 +9247,7 @@ export const healthPackagesArray = [
 
   {
     id: "93",
-    productName: "kidpro (7 Tests)",
+    productName: "Kidpro (7 Tests)",
     type: "package",
     includedTests: [
       {
@@ -9284,7 +9284,7 @@ export const healthPackagesArray = [
 
   {
     id: "94",
-    productName: "lipid profile (10 Tests)",
+    productName: "Lipid Profile (10 Tests)",
     type: "package",
     includedTests: [
       {
@@ -9324,7 +9324,7 @@ export const healthPackagesArray = [
 
   {
     id: "95",
-    productName: "liver function tests (12 Tests)",
+    productName: "Liver Function Tests (12 Tests)",
     type: "package",
     includedTests: [
       {
@@ -9366,7 +9366,7 @@ export const healthPackagesArray = [
 
   {
     id: "96",
-    productName: "malarial antigen (2 Tests)",
+    productName: "Malarial Antigen (2 Tests)",
     type: "package",
     includedTests: [
       {
@@ -9395,7 +9395,7 @@ export const healthPackagesArray = [
 
   {
     id: "97",
-    productName: "male cancer screening profile (7 Tests)",
+    productName: "Male Cancer Screening Profile (7 Tests)",
     type: "package",
     includedTests: [
       {
@@ -9435,7 +9435,7 @@ export const healthPackagesArray = [
 
   {
     id: "98",
-    productName: "male hormone screening panel (6 Tests)",
+    productName: "Male Hormone Screening Panel (6 Tests)",
     type: "package",
     includedTests: [
       {
@@ -9485,7 +9485,7 @@ export const healthPackagesArray = [
 
   {
     id: "99",
-    productName: "mens hairfall screening - advanced (47 Tests)",
+    productName: "Mens Hairfall Screening - Advanced (47 Tests)",
     type: "package",
     includedTests: [
       {
@@ -9605,7 +9605,7 @@ export const healthPackagesArray = [
 
   {
     id: "100",
-    productName: "monsoon fever panel - advanced (40 Tests)",
+    productName: "Monsoon Fever Panel - Advanced (40 Tests)",
     type: "package",
     includedTests: [
       {
@@ -9704,7 +9704,7 @@ export const healthPackagesArray = [
 
   {
     id: "101",
-    productName: "monsoon fever panel - basic (37 Tests)",
+    productName: "Monsoon Fever Panel - Basic (37 Tests)",
     type: "package",
     includedTests: [
       {
@@ -9793,7 +9793,7 @@ export const healthPackagesArray = [
 
   {
     id: "102",
-    productName: "newborn screening - 4 (4 Tests)",
+    productName: "Newborn Screening - 4 (4 Tests)",
     type: "package",
     includedTests: [
       {
@@ -9827,7 +9827,7 @@ export const healthPackagesArray = [
 
   {
     id: "103",
-    productName: "newborn screening profile (43 Tests)",
+    productName: "Newborn Screening Profile (43 Tests)",
     type: "package",
     includedTests: [
       {
@@ -9924,7 +9924,7 @@ export const healthPackagesArray = [
 
   {
     id: "104",
-    productName: "paleo profile - advanced (107 Tests)",
+    productName: "Paleo Profile - Advanced (107 Tests)",
     type: "package",
     includedTests: [
       {
@@ -10122,7 +10122,7 @@ export const healthPackagesArray = [
 
   {
     id: "105",
-    productName: "paleo profile - basic (95 Tests)",
+    productName: "Paleo Profile - Basic (95 Tests)",
     type: "package",
     includedTests: [
       {
@@ -10295,7 +10295,7 @@ export const healthPackagesArray = [
   },
   {
     id: "106",
-    productName: "pcod profile (37 Tests)",
+    productName: "Pcod Profile (37 Tests)",
     type: "package",
     includedTests: [
       {
@@ -10380,7 +10380,7 @@ export const healthPackagesArray = [
 
   {
     id: "107",
-    productName: "pcos advanced (73 Tests)",
+    productName: "Pcos Advanced (73 Tests)",
     type: "package",
     includedTests: [
       {
@@ -10464,7 +10464,7 @@ export const healthPackagesArray = [
 
   {
     id: "108",
-    productName: "pcos basic (69 Tests)",
+    productName: "Pcos Basic (69 Tests)",
     type: "package",
     includedTests: [
       {
@@ -10607,7 +10607,7 @@ export const healthPackagesArray = [
 
   {
     id: "109",
-    productName: "pcos mini (51 Tests)",
+    productName: "Pcos Mini (51 Tests)",
     type: "package",
     includedTests: [
       {
@@ -10717,7 +10717,7 @@ export const healthPackagesArray = [
 
   {
     id: "110",
-    productName: "post covid care (39 Tests)",
+    productName: "Post Covid Care (39 Tests)",
     type: "package",
     includedTests: [
       {
@@ -10816,7 +10816,7 @@ export const healthPackagesArray = [
 
   {
     id: "111",
-    productName: "postpartum health checkup - advanced (60 Tests)",
+    productName: "Postpartum Health Checkup - Advanced (60 Tests)",
     type: "package",
     includedTests: [
       {
@@ -10954,7 +10954,7 @@ export const healthPackagesArray = [
 
   {
     id: "112",
-    productName: "postpartum health checkup - basic (51 Tests)",
+    productName: "Postpartum Health Checkup - Basic (51 Tests)",
     type: "package",
     includedTests: [
       {
@@ -11062,7 +11062,7 @@ export const healthPackagesArray = [
 
   {
     id: "113",
-    productName: "preeclampsia profile advanced (59 Tests)",
+    productName: "Preeclampsia Profile Advanced (59 Tests)",
     type: "package",
     includedTests: [
       {
@@ -11175,7 +11175,7 @@ export const healthPackagesArray = [
 
   {
     id: "114",
-    productName: "preeclampsia profile basic (35 Tests)",
+    productName: "Preeclampsia Profile Basic (35 Tests)",
     type: "package",
     includedTests: [
       {
@@ -11258,7 +11258,7 @@ export const healthPackagesArray = [
 
   {
     id: "115",
-    productName: "quantiferon -tb gold plus (5 Tests)",
+    productName: "Quantiferon -Tb Gold Plus (5 Tests)",
     type: "package",
     includedTests: [
       {
@@ -11293,7 +11293,7 @@ export const healthPackagesArray = [
 
   {
     id: "116",
-    productName: "routine urine analysis (14 Tests)",
+    productName: "Routine Urine Analysis (14 Tests)",
     type: "package",
     includedTests: [
       {
@@ -11337,7 +11337,7 @@ export const healthPackagesArray = [
 
   {
     id: "117",
-    productName: "serum electrolytes (3 Tests)",
+    productName: "Serum Electrolytes (3 Tests)",
     type: "package",
     includedTests: [
       {
@@ -11366,7 +11366,7 @@ export const healthPackagesArray = [
 
   {
     id: "118",
-    productName: "smokers panel - advanced (48 Tests)",
+    productName: "Smokers Panel - Advanced (48 Tests)",
     type: "package",
     includedTests: [
       {
@@ -11472,7 +11472,7 @@ export const healthPackagesArray = [
 
   {
     id: "119",
-    productName: "smokers panel - basic (8 Tests)",
+    productName: "Smokers Panel - Basic (8 Tests)",
     type: "package",
     includedTests: [
       {
@@ -11515,7 +11515,7 @@ export const healthPackagesArray = [
 
   {
     id: "120",
-    productName: "sports fitness - advanced (135 Tests)",
+    productName: "Sports Fitness - Advanced (135 Tests)",
     type: "package",
     includedTests: [
       {
@@ -11761,7 +11761,7 @@ export const healthPackagesArray = [
 
   {
     id: "121",
-    productName: "sports fitness - basic (92 Tests)",
+    productName: "Sports Fitness - Basic (92 Tests)",
     type: "package",
     includedTests: [
       {
@@ -11928,7 +11928,7 @@ export const healthPackagesArray = [
 
   {
     id: "122",
-    productName: "sports fitness - comprehensive (143 Tests)",
+    productName: "Sports Fitness - Comprehensive (143 Tests)",
     type: "package",
     includedTests: [
       {
@@ -12199,7 +12199,7 @@ export const healthPackagesArray = [
 
   {
     id: "123",
-    productName: "std profile - basic (12 Tests)",
+    productName: "Std Profile - Basic (12 Tests)",
     type: "package",
     includedTests: [
       {
@@ -12244,7 +12244,7 @@ export const healthPackagesArray = [
 
   {
     id: "124",
-    productName: "std profile advanced (12 Tests)",
+    productName: "Std Profile Advanced (12 Tests)",
     type: "package",
     includedTests: [
       {
@@ -12295,7 +12295,7 @@ export const healthPackagesArray = [
 
   {
     id: "125",
-    productName: "std profile extended (14 Tests)",
+    productName: "Std Profile Extended (14 Tests)",
     type: "package",
     includedTests: [
       {
@@ -12351,7 +12351,7 @@ export const healthPackagesArray = [
 
   {
     id: "126",
-    productName: "steroid profile (14 Tests)",
+    productName: "Steroid Profile (14 Tests)",
     type: "package",
     includedTests: [
       {
@@ -12399,7 +12399,7 @@ export const healthPackagesArray = [
 
   {
     id: "127",
-    productName: "t3-t4-ustsh (3 Tests)",
+    productName: "T3-T4-Ustsh (3 Tests)",
     type: "package",
     includedTests: [
       {
@@ -12432,7 +12432,7 @@ export const healthPackagesArray = [
 
   {
     id: "128",
-    productName: "tb - whole genome sequencing (18 Tests)",
+    productName: "Tb - Whole Genome Sequencing (18 Tests)",
     type: "package",
     includedTests: [
       {
@@ -12480,7 +12480,7 @@ export const healthPackagesArray = [
 
   {
     id: "129",
-    productName: "torch all eight (8 Tests)",
+    productName: "Torch All Eight (8 Tests)",
     type: "package",
     includedTests: [
       {
@@ -12523,7 +12523,7 @@ export const healthPackagesArray = [
 
   {
     id: "130",
-    productName: "torch all ten (8 Tests)",
+    productName: "Torch All Ten (8 Tests)",
     type: "package",
     includedTests: [
       {
@@ -12563,7 +12563,7 @@ export const healthPackagesArray = [
 
   {
     id: "131",
-    productName: "torch panel - igg (5 Tests)",
+    productName: "Torch Panel - Igg (5 Tests)",
     type: "package",
     includedTests: [
       {
@@ -12598,7 +12598,7 @@ export const healthPackagesArray = [
 
   {
     id: "132",
-    productName: "tumour panel (male) (8 Tests)",
+    productName: "Tumour Panel (Male) (8 Tests)",
     type: "package",
     includedTests: [
       {
@@ -12638,7 +12638,7 @@ export const healthPackagesArray = [
 
   {
     id: "133",
-    productName: "typhoid test (2 Tests)",
+    productName: "Typhoid Test (2 Tests)",
     type: "package",
     includedTests: [
       {
@@ -12667,7 +12667,7 @@ export const healthPackagesArray = [
 
   {
     id: "134",
-    productName: "urine analysis and culture (25 Tests)",
+    productName: "Urine Analysis And Culture (25 Tests)",
     type: "package",
     includedTests: [
       {
@@ -12725,7 +12725,7 @@ export const healthPackagesArray = [
 
   {
     id: "135",
-    productName: "ustsh-lh-fsh-prl (4 Tests)",
+    productName: "Ustsh-lh-fsh-prl (4 Tests)",
     type: "package",
     includedTests: [
       {
@@ -12762,7 +12762,7 @@ export const healthPackagesArray = [
 
   {
     id: "136",
-    productName: "vitamin b complex profile (8 Tests)",
+    productName: "Vitamin B Complex Profile (8 Tests)",
     type: "package",
     includedTests: [
       {
@@ -12800,7 +12800,7 @@ export const healthPackagesArray = [
 
   {
     id: "137",
-    productName: "vitamin d profile (3 Tests)",
+    productName: "Vitamin D Profile (3 Tests)",
     type: "package",
     includedTests: [
       {
@@ -12829,7 +12829,7 @@ export const healthPackagesArray = [
 
   {
     id: "138",
-    productName: "widal (4 Tests)",
+    productName: "Widal (4 Tests)",
     type: "package",
     includedTests: [
       {
@@ -12863,7 +12863,7 @@ export const healthPackagesArray = [
 
   {
     id: "139",
-    productName: "widal tube agglutination (4 Tests)",
+    productName: "Widal Tube Agglutination (4 Tests)",
     type: "package",
     includedTests: [
       {
@@ -12897,7 +12897,7 @@ export const healthPackagesArray = [
 
   {
     id: "140",
-    productName: "winter fever panel advanced (39 Tests)",
+    productName: "Winter Fever Panel Advanced (39 Tests)",
     type: "package",
     includedTests: [
       {
@@ -13114,7 +13114,7 @@ export const healthPackagesArray = [
 
   {
     id: "143",
-    productName: "women cancer screening panel - advanced (12 Tests)",
+    productName: "Women Cancer Screening Panel - Advanced (12 Tests)",
     type: "package",
     includedTests: [
       {
@@ -13180,7 +13180,7 @@ export const healthPackagesArray = [
 
   {
     id: "144",
-    productName: "women cancer screening panel - basic (6 Tests)",
+    productName: "Women Cancer Screening Panel - Basic (6 Tests)",
     type: "package",
     includedTests: [
       {
@@ -13219,7 +13219,7 @@ export const healthPackagesArray = [
 
   {
     id: "145",
-    productName: "womens hairfall screening - advanced (51 Tests)",
+    productName: "Womens Hairfall Screening - Advanced (51 Tests)",
     type: "package",
     includedTests: [
       {
@@ -13349,7 +13349,7 @@ export const healthPackagesArray = [
 
   {
     id: "146",
-    productName: "troponin i heart attack risk (51 Tests)",
+    productName: "Troponin I Heart Attack Risk (51 Tests)",
     type: "package",
     includedTests: [
       {
@@ -13378,7 +13378,7 @@ export const healthPackagesArray = [
 
   {
     id: "147",
-    productName: "high sensitivity c-reactive protein (hs-crp)",
+    productName: "High Sensitivity C-Reactive Protein (hs-crp)",
     type: "package",
     includedTests: [
       {
@@ -13407,7 +13407,7 @@ export const healthPackagesArray = [
 
   {
     id: "148",
-    productName: "jaanch - diabetic screen (48 Tests)",
+    productName: "Jaanch - Diabetic Screen (48 Tests)",
     type: "package",
     includedTests: [
       {
@@ -13506,7 +13506,7 @@ export const healthPackagesArray = [
 
   {
     id: "149",
-    productName: "hba1c",
+    productName: "Hba1c",
     type: "package",
     includedTests: [
       {
@@ -13535,7 +13535,7 @@ export const healthPackagesArray = [
 
   {
     id: "150",
-    productName: "jaanch monsoon fever panel - advanced (40 Tests)",
+    productName: "Jaanch Monsoon Fever Panel - Advanced (40 Tests)",
     type: "package",
     includedTests: [
       {
@@ -13635,7 +13635,7 @@ export const healthPackagesArray = [
 
   {
     id: "151",
-    productName: "jaanch monsoon fever mini (34 Tests)",
+    productName: "Jaanch Monsoon Fever Mini (34 Tests)",
     type: "package",
     includedTests: [
       {
@@ -13704,7 +13704,7 @@ export const healthPackagesArray = [
 
   {
     id: "152",
-    productName: "jaanch monsoon fever panel - basic (38 Tests)",
+    productName: "Jaanch Monsoon Fever Panel - Basic (38 Tests)",
     type: "package",
     includedTests: [
       {
@@ -13798,7 +13798,7 @@ export const healthPackagesArray = [
 
   {
     id: "153",
-    productName: "jaanch - mens hairfall screening advanced (47 Tests)",
+    productName: "Jaanch - Mens Hairfall Screening Advanced (47 Tests)",
     type: "package",
     includedTests: [
       {
@@ -13924,7 +13924,7 @@ export const healthPackagesArray = [
 
   {
     id: "154",
-    productName: "jaanch - womens hairfall screening advanced (51 Tests)",
+    productName: "Jaanch - Womens Hairfall Screening Advanced (51 Tests)",
     type: "package",
     includedTests: [
       {
@@ -14055,7 +14055,7 @@ export const healthPackagesArray = [
 
   {
     id: "155",
-    productName: "jaanch - mens skin care checkup (36 Tests)",
+    productName: "Jaanch - Mens Skin Care Checkup (36 Tests)",
     type: "package",
     includedTests: [
       {
@@ -14144,7 +14144,7 @@ export const healthPackagesArray = [
 
   {
     id: "156",
-    productName: "jaanch - womens skin care checkup (43 Tests)",
+    productName: "Jaanch - Womens Skin Care Checkup (43 Tests)",
     type: "package",
     includedTests: [
       {
