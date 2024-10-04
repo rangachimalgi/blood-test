@@ -65,7 +65,7 @@ const Footer = () => {
             <ul>
               <li>Classic Paradise Layout, Begur </li>
               <li>Email: Demo@gmail.com</li>
-              <li>Phone: +91 9611011266</li>
+              {/* <li>Phone: +91 9611011266</li> */}
             </ul>
           </Col>
           <Col md={3} sm={5} className="box">
