@@ -49,12 +49,19 @@ const HealthPackageDetails = () => {
                   </Col>
                   <Col md={6}>
                     <h2>{selectedProduct?.productName}</h2>
-                    <div className="info">
-                      <span className="price">&#8377;{selectedProduct?.price}</span>
-                      <span>category: {selectedProduct?.category}</span>
+
+                    {/* CHANGED: Display MRP with a strikethrough and discounted price */}
+                    <div className="price-box">
+                      <span className="mrp">&#8377;{selectedProduct?.mrp}</span> {/* MRP with strikethrough */}
+                      <span className="discounted-price">&#8377;{selectedProduct?.price}</span> {/* Discounted price */}
                     </div>
+
+                    <span>Category: {selectedProduct?.category}</span>
                     <p>{selectedProduct?.shortDesc}</p>
-                    {/* <input
+
+                    {/* Add Quantity and Add to Cart button here if needed */}
+                    {/* 
+                    <input
                       className="qty-input"
                       type="number"
                       placeholder="Qty"
@@ -68,7 +75,8 @@ const HealthPackageDetails = () => {
                       onClick={() => handleAdd(selectedProduct, quantity)}
                     >
                       Add To Cart
-                    </button> */}
+                    </button>
+                    */}
                   </Col>
                 </Row>
               </section>

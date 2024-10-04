@@ -75,7 +75,11 @@ const HealthPackagesList = ({ packageIds }) => {
             </div>
 
             <div className="price-cart-box">
-              <div className="package-price">&#8377;{pkg.price}</div>
+              {/* Display MRP with strikethrough and discounted price */}
+              <div className="price-box">
+                <span className="mrp">&#8377;{pkg.mrp}</span> {/* MRP with strikethrough */}
+                <span className="discounted-price">&#8377;{pkg.price}</span> {/* Discounted price */}
+              </div>
               <button
                 className="book-now-button"
                 onClick={() => handleBookNow(pkg)}

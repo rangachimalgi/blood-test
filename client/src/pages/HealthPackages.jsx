@@ -88,6 +88,7 @@ export const healthPackagesArray = [
     desc: "Tests Includes Lipid, Thyroid, Liver, Renal, Iron Deficiency, Cardiac Risk Markers",
     imgUrl: populartest01,
     category: "Basic",
+    mrp: 1999.0,
     price: 1499.0,
     discount: 30,
     shortDesc: "Sample Type: Blood",
