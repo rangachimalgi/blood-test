@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { healthPackagesArray } from "./HealthPackages";
 import { DataContainer } from "../App";
 import { toast, ToastContainer } from "react-toastify";
@@ -13,6 +13,7 @@ const HealthPackagesList = ({ packageIds }) => {
   const { addToCart } = useContext(DataContainer);
   const [showCheckout, setShowCheckout] = useState(false);
   const [selectedPackage, setSelectedPackage] = useState(null);
+  const navigate = useNavigate();
 
   const handleAddToCart = (pkg) => {
     addToCart(pkg);
@@ -22,6 +23,7 @@ const HealthPackagesList = ({ packageIds }) => {
   const handleBookNow = (pkg) => {
     setSelectedPackage(pkg);
     setShowCheckout(true);
+    navigate(`/health/${pkg.id}`);  // Navigate to the health package page
   };
 
   const handleCloseCheckout = () => {
