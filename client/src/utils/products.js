@@ -435,6 +435,1151 @@ export const discoutProducts = [
 
 export const products = [
   {
+    id: "25",
+    productName: "Fasting Blood Sugar",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 80,
+    description:
+    "The fasting blood sugar (FBS) test determines the actual concentration of glucose in your blood without consumption of any diet. FBS test is frequently recommended in patients to determine whether glucose levels are controlled by the injection of insulin hormone in case of type 1 diabetes and whether the body is able to use insulin in case of type 2 diabetes. Elevated levels of fasting blood sugar can be an indication of Type 1 or Type 2 Diabetes. If untreated, can lead to severe health-related consequences like delayed wound healing, damage to the eyes (Diabetic retinopathy), kidney (renal failure), nerves (peripheral neuropathy), and heart (myocardial infarction). Book your FBS Test at a low cost and get a home collection facility.",
+  },
+  {
+    id: "25",
+    productName: "Hba1c",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 350,
+    description:
+    "HbA1c, also known as Hemoglobin A1c or A1c, is glycosylated hemoglobin or glycohemoglobin in which the glucose molecule present in the blood non-enzymatically binds to hemoglobin. HbA1c test reflects those RBC that are present in the blood at the time of test and measures average blood glucose concentration over 3-4 months. This gives an indication of long-term blood glucose control which serves as a regular monitoring tool if a person has been diagnosed with diabetes. According to the American Diabetes Association, this test is mandatory for diabetic patients and should be performed four times a year. HbA1c test is available at a discounted rate, along with the home collection.",
+  },
+  {
+    id: "25",
+    productName: "Postprandial Blood Sugar",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 80,
+    description:
+    "The postprandial blood sugar determines the glucose concentration 2 hours after having breakfast/ lunch. Blood sugar levels usually begin to rise 10-15 minutes after a meal and reach their peak after an hour. The pancreas produces the hormone insulin, which aids in the absorption of sugar from the bloodstream into the body cells. This test is used to assess how the body reacts to sugar and starch after eating a meal. Doctors recommend this test if your blood sugar continues to be excessively high or extremely low. Blood sugar levels in people who do not have diabetes normally return to normal within 2 hours.",
+  },
+  {
+    id: "25",
+    productName: "Fasting Blood Sugar",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 80,
+    description:
+    "The fasting blood sugar (FBS) test determines the actual concentration of glucose in your blood without consumption of any diet. FBS test is frequently recommended in patients to determine whether glucose levels are controlled by the injection of insulin hormone in case of type 1 diabetes and whether the body is able to use insulin in case of type 2 diabetes. Elevated levels of fasting blood sugar can be an indication of Type 1 or Type 2 Diabetes. If untreated, can lead to severe health-related consequences like delayed wound healing, damage to the eyes (Diabetic retinopathy), kidney (renal failure), nerves (peripheral neuropathy), and heart (myocardial infarction). Book your FBS Test at a low cost and get a home collection facility.",
+  },
+  {
+    id: "25",
+    productName: "Erythrocyte Sedimentation Rate (Esr)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 120,
+    description:
+      "Erythrocyte Sedimentation Rate (ESR) test includes measuring the rate at which red blood cells from the anticoagulated blood settle when kept standing in a tube. This is termed Erythrocyte Sedimentation Rate (ESR). Thyrocare offer ESR test at a very affordable price, home collection available.",
+  },
+  {
+    id: "25",
+    productName: "Free Thyroxine (Ft4)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 260,
+    description:
+    "FT4 is the free T4 that is not bound to the proteins and is related to thyroid metabolism. Low levels of FT4 indicate hypothyroidism and raised levels are associated with hyperthyroidism. Thyrocare offers a Free Thyroxine test at a very affordable price along with a home collection.",
+  },
+  {
+    id: "25",
+    productName: "C-Reactive Protein (Crp)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 480,
+    description:
+    "The test detects the presence of CRP in blood. CRP is produced by the liver in response to inflammatory conditions, like infection, trauma, heart and autoimmune diseases. The test also helps in monitoring treatment post infection and inflammation. Book the CRP test at an affordable price and get a free home sample collection.",
+  },
+  {
+    id: "25",
+    productName: "Beta Hcg",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 770,
+    description:
+    "A rapid rise in the level of hCG indicates pregnancy. The test is used for early confirmation of pregnancy and to monitor it. Get Thyrocare's Beta hCG test at home with our free home collection service. Book now.",
+  },
+  {
+    id: "25",
+    productName: "Prolactin (Prl)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 530,
+    description:
+    "Prolactin is secreted by the pituitary gland and triggers milk production in women. Abnormal levels can be seen in several health conditions like menstrual problems, pituitary tumors, fertility issues, and others, thus needs to be monitored. Book Prolactin test now to avail yourself services at your doorstep, at very affordable rates.",
+  },
+  {
+    id: "25",
+    productName: "Free Triiodothyronine (Ft3)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 260,
+    description:
+    "Estimation of FT3 and FT4 hormone levels improves the sensitivity and accuracy of diagnosing thyroid dysfunctions. When only T3 - T4 levels are measured, it may become difficult to reach a definitive diagnosis many times.",
+  },
+  {
+    id: "25",
+    productName: "Prostate Specific Antigen (Psa)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 600,
+    description:
+    "Prostate-specific antigen (PSA), is a glycoprotein produced by cells of the prostate that remains free in the blood. A free PSA test measures the amount of unbound prostate-specific antigen in the blood, which helps physicians to identify problems such as prostate inflammation or tumor. Levels of PSA rise in conditions such as prostate cancer and also in benign prostatic hyperplasia (BPH). Monitoring free PSA is useful for detecting metastatic or chronic disease in patients receiving anti-prostate cancer therapy. If the levels of PSA are elevated after treatment, it indicates the recurrence of the disease. Now book your PSA test at an affordable price, with a  home collection service from Thyrocare.",
+  },
+  {
+    id: "25",
+    productName: "vitamin b-12",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 900,
+    description:
+    "Vitamin B-12 is required for neuronal brain development and to boost immunity. Monitoring its levels is essential to prevent health complications and memory problems. Book a Vitamin B12 test from Thyrocare and get services at your doorstep at very affordable rates.",
+  },
+  {
+    id: "25",
+    productName: "Rheumatoid Factor (Rf)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 620,
+    description:
+    "Rheumatoid Factor (RF) is an immunoglobulin M protein, produced by the body’s immune system. This protein attacks the body’s tissues as it mistakenly identifies them as a foreign entity. The rheumatoid factor test determines the level of rheumatoid factor in your blood to diagnose rheumatoid arthritis. Higher RF concentrations are often linked to autoimmune disorders such as rheumatoid arthritis and Sjogren's syndrome. Other conditions that may elevate RF concentration in the blood include hepatitis, viral or bacterial infections, and endocarditis. There is also a gradual rise in RF levels with age. Book a Rheumatoid Factor test from Thyrocare to avail of the service at your doorsteps at a low cost.",
+  },
+  {
+    id: "25",
+    productName: "Anti Hepatitis C Virus (Anti Hcv) - Total",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1180,
+  },
+  {
+    id: "25",
+    productName: "hiv I and Ii",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 520,
+  },
+  {
+    id: "25",
+    productName: "Hepatitis B Surface Antigen (Hbsag)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 480,
+    description:
+    "Hepatitis B surface antigen (HBsAg) test is used to screen and diagnose acute or chronic hepatitis B virus (HBV) infection. It also helps in detecting if a person has previously infected with hepatitis B infection, or sometimes to guide and monitor treatment.",
+  },
+  {
+    id: "25",
+    productName: "Total Ige",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 790,
+    description:
+    "IgE, one of the five subclasses of antibodies found in mammals is a key molecule in allergy responses and inflammation. When an individual is exposed to an allergen, the allergen particles bind to the sensitized mast cells bound to IgE. Mast cells secrete components of allergic reactions such as cytokines, histamines, etc. Hence a person undergoing persistent or periodic symptoms of allergy can be advised to be tested for total IgE levels. This test is also recommended when the allergen is unknown and its detection is required for effective immunotherapy/ allergen shots against specific allergies. Quantitative measurement of serum IgE with other clinical indicators can provide useful information for the differential diagnosis of Atopic and Non-Atopic diseases. For diagnostic purposes, results should always be assessed with the patient’s medical history, clinical examination, and other findings.",
+  },
+  {
+    id: "25",
+    productName: "25-Oh Vitamin D (Total)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1000,
+    description:
+    "The 25-OH vitamin D test is the most accurate way to measure vitamin D levels in your body. Vitamin D helps control phosphate and calcium levels in the body. Book now at an affordable rate and get a free home collection.",
+  },
+  {
+    id: "25",
+    productName: "Insulin - Fasting",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 750,
+    description:
+    "A fasting insulin level test is valuable in detecting type 1 as well as type 2 diabetes. It can be done to diagnose hypoglycemia when one has insulin resistance. This test is usually recommended for people with prediabetes, diabetes, polycystic ovarian syndrome, heart diseases, metabolic syndrome, etc. Book an Insulin fasting test from Thyrocare at a very affordable price and get home collection services.",
+  },
+  {
+    id: "25",
+    productName: "Follicle Stimulating Hormone (Fsh)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 480,
+    description:
+    "Follicle Stimulating Hormone  (FSH) is a pivotal hormone that regulates the menstrual cycle and ovulation in women. In men, this hormone stimulates testicular growth. Measuring the levels helps to detect problems related to reproductive functions. Thyrocare offer FSH test at a low cost and along with home collection services.",
+  },
+  {
+    id: "25",
+    productName: "Ferritin",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 750,
+    description:
+    "Ferritin is a major protein that is the body’s storehouse of iron.  A ferritin test helps to assess disorders related to iron deficiency like anemia and iron overload. Thyrocare offers the Ferritin test at the lowest rate with the home collection service.",
+  },
+  {
+    id: "25",
+    productName: "Luteinising Hormone (Lh)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 480,
+    description:
+    "Luteinising Hormone plays an important role in maintaining the normal reproductive functions in both males and females. Abnormal levels are found to be associated with infertility, polycystic ovarian syndrome, menstrual problems, testicular atrophy, etc. Thyrocare offer LH test at a low cost and along with home collection services.",
+  },
+  {
+    id: "25",
+    productName: "Anti Mullerian Hormone (Amh)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1970,
+    description:
+    "Anti-Müllerian Hormone Test (AMH) is a marker that is used to evaluate an ovarian reserve and predict the outcome of In-vitro Fertilization (IVF) or other Assisted Reproductive Technology (ART). This test can also be used to assess the ovarian function in patients with Polycystic Ovarian Syndrome (PCOS), to diagnose and monitor Ovarian tumors, and to determine the menopausal status.  Thyrocare offers an AMH test at the lowest price with the home collection.",
+  },
+  {
+    id: "25",
+    productName: "Urinary Microalbumin",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 620,
+    description:
+    "This test checks the kidney functions, as in the case of normally functioning kidneys, albumins are not leaked into the urine. Hence, the presence of albumin in the urine is a marker for kidney dysfunction. Book this test from Thyrocare at a very low cost and get home collection services.",
+  },
+  {
+    id: "25",
+    productName: "Calcium",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 220,
+    description:
+    "Calcium plays an important role in many physiological functions of the body. Abnormal calcium levels affect bone health, muscle contraction, blood clotting, enzyme activity, neural transmission, etc., Book your calcium blood test at an affordable price with free home collection.",
+  },
+  {
+    id: "25",
+    productName: "Anti Thyroglobulin Antibody (Atg)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1080,
+    description:
+    "Thyroglobulin is a key protein in the thyroid gland that is essential for the synthesis of thyroxine (T4) and triiodothyronine (T3). Antithyroglobulin antibody test measures levels of antibodies to thyroglobulin. This test helps to identify autoimmune diseases involving the thyroid gland. The presence of thyroid autoantibodies causes disorders such as Hashimoto’s thyroiditis, Graves’ disease, Hypothyroidism, Thyroid cancer, etc. Women with high levels of ATG might miscarry or be infertile. While in cases of neonatal hypothyroidism, the detection of ATG in the infant suggests transplacental antibody transfer, particularly if the mother has a history of autoimmune thyroiditis or detectable thyroid autoantibodies.",
+  },
+  {
+    id: "25",
+    productName: "Anti Ccp (Accp)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1460,
+    description:
+    "Anti-Cyclic Citrullinated Peptide is an antibody found to be present in individuals with rheumatoid arthritis (RA). Measuring its levels helps in detecting as well as assessing the severity of RA. This test is available at an affordable price with home collection services.",
+  },
+  {
+    id: "25",
+    productName: "Testosterone",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 610,
+    description:
+    "The test measures the amount of testosterone hormone in the blood. Testosterone, a sex hormone, is found in both men and women (in small amounts). Abnormal levels of this hormone can cause health issues, such as sexual dysfunction, PCOS, hypogonadism and cancer. Book testosterone test at Thyrocare and get a free home sample collection.",
+  },
+  {
+    id: "25",
+    productName: "Carcino Embryonic Antigen (Cea)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 740,
+    description:
+    "It is produced during the development of a fetus and production stops before birth. The expression of CEA is increased in almost all types of cancers (mainly ovarian cancer) and hence used as a tumor marker.",
+  },
+  {
+    id: "25",
+    productName: "Estradiol/Oestrogen (E2)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 570,
+    description:
+    "Estradiol is a key type of estrogen (female sex hormone) produced by the ovaries. However, during pregnancy, the placenta also produces estradiol. This test is recommended for females to assess reproductive health, menstrual cycle, fertility, and other factors. Increased levels may be indicative of pregnancy, gynecomastia, or ovarian tumors. Levels are also high during the assisted reproduction stage where ovulation is induced and low during the early follicular phase. Whereas decreased levels may either indicate a lesion in the hypothalamus-pituitary axis or a lack of ovarian synthesis. Thyrocare offers this test at a discounted rate, along with the home collection.",
+  },
+  {
+    id: "25",
+    productName: "Free Testosterone",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1220,
+    description:
+    "Testosterone is a C-19 steroid secreted by the testis and adrenal cortex in men, and by ovaries in women. Hypogonadism in males and hyperandrogenic states in females can be clinically evaluated with testosterone measurements. Testosterone circulates in the blood bound to three proteins, i.e. sex hormone-binding globulin (60-80%), albumin and cortisol binding globulin. Unbound or free testosterone accounts for only about 1-2% of the total circulating testosterone. Along with diagnosing infertility and PCOD in females, diseases/ damages of ovaries, testes, adrenal and pituitary gland can also be screened using this test. Free Testosterone test is available at the most reasonable price with home collection services.",
+  },
+  {
+    id: "25",
+    productName: "Cortisol",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 700,
+    description:
+    "The secretion of Cortisol is controlled by the pituitary gland and levels are often measured to evaluate the pituitary function and/or adrenal function. Abnormalities of Cortisol secretion can result in diseases either in the pituitary gland or the adrenals. Overactivity of either organ can lead to over secretion of cortisol, and cause Cushing's syndrome. Book Cortisol test from Thyrocare at a low cost and get home collection facility.",
+  },
+  {
+    id: "25",
+    productName: "Rubella - Igg",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "The presence of RUBELLA - IgG antibodies is evidence of past infection or immunization. The presence of specific IgG on testing indicates immunity to rubella. Negative IgG results indicate the susceptibility of the patient to infection. Book this test from Thyrocare at a very low cost and get home collection services.",
+  },
+  {
+    id: "25",
+    productName: "Lactate Dehydrogenase (Ldh)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 340,
+    description:
+    "Lactate dehydrogenase (LDH) is an enzyme present extensively in body tissues, such as blood cells, skeletal muscles, kidneys, brain, and lungs. The tissue levels of this enzyme are 500 fold higher than those normally present in the serum. Thus any cells or tissue damage elevates the serum level of LDH to a significant extent. Thus, increased LDH level in blood is generally an indication of cellular damage. Thyrocare offers an affordable Lactate Dehydrogenase (LDH) test with the free home collection.",
+  },
+  {
+    id: "25",
+    productName: "Anti Microsomal Antibody (Ama)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1140,
+    description:
+    "The presence of antimicrosomal antibodies (AMA) is generally associated with autoimmune disorder. Detection of these antibodies can assist in identifying damage to the thyroid cells causing such disorders. Book AMA blood test online at an affordable price, with a free home collection from Thyrocare.",
+  },
+  {
+    id: "25",
+    productName: "Anti Nuclear Antibodies (Ana)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 750,
+    description:
+    "ANAs are a special class of autoantibodies that bind and destroy certain parts in the nucleus of the cell. Although a little amount of ANA is found in the normal population, an increased level is normally observed in people with connective tissue disease (CTD). Book ANA test at an affordable price, with a free home collection from Thyrocare.",
+  },
+  {
+    id: "25",
+    productName: "Ca-125",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1270,
+    description:
+    "CA125 is an ovarian cancer antigen. Certain cancers such as those of the breast, gastrointestinal tract, and kidney also show elevated levels of CA125. Thus, it is a sensitive but non-specific tumor marker that is used in the detection and monitoring of ovarian cancer. Book now to avail services at your doorstep, at very affordable rates.",
+  },
+  {
+    id: "25",
+    productName: "D-Dimer",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1240,
+    description:
+    "D-dimers are small fragments of proteins detected in the blood after breaking down a blood clot. D-dimer levels are used to detect these blood clots. D-dimer test is used in diagnosing blood clots deep inside the veins, to check for blockage in the arteries and lungs, which can affect the blood flow to various organs and tissues as well as increase the chances of a Heart attack. D-dimer test is recommended for someone with chest pain, increased heart rate, difficulty in breathing, seizures, blood in cough, bleeding gums, nausea, decreased urination, muscle pain, leg pain, and swelling. Elevated levels of D-dimer protein are seen in severely infected COVID19 patients, and hence it is used as a marker to predict the severity of the disease. Elevated D-dimer levels are also noted in older ages, pregnancy, liver and kidney diseases. Thyrocare offers the Dimer test at the most affordable price. Sample collection at home available.",
+  },
+  {
+    id: "25",
+    productName: "Phosphorous",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 220,
+    description:
+    "It is an important element necessary to maintain bones, teeth, nerve signaling, muscle contraction, energy storage  and many others. High levels are seen to be associated with kidney, liver and bone diseases.",
+  },
+  {
+    id: "25",
+    productName: "Vdrl (Rpr) For Syphilis",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 210,
+    description:
+    "The Venereal Disease Research Laboratory (VDRL) test is used to diagnose Syphilis, a sexually transmitted infection (STI) caused by a spirochete Treponema pallidum. This test detects antibodies generated by your body in response to antigens produced by bacteria-damaged cells. Syphilis can cause long-term complications by invading the nervous and cardiovascular system, if not treated properly. It may also be transmitted from infected mother to child during pregnancy or at birth, resulting in congenital Syphilis. Book Thyrocare's VDRL test at a low cost with the home collection.",
+  },
+  {
+    id: "25",
+    productName: "Hla-B27",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 2090,
+    description:
+    "Human Leukocyte antigen B27 (HLA- B27) belongs to a group of cell surface glycoproteins which are expressed on most nucleated human cells and platelets. It is a major histocompatibility complex (MHC) class I molecule. The presence of HLA - B27 is strongly associated with ankylosing spondylitis and some inflammatory disorders like Reiter’s syndrome, inflammatory bowel syndrome, etc. The binding ability of specific monoclonal antibodies to the antigenic determinants expressed by leucocytes on the surface forms the basis of this test. HLA-B 27 test is generally advised in patients suffering from joint pain where the diagnosis of ankylosing spondylitis is suspected. A positive test result indicates higher chances of developing this disease. Avail of the service by booking the HLA-B27 test online at an affordable rate, at your doorstep.",
+  },
+  {
+    id: "25",
+    productName: "Magnesium",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "Magnesium is the mineral found in the body that is needed for healthy bones, heart, muscles, and nerves. This test evaluates the level of magnesium as its deficiency can cause cardiac arrhythmia, muscle cramps, or tremors. Book a Magnesium test from Thyrocare at a low cost and get a home collection facility.",
+  },
+  {
+    id: "25",
+    productName: "Rubella - Igm",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 310,
+    description:
+    "Rubella is a viral infection generally characterized by a rash. Respiratory aerosols are a major source through which virus is transmitted from person to person. The first clinical manifestation of rubella is usually the appearance of a macro-papular rash some 16-20 days after exposure. The rash, appearing first on the face, spreads further over the trunk and the extremities. The presence of RUBELLA - IgM antibodies in blood indicates recent or current infection with the Rubella virus. In rare cases, IgM antibodies are known to persist for years following a previous infection and also immunization.",
+  },
+  {
+    id: "25",
+    productName: "High Sensitivity C-Reactive Protein (Hs-Crp)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 450,
+    description:
+    "High Sensitivity C-Reactive Protein (Hs-CRP) is an acute-phase protein that is synthesized in the liver. Its concentration increases after exposure to inflammation. This test is used to determine the risk of developing coronary artery disease as CRP is considered to be a cardiac risk marker. Book Thyrocare's hs-CRP test at a low cost with the home collection.",
+  },
+  {
+    id: "25",
+    productName: "Urine Culture And Susceptibility",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 840,
+  },
+  {
+    id: "25",
+    productName: "Nt-Probnp",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1850,
+  },
+  {
+    id: "25",
+    productName: "Adult Hemoglobin Electrophoresis",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1090,
+    description:
+    "It is a blood test that measures and the identifies different types of hemoglobin. Presence of any abnormal hemoglobin types can be detected to manage or treat the same, as abnormal hemoglobin type may impair the amount of oxygen transported to the cells of the body.",
+  },
+  {
+    id: "25",
+    productName: "Alkaline Phosphatase",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 210,
+  },
+  {
+    id: "25",
+    productName: "Sodium",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 220,
+    description:
+    "This test is used to detect abnormal concentrations of sodium, termed hyponatremia (low sodium) and hypernatremia (high sodium). While low levels can cause confusion, headache, seizure, high levels leads to high blood pressure, heart and kidney problems.",
+  },
+  {
+    id: "25",
+    productName: "C-Peptide",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1070,
+    description:
+    "C-Peptide is a protein released into the blood during the process of insulin production by the pancreas. C-peptide Test test can say how well your body makes insulin. It can also help to differentiate between Type-1 and Type-2 diabetes. Book a C-peptide test from Thyrocare and get services at your doorstep in very affordable rates.",
+  },
+  {
+    id: "25",
+    productName: "Ca 19.9",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1220,
+    description:
+    "CA 19-9 is a tumor-associated antigen that is elevated mostly in patients with Advanced Pancreatic Cancer. It may also be elevated in other cancers, conditions, diseases such as colorectal cancer, lung cancer, gall bladder cancer, gallstones, pancreatitis, cystic fibrosis, and liver disease. Although, increase in the levels of CA 19-9 is not distinctively suggestive of pancreatic cancer, currently, it is the single most useful blood test to differentiate benign disorders from malignant ones. Book a CA 19-9 test from Thyrocare at an affordable cost and get home collection services.",
+  },
+  {
+    id: "25",
+    productName: "Amylase",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 520,
+    description:
+    "Amylase catalyzes the breakdown of complex starch. Most of the serum amylases are mainly derived from the pancreas and pituitary gland. The measurement of alpha-Amylase is important for the diagnosis of pancreatitis (inflammation of the pancreas) as well as other pancreatic and intestinal diseases.",
+  },
+  {
+    id: "25",
+    productName: "Lipase",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 610,
+    description:
+    "Lipase is an enzyme produced by the pancreas to digest dietary fats. It is usually present in very small quantities, but when the pancreatic cells are injured, a higher concentration of lipase is released in the blood. A blood test for lipase is usually used to diagnose and monitor disorders related to the pancreas. The level of lipase in the blood can predict conditions like inflammation of the pancreas, blockage of the pancreatic duct by a gallstone, and pancreatic tumor. A lipase test is recommended for a person with symptoms of a pancreatic disorder, such as severe abdominal or back pain, fever, loss of appetite with jaundice, and rapid pulse rate. Book a Lipase test from Thyrocare at a low cost and get home collection services.",
+  },
+  {
+    id: "25",
+    productName: "Serum Zinc",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "Zinc is one of the essential trace elements, is present throughout the body in many tissues but is not stored at any particular site. Zinc deficiency can occur where zinc needs exceed the intake or in case of malabsorption. Alcoholism, pregnancy & burns are often associated with zinc deficiency. Zinc levels decrease in response to infections, so a low result may not necessarily mean a person is zinc deficient. Clinically, Zinc deficiency leads to hair loss, poor wound healing, dermatitis, and impaired immune function. In children, it can cause growth retardation. Since zinc can be excreted in the urine/feces, high levels are rarely seen. Excessive supplementation of Zinc leads to toxicity. Serum zinc test is available at affordable cost, with a free home collection.",
+  },
+  {
+    id: "25",
+    productName: "Glucose-6-Phosphate Dehydrogenase",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 700,
+    description:
+    "Glucose-6-Phosphate Dehydrogenase (G6PD) enzyme is active in almost all types of cells, and is involved in the processing of carbohydrates and energy production. It plays a critical role in red blood cells (RBCs) by protecting them from damage and premature destruction. G6PD deficiency is an inherited, sex-linked, metabolic disorder, which is characterized by a defect in an enzyme that leads to the breakdown of RBCs (hemolysis) upon exposure to stress resulting from certain microbial infections or certain drugs. G6PD deficiency may lead to acute hemolytic anemia. Thyrocare offers this test at a discounted price, along with a free home collection facility.",
+  },
+  {
+    id: "25",
+    productName: "Alpha Feto Protein (Afp)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 760,
+    description:
+    "AFP is produced in the liver of a developing baby and protects it against the maternal immune system. Abnormal levels of embryonic AFP in the mother's serum can be indicative of birth defects like spina bifida or genetic abnormalities like Down's syndrome in the baby. Thyrocare offers this test at a discounted rate, along with the home collection.",
+  },
+  {
+    id: "25",
+    productName: "Tissue Transglutaminase - Iga (Ttg)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1220,
+    description:
+    "Tissue Transglutaminase  (tTG) is an enzyme responsible for protection, prevention, and tissue remodeling or repair processes. Anti-tTG antibodies are more sensitive and specific than anti-Gliadin antibodies. Screening for tTG-IgA antibodies is recommended to identify patients at risk for celiac disease. This test detects autoantibodies in the blood that the body produces as part of the immune response. It also aids in monitoring adherence to a gluten-free diet in disease confirmed patients.",
+  },
+  {
+    id: "25",
+    productName: "Progesterone",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 580,
+    description:
+    "Progesterone is an endogenous steroid hormone that aids in the implantation of the fertilized egg in the uterus. It is produced by the adrenal cortex as well as ovaries and testes. It is also secreted by the corpus luteum and the placenta and is responsible for preparing the body for pregnancy and, if pregnancy occurs, maintaining it until birth. Estimating progesterone levels is important in assessing the probability and risk of ectopic pregnancy, determining the cause of infertility, and diagnosing abnormal uterine bleeding. Low levels of progesterone are a marker of incipient pre-eclampsia/toxemia in a pregnant woman. Avail of the home collection services for this test at an affordable cost.",
+  },
+  {
+    id: "25",
+    productName: "Anti Streptolysin - O (Aso)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 620,
+    description:
+    "Antistreptolysin O (ASO) test determines antibodies in the blood against streptolysin O, an enzyme produced by group A streptococcus bacteria. This is also helpful in checking whether the certain condition or disease is due to a recent streptococcal infection. Anti-Streptolysin O test is now available at an affordable cost, with the free home collection.",
+  },
+  {
+    id: "25",
+    productName: "Ca 15.3",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 770,
+    description:
+    "Cancer antigen 15-3 (CA 15-3), a protein produced by normal breast cells, is used as a biomarker to monitor cancerous breast tumors. It helps in determining the effectiveness of treatment and disease recurrence. Normal levels of CA 15-3 protein are produced by breast cells, however, increased production is observed in the case of breast cancer. CA 15-3 levels are also elevated in individuals with other cancers or diseases, such as colorectal cancer, lung cancer, cirrhosis, Hepatitis, and Benign Breast Disease. Thyrocare offers this test at a discounted price, along with a free home collection facility.",
+  },
+  {
+    id: "25",
+    productName: "Potassium",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 220,
+    description:
+    "It is essential for proper muscle and nerve functioning. Changes in its levels may cause severe health issues, hence levels need to be assessed.",
+  },
+  {
+    id: "25",
+    productName: "Procalcitonin",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1300,
+    description:
+    "Procalcitonin is a peptide precursor of the hormone calcitonin, which regulates and maintains calcium equilibrium in the body. It is produced naturally in the body and serves as a marker for septic infection. This test determines the level of procalcitonin in blood and aids in the early detection of severe bacterial infections. Pro-inflammatory stimuli during bacterial infection, sepsis during operation/trauma lead to an increase in circulating procalcitonin levels beyond the normal range. Now free sample collection at your home with discounted costs.",
+  },
+  {
+    id: "25",
+    productName: "Creatinine - Serum",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 200,
+    description:
+    "Creatinine is produced as a result of normal muscle metabolism. It is measured to estimate the efficiency of the glomeruli of the kidneys to remove waste products from the blood and thus,indicate the overall kidney health.",
+  },
+  {
+    id: "25",
+    productName: "Intact Parathyroid Hormone (Pth)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1220,
+  },
+  {
+    id: "25",
+    productName: "Aldosterone",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1500,
+  },
+  {
+    id: "25",
+    productName: "Prothrombin Time",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 400,
+  },
+  {
+    id: "25",
+    productName: "Creatinine Phosphokinase",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 330,
+  },
+  {
+    id: "25",
+    productName: "Dengue-Igm",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 299,
+  },
+  {
+    id: "25",
+    productName: "Iron",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 210,
+    description:
+    "As iron has the ability to accept and donate electrons, it is required for a variety of normal cellular functions. Iron is also vital for proper growth and development, and deficiencies can cause anemia and related health conditions.",
+  },
+  {
+    id: "25",
+    productName: "Total Iron Binding Capacity (Tibc)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 340,
+    description:
+    "Transferrin is a glycoprotein that transports iron throughout the body. This test measures the amount of transferrin to assess the body's ability for iron transportation, in order to diagnose iron deficinecy or high levels of iron.",
+  },
+  {
+    id: "25",
+    productName: "Dengue Ns1 Antigen",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 299,
+  },
+  {
+    id: "25",
+    productName: "Ana Screening (Immunofluorescence)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 750,
+  },
+  {
+    id: "25",
+    productName: "Dengue-Igg",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 299,
+  },
+  {
+    id: "25",
+    productName: "Valproic Acid",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 520,
+    description:
+    "Valproic acid is used as an anticonvulsant drug in treating epileptic seizures, often in combination with other drugs. It is also used as a mood-stabilizer, in cases of children with aggressive behavioral patterns and attention deficit hyperactivity disorder (ADHD). It is also approved in the treatment of migraines, bipolar disorder, and schizophrenia. It also gives promising results in the treatment of certain solid tumors, colonic cancers, medulloblastomas, follicular thyroid cancer, leukemias, and as a part of the multidrug regimen used in Alzheimer’s disease. The valproic acid test is available at a discounted price, along with a home collection.",
+  },
+  {
+    id: "25",
+    productName: "Homocysteine",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1130,
+    description:
+    "An amino acid, whose elevated levels in the bloodstream is related to increased risk of blood clot formation, atherosclerosis, heart attack and stroke. Increased levels are also associated with homocystinuria, an inherited condition.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 500,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Alpha-1-Antitrypsin (Aat)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1240,
+    description:
+    "Alpha-1-antitrypsin (AAT) is a protein produced by the liver that protects our lungs from damage caused by Neutrophil elastase. In case of abnormal AAT or non-functional AAT, neutrophil elastase destroys alveoli in the lungs, resulting in lung disease. The alpha-1-antitrypsin test determines the level of alpha-1-antitrypsin in blood. This test is recommended by a physician if the patient is under the age of 45 and has symptoms such as wheezing, coughing, shortness of breath, or asthma, or if they have a family history of the disorder or conditions like Chronic Obstructive Pulmonary Disease (COPD) or liver disease with unknown cause. ATT deficiency can lead to complications of the lungs, liver, and skin. Reduced ATT levels increase the risk of COPD, emphysema, chronic bronchitis, and liver cirrhosis. AAT levels rise in acute and chronic inflammatory conditions, infections, and hepatocellular carcinoma. ATT levels also increase during oral contraceptive therapy and pregnancy.",
+  },
+  {
+    id: "25",
+    productName: "Anti Hepatitis A Virus (Anti Hav) - Igm",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1030,
+    description:
+    "Anti-HAV test is primarily used to determine the cause of acute hepatitis or to identify the type of hepatitis virus causing an infection. Individuals produce IgM antibodies on exposure to HAV either naturally or due to vaccination. Testing for the presence of IgM antibodies against the hepatitis A virus is performed when the patient shows symptoms of hepatitis such as fever, fatigue, nausea, vomiting, abdominal pain, dark urine and/or pale-colored stool, joint pain, jaundice. The serological detection of HAV antibodies is an important marker for confirming HAV infection, classification of the virus, and determining the source of infection. Book this test and get Free Sample Collection at Home at an affordable price.",
+  },
+  {
+    id: "25",
+    productName: "Total Thyroxine (T4)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 210,
+    description:
+    "T4 is a hormone secreted by the thyroid gland that plays a role in the body's vital functions, thus needs to be monitored. This test singly or in combination with T3 and TSH is used to identify thyroid disorders.",
+  },
+  {
+    id: "25",
+    productName: "Cystatin C",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 520,
+    description:
+    "Cystatin C is a small protein found in body fluids like blood. It is filtered by the glomeruli (tiny blood vessels) present in the kidney affecting its blood concentration and is evaluated by measuring the glomerular filtration rate (GFR) is the rate at which kidneys filter the fluid). It assesses the functioning of the kidneys. Avail of the home collection services for this test at an affordable cost.",
+  },
+  {
+    id: "25",
+    productName: "Total Triiodothyronine (T3)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 200,
+    description:
+    "It is a hormone secreted by the thyroid gland and, any variations in its level can have an effect on thyroid functions. Monitoring the levels of T3, therefore, becomes a crucial parameter to detect thyroid disorders.",
+  },
+  {
+    id: "25",
+    productName: "Free Psa",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1220,
+    description:
+    "Prostate-Specific Antigen (PSA), is a glycoprotein produced by cells of the prostate that remains free in the blood. Free PSA test measures the amount of unbound prostate-specific antigen in the blood, which helps physicians to identify problems such as prostate inflammation or tumor. Levels of PSA rise in conditions such as prostate cancer and also in benign prostatic hyperplasia (BPH).",
+  },
+  {
+    id: "25",
+    productName: "Anti - Dsdna",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 760,
+    description:
+    "Anti-dsDNA test looks for anti-double-stranded DNA antibodies which are autoantibodies to double-stranded DNA. Anti-dsDNA antibodies are characteristic of autoimmune disorders such as Systemic Lupus Erythematosus (SLE). The levels of these antibodies fluctuate with disease activity. Anti-ds-DNA antibody titers may decrease with immunosuppressive therapy and when the disease is in remission. Anti-ds-DNA antibody testing is used to help the diagnosis of SLE, distinguish it from other autoimmune conditions, and assist in disease surveillance. Increase in the level of Anti ds-DNA antibody can be a prior indicator of flare-ups in which their symptoms intensify and then subside.",
+  },
+  {
+    id: "25",
+    productName: "Anti Hepatitis E Virus (Anti Hev) - Igm",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1320,
+    description:
+    "HEV is often transmitted through contaminated water and affects the liver. Anti HEV-IgM is the antibodies that are produced in exposure with HEV by the body. The presence of these antibodies serves as a marker of acute HEV infection. Take the benefit of free home collection at a much affordable price just by booking the test from Thyrocare. ",
+  },
+  {
+    id: "25",
+    productName: "Dhea - Sulphate (Dheas)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 760,
+    description:
+    "Dehydroepiandrosterone sulfate (DHEA-S) is a steroid hormone, which plays animportant role in the development of secondary sexual characteristics during puberty. Although an androgen (male sex hormone), is present in both males and females. Secretion of DHEA-S is controlled by the adrenocorticotropic hormone produced by the pituitary gland. This test measures the levels of DHEA-S in your blood. Excess production of DHEA-S results in precocious puberty in boys and excess body hair, abnormal menstrual cycle, and ambiguous external genitalia in girls. DHEA-S may be used in the differential diagnosis of Cushing’s syndrome. DHEA-S may also be used in the evaluation of adrenocortical diseases, such as congenital adrenal hyperplasia and adrenal tumors. Take the benefit of free home collection at a much affordable price",
+  },
+  {
+    id: "25",
+    productName: "Toxo Gondii - Igm",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 310,
+    description:
+    "Toxoplasma gondii is an intracellular parasitic protozoan that causes Toxoplasmosis. Infection is typically caused by eating contaminated undercooked meat, coming into contact with infected cat feces, or mother-to-child transmission during pregnancy. Most people with the disease have no symptoms, but it can cause serious complications in infants born to infected mothers and immunocompromised people. Toxo Gondii - IgG tests for the presence of IgG antibodies against Toxoplasma gondii and determines whether an individual has previously been infected with the disease. The absence of IgG antibodies before or early in pregnancy identifies women at risk of infection, while the presence of IgG identifies immunocompromised patients at risk of reactivation of a latent infection. Book this test and get free home collection services at a much-discounted price.",
+  },
+  {
+    id: "25",
+    productName: "Folate",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 770,
+    description:
+    "Folate ( vitamin B9), along with vitamin B12, checks for malnutrition and anemic conditions if any. Folate, crucial for the normal development of a fetus, is also vital for maintaining overall health making it critical for pregnant women. Book Folate Test at affordable Price with free home collection services.",
+  },
+  {
+    id: "25",
+    productName: "Herpes Simplex Virus I (Hsv)-Igm",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 310,
+    description:
+    "Herpes simplex virus (HSV) is a member of the Herpesviridae family, of which two types are known: type 1 (HSV-1) and type-2 (HSV-2) which present slight antigenic differences. The assay of specific IgG is important to establish the serological state of the patient, diagnosis of neonatal infection and encephalitis caused by HSV. Moreover, the presence of specific IgG indicates viral activity in progress, although it is not possible to distinguish between primary infection and reactivation.",
+  },
+  {
+    id: "25",
+    productName: "Insulin - Pp",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 530,
+    description:
+    "A Postprandial insulin test measures the insulin levels in the blood after two hours of food consumption. This test assesses whether an adequate amount of insulin is produced by the pancreas to maintain the blood glucose levels post-meal.",
+  },
+  {
+    id: "25",
+    productName: "Serum Copper",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 310,
+    description:
+    "Copper is an important trace element in the blood and a component of numerous enzymes and proteins involved in energy production, connective tissue formation, melanin synthesis, iron metabolism, development of central nervous system, formation of new blood vessels (angiogenesis) and antioxidants. Serum Copper test measures the amount of copper present in your blood, thereby aiding in diagnosis of various conditions related to copper deficiency or toxicity. Elevated levels of serum copper can lead to excess deposition of copper in various organs including liver and brain which can directly or indirectly lead to many disorders like Wilson’s disease, Acute renal failure, and Chronic liver disease. Whereas insufficient levels can lead to malnourishment, cardiovascular disease, anemia & neuropathy. Copper levels may also be checked to monitor preterm newborns on nutritional supplementation.",
+  },
+  {
+    id: "25",
+    productName: "Fructosamine",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 310,
+    description:
+    "When glucose combines with protein, it forms a compound called Fructosamine. This test measures the total amount of fructosamine of glycated protein in the blood. The test aids in screening Diabetes Mellitus and Gestational Diabetes Mellitus. It is useful in monitoring the control of glucose levels over the past two to three weeks. Increased levels of fructosamine indicate poor glucose control. Book this test and get free home collection services at a much discounted price.",
+  },
+  {
+    id: "25",
+    productName: "Herpes Simplex Virus (Hsv)-Igg",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 310,
+    description:
+    "Thyrocare has an IT-enabled, 24*7, fully automated diagnostic laboratory set up spanning over 200,000 sq. ft. area for conducting error-free processing of 100,000+ specimens and 400,000+ clinical chemistry investigations per night. A combination of air-cargo logistics and IT-enabled barcoded bi-directional operating systems ensure quick turnaround time for processing of samples that arrive at any time of the day or night from various parts of the country and help achieve this unmatched speed factor.",
+  },
+  {
+    id: "25",
+    productName: "Lp-Pla2",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1030,
+    description:
+    "Lp-PLA2 (Lipoprotein-Associated Phospholipase A2) is a vascular-specific enzyme produced by inflammatory cells. It is involved in the formation of plaque (wax made of fats and cholesterol) around the walls of arteries, which if ruptured may lead to a heart attack. Thus, individuals with increased levels of Lp-PLA2 enzyme are at higher risk of cardiovascular disorders and stroke. Some studies indicate that the Lp-PLA2 test is a better marker for detecting a heart-related disease than high-density lipoprotein (HDL) and low-density lipoprotein (LDL) levels. Now free sample collection at your home with discounted costs",
+  },
+  {
+    id: "25",
+    productName: "Blood Ketone (D3hb)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 310,
+    description:
+    "Ketones are chemicals that are produced by the body if cells do not get enough glucose. This test, which determines the level of ketones in the blood. Elevated ketone levels are also seen if a person is fasting, exercising, or consuming more dietary fats than usual or is on diet with restricted calories. High ketone levels may indicate a life-threatening complication of Diabetic Ketoacidosis (DKA), in which the blood becomes too acidic. Book Thyrocare's blood ketone Test at an inexpensive cost with the free home collection.",
+  },
+  {
+    id: "25",
+    productName: "Erythropoietin",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 770,
+    description:
+    "Erythropoietin (EPO), a glycoprotein hormone, is produced by the kidney and in small amounts, by the liver. EPO is a primary regulator of erythropoiesis and plays a major role to protect RBC from destruction. EPO test helps to diagnose various conditions such as anemia and polycythemia. This assay also aids in the prediction and monitoring of response to recombinant EPO treatment in people with anemia. Patients affected with secondary polycythemia (a condition in which a number of RBC increases) has elevated EPO level. Whereas deficiency of EPO is seen in chronic kidney failure, chronic anemia, or polycythemia vera. Book this test and get Free Sample Collection at Home at an affordable price.",
+  },
+  {
+    id: "25",
+    productName: "Apolipoprotein - B (Apo-B)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 570,
+    description:
+    "Apolipoprotein A1 (APO-A1) is the primary protein associated with HDL cholesterol. Increased levels mostly indicate a reduced risk of cardiovascular diseases. Estimation on APO-A1 is needed for monitoring the cardiac risk of subjects with a family history of CVD’s and also evaluating the effectiveness of lipid-lowering therapy. Book your Alipoprotein - B (APO-B) home test for evaluating heart health at an affordable price",
+  },
+  {
+    id: "25",
+    productName: "Lipoprotein (A) [Lp(A)]",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 480,
+    description:
+    "Estimation on lipoprotein A is needed for monitoring the cardiac risk of subjects with a family history of cardiovascular disease (CVD) and also evaluating the effectiveness of lipid-lowering therapy. Increased levels mostly indicate a reduced risk of cardiovascular diseases. Book your lipoprotein home test for evaluating heart health at an affordable price",
+  },
+  {
+    id: "25",
+    productName: "Androstenedione (A4)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 770,
+    description:
+    "Androstenedione is a steroid hormone secreted by the adrenal glands, ovaries and testicles. It is responsible for the onset of sexual differentiation in males and development of male secondary sexual characteristics after the onset of puberty, including, deepening of voice, growth of facial hair, etc. Excess of androstenedione may result in ambiguous external genitalia (infants external genitals do not appear to be clearly either male or female), hirsutism (abnormal growth of facial hair in females), abnormal menstrual cycles in girls and precocious puberty (puberty before age of 9) in boys. Elevated levels are associated with adrenal cancer, some ovarian and testicular tumors, adrenocortical tumors and congenital adrenal hyperplasia.",
+  },
+  {
+    id: "25",
+    productName: "Immunoglobulin A (Iga)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 770,
+    description:
+    "The Immunoglobulin A or IgA test is used to assess the levels of IgA antibodies in the blood. This test aids in screening of autoimmune disorders and cancers, however, the test cannot pinpoint the exact cause of the IgA level fluctuations and correlation with other tests is necessary to find out the root cause for fluctuations in IgA levels. Book IgA test from Thyrocare at a low cost with a home collection facility.",
+  },
+  {
+    id: "25",
+    productName: "Immunoglobulin M (Igm)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 770,
+    description:
+    "The Immunoglobulin M test measures the level of IgM antibodies in the blood. This test is used to assess the immune system status of the person and its ability to deal with antigens. Book IgM test from Thyrocare at a low cost with a home collection facility.",
+  },
+  {
+    id: "25",
+    productName: "Phenytoin / Dilantin / Rptoin",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 520,
+    description:
+    "Phenytoin test offered by Thyrocare aids in monitoring blood Phenytoin concentration and determine if the drug level is within the therapeutic range. Individuals are advised to take up the Phenytoin test every few days after starting phenytoin medication. Routine monitoring of serum phenytoin concentrations is necessary to maintain therapeutic efficacy and avoid toxicity. Phenytoin test may also aid in determining renal failure. Results should often be evaluated in conjunction with the time of blood collection, dosage, and other medical histories.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+
+  {
     id: "01",
     productName: "5-Fu Genotyping And Toxicity Test (pharmacogenomics) - (Outlab)",
     imgUrl: bloodTest01,
@@ -4638,1150 +5783,6 @@ export const products = [
     price: 14743,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-  },
-  {
-    id: "25",
-    productName: "Fasting Blood Sugar",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 80,
-    description:
-    "The fasting blood sugar (FBS) test determines the actual concentration of glucose in your blood without consumption of any diet. FBS test is frequently recommended in patients to determine whether glucose levels are controlled by the injection of insulin hormone in case of type 1 diabetes and whether the body is able to use insulin in case of type 2 diabetes. Elevated levels of fasting blood sugar can be an indication of Type 1 or Type 2 Diabetes. If untreated, can lead to severe health-related consequences like delayed wound healing, damage to the eyes (Diabetic retinopathy), kidney (renal failure), nerves (peripheral neuropathy), and heart (myocardial infarction). Book your FBS Test at a low cost and get a home collection facility.",
-  },
-  {
-    id: "25",
-    productName: "Hba1c",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 350,
-    description:
-    "HbA1c, also known as Hemoglobin A1c or A1c, is glycosylated hemoglobin or glycohemoglobin in which the glucose molecule present in the blood non-enzymatically binds to hemoglobin. HbA1c test reflects those RBC that are present in the blood at the time of test and measures average blood glucose concentration over 3-4 months. This gives an indication of long-term blood glucose control which serves as a regular monitoring tool if a person has been diagnosed with diabetes. According to the American Diabetes Association, this test is mandatory for diabetic patients and should be performed four times a year. HbA1c test is available at a discounted rate, along with the home collection.",
-  },
-  {
-    id: "25",
-    productName: "Postprandial Blood Sugar",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 80,
-    description:
-    "The postprandial blood sugar determines the glucose concentration 2 hours after having breakfast/ lunch. Blood sugar levels usually begin to rise 10-15 minutes after a meal and reach their peak after an hour. The pancreas produces the hormone insulin, which aids in the absorption of sugar from the bloodstream into the body cells. This test is used to assess how the body reacts to sugar and starch after eating a meal. Doctors recommend this test if your blood sugar continues to be excessively high or extremely low. Blood sugar levels in people who do not have diabetes normally return to normal within 2 hours.",
-  },
-  {
-    id: "25",
-    productName: "Fasting Blood Sugar",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 80,
-    description:
-    "The fasting blood sugar (FBS) test determines the actual concentration of glucose in your blood without consumption of any diet. FBS test is frequently recommended in patients to determine whether glucose levels are controlled by the injection of insulin hormone in case of type 1 diabetes and whether the body is able to use insulin in case of type 2 diabetes. Elevated levels of fasting blood sugar can be an indication of Type 1 or Type 2 Diabetes. If untreated, can lead to severe health-related consequences like delayed wound healing, damage to the eyes (Diabetic retinopathy), kidney (renal failure), nerves (peripheral neuropathy), and heart (myocardial infarction). Book your FBS Test at a low cost and get a home collection facility.",
-  },
-  {
-    id: "25",
-    productName: "Erythrocyte Sedimentation Rate (Esr)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 120,
-    description:
-      "Erythrocyte Sedimentation Rate (ESR) test includes measuring the rate at which red blood cells from the anticoagulated blood settle when kept standing in a tube. This is termed Erythrocyte Sedimentation Rate (ESR). Thyrocare offer ESR test at a very affordable price, home collection available.",
-  },
-  {
-    id: "25",
-    productName: "Free Thyroxine (Ft4)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 260,
-    description:
-    "FT4 is the free T4 that is not bound to the proteins and is related to thyroid metabolism. Low levels of FT4 indicate hypothyroidism and raised levels are associated with hyperthyroidism. Thyrocare offers a Free Thyroxine test at a very affordable price along with a home collection.",
-  },
-  {
-    id: "25",
-    productName: "C-Reactive Protein (Crp)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 480,
-    description:
-    "The test detects the presence of CRP in blood. CRP is produced by the liver in response to inflammatory conditions, like infection, trauma, heart and autoimmune diseases. The test also helps in monitoring treatment post infection and inflammation. Book the CRP test at an affordable price and get a free home sample collection.",
-  },
-  {
-    id: "25",
-    productName: "Beta Hcg",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 770,
-    description:
-    "A rapid rise in the level of hCG indicates pregnancy. The test is used for early confirmation of pregnancy and to monitor it. Get Thyrocare's Beta hCG test at home with our free home collection service. Book now.",
-  },
-  {
-    id: "25",
-    productName: "Prolactin (Prl)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 530,
-    description:
-    "Prolactin is secreted by the pituitary gland and triggers milk production in women. Abnormal levels can be seen in several health conditions like menstrual problems, pituitary tumors, fertility issues, and others, thus needs to be monitored. Book Prolactin test now to avail yourself services at your doorstep, at very affordable rates.",
-  },
-  {
-    id: "25",
-    productName: "Free Triiodothyronine (Ft3)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 260,
-    description:
-    "Estimation of FT3 and FT4 hormone levels improves the sensitivity and accuracy of diagnosing thyroid dysfunctions. When only T3 - T4 levels are measured, it may become difficult to reach a definitive diagnosis many times.",
-  },
-  {
-    id: "25",
-    productName: "Prostate Specific Antigen (Psa)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 600,
-    description:
-    "Prostate-specific antigen (PSA), is a glycoprotein produced by cells of the prostate that remains free in the blood. A free PSA test measures the amount of unbound prostate-specific antigen in the blood, which helps physicians to identify problems such as prostate inflammation or tumor. Levels of PSA rise in conditions such as prostate cancer and also in benign prostatic hyperplasia (BPH). Monitoring free PSA is useful for detecting metastatic or chronic disease in patients receiving anti-prostate cancer therapy. If the levels of PSA are elevated after treatment, it indicates the recurrence of the disease. Now book your PSA test at an affordable price, with a  home collection service from Thyrocare.",
-  },
-  {
-    id: "25",
-    productName: "vitamin b-12",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 900,
-    description:
-    "Vitamin B-12 is required for neuronal brain development and to boost immunity. Monitoring its levels is essential to prevent health complications and memory problems. Book a Vitamin B12 test from Thyrocare and get services at your doorstep at very affordable rates.",
-  },
-  {
-    id: "25",
-    productName: "Rheumatoid Factor (Rf)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 620,
-    description:
-    "Rheumatoid Factor (RF) is an immunoglobulin M protein, produced by the body’s immune system. This protein attacks the body’s tissues as it mistakenly identifies them as a foreign entity. The rheumatoid factor test determines the level of rheumatoid factor in your blood to diagnose rheumatoid arthritis. Higher RF concentrations are often linked to autoimmune disorders such as rheumatoid arthritis and Sjogren's syndrome. Other conditions that may elevate RF concentration in the blood include hepatitis, viral or bacterial infections, and endocarditis. There is also a gradual rise in RF levels with age. Book a Rheumatoid Factor test from Thyrocare to avail of the service at your doorsteps at a low cost.",
-  },
-  {
-    id: "25",
-    productName: "Anti Hepatitis C Virus (Anti Hcv) - Total",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1180,
-  },
-  {
-    id: "25",
-    productName: "hiv I and Ii",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 520,
-  },
-  {
-    id: "25",
-    productName: "Hepatitis B Surface Antigen (Hbsag)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 480,
-    description:
-    "Hepatitis B surface antigen (HBsAg) test is used to screen and diagnose acute or chronic hepatitis B virus (HBV) infection. It also helps in detecting if a person has previously infected with hepatitis B infection, or sometimes to guide and monitor treatment.",
-  },
-  {
-    id: "25",
-    productName: "Total Ige",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 790,
-    description:
-    "IgE, one of the five subclasses of antibodies found in mammals is a key molecule in allergy responses and inflammation. When an individual is exposed to an allergen, the allergen particles bind to the sensitized mast cells bound to IgE. Mast cells secrete components of allergic reactions such as cytokines, histamines, etc. Hence a person undergoing persistent or periodic symptoms of allergy can be advised to be tested for total IgE levels. This test is also recommended when the allergen is unknown and its detection is required for effective immunotherapy/ allergen shots against specific allergies. Quantitative measurement of serum IgE with other clinical indicators can provide useful information for the differential diagnosis of Atopic and Non-Atopic diseases. For diagnostic purposes, results should always be assessed with the patient’s medical history, clinical examination, and other findings.",
-  },
-  {
-    id: "25",
-    productName: "25-Oh Vitamin D (Total)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1000,
-    description:
-    "The 25-OH vitamin D test is the most accurate way to measure vitamin D levels in your body. Vitamin D helps control phosphate and calcium levels in the body. Book now at an affordable rate and get a free home collection.",
-  },
-  {
-    id: "25",
-    productName: "Insulin - Fasting",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 750,
-    description:
-    "A fasting insulin level test is valuable in detecting type 1 as well as type 2 diabetes. It can be done to diagnose hypoglycemia when one has insulin resistance. This test is usually recommended for people with prediabetes, diabetes, polycystic ovarian syndrome, heart diseases, metabolic syndrome, etc. Book an Insulin fasting test from Thyrocare at a very affordable price and get home collection services.",
-  },
-  {
-    id: "25",
-    productName: "Follicle Stimulating Hormone (Fsh)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 480,
-    description:
-    "Follicle Stimulating Hormone  (FSH) is a pivotal hormone that regulates the menstrual cycle and ovulation in women. In men, this hormone stimulates testicular growth. Measuring the levels helps to detect problems related to reproductive functions. Thyrocare offer FSH test at a low cost and along with home collection services.",
-  },
-  {
-    id: "25",
-    productName: "Ferritin",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 750,
-    description:
-    "Ferritin is a major protein that is the body’s storehouse of iron.  A ferritin test helps to assess disorders related to iron deficiency like anemia and iron overload. Thyrocare offers the Ferritin test at the lowest rate with the home collection service.",
-  },
-  {
-    id: "25",
-    productName: "Luteinising Hormone (Lh)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 480,
-    description:
-    "Luteinising Hormone plays an important role in maintaining the normal reproductive functions in both males and females. Abnormal levels are found to be associated with infertility, polycystic ovarian syndrome, menstrual problems, testicular atrophy, etc. Thyrocare offer LH test at a low cost and along with home collection services.",
-  },
-  {
-    id: "25",
-    productName: "Anti Mullerian Hormone (Amh)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1970,
-    description:
-    "Anti-Müllerian Hormone Test (AMH) is a marker that is used to evaluate an ovarian reserve and predict the outcome of In-vitro Fertilization (IVF) or other Assisted Reproductive Technology (ART). This test can also be used to assess the ovarian function in patients with Polycystic Ovarian Syndrome (PCOS), to diagnose and monitor Ovarian tumors, and to determine the menopausal status.  Thyrocare offers an AMH test at the lowest price with the home collection.",
-  },
-  {
-    id: "25",
-    productName: "Urinary Microalbumin",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 620,
-    description:
-    "This test checks the kidney functions, as in the case of normally functioning kidneys, albumins are not leaked into the urine. Hence, the presence of albumin in the urine is a marker for kidney dysfunction. Book this test from Thyrocare at a very low cost and get home collection services.",
-  },
-  {
-    id: "25",
-    productName: "Calcium",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 220,
-    description:
-    "Calcium plays an important role in many physiological functions of the body. Abnormal calcium levels affect bone health, muscle contraction, blood clotting, enzyme activity, neural transmission, etc., Book your calcium blood test at an affordable price with free home collection.",
-  },
-  {
-    id: "25",
-    productName: "Anti Thyroglobulin Antibody (Atg)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1080,
-    description:
-    "Thyroglobulin is a key protein in the thyroid gland that is essential for the synthesis of thyroxine (T4) and triiodothyronine (T3). Antithyroglobulin antibody test measures levels of antibodies to thyroglobulin. This test helps to identify autoimmune diseases involving the thyroid gland. The presence of thyroid autoantibodies causes disorders such as Hashimoto’s thyroiditis, Graves’ disease, Hypothyroidism, Thyroid cancer, etc. Women with high levels of ATG might miscarry or be infertile. While in cases of neonatal hypothyroidism, the detection of ATG in the infant suggests transplacental antibody transfer, particularly if the mother has a history of autoimmune thyroiditis or detectable thyroid autoantibodies.",
-  },
-  {
-    id: "25",
-    productName: "Anti Ccp (Accp)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1460,
-    description:
-    "Anti-Cyclic Citrullinated Peptide is an antibody found to be present in individuals with rheumatoid arthritis (RA). Measuring its levels helps in detecting as well as assessing the severity of RA. This test is available at an affordable price with home collection services.",
-  },
-  {
-    id: "25",
-    productName: "Testosterone",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 610,
-    description:
-    "The test measures the amount of testosterone hormone in the blood. Testosterone, a sex hormone, is found in both men and women (in small amounts). Abnormal levels of this hormone can cause health issues, such as sexual dysfunction, PCOS, hypogonadism and cancer. Book testosterone test at Thyrocare and get a free home sample collection.",
-  },
-  {
-    id: "25",
-    productName: "Carcino Embryonic Antigen (Cea)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 740,
-    description:
-    "It is produced during the development of a fetus and production stops before birth. The expression of CEA is increased in almost all types of cancers (mainly ovarian cancer) and hence used as a tumor marker.",
-  },
-  {
-    id: "25",
-    productName: "Estradiol/Oestrogen (E2)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 570,
-    description:
-    "Estradiol is a key type of estrogen (female sex hormone) produced by the ovaries. However, during pregnancy, the placenta also produces estradiol. This test is recommended for females to assess reproductive health, menstrual cycle, fertility, and other factors. Increased levels may be indicative of pregnancy, gynecomastia, or ovarian tumors. Levels are also high during the assisted reproduction stage where ovulation is induced and low during the early follicular phase. Whereas decreased levels may either indicate a lesion in the hypothalamus-pituitary axis or a lack of ovarian synthesis. Thyrocare offers this test at a discounted rate, along with the home collection.",
-  },
-  {
-    id: "25",
-    productName: "Free Testosterone",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1220,
-    description:
-    "Testosterone is a C-19 steroid secreted by the testis and adrenal cortex in men, and by ovaries in women. Hypogonadism in males and hyperandrogenic states in females can be clinically evaluated with testosterone measurements. Testosterone circulates in the blood bound to three proteins, i.e. sex hormone-binding globulin (60-80%), albumin and cortisol binding globulin. Unbound or free testosterone accounts for only about 1-2% of the total circulating testosterone. Along with diagnosing infertility and PCOD in females, diseases/ damages of ovaries, testes, adrenal and pituitary gland can also be screened using this test. Free Testosterone test is available at the most reasonable price with home collection services.",
-  },
-  {
-    id: "25",
-    productName: "Cortisol",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 700,
-    description:
-    "The secretion of Cortisol is controlled by the pituitary gland and levels are often measured to evaluate the pituitary function and/or adrenal function. Abnormalities of Cortisol secretion can result in diseases either in the pituitary gland or the adrenals. Overactivity of either organ can lead to over secretion of cortisol, and cause Cushing's syndrome. Book Cortisol test from Thyrocare at a low cost and get home collection facility.",
-  },
-  {
-    id: "25",
-    productName: "Rubella - Igg",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "The presence of RUBELLA - IgG antibodies is evidence of past infection or immunization. The presence of specific IgG on testing indicates immunity to rubella. Negative IgG results indicate the susceptibility of the patient to infection. Book this test from Thyrocare at a very low cost and get home collection services.",
-  },
-  {
-    id: "25",
-    productName: "Lactate Dehydrogenase (Ldh)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 340,
-    description:
-    "Lactate dehydrogenase (LDH) is an enzyme present extensively in body tissues, such as blood cells, skeletal muscles, kidneys, brain, and lungs. The tissue levels of this enzyme are 500 fold higher than those normally present in the serum. Thus any cells or tissue damage elevates the serum level of LDH to a significant extent. Thus, increased LDH level in blood is generally an indication of cellular damage. Thyrocare offers an affordable Lactate Dehydrogenase (LDH) test with the free home collection.",
-  },
-  {
-    id: "25",
-    productName: "Anti Microsomal Antibody (Ama)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1140,
-    description:
-    "The presence of antimicrosomal antibodies (AMA) is generally associated with autoimmune disorder. Detection of these antibodies can assist in identifying damage to the thyroid cells causing such disorders. Book AMA blood test online at an affordable price, with a free home collection from Thyrocare.",
-  },
-  {
-    id: "25",
-    productName: "Anti Nuclear Antibodies (Ana)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 750,
-    description:
-    "ANAs are a special class of autoantibodies that bind and destroy certain parts in the nucleus of the cell. Although a little amount of ANA is found in the normal population, an increased level is normally observed in people with connective tissue disease (CTD). Book ANA test at an affordable price, with a free home collection from Thyrocare.",
-  },
-  {
-    id: "25",
-    productName: "Ca-125",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1270,
-    description:
-    "CA125 is an ovarian cancer antigen. Certain cancers such as those of the breast, gastrointestinal tract, and kidney also show elevated levels of CA125. Thus, it is a sensitive but non-specific tumor marker that is used in the detection and monitoring of ovarian cancer. Book now to avail services at your doorstep, at very affordable rates.",
-  },
-  {
-    id: "25",
-    productName: "D-Dimer",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1240,
-    description:
-    "D-dimers are small fragments of proteins detected in the blood after breaking down a blood clot. D-dimer levels are used to detect these blood clots. D-dimer test is used in diagnosing blood clots deep inside the veins, to check for blockage in the arteries and lungs, which can affect the blood flow to various organs and tissues as well as increase the chances of a Heart attack. D-dimer test is recommended for someone with chest pain, increased heart rate, difficulty in breathing, seizures, blood in cough, bleeding gums, nausea, decreased urination, muscle pain, leg pain, and swelling. Elevated levels of D-dimer protein are seen in severely infected COVID19 patients, and hence it is used as a marker to predict the severity of the disease. Elevated D-dimer levels are also noted in older ages, pregnancy, liver and kidney diseases. Thyrocare offers the Dimer test at the most affordable price. Sample collection at home available.",
-  },
-  {
-    id: "25",
-    productName: "Phosphorous",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 220,
-    description:
-    "It is an important element necessary to maintain bones, teeth, nerve signaling, muscle contraction, energy storage  and many others. High levels are seen to be associated with kidney, liver and bone diseases.",
-  },
-  {
-    id: "25",
-    productName: "Vdrl (Rpr) For Syphilis",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 210,
-    description:
-    "The Venereal Disease Research Laboratory (VDRL) test is used to diagnose Syphilis, a sexually transmitted infection (STI) caused by a spirochete Treponema pallidum. This test detects antibodies generated by your body in response to antigens produced by bacteria-damaged cells. Syphilis can cause long-term complications by invading the nervous and cardiovascular system, if not treated properly. It may also be transmitted from infected mother to child during pregnancy or at birth, resulting in congenital Syphilis. Book Thyrocare's VDRL test at a low cost with the home collection.",
-  },
-  {
-    id: "25",
-    productName: "Hla-B27",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 2090,
-    description:
-    "Human Leukocyte antigen B27 (HLA- B27) belongs to a group of cell surface glycoproteins which are expressed on most nucleated human cells and platelets. It is a major histocompatibility complex (MHC) class I molecule. The presence of HLA - B27 is strongly associated with ankylosing spondylitis and some inflammatory disorders like Reiter’s syndrome, inflammatory bowel syndrome, etc. The binding ability of specific monoclonal antibodies to the antigenic determinants expressed by leucocytes on the surface forms the basis of this test. HLA-B 27 test is generally advised in patients suffering from joint pain where the diagnosis of ankylosing spondylitis is suspected. A positive test result indicates higher chances of developing this disease. Avail of the service by booking the HLA-B27 test online at an affordable rate, at your doorstep.",
-  },
-  {
-    id: "25",
-    productName: "Magnesium",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "Magnesium is the mineral found in the body that is needed for healthy bones, heart, muscles, and nerves. This test evaluates the level of magnesium as its deficiency can cause cardiac arrhythmia, muscle cramps, or tremors. Book a Magnesium test from Thyrocare at a low cost and get a home collection facility.",
-  },
-  {
-    id: "25",
-    productName: "Rubella - Igm",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 310,
-    description:
-    "Rubella is a viral infection generally characterized by a rash. Respiratory aerosols are a major source through which virus is transmitted from person to person. The first clinical manifestation of rubella is usually the appearance of a macro-papular rash some 16-20 days after exposure. The rash, appearing first on the face, spreads further over the trunk and the extremities. The presence of RUBELLA - IgM antibodies in blood indicates recent or current infection with the Rubella virus. In rare cases, IgM antibodies are known to persist for years following a previous infection and also immunization.",
-  },
-  {
-    id: "25",
-    productName: "High Sensitivity C-Reactive Protein (Hs-Crp)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 450,
-    description:
-    "High Sensitivity C-Reactive Protein (Hs-CRP) is an acute-phase protein that is synthesized in the liver. Its concentration increases after exposure to inflammation. This test is used to determine the risk of developing coronary artery disease as CRP is considered to be a cardiac risk marker. Book Thyrocare's hs-CRP test at a low cost with the home collection.",
-  },
-  {
-    id: "25",
-    productName: "Urine Culture And Susceptibility",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 840,
-  },
-  {
-    id: "25",
-    productName: "Nt-Probnp",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1850,
-  },
-  {
-    id: "25",
-    productName: "Adult Hemoglobin Electrophoresis",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1090,
-    description:
-    "It is a blood test that measures and the identifies different types of hemoglobin. Presence of any abnormal hemoglobin types can be detected to manage or treat the same, as abnormal hemoglobin type may impair the amount of oxygen transported to the cells of the body.",
-  },
-  {
-    id: "25",
-    productName: "Alkaline Phosphatase",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 210,
-  },
-  {
-    id: "25",
-    productName: "Sodium",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 220,
-    description:
-    "This test is used to detect abnormal concentrations of sodium, termed hyponatremia (low sodium) and hypernatremia (high sodium). While low levels can cause confusion, headache, seizure, high levels leads to high blood pressure, heart and kidney problems.",
-  },
-  {
-    id: "25",
-    productName: "C-Peptide",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1070,
-    description:
-    "C-Peptide is a protein released into the blood during the process of insulin production by the pancreas. C-peptide Test test can say how well your body makes insulin. It can also help to differentiate between Type-1 and Type-2 diabetes. Book a C-peptide test from Thyrocare and get services at your doorstep in very affordable rates.",
-  },
-  {
-    id: "25",
-    productName: "Ca 19.9",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1220,
-    description:
-    "CA 19-9 is a tumor-associated antigen that is elevated mostly in patients with Advanced Pancreatic Cancer. It may also be elevated in other cancers, conditions, diseases such as colorectal cancer, lung cancer, gall bladder cancer, gallstones, pancreatitis, cystic fibrosis, and liver disease. Although, increase in the levels of CA 19-9 is not distinctively suggestive of pancreatic cancer, currently, it is the single most useful blood test to differentiate benign disorders from malignant ones. Book a CA 19-9 test from Thyrocare at an affordable cost and get home collection services.",
-  },
-  {
-    id: "25",
-    productName: "Amylase",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 520,
-    description:
-    "Amylase catalyzes the breakdown of complex starch. Most of the serum amylases are mainly derived from the pancreas and pituitary gland. The measurement of alpha-Amylase is important for the diagnosis of pancreatitis (inflammation of the pancreas) as well as other pancreatic and intestinal diseases.",
-  },
-  {
-    id: "25",
-    productName: "Lipase",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 610,
-    description:
-    "Lipase is an enzyme produced by the pancreas to digest dietary fats. It is usually present in very small quantities, but when the pancreatic cells are injured, a higher concentration of lipase is released in the blood. A blood test for lipase is usually used to diagnose and monitor disorders related to the pancreas. The level of lipase in the blood can predict conditions like inflammation of the pancreas, blockage of the pancreatic duct by a gallstone, and pancreatic tumor. A lipase test is recommended for a person with symptoms of a pancreatic disorder, such as severe abdominal or back pain, fever, loss of appetite with jaundice, and rapid pulse rate. Book a Lipase test from Thyrocare at a low cost and get home collection services.",
-  },
-  {
-    id: "25",
-    productName: "Serum Zinc",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "Zinc is one of the essential trace elements, is present throughout the body in many tissues but is not stored at any particular site. Zinc deficiency can occur where zinc needs exceed the intake or in case of malabsorption. Alcoholism, pregnancy & burns are often associated with zinc deficiency. Zinc levels decrease in response to infections, so a low result may not necessarily mean a person is zinc deficient. Clinically, Zinc deficiency leads to hair loss, poor wound healing, dermatitis, and impaired immune function. In children, it can cause growth retardation. Since zinc can be excreted in the urine/feces, high levels are rarely seen. Excessive supplementation of Zinc leads to toxicity. Serum zinc test is available at affordable cost, with a free home collection.",
-  },
-  {
-    id: "25",
-    productName: "Glucose-6-Phosphate Dehydrogenase",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 700,
-    description:
-    "Glucose-6-Phosphate Dehydrogenase (G6PD) enzyme is active in almost all types of cells, and is involved in the processing of carbohydrates and energy production. It plays a critical role in red blood cells (RBCs) by protecting them from damage and premature destruction. G6PD deficiency is an inherited, sex-linked, metabolic disorder, which is characterized by a defect in an enzyme that leads to the breakdown of RBCs (hemolysis) upon exposure to stress resulting from certain microbial infections or certain drugs. G6PD deficiency may lead to acute hemolytic anemia. Thyrocare offers this test at a discounted price, along with a free home collection facility.",
-  },
-  {
-    id: "25",
-    productName: "Alpha Feto Protein (Afp)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 760,
-    description:
-    "AFP is produced in the liver of a developing baby and protects it against the maternal immune system. Abnormal levels of embryonic AFP in the mother's serum can be indicative of birth defects like spina bifida or genetic abnormalities like Down's syndrome in the baby. Thyrocare offers this test at a discounted rate, along with the home collection.",
-  },
-  {
-    id: "25",
-    productName: "Tissue Transglutaminase - Iga (Ttg)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1220,
-    description:
-    "Tissue Transglutaminase  (tTG) is an enzyme responsible for protection, prevention, and tissue remodeling or repair processes. Anti-tTG antibodies are more sensitive and specific than anti-Gliadin antibodies. Screening for tTG-IgA antibodies is recommended to identify patients at risk for celiac disease. This test detects autoantibodies in the blood that the body produces as part of the immune response. It also aids in monitoring adherence to a gluten-free diet in disease confirmed patients.",
-  },
-  {
-    id: "25",
-    productName: "Progesterone",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 580,
-    description:
-    "Progesterone is an endogenous steroid hormone that aids in the implantation of the fertilized egg in the uterus. It is produced by the adrenal cortex as well as ovaries and testes. It is also secreted by the corpus luteum and the placenta and is responsible for preparing the body for pregnancy and, if pregnancy occurs, maintaining it until birth. Estimating progesterone levels is important in assessing the probability and risk of ectopic pregnancy, determining the cause of infertility, and diagnosing abnormal uterine bleeding. Low levels of progesterone are a marker of incipient pre-eclampsia/toxemia in a pregnant woman. Avail of the home collection services for this test at an affordable cost.",
-  },
-  {
-    id: "25",
-    productName: "Anti Streptolysin - O (Aso)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 620,
-    description:
-    "Antistreptolysin O (ASO) test determines antibodies in the blood against streptolysin O, an enzyme produced by group A streptococcus bacteria. This is also helpful in checking whether the certain condition or disease is due to a recent streptococcal infection. Anti-Streptolysin O test is now available at an affordable cost, with the free home collection.",
-  },
-  {
-    id: "25",
-    productName: "Ca 15.3",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 770,
-    description:
-    "Cancer antigen 15-3 (CA 15-3), a protein produced by normal breast cells, is used as a biomarker to monitor cancerous breast tumors. It helps in determining the effectiveness of treatment and disease recurrence. Normal levels of CA 15-3 protein are produced by breast cells, however, increased production is observed in the case of breast cancer. CA 15-3 levels are also elevated in individuals with other cancers or diseases, such as colorectal cancer, lung cancer, cirrhosis, Hepatitis, and Benign Breast Disease. Thyrocare offers this test at a discounted price, along with a free home collection facility.",
-  },
-  {
-    id: "25",
-    productName: "Potassium",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 220,
-    description:
-    "It is essential for proper muscle and nerve functioning. Changes in its levels may cause severe health issues, hence levels need to be assessed.",
-  },
-  {
-    id: "25",
-    productName: "Procalcitonin",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1300,
-    description:
-    "Procalcitonin is a peptide precursor of the hormone calcitonin, which regulates and maintains calcium equilibrium in the body. It is produced naturally in the body and serves as a marker for septic infection. This test determines the level of procalcitonin in blood and aids in the early detection of severe bacterial infections. Pro-inflammatory stimuli during bacterial infection, sepsis during operation/trauma lead to an increase in circulating procalcitonin levels beyond the normal range. Now free sample collection at your home with discounted costs.",
-  },
-  {
-    id: "25",
-    productName: "Creatinine - Serum",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 200,
-    description:
-    "Creatinine is produced as a result of normal muscle metabolism. It is measured to estimate the efficiency of the glomeruli of the kidneys to remove waste products from the blood and thus,indicate the overall kidney health.",
-  },
-  {
-    id: "25",
-    productName: "Intact Parathyroid Hormone (Pth)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1220,
-  },
-  {
-    id: "25",
-    productName: "Aldosterone",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1500,
-  },
-  {
-    id: "25",
-    productName: "Prothrombin Time",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 400,
-  },
-  {
-    id: "25",
-    productName: "Creatinine Phosphokinase",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 330,
-  },
-  {
-    id: "25",
-    productName: "Dengue-Igm",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 299,
-  },
-  {
-    id: "25",
-    productName: "Iron",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 210,
-    description:
-    "As iron has the ability to accept and donate electrons, it is required for a variety of normal cellular functions. Iron is also vital for proper growth and development, and deficiencies can cause anemia and related health conditions.",
-  },
-  {
-    id: "25",
-    productName: "Total Iron Binding Capacity (Tibc)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 340,
-    description:
-    "Transferrin is a glycoprotein that transports iron throughout the body. This test measures the amount of transferrin to assess the body's ability for iron transportation, in order to diagnose iron deficinecy or high levels of iron.",
-  },
-  {
-    id: "25",
-    productName: "Dengue Ns1 Antigen",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 299,
-  },
-  {
-    id: "25",
-    productName: "Ana Screening (Immunofluorescence)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 750,
-  },
-  {
-    id: "25",
-    productName: "Dengue-Igg",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 299,
-  },
-  {
-    id: "25",
-    productName: "Valproic Acid",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 520,
-    description:
-    "Valproic acid is used as an anticonvulsant drug in treating epileptic seizures, often in combination with other drugs. It is also used as a mood-stabilizer, in cases of children with aggressive behavioral patterns and attention deficit hyperactivity disorder (ADHD). It is also approved in the treatment of migraines, bipolar disorder, and schizophrenia. It also gives promising results in the treatment of certain solid tumors, colonic cancers, medulloblastomas, follicular thyroid cancer, leukemias, and as a part of the multidrug regimen used in Alzheimer’s disease. The valproic acid test is available at a discounted price, along with a home collection.",
-  },
-  {
-    id: "25",
-    productName: "Homocysteine",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1130,
-    description:
-    "An amino acid, whose elevated levels in the bloodstream is related to increased risk of blood clot formation, atherosclerosis, heart attack and stroke. Increased levels are also associated with homocystinuria, an inherited condition.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 500,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Alpha-1-Antitrypsin (Aat)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1240,
-    description:
-    "Alpha-1-antitrypsin (AAT) is a protein produced by the liver that protects our lungs from damage caused by Neutrophil elastase. In case of abnormal AAT or non-functional AAT, neutrophil elastase destroys alveoli in the lungs, resulting in lung disease. The alpha-1-antitrypsin test determines the level of alpha-1-antitrypsin in blood. This test is recommended by a physician if the patient is under the age of 45 and has symptoms such as wheezing, coughing, shortness of breath, or asthma, or if they have a family history of the disorder or conditions like Chronic Obstructive Pulmonary Disease (COPD) or liver disease with unknown cause. ATT deficiency can lead to complications of the lungs, liver, and skin. Reduced ATT levels increase the risk of COPD, emphysema, chronic bronchitis, and liver cirrhosis. AAT levels rise in acute and chronic inflammatory conditions, infections, and hepatocellular carcinoma. ATT levels also increase during oral contraceptive therapy and pregnancy.",
-  },
-  {
-    id: "25",
-    productName: "Anti Hepatitis A Virus (Anti Hav) - Igm",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1030,
-    description:
-    "Anti-HAV test is primarily used to determine the cause of acute hepatitis or to identify the type of hepatitis virus causing an infection. Individuals produce IgM antibodies on exposure to HAV either naturally or due to vaccination. Testing for the presence of IgM antibodies against the hepatitis A virus is performed when the patient shows symptoms of hepatitis such as fever, fatigue, nausea, vomiting, abdominal pain, dark urine and/or pale-colored stool, joint pain, jaundice. The serological detection of HAV antibodies is an important marker for confirming HAV infection, classification of the virus, and determining the source of infection. Book this test and get Free Sample Collection at Home at an affordable price.",
-  },
-  {
-    id: "25",
-    productName: "Total Thyroxine (T4)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 210,
-    description:
-    "T4 is a hormone secreted by the thyroid gland that plays a role in the body's vital functions, thus needs to be monitored. This test singly or in combination with T3 and TSH is used to identify thyroid disorders.",
-  },
-  {
-    id: "25",
-    productName: "Cystatin C",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 520,
-    description:
-    "Cystatin C is a small protein found in body fluids like blood. It is filtered by the glomeruli (tiny blood vessels) present in the kidney affecting its blood concentration and is evaluated by measuring the glomerular filtration rate (GFR) is the rate at which kidneys filter the fluid). It assesses the functioning of the kidneys. Avail of the home collection services for this test at an affordable cost.",
-  },
-  {
-    id: "25",
-    productName: "Total Triiodothyronine (T3)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 200,
-    description:
-    "It is a hormone secreted by the thyroid gland and, any variations in its level can have an effect on thyroid functions. Monitoring the levels of T3, therefore, becomes a crucial parameter to detect thyroid disorders.",
-  },
-  {
-    id: "25",
-    productName: "Free Psa",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1220,
-    description:
-    "Prostate-Specific Antigen (PSA), is a glycoprotein produced by cells of the prostate that remains free in the blood. Free PSA test measures the amount of unbound prostate-specific antigen in the blood, which helps physicians to identify problems such as prostate inflammation or tumor. Levels of PSA rise in conditions such as prostate cancer and also in benign prostatic hyperplasia (BPH).",
-  },
-  {
-    id: "25",
-    productName: "Anti - Dsdna",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 760,
-    description:
-    "Anti-dsDNA test looks for anti-double-stranded DNA antibodies which are autoantibodies to double-stranded DNA. Anti-dsDNA antibodies are characteristic of autoimmune disorders such as Systemic Lupus Erythematosus (SLE). The levels of these antibodies fluctuate with disease activity. Anti-ds-DNA antibody titers may decrease with immunosuppressive therapy and when the disease is in remission. Anti-ds-DNA antibody testing is used to help the diagnosis of SLE, distinguish it from other autoimmune conditions, and assist in disease surveillance. Increase in the level of Anti ds-DNA antibody can be a prior indicator of flare-ups in which their symptoms intensify and then subside.",
-  },
-  {
-    id: "25",
-    productName: "Anti Hepatitis E Virus (Anti Hev) - Igm",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1320,
-    description:
-    "HEV is often transmitted through contaminated water and affects the liver. Anti HEV-IgM is the antibodies that are produced in exposure with HEV by the body. The presence of these antibodies serves as a marker of acute HEV infection. Take the benefit of free home collection at a much affordable price just by booking the test from Thyrocare. ",
-  },
-  {
-    id: "25",
-    productName: "Dhea - Sulphate (Dheas)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 760,
-    description:
-    "Dehydroepiandrosterone sulfate (DHEA-S) is a steroid hormone, which plays animportant role in the development of secondary sexual characteristics during puberty. Although an androgen (male sex hormone), is present in both males and females. Secretion of DHEA-S is controlled by the adrenocorticotropic hormone produced by the pituitary gland. This test measures the levels of DHEA-S in your blood. Excess production of DHEA-S results in precocious puberty in boys and excess body hair, abnormal menstrual cycle, and ambiguous external genitalia in girls. DHEA-S may be used in the differential diagnosis of Cushing’s syndrome. DHEA-S may also be used in the evaluation of adrenocortical diseases, such as congenital adrenal hyperplasia and adrenal tumors. Take the benefit of free home collection at a much affordable price",
-  },
-  {
-    id: "25",
-    productName: "Toxo Gondii - Igm",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 310,
-    description:
-    "Toxoplasma gondii is an intracellular parasitic protozoan that causes Toxoplasmosis. Infection is typically caused by eating contaminated undercooked meat, coming into contact with infected cat feces, or mother-to-child transmission during pregnancy. Most people with the disease have no symptoms, but it can cause serious complications in infants born to infected mothers and immunocompromised people. Toxo Gondii - IgG tests for the presence of IgG antibodies against Toxoplasma gondii and determines whether an individual has previously been infected with the disease. The absence of IgG antibodies before or early in pregnancy identifies women at risk of infection, while the presence of IgG identifies immunocompromised patients at risk of reactivation of a latent infection. Book this test and get free home collection services at a much-discounted price.",
-  },
-  {
-    id: "25",
-    productName: "Folate",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 770,
-    description:
-    "Folate ( vitamin B9), along with vitamin B12, checks for malnutrition and anemic conditions if any. Folate, crucial for the normal development of a fetus, is also vital for maintaining overall health making it critical for pregnant women. Book Folate Test at affordable Price with free home collection services.",
-  },
-  {
-    id: "25",
-    productName: "Herpes Simplex Virus I (Hsv)-Igm",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 310,
-    description:
-    "Herpes simplex virus (HSV) is a member of the Herpesviridae family, of which two types are known: type 1 (HSV-1) and type-2 (HSV-2) which present slight antigenic differences. The assay of specific IgG is important to establish the serological state of the patient, diagnosis of neonatal infection and encephalitis caused by HSV. Moreover, the presence of specific IgG indicates viral activity in progress, although it is not possible to distinguish between primary infection and reactivation.",
-  },
-  {
-    id: "25",
-    productName: "Insulin - Pp",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 530,
-    description:
-    "A Postprandial insulin test measures the insulin levels in the blood after two hours of food consumption. This test assesses whether an adequate amount of insulin is produced by the pancreas to maintain the blood glucose levels post-meal.",
-  },
-  {
-    id: "25",
-    productName: "Serum Copper",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 310,
-    description:
-    "Copper is an important trace element in the blood and a component of numerous enzymes and proteins involved in energy production, connective tissue formation, melanin synthesis, iron metabolism, development of central nervous system, formation of new blood vessels (angiogenesis) and antioxidants. Serum Copper test measures the amount of copper present in your blood, thereby aiding in diagnosis of various conditions related to copper deficiency or toxicity. Elevated levels of serum copper can lead to excess deposition of copper in various organs including liver and brain which can directly or indirectly lead to many disorders like Wilson’s disease, Acute renal failure, and Chronic liver disease. Whereas insufficient levels can lead to malnourishment, cardiovascular disease, anemia & neuropathy. Copper levels may also be checked to monitor preterm newborns on nutritional supplementation.",
-  },
-  {
-    id: "25",
-    productName: "Fructosamine",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 310,
-    description:
-    "When glucose combines with protein, it forms a compound called Fructosamine. This test measures the total amount of fructosamine of glycated protein in the blood. The test aids in screening Diabetes Mellitus and Gestational Diabetes Mellitus. It is useful in monitoring the control of glucose levels over the past two to three weeks. Increased levels of fructosamine indicate poor glucose control. Book this test and get free home collection services at a much discounted price.",
-  },
-  {
-    id: "25",
-    productName: "Herpes Simplex Virus (Hsv)-Igg",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 310,
-    description:
-    "Thyrocare has an IT-enabled, 24*7, fully automated diagnostic laboratory set up spanning over 200,000 sq. ft. area for conducting error-free processing of 100,000+ specimens and 400,000+ clinical chemistry investigations per night. A combination of air-cargo logistics and IT-enabled barcoded bi-directional operating systems ensure quick turnaround time for processing of samples that arrive at any time of the day or night from various parts of the country and help achieve this unmatched speed factor.",
-  },
-  {
-    id: "25",
-    productName: "Lp-Pla2",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 1030,
-    description:
-    "Lp-PLA2 (Lipoprotein-Associated Phospholipase A2) is a vascular-specific enzyme produced by inflammatory cells. It is involved in the formation of plaque (wax made of fats and cholesterol) around the walls of arteries, which if ruptured may lead to a heart attack. Thus, individuals with increased levels of Lp-PLA2 enzyme are at higher risk of cardiovascular disorders and stroke. Some studies indicate that the Lp-PLA2 test is a better marker for detecting a heart-related disease than high-density lipoprotein (HDL) and low-density lipoprotein (LDL) levels. Now free sample collection at your home with discounted costs",
-  },
-  {
-    id: "25",
-    productName: "Blood Ketone (D3hb)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 310,
-    description:
-    "Ketones are chemicals that are produced by the body if cells do not get enough glucose. This test, which determines the level of ketones in the blood. Elevated ketone levels are also seen if a person is fasting, exercising, or consuming more dietary fats than usual or is on diet with restricted calories. High ketone levels may indicate a life-threatening complication of Diabetic Ketoacidosis (DKA), in which the blood becomes too acidic. Book Thyrocare's blood ketone Test at an inexpensive cost with the free home collection.",
-  },
-  {
-    id: "25",
-    productName: "Erythropoietin",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 770,
-    description:
-    "Erythropoietin (EPO), a glycoprotein hormone, is produced by the kidney and in small amounts, by the liver. EPO is a primary regulator of erythropoiesis and plays a major role to protect RBC from destruction. EPO test helps to diagnose various conditions such as anemia and polycythemia. This assay also aids in the prediction and monitoring of response to recombinant EPO treatment in people with anemia. Patients affected with secondary polycythemia (a condition in which a number of RBC increases) has elevated EPO level. Whereas deficiency of EPO is seen in chronic kidney failure, chronic anemia, or polycythemia vera. Book this test and get Free Sample Collection at Home at an affordable price.",
-  },
-  {
-    id: "25",
-    productName: "Apolipoprotein - B (Apo-B)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 570,
-    description:
-    "Apolipoprotein A1 (APO-A1) is the primary protein associated with HDL cholesterol. Increased levels mostly indicate a reduced risk of cardiovascular diseases. Estimation on APO-A1 is needed for monitoring the cardiac risk of subjects with a family history of CVD’s and also evaluating the effectiveness of lipid-lowering therapy. Book your Alipoprotein - B (APO-B) home test for evaluating heart health at an affordable price",
-  },
-  {
-    id: "25",
-    productName: "Lipoprotein (A) [Lp(A)]",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 480,
-    description:
-    "Estimation on lipoprotein A is needed for monitoring the cardiac risk of subjects with a family history of cardiovascular disease (CVD) and also evaluating the effectiveness of lipid-lowering therapy. Increased levels mostly indicate a reduced risk of cardiovascular diseases. Book your lipoprotein home test for evaluating heart health at an affordable price",
-  },
-  {
-    id: "25",
-    productName: "Androstenedione (A4)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 770,
-    description:
-    "Androstenedione is a steroid hormone secreted by the adrenal glands, ovaries and testicles. It is responsible for the onset of sexual differentiation in males and development of male secondary sexual characteristics after the onset of puberty, including, deepening of voice, growth of facial hair, etc. Excess of androstenedione may result in ambiguous external genitalia (infants external genitals do not appear to be clearly either male or female), hirsutism (abnormal growth of facial hair in females), abnormal menstrual cycles in girls and precocious puberty (puberty before age of 9) in boys. Elevated levels are associated with adrenal cancer, some ovarian and testicular tumors, adrenocortical tumors and congenital adrenal hyperplasia.",
-  },
-  {
-    id: "25",
-    productName: "Immunoglobulin A (Iga)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 770,
-    description:
-    "The Immunoglobulin A or IgA test is used to assess the levels of IgA antibodies in the blood. This test aids in screening of autoimmune disorders and cancers, however, the test cannot pinpoint the exact cause of the IgA level fluctuations and correlation with other tests is necessary to find out the root cause for fluctuations in IgA levels. Book IgA test from Thyrocare at a low cost with a home collection facility.",
-  },
-  {
-    id: "25",
-    productName: "Immunoglobulin M (Igm)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 770,
-    description:
-    "The Immunoglobulin M test measures the level of IgM antibodies in the blood. This test is used to assess the immune system status of the person and its ability to deal with antigens. Book IgM test from Thyrocare at a low cost with a home collection facility.",
-  },
-  {
-    id: "25",
-    productName: "Phenytoin / Dilantin / Rptoin",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 520,
-    description:
-    "Phenytoin test offered by Thyrocare aids in monitoring blood Phenytoin concentration and determine if the drug level is within the therapeutic range. Individuals are advised to take up the Phenytoin test every few days after starting phenytoin medication. Routine monitoring of serum phenytoin concentrations is necessary to maintain therapeutic efficacy and avoid toxicity. Phenytoin test may also aid in determining renal failure. Results should often be evaluated in conjunction with the time of blood collection, dosage, and other medical histories.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
   },
 
 ];
