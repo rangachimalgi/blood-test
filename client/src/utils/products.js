@@ -37,29 +37,29 @@ import populartest01 from "../Images/test-image-01.avif";
 import slider01 from "../Images/slide-show-01.png";
 import slider02 from "../Images/slide-show-02.jpg";
 import bloodTest01 from "../Images/blood-test-01.avif";
-import FemaleAdvancePackage from "../Images/FemaleAdvancePackage.jpg"
-import maleadvancepackage from "../Images/maleadvancepackage.jpg"
-import FemaleSeniorCitizen from "../Images/FemaleSeniorCitizen.jpg"
-import seniorcitizen from "../Images/seniorcitizen.jpg"
-import GenaralHealthPackage from "../Images/GenaralHealthPackage.jpg"
-import labtestslider from "../Images/labtestslider.png"
-import Untitleddesign from "../Images/Untitleddesign.png"
-import fullBody from "../Images/fullBody.png"
-import heart from "../Images/heart.png"
-import diabetes from "../Images/diabetes.png"
-import fever from "../Images/fever.png"
-import thyroid from "../Images/thyroid.png"
-import cancer from "../Images/cancer.png"
-import hair from "../Images/hair.png"
-import std from "../Images/std.png"
-import underTwentyFive from "../Images/underTwentyFive.png"
-import twentyFive from "../Images/twentyFive.png"
-import aboveFifty from "../Images/aboveFifty.png"
-import moreMenPackages from "../Images/moreMenPackages.png"
-import underTwentyFiveWomen from "../Images/underTwentyFiveWomen.png"
-import twentyFiveWomen from "../Images/TwentyFiveWomen.png"
-import aboveFiftyWomen from "../Images/aboveFiftyWomen.png"
-import moreWomenPackages from "../Images/moreWomenPackages.png"
+import FemaleAdvancePackage from "../Images/FemaleAdvancePackage.jpg";
+import maleadvancepackage from "../Images/maleadvancepackage.jpg";
+import FemaleSeniorCitizen from "../Images/FemaleSeniorCitizen.jpg";
+import seniorcitizen from "../Images/seniorcitizen.jpg";
+import GenaralHealthPackage from "../Images/GenaralHealthPackage.jpg";
+import labtestslider from "../Images/labtestslider.png";
+import Untitleddesign from "../Images/Untitleddesign.png";
+import fullBody from "../Images/fullBody.png";
+import heart from "../Images/heart.png";
+import diabetes from "../Images/diabetes.png";
+import fever from "../Images/fever.png";
+import thyroid from "../Images/thyroid.png";
+import cancer from "../Images/cancer.png";
+import hair from "../Images/hair.png";
+import std from "../Images/std.png";
+import underTwentyFive from "../Images/underTwentyFive.png";
+import twentyFive from "../Images/twentyFive.png";
+import aboveFifty from "../Images/aboveFifty.png";
+import moreMenPackages from "../Images/moreMenPackages.png";
+import underTwentyFiveWomen from "../Images/underTwentyFiveWomen.png";
+import twentyFiveWomen from "../Images/TwentyFiveWomen.png";
+import aboveFiftyWomen from "../Images/aboveFiftyWomen.png";
+import moreWomenPackages from "../Images/moreWomenPackages.png";
 
 export const SliderData = [
   {
@@ -74,7 +74,6 @@ export const SliderData = [
     desc: "Book your Test now.",
     cover: Untitleddesign,
   },
-
 ];
 
 export const serviceData = [
@@ -158,95 +157,94 @@ export const popularTests = [
     description:
       "FT4 and FT3 are also two of the most important tests. Knowingly, T3 only represents just 5% of normal thyroid hormone. Measurement of free triiodothyronine is the prime reason why this test is run. Decreasing amount of FT4 may cause hypothyroidism, which may cause several types of disorders. FT4 is known for comprising a little fraction of total thyroxine that remains available to the body tissues. Free T3 and T4 blood tests are included in all kinds of FT4 tests. You must inform your doctor before the test if you are already on medication or having any kind of allergies. No other specific preparations are needed for these tests. However, 10-12 hours of complete fasting is necessary before appearing for the test. The test results may vary depending upon gender and age or the health condition of the patient.",
   },
-
-]
+];
 
 export const healthConcerns = [
   {
-    id:"01",
+    id: "01",
     imgUrl: fullBody,
     name: "Full Body Checkups",
-    packageIds: ["80", "42","41","59","48","06","05","04"],
+    packageIds: ["80", "42", "41", "59", "48", "06", "05", "04"],
   },
   {
-    id:"02",
+    id: "02",
     imgUrl: heart,
     name: "Heart",
-    packageIds: ["32","31","94","146","57","147","06"],
+    packageIds: ["32", "31", "94", "146", "57", "147", "06"],
   },
   {
-    id:"03",
+    id: "03",
     imgUrl: diabetes,
     name: "Diabetes",
-    packageIds: ["25","26","148","149"]
+    packageIds: ["25", "26", "148", "149"],
   },
   {
-    id:"04",
+    id: "04",
     imgUrl: fever,
     name: "Fever",
-    packageIds: ["150","151","152"]
+    packageIds: ["150", "151", "152"],
   },
   {
-    id:"05",
+    id: "05",
     imgUrl: thyroid,
     name: "Thyroid",
-    packageIds: ["30","29","60","127"]
+    packageIds: ["30", "29", "60", "127"],
   },
   {
-    id:"06",
+    id: "06",
     imgUrl: cancer,
     name: "Cancer",
-    packageIds: ["27","28","18","19"]
+    packageIds: ["27", "28", "18", "19"],
   },
   {
-    id:"07",
+    id: "07",
     imgUrl: hair,
     name: "Hair",
-    packageIds: ["153","154","155","156"]
+    packageIds: ["153", "154", "155", "156"],
   },
   {
-    id:"08",
-    imgUrl: std
-  }
-]
+    id: "08",
+    imgUrl: std,
+  },
+];
 
 export const checkupsMen = [
   {
-    id:"01",
-    imgUrl: underTwentyFive
+    id: "01",
+    imgUrl: underTwentyFive,
   },
   {
-    id:"02",
-    imgUrl: twentyFive
+    id: "02",
+    imgUrl: twentyFive,
   },
   {
-    id:"03",
-    imgUrl: aboveFifty
+    id: "03",
+    imgUrl: aboveFifty,
   },
   {
-    id:"04",
-    imgUrl: moreMenPackages
+    id: "04",
+    imgUrl: moreMenPackages,
   },
-]
+];
 
 export const checkupsWomen = [
   {
-    id:"01",
-    imgUrl: underTwentyFiveWomen
+    id: "01",
+    imgUrl: underTwentyFiveWomen,
   },
   {
-    id:"02",
-    imgUrl: twentyFiveWomen
+    id: "02",
+    imgUrl: twentyFiveWomen,
   },
   {
-    id:"03",
-    imgUrl: aboveFiftyWomen
+    id: "03",
+    imgUrl: aboveFiftyWomen,
   },
   {
-    id:"04",
-    imgUrl: moreWomenPackages
-  }
-]
+    id: "04",
+    imgUrl: moreWomenPackages,
+  },
+];
 
 export const discoutProducts = [
   {
@@ -279,7 +277,13 @@ export const discoutProducts = [
     ],
     avgRating: 4.5,
     overlayTitle: "Aarogyam Male (99 Tests) @ Rs. 2199.00",
-    overlayDetails: ["Cardiac Risk Markers (5)", "Complete Hemogram (24)", "Diabetics (2)", "Iron (4)", "Lipid Profile (10)"],
+    overlayDetails: [
+      "Cardiac Risk Markers (5)",
+      "Complete Hemogram (24)",
+      "Diabetics (2)",
+      "Iron (4)",
+      "Lipid Profile (10)",
+    ],
   },
   {
     id: "02",
@@ -438,10 +442,9 @@ export const products = [
     id: "25",
     productName: "Fasting Blood Sugar",
     imgUrl: bloodTest01,
-    category: "wireless",
     price: 80,
     description:
-    "The fasting blood sugar (FBS) test determines the actual concentration of glucose in your blood without consumption of any diet. FBS test is frequently recommended in patients to determine whether glucose levels are controlled by the injection of insulin hormone in case of type 1 diabetes and whether the body is able to use insulin in case of type 2 diabetes. Elevated levels of fasting blood sugar can be an indication of Type 1 or Type 2 Diabetes. If untreated, can lead to severe health-related consequences like delayed wound healing, damage to the eyes (Diabetic retinopathy), kidney (renal failure), nerves (peripheral neuropathy), and heart (myocardial infarction). Book your FBS Test at a low cost and get a home collection facility.",
+      "The fasting blood sugar (FBS) test determines the actual concentration of glucose in your blood without consumption of any diet. FBS test is frequently recommended in patients to determine whether glucose levels are controlled by the injection of insulin hormone in case of type 1 diabetes and whether the body is able to use insulin in case of type 2 diabetes. Elevated levels of fasting blood sugar can be an indication of Type 1 or Type 2 Diabetes. If untreated, can lead to severe health-related consequences like delayed wound healing, damage to the eyes (Diabetic retinopathy), kidney (renal failure), nerves (peripheral neuropathy), and heart (myocardial infarction). Book your FBS Test at a low cost and get a home collection facility.",
   },
   {
     id: "25",
@@ -450,7 +453,7 @@ export const products = [
     category: "wireless",
     price: 350,
     description:
-    "HbA1c, also known as Hemoglobin A1c or A1c, is glycosylated hemoglobin or glycohemoglobin in which the glucose molecule present in the blood non-enzymatically binds to hemoglobin. HbA1c test reflects those RBC that are present in the blood at the time of test and measures average blood glucose concentration over 3-4 months. This gives an indication of long-term blood glucose control which serves as a regular monitoring tool if a person has been diagnosed with diabetes. According to the American Diabetes Association, this test is mandatory for diabetic patients and should be performed four times a year. HbA1c test is available at a discounted rate, along with the home collection.",
+      "HbA1c, also known as Hemoglobin A1c or A1c, is glycosylated hemoglobin or glycohemoglobin in which the glucose molecule present in the blood non-enzymatically binds to hemoglobin. HbA1c test reflects those RBC that are present in the blood at the time of test and measures average blood glucose concentration over 3-4 months. This gives an indication of long-term blood glucose control which serves as a regular monitoring tool if a person has been diagnosed with diabetes. According to the American Diabetes Association, this test is mandatory for diabetic patients and should be performed four times a year. HbA1c test is available at a discounted rate, along with the home collection.",
   },
   {
     id: "25",
@@ -459,16 +462,7 @@ export const products = [
     category: "wireless",
     price: 80,
     description:
-    "The postprandial blood sugar determines the glucose concentration 2 hours after having breakfast/ lunch. Blood sugar levels usually begin to rise 10-15 minutes after a meal and reach their peak after an hour. The pancreas produces the hormone insulin, which aids in the absorption of sugar from the bloodstream into the body cells. This test is used to assess how the body reacts to sugar and starch after eating a meal. Doctors recommend this test if your blood sugar continues to be excessively high or extremely low. Blood sugar levels in people who do not have diabetes normally return to normal within 2 hours.",
-  },
-  {
-    id: "25",
-    productName: "Fasting Blood Sugar",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 80,
-    description:
-    "The fasting blood sugar (FBS) test determines the actual concentration of glucose in your blood without consumption of any diet. FBS test is frequently recommended in patients to determine whether glucose levels are controlled by the injection of insulin hormone in case of type 1 diabetes and whether the body is able to use insulin in case of type 2 diabetes. Elevated levels of fasting blood sugar can be an indication of Type 1 or Type 2 Diabetes. If untreated, can lead to severe health-related consequences like delayed wound healing, damage to the eyes (Diabetic retinopathy), kidney (renal failure), nerves (peripheral neuropathy), and heart (myocardial infarction). Book your FBS Test at a low cost and get a home collection facility.",
+      "The postprandial blood sugar determines the glucose concentration 2 hours after having breakfast/ lunch. Blood sugar levels usually begin to rise 10-15 minutes after a meal and reach their peak after an hour. The pancreas produces the hormone insulin, which aids in the absorption of sugar from the bloodstream into the body cells. This test is used to assess how the body reacts to sugar and starch after eating a meal. Doctors recommend this test if your blood sugar continues to be excessively high or extremely low. Blood sugar levels in people who do not have diabetes normally return to normal within 2 hours.",
   },
   {
     id: "25",
@@ -486,7 +480,7 @@ export const products = [
     category: "wireless",
     price: 260,
     description:
-    "FT4 is the free T4 that is not bound to the proteins and is related to thyroid metabolism. Low levels of FT4 indicate hypothyroidism and raised levels are associated with hyperthyroidism. Thyrocare offers a Free Thyroxine test at a very affordable price along with a home collection.",
+      "FT4 is the free T4 that is not bound to the proteins and is related to thyroid metabolism. Low levels of FT4 indicate hypothyroidism and raised levels are associated with hyperthyroidism. Thyrocare offers a Free Thyroxine test at a very affordable price along with a home collection.",
   },
   {
     id: "25",
@@ -495,7 +489,7 @@ export const products = [
     category: "wireless",
     price: 480,
     description:
-    "The test detects the presence of CRP in blood. CRP is produced by the liver in response to inflammatory conditions, like infection, trauma, heart and autoimmune diseases. The test also helps in monitoring treatment post infection and inflammation. Book the CRP test at an affordable price and get a free home sample collection.",
+      "The test detects the presence of CRP in blood. CRP is produced by the liver in response to inflammatory conditions, like infection, trauma, heart and autoimmune diseases. The test also helps in monitoring treatment post infection and inflammation. Book the CRP test at an affordable price and get a free home sample collection.",
   },
   {
     id: "25",
@@ -504,7 +498,7 @@ export const products = [
     category: "wireless",
     price: 770,
     description:
-    "A rapid rise in the level of hCG indicates pregnancy. The test is used for early confirmation of pregnancy and to monitor it. Get Thyrocare's Beta hCG test at home with our free home collection service. Book now.",
+      "A rapid rise in the level of hCG indicates pregnancy. The test is used for early confirmation of pregnancy and to monitor it. Get Thyrocare's Beta hCG test at home with our free home collection service. Book now.",
   },
   {
     id: "25",
@@ -513,7 +507,7 @@ export const products = [
     category: "wireless",
     price: 530,
     description:
-    "Prolactin is secreted by the pituitary gland and triggers milk production in women. Abnormal levels can be seen in several health conditions like menstrual problems, pituitary tumors, fertility issues, and others, thus needs to be monitored. Book Prolactin test now to avail yourself services at your doorstep, at very affordable rates.",
+      "Prolactin is secreted by the pituitary gland and triggers milk production in women. Abnormal levels can be seen in several health conditions like menstrual problems, pituitary tumors, fertility issues, and others, thus needs to be monitored. Book Prolactin test now to avail yourself services at your doorstep, at very affordable rates.",
   },
   {
     id: "25",
@@ -522,7 +516,7 @@ export const products = [
     category: "wireless",
     price: 260,
     description:
-    "Estimation of FT3 and FT4 hormone levels improves the sensitivity and accuracy of diagnosing thyroid dysfunctions. When only T3 - T4 levels are measured, it may become difficult to reach a definitive diagnosis many times.",
+      "Estimation of FT3 and FT4 hormone levels improves the sensitivity and accuracy of diagnosing thyroid dysfunctions. When only T3 - T4 levels are measured, it may become difficult to reach a definitive diagnosis many times.",
   },
   {
     id: "25",
@@ -531,7 +525,7 @@ export const products = [
     category: "wireless",
     price: 600,
     description:
-    "Prostate-specific antigen (PSA), is a glycoprotein produced by cells of the prostate that remains free in the blood. A free PSA test measures the amount of unbound prostate-specific antigen in the blood, which helps physicians to identify problems such as prostate inflammation or tumor. Levels of PSA rise in conditions such as prostate cancer and also in benign prostatic hyperplasia (BPH). Monitoring free PSA is useful for detecting metastatic or chronic disease in patients receiving anti-prostate cancer therapy. If the levels of PSA are elevated after treatment, it indicates the recurrence of the disease. Now book your PSA test at an affordable price, with a  home collection service from Thyrocare.",
+      "Prostate-specific antigen (PSA), is a glycoprotein produced by cells of the prostate that remains free in the blood. A free PSA test measures the amount of unbound prostate-specific antigen in the blood, which helps physicians to identify problems such as prostate inflammation or tumor. Levels of PSA rise in conditions such as prostate cancer and also in benign prostatic hyperplasia (BPH). Monitoring free PSA is useful for detecting metastatic or chronic disease in patients receiving anti-prostate cancer therapy. If the levels of PSA are elevated after treatment, it indicates the recurrence of the disease. Now book your PSA test at an affordable price, with a  home collection service from Thyrocare.",
   },
   {
     id: "25",
@@ -540,7 +534,7 @@ export const products = [
     category: "wireless",
     price: 900,
     description:
-    "Vitamin B-12 is required for neuronal brain development and to boost immunity. Monitoring its levels is essential to prevent health complications and memory problems. Book a Vitamin B12 test from Thyrocare and get services at your doorstep at very affordable rates.",
+      "Vitamin B-12 is required for neuronal brain development and to boost immunity. Monitoring its levels is essential to prevent health complications and memory problems. Book a Vitamin B12 test from Thyrocare and get services at your doorstep at very affordable rates.",
   },
   {
     id: "25",
@@ -549,7 +543,7 @@ export const products = [
     category: "wireless",
     price: 620,
     description:
-    "Rheumatoid Factor (RF) is an immunoglobulin M protein, produced by the body’s immune system. This protein attacks the body’s tissues as it mistakenly identifies them as a foreign entity. The rheumatoid factor test determines the level of rheumatoid factor in your blood to diagnose rheumatoid arthritis. Higher RF concentrations are often linked to autoimmune disorders such as rheumatoid arthritis and Sjogren's syndrome. Other conditions that may elevate RF concentration in the blood include hepatitis, viral or bacterial infections, and endocarditis. There is also a gradual rise in RF levels with age. Book a Rheumatoid Factor test from Thyrocare to avail of the service at your doorsteps at a low cost.",
+      "Rheumatoid Factor (RF) is an immunoglobulin M protein, produced by the body’s immune system. This protein attacks the body’s tissues as it mistakenly identifies them as a foreign entity. The rheumatoid factor test determines the level of rheumatoid factor in your blood to diagnose rheumatoid arthritis. Higher RF concentrations are often linked to autoimmune disorders such as rheumatoid arthritis and Sjogren's syndrome. Other conditions that may elevate RF concentration in the blood include hepatitis, viral or bacterial infections, and endocarditis. There is also a gradual rise in RF levels with age. Book a Rheumatoid Factor test from Thyrocare to avail of the service at your doorsteps at a low cost.",
   },
   {
     id: "25",
@@ -572,7 +566,7 @@ export const products = [
     category: "wireless",
     price: 480,
     description:
-    "Hepatitis B surface antigen (HBsAg) test is used to screen and diagnose acute or chronic hepatitis B virus (HBV) infection. It also helps in detecting if a person has previously infected with hepatitis B infection, or sometimes to guide and monitor treatment.",
+      "Hepatitis B surface antigen (HBsAg) test is used to screen and diagnose acute or chronic hepatitis B virus (HBV) infection. It also helps in detecting if a person has previously infected with hepatitis B infection, or sometimes to guide and monitor treatment.",
   },
   {
     id: "25",
@@ -581,7 +575,7 @@ export const products = [
     category: "wireless",
     price: 790,
     description:
-    "IgE, one of the five subclasses of antibodies found in mammals is a key molecule in allergy responses and inflammation. When an individual is exposed to an allergen, the allergen particles bind to the sensitized mast cells bound to IgE. Mast cells secrete components of allergic reactions such as cytokines, histamines, etc. Hence a person undergoing persistent or periodic symptoms of allergy can be advised to be tested for total IgE levels. This test is also recommended when the allergen is unknown and its detection is required for effective immunotherapy/ allergen shots against specific allergies. Quantitative measurement of serum IgE with other clinical indicators can provide useful information for the differential diagnosis of Atopic and Non-Atopic diseases. For diagnostic purposes, results should always be assessed with the patient’s medical history, clinical examination, and other findings.",
+      "IgE, one of the five subclasses of antibodies found in mammals is a key molecule in allergy responses and inflammation. When an individual is exposed to an allergen, the allergen particles bind to the sensitized mast cells bound to IgE. Mast cells secrete components of allergic reactions such as cytokines, histamines, etc. Hence a person undergoing persistent or periodic symptoms of allergy can be advised to be tested for total IgE levels. This test is also recommended when the allergen is unknown and its detection is required for effective immunotherapy/ allergen shots against specific allergies. Quantitative measurement of serum IgE with other clinical indicators can provide useful information for the differential diagnosis of Atopic and Non-Atopic diseases. For diagnostic purposes, results should always be assessed with the patient’s medical history, clinical examination, and other findings.",
   },
   {
     id: "25",
@@ -590,7 +584,7 @@ export const products = [
     category: "wireless",
     price: 1000,
     description:
-    "The 25-OH vitamin D test is the most accurate way to measure vitamin D levels in your body. Vitamin D helps control phosphate and calcium levels in the body. Book now at an affordable rate and get a free home collection.",
+      "The 25-OH vitamin D test is the most accurate way to measure vitamin D levels in your body. Vitamin D helps control phosphate and calcium levels in the body. Book now at an affordable rate and get a free home collection.",
   },
   {
     id: "25",
@@ -599,7 +593,7 @@ export const products = [
     category: "wireless",
     price: 750,
     description:
-    "A fasting insulin level test is valuable in detecting type 1 as well as type 2 diabetes. It can be done to diagnose hypoglycemia when one has insulin resistance. This test is usually recommended for people with prediabetes, diabetes, polycystic ovarian syndrome, heart diseases, metabolic syndrome, etc. Book an Insulin fasting test from Thyrocare at a very affordable price and get home collection services.",
+      "A fasting insulin level test is valuable in detecting type 1 as well as type 2 diabetes. It can be done to diagnose hypoglycemia when one has insulin resistance. This test is usually recommended for people with prediabetes, diabetes, polycystic ovarian syndrome, heart diseases, metabolic syndrome, etc. Book an Insulin fasting test from Thyrocare at a very affordable price and get home collection services.",
   },
   {
     id: "25",
@@ -608,7 +602,7 @@ export const products = [
     category: "wireless",
     price: 480,
     description:
-    "Follicle Stimulating Hormone  (FSH) is a pivotal hormone that regulates the menstrual cycle and ovulation in women. In men, this hormone stimulates testicular growth. Measuring the levels helps to detect problems related to reproductive functions. Thyrocare offer FSH test at a low cost and along with home collection services.",
+      "Follicle Stimulating Hormone  (FSH) is a pivotal hormone that regulates the menstrual cycle and ovulation in women. In men, this hormone stimulates testicular growth. Measuring the levels helps to detect problems related to reproductive functions. Thyrocare offer FSH test at a low cost and along with home collection services.",
   },
   {
     id: "25",
@@ -617,7 +611,7 @@ export const products = [
     category: "wireless",
     price: 750,
     description:
-    "Ferritin is a major protein that is the body’s storehouse of iron.  A ferritin test helps to assess disorders related to iron deficiency like anemia and iron overload. Thyrocare offers the Ferritin test at the lowest rate with the home collection service.",
+      "Ferritin is a major protein that is the body’s storehouse of iron.  A ferritin test helps to assess disorders related to iron deficiency like anemia and iron overload. Thyrocare offers the Ferritin test at the lowest rate with the home collection service.",
   },
   {
     id: "25",
@@ -626,7 +620,7 @@ export const products = [
     category: "wireless",
     price: 480,
     description:
-    "Luteinising Hormone plays an important role in maintaining the normal reproductive functions in both males and females. Abnormal levels are found to be associated with infertility, polycystic ovarian syndrome, menstrual problems, testicular atrophy, etc. Thyrocare offer LH test at a low cost and along with home collection services.",
+      "Luteinising Hormone plays an important role in maintaining the normal reproductive functions in both males and females. Abnormal levels are found to be associated with infertility, polycystic ovarian syndrome, menstrual problems, testicular atrophy, etc. Thyrocare offer LH test at a low cost and along with home collection services.",
   },
   {
     id: "25",
@@ -635,7 +629,7 @@ export const products = [
     category: "wireless",
     price: 1970,
     description:
-    "Anti-Müllerian Hormone Test (AMH) is a marker that is used to evaluate an ovarian reserve and predict the outcome of In-vitro Fertilization (IVF) or other Assisted Reproductive Technology (ART). This test can also be used to assess the ovarian function in patients with Polycystic Ovarian Syndrome (PCOS), to diagnose and monitor Ovarian tumors, and to determine the menopausal status.  Thyrocare offers an AMH test at the lowest price with the home collection.",
+      "Anti-Müllerian Hormone Test (AMH) is a marker that is used to evaluate an ovarian reserve and predict the outcome of In-vitro Fertilization (IVF) or other Assisted Reproductive Technology (ART). This test can also be used to assess the ovarian function in patients with Polycystic Ovarian Syndrome (PCOS), to diagnose and monitor Ovarian tumors, and to determine the menopausal status.  Thyrocare offers an AMH test at the lowest price with the home collection.",
   },
   {
     id: "25",
@@ -644,7 +638,7 @@ export const products = [
     category: "wireless",
     price: 620,
     description:
-    "This test checks the kidney functions, as in the case of normally functioning kidneys, albumins are not leaked into the urine. Hence, the presence of albumin in the urine is a marker for kidney dysfunction. Book this test from Thyrocare at a very low cost and get home collection services.",
+      "This test checks the kidney functions, as in the case of normally functioning kidneys, albumins are not leaked into the urine. Hence, the presence of albumin in the urine is a marker for kidney dysfunction. Book this test from Thyrocare at a very low cost and get home collection services.",
   },
   {
     id: "25",
@@ -653,7 +647,7 @@ export const products = [
     category: "wireless",
     price: 220,
     description:
-    "Calcium plays an important role in many physiological functions of the body. Abnormal calcium levels affect bone health, muscle contraction, blood clotting, enzyme activity, neural transmission, etc., Book your calcium blood test at an affordable price with free home collection.",
+      "Calcium plays an important role in many physiological functions of the body. Abnormal calcium levels affect bone health, muscle contraction, blood clotting, enzyme activity, neural transmission, etc., Book your calcium blood test at an affordable price with free home collection.",
   },
   {
     id: "25",
@@ -662,7 +656,7 @@ export const products = [
     category: "wireless",
     price: 1080,
     description:
-    "Thyroglobulin is a key protein in the thyroid gland that is essential for the synthesis of thyroxine (T4) and triiodothyronine (T3). Antithyroglobulin antibody test measures levels of antibodies to thyroglobulin. This test helps to identify autoimmune diseases involving the thyroid gland. The presence of thyroid autoantibodies causes disorders such as Hashimoto’s thyroiditis, Graves’ disease, Hypothyroidism, Thyroid cancer, etc. Women with high levels of ATG might miscarry or be infertile. While in cases of neonatal hypothyroidism, the detection of ATG in the infant suggests transplacental antibody transfer, particularly if the mother has a history of autoimmune thyroiditis or detectable thyroid autoantibodies.",
+      "Thyroglobulin is a key protein in the thyroid gland that is essential for the synthesis of thyroxine (T4) and triiodothyronine (T3). Antithyroglobulin antibody test measures levels of antibodies to thyroglobulin. This test helps to identify autoimmune diseases involving the thyroid gland. The presence of thyroid autoantibodies causes disorders such as Hashimoto’s thyroiditis, Graves’ disease, Hypothyroidism, Thyroid cancer, etc. Women with high levels of ATG might miscarry or be infertile. While in cases of neonatal hypothyroidism, the detection of ATG in the infant suggests transplacental antibody transfer, particularly if the mother has a history of autoimmune thyroiditis or detectable thyroid autoantibodies.",
   },
   {
     id: "25",
@@ -671,7 +665,7 @@ export const products = [
     category: "wireless",
     price: 1460,
     description:
-    "Anti-Cyclic Citrullinated Peptide is an antibody found to be present in individuals with rheumatoid arthritis (RA). Measuring its levels helps in detecting as well as assessing the severity of RA. This test is available at an affordable price with home collection services.",
+      "Anti-Cyclic Citrullinated Peptide is an antibody found to be present in individuals with rheumatoid arthritis (RA). Measuring its levels helps in detecting as well as assessing the severity of RA. This test is available at an affordable price with home collection services.",
   },
   {
     id: "25",
@@ -680,7 +674,7 @@ export const products = [
     category: "wireless",
     price: 610,
     description:
-    "The test measures the amount of testosterone hormone in the blood. Testosterone, a sex hormone, is found in both men and women (in small amounts). Abnormal levels of this hormone can cause health issues, such as sexual dysfunction, PCOS, hypogonadism and cancer. Book testosterone test at Thyrocare and get a free home sample collection.",
+      "The test measures the amount of testosterone hormone in the blood. Testosterone, a sex hormone, is found in both men and women (in small amounts). Abnormal levels of this hormone can cause health issues, such as sexual dysfunction, PCOS, hypogonadism and cancer. Book testosterone test at Thyrocare and get a free home sample collection.",
   },
   {
     id: "25",
@@ -689,7 +683,7 @@ export const products = [
     category: "wireless",
     price: 740,
     description:
-    "It is produced during the development of a fetus and production stops before birth. The expression of CEA is increased in almost all types of cancers (mainly ovarian cancer) and hence used as a tumor marker.",
+      "It is produced during the development of a fetus and production stops before birth. The expression of CEA is increased in almost all types of cancers (mainly ovarian cancer) and hence used as a tumor marker.",
   },
   {
     id: "25",
@@ -698,7 +692,7 @@ export const products = [
     category: "wireless",
     price: 570,
     description:
-    "Estradiol is a key type of estrogen (female sex hormone) produced by the ovaries. However, during pregnancy, the placenta also produces estradiol. This test is recommended for females to assess reproductive health, menstrual cycle, fertility, and other factors. Increased levels may be indicative of pregnancy, gynecomastia, or ovarian tumors. Levels are also high during the assisted reproduction stage where ovulation is induced and low during the early follicular phase. Whereas decreased levels may either indicate a lesion in the hypothalamus-pituitary axis or a lack of ovarian synthesis. Thyrocare offers this test at a discounted rate, along with the home collection.",
+      "Estradiol is a key type of estrogen (female sex hormone) produced by the ovaries. However, during pregnancy, the placenta also produces estradiol. This test is recommended for females to assess reproductive health, menstrual cycle, fertility, and other factors. Increased levels may be indicative of pregnancy, gynecomastia, or ovarian tumors. Levels are also high during the assisted reproduction stage where ovulation is induced and low during the early follicular phase. Whereas decreased levels may either indicate a lesion in the hypothalamus-pituitary axis or a lack of ovarian synthesis. Thyrocare offers this test at a discounted rate, along with the home collection.",
   },
   {
     id: "25",
@@ -707,7 +701,7 @@ export const products = [
     category: "wireless",
     price: 1220,
     description:
-    "Testosterone is a C-19 steroid secreted by the testis and adrenal cortex in men, and by ovaries in women. Hypogonadism in males and hyperandrogenic states in females can be clinically evaluated with testosterone measurements. Testosterone circulates in the blood bound to three proteins, i.e. sex hormone-binding globulin (60-80%), albumin and cortisol binding globulin. Unbound or free testosterone accounts for only about 1-2% of the total circulating testosterone. Along with diagnosing infertility and PCOD in females, diseases/ damages of ovaries, testes, adrenal and pituitary gland can also be screened using this test. Free Testosterone test is available at the most reasonable price with home collection services.",
+      "Testosterone is a C-19 steroid secreted by the testis and adrenal cortex in men, and by ovaries in women. Hypogonadism in males and hyperandrogenic states in females can be clinically evaluated with testosterone measurements. Testosterone circulates in the blood bound to three proteins, i.e. sex hormone-binding globulin (60-80%), albumin and cortisol binding globulin. Unbound or free testosterone accounts for only about 1-2% of the total circulating testosterone. Along with diagnosing infertility and PCOD in females, diseases/ damages of ovaries, testes, adrenal and pituitary gland can also be screened using this test. Free Testosterone test is available at the most reasonable price with home collection services.",
   },
   {
     id: "25",
@@ -716,7 +710,7 @@ export const products = [
     category: "wireless",
     price: 700,
     description:
-    "The secretion of Cortisol is controlled by the pituitary gland and levels are often measured to evaluate the pituitary function and/or adrenal function. Abnormalities of Cortisol secretion can result in diseases either in the pituitary gland or the adrenals. Overactivity of either organ can lead to over secretion of cortisol, and cause Cushing's syndrome. Book Cortisol test from Thyrocare at a low cost and get home collection facility.",
+      "The secretion of Cortisol is controlled by the pituitary gland and levels are often measured to evaluate the pituitary function and/or adrenal function. Abnormalities of Cortisol secretion can result in diseases either in the pituitary gland or the adrenals. Overactivity of either organ can lead to over secretion of cortisol, and cause Cushing's syndrome. Book Cortisol test from Thyrocare at a low cost and get home collection facility.",
   },
   {
     id: "25",
@@ -725,7 +719,7 @@ export const products = [
     category: "wireless",
     price: 410,
     description:
-    "The presence of RUBELLA - IgG antibodies is evidence of past infection or immunization. The presence of specific IgG on testing indicates immunity to rubella. Negative IgG results indicate the susceptibility of the patient to infection. Book this test from Thyrocare at a very low cost and get home collection services.",
+      "The presence of RUBELLA - IgG antibodies is evidence of past infection or immunization. The presence of specific IgG on testing indicates immunity to rubella. Negative IgG results indicate the susceptibility of the patient to infection. Book this test from Thyrocare at a very low cost and get home collection services.",
   },
   {
     id: "25",
@@ -734,7 +728,7 @@ export const products = [
     category: "wireless",
     price: 340,
     description:
-    "Lactate dehydrogenase (LDH) is an enzyme present extensively in body tissues, such as blood cells, skeletal muscles, kidneys, brain, and lungs. The tissue levels of this enzyme are 500 fold higher than those normally present in the serum. Thus any cells or tissue damage elevates the serum level of LDH to a significant extent. Thus, increased LDH level in blood is generally an indication of cellular damage. Thyrocare offers an affordable Lactate Dehydrogenase (LDH) test with the free home collection.",
+      "Lactate dehydrogenase (LDH) is an enzyme present extensively in body tissues, such as blood cells, skeletal muscles, kidneys, brain, and lungs. The tissue levels of this enzyme are 500 fold higher than those normally present in the serum. Thus any cells or tissue damage elevates the serum level of LDH to a significant extent. Thus, increased LDH level in blood is generally an indication of cellular damage. Thyrocare offers an affordable Lactate Dehydrogenase (LDH) test with the free home collection.",
   },
   {
     id: "25",
@@ -743,7 +737,7 @@ export const products = [
     category: "wireless",
     price: 1140,
     description:
-    "The presence of antimicrosomal antibodies (AMA) is generally associated with autoimmune disorder. Detection of these antibodies can assist in identifying damage to the thyroid cells causing such disorders. Book AMA blood test online at an affordable price, with a free home collection from Thyrocare.",
+      "The presence of antimicrosomal antibodies (AMA) is generally associated with autoimmune disorder. Detection of these antibodies can assist in identifying damage to the thyroid cells causing such disorders. Book AMA blood test online at an affordable price, with a free home collection from Thyrocare.",
   },
   {
     id: "25",
@@ -752,7 +746,7 @@ export const products = [
     category: "wireless",
     price: 750,
     description:
-    "ANAs are a special class of autoantibodies that bind and destroy certain parts in the nucleus of the cell. Although a little amount of ANA is found in the normal population, an increased level is normally observed in people with connective tissue disease (CTD). Book ANA test at an affordable price, with a free home collection from Thyrocare.",
+      "ANAs are a special class of autoantibodies that bind and destroy certain parts in the nucleus of the cell. Although a little amount of ANA is found in the normal population, an increased level is normally observed in people with connective tissue disease (CTD). Book ANA test at an affordable price, with a free home collection from Thyrocare.",
   },
   {
     id: "25",
@@ -761,7 +755,7 @@ export const products = [
     category: "wireless",
     price: 1270,
     description:
-    "CA125 is an ovarian cancer antigen. Certain cancers such as those of the breast, gastrointestinal tract, and kidney also show elevated levels of CA125. Thus, it is a sensitive but non-specific tumor marker that is used in the detection and monitoring of ovarian cancer. Book now to avail services at your doorstep, at very affordable rates.",
+      "CA125 is an ovarian cancer antigen. Certain cancers such as those of the breast, gastrointestinal tract, and kidney also show elevated levels of CA125. Thus, it is a sensitive but non-specific tumor marker that is used in the detection and monitoring of ovarian cancer. Book now to avail services at your doorstep, at very affordable rates.",
   },
   {
     id: "25",
@@ -770,7 +764,7 @@ export const products = [
     category: "wireless",
     price: 1240,
     description:
-    "D-dimers are small fragments of proteins detected in the blood after breaking down a blood clot. D-dimer levels are used to detect these blood clots. D-dimer test is used in diagnosing blood clots deep inside the veins, to check for blockage in the arteries and lungs, which can affect the blood flow to various organs and tissues as well as increase the chances of a Heart attack. D-dimer test is recommended for someone with chest pain, increased heart rate, difficulty in breathing, seizures, blood in cough, bleeding gums, nausea, decreased urination, muscle pain, leg pain, and swelling. Elevated levels of D-dimer protein are seen in severely infected COVID19 patients, and hence it is used as a marker to predict the severity of the disease. Elevated D-dimer levels are also noted in older ages, pregnancy, liver and kidney diseases. Thyrocare offers the Dimer test at the most affordable price. Sample collection at home available.",
+      "D-dimers are small fragments of proteins detected in the blood after breaking down a blood clot. D-dimer levels are used to detect these blood clots. D-dimer test is used in diagnosing blood clots deep inside the veins, to check for blockage in the arteries and lungs, which can affect the blood flow to various organs and tissues as well as increase the chances of a Heart attack. D-dimer test is recommended for someone with chest pain, increased heart rate, difficulty in breathing, seizures, blood in cough, bleeding gums, nausea, decreased urination, muscle pain, leg pain, and swelling. Elevated levels of D-dimer protein are seen in severely infected COVID19 patients, and hence it is used as a marker to predict the severity of the disease. Elevated D-dimer levels are also noted in older ages, pregnancy, liver and kidney diseases. Thyrocare offers the Dimer test at the most affordable price. Sample collection at home available.",
   },
   {
     id: "25",
@@ -779,7 +773,7 @@ export const products = [
     category: "wireless",
     price: 220,
     description:
-    "It is an important element necessary to maintain bones, teeth, nerve signaling, muscle contraction, energy storage  and many others. High levels are seen to be associated with kidney, liver and bone diseases.",
+      "It is an important element necessary to maintain bones, teeth, nerve signaling, muscle contraction, energy storage  and many others. High levels are seen to be associated with kidney, liver and bone diseases.",
   },
   {
     id: "25",
@@ -788,7 +782,7 @@ export const products = [
     category: "wireless",
     price: 210,
     description:
-    "The Venereal Disease Research Laboratory (VDRL) test is used to diagnose Syphilis, a sexually transmitted infection (STI) caused by a spirochete Treponema pallidum. This test detects antibodies generated by your body in response to antigens produced by bacteria-damaged cells. Syphilis can cause long-term complications by invading the nervous and cardiovascular system, if not treated properly. It may also be transmitted from infected mother to child during pregnancy or at birth, resulting in congenital Syphilis. Book Thyrocare's VDRL test at a low cost with the home collection.",
+      "The Venereal Disease Research Laboratory (VDRL) test is used to diagnose Syphilis, a sexually transmitted infection (STI) caused by a spirochete Treponema pallidum. This test detects antibodies generated by your body in response to antigens produced by bacteria-damaged cells. Syphilis can cause long-term complications by invading the nervous and cardiovascular system, if not treated properly. It may also be transmitted from infected mother to child during pregnancy or at birth, resulting in congenital Syphilis. Book Thyrocare's VDRL test at a low cost with the home collection.",
   },
   {
     id: "25",
@@ -797,7 +791,7 @@ export const products = [
     category: "wireless",
     price: 2090,
     description:
-    "Human Leukocyte antigen B27 (HLA- B27) belongs to a group of cell surface glycoproteins which are expressed on most nucleated human cells and platelets. It is a major histocompatibility complex (MHC) class I molecule. The presence of HLA - B27 is strongly associated with ankylosing spondylitis and some inflammatory disorders like Reiter’s syndrome, inflammatory bowel syndrome, etc. The binding ability of specific monoclonal antibodies to the antigenic determinants expressed by leucocytes on the surface forms the basis of this test. HLA-B 27 test is generally advised in patients suffering from joint pain where the diagnosis of ankylosing spondylitis is suspected. A positive test result indicates higher chances of developing this disease. Avail of the service by booking the HLA-B27 test online at an affordable rate, at your doorstep.",
+      "Human Leukocyte antigen B27 (HLA- B27) belongs to a group of cell surface glycoproteins which are expressed on most nucleated human cells and platelets. It is a major histocompatibility complex (MHC) class I molecule. The presence of HLA - B27 is strongly associated with ankylosing spondylitis and some inflammatory disorders like Reiter’s syndrome, inflammatory bowel syndrome, etc. The binding ability of specific monoclonal antibodies to the antigenic determinants expressed by leucocytes on the surface forms the basis of this test. HLA-B 27 test is generally advised in patients suffering from joint pain where the diagnosis of ankylosing spondylitis is suspected. A positive test result indicates higher chances of developing this disease. Avail of the service by booking the HLA-B27 test online at an affordable rate, at your doorstep.",
   },
   {
     id: "25",
@@ -806,7 +800,7 @@ export const products = [
     category: "wireless",
     price: 410,
     description:
-    "Magnesium is the mineral found in the body that is needed for healthy bones, heart, muscles, and nerves. This test evaluates the level of magnesium as its deficiency can cause cardiac arrhythmia, muscle cramps, or tremors. Book a Magnesium test from Thyrocare at a low cost and get a home collection facility.",
+      "Magnesium is the mineral found in the body that is needed for healthy bones, heart, muscles, and nerves. This test evaluates the level of magnesium as its deficiency can cause cardiac arrhythmia, muscle cramps, or tremors. Book a Magnesium test from Thyrocare at a low cost and get a home collection facility.",
   },
   {
     id: "25",
@@ -815,7 +809,7 @@ export const products = [
     category: "wireless",
     price: 310,
     description:
-    "Rubella is a viral infection generally characterized by a rash. Respiratory aerosols are a major source through which virus is transmitted from person to person. The first clinical manifestation of rubella is usually the appearance of a macro-papular rash some 16-20 days after exposure. The rash, appearing first on the face, spreads further over the trunk and the extremities. The presence of RUBELLA - IgM antibodies in blood indicates recent or current infection with the Rubella virus. In rare cases, IgM antibodies are known to persist for years following a previous infection and also immunization.",
+      "Rubella is a viral infection generally characterized by a rash. Respiratory aerosols are a major source through which virus is transmitted from person to person. The first clinical manifestation of rubella is usually the appearance of a macro-papular rash some 16-20 days after exposure. The rash, appearing first on the face, spreads further over the trunk and the extremities. The presence of RUBELLA - IgM antibodies in blood indicates recent or current infection with the Rubella virus. In rare cases, IgM antibodies are known to persist for years following a previous infection and also immunization.",
   },
   {
     id: "25",
@@ -824,7 +818,7 @@ export const products = [
     category: "wireless",
     price: 450,
     description:
-    "High Sensitivity C-Reactive Protein (Hs-CRP) is an acute-phase protein that is synthesized in the liver. Its concentration increases after exposure to inflammation. This test is used to determine the risk of developing coronary artery disease as CRP is considered to be a cardiac risk marker. Book Thyrocare's hs-CRP test at a low cost with the home collection.",
+      "High Sensitivity C-Reactive Protein (Hs-CRP) is an acute-phase protein that is synthesized in the liver. Its concentration increases after exposure to inflammation. This test is used to determine the risk of developing coronary artery disease as CRP is considered to be a cardiac risk marker. Book Thyrocare's hs-CRP test at a low cost with the home collection.",
   },
   {
     id: "25",
@@ -847,7 +841,7 @@ export const products = [
     category: "wireless",
     price: 1090,
     description:
-    "It is a blood test that measures and the identifies different types of hemoglobin. Presence of any abnormal hemoglobin types can be detected to manage or treat the same, as abnormal hemoglobin type may impair the amount of oxygen transported to the cells of the body.",
+      "It is a blood test that measures and the identifies different types of hemoglobin. Presence of any abnormal hemoglobin types can be detected to manage or treat the same, as abnormal hemoglobin type may impair the amount of oxygen transported to the cells of the body.",
   },
   {
     id: "25",
@@ -863,7 +857,7 @@ export const products = [
     category: "wireless",
     price: 220,
     description:
-    "This test is used to detect abnormal concentrations of sodium, termed hyponatremia (low sodium) and hypernatremia (high sodium). While low levels can cause confusion, headache, seizure, high levels leads to high blood pressure, heart and kidney problems.",
+      "This test is used to detect abnormal concentrations of sodium, termed hyponatremia (low sodium) and hypernatremia (high sodium). While low levels can cause confusion, headache, seizure, high levels leads to high blood pressure, heart and kidney problems.",
   },
   {
     id: "25",
@@ -872,7 +866,7 @@ export const products = [
     category: "wireless",
     price: 1070,
     description:
-    "C-Peptide is a protein released into the blood during the process of insulin production by the pancreas. C-peptide Test test can say how well your body makes insulin. It can also help to differentiate between Type-1 and Type-2 diabetes. Book a C-peptide test from Thyrocare and get services at your doorstep in very affordable rates.",
+      "C-Peptide is a protein released into the blood during the process of insulin production by the pancreas. C-peptide Test test can say how well your body makes insulin. It can also help to differentiate between Type-1 and Type-2 diabetes. Book a C-peptide test from Thyrocare and get services at your doorstep in very affordable rates.",
   },
   {
     id: "25",
@@ -881,7 +875,7 @@ export const products = [
     category: "wireless",
     price: 1220,
     description:
-    "CA 19-9 is a tumor-associated antigen that is elevated mostly in patients with Advanced Pancreatic Cancer. It may also be elevated in other cancers, conditions, diseases such as colorectal cancer, lung cancer, gall bladder cancer, gallstones, pancreatitis, cystic fibrosis, and liver disease. Although, increase in the levels of CA 19-9 is not distinctively suggestive of pancreatic cancer, currently, it is the single most useful blood test to differentiate benign disorders from malignant ones. Book a CA 19-9 test from Thyrocare at an affordable cost and get home collection services.",
+      "CA 19-9 is a tumor-associated antigen that is elevated mostly in patients with Advanced Pancreatic Cancer. It may also be elevated in other cancers, conditions, diseases such as colorectal cancer, lung cancer, gall bladder cancer, gallstones, pancreatitis, cystic fibrosis, and liver disease. Although, increase in the levels of CA 19-9 is not distinctively suggestive of pancreatic cancer, currently, it is the single most useful blood test to differentiate benign disorders from malignant ones. Book a CA 19-9 test from Thyrocare at an affordable cost and get home collection services.",
   },
   {
     id: "25",
@@ -890,7 +884,7 @@ export const products = [
     category: "wireless",
     price: 520,
     description:
-    "Amylase catalyzes the breakdown of complex starch. Most of the serum amylases are mainly derived from the pancreas and pituitary gland. The measurement of alpha-Amylase is important for the diagnosis of pancreatitis (inflammation of the pancreas) as well as other pancreatic and intestinal diseases.",
+      "Amylase catalyzes the breakdown of complex starch. Most of the serum amylases are mainly derived from the pancreas and pituitary gland. The measurement of alpha-Amylase is important for the diagnosis of pancreatitis (inflammation of the pancreas) as well as other pancreatic and intestinal diseases.",
   },
   {
     id: "25",
@@ -899,7 +893,7 @@ export const products = [
     category: "wireless",
     price: 610,
     description:
-    "Lipase is an enzyme produced by the pancreas to digest dietary fats. It is usually present in very small quantities, but when the pancreatic cells are injured, a higher concentration of lipase is released in the blood. A blood test for lipase is usually used to diagnose and monitor disorders related to the pancreas. The level of lipase in the blood can predict conditions like inflammation of the pancreas, blockage of the pancreatic duct by a gallstone, and pancreatic tumor. A lipase test is recommended for a person with symptoms of a pancreatic disorder, such as severe abdominal or back pain, fever, loss of appetite with jaundice, and rapid pulse rate. Book a Lipase test from Thyrocare at a low cost and get home collection services.",
+      "Lipase is an enzyme produced by the pancreas to digest dietary fats. It is usually present in very small quantities, but when the pancreatic cells are injured, a higher concentration of lipase is released in the blood. A blood test for lipase is usually used to diagnose and monitor disorders related to the pancreas. The level of lipase in the blood can predict conditions like inflammation of the pancreas, blockage of the pancreatic duct by a gallstone, and pancreatic tumor. A lipase test is recommended for a person with symptoms of a pancreatic disorder, such as severe abdominal or back pain, fever, loss of appetite with jaundice, and rapid pulse rate. Book a Lipase test from Thyrocare at a low cost and get home collection services.",
   },
   {
     id: "25",
@@ -908,7 +902,7 @@ export const products = [
     category: "wireless",
     price: 410,
     description:
-    "Zinc is one of the essential trace elements, is present throughout the body in many tissues but is not stored at any particular site. Zinc deficiency can occur where zinc needs exceed the intake or in case of malabsorption. Alcoholism, pregnancy & burns are often associated with zinc deficiency. Zinc levels decrease in response to infections, so a low result may not necessarily mean a person is zinc deficient. Clinically, Zinc deficiency leads to hair loss, poor wound healing, dermatitis, and impaired immune function. In children, it can cause growth retardation. Since zinc can be excreted in the urine/feces, high levels are rarely seen. Excessive supplementation of Zinc leads to toxicity. Serum zinc test is available at affordable cost, with a free home collection.",
+      "Zinc is one of the essential trace elements, is present throughout the body in many tissues but is not stored at any particular site. Zinc deficiency can occur where zinc needs exceed the intake or in case of malabsorption. Alcoholism, pregnancy & burns are often associated with zinc deficiency. Zinc levels decrease in response to infections, so a low result may not necessarily mean a person is zinc deficient. Clinically, Zinc deficiency leads to hair loss, poor wound healing, dermatitis, and impaired immune function. In children, it can cause growth retardation. Since zinc can be excreted in the urine/feces, high levels are rarely seen. Excessive supplementation of Zinc leads to toxicity. Serum zinc test is available at affordable cost, with a free home collection.",
   },
   {
     id: "25",
@@ -917,7 +911,7 @@ export const products = [
     category: "wireless",
     price: 700,
     description:
-    "Glucose-6-Phosphate Dehydrogenase (G6PD) enzyme is active in almost all types of cells, and is involved in the processing of carbohydrates and energy production. It plays a critical role in red blood cells (RBCs) by protecting them from damage and premature destruction. G6PD deficiency is an inherited, sex-linked, metabolic disorder, which is characterized by a defect in an enzyme that leads to the breakdown of RBCs (hemolysis) upon exposure to stress resulting from certain microbial infections or certain drugs. G6PD deficiency may lead to acute hemolytic anemia. Thyrocare offers this test at a discounted price, along with a free home collection facility.",
+      "Glucose-6-Phosphate Dehydrogenase (G6PD) enzyme is active in almost all types of cells, and is involved in the processing of carbohydrates and energy production. It plays a critical role in red blood cells (RBCs) by protecting them from damage and premature destruction. G6PD deficiency is an inherited, sex-linked, metabolic disorder, which is characterized by a defect in an enzyme that leads to the breakdown of RBCs (hemolysis) upon exposure to stress resulting from certain microbial infections or certain drugs. G6PD deficiency may lead to acute hemolytic anemia. Thyrocare offers this test at a discounted price, along with a free home collection facility.",
   },
   {
     id: "25",
@@ -926,7 +920,7 @@ export const products = [
     category: "wireless",
     price: 760,
     description:
-    "AFP is produced in the liver of a developing baby and protects it against the maternal immune system. Abnormal levels of embryonic AFP in the mother's serum can be indicative of birth defects like spina bifida or genetic abnormalities like Down's syndrome in the baby. Thyrocare offers this test at a discounted rate, along with the home collection.",
+      "AFP is produced in the liver of a developing baby and protects it against the maternal immune system. Abnormal levels of embryonic AFP in the mother's serum can be indicative of birth defects like spina bifida or genetic abnormalities like Down's syndrome in the baby. Thyrocare offers this test at a discounted rate, along with the home collection.",
   },
   {
     id: "25",
@@ -935,7 +929,7 @@ export const products = [
     category: "wireless",
     price: 1220,
     description:
-    "Tissue Transglutaminase  (tTG) is an enzyme responsible for protection, prevention, and tissue remodeling or repair processes. Anti-tTG antibodies are more sensitive and specific than anti-Gliadin antibodies. Screening for tTG-IgA antibodies is recommended to identify patients at risk for celiac disease. This test detects autoantibodies in the blood that the body produces as part of the immune response. It also aids in monitoring adherence to a gluten-free diet in disease confirmed patients.",
+      "Tissue Transglutaminase  (tTG) is an enzyme responsible for protection, prevention, and tissue remodeling or repair processes. Anti-tTG antibodies are more sensitive and specific than anti-Gliadin antibodies. Screening for tTG-IgA antibodies is recommended to identify patients at risk for celiac disease. This test detects autoantibodies in the blood that the body produces as part of the immune response. It also aids in monitoring adherence to a gluten-free diet in disease confirmed patients.",
   },
   {
     id: "25",
@@ -944,7 +938,7 @@ export const products = [
     category: "wireless",
     price: 580,
     description:
-    "Progesterone is an endogenous steroid hormone that aids in the implantation of the fertilized egg in the uterus. It is produced by the adrenal cortex as well as ovaries and testes. It is also secreted by the corpus luteum and the placenta and is responsible for preparing the body for pregnancy and, if pregnancy occurs, maintaining it until birth. Estimating progesterone levels is important in assessing the probability and risk of ectopic pregnancy, determining the cause of infertility, and diagnosing abnormal uterine bleeding. Low levels of progesterone are a marker of incipient pre-eclampsia/toxemia in a pregnant woman. Avail of the home collection services for this test at an affordable cost.",
+      "Progesterone is an endogenous steroid hormone that aids in the implantation of the fertilized egg in the uterus. It is produced by the adrenal cortex as well as ovaries and testes. It is also secreted by the corpus luteum and the placenta and is responsible for preparing the body for pregnancy and, if pregnancy occurs, maintaining it until birth. Estimating progesterone levels is important in assessing the probability and risk of ectopic pregnancy, determining the cause of infertility, and diagnosing abnormal uterine bleeding. Low levels of progesterone are a marker of incipient pre-eclampsia/toxemia in a pregnant woman. Avail of the home collection services for this test at an affordable cost.",
   },
   {
     id: "25",
@@ -953,7 +947,7 @@ export const products = [
     category: "wireless",
     price: 620,
     description:
-    "Antistreptolysin O (ASO) test determines antibodies in the blood against streptolysin O, an enzyme produced by group A streptococcus bacteria. This is also helpful in checking whether the certain condition or disease is due to a recent streptococcal infection. Anti-Streptolysin O test is now available at an affordable cost, with the free home collection.",
+      "Antistreptolysin O (ASO) test determines antibodies in the blood against streptolysin O, an enzyme produced by group A streptococcus bacteria. This is also helpful in checking whether the certain condition or disease is due to a recent streptococcal infection. Anti-Streptolysin O test is now available at an affordable cost, with the free home collection.",
   },
   {
     id: "25",
@@ -962,7 +956,7 @@ export const products = [
     category: "wireless",
     price: 770,
     description:
-    "Cancer antigen 15-3 (CA 15-3), a protein produced by normal breast cells, is used as a biomarker to monitor cancerous breast tumors. It helps in determining the effectiveness of treatment and disease recurrence. Normal levels of CA 15-3 protein are produced by breast cells, however, increased production is observed in the case of breast cancer. CA 15-3 levels are also elevated in individuals with other cancers or diseases, such as colorectal cancer, lung cancer, cirrhosis, Hepatitis, and Benign Breast Disease. Thyrocare offers this test at a discounted price, along with a free home collection facility.",
+      "Cancer antigen 15-3 (CA 15-3), a protein produced by normal breast cells, is used as a biomarker to monitor cancerous breast tumors. It helps in determining the effectiveness of treatment and disease recurrence. Normal levels of CA 15-3 protein are produced by breast cells, however, increased production is observed in the case of breast cancer. CA 15-3 levels are also elevated in individuals with other cancers or diseases, such as colorectal cancer, lung cancer, cirrhosis, Hepatitis, and Benign Breast Disease. Thyrocare offers this test at a discounted price, along with a free home collection facility.",
   },
   {
     id: "25",
@@ -971,7 +965,7 @@ export const products = [
     category: "wireless",
     price: 220,
     description:
-    "It is essential for proper muscle and nerve functioning. Changes in its levels may cause severe health issues, hence levels need to be assessed.",
+      "It is essential for proper muscle and nerve functioning. Changes in its levels may cause severe health issues, hence levels need to be assessed.",
   },
   {
     id: "25",
@@ -980,7 +974,7 @@ export const products = [
     category: "wireless",
     price: 1300,
     description:
-    "Procalcitonin is a peptide precursor of the hormone calcitonin, which regulates and maintains calcium equilibrium in the body. It is produced naturally in the body and serves as a marker for septic infection. This test determines the level of procalcitonin in blood and aids in the early detection of severe bacterial infections. Pro-inflammatory stimuli during bacterial infection, sepsis during operation/trauma lead to an increase in circulating procalcitonin levels beyond the normal range. Now free sample collection at your home with discounted costs.",
+      "Procalcitonin is a peptide precursor of the hormone calcitonin, which regulates and maintains calcium equilibrium in the body. It is produced naturally in the body and serves as a marker for septic infection. This test determines the level of procalcitonin in blood and aids in the early detection of severe bacterial infections. Pro-inflammatory stimuli during bacterial infection, sepsis during operation/trauma lead to an increase in circulating procalcitonin levels beyond the normal range. Now free sample collection at your home with discounted costs.",
   },
   {
     id: "25",
@@ -989,7 +983,7 @@ export const products = [
     category: "wireless",
     price: 200,
     description:
-    "Creatinine is produced as a result of normal muscle metabolism. It is measured to estimate the efficiency of the glomeruli of the kidneys to remove waste products from the blood and thus,indicate the overall kidney health.",
+      "Creatinine is produced as a result of normal muscle metabolism. It is measured to estimate the efficiency of the glomeruli of the kidneys to remove waste products from the blood and thus,indicate the overall kidney health.",
   },
   {
     id: "25",
@@ -1033,7 +1027,7 @@ export const products = [
     category: "wireless",
     price: 210,
     description:
-    "As iron has the ability to accept and donate electrons, it is required for a variety of normal cellular functions. Iron is also vital for proper growth and development, and deficiencies can cause anemia and related health conditions.",
+      "As iron has the ability to accept and donate electrons, it is required for a variety of normal cellular functions. Iron is also vital for proper growth and development, and deficiencies can cause anemia and related health conditions.",
   },
   {
     id: "25",
@@ -1042,7 +1036,7 @@ export const products = [
     category: "wireless",
     price: 340,
     description:
-    "Transferrin is a glycoprotein that transports iron throughout the body. This test measures the amount of transferrin to assess the body's ability for iron transportation, in order to diagnose iron deficinecy or high levels of iron.",
+      "Transferrin is a glycoprotein that transports iron throughout the body. This test measures the amount of transferrin to assess the body's ability for iron transportation, in order to diagnose iron deficinecy or high levels of iron.",
   },
   {
     id: "25",
@@ -1072,7 +1066,7 @@ export const products = [
     category: "wireless",
     price: 520,
     description:
-    "Valproic acid is used as an anticonvulsant drug in treating epileptic seizures, often in combination with other drugs. It is also used as a mood-stabilizer, in cases of children with aggressive behavioral patterns and attention deficit hyperactivity disorder (ADHD). It is also approved in the treatment of migraines, bipolar disorder, and schizophrenia. It also gives promising results in the treatment of certain solid tumors, colonic cancers, medulloblastomas, follicular thyroid cancer, leukemias, and as a part of the multidrug regimen used in Alzheimer’s disease. The valproic acid test is available at a discounted price, along with a home collection.",
+      "Valproic acid is used as an anticonvulsant drug in treating epileptic seizures, often in combination with other drugs. It is also used as a mood-stabilizer, in cases of children with aggressive behavioral patterns and attention deficit hyperactivity disorder (ADHD). It is also approved in the treatment of migraines, bipolar disorder, and schizophrenia. It also gives promising results in the treatment of certain solid tumors, colonic cancers, medulloblastomas, follicular thyroid cancer, leukemias, and as a part of the multidrug regimen used in Alzheimer’s disease. The valproic acid test is available at a discounted price, along with a home collection.",
   },
   {
     id: "25",
@@ -1081,7 +1075,7 @@ export const products = [
     category: "wireless",
     price: 1130,
     description:
-    "An amino acid, whose elevated levels in the bloodstream is related to increased risk of blood clot formation, atherosclerosis, heart attack and stroke. Increased levels are also associated with homocystinuria, an inherited condition.",
+      "An amino acid, whose elevated levels in the bloodstream is related to increased risk of blood clot formation, atherosclerosis, heart attack and stroke. Increased levels are also associated with homocystinuria, an inherited condition.",
   },
   {
     id: "25",
@@ -1090,7 +1084,7 @@ export const products = [
     category: "wireless",
     price: 500,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+      "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
   },
   {
     id: "25",
@@ -1099,7 +1093,7 @@ export const products = [
     category: "wireless",
     price: 1240,
     description:
-    "Alpha-1-antitrypsin (AAT) is a protein produced by the liver that protects our lungs from damage caused by Neutrophil elastase. In case of abnormal AAT or non-functional AAT, neutrophil elastase destroys alveoli in the lungs, resulting in lung disease. The alpha-1-antitrypsin test determines the level of alpha-1-antitrypsin in blood. This test is recommended by a physician if the patient is under the age of 45 and has symptoms such as wheezing, coughing, shortness of breath, or asthma, or if they have a family history of the disorder or conditions like Chronic Obstructive Pulmonary Disease (COPD) or liver disease with unknown cause. ATT deficiency can lead to complications of the lungs, liver, and skin. Reduced ATT levels increase the risk of COPD, emphysema, chronic bronchitis, and liver cirrhosis. AAT levels rise in acute and chronic inflammatory conditions, infections, and hepatocellular carcinoma. ATT levels also increase during oral contraceptive therapy and pregnancy.",
+      "Alpha-1-antitrypsin (AAT) is a protein produced by the liver that protects our lungs from damage caused by Neutrophil elastase. In case of abnormal AAT or non-functional AAT, neutrophil elastase destroys alveoli in the lungs, resulting in lung disease. The alpha-1-antitrypsin test determines the level of alpha-1-antitrypsin in blood. This test is recommended by a physician if the patient is under the age of 45 and has symptoms such as wheezing, coughing, shortness of breath, or asthma, or if they have a family history of the disorder or conditions like Chronic Obstructive Pulmonary Disease (COPD) or liver disease with unknown cause. ATT deficiency can lead to complications of the lungs, liver, and skin. Reduced ATT levels increase the risk of COPD, emphysema, chronic bronchitis, and liver cirrhosis. AAT levels rise in acute and chronic inflammatory conditions, infections, and hepatocellular carcinoma. ATT levels also increase during oral contraceptive therapy and pregnancy.",
   },
   {
     id: "25",
@@ -1108,7 +1102,7 @@ export const products = [
     category: "wireless",
     price: 1030,
     description:
-    "Anti-HAV test is primarily used to determine the cause of acute hepatitis or to identify the type of hepatitis virus causing an infection. Individuals produce IgM antibodies on exposure to HAV either naturally or due to vaccination. Testing for the presence of IgM antibodies against the hepatitis A virus is performed when the patient shows symptoms of hepatitis such as fever, fatigue, nausea, vomiting, abdominal pain, dark urine and/or pale-colored stool, joint pain, jaundice. The serological detection of HAV antibodies is an important marker for confirming HAV infection, classification of the virus, and determining the source of infection. Book this test and get Free Sample Collection at Home at an affordable price.",
+      "Anti-HAV test is primarily used to determine the cause of acute hepatitis or to identify the type of hepatitis virus causing an infection. Individuals produce IgM antibodies on exposure to HAV either naturally or due to vaccination. Testing for the presence of IgM antibodies against the hepatitis A virus is performed when the patient shows symptoms of hepatitis such as fever, fatigue, nausea, vomiting, abdominal pain, dark urine and/or pale-colored stool, joint pain, jaundice. The serological detection of HAV antibodies is an important marker for confirming HAV infection, classification of the virus, and determining the source of infection. Book this test and get Free Sample Collection at Home at an affordable price.",
   },
   {
     id: "25",
@@ -1117,7 +1111,7 @@ export const products = [
     category: "wireless",
     price: 210,
     description:
-    "T4 is a hormone secreted by the thyroid gland that plays a role in the body's vital functions, thus needs to be monitored. This test singly or in combination with T3 and TSH is used to identify thyroid disorders.",
+      "T4 is a hormone secreted by the thyroid gland that plays a role in the body's vital functions, thus needs to be monitored. This test singly or in combination with T3 and TSH is used to identify thyroid disorders.",
   },
   {
     id: "25",
@@ -1126,7 +1120,7 @@ export const products = [
     category: "wireless",
     price: 520,
     description:
-    "Cystatin C is a small protein found in body fluids like blood. It is filtered by the glomeruli (tiny blood vessels) present in the kidney affecting its blood concentration and is evaluated by measuring the glomerular filtration rate (GFR) is the rate at which kidneys filter the fluid). It assesses the functioning of the kidneys. Avail of the home collection services for this test at an affordable cost.",
+      "Cystatin C is a small protein found in body fluids like blood. It is filtered by the glomeruli (tiny blood vessels) present in the kidney affecting its blood concentration and is evaluated by measuring the glomerular filtration rate (GFR) is the rate at which kidneys filter the fluid). It assesses the functioning of the kidneys. Avail of the home collection services for this test at an affordable cost.",
   },
   {
     id: "25",
@@ -1135,7 +1129,7 @@ export const products = [
     category: "wireless",
     price: 200,
     description:
-    "It is a hormone secreted by the thyroid gland and, any variations in its level can have an effect on thyroid functions. Monitoring the levels of T3, therefore, becomes a crucial parameter to detect thyroid disorders.",
+      "It is a hormone secreted by the thyroid gland and, any variations in its level can have an effect on thyroid functions. Monitoring the levels of T3, therefore, becomes a crucial parameter to detect thyroid disorders.",
   },
   {
     id: "25",
@@ -1144,7 +1138,7 @@ export const products = [
     category: "wireless",
     price: 1220,
     description:
-    "Prostate-Specific Antigen (PSA), is a glycoprotein produced by cells of the prostate that remains free in the blood. Free PSA test measures the amount of unbound prostate-specific antigen in the blood, which helps physicians to identify problems such as prostate inflammation or tumor. Levels of PSA rise in conditions such as prostate cancer and also in benign prostatic hyperplasia (BPH).",
+      "Prostate-Specific Antigen (PSA), is a glycoprotein produced by cells of the prostate that remains free in the blood. Free PSA test measures the amount of unbound prostate-specific antigen in the blood, which helps physicians to identify problems such as prostate inflammation or tumor. Levels of PSA rise in conditions such as prostate cancer and also in benign prostatic hyperplasia (BPH).",
   },
   {
     id: "25",
@@ -1153,7 +1147,7 @@ export const products = [
     category: "wireless",
     price: 760,
     description:
-    "Anti-dsDNA test looks for anti-double-stranded DNA antibodies which are autoantibodies to double-stranded DNA. Anti-dsDNA antibodies are characteristic of autoimmune disorders such as Systemic Lupus Erythematosus (SLE). The levels of these antibodies fluctuate with disease activity. Anti-ds-DNA antibody titers may decrease with immunosuppressive therapy and when the disease is in remission. Anti-ds-DNA antibody testing is used to help the diagnosis of SLE, distinguish it from other autoimmune conditions, and assist in disease surveillance. Increase in the level of Anti ds-DNA antibody can be a prior indicator of flare-ups in which their symptoms intensify and then subside.",
+      "Anti-dsDNA test looks for anti-double-stranded DNA antibodies which are autoantibodies to double-stranded DNA. Anti-dsDNA antibodies are characteristic of autoimmune disorders such as Systemic Lupus Erythematosus (SLE). The levels of these antibodies fluctuate with disease activity. Anti-ds-DNA antibody titers may decrease with immunosuppressive therapy and when the disease is in remission. Anti-ds-DNA antibody testing is used to help the diagnosis of SLE, distinguish it from other autoimmune conditions, and assist in disease surveillance. Increase in the level of Anti ds-DNA antibody can be a prior indicator of flare-ups in which their symptoms intensify and then subside.",
   },
   {
     id: "25",
@@ -1162,7 +1156,7 @@ export const products = [
     category: "wireless",
     price: 1320,
     description:
-    "HEV is often transmitted through contaminated water and affects the liver. Anti HEV-IgM is the antibodies that are produced in exposure with HEV by the body. The presence of these antibodies serves as a marker of acute HEV infection. Take the benefit of free home collection at a much affordable price just by booking the test from Thyrocare. ",
+      "HEV is often transmitted through contaminated water and affects the liver. Anti HEV-IgM is the antibodies that are produced in exposure with HEV by the body. The presence of these antibodies serves as a marker of acute HEV infection. Take the benefit of free home collection at a much affordable price just by booking the test from Thyrocare. ",
   },
   {
     id: "25",
@@ -1171,7 +1165,7 @@ export const products = [
     category: "wireless",
     price: 760,
     description:
-    "Dehydroepiandrosterone sulfate (DHEA-S) is a steroid hormone, which plays animportant role in the development of secondary sexual characteristics during puberty. Although an androgen (male sex hormone), is present in both males and females. Secretion of DHEA-S is controlled by the adrenocorticotropic hormone produced by the pituitary gland. This test measures the levels of DHEA-S in your blood. Excess production of DHEA-S results in precocious puberty in boys and excess body hair, abnormal menstrual cycle, and ambiguous external genitalia in girls. DHEA-S may be used in the differential diagnosis of Cushing’s syndrome. DHEA-S may also be used in the evaluation of adrenocortical diseases, such as congenital adrenal hyperplasia and adrenal tumors. Take the benefit of free home collection at a much affordable price",
+      "Dehydroepiandrosterone sulfate (DHEA-S) is a steroid hormone, which plays animportant role in the development of secondary sexual characteristics during puberty. Although an androgen (male sex hormone), is present in both males and females. Secretion of DHEA-S is controlled by the adrenocorticotropic hormone produced by the pituitary gland. This test measures the levels of DHEA-S in your blood. Excess production of DHEA-S results in precocious puberty in boys and excess body hair, abnormal menstrual cycle, and ambiguous external genitalia in girls. DHEA-S may be used in the differential diagnosis of Cushing’s syndrome. DHEA-S may also be used in the evaluation of adrenocortical diseases, such as congenital adrenal hyperplasia and adrenal tumors. Take the benefit of free home collection at a much affordable price",
   },
   {
     id: "25",
@@ -1180,7 +1174,7 @@ export const products = [
     category: "wireless",
     price: 310,
     description:
-    "Toxoplasma gondii is an intracellular parasitic protozoan that causes Toxoplasmosis. Infection is typically caused by eating contaminated undercooked meat, coming into contact with infected cat feces, or mother-to-child transmission during pregnancy. Most people with the disease have no symptoms, but it can cause serious complications in infants born to infected mothers and immunocompromised people. Toxo Gondii - IgG tests for the presence of IgG antibodies against Toxoplasma gondii and determines whether an individual has previously been infected with the disease. The absence of IgG antibodies before or early in pregnancy identifies women at risk of infection, while the presence of IgG identifies immunocompromised patients at risk of reactivation of a latent infection. Book this test and get free home collection services at a much-discounted price.",
+      "Toxoplasma gondii is an intracellular parasitic protozoan that causes Toxoplasmosis. Infection is typically caused by eating contaminated undercooked meat, coming into contact with infected cat feces, or mother-to-child transmission during pregnancy. Most people with the disease have no symptoms, but it can cause serious complications in infants born to infected mothers and immunocompromised people. Toxo Gondii - IgG tests for the presence of IgG antibodies against Toxoplasma gondii and determines whether an individual has previously been infected with the disease. The absence of IgG antibodies before or early in pregnancy identifies women at risk of infection, while the presence of IgG identifies immunocompromised patients at risk of reactivation of a latent infection. Book this test and get free home collection services at a much-discounted price.",
   },
   {
     id: "25",
@@ -1189,7 +1183,7 @@ export const products = [
     category: "wireless",
     price: 770,
     description:
-    "Folate ( vitamin B9), along with vitamin B12, checks for malnutrition and anemic conditions if any. Folate, crucial for the normal development of a fetus, is also vital for maintaining overall health making it critical for pregnant women. Book Folate Test at affordable Price with free home collection services.",
+      "Folate ( vitamin B9), along with vitamin B12, checks for malnutrition and anemic conditions if any. Folate, crucial for the normal development of a fetus, is also vital for maintaining overall health making it critical for pregnant women. Book Folate Test at affordable Price with free home collection services.",
   },
   {
     id: "25",
@@ -1198,7 +1192,7 @@ export const products = [
     category: "wireless",
     price: 310,
     description:
-    "Herpes simplex virus (HSV) is a member of the Herpesviridae family, of which two types are known: type 1 (HSV-1) and type-2 (HSV-2) which present slight antigenic differences. The assay of specific IgG is important to establish the serological state of the patient, diagnosis of neonatal infection and encephalitis caused by HSV. Moreover, the presence of specific IgG indicates viral activity in progress, although it is not possible to distinguish between primary infection and reactivation.",
+      "Herpes simplex virus (HSV) is a member of the Herpesviridae family, of which two types are known: type 1 (HSV-1) and type-2 (HSV-2) which present slight antigenic differences. The assay of specific IgG is important to establish the serological state of the patient, diagnosis of neonatal infection and encephalitis caused by HSV. Moreover, the presence of specific IgG indicates viral activity in progress, although it is not possible to distinguish between primary infection and reactivation.",
   },
   {
     id: "25",
@@ -1207,7 +1201,7 @@ export const products = [
     category: "wireless",
     price: 530,
     description:
-    "A Postprandial insulin test measures the insulin levels in the blood after two hours of food consumption. This test assesses whether an adequate amount of insulin is produced by the pancreas to maintain the blood glucose levels post-meal.",
+      "A Postprandial insulin test measures the insulin levels in the blood after two hours of food consumption. This test assesses whether an adequate amount of insulin is produced by the pancreas to maintain the blood glucose levels post-meal.",
   },
   {
     id: "25",
@@ -1216,7 +1210,7 @@ export const products = [
     category: "wireless",
     price: 310,
     description:
-    "Copper is an important trace element in the blood and a component of numerous enzymes and proteins involved in energy production, connective tissue formation, melanin synthesis, iron metabolism, development of central nervous system, formation of new blood vessels (angiogenesis) and antioxidants. Serum Copper test measures the amount of copper present in your blood, thereby aiding in diagnosis of various conditions related to copper deficiency or toxicity. Elevated levels of serum copper can lead to excess deposition of copper in various organs including liver and brain which can directly or indirectly lead to many disorders like Wilson’s disease, Acute renal failure, and Chronic liver disease. Whereas insufficient levels can lead to malnourishment, cardiovascular disease, anemia & neuropathy. Copper levels may also be checked to monitor preterm newborns on nutritional supplementation.",
+      "Copper is an important trace element in the blood and a component of numerous enzymes and proteins involved in energy production, connective tissue formation, melanin synthesis, iron metabolism, development of central nervous system, formation of new blood vessels (angiogenesis) and antioxidants. Serum Copper test measures the amount of copper present in your blood, thereby aiding in diagnosis of various conditions related to copper deficiency or toxicity. Elevated levels of serum copper can lead to excess deposition of copper in various organs including liver and brain which can directly or indirectly lead to many disorders like Wilson’s disease, Acute renal failure, and Chronic liver disease. Whereas insufficient levels can lead to malnourishment, cardiovascular disease, anemia & neuropathy. Copper levels may also be checked to monitor preterm newborns on nutritional supplementation.",
   },
   {
     id: "25",
@@ -1225,7 +1219,7 @@ export const products = [
     category: "wireless",
     price: 310,
     description:
-    "When glucose combines with protein, it forms a compound called Fructosamine. This test measures the total amount of fructosamine of glycated protein in the blood. The test aids in screening Diabetes Mellitus and Gestational Diabetes Mellitus. It is useful in monitoring the control of glucose levels over the past two to three weeks. Increased levels of fructosamine indicate poor glucose control. Book this test and get free home collection services at a much discounted price.",
+      "When glucose combines with protein, it forms a compound called Fructosamine. This test measures the total amount of fructosamine of glycated protein in the blood. The test aids in screening Diabetes Mellitus and Gestational Diabetes Mellitus. It is useful in monitoring the control of glucose levels over the past two to three weeks. Increased levels of fructosamine indicate poor glucose control. Book this test and get free home collection services at a much discounted price.",
   },
   {
     id: "25",
@@ -1234,7 +1228,7 @@ export const products = [
     category: "wireless",
     price: 310,
     description:
-    "Thyrocare has an IT-enabled, 24*7, fully automated diagnostic laboratory set up spanning over 200,000 sq. ft. area for conducting error-free processing of 100,000+ specimens and 400,000+ clinical chemistry investigations per night. A combination of air-cargo logistics and IT-enabled barcoded bi-directional operating systems ensure quick turnaround time for processing of samples that arrive at any time of the day or night from various parts of the country and help achieve this unmatched speed factor.",
+      "Thyrocare has an IT-enabled, 24*7, fully automated diagnostic laboratory set up spanning over 200,000 sq. ft. area for conducting error-free processing of 100,000+ specimens and 400,000+ clinical chemistry investigations per night. A combination of air-cargo logistics and IT-enabled barcoded bi-directional operating systems ensure quick turnaround time for processing of samples that arrive at any time of the day or night from various parts of the country and help achieve this unmatched speed factor.",
   },
   {
     id: "25",
@@ -1243,7 +1237,7 @@ export const products = [
     category: "wireless",
     price: 1030,
     description:
-    "Lp-PLA2 (Lipoprotein-Associated Phospholipase A2) is a vascular-specific enzyme produced by inflammatory cells. It is involved in the formation of plaque (wax made of fats and cholesterol) around the walls of arteries, which if ruptured may lead to a heart attack. Thus, individuals with increased levels of Lp-PLA2 enzyme are at higher risk of cardiovascular disorders and stroke. Some studies indicate that the Lp-PLA2 test is a better marker for detecting a heart-related disease than high-density lipoprotein (HDL) and low-density lipoprotein (LDL) levels. Now free sample collection at your home with discounted costs",
+      "Lp-PLA2 (Lipoprotein-Associated Phospholipase A2) is a vascular-specific enzyme produced by inflammatory cells. It is involved in the formation of plaque (wax made of fats and cholesterol) around the walls of arteries, which if ruptured may lead to a heart attack. Thus, individuals with increased levels of Lp-PLA2 enzyme are at higher risk of cardiovascular disorders and stroke. Some studies indicate that the Lp-PLA2 test is a better marker for detecting a heart-related disease than high-density lipoprotein (HDL) and low-density lipoprotein (LDL) levels. Now free sample collection at your home with discounted costs",
   },
   {
     id: "25",
@@ -1252,7 +1246,7 @@ export const products = [
     category: "wireless",
     price: 310,
     description:
-    "Ketones are chemicals that are produced by the body if cells do not get enough glucose. This test, which determines the level of ketones in the blood. Elevated ketone levels are also seen if a person is fasting, exercising, or consuming more dietary fats than usual or is on diet with restricted calories. High ketone levels may indicate a life-threatening complication of Diabetic Ketoacidosis (DKA), in which the blood becomes too acidic. Book Thyrocare's blood ketone Test at an inexpensive cost with the free home collection.",
+      "Ketones are chemicals that are produced by the body if cells do not get enough glucose. This test, which determines the level of ketones in the blood. Elevated ketone levels are also seen if a person is fasting, exercising, or consuming more dietary fats than usual or is on diet with restricted calories. High ketone levels may indicate a life-threatening complication of Diabetic Ketoacidosis (DKA), in which the blood becomes too acidic. Book Thyrocare's blood ketone Test at an inexpensive cost with the free home collection.",
   },
   {
     id: "25",
@@ -1261,7 +1255,7 @@ export const products = [
     category: "wireless",
     price: 770,
     description:
-    "Erythropoietin (EPO), a glycoprotein hormone, is produced by the kidney and in small amounts, by the liver. EPO is a primary regulator of erythropoiesis and plays a major role to protect RBC from destruction. EPO test helps to diagnose various conditions such as anemia and polycythemia. This assay also aids in the prediction and monitoring of response to recombinant EPO treatment in people with anemia. Patients affected with secondary polycythemia (a condition in which a number of RBC increases) has elevated EPO level. Whereas deficiency of EPO is seen in chronic kidney failure, chronic anemia, or polycythemia vera. Book this test and get Free Sample Collection at Home at an affordable price.",
+      "Erythropoietin (EPO), a glycoprotein hormone, is produced by the kidney and in small amounts, by the liver. EPO is a primary regulator of erythropoiesis and plays a major role to protect RBC from destruction. EPO test helps to diagnose various conditions such as anemia and polycythemia. This assay also aids in the prediction and monitoring of response to recombinant EPO treatment in people with anemia. Patients affected with secondary polycythemia (a condition in which a number of RBC increases) has elevated EPO level. Whereas deficiency of EPO is seen in chronic kidney failure, chronic anemia, or polycythemia vera. Book this test and get Free Sample Collection at Home at an affordable price.",
   },
   {
     id: "25",
@@ -1270,7 +1264,7 @@ export const products = [
     category: "wireless",
     price: 570,
     description:
-    "Apolipoprotein A1 (APO-A1) is the primary protein associated with HDL cholesterol. Increased levels mostly indicate a reduced risk of cardiovascular diseases. Estimation on APO-A1 is needed for monitoring the cardiac risk of subjects with a family history of CVD’s and also evaluating the effectiveness of lipid-lowering therapy. Book your Alipoprotein - B (APO-B) home test for evaluating heart health at an affordable price",
+      "Apolipoprotein A1 (APO-A1) is the primary protein associated with HDL cholesterol. Increased levels mostly indicate a reduced risk of cardiovascular diseases. Estimation on APO-A1 is needed for monitoring the cardiac risk of subjects with a family history of CVD’s and also evaluating the effectiveness of lipid-lowering therapy. Book your Alipoprotein - B (APO-B) home test for evaluating heart health at an affordable price",
   },
   {
     id: "25",
@@ -1279,7 +1273,7 @@ export const products = [
     category: "wireless",
     price: 480,
     description:
-    "Estimation on lipoprotein A is needed for monitoring the cardiac risk of subjects with a family history of cardiovascular disease (CVD) and also evaluating the effectiveness of lipid-lowering therapy. Increased levels mostly indicate a reduced risk of cardiovascular diseases. Book your lipoprotein home test for evaluating heart health at an affordable price",
+      "Estimation on lipoprotein A is needed for monitoring the cardiac risk of subjects with a family history of cardiovascular disease (CVD) and also evaluating the effectiveness of lipid-lowering therapy. Increased levels mostly indicate a reduced risk of cardiovascular diseases. Book your lipoprotein home test for evaluating heart health at an affordable price",
   },
   {
     id: "25",
@@ -1288,7 +1282,7 @@ export const products = [
     category: "wireless",
     price: 770,
     description:
-    "Androstenedione is a steroid hormone secreted by the adrenal glands, ovaries and testicles. It is responsible for the onset of sexual differentiation in males and development of male secondary sexual characteristics after the onset of puberty, including, deepening of voice, growth of facial hair, etc. Excess of androstenedione may result in ambiguous external genitalia (infants external genitals do not appear to be clearly either male or female), hirsutism (abnormal growth of facial hair in females), abnormal menstrual cycles in girls and precocious puberty (puberty before age of 9) in boys. Elevated levels are associated with adrenal cancer, some ovarian and testicular tumors, adrenocortical tumors and congenital adrenal hyperplasia.",
+      "Androstenedione is a steroid hormone secreted by the adrenal glands, ovaries and testicles. It is responsible for the onset of sexual differentiation in males and development of male secondary sexual characteristics after the onset of puberty, including, deepening of voice, growth of facial hair, etc. Excess of androstenedione may result in ambiguous external genitalia (infants external genitals do not appear to be clearly either male or female), hirsutism (abnormal growth of facial hair in females), abnormal menstrual cycles in girls and precocious puberty (puberty before age of 9) in boys. Elevated levels are associated with adrenal cancer, some ovarian and testicular tumors, adrenocortical tumors and congenital adrenal hyperplasia.",
   },
   {
     id: "25",
@@ -1297,7 +1291,7 @@ export const products = [
     category: "wireless",
     price: 770,
     description:
-    "The Immunoglobulin A or IgA test is used to assess the levels of IgA antibodies in the blood. This test aids in screening of autoimmune disorders and cancers, however, the test cannot pinpoint the exact cause of the IgA level fluctuations and correlation with other tests is necessary to find out the root cause for fluctuations in IgA levels. Book IgA test from Thyrocare at a low cost with a home collection facility.",
+      "The Immunoglobulin A or IgA test is used to assess the levels of IgA antibodies in the blood. This test aids in screening of autoimmune disorders and cancers, however, the test cannot pinpoint the exact cause of the IgA level fluctuations and correlation with other tests is necessary to find out the root cause for fluctuations in IgA levels. Book IgA test from Thyrocare at a low cost with a home collection facility.",
   },
   {
     id: "25",
@@ -1306,16 +1300,106 @@ export const products = [
     category: "wireless",
     price: 770,
     description:
-    "The Immunoglobulin M test measures the level of IgM antibodies in the blood. This test is used to assess the immune system status of the person and its ability to deal with antigens. Book IgM test from Thyrocare at a low cost with a home collection facility.",
+      "The Immunoglobulin M test measures the level of IgM antibodies in the blood. This test is used to assess the immune system status of the person and its ability to deal with antigens. Book IgM test from Thyrocare at a low cost with a home collection facility.",
   },
   {
     id: "25",
-    productName: "Phenytoin / Dilantin / Rptoin",
+    productName: "Phenytoin / Dilantin / Eptoin",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 520,
     description:
-    "Phenytoin test offered by Thyrocare aids in monitoring blood Phenytoin concentration and determine if the drug level is within the therapeutic range. Individuals are advised to take up the Phenytoin test every few days after starting phenytoin medication. Routine monitoring of serum phenytoin concentrations is necessary to maintain therapeutic efficacy and avoid toxicity. Phenytoin test may also aid in determining renal failure. Results should often be evaluated in conjunction with the time of blood collection, dosage, and other medical histories.",
+      "Phenytoin test offered by Thyrocare aids in monitoring blood Phenytoin concentration and determine if the drug level is within the therapeutic range. Individuals are advised to take up the Phenytoin test every few days after starting phenytoin medication. Routine monitoring of serum phenytoin concentrations is necessary to maintain therapeutic efficacy and avoid toxicity. Phenytoin test may also aid in determining renal failure. Results should often be evaluated in conjunction with the time of blood collection, dosage, and other medical histories.",
+  },
+  {
+    id: "25",
+    productName: "Cardiolipin Antibody (Acl) - Iga",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 520,
+    description:
+      "Cardiolipin is a phospholipid of outermost layer of cells (cell membranes), mitochondrial membranes and platelets. Cardiolipins play a key role in the process of blood clotting. Anti-cardiolipin antibodies are acquired auto-antibodies produced against cardiolipins and are found in the immunoglobulin classes- IgG, IgM and/or IgA. The presence of anti-cardiolipin antibodies in systemic lupus erythematosus can be related to the development of thrombosis. Anti-cardiolipin antibodies have been found in some cerebrovascular insufficiency, cerebral ischemia and in myocardial infarction. Moreover, this anticardiolipin test also assists in the diagnosis of antiphospholipid syndrome. This diagnosis has significant implications for treatment and prediction of recurrent thrombosis and recurrent miscarriage.",
+  },
+  {
+    id: "25",
+    productName: "Chikungunya-Igm",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 520,
+    description:
+      "Chikungunya virus is transmitted to humans by infected Aedes mosquitoes. Infected patients typically have a sudden onset high fever, incapacitating joint pain, muscle pain, headache, exhaustion, and a maculopapular rash that lasts 3 to 10 days. Chikungunya IgM test measures levels of IgM antibody against the Chikungunya virus and helps in the diagnosis of chikungunya infection during the acute phase of the disease (more than 5 days after symptom onset). Since the clinical signs and symptoms of this infection are similar to those of many other infectious diseases, including Dengue fever, doctors suggest using specific laboratory testing techniques to confirm the infection. The presence of Chikungunya IgM indicates a current or recent infection. Book Thyrocare's Chikungunya - IgM Test at an inexpensive cost with the free home collection.",
+  },
+  {
+    id: "25",
+    productName: "Sex Hormone Binding Globulin (Shbg)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1030,
+    description:
+    "Sex hormone-binding globulin (SHBG) produced by the liver helps to transport biologically inactive forms of hormones such as testosterone, estradiol, and dihydrotestosterone into the bloodstream. Changes in its levels may have an effect on the amount of hormone available to the body. SHBG test is used for the evaluation of androgen deficiency or excess. Increased SHBG may be associated with liver disease, hyperthyroidism, hormone replacement therapy, oral contraceptives, and fertility issue. Deficiency is observed in metabolic syndrome, polycystic ovary syndrome, hypothyroidism, and Cushing syndrome.",
+  },
+  {
+    id: "25",
+    productName: "Ceruloplasmin",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 770,
+    description:
+    "Ceruloplasmin (CER) is the main transport protein for copper in the blood and plays a role in the body's iron metabolism. Measuring levels of ceruloplasmin aids in the diagnosis of copper metabolism disorders. Various factors such as diet, hormone concentrations, and other genetic disorders, may influence plasma concentrations. Physical exercise, pregnancy (late), bile duct obstruction, primary biliary cirrhosis, patients on estrogen therapy, and leukemia exhibit increased levels of ceruloplasmin. Decreased levels are seen in Wilson’s disease, Menkes’s disease, Acute viral hepatitis, Nephrotic syndrome, gastroenteropathies, severe liver disease, malnutrition, and hypochromic anemia. Book Ceruloplasmin test from Thyrocare at a low cost and get home collection services.",
+  },
+  {
+    id: "25",
+    productName: "Anti Hepatitis B Core Antigen (Ahbc) - Total",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 670,
+    description:
+    "Presence of HBcAg (core Antigen) in the cytoplasm and nucleus may reflect disease activity and predict response to antiviral treatment. Anti HBc IgM appears shortly after HBV infection and can be detected in serum soon after the appearance of circulating HBsAg and HBeAg. The levels are high during acute infection and typically disappear within 6 months, though it can persist in some cases of chronic hepatitis. Anti-HBc (IgG antibody) usually remains detectable for a lifetime.Hepatitis B Core antigen test is used to detect hepatitis B virus (HBV) infection in an individual. This test also helps to assess the risk of re-infection/reactivation. Anti-HBc is the only serological marker that can detect HBV infection and potentially infectious blood. This test cannot differentiate between acute, chronic, and resolved HBV infection.",
+  },
+  {
+    id: "25",
+    productName: "Allergy Panel - Non-Veg",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1240,
+    description:
+    "The Allergy Panel - Non-Veg is designed to identify specific allergens in non- vegetarian foods, such as beef, fish, prawns, chicken, mutton, shrimp, crab and pork. For individuals experiencing symptoms like skin rashes, digestive issues or respiratory problems after consuming non-vegetarian foods, this panel offers detailed reports to guide your food choices and plan your diet efficiently. Online booking is available at affordable prices. FREE home sample collection. ",
+  },
+  {
+    id: "25",
+    productName: "Allergy Panel - Inhalant",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1580,
+    description:
+    "The Allergy Panel - Inhalant Test identifies specific airborne or contact allergens and pollutants in the environment that your body may be allergic to. With 79 parameters, this test can detect sensitivities to various inhaled substances that may cause reactions, such as a runny nose, sneezing, red eyes, swelling around the mouth, breathing difficulties, allergic bronchitis, skin rashes, fever and even potentially life-threatening complications. Book an Allergy Panel - Inhalant test to understand your respiratory related conditions better. Get a FREE home sample collection.",
+  },
+  {
+    id: "25",
+    productName: "Allergy Panel - Drug",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 2060,
+    description:
+    "The Allergy Panel - Drug Test screens for potential allergic reactions to various medications. It identifies specific drugs that may trigger an allergic response, helping to ensure safe and effective treatment options. This test provides a detailed list of medications that should be avoided to prevent adverse reactions. Book an Allergy Panel - Drug test at affordable rates and get a FREE home sample collection.",
+  },
+  {
+    id: "25",
+    productName: "Allergy Panel - Food Plus Non-Veg",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 3290,
+    description:
+    "Allergy Panel - Food Plus Non-Veg is a comprehensive test that helps identify specific allergens that may trigger allergic responses in your body. This panel tests for a wide range of allergens, including common veg and non-veg foods. Understanding your allergy triggers can help in managing symptoms and avoiding allergens effectively. Online booking is available at affordable prices. FREE home sample collection. ",
+  },
+  {
+    id: "25",
+    productName: "Allergy Panel - Food Plus Drug",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 3920,
+    description:
+    "Food Allergy is an immune response to a particular food or body's reaction to a particular medicine. Allergy Panel - Food Plus Drug test helps one know about foods and drugs they may be allergic to that may trigger unusual bodily reactions. It identifies specific food and drug allergens and provides details about the comprehensive list of foods and drugs to be avoided. Lab visits and FREE Home collection. Book now ! ",
   },
   {
     id: "25",
@@ -1324,264 +1408,451 @@ export const products = [
     category: "wireless",
     price: 410,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+      "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
   },
   {
     id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
+    productName: "Allergy Panel - Food Plus Inhalant",
     imgUrl: bloodTest01,
     category: "wireless",
-    price: 410,
+    price: 2510,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+    "Allergy Panel - Food Plus Inhalant is a comprehensive test that helps identify specific allergens in the food or environment that may trigger allergic responses in your body. This panel tests for a wide range of allergens, including common foods and inhalants like pollen and dust. If you experience unexplained allergic symptoms such as rashes, hives, breathing difficulties and gastrointestinal issues, or have had adverse reactions to certain foods, environmental factors or medications. Book now to Understand your allergy, manage symptoms and avoid allergens effectively. FREE Home collection.",
   },
   {
     id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
+    productName: "Allergy Panel - Food, Inhalant Plus Non-Veg",
     imgUrl: bloodTest01,
     category: "wireless",
-    price: 410,
+    price: 3450,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+    "Allergy Panel - Food, Inhalant Plus Non-Veg checks for allergic reactions to various foods, inhalants and non-veg items. This test helps identify specific allergens and helps with timely management and treatment. It provides details about the comprehensive list of foods to be avoided. Book an Allergy Panel - Food, Inhalant Plus Non-Veg to understand your body's allergy pattern and manage your food intake effectively. Get a FREE home sample collection. ",
   },
   {
     id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
+    productName: "Allergy Panel - Food, Inhalant Plus Drug",
     imgUrl: bloodTest01,
     category: "wireless",
-    price: 410,
+    price: 4230,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+    "Allergy Panel - Food, Inhalant Plus Drug is a comprehensive test that helps identify specific allergens that may trigger allergic responses in your body. This panel tests for a wide range of allergens, including common foods, inhalants like pollen and dust and various drugs. Understanding your allergy triggers can help manage symptoms and avoid allergens effectively. Book Allergy Panel - Food, Inhalant Plus Drug test, if you have adverse reactions to certain foods, environmental factors or medications. Get a FREE home sample collection. ",
   },
   {
     id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
+    productName: "Allergy Panel - Food, Inhalant, Non-Veg Plus Drug",
     imgUrl: bloodTest01,
     category: "wireless",
-    price: 410,
+    price: 5150,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+    "Allergy Panel: Food, Inhalant, Non-Veg Plus a drug test helps one know about foods, inhalants and medicines one may be allergic to and triggers unusual bodily reactions. It identifies specific allergens and provides details about a comprehensive list of things to be avoided. Book Allergy Panel: Food, Inhalant, Non-Veg Plus Drug test, if you have adverse reactions to certain foods, environmental factors or medications. Get a FREE home sample collection.",
   },
   {
     id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
+    productName: "Unconjugated Estriol (E3)",
     imgUrl: bloodTest01,
     category: "wireless",
-    price: 410,
+    price: 310,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+    "Unconjugated estriol (E3) is a form of estrogen, which is biologically active. It is exclusively produced during pregnancy, unlike other estrogens. Unconjugated Estriol test is included as part of triple marker and quadruple marker test for antenatal screening for monitoring fetal development and knowing the risk of pregnancy-related complications like premature labor or fetal distress. The level of unconjugated estriol rises during pregnancy, especially in the first trimester. Low levels of unconjugated estriol indicate Down and trisomy-18 syndromes, and neural tube defects. High levels of estriol are observed in cases of congenital adrenal hyperplasia. Take the benefit of free home collection at a much affordable price",
   },
   {
     id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
+    productName: "Carbamazepine / Tegretol",
     imgUrl: bloodTest01,
     category: "wireless",
-    price: 410,
+    price: 310,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+    "Carbamazepine is an anti epileptic drug used to treat seizures. Once administered, its absorption in the body is slow and unpredictable with approximately 2-3% of the applied dose discharged via urine. Its concentration peaks about 4-8 hours after ingestion, but it may take up to 26 hours for it to take effect. Monitoring serum carbamazepine levels is done to find out if the drug level is within the therapeutic range there by reducing the risk of toxicity and minimizing the need for additional anticonvulsant medication.",
   },
   {
     id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
+    productName: "Anti Hepatitis B Surface Antigen - Total",
     imgUrl: bloodTest01,
     category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+    price: 870,
   },
   {
     id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
+    productName: "Complement 4 (C4)",
     imgUrl: bloodTest01,
     category: "wireless",
-    price: 410,
+    price: 520,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+    "Complement 4 is one of the activation proteins taking part in the classical pathway of the complement system involved in innate and adaptive immunity. The activation of pathways is related to the utilization of C4, thereby reducing its concentration. Complement 4 test measures the amount of C4 proteins in the blood. Decreased levels of C4 are generally associated with angioedema, autoimmune hemolytic anemia, lupus, and rheumatoid arthritis. This test is also used to monitor protein levels in people who have already been diagnosed with an autoimmune disease. Thyrocare offers Complement 4 at the most affordable price. Sample collection at home available.",
   },
   {
     id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
+    productName: "Anti Hepatitis B Core Antigen (Ahbc) - Igm",
     imgUrl: bloodTest01,
     category: "wireless",
-    price: 410,
+    price: 670,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+    "Presence of HBcAg (core Antigen) in the cytoplasm and nucleus may reflect disease activity and predict response to antiviral treatment. Anti HBc IgM appears shortly after HBV infection and can be detected in serum soon after the appearance of circulating HBsAg and HBeAg. The levels are high during acute infection and typically disappear within 6 months, though it can persist in some cases of chronic hepatitis. Anti-HBc (IgG antibody) usually remains detectable for a lifetime. The Hepatitis B Core antigen test is used to detect hepatitis B virus (HBV) infection in an individual. This test also helps to assess the risk of re-infection/reactivation. Anti-HBc is the only serological marker that can detect HBV infection and potentially infectious blood. This test cannot differentiate between acute, chronic, and resolved HBV infection.",
   },
   {
     id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
+    productName: "Anti Hepatitis B Envelope Antigen (Ahbe) -Total",
     imgUrl: bloodTest01,
     category: "wireless",
-    price: 410,
+    price: 820,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+    "Anti-Hepatitis B Envelop Antigen (Anti-HBe) are antibodies produced by the body in response to the Hepatitis B envelop antigen (HBeAg). When HBeAg appears in blood soon after HBsAg appears or concurrently, it indicates active intrahepatic viral replication which has high chances of transmission.",
   },
   {
     id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
+    productName: "17 Oh Progesterone",
     imgUrl: bloodTest01,
     category: "wireless",
-    price: 410,
+    price: 770,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+    "The steroid hormone, 17-hydroxyprogesterone (17-OHP) is produced as a part of the process of synthesizing the cortisol hormone. This 17-OHP test measures the levels of 17-hydroxyprogesterone in the blood to detect Congenital Adrenal Hyperplasia (CAH), an inherited condition that causes decreased adrenal cortisol and aldosterone, and increased male sex hormone (androgen) production. As a part of routine newborn screening, wherein the infant's sex is unclear (ambiguous genitalia) or when a female has increased growth of facial and body hair (hirsutism) or other symptoms that could be related to elevated male sex hormones, or when a male child has premature sexual development, the 17-OPH test can be performed. Avail this test at the lowest price with a free home collection.",
   },
   {
     id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
+    productName: "Human Growth Hormone (Hgh)",
     imgUrl: bloodTest01,
     category: "wireless",
-    price: 410,
+    price: 520,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+    "Human growth hormone (HGH) is a polypeptide hormone that is secreted by the pituitary gland. It stimulates growth, cell reproduction, and cell regeneration in humans thus influences the normal growth and development of the human body. HGH levels in blood peak during childhood to adolescence, after which they decrease steadily. Deficiency of hGH in children and teenagers results in dwarfism and excess secretion can lead to gigantism. Excess secretion of hGH is generally associated with tumors of the pituitary gland. Thyrocare provides HGH tests at the most reasonable price along with home sample collection.",
   },
   {
     id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
+    productName: "Cytomegalo Virus (Cmv) - Igg",
     imgUrl: bloodTest01,
     category: "wireless",
-    price: 410,
+    price: 310,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+    "Cytomegalovirus infection usually goes unnoticed in healthy people, but it can be fatal in immunocompromised people such as HIV-infected people, organ transplant recipients, or newborn babies. Seronegative female patients infected during pregnancy can transmit the disease to the developing fetus, resulting in congenital abnormalities. The Cytomegalovirus-IgG test is important for assessing the patient immunity status and detecting seroconversion. A significant increase in the anti-cytomegalovirus IgG titer is indicative of a recent or past infection or reactivation of a latent infection.",
   },
   {
     id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
+    productName: "Complement 3 (C3)",
     imgUrl: bloodTest01,
     category: "wireless",
-    price: 410,
+    price: 700,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+    "The complement system important part of the immune system. There are certain plasma proteins involved in the complement system, which destroy the microbes. C3 protein is the critical and most abundant protein in the complement system that helps in killing bacteria and viruses that cause disease. Complement 3 test measures the amount of C3 proteins in the blood. Reduced levels of C3 can help in the diagnosis and monitoring of the treatment of certain diseases. Systemic Lupus Erythematosus (SLE) is one of the autoimmune disorders that often cause abnormal C3 levels. Also, many recurrent bacterial infections are known to occur when there is a deficiency of C3.",
   },
   {
     id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
+    productName: "Cardiolipin Antibody (Acl) -Igg",
     imgUrl: bloodTest01,
     category: "wireless",
-    price: 410,
+    price: 760,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+    "Cardiolipin Antibody (ACL) - IgG test detects the presence of Anti Cardiolipin antibodies against cardiolipins. This test is recommended if you have had personal/family history of inappropriate blood clotting, stroke, heart attacks, autoimmune diseases and miscarriages. It is crucial to undergo this test as it can help you prevent some serious health conditions. Elevated levels can indicate the presence of an autoimmune disorder known as antiphospholipid syndrome (APS). Book a test and get free home sample collection",
   },
   {
     id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
+    productName: "Treponema Pallidum Haemagglutination",
     imgUrl: bloodTest01,
     category: "wireless",
-    price: 410,
+    price: 520,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+    "Treponema Pallidum Haemagglutination is a test that detects syphilis (a sexually transmitted disease) by detecting palladium antibodies against Treponema Pallidum bacteria. It takes nearly 21-90 days for first symptoms to occur after contracting the bacteria. So, if you've had uprotected sexual intercourse in the recent past or are experiencing any initial symptoms (rashes, fever, swollen lymph nodes, sore throat, patchy hair loss, headaches, weight loss, muscle aches, or fatigue), it is crucial to get tested immediately for timely treatment",
   },
   {
     id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
+    productName: "Cardiolipin Antibody (Acl) - Igm",
     imgUrl: bloodTest01,
     category: "wireless",
-    price: 410,
+    price: 760,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+    "This test checks for the presence of cardiolipin antibodies in the blood. Elevated levels are associated with recurrent miscarriage, autoimmune diseases, and abnormal blood clot formation. Cardiolipin Antibody test is available at affordable cost, with a free home collection",
   },
   {
     id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
+    productName: "Thyroglobulin (Tg)",
     imgUrl: bloodTest01,
     category: "wireless",
-    price: 410,
+    price: 1190,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+    "Thyroglobulin (TG) is a glycoprotein that is produced by the follicular cells of the thyroid gland when stimulation is received by the Thyroid Stimulating Hormone (TSH). TG is a precursor for the synthesis of Thyroxine (T4) and Triiodothyronine (T3). It is also an important reservoir of iodine for normal physiological needs. TG undergoes metabolism in the liver and is recycled in the thyroid glands. TG levels are monitored to check the functioning of the thyroid gland. TG test is generally recommended to evaluate the effectiveness of anticancer treatment /surgery in patients suffering from thyroid cancer. Book Thyrocare's Thyroglobulin Test at an inexpensive cost with the home collection.",
   },
   {
     id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
+    productName: "Lithium",
     imgUrl: bloodTest01,
     category: "wireless",
-    price: 410,
+    price: 540,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+    "Lithium is used as a medicine to treat psychiatric illnesses such as bipolar disorders, acute mental illness, and other mood disorders. This test is useful to find out the appropriate dose for those who have just started with lithium treatment. It is also used to ensure that the right dosage is being administered throughout the treatment course. Thyrocare offers this test at a discounted price, along with a free home collection facility.",
   },
   {
     id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
+    productName: "Adenosine Deaminase",
     imgUrl: bloodTest01,
     category: "wireless",
-    price: 410,
+    price: 760,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+    "Adenosine deaminase (ADA) is a protein produced by body cells and is associated with lymphocyte activation. This test measures the amount of adenosine deaminase in pleural fluid. Elevated ADA levels indicate tuberculosis infection of the pleurae. It also helps to determine infections in other fluids such as peritoneal fluid or cerebrospinal fluid (CSF). Thyrocare now offers an affordable Adenosine Deaminase test with the free home collection.",
   },
   {
     id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
+    productName: "Toxo Gondii - Igg",
     imgUrl: bloodTest01,
     category: "wireless",
-    price: 410,
+    price: 310,
     description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
-  },
-  {
-    id: "25",
-    productName: "Covid Antibody Igg (Quantitative)",
-    imgUrl: bloodTest01,
-    category: "wireless",
-    price: 410,
-    description:
-    "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+    "Toxoplasma gondii is an intracellular parasitic protozoa that causes Toxoplasmosis. Infection is typically caused by eating contaminated undercooked meat, coming into contact with infected cat feces, or mother-to-child transmission during pregnancy. Most people with the disease have no symptoms, but it can cause serious complications in infants born to infected mothers and immunocompromised people. Toxo Gondii - IgG tests for the presence of IgG antibodies against Toxoplasma gondii and determines whether an individual has previously been infected with the disease. The absence of IgG antibodies before or early in pregnancy identifies women at risk of infection, while the presence of IgG identifies immunocompromised patients at risk of reactivation of a latent infection.",
   },
 
   {
+    id: "25",
+    productName: "Anti Phospholipid Antibody (Apl) - Igm",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 870,
+    description:
+    "Antiphospholipid antibodies are autoantibodies that bind to negatively charged phospholipids. Antiphospholipid Syndrome (APS) is an autoimmune condition with a variety of clinical symptoms such as arterial and venous thrombosis, thrombocytopenia, recurrent fetal loss, and livedo reticularis as well as cardiac, hematological, and neurological manifestations. It has a greater impact on young women than on young men. Antiphospholipid antibody IgM tests help in the detection and risk assessment of thrombosis in patients with Systemic Lupus Erythematosus and APS. This test can be ordered if a person shows signs and symptoms of a blood clot, such as pain and swelling in the extremities, shortness of breath, and headaches. It can also be ordered if a woman has history of miscarriage.",
+  },
+  {
+    id: "25",
+    productName: "Cytomegalo Virus (Cmv) - Igm",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 310,
+    description:
+    "Cytomegalovirus infection usually goes unnoticed in healthy people, but it can be fatal in immunocompromised people such as HIV-infected people, organ transplant recipients, or newborn babies. Seronegative female patients infected during pregnancy can transmit the disease to the developing fetus, resulting in congenital abnormalities. The Cytomegalovirus-IgG test is important for assessing the patients immunity status and detecting seroconversion. A significant increase in the anti-cytomegalovirus IgG titer is indicative of a recent or past infection or reactivation of a latent infection.",
+  },
+  {
+    id: "25",
+    productName: "Herpes Simplex Virus (Hsv)-Igm",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 310,
+    description:
+    "Herpes Simplex Virus, also known as HSV, is a member of the alpha herpesviridae subfamily. The virus has a large double-stranded DNA genome, enclosed by an icosapentahedral capsid made up of capsomers. Infection by HSV causes lesions or blisters on the skin, lips or genital tract. Herpes Simplex Virus I (HSV-I)- IgM test detects the presence of lgM antibodies, which indicates the presence of HSV infections.",
+  },
+  {
+    id: "25",
+    productName: "Immunoglobulin G (Igg)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 770,
+    description:
+    "Immunoglobulin G (IgG) also known as antibody, is a glycoprotein produced by white blood cells. It is a crucial aspect of our immune response system as it specifically identifies and binds to antigens such as viruses and bacteria and aid in their destruction. IgG is a major class of immunoglobulin that provides primary protection against local and systemic infections of the lower respiratory tract. IgG test measures the level of immunoglobulin G in the blood. Analyzing IgG provides valuable insight into the highly complex humoral immune response. During the initial infection or antigen exposure, specific IgG antibodies are formed, which increase a few weeks later, then decrease and stabilise.",
+  },
+  {
+    id: "25",
+    productName: "Anti Phospholipid Antibody (Apl) - Igg",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 870,
+    description:
+    "These are antibodies produced against components of the cell membranes called phospholipids. Elevated levels are indicative of anti-phospholipid syndrome which is an autoimmune disease that results in blood clots, miscarriage and stillbirth.",
+  },
+  {
+    id: "25",
+    productName: "Hepatitis B Envelope Antigen (Hbeag)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 870,
+  },
+
+  {
+    id: "25",
+    productName: "Covid Antibody Igg - Elisa",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 400,
+    description:
+    "Covid antibody test is a sero-surveillance test to understand the immune response against COVID-19 infection. This test detects the presence of IgG antibodies against SARS-CoV-2 virus. However, presence of antibodies indicate an exposure to the virus. Presence of current infection or complete recovery from the infection cannot be interpreted from this test, for which RT-PCR may be opted. Patients medical history, physical findings and other diagnostic procedures should be taken into consideration for interpretation of obtained results.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igm - Elisa",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 300,
+    description:
+    "Antibody production is the first line of defense against any pathogen. IgM is the first antibody produced in response to attack and is primarily detectable during the early onset of a disease.COVID Antibody IgM is used to semi quantitatively detect these IgM antibodies in blood plasma and serum.If your COVID Antibody IgM test is positive, it indicates that -You have been infected or vaccinated recentlyYour immune system has started responding to the virusesYou may be infected with COVID or recovered recentlyYour body has started responding to the vaccine - Post Vaccination",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibodies-Total (Clia)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 500,
+    description:
+    "COVID Antibodies - Total (C.L.I.A) diagnosis's COVID infection by detecting antibodies in the blood of patients against COVID antigen. This test is specifically recommended for asymptomatic individuals or those with mild symptoms, like cold, cough, flu and loss of smell and taste. Higher levels of IgG in your body indicate a previous infection. Book a test and benefit from free home sample collection",
+  },
+  {
+    id: "25",
+    productName: "Interleukin-6",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1030,
+    description:
+    "Interleukin 6 (IL-6) is a protein produced in different cells. It is a part of a large group of molecules called cytokines. Cytokines have multiple roles to play, especially with directing the body’s immune system. It is produced in response to inflammation, infection, autoimmune disorders, cardiovascular diseases, and some cancers. It functions through activation of the acquired immune system (B and T cells) as well as the innate immune system. It contributes to host defense through the stimulation of acute-phase responses, producing new blood cells, and immune reactions. Book IL6 test at an affordable price, with free home collection from Thyrocare.",
+  },
+
+  {
+    id: "25",
+    productName: "Antidnase-B (Dnb)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 4120,
+    description:
+    "The Anti-DNase B (DNB) test checks for past or recent Strep Throat infection. It detects antibodies produced by the body against Group A streptococcus (GAS) bacteria which cause this Strep throat. This test is highly recommended if you have come in direct contact with an infected person or are experiencing symptoms like cough, hoarseness, fever, pain while swallowing, red/swollen tonsils, white patches on the tonsils, tiny red spots on the palate and swollen lymph nodes near the neck. Book the test at the most affordable rates",
+  },
+  {
+    id: "25",
+    productName: "Hiv-1, Rna Quantitative Pcr",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 3910,
+    description:
+    "The test measures the quantity of HIV viral RNA present in the body. It tells you about disease progress and the response to ongoing antiretroviral therapy, which helps your doctor recommend a more effective treatment regimen if required. The test is also recommended as a preliminary test to detect the presence of HIV in the body. Book now at affordable rates and get a free home sample collection",
+  },
+  {
+    id: "25",
+    productName: "Hepatitis B Virus (Hbv) Qualitative Pcr",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 3240,
+    description:
+    "Hepatitis B Virus (HBV) Qualitative PCR test detects hepatitis infections. The parameters encompass various antigens that evaluate the presence of Hepatitis B virus in your body. This test is typically recommended for individuals who show symptoms such as fatigue, poor appetite, stomach pain, nausea and jaundice. The test also aids in detecting current or past infections, assessing the contagiousness and severity of the infection as well as determining if it has caused liver damage. Get tested for the infection today to mitigate any future complications. Book a test at the most competitive market rates and get from free home sample collection",
+  },
+  {
+    id: "25",
+    productName: "Hepatitis C Virus (Hcv) Qualitative Pcr",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 3240,
+    description:
+    "Hepatitis C Virus (HCV) Qualitative PCR test detects HCV infection by identifying antibodies to HCV in your bloodstream. This test is typically recommended for individuals who show symptoms such as fever, fatigue, decreased appetite, nausea, vomiting, abdominal pain, dark urine, pale stools, joint pain and jaundice. In its chronic stage, this virus can give rise to severe liver problems like cirrhosis and liver cancer. It is advisable to undergo timely testing for early prevention. Book a test and enjoy free home sample collection",
+  },
+  {
+    id: "25",
+    productName: "Tsh - Ultrasensitive",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 210,
+    description:
+    "TSH - Ultrasensitive is a blood test that measures the TSH levels in your body. Ultrasensitive TSH test diagnoses thyroid hormonal imbalance and disorders and monitors treatment response. It also screens the newborn for congenital hypothyroidism. Ultrasensitive TSH ensures highest sensitive and accuracy on the detection. Book a test now if you notice symptoms like hair fall, skin problems, losing or gaining weight, swollen throat, exhaustion, and blurry vision",
+  },
+  {
+    id: "25",
+    productName: "Troponin I Heart Attack Risk",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 650,
+    description:
+    "Cardiac troponin I is a protein found in the cells of your heart muscles. It is released into the bloodstream when your heart muscle is injured. The level of troponin I in the blood can be measured by taking a blood test. In individuals who appear healthy and have no symptoms of cardiovascular disease, the Troponin I Heart Attack Risk helps determine the risk of a future heart attack or other cardiovascular diseases. Add Thyrocare’s Troponin I Heart Attack Risk test to your health checks to help identify your risk of heart.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+      "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Chromogranin A",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 5150,
+  },
+  {
+    id: "25",
+    productName: "Intolerance - Cow Milk",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1030,
+  },
+  {
+    id: "25",
+    productName: "Intolerance - Curd",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1030,
+  },
+  {
+    id: "25",
+    productName: "Intolerance - Yogurt",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1030,
+  },
+  {
+    id: "25",
+    productName: "Intolerance - Mozzarella Cheese",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 1030,
+  },
+  {
+    id: "25",
+    productName: "Intolerance - Buffalo Milk",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+      "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Direct Renin",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 4500,
+  },
+  {
+    id: "25",
+    productName: "Blood Urea Nitrogen (Bun)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 110,
+    description:
+      "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+      "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+      "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+      "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+  {
+    id: "25",
+    productName: "Covid Antibody Igg (Quantitative)",
+    imgUrl: bloodTest01,
+    category: "wireless",
+    price: 410,
+    description:
+      "COVID Antibody test is used to recognize individuals with adaptive immune response against SARS-CoV-2, which indicates a recent or prior infection. Generally, IgG antibodies start to develop after 2 weeks from the onset or after recovering from an infection.",
+  },
+
+
+  {
     id: "01",
-    productName: "5-Fu Genotyping And Toxicity Test (pharmacogenomics) - (Outlab)",
+    productName:
+      "5-Fu Genotyping And Toxicity Test (pharmacogenomics) - (Outlab)",
     imgUrl: bloodTest01,
     category: "Blood",
     price: 3624,
@@ -1840,7 +2111,8 @@ export const products = [
 
   {
     id: "20",
-    productName: "Aml Multiplex Basic Reflex To Flt3-Itd Allelic Ratio - (Outlab)",
+    productName:
+      "Aml Multiplex Basic Reflex To Flt3-Itd Allelic Ratio - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 17342,
@@ -2227,7 +2499,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Beta Thalassemia Additional 14 Mutations (3 Family Members) - (Outlab)",
+    productName:
+      "Beta Thalassemia Additional 14 Mutations (3 Family Members) - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 16519,
@@ -2249,7 +2522,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Beta Thalassemia Single Gene Mutation Confirmation - (Outlab)",
+    productName:
+      "Beta Thalassemia Single Gene Mutation Confirmation - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 5285,
@@ -2260,7 +2534,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Blau Syndrome (nod2/Card15 Gene) (exon 4 Part 1-5) - (Outlab)",
+    productName:
+      "Blau Syndrome (nod2/Card15 Gene) (exon 4 Part 1-5) - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 26613,
@@ -2447,7 +2722,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Chromosome Breakage Study For Ataxia Telangiectasia - (Outlab)",
+    productName:
+      "Chromosome Breakage Study For Ataxia Telangiectasia - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 11747,
@@ -2458,7 +2734,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Chromosome Breakage Study For Blooms/Cockayne Syndrome - (Outlab)",
+    productName:
+      "Chromosome Breakage Study For Blooms/Cockayne Syndrome - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 10844,
@@ -2546,7 +2823,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Crohns Disease (nod2/Card15 Gene) (r702w, G908r, 1007fs Mutations) - (Outlab)",
+    productName:
+      "Crohns Disease (nod2/Card15 Gene) (r702w, G908r, 1007fs Mutations) - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 16823,
@@ -2557,7 +2835,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Crohn’s Disease (nod2/Card15 Gene) (exon 4 Part 1-5) - (Outlab)",
+    productName:
+      "Crohn’s Disease (nod2/Card15 Gene) (exon 4 Part 1-5) - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 26613,
@@ -2656,7 +2935,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Ewings Sarcoma /Ewsr1 Gene Rearrangement (22q12) For Ewing Sarcoma - (Outlab)",
+    productName:
+      "Ewings Sarcoma /Ewsr1 Gene Rearrangement (22q12) For Ewing Sarcoma - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 8678,
@@ -2766,7 +3046,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Fish For 1p Loss/Deletion And 1q Gain /Amplification - (Outlab)",
+    productName:
+      "Fish For 1p Loss/Deletion And 1q Gain /Amplification - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 5230,
@@ -2788,7 +3069,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Fish For Any One Microdeletion Syndrome With Karyotyping - (Outlab)",
+    productName:
+      "Fish For Any One Microdeletion Syndrome With Karyotyping - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 6946,
@@ -2821,7 +3103,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Fish For Bcr-Abl/Philadelphia Or Ph Chromosome/T(9;22) For All - (Outlab)",
+    productName:
+      "Fish For Bcr-Abl/Philadelphia Or Ph Chromosome/T(9;22) For All - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 5230,
@@ -2843,7 +3126,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Fish For Burkitt’s Lymphoma / (8q24) /(c-Myc) Rearrangement - (Outlab)",
+    productName:
+      "Fish For Burkitt’s Lymphoma / (8q24) /(c-Myc) Rearrangement - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 5230,
@@ -2854,7 +3138,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Fish For Cll 1 Set (chr. 12 And Del 13q Or Del P53 And Del Atm) - (Outlab)",
+    productName:
+      "Fish For Cll 1 Set (chr. 12 And Del 13q Or Del P53 And Del Atm) - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 5285,
@@ -2865,7 +3150,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Fish For Cll 2 Sets (chr. 12, Del 13q, Del P53 And Del Atm) - (Outlab)",
+    productName:
+      "Fish For Cll 2 Sets (chr. 12, Del 13q, Del P53 And Del Atm) - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 8534,
@@ -2876,7 +3162,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Fish For Common Chromosomal Aneuploidies (13, 18, 21, X And Y) On Products Of Conception - (Outlab)",
+    productName:
+      "Fish For Common Chromosomal Aneuploidies (13, 18, 21, X And Y) On Products Of Conception - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 5213,
@@ -2975,7 +3262,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Fish For Hyper-Eosinophilic Syndrome (4q12) (fip1l1-Pdgfra) - (Outlab)",
+    productName:
+      "Fish For Hyper-Eosinophilic Syndrome (4q12) (fip1l1-Pdgfra) - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 5230,
@@ -3019,7 +3307,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Fish For Mm Panel (chr. 12, Del 13q, Del P53 And Del Atm) - (Outlab)",
+    productName:
+      "Fish For Mm Panel (chr. 12, Del 13q, Del P53 And Del Atm) - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 12288,
@@ -3030,7 +3319,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Fish For Mm Panel (chr. 12, Del 13q, Del P53, Del Atm And Igh) - (Outlab)",
+    productName:
+      "Fish For Mm Panel (chr. 12, Del 13q, Del P53, Del Atm And Igh) - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 15510,
@@ -3041,7 +3331,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Fish For Mm Panel Additional Probe [igh/T(4;14)/T(14;16)] - (Outlab)",
+    productName:
+      "Fish For Mm Panel Additional Probe [igh/T(4;14)/T(14;16)] - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 4707,
@@ -3052,7 +3343,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Fish For Mm Panel For 1 Probe Set (chr. 12, Del 13q, Or Del P53, Del Atm) - (Outlab)",
+    productName:
+      "Fish For Mm Panel For 1 Probe Set (chr. 12, Del 13q, Or Del P53, Del Atm) - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 9400,
@@ -3085,7 +3377,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Fish For Post Bmt Xx/Xy Chimerism (sex Mismatched Bmt) - (Outlab)",
+    productName:
+      "Fish For Post Bmt Xx/Xy Chimerism (sex Mismatched Bmt) - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 5230,
@@ -3096,7 +3389,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Fish For Presence Or Absence Of Sry In Case Of Xy Female Or Xx Male - (Outlab)",
+    productName:
+      "Fish For Presence Or Absence Of Sry In Case Of Xy Female Or Xx Male - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 5230,
@@ -3129,7 +3423,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Fish For Sex Chromosome Mosaicism (turner/Klinefelter Syndrome) From Blood  - (Outlab)",
+    productName:
+      "Fish For Sex Chromosome Mosaicism (turner/Klinefelter Syndrome) From Blood  - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 4346,
@@ -3140,7 +3435,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Fish For Sex Chromosome Mosaicism (turner/Klinefelter Syndrome) From Buccal Cells - (Outlab)",
+    productName:
+      "Fish For Sex Chromosome Mosaicism (turner/Klinefelter Syndrome) From Buccal Cells - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 4346,
@@ -3283,7 +3579,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Fish For Wolf Hirschhorn Syndrome (whs) Or 4p Deletion - (Outlab)",
+    productName:
+      "Fish For Wolf Hirschhorn Syndrome (whs) Or 4p Deletion - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 5230,
@@ -3314,7 +3611,6 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
   },
-
 
   {
     id: "23",
@@ -3539,7 +3835,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Follicular Fluid Fish In Case Of Ivf Procedure (for X Chromosome Mosaiciasm) - (Outlab)",
+    productName:
+      "Follicular Fluid Fish In Case Of Ivf Procedure (for X Chromosome Mosaiciasm) - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 5230,
@@ -3706,7 +4003,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Hbv Combo Test Including Quantitative Test And Genotyping - (Outlab)",
+    productName:
+      "Hbv Combo Test Including Quantitative Test And Genotyping - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 11920,
@@ -3717,7 +4015,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Hcv Combo Test Including Quantitative Test And Genotyping - (Outlab)",
+    productName:
+      "Hcv Combo Test Including Quantitative Test And Genotyping - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 11920,
@@ -3761,7 +4060,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Hids/Mvk (mvk Gene) (exon 9: I268t; Exon 11 V377i) - (Outlab)",
+    productName:
+      "Hids/Mvk (mvk Gene) (exon 9: I268t; Exon 11 V377i) - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 11538,
@@ -3805,7 +4105,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Histopathology Special Stain: Acid Fast (z N Stain) - (Outlab)",
+    productName:
+      "Histopathology Special Stain: Acid Fast (z N Stain) - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 600,
@@ -3827,7 +4128,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Histopathology Special Stain: Gomoris Methenamine Silver - (Outlab)",
+    productName:
+      "Histopathology Special Stain: Gomoris Methenamine Silver - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 750,
@@ -3838,7 +4140,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Histopathology Special Stain: Periodic Acid Schiff (pas) - (Outlab)",
+    productName:
+      "Histopathology Special Stain: Periodic Acid Schiff (pas) - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 600,
@@ -4885,7 +5188,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Low-Grade Mosaicism Detection By Fish On Buccal Cells - (Outlab)",
+    productName:
+      "Low-Grade Mosaicism Detection By Fish On Buccal Cells - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 4346,
@@ -4940,7 +5244,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Mammacore Homologous Recombination Deficiency(hrr) - (Outlab)",
+    productName:
+      "Mammacore Homologous Recombination Deficiency(hrr) - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 32504,
@@ -4973,7 +5278,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Metaphase Fish 22q Microdeletion-Di-George Syndrome - (Outlab)",
+    productName:
+      "Metaphase Fish 22q Microdeletion-Di-George Syndrome - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 3000,
@@ -5050,7 +5356,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Modified Radicle Mastectomy -Breast With Er/Pr & Her-2/Nu - (Outlab)",
+    productName:
+      "Modified Radicle Mastectomy -Breast With Er/Pr & Her-2/Nu - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 8101,
@@ -5127,7 +5434,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Nomid/Cinca/ Mws/ Fcas (nlrp3/Cias1 Gene) (exon 3, Part 1-4) - (Outlab)",
+    productName:
+      "Nomid/Cinca/ Mws/ Fcas (nlrp3/Cias1 Gene) (exon 3, Part 1-4) - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 21674,
@@ -5204,7 +5512,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Oncomine Myeloid Panel [mds, Mpn, Aml, Cml, Cmml, Jmml] - (Outlab)",
+    productName:
+      "Oncomine Myeloid Panel [mds, Mpn, Aml, Cml, Cmml, Jmml] - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 26006,
@@ -5568,7 +5877,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Synovial Sarcoma /Ss18 Gene Rearrangement, T(x;18)(p11;q11) - (Outlab)",
+    productName:
+      "Synovial Sarcoma /Ss18 Gene Rearrangement, T(x;18)(p11;q11) - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 10844,
@@ -5645,7 +5955,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Total Hysterectomy Of Uterus (uterus+cx+both Ft+both Ovaries) - (Outlab)",
+    productName:
+      "Total Hysterectomy Of Uterus (uterus+cx+both Ft+both Ovaries) - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 1531,
@@ -5667,7 +5978,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Tpmt Genotyping And Toxicity Test (pharmacogenomics) - (Outlab)",
+    productName:
+      "Tpmt Genotyping And Toxicity Test (pharmacogenomics) - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 3624,
@@ -5722,7 +6034,8 @@ export const products = [
   },
   {
     id: "23",
-    productName: "Tumour/Mass Histopathology With Surgical Margins Study - (Outlab)",
+    productName:
+      "Tumour/Mass Histopathology With Surgical Margins Study - (Outlab)",
     imgUrl: bloodTest01,
     category: "wireless",
     price: 1500,
@@ -5784,5 +6097,4 @@ export const products = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
   },
-
 ];

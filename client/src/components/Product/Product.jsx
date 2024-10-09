@@ -77,7 +77,7 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
       >
         <div className="product-info">
           <h3 onClick={handleClick}>{productItem.productName}</h3>
-          <p>Lab: {productItem.labName}</p>
+          <p>Test: {productItem.labName}</p>
         </div>
         <div className="product-price">
           <h4>&#8377;{productItem.price}</h4>
