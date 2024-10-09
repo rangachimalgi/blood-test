@@ -23,7 +23,7 @@ const HealthPackagesList = ({ packageIds }) => {
   const handleBookNow = (pkg) => {
     setSelectedPackage(pkg);
     setShowCheckout(true);
-    navigate(`/health/${pkg.id}`);  // Navigate to the health package page
+    navigate(`/health/${pkg.id}`); // Navigate to the health package page
   };
 
   const handleCloseCheckout = () => {
@@ -73,20 +73,18 @@ const HealthPackagesList = ({ packageIds }) => {
               <div className="package-name">{pkg.productName}</div>
               <div className="package-desc">{pkg.desc}</div>
             </div>
-
             <div className="price-cart-box">
-              {/* Display MRP with strikethrough and discounted price */}
               <div className="price-box">
-                <span className="mrp">&#8377;{pkg.mrp}</span> {/* MRP with strikethrough */}
-                <span className="discounted-price">&#8377;{pkg.price}</span> {/* Discounted price */}
+                <span className="mrp">&#8377;{pkg.mrp}</span>
+                <span className="discounted-price">&#8377;{pkg.price}</span>
               </div>
-              <button
-                className="book-now-button"
-                onClick={() => handleBookNow(pkg)}
-              >
-                Book Now
-              </button>
             </div>
+            <button
+              className="book-now-button"
+              onClick={() => handleBookNow(pkg)}
+            >
+              Book Now
+            </button>
             <div className="extra-details-with-logo">
               <div className="logo-container">
                 <img src={logo} alt="Logo" className="package-logo" />
@@ -101,7 +99,8 @@ const HealthPackagesList = ({ packageIds }) => {
                     Pickup
                   </li>
                   <li>
-                    <i className="fa fa-check-circle"></i> Online Report Delivery
+                    <i className="fa fa-check-circle"></i> Online Report
+                    Delivery
                   </li>
                 </ul>
               </div>
