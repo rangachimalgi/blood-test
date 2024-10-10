@@ -49,9 +49,9 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
   
 
   const handleBookNow = (pkg) => {
-    setSelectedPackage(pkg);
-    setShowCheckout(true);
-  };
+    setSelectedProduct(pkg);  // Assuming you still want to set the selected product in context or state
+    router(`/shop/${pkg.id}`);  // Navigate to the product-specific page
+};
 
   const handleCloseCheckout = () => {
     setShowCheckout(false);
