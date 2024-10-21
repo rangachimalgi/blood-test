@@ -17,6 +17,10 @@
   overflow: hidden;
   background-color: #fff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Flexbox to align elements vertically */
+  justify-content: space-between; /* Ensures proper spacing between items */
+  height: 100%; /* Ensures consistent height for all cards */
 }
 
 .package-link {
@@ -92,6 +96,7 @@
 
 .package-details {
   padding: 15px;
+  flex-grow: 1; /* Allows the package details to take up remaining space */
 }
 
 .package-name {
@@ -143,14 +148,18 @@
   background-color: #0F3460;
   color: #fff;
   border: none;
-  padding: 5px 10px;
+  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+  width: 70%; /* Set a smaller fixed width */
+  text-align: center;
+  margin: 20px auto 0; /* Center the button horizontally */
 }
 
 .book-now-button:hover {
   background-color: #072a48;
 }
+
 
 .extra-details-with-logo {
   display: flex;
