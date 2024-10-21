@@ -77,8 +77,8 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
       >
         <div className="product-info">
           <h3 onClick={handleClick}>{productItem.productName}</h3>
-          <p>Test: {productItem.labName}</p>
-        </div>
+          <p>{productItem.labName || '\u00A0'}</p>
+          </div>
         <div className="product-price">
           <h4>&#8377;{productItem.price}</h4>
           <div className="product-buttons">
