@@ -8,31 +8,33 @@ const ProductSearchBar = () => {
   const [inputValue, setInputValue] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 
-  const handleSearch = () => {
-    const searchTerm = inputValue.toLowerCase();
+  const handleSearch = (searchTerm) => {
+    const filteredProducts = products
+      .filter((item) =>
+        item.productName
+          ? item.productName.toLowerCase().includes(searchTerm)
+          : false
+      )
+      .map((item) => ({ ...item, type: "product" })); // Add type property
 
-    const filteredProducts = products.filter((item) =>
-      item.productName
-        ? item.productName.toLowerCase().includes(searchTerm)
-        : false
-    );
+      console.log("Filtered Products:", filteredProducts);
 
-    const filteredPackages = healthPackagesArray.filter((item) =>
-      item.productName
-        ? item.productName.toLowerCase().includes(searchTerm)
-        : false
-    );
+    const filteredPackages = healthPackagesArray
+      .filter((item) =>
+        item.productName
+          ? item.productName.toLowerCase().includes(searchTerm)
+          : false
+      )
+      .map((item) => ({ ...item, type: "package" })); // Add type property
 
     const combinedResults = [...filteredProducts, ...filteredPackages];
     setSearchResults(combinedResults);
-    console.log("Filtered Products:", filteredProducts);
-    console.log("Filtered Packages:", filteredPackages);
-    console.log("Combined Results:", combinedResults);
   };
 
   const handleChange = (input) => {
-    setInputValue(input.target.value);
-    handleSearch();
+    const newValue = input.target.value;
+    setInputValue(newValue);
+    handleSearch(newValue.toLowerCase());
   };
 
   const navigate = useNavigate();
@@ -40,7 +42,7 @@ const ProductSearchBar = () => {
   const handleProductClick = (item) => {
     if (item.type === "package") {
       navigate(`/health/${item.id}`);
-    } else {
+    } else if (item.type === "product") {
       navigate(`/shop/${item.id}`);
     }
 
@@ -58,11 +60,8 @@ const ProductSearchBar = () => {
       />
       <div className="search-dropdown">
         {inputValue &&
-          searchResults.map((item, index) => (
-            <div
-              key={index} // temporary solution
-              onClick={() => handleProductClick(item)}
-            >
+          searchResults.map((item) => (
+            <div key={item.id} onClick={() => handleProductClick(item)}>
               {item.productName || item.packageName}
             </div>
           ))}

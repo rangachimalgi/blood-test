@@ -14,17 +14,21 @@ const ProductDetails = () => {
   const [relatedProducts, setRelatedProducts] = useState([]);
   const [includedTests, setIncludedTests] = useState([]);
   const [expandedCategory, setExpandedCategory] = useState(null);
-  const { selectedProduct, setSelectedProduct, addToCart } =
-    useContext(DataContainer);
+  const { addToCart } = useContext(DataContainer);
   const { id } = useParams();
+  const [selectedProduct, setSelectedProduct] = useState(null); // Initialize state
   const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
-    if (!selectedProduct) {
-      const storedProduct = localStorage.getItem(`selectedProduct-${id}`);
-      setSelectedProduct(JSON.parse(storedProduct));
+    // Retrieve the product from the products array using the ID from the URL
+    const product = products.find((item) => item.id === id);
+    if (product) {
+      setSelectedProduct(product);
+    } else {
+      // Handle the case where the product is not found
+      console.error(`Product with id ${id} not found`);
     }
-  }, [id, selectedProduct, setSelectedProduct]);
+  }, [id]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -45,12 +49,6 @@ const ProductDetails = () => {
     );
   }, [selectedProduct]);
 
-  useEffect(() => {
-    return () => {
-      setSelectedProduct(null);
-    };
-  }, [setSelectedProduct]);
-
   const handleQuantityChange = (event) => {
     setQuantity(parseInt(event.target.value));
   };
@@ -70,35 +68,25 @@ const ProductDetails = () => {
               <section>
                 <Row className="justify-content-center">
                   <Col md={6}>
-                    <img loading="lazy" src={selectedProduct?.imgUrl} alt="" />
+                    <img
+                      loading="lazy"
+                      src={selectedProduct?.imgUrl}
+                      alt={selectedProduct?.productName}
+                    />
                   </Col>
-                  <h1>{selectedProduct?.products}</h1>
                   <Col md={6}>
                     <h2>{selectedProduct?.productName}</h2>
                     <div className="info">
-                      <span className="price">&#8377;{selectedProduct?.price}</span>
-                      <span>category: {selectedProduct?.category}</span>
+                      <span className="price">
+                        &#8377;{selectedProduct?.price}
+                      </span>
+                      <span>Category: {selectedProduct?.category}</span>
                     </div>
                     <p>{selectedProduct?.shortDesc}</p>
-                    {/* <input
-                      className="qty-input"
-                      type="number"
-                      placeholder="Qty"
-                      value={quantity}
-                      onChange={handleQuantityChange}
-                    />
-                    <button
-                      aria-label="Add"
-                      type="submit"
-                      className="add"
-                      onClick={() => handleAdd(selectedProduct, quantity)}
-                    >
-                      Add To Cart
-                    </button> */}
                   </Col>
                 </Row>
               </section>
-              
+
               {/* Included Tests section */}
               {selectedProduct?.includedTests &&
                 selectedProduct.includedTests.length > 0 && (
@@ -137,7 +125,9 @@ const ProductDetails = () => {
                         {expandedCategory === category.categoryName && (
                           <Row>
                             {category.tests.map((testId) => {
-                              const test = products.find((p) => p.id === testId);
+                              const test = products.find(
+                                (p) => p.id === testId
+                              );
                               return (
                                 <Col md={4} key={testId}>
                                   <div className="test-item">
@@ -171,7 +161,7 @@ const ProductDetails = () => {
                   <div className="rates">
                     {selectedProduct?.reviews.map((rate) => (
                       <div className="rate-comment" key={rate.rating}>
-                        <span>Jhon Doe</span>
+                        <span>John Doe</span>
                         <span>{rate.rating} (rating)</span>
                         <p>{rate.text}</p>
                       </div>
@@ -179,11 +169,6 @@ const ProductDetails = () => {
                   </div>
                 )}
               </section>
-
-              {/* <section className="related-products">
-                <h3>You might also like</h3>
-                <ShopList productItems={relatedProducts} addToCart={addToCart} />
-              </section> */}
             </div>
           </Col>
           <Col md={4}>
