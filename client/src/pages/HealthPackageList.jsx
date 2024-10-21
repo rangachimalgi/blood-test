@@ -70,7 +70,7 @@ const HealthPackagesList = ({ packageIds }) => {
               </div>
             </Link>
             <div className="package-details">
-              <div className="package-name">{pkg.productName}</div>
+              <div className="package-name">{pkg.productName.toUpperCase()}</div>
               <div className="package-desc">{pkg.desc}</div>
             </div>
             <div className="price-cart-box">

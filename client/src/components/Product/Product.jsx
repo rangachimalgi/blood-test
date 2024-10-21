@@ -76,7 +76,7 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
         className="product-list-item"
       >
         <div className="product-info">
-          <h3 onClick={handleClick}>{productItem.productName}</h3>
+          <h3 onClick={handleClick} style={{ fontSize: '20px', fontWeight: '600' }}>{productItem.productName.toUpperCase()}</h3>
           <p>{productItem.labName || '\u00A0'}</p>
           </div>
         <div className="product-price">
