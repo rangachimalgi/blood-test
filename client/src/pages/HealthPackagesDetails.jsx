@@ -48,7 +48,7 @@ const HealthPackageDetails = () => {
                     <img loading="lazy" src={selectedProduct?.imgUrl} alt="" />
                   </Col>
                   <Col md={6}>
-                    <h2>{selectedProduct?.productName}</h2>
+                  <h2 style={{ fontSize: '17px', fontWeight: '700' }}>{selectedProduct?.productName}</h2>
 
                     {/* CHANGED: Display MRP with a strikethrough and discounted price */}
                     <div className="price-box">
