@@ -60,18 +60,22 @@ const HealthPackagesList = ({ packageIds }) => {
                   className="package-image"
                 />
                 <div className="hover-overlay">
-                  <h2>{pkg.overlayTitle}</h2>
+                  <h2>{pkg.overlayTitle.toUpperCase()}</h2>
                   <ul>
                     {pkg.overlayDetails?.map((detail, index) => (
-                      <li key={index}>{detail}</li>
+                      <li key={index}>{detail.toUpperCase()}</li>
                     ))}
                   </ul>
                 </div>
               </div>
             </Link>
             <div className="package-details">
-              <div className="package-name">{pkg.productName.toUpperCase()}</div>
-              <div className="package-desc">{pkg.desc}</div>
+              <div className="package-name">
+                {pkg.productName.toUpperCase()}
+              </div>
+              <div className="package-desc">
+                {pkg.desc ? pkg.desc.toUpperCase() : ""}
+              </div>
             </div>
             <div className="price-cart-box">
               <div className="price-box">

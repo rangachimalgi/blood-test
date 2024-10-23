@@ -102,14 +102,14 @@ const HealthPackageDetails = () => {
                             <span className="toggle-icon">
                               {openCategoryId === category.categoryName ? "-" : "+"}
                             </span>
-                            {category.categoryName}
+                            {category.categoryName.toUpperCase()}
                           </h4>
 
                           <Collapse in={openCategoryId === category.categoryName}>
                             <div className="test-list">
                               {category.tests.map((testName, index) => (
                                 <div key={index} className="test-item">
-                                  {testName}
+                                  {testName.toUpperCase()}
                                 </div>
                               ))}
                             </div>
