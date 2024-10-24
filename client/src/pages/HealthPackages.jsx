@@ -127,7 +127,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "COMPLETE HEMOGRAM (28)",
+        categoryName: "COMPLETE HEMOGRAM (Includes 28 Tests)",
         tests: [
           "Basophils - absolute count",
           "Eosinophils - absolute count",
@@ -260,7 +260,7 @@ export const healthPackagesArray = [
     type: "package",
     includedTests: [
       {
-        categoryName: "CARDIAC RISK MARKERS",
+        categoryName: "CARDIAC RISK MARKERS (Includes 5 Tests)",
         tests: [
           "Apo b / apo a1 ratio (apo b/a1)",
           "Apolipoprotein - a1 (apo-a1)",
@@ -307,7 +307,7 @@ export const healthPackagesArray = [
         tests: ["HbA1c", "AVERAGE BLOOD GLUCOSE (ABG)"],
       },
       {
-        categoryName: "HORMONE",
+        categoryName: "HORMONE (Includes 1 Tests)",
         tests: ["Testosterone"],
       },
       {
@@ -402,7 +402,7 @@ export const healthPackagesArray = [
     type: "package",
     includedTests: [
       {
-        categoryName: "LIPID ",
+        categoryName: "LIPID (Includes 10 Tests)",
         tests: [
           "Total cholesterol",
           "Hdl cholesterol - direct",
@@ -417,7 +417,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "TOXIC ELEMENTS (22)",
+        categoryName: "TOXIC ELEMENTS (Includes 22 Tests)",
         tests: [
           "Silver",
           "Aluminium",
@@ -444,7 +444,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "THYROID",
+        categoryName: "THYROID (Includes 3 Tests)",
         tests: [
           "Total triiodothyronine (t3)",
           "Total thyroxine (t4)",
@@ -452,7 +452,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "LIVER",
+        categoryName: "LIVER (Includes 12 Tests)",
         tests: [
           "Serum alb/globulin ratio",
           "Alkaline phosphatase",
@@ -469,7 +469,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "RENAL",
+        categoryName: "RENAL (Includes 7 Tests)",
         tests: [
           "Bun / sr.creatinine ratio",
           "Blood urea nitrogen (bun)",
@@ -481,7 +481,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "IRON DEFICIENCY",
+        categoryName: "IRON DEFICIENCY (Includes 4 Tests)",
         tests: [
           "% transferrin saturation",
           "Iron",
@@ -490,7 +490,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "CARDIAC RISK MARKERS",
+        categoryName: "CARDIAC RISK MARKERS (Includes 5 Tests)",
         tests: [
           "Apo b / apo a1 ratio (apo b/a1)",
           "Apolipoprotein - a1 (apo-a1)",
@@ -517,7 +517,7 @@ export const healthPackagesArray = [
     ],
     overlayTitle: "AAROGYAM 1.1",
     overlayDetails: [
-      "Cardiac Risk Markers (5)",
+      "Cardiac Risk Markers (Includes 6 Tests)",
       "Iron Deficiency (4)",
       "Lipid (10)",
       "Liver (12)",
@@ -533,7 +533,7 @@ export const healthPackagesArray = [
     type: "package",
     includedTests: [
       {
-        categoryName: "LIPID ",
+        categoryName: "LIPID (Includes 10 Tests)",
         tests: [
           "Total cholesterol",
           "Hdl cholesterol - direct",
@@ -548,7 +548,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "COMPLETE HEMOGRAM (28)",
+        categoryName: "COMPLETE HEMOGRAM (Includes 28 Tests)",
         tests: [
           "Basophils - absolute count",
           "Eosinophils - absolute count",
@@ -581,7 +581,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "TOXIC ELEMENTS",
+        categoryName: "TOXIC ELEMENTS (Includes 22 Tests)",
         tests: [
           "Silver",
           "Aluminium",
@@ -608,7 +608,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "THYROID",
+        categoryName: "THYROID (Includes 3 Tests)",
         tests: [
           "Total triiodothyronine (t3)",
           "Total thyroxine (t4)",
@@ -616,11 +616,11 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "DIABETES",
+        categoryName: "DIABETES (Includes 2 Tests)",
         tests: ["Average blood glucose (abg)", "Hba1c"],
       },
       {
-        categoryName: "LIVER",
+        categoryName: "LIVER (Includes 12 Tests)",
         tests: [
           "Serum alb/globulin ratio",
           "Alkaline phosphatase",
@@ -637,7 +637,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "RENAL",
+        categoryName: "RENAL (Includes 7 Tests)",
         tests: [
           "Bun / sr.creatinine ratio",
           "Blood urea nitrogen (bun)",
@@ -649,7 +649,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "IRON DEFICIENCY",
+        categoryName: "IRON DEFICIENCY (Includes 4 Tests)",
         tests: [
           "% transferrin saturation",
           "Iron",
@@ -658,7 +658,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "CARDIAC RISK MARKERS",
+        categoryName: "CARDIAC RISK MARKERS (Includes 5 Tests)",
         tests: [
           "Apo b / apo a1 ratio (apo b/a1)",
           "Apolipoprotein - a1 (apo-a1)",
@@ -704,7 +704,7 @@ export const healthPackagesArray = [
     type: "package",
     includedTests: [
       {
-        categoryName: "LIPID ",
+        categoryName: "LIPID (Includes 10 Tests)",
         tests: [
           "Total cholesterol",
           "Hdl cholesterol - direct",
@@ -719,7 +719,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "COMPLETE HEMOGRAM",
+        categoryName: "COMPLETE HEMOGRAM (Includes 28 Tests)",
         tests: [
           "Basophils - absolute count",
           "Eosinophils - absolute count",
@@ -752,7 +752,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "TOXIC ELEMENTS",
+        categoryName: "TOXIC ELEMENTS (Includes 22 Tests)",
         tests: [
           "Silver",
           "Aluminium",
@@ -779,7 +779,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "THYROID",
+        categoryName: "THYROID (Includes 3 Tests)",
         tests: [
           "Total triiodothyronine (t3)",
           "Total thyroxine (t4)",
@@ -787,11 +787,11 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "DIABETES",
+        categoryName: "DIABETES (Includes 2 Tests)",
         tests: ["Average blood glucose (abg)", "Hba1c"],
       },
       {
-        categoryName: "LIVER",
+        categoryName: "LIVER (Includes 12 Tests)",
         tests: [
           "Serum alb/globulin ratio",
           "Alkaline phosphatase",
@@ -808,7 +808,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "RENAL",
+        categoryName: "RENAL (Includes 8 Tests)",
         tests: [
           "Bun / sr.creatinine ratio",
           "Blood urea nitrogen (bun)",
@@ -821,7 +821,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "IRON DEFICIENCY",
+        categoryName: "IRON DEFICIENCY (Includes 4 Tests)",
         tests: [
           "% transferrin saturation",
           "Iron",
@@ -830,7 +830,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "CARDIAC RISK MARKERS",
+        categoryName: "CARDIAC RISK MARKERS (Includes 6 Tests)",
         tests: [
           "Apo b / apo a1 ratio (apo b/a1)",
           "Apolipoprotein - a1 (apo-a1)",
@@ -841,15 +841,15 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "VITAMINS",
+        categoryName: "VITAMINS (Includes 2 Tests)",
         tests: ["Vitamin b-12", "25-oh vitamin d (total)"],
       },
       {
-        categoryName: "ELEMENTS",
+        categoryName: "ELEMENTS (Includes 2 Tests)",
         tests: ["Serum copper", "Serum zinc"],
       },
       {
-        categoryName: "HORMONE",
+        categoryName: "HORMONE (Includes 1 Tests)",
         tests: ["Testosterone"],
       },
     ],
@@ -892,7 +892,7 @@ export const healthPackagesArray = [
     type: "package",
     includedTests: [
       {
-        categoryName: "DIABETES ",
+        categoryName: "DIABETES (Includes 4 Tests)",
         tests: [
           "Average blood glucose (abg)",
           "Blood ketone (d3hb)",
@@ -901,7 +901,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "LIPID",
+        categoryName: "LIPID (Includes 10 Tests)",
         tests: [
           "Total cholesterol",
           "Hdl cholesterol - direct",
@@ -916,11 +916,11 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "PANCREATIC",
+        categoryName: "PANCREATIC (Includes 2 Tests)",
         tests: ["Amylase", "Lipase"],
       },
       {
-        categoryName: "COMPLETE HEMOGRAM",
+        categoryName: "COMPLETE HEMOGRAM (Includes 28 Tests)",
         tests: [
           "Basophils - absolute count",
           "Eosinophils - absolute count",
@@ -953,7 +953,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "TOXIC ELEMENTS",
+        categoryName: "TOXIC ELEMENTS (Includes 22 Tests)",
         tests: [
           "Silver",
           "Aluminium",
@@ -980,7 +980,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "THYROID",
+        categoryName: "THYROID (Includes 3 Tests)",
         tests: [
           "Total triiodothyronine (t3)",
           "Total thyroxine (t4)",
@@ -988,7 +988,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "LIVER",
+        categoryName: "LIVER (Includes 13 Tests)",
         tests: [
           "Serum alb/globulin ratio",
           "Alpha-1-antitrypsin (aat)",
@@ -1006,7 +1006,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "RENAL",
+        categoryName: "RENAL (Includes 8 Tests)",
         tests: [
           "Bun / sr.creatinine ratio",
           "Blood urea nitrogen (bun)",
@@ -1019,7 +1019,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "IRON DEFICIENCY",
+        categoryName: "IRON DEFICIENCY (Includes 4 Tests)",
         tests: [
           "% transferrin saturation",
           "Iron",
@@ -1028,7 +1028,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "CARDIAC RISK MARKERS",
+        categoryName: "CARDIAC RISK MARKERS (Includes 6 Tests)",
         tests: [
           "Apo b / apo a1 ratio (apo b/a1)",
           "Apolipoprotein - a1 (apo-a1)",
@@ -1039,19 +1039,19 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "VITAMINS",
+        categoryName: "VITAMINS (Includes 2 Tests)",
         tests: ["Vitamin b-12", "25-oh vitamin d (total)"],
       },
       {
-        categoryName: "ELECTROLYTES",
+        categoryName: "ELECTROLYTES (Includes 2 Tests)",
         tests: ["Chloride", "Sodium"],
       },
       {
-        categoryName: "ELEMENTS",
+        categoryName: "ELEMENTS (Includes 2 Tests)",
         tests: ["Serum copper", "Serum zinc"],
       },
       {
-        categoryName: "HORMONE",
+        categoryName: "HORMONE (Includes 1 Tests)",
         tests: ["Testosterone"],
       },
     ],
@@ -1096,7 +1096,7 @@ export const healthPackagesArray = [
     type: "package",
     includedTests: [
       {
-        categoryName: "DIABETES ",
+        categoryName: "DIABETES (Includes 5 Tests)",
         tests: [
           "Average blood glucose (abg)",
           "Blood ketone (d3hb)",
@@ -1106,7 +1106,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "LIPID",
+        categoryName: "LIPID (Includes 10 Tests)",
         tests: [
           "Total cholesterol",
           "Hdl cholesterol - direct",
@@ -1121,11 +1121,11 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "PANCREATIC",
+        categoryName: "PANCREATIC (Includes 2 Tests)",
         tests: ["Amylase", "Lipase"],
       },
       {
-        categoryName: "COMPLETE HEMOGRAM",
+        categoryName: "COMPLETE HEMOGRAM (Includes 28 Tests)",
         tests: [
           "Basophils - absolute count",
           "Eosinophils - absolute count",
@@ -1158,7 +1158,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "TOXIC ELEMENTS",
+        categoryName: "TOXIC ELEMENTS (Includes 22 Tests)",
         tests: [
           "Silver",
           "Aluminium",
@@ -1185,7 +1185,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "THYROID",
+        categoryName: "THYROID (Includes 3 Tests)",
         tests: [
           "Total triiodothyronine (t3)",
           "Total thyroxine (t4)",
@@ -1193,7 +1193,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "LIVER",
+        categoryName: "LIVER (Includes 13 Tests)",
         tests: [
           "Serum alb/globulin ratio",
           "Alpha-1-antitrypsin (aat)",
@@ -1211,7 +1211,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "RENAL",
+        categoryName: "RENAL (Includes 8 Tests)",
         tests: [
           "Bun / sr.creatinine ratio",
           "Blood urea nitrogen (bun)",
@@ -1224,7 +1224,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "IRON DEFICIENCY",
+        categoryName: "IRON DEFICIENCY (Includes 5 Tests)",
         tests: [
           "% transferrin saturation",
           "Ferritin",
@@ -1234,7 +1234,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "CARDIAC RISK MARKERS",
+        categoryName: "CARDIAC RISK MARKERS (Includes 6 Tests)",
         tests: [
           "Apo b / apo a1 ratio (apo b/a1)",
           "Apolipoprotein - a1 (apo-a1)",
@@ -1245,19 +1245,19 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "VITAMINS",
+        categoryName: "VITAMINS (Includes 3 Tests)",
         tests: ["Folate", "Vitamin b-12", "25-oh vitamin d (total)"],
       },
       {
-        categoryName: "ELECTROLYTES",
+        categoryName: "ELECTROLYTES (Includes 2 Tests)",
         tests: ["Chloride", "Sodium"],
       },
       {
-        categoryName: "ELEMENTS",
+        categoryName: "ELEMENTS (Includes 2 Tests)",
         tests: ["Serum copper", "Serum zinc"],
       },
       {
-        categoryName: "HORMONE",
+        categoryName: "HORMONE (Includes 1 Tests)",
         tests: ["Testosterone"],
       },
     ],
@@ -1301,7 +1301,7 @@ export const healthPackagesArray = [
     type: "package",
     includedTests: [
       {
-        categoryName: "DIABETES ",
+        categoryName: "DIABETES (Includes 5 Tests)",
         tests: [
           "Average blood glucose (abg)",
           "Blood ketone (d3hb)",
@@ -1311,7 +1311,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "LIPID",
+        categoryName: "LIPID (Includes 10 Tests)",
         tests: [
           "Total cholesterol",
           "Hdl cholesterol - direct",
@@ -1326,11 +1326,11 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "PANCREATIC",
+        categoryName: "PANCREATIC (Includes 2 Tests)",
         tests: ["Amylase", "Lipase"],
       },
       {
-        categoryName: "COMPLETE HEMOGRAM",
+        categoryName: "COMPLETE HEMOGRAM (Includes 28 Tests)",
         tests: [
           "Basophils - absolute count",
           "Eosinophils - absolute count",
@@ -1363,7 +1363,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "TOXIC ELEMENTS",
+        categoryName: "TOXIC ELEMENTS (Includes 22 Tests)",
         tests: [
           "Silver",
           "Aluminium",
@@ -1390,7 +1390,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "THYROID",
+        categoryName: "THYROID (Includes 3 Tests)",
         tests: [
           "Total triiodothyronine (t3)",
           "Total thyroxine (t4)",
@@ -1398,7 +1398,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "LIVER",
+        categoryName: "LIVER (Includes 13 Tests)",
         tests: [
           "Serum alb/globulin ratio",
           "Alpha-1-antitrypsin (aat)",
@@ -1416,7 +1416,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "RENAL",
+        categoryName: "RENAL (Includes 8 Tests)",
         tests: [
           "Bun / sr.creatinine ratio",
           "Blood urea nitrogen (bun)",
@@ -1429,7 +1429,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "IRON DEFICIENCY",
+        categoryName: "IRON DEFICIENCY (Includes 5 Tests)",
         tests: [
           "% transferrin saturation",
           "Ferritin",
@@ -1439,7 +1439,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "CARDIAC RISK MARKERS",
+        categoryName: "CARDIAC RISK MARKERS (Includes 6 Tests)",
         tests: [
           "Apo b / apo a1 ratio (apo b/a1)",
           "Apolipoprotein - a1 (apo-a1)",
@@ -1450,23 +1450,23 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "VITAMINS",
+        categoryName: "VITAMINS (Includes 3 Tests)",
         tests: ["Folate", "Vitamin b-12", "25-oh vitamin d (total)"],
       },
       {
-        categoryName: "ELECTROLYTES",
+        categoryName: "ELECTROLYTES (Includes 2 Tests)",
         tests: ["Chloride", "Sodium"],
       },
       {
-        categoryName: "ELEMENTS",
+        categoryName: "ELEMENTS (Includes 2 Tests)",
         tests: ["Serum copper", "Serum zinc"],
       },
       {
-        categoryName: "HORMONE",
+        categoryName: "HORMONE (Includes 1 Tests)",
         tests: ["Testosterone"],
       },
       {
-        categoryName: "ARTHRITIS",
+        categoryName: "ARTHRITIS (Includes 2 Tests)",
         tests: ["Anti ccp (accp)", "Anti nuclear antibodies (ana)"],
       },
     ],
@@ -1511,7 +1511,7 @@ export const healthPackagesArray = [
     type: "package",
     includedTests: [
       {
-        categoryName: "DIABETES ",
+        categoryName: "DIABETES (Includes 5 Tests)",
         tests: [
           "Average blood glucose (abg)",
           "Blood ketone (d3hb)",
@@ -1521,7 +1521,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "LIPID",
+        categoryName: "LIPID (Includes 10 Tests)",
         tests: [
           "Total cholesterol",
           "Hdl cholesterol - direct",
@@ -1536,11 +1536,11 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "PANCREATIC",
+        categoryName: "PANCREATIC (Includes 2 Tests)",
         tests: ["Amylase", "Lipase"],
       },
       {
-        categoryName: "COMPLETE HEMOGRAM",
+        categoryName: "COMPLETE HEMOGRAM (Includes 28 Tests)",
         tests: [
           "Basophils - absolute count",
           "Eosinophils - absolute count",
@@ -1573,7 +1573,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "TOXIC ELEMENTS",
+        categoryName: "TOXIC ELEMENTS (Includes 22 Tests)",
         tests: [
           "Silver",
           "Aluminium",
@@ -1600,7 +1600,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "THYROID",
+        categoryName: "THYROID (Includes 3 Tests)",
         tests: [
           "Total triiodothyronine (t3)",
           "Total thyroxine (t4)",
@@ -1608,7 +1608,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "LIVER",
+        categoryName: "LIVER (Includes 13 Tests)",
         tests: [
           "Serum alb/globulin ratio",
           "Alpha-1-antitrypsin (aat)",
@@ -1626,7 +1626,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "RENAL",
+        categoryName: "RENAL (Includes 8 Tests)",
         tests: [
           "Bun / sr.creatinine ratio",
           "Blood urea nitrogen (bun)",
@@ -1639,7 +1639,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "IRON DEFICIENCY",
+        categoryName: "IRON DEFICIENCY (Includes 5 Tests)",
         tests: [
           "% transferrin saturation",
           "Ferritin",
@@ -1649,7 +1649,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "CARDIAC RISK MARKERS",
+        categoryName: "CARDIAC RISK MARKERS (Includes 7 Tests)",
         tests: [
           "Apo b / apo a1 ratio (apo b/a1)",
           "Apolipoprotein - a1 (apo-a1)",
@@ -1661,23 +1661,23 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "VITAMINS",
+        categoryName: "VITAMINS (Includes 3 Tests)",
         tests: ["Folate", "Vitamin b-12", "25-oh vitamin d (total)"],
       },
       {
-        categoryName: "ELECTROLYTES",
+        categoryName: "ELECTROLYTES (Includes 2 Tests)",
         tests: ["Chloride", "Sodium"],
       },
       {
-        categoryName: "ELEMENTS",
+        categoryName: "ELEMENTS (Includes 2 Tests)",
         tests: ["Serum copper", "Serum zinc"],
       },
       {
-        categoryName: "HORMONE",
+        categoryName: "HORMONE (Includes 1 Tests)",
         tests: ["Testosterone"],
       },
       {
-        categoryName: "ARTHRITIS",
+        categoryName: "ARTHRITIS (Includes 2 Tests)",
         tests: ["Anti ccp (accp)", "Anti nuclear antibodies (ana)"],
       },
     ],
@@ -1722,7 +1722,7 @@ export const healthPackagesArray = [
     type: "package",
     includedTests: [
       {
-        categoryName: "CARDIAC RISK MARKERS ",
+        categoryName: "CARDIAC RISK MARKERS (Includes 7 Tests)",
         tests: [
           "Apo b / apo a1 ratio (apo b/a1)",
           "Apolipoprotein - a1 (apo-a1)",
@@ -1734,7 +1734,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "COMPLETE HEMOGRAM",
+        categoryName: "COMPLETE HEMOGRAM (Includes 9 Tests)",
         tests: [
           "Basophils - absolute count",
           "Eosinophils - absolute count",
@@ -1748,7 +1748,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "DIABETES",
+        categoryName: "DIABETES (Includes 5 Tests)",
         tests: [
           "Average blood glucose (abg)",
           "Blood ketone (d3hb)",
@@ -1758,19 +1758,19 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "ELECTROLYTES",
+        categoryName: "ELECTROLYTES (Includes 2 Tests)",
         tests: ["Chloride", "Sodium"],
       },
       {
-        categoryName: "ELEMENTS",
+        categoryName: "ELEMENTS (Includes 2 Tests)",
         tests: ["Serum copper", "Serum zinc"],
       },
       {
-        categoryName: "HORMONE",
+        categoryName: "HORMONE (Includes 1 Tests)",
         tests: ["Testosterone"],
       },
       {
-        categoryName: "IRON DEFICIENCY",
+        categoryName: "IRON DEFICIENCY (Includes 4 Tests)",
         tests: [
           "% transferrin saturation",
           "Iron",
@@ -1779,7 +1779,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "LIPID",
+        categoryName: "LIPID (Includes 10 Tests)",
         tests: [
           "Total cholesterol",
           "Hdl cholesterol - direct",
@@ -1794,7 +1794,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "LIVER",
+        categoryName: "LIVER (Includes 13 Tests)",
         tests: [
           "Serum alb/globulin ratio",
           "Alpha-1-antitrypsin (aat)",
@@ -1812,11 +1812,11 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "PANCREATIC",
+        categoryName: "PANCREATIC (Includes 2 Tests)",
         tests: ["Amylase", "Lipase"],
       },
       {
-        categoryName: "RENAL",
+        categoryName: "RENAL (Includes 8 Tests)",
         tests: [
           "Bun / sr.creatinine ratio",
           "Blood urea nitrogen (bun)",
@@ -1829,7 +1829,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "THYROID",
+        categoryName: "THYROID (Includes 3 Tests)",
         tests: [
           "Total triiodothyronine (t3)",
           "Total thyroxine (t4)",
@@ -1837,7 +1837,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "TOXIC ELEMENTS",
+        categoryName: "TOXIC ELEMENTS (Includes 22 Tests)",
         tests: [
           "Silver",
           "Aluminium",
@@ -1864,7 +1864,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "VITAMINS",
+        categoryName: "VITAMINS (Includes 14 Tests)",
         tests: [
           "Vitamin d total",
           "Vitamin d2",
@@ -5168,7 +5168,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "COMPLETE HEMOGRAM ()",
+        categoryName: "COMPLETE HEMOGRAM (Includes 28 Tests)",
         tests: [
           "Basophils - absolute count",
           "Eosinophils - absolute count",
@@ -8626,7 +8626,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "PANCREATIC",
+        categoryName: "PANCREATIC (Includes 2 Tests)",
         tests: ["Amylase", "Lipase"],
       },
     ],
@@ -12235,7 +12235,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "TOXIC ELEMENTS (22)",
+        categoryName: "TOXIC ELEMENTS (Includes 22 Tests)",
         tests: [
           "Silver",
           "Aluminium",
@@ -12434,7 +12434,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "Std (Includes 2 tests)",
+        categoryName: "Std (Includes 4 tests)",
         tests: [
           "Chlamydia trachomatis pcr",
           "Mycoplasma genitalium pcr",
@@ -12645,7 +12645,7 @@ export const healthPackagesArray = [
 
   {
     id: "130",
-    productName: "Torch All Ten (8 Tests)",
+    productName: "Torch All Ten (10 Tests)",
     type: "package",
     includedTests: [
       {
@@ -12722,7 +12722,7 @@ export const healthPackagesArray = [
 
   {
     id: "132",
-    productName: "Tumour Panel (Male) (8 Tests)",
+    productName: "Tumour Panel (Male) (7 Tests)",
     type: "package",
     includedTests: [
       {
@@ -13548,7 +13548,7 @@ export const healthPackagesArray = [
     type: "package",
     includedTests: [
       {
-        categoryName: "COMPLETE HEMOGRAM (28)",
+        categoryName: "COMPLETE HEMOGRAM (Includes 28 Tests)",
         tests: [
           "Basophils - absolute count",
           "Eosinophils - absolute count",
@@ -13678,11 +13678,11 @@ export const healthPackagesArray = [
     type: "package",
     includedTests: [
       {
-        categoryName: "Cardiac Risk Markers (1)",
+        categoryName: "Cardiac Risk Markers (Includes 1 Tests)",
         tests: ["C-reactive protein (crp)"],
       },
       {
-        categoryName: "COMPLETE HEMOGRAM (28)",
+        categoryName: "COMPLETE HEMOGRAM (Includes 28 Tests)",
         tests: [
           "Basophils - absolute count",
           "Eosinophils - absolute count",
@@ -13715,7 +13715,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "Fever (5)",
+        categoryName: "Fever (Includes 5 Tests)",
         tests: [
           "Chikungunya-igm",
           "Plasmodium falciparum",
@@ -13725,15 +13725,15 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "Infection (1)",
+        categoryName: "Infection (Includes 1 Tests)",
         tests: ["Dengue-igm - elisa"],
       },
       {
-        categoryName: "Infectious Diseases (1)",
+        categoryName: "Infectious Diseases (Includes 1 Tests)",
         tests: ["Dengue ns1 antigen - elisa"],
       },
       {
-        categoryName: "Liver (3)",
+        categoryName: "Liver (Includes 3 Tests)",
         tests: [
           "Sgot / sgpt ratio",
           "Aspartate aminotransferase (sgot )",
@@ -13741,7 +13741,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "Other Counts (1)",
+        categoryName: "Other Counts (Includes 1 Tests)",
         tests: ["Erythrocyte sedimentation rate (esr)"],
       },
     ],
@@ -13779,7 +13779,7 @@ export const healthPackagesArray = [
     type: "package",
     includedTests: [
       {
-        categoryName: "COMPLETE HEMOGRAM (28)",
+        categoryName: "COMPLETE HEMOGRAM (Includes 28 Tests)",
         tests: [
           "Basophils - absolute count",
           "Eosinophils - absolute count",
@@ -13812,7 +13812,7 @@ export const healthPackagesArray = [
         ],
       },
       {
-        categoryName: "Fever (6)",
+        categoryName: "Fever (Includes 6 Tests)",
         tests: [
           "Plasmodium falciparum",
           "Plasmodium vivax",
@@ -13849,11 +13849,11 @@ export const healthPackagesArray = [
     type: "package",
     includedTests: [
       {
-        categoryName: "Cardiac Risk Markers (1)",
+        categoryName: "Cardiac Risk Markers (Includes 1 Tests)",
         tests: ["C-reactive protein (crp)"],
       },
       {
-        categoryName: "COMPLETE HEMOGRAM (28)",
+        categoryName: "COMPLETE HEMOGRAM (Includes 28 Tests)",
         tests: [
           "Basophils - absolute count",
           "Eosinophils - absolute count",
@@ -13952,7 +13952,7 @@ export const healthPackagesArray = [
         tests: ["C-reactive protein (crp)"],
       },
       {
-        categoryName: "COMPLETE HEMOGRAM (28)",
+        categoryName: "COMPLETE HEMOGRAM (Includes 28 Tests)",
         tests: [
           "Basophils - absolute count",
           "Eosinophils - absolute count",
@@ -14079,7 +14079,7 @@ export const healthPackagesArray = [
         tests: ["C-reactive protein (crp)"],
       },
       {
-        categoryName: "COMPLETE HEMOGRAM (28)",
+        categoryName: "COMPLETE HEMOGRAM (Includes 28 Tests)",
         tests: [
           "Basophils - absolute count",
           "Eosinophils - absolute count",
@@ -14215,7 +14215,7 @@ export const healthPackagesArray = [
         tests: ["Anti - dsdna"],
       },
       {
-        categoryName: "COMPLETE HEMOGRAM (28)",
+        categoryName: "COMPLETE HEMOGRAM (Includes 28 Tests)",
         tests: [
           "Basophils - absolute count",
           "Eosinophils - absolute count",
@@ -14301,7 +14301,7 @@ export const healthPackagesArray = [
         tests: ["Anti nuclear antibodies (ana)"],
       },
       {
-        categoryName: "COMPLETE HEMOGRAM (28)",
+        categoryName: "COMPLETE HEMOGRAM (Includes 28 Tests)",
         tests: [
           "Basophils - absolute count",
           "Eosinophils - absolute count",
