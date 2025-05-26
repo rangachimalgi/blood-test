@@ -17,6 +17,8 @@ function UploadReportForm({ orderId, onReportUpload }) {
       formData.append("report", file);
     });
 
+    console.log("API BASE URL:", process.env.REACT_APP_API_URL);
+
     try {
       await axios.post(
         `${process.env.REACT_APP_API_URL}/api/orders/${orderId}/upload-report`,
@@ -29,6 +31,7 @@ function UploadReportForm({ orderId, onReportUpload }) {
       );
       alert("Report uploaded successfully!");
       onReportUpload();
+      console.log("API BASE URL:", process.env.REACT_APP_API_URL);
     } catch (error) {
       console.error("Error uploading report:", error);
       alert("Error uploading report. Please try again.");

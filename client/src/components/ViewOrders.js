@@ -164,7 +164,7 @@ function ViewOrders() {
                             <div key={report} style={{ position: "relative" }}>
                               <a
                                 className="styled-link"
-                                href={`${process.env.REACT_APP_API_URL}${report}`}
+                                href={`${process.env.REACT_APP_API_URL}${report.storedPath}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
