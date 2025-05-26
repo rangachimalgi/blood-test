@@ -3,6 +3,7 @@ import Order from "../models/Orders.js";
 import multer from "multer";
 import { uploadReport } from "../controllers/orderController.js";
 import { downloadReports } from "../controllers/orderController.js";
+import { generateInvoiceHandler } from "../controllers/orderController.js";
 
 const router = express.Router();
 const storage = multer.memoryStorage();
@@ -11,6 +12,8 @@ const upload = multer({ storage: storage });
 router.get("/:orderId/download-reports", downloadReports);
 
 router.post("/:orderId/upload-report", upload.array("report"), uploadReport);
+
+router.post("/:orderId/generate-invoice", generateInvoiceHandler);
 
 router.post("/", async (req, res) => {
   const {

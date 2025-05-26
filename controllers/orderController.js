@@ -6,6 +6,7 @@ import util from "util";
 import Order from "../models/Orders.js";
 import archiver from "archiver";
 import { sendEmail } from "./emailHelper.js";
+import generateInvoice from "../generateInvoice.js";
 
 const writeFile = util.promisify(fs.writeFile);
 
@@ -59,6 +60,27 @@ export const sendReportsByEmail = async (req, res) => {
   } catch (error) {
     console.error("Error:", error);
     res.status(500).send("Error processing request.");
+  }
+};
+
+export const generateInvoiceHandler = async (req, res) => {
+  try {
+    const order = await Order.findById(req.params.orderId);
+    if (!order) {
+      return res.status(404).send("Order not found.");
+    }
+
+    const invoicePath = await generateInvoice(order);
+
+    res.download(invoicePath, `invoice_${order._id}.pdf`, (err) => {
+      if (err) {
+        console.error("Error sending invoice:", err);
+        res.status(500).send("Failed to send invoice.");
+      }
+    });
+  } catch (error) {
+    console.error("Error generating invoice:", error);
+    res.status(500).send("Invoice generation failed.");
   }
 };
 
