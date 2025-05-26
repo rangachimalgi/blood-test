@@ -30,6 +30,11 @@ app.use(cors());
 app.use(bodyParser.json({ limit: '10mb' })); // Adjust the limit as needed
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: true })); // Adjust the limit as needed
 app.use(express.json());
+app.use((req, res, next) => {
+  res.setHeader("Cross-Origin-Embedder-Policy", "require-corp");
+  res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
+  next();
+});
 
 //use specific routes
 
@@ -42,16 +47,15 @@ app.use("/api/orders", (req, res, next) => {
   console.log(`API Request Received: ${new Date().toISOString()} - Method: ${req.method} - Path: ${req.originalUrl}`);
   next();
 }, orderRoutes);
-app.use('uploads', express.static(path.join(__dirname, 'uploads')));
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 //static files
 app.use(express.static(path.join(__dirname, 'client', 'build')));
 
-app.get('*', function (req, res) {
-  const index = path.join(__dirname,'client', 'build', 'index.html');
+app.get(/^\/(?!api|uploads).*/, function (req, res) {
+  const index = path.join(__dirname, 'client', 'build', 'index.html');
   res.sendFile(index);
 });
-
 // Start the server
 const PORT = process.env.PORT || 8080;
 

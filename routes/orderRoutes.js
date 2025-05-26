@@ -1,21 +1,30 @@
-import express from 'express';
-import Order from '../models/Orders.js';
+import express from "express";
+import Order from "../models/Orders.js";
+import multer from "multer";
+import { uploadReport } from "../controllers/orderController.js";
+import { downloadReports } from "../controllers/orderController.js";
 
 const router = express.Router();
+const storage = multer.memoryStorage();
+const upload = multer({ storage: storage });
+
+router.get("/:orderId/download-reports", downloadReports);
+
+router.post("/:orderId/upload-report", upload.array("report"), uploadReport);
 
 router.post("/", async (req, res) => {
-  const { 
-    pincode, 
-    name, 
-    email, 
-    address, 
-    phoneno, 
-    age, 
-    noOfPersons, 
-    appointmentDate, 
+  const {
+    pincode,
+    name,
+    email,
+    address,
+    phoneno,
+    age,
+    noOfPersons,
+    appointmentDate,
     tests,
-    beneficiaries, 
-    cartItems 
+    beneficiaries,
+    cartItems,
   } = req.body;
 
   console.log("Received Order Data: ", req.body); // Log received data
@@ -31,7 +40,7 @@ router.post("/", async (req, res) => {
     appointmentDate,
     tests,
     beneficiaries,
-    cartItems
+    cartItems,
   });
 
   try {
@@ -59,7 +68,9 @@ router.get("/", async (req, res) => {
     res.status(200).json(orders);
   } catch (error) {
     console.error("Error Fetching Orders:", error.message);
-    res.status(500).json({ message: "Error fetching orders", error: error.message });
+    res
+      .status(500)
+      .json({ message: "Error fetching orders", error: error.message });
   }
 });
 
