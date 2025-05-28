@@ -19,6 +19,16 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
   const [pincodeMessage, setPincodeMessage] = useState("");
 
   useEffect(() => {
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const formatted = tomorrow.toLocaleDateString("en-CA"); // yyyy-mm-dd
+    setOrderData((prev) => ({
+      ...prev,
+      appointmentDate: formatted,
+    }));
+  }, []);
+
+  useEffect(() => {
     setOrderData((prevState) => ({
       ...prevState,
       beneficiaries: Array.from({ length: prevState.noOfPersons }, () => ({
@@ -101,18 +111,22 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
 
   const generateDateOptions = () => {
     const options = [];
-    const currentDate = new Date();
+    const startDate = new Date();
+    startDate.setDate(startDate.getDate() + 1); // Start from tomorrow
+
     for (let i = 0; i < 7; i++) {
-      const date = new Date();
-      date.setDate(currentDate.getDate() + i);
-      const dateString = date.toLocaleDateString("en-US", {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-      });
+      const date = new Date(startDate); // ✅ clone instead of mutating
+      date.setDate(startDate.getDate() + i);
+
+      const dateString = date.toLocaleDateString("en-CA"); // using "YYYY-MM-DD" format
+
       options.push(
         <option key={i} value={dateString}>
-          {dateString}
+          {date.toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+          })}
         </option>
       );
     }
