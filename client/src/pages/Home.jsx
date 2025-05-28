@@ -40,7 +40,7 @@ const Home = () => {
           if (toastId.current) {
             toast.dismiss(toastId.current); // Dismiss the toast
             toastId.current = null; // Reset toastId
-          }
+          } 
         }}
       >
         Go to Cart

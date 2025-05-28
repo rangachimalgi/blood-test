@@ -120,257 +120,239 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
   };
 
   return (
-    <Modal show={show} onHide={handleClose}>
-      <Modal.Header closeButton>
-        <Modal.Title>Checkout Form</Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <Form>
-          <Form.Group controlId="formPincode">
-            <InputGroup>
+    <div className="checkout-form-embedded p-3 border rounded bg-light">
+      <h4 className="mb-3">Checkout Form</h4>
+      <Form>
+        <Form.Group controlId="formPincode">
+          <InputGroup>
+            <Form.Control
+              type="text"
+              placeholder="Enter Pincode"
+              value={orderData.pincode}
+              onChange={(e) =>
+                setOrderData({ ...orderData, pincode: e.target.value })
+              }
+              name="pincode"
+            />
+            <Button variant="outline-secondary" onClick={checkAvailability}>
+              Check Availability
+            </Button>
+          </InputGroup>
+          <Form.Text className="text-muted">{pincodeMessage}</Form.Text>
+        </Form.Group>
+        <Form.Group controlId="formName">
+          <Form.Label>Name</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Enter your name"
+            value={orderData.name}
+            onChange={(e) =>
+              setOrderData({ ...orderData, name: e.target.value })
+            }
+            name="name"
+          />
+        </Form.Group>
+        <Form.Group controlId="formEmail">
+          <Form.Label>Email</Form.Label>
+          <Form.Control
+            type="email"
+            placeholder="Enter your email"
+            value={orderData.email}
+            onChange={(e) =>
+              setOrderData({ ...orderData, email: e.target.value })
+            }
+            name="email"
+          />
+        </Form.Group>
+        <Form.Group controlId="formAddress">
+          <Form.Label>Address</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Enter your address"
+            value={orderData.address}
+            onChange={(e) =>
+              setOrderData({ ...orderData, address: e.target.value })
+            }
+            name="address"
+          />
+        </Form.Group>
+        <Form.Group controlId="formPhoneNo">
+          <Form.Label>Phone No</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Enter your phone no"
+            value={orderData.phoneno}
+            onChange={(e) =>
+              setOrderData({ ...orderData, phoneno: e.target.value })
+            }
+            name="phoneno"
+          />
+        </Form.Group>
+        <Form.Group controlId="formAge">
+          <Form.Label>Age</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Enter your age"
+            value={orderData.age}
+            onChange={(e) =>
+              setOrderData({ ...orderData, age: e.target.value })
+            }
+            name="age"
+          />
+        </Form.Group>
+        <Form.Group controlId="formNoOfPersons">
+          <Form.Label>Number of Persons</Form.Label>
+          <Form.Control
+            as="select"
+            value={orderData.noOfPersons}
+            onChange={(e) => {
+              const newNoOfPersons = parseInt(e.target.value, 10);
+              setOrderData({
+                ...orderData,
+                noOfPersons: newNoOfPersons,
+                beneficiaries: Array.from(
+                  { length: newNoOfPersons },
+                  (_, i) =>
+                    orderData.beneficiaries[i] || {
+                      name: "",
+                      age: "",
+                      gender: "",
+                    }
+                ),
+              });
+            }}
+            name="noOfPersons"
+          >
+            {[...Array(10).keys()].map((num) => (
+              <option key={num + 1} value={num + 1}>
+                {num + 1}
+              </option>
+            ))}
+          </Form.Control>
+          <Form.Text className="text-warning">
+            Note : The same set of tests/packages will be added for all persons.
+          </Form.Text>
+        </Form.Group>
+        <Form.Group controlId="formAppointmentDate">
+          <Form.Label>Appointment Date</Form.Label>
+          <Form.Control
+            as="select"
+            value={orderData.appointmentDate}
+            onChange={(e) =>
+              setOrderData({
+                ...orderData,
+                appointmentDate: e.target.value,
+              })
+            }
+            name="appointmentDate"
+          >
+            {generateDateOptions()}
+          </Form.Control>
+        </Form.Group>
+        <h5>Beneficiaries</h5>
+        {orderData.beneficiaries.map((beneficiary, index) => (
+          <div key={index}>
+            <Form.Group controlId={`formBeneficiaryName${index}`}>
+              <Form.Label>Beneficiary Name {index + 1}</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter Pincode"
-                value={orderData.pincode}
+                placeholder="Enter name"
+                value={beneficiary.name}
                 onChange={(e) =>
-                  setOrderData({ ...orderData, pincode: e.target.value })
+                  handleBeneficiariesChange(index, "name", e.target.value)
                 }
-                name="pincode"
+                name={`beneficiaryName${index}`}
               />
-              <Button variant="outline-secondary" onClick={checkAvailability}>
-                Check Availability
-              </Button>
-            </InputGroup>
-            <Form.Text className="text-muted">{pincodeMessage}</Form.Text>
-          </Form.Group>
-          <Form.Group controlId="formName">
-            <Form.Label>Name</Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="Enter your name"
-              value={orderData.name}
-              onChange={(e) =>
-                setOrderData({ ...orderData, name: e.target.value })
-              }
-              name="name"
-            />
-          </Form.Group>
-          <Form.Group controlId="formEmail">
-            <Form.Label>Email</Form.Label>
-            <Form.Control
-              type="email"
-              placeholder="Enter your email"
-              value={orderData.email}
-              onChange={(e) =>
-                setOrderData({ ...orderData, email: e.target.value })
-              }
-              name="email"
-            />
-          </Form.Group>
-          <Form.Group controlId="formAddress">
-            <Form.Label>Address</Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="Enter your address"
-              value={orderData.address}
-              onChange={(e) =>
-                setOrderData({ ...orderData, address: e.target.value })
-              }
-              name="address"
-            />
-          </Form.Group>
-          <Form.Group controlId="formPhoneNo">
-            <Form.Label>Phone No</Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="Enter your phone no"
-              value={orderData.phoneno}
-              onChange={(e) =>
-                setOrderData({ ...orderData, phoneno: e.target.value })
-              }
-              name="phoneno"
-            />
-          </Form.Group>
-          <Form.Group controlId="formAge">
-            <Form.Label>Age</Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="Enter your age"
-              value={orderData.age}
-              onChange={(e) =>
-                setOrderData({ ...orderData, age: e.target.value })
-              }
-              name="age"
-            />
-          </Form.Group>
-          <Form.Group controlId="formNoOfPersons">
-            <Form.Label>Number of Persons</Form.Label>
-            <Form.Control
-              as="select"
-              value={orderData.noOfPersons}
-              onChange={(e) => {
-                const newNoOfPersons = parseInt(e.target.value, 10);
-                setOrderData({
-                  ...orderData,
-                  noOfPersons: newNoOfPersons,
-                  beneficiaries: Array.from(
-                    { length: newNoOfPersons },
-                    (_, i) =>
-                      orderData.beneficiaries[i] || {
-                        name: "",
-                        age: "",
-                        gender: "",
-                      }
-                  ),
-                });
-              }}
-              name="noOfPersons"
-            >
-              {[...Array(10).keys()].map((num) => (
-                <option key={num + 1} value={num + 1}>
-                  {num + 1}
-                </option>
-              ))}
-            </Form.Control>
-            <Form.Text className="text-warning">
-              Note : The same set of tests/packages will be added for all
-              persons.
-            </Form.Text>
-          </Form.Group>
-          <Form.Group controlId="formAppointmentDate">
-            <Form.Label>Appointment Date</Form.Label>
-            <Form.Control
-              as="select"
-              value={orderData.appointmentDate}
-              onChange={(e) =>
-                setOrderData({
-                  ...orderData,
-                  appointmentDate: e.target.value,
-                })
-              }
-              name="appointmentDate"
-            >
-              {generateDateOptions()}
-            </Form.Control>
-          </Form.Group>
-          <h5>Beneficiaries</h5>
-          {orderData.beneficiaries.map((beneficiary, index) => (
-            <div key={index}>
-              <Form.Group controlId={`formBeneficiaryName${index}`}>
-                <Form.Label>Beneficiary Name {index + 1}</Form.Label>
-                <Form.Control
-                  type="text"
-                  placeholder="Enter name"
-                  value={beneficiary.name}
-                  onChange={(e) =>
-                    handleBeneficiariesChange(index, "name", e.target.value)
-                  }
-                  name={`beneficiaryName${index}`}
-                />
-              </Form.Group>
-              <Form.Group controlId={`formBeneficiaryAge${index}`}>
-                <Form.Label>Age</Form.Label>
-                <Form.Control
-                  type="text"
-                  placeholder="Enter age"
-                  value={beneficiary.age}
-                  onChange={(e) =>
-                    handleBeneficiariesChange(index, "age", e.target.value)
-                  }
-                  name={`beneficiaryAge${index}`}
-                />
-              </Form.Group>
-              <Form.Group controlId={`formBeneficiaryGender${index}`}>
-                <Form.Label>Gender</Form.Label>
-                <Form.Control
-                  as="select"
-                  value={beneficiary.gender}
-                  onChange={(e) =>
-                    handleBeneficiariesChange(index, "gender", e.target.value)
-                  }
-                  name={`beneficiaryGender${index}`}
-                >
-                  <option value="">Select Gender</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-                  <option value="Other">Other</option>
-                </Form.Control>
-              </Form.Group>
-            </div>
-          ))}
-          <h5>Select Additional Tests (Optional)</h5>
-          <Form.Group controlId="formAdditionalTests">
-            <Form.Check
-              type="checkbox"
-              label="Fasting Blood Sugar (FBS) @ Rs. 80 / Person"
-              checked={orderData.tests.includes("Fasting Blood Sugar (FBS)")}
-              onChange={(e) =>
-                handleTestChange(
-                  "Fasting Blood Sugar (FBS)",
-                  e.target.checked
-                )
-              }
-            />
-            <Form.Check
-              type="checkbox"
-              label="CRP Test @ Rs. 480 / Person"
-              checked={orderData.tests.includes("CRP Test")}
-              onChange={(e) =>
-                handleTestChange("CRP Test", e.target.checked)
-              }
-            />
-            <Form.Check
-              type="checkbox"
-              label="ESR Test @ Rs. 120 / Person"
-              checked={orderData.tests.includes("ESR Test")}
-              onChange={(e) =>
-                handleTestChange("ESR Test", e.target.checked)
-              }
-            />
-            <Form.Check
-              type="checkbox"
-              label="Covid Antibody IgG @ Rs. 400 / Person"
-              checked={orderData.tests.includes("Covid Antibody IgG")}
-              onChange={(e) =>
-                handleTestChange("Covid Antibody IgG", e.target.checked)
-              }
-            />
-            <Form.Check
-              type="checkbox"
-              label="Complete Urine Analysis @ Rs. 510 / Person"
-              checked={orderData.tests.includes("Complete Urine Analysis")}
-              onChange={(e) =>
-                handleTestChange(
-                  "Complete Urine Analysis",
-                  e.target.checked
-                )
-              }
-            />
-            <Form.Check
-              type="checkbox"
-              label="Troponin - Heart Attack Risk Test (ACTNI) @ Rs. 650 / Person"
-              checked={orderData.tests.includes(
-                "Troponin - Heart Attack Risk Test (ACTNI)"
-              )}
-              onChange={(e) =>
-                handleTestChange(
-                  "Troponin - Heart Attack Risk Test (ACTNI)",
-                  e.target.checked
-                )
-              }
-            />
-          </Form.Group>
-        </Form>
-      </Modal.Body>
-      <Modal.Footer>
-        <Button variant="secondary" onClick={handleClose}>
-          Close
-        </Button>
+            </Form.Group>
+            <Form.Group controlId={`formBeneficiaryAge${index}`}>
+              <Form.Label>Age</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Enter age"
+                value={beneficiary.age}
+                onChange={(e) =>
+                  handleBeneficiariesChange(index, "age", e.target.value)
+                }
+                name={`beneficiaryAge${index}`}
+              />
+            </Form.Group>
+            <Form.Group controlId={`formBeneficiaryGender${index}`}>
+              <Form.Label>Gender</Form.Label>
+              <Form.Control
+                as="select"
+                value={beneficiary.gender}
+                onChange={(e) =>
+                  handleBeneficiariesChange(index, "gender", e.target.value)
+                }
+                name={`beneficiaryGender${index}`}
+              >
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </Form.Control>
+            </Form.Group>
+          </div>
+        ))}
+        <h5>Select Additional Tests (Optional)</h5>
+        <Form.Group controlId="formAdditionalTests">
+          <Form.Check
+            type="checkbox"
+            label="Fasting Blood Sugar (FBS) @ Rs. 80 / Person"
+            checked={orderData.tests.includes("Fasting Blood Sugar (FBS)")}
+            onChange={(e) =>
+              handleTestChange("Fasting Blood Sugar (FBS)", e.target.checked)
+            }
+          />
+          <Form.Check
+            type="checkbox"
+            label="CRP Test @ Rs. 480 / Person"
+            checked={orderData.tests.includes("CRP Test")}
+            onChange={(e) => handleTestChange("CRP Test", e.target.checked)}
+          />
+          <Form.Check
+            type="checkbox"
+            label="ESR Test @ Rs. 120 / Person"
+            checked={orderData.tests.includes("ESR Test")}
+            onChange={(e) => handleTestChange("ESR Test", e.target.checked)}
+          />
+          <Form.Check
+            type="checkbox"
+            label="Covid Antibody IgG @ Rs. 400 / Person"
+            checked={orderData.tests.includes("Covid Antibody IgG")}
+            onChange={(e) =>
+              handleTestChange("Covid Antibody IgG", e.target.checked)
+            }
+          />
+          <Form.Check
+            type="checkbox"
+            label="Complete Urine Analysis @ Rs. 510 / Person"
+            checked={orderData.tests.includes("Complete Urine Analysis")}
+            onChange={(e) =>
+              handleTestChange("Complete Urine Analysis", e.target.checked)
+            }
+          />
+          <Form.Check
+            type="checkbox"
+            label="Troponin - Heart Attack Risk Test (ACTNI) @ Rs. 650 / Person"
+            checked={orderData.tests.includes(
+              "Troponin - Heart Attack Risk Test (ACTNI)"
+            )}
+            onChange={(e) =>
+              handleTestChange(
+                "Troponin - Heart Attack Risk Test (ACTNI)",
+                e.target.checked
+              )
+            }
+          />
+        </Form.Group>
+      </Form>
+      <div className="mt-3 text-end">
         <Button variant="primary" onClick={handleSubmitOrder}>
           Confirm Purchase
         </Button>
-      </Modal.Footer>
-    </Modal>
+      </div>
+    </div>
   );
 };
 

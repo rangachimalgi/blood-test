@@ -286,39 +286,48 @@ export const discoutProducts = [
     ],
   },
   {
-    id: "02",
-    productName: "Female Advanced Health Package (108 Tests)",
+    id: "28",
+    productName: "Jaanch - Tumour Panel (Female) (6 Tests)",
+    type: "package",
     includedTests: [
       {
-        categoryName: "Thyroid Profile",
-        tests: ["01", "02"],
+        categoryName: "CANCER MARKERS (Includes 4 tests)",
+        tests: [
+          "Ca-125",
+          "Ca 15.3",
+          "Ca 19.9",
+          "Carcino embryonic antigen (cea)",
+        ],
       },
       {
-        categoryName: "Lipid Profile",
-        tests: ["03", "04", "05"],
+        categoryName: "OTHERS (Includes 1 tests)",
+        tests: ["Alpha feto protein (afp)"],
       },
-      // ... more categories can be added similarly
+      {
+        categoryName: "PREGNANCY (Includes 1 tests)",
+        tests: ["Beta hcg"],
+      },
     ],
-    imgUrl: FemaleAdvancePackage,
-    category: "sofa",
-    price: 2499,
-    discount: 20,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    desc: "Tests Includes CANCER MARKERS, OTHERS, PREGNANCY",
+    imgUrl: populartest01,
+    category: "Basic",
+    mrp: 3998.0,
+    price: 1999.0,
+    discount: 30,
+    shortDesc: "Sample Type: Blood",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "Jaanch - Tumour Panel (Female) gives you an accurate diagnosis of cancer at an early stage. Consisting of 6 parameters, the panel helps doctors understand the specific type of cancer, plan a treatment or check the progress of treatment. You can also take this test if you have just finished your cancer treatment, if you have a family history of cancer or if you are at risk due to factors like obesity, smoking, old age, and preexisting health conditions. Get Thyrocare's Jaanch - Tumour Panel (Female) at affordable rates with FREE home sample collection.",
     reviews: [
       {
-        rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.8,
+        rating: 4.7,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       },
     ],
-    avgRating: 4.7,
+    overlayTitle: "Jaanch - Tumour Panel (Female)",
+    overlayDetails: ["CANCER MARKERS (4)", "OTHERS (1)", "PREGNANCY (1)"],
+    avgRating: 4.5,
   },
+
   {
     id: "03",
     productName: "Male Advanced Health Package (105 Tests)",
@@ -1339,7 +1348,7 @@ export const products = [
     category: "wireless",
     price: 1030,
     description:
-    "Sex hormone-binding globulin (SHBG) produced by the liver helps to transport biologically inactive forms of hormones such as testosterone, estradiol, and dihydrotestosterone into the bloodstream. Changes in its levels may have an effect on the amount of hormone available to the body. SHBG test is used for the evaluation of androgen deficiency or excess. Increased SHBG may be associated with liver disease, hyperthyroidism, hormone replacement therapy, oral contraceptives, and fertility issue. Deficiency is observed in metabolic syndrome, polycystic ovary syndrome, hypothyroidism, and Cushing syndrome.",
+      "Sex hormone-binding globulin (SHBG) produced by the liver helps to transport biologically inactive forms of hormones such as testosterone, estradiol, and dihydrotestosterone into the bloodstream. Changes in its levels may have an effect on the amount of hormone available to the body. SHBG test is used for the evaluation of androgen deficiency or excess. Increased SHBG may be associated with liver disease, hyperthyroidism, hormone replacement therapy, oral contraceptives, and fertility issue. Deficiency is observed in metabolic syndrome, polycystic ovary syndrome, hypothyroidism, and Cushing syndrome.",
   },
   {
     id: "104",
@@ -1348,7 +1357,7 @@ export const products = [
     category: "wireless",
     price: 770,
     description:
-    "Ceruloplasmin (CER) is the main transport protein for copper in the blood and plays a role in the body's iron metabolism. Measuring levels of ceruloplasmin aids in the diagnosis of copper metabolism disorders. Various factors such as diet, hormone concentrations, and other genetic disorders, may influence plasma concentrations. Physical exercise, pregnancy (late), bile duct obstruction, primary biliary cirrhosis, patients on estrogen therapy, and leukemia exhibit increased levels of ceruloplasmin. Decreased levels are seen in Wilson’s disease, Menkes’s disease, Acute viral hepatitis, Nephrotic syndrome, gastroenteropathies, severe liver disease, malnutrition, and hypochromic anemia. Book Ceruloplasmin test from Thyrocare at a low cost and get home collection services.",
+      "Ceruloplasmin (CER) is the main transport protein for copper in the blood and plays a role in the body's iron metabolism. Measuring levels of ceruloplasmin aids in the diagnosis of copper metabolism disorders. Various factors such as diet, hormone concentrations, and other genetic disorders, may influence plasma concentrations. Physical exercise, pregnancy (late), bile duct obstruction, primary biliary cirrhosis, patients on estrogen therapy, and leukemia exhibit increased levels of ceruloplasmin. Decreased levels are seen in Wilson’s disease, Menkes’s disease, Acute viral hepatitis, Nephrotic syndrome, gastroenteropathies, severe liver disease, malnutrition, and hypochromic anemia. Book Ceruloplasmin test from Thyrocare at a low cost and get home collection services.",
   },
   {
     id: "105",
@@ -1357,7 +1366,7 @@ export const products = [
     category: "wireless",
     price: 670,
     description:
-    "Presence of HBcAg (core Antigen) in the cytoplasm and nucleus may reflect disease activity and predict response to antiviral treatment. Anti HBc IgM appears shortly after HBV infection and can be detected in serum soon after the appearance of circulating HBsAg and HBeAg. The levels are high during acute infection and typically disappear within 6 months, though it can persist in some cases of chronic hepatitis. Anti-HBc (IgG antibody) usually remains detectable for a lifetime.Hepatitis B Core antigen test is used to detect hepatitis B virus (HBV) infection in an individual. This test also helps to assess the risk of re-infection/reactivation. Anti-HBc is the only serological marker that can detect HBV infection and potentially infectious blood. This test cannot differentiate between acute, chronic, and resolved HBV infection.",
+      "Presence of HBcAg (core Antigen) in the cytoplasm and nucleus may reflect disease activity and predict response to antiviral treatment. Anti HBc IgM appears shortly after HBV infection and can be detected in serum soon after the appearance of circulating HBsAg and HBeAg. The levels are high during acute infection and typically disappear within 6 months, though it can persist in some cases of chronic hepatitis. Anti-HBc (IgG antibody) usually remains detectable for a lifetime.Hepatitis B Core antigen test is used to detect hepatitis B virus (HBV) infection in an individual. This test also helps to assess the risk of re-infection/reactivation. Anti-HBc is the only serological marker that can detect HBV infection and potentially infectious blood. This test cannot differentiate between acute, chronic, and resolved HBV infection.",
   },
   {
     id: "106",
@@ -1366,7 +1375,7 @@ export const products = [
     category: "wireless",
     price: 1240,
     description:
-    "The Allergy Panel - Non-Veg is designed to identify specific allergens in non- vegetarian foods, such as beef, fish, prawns, chicken, mutton, shrimp, crab and pork. For individuals experiencing symptoms like skin rashes, digestive issues or respiratory problems after consuming non-vegetarian foods, this panel offers detailed reports to guide your food choices and plan your diet efficiently. Online booking is available at affordable prices. FREE home sample collection. ",
+      "The Allergy Panel - Non-Veg is designed to identify specific allergens in non- vegetarian foods, such as beef, fish, prawns, chicken, mutton, shrimp, crab and pork. For individuals experiencing symptoms like skin rashes, digestive issues or respiratory problems after consuming non-vegetarian foods, this panel offers detailed reports to guide your food choices and plan your diet efficiently. Online booking is available at affordable prices. FREE home sample collection. ",
   },
   {
     id: "107",
@@ -1375,7 +1384,7 @@ export const products = [
     category: "wireless",
     price: 1580,
     description:
-    "The Allergy Panel - Inhalant Test identifies specific airborne or contact allergens and pollutants in the environment that your body may be allergic to. With 79 parameters, this test can detect sensitivities to various inhaled substances that may cause reactions, such as a runny nose, sneezing, red eyes, swelling around the mouth, breathing difficulties, allergic bronchitis, skin rashes, fever and even potentially life-threatening complications. Book an Allergy Panel - Inhalant test to understand your respiratory related conditions better. Get a FREE home sample collection.",
+      "The Allergy Panel - Inhalant Test identifies specific airborne or contact allergens and pollutants in the environment that your body may be allergic to. With 79 parameters, this test can detect sensitivities to various inhaled substances that may cause reactions, such as a runny nose, sneezing, red eyes, swelling around the mouth, breathing difficulties, allergic bronchitis, skin rashes, fever and even potentially life-threatening complications. Book an Allergy Panel - Inhalant test to understand your respiratory related conditions better. Get a FREE home sample collection.",
   },
   {
     id: "108",
@@ -1384,7 +1393,7 @@ export const products = [
     category: "wireless",
     price: 2060,
     description:
-    "The Allergy Panel - Drug Test screens for potential allergic reactions to various medications. It identifies specific drugs that may trigger an allergic response, helping to ensure safe and effective treatment options. This test provides a detailed list of medications that should be avoided to prevent adverse reactions. Book an Allergy Panel - Drug test at affordable rates and get a FREE home sample collection.",
+      "The Allergy Panel - Drug Test screens for potential allergic reactions to various medications. It identifies specific drugs that may trigger an allergic response, helping to ensure safe and effective treatment options. This test provides a detailed list of medications that should be avoided to prevent adverse reactions. Book an Allergy Panel - Drug test at affordable rates and get a FREE home sample collection.",
   },
   {
     id: "109",
@@ -1393,7 +1402,7 @@ export const products = [
     category: "wireless",
     price: 3290,
     description:
-    "Allergy Panel - Food Plus Non-Veg is a comprehensive test that helps identify specific allergens that may trigger allergic responses in your body. This panel tests for a wide range of allergens, including common veg and non-veg foods. Understanding your allergy triggers can help in managing symptoms and avoiding allergens effectively. Online booking is available at affordable prices. FREE home sample collection. ",
+      "Allergy Panel - Food Plus Non-Veg is a comprehensive test that helps identify specific allergens that may trigger allergic responses in your body. This panel tests for a wide range of allergens, including common veg and non-veg foods. Understanding your allergy triggers can help in managing symptoms and avoiding allergens effectively. Online booking is available at affordable prices. FREE home sample collection. ",
   },
   {
     id: "110",
@@ -1402,7 +1411,7 @@ export const products = [
     category: "wireless",
     price: 3920,
     description:
-    "Food Allergy is an immune response to a particular food or body's reaction to a particular medicine. Allergy Panel - Food Plus Drug test helps one know about foods and drugs they may be allergic to that may trigger unusual bodily reactions. It identifies specific food and drug allergens and provides details about the comprehensive list of foods and drugs to be avoided. Lab visits and FREE Home collection. Book now ! ",
+      "Food Allergy is an immune response to a particular food or body's reaction to a particular medicine. Allergy Panel - Food Plus Drug test helps one know about foods and drugs they may be allergic to that may trigger unusual bodily reactions. It identifies specific food and drug allergens and provides details about the comprehensive list of foods and drugs to be avoided. Lab visits and FREE Home collection. Book now ! ",
   },
   {
     id: "111",
@@ -1420,7 +1429,7 @@ export const products = [
     category: "wireless",
     price: 2510,
     description:
-    "Allergy Panel - Food Plus Inhalant is a comprehensive test that helps identify specific allergens in the food or environment that may trigger allergic responses in your body. This panel tests for a wide range of allergens, including common foods and inhalants like pollen and dust. If you experience unexplained allergic symptoms such as rashes, hives, breathing difficulties and gastrointestinal issues, or have had adverse reactions to certain foods, environmental factors or medications. Book now to Understand your allergy, manage symptoms and avoid allergens effectively. FREE Home collection.",
+      "Allergy Panel - Food Plus Inhalant is a comprehensive test that helps identify specific allergens in the food or environment that may trigger allergic responses in your body. This panel tests for a wide range of allergens, including common foods and inhalants like pollen and dust. If you experience unexplained allergic symptoms such as rashes, hives, breathing difficulties and gastrointestinal issues, or have had adverse reactions to certain foods, environmental factors or medications. Book now to Understand your allergy, manage symptoms and avoid allergens effectively. FREE Home collection.",
   },
   {
     id: "113",
@@ -1429,7 +1438,7 @@ export const products = [
     category: "wireless",
     price: 3450,
     description:
-    "Allergy Panel - Food, Inhalant Plus Non-Veg checks for allergic reactions to various foods, inhalants and non-veg items. This test helps identify specific allergens and helps with timely management and treatment. It provides details about the comprehensive list of foods to be avoided. Book an Allergy Panel - Food, Inhalant Plus Non-Veg to understand your body's allergy pattern and manage your food intake effectively. Get a FREE home sample collection. ",
+      "Allergy Panel - Food, Inhalant Plus Non-Veg checks for allergic reactions to various foods, inhalants and non-veg items. This test helps identify specific allergens and helps with timely management and treatment. It provides details about the comprehensive list of foods to be avoided. Book an Allergy Panel - Food, Inhalant Plus Non-Veg to understand your body's allergy pattern and manage your food intake effectively. Get a FREE home sample collection. ",
   },
   {
     id: "114",
@@ -1438,7 +1447,7 @@ export const products = [
     category: "wireless",
     price: 4230,
     description:
-    "Allergy Panel - Food, Inhalant Plus Drug is a comprehensive test that helps identify specific allergens that may trigger allergic responses in your body. This panel tests for a wide range of allergens, including common foods, inhalants like pollen and dust and various drugs. Understanding your allergy triggers can help manage symptoms and avoid allergens effectively. Book Allergy Panel - Food, Inhalant Plus Drug test, if you have adverse reactions to certain foods, environmental factors or medications. Get a FREE home sample collection. ",
+      "Allergy Panel - Food, Inhalant Plus Drug is a comprehensive test that helps identify specific allergens that may trigger allergic responses in your body. This panel tests for a wide range of allergens, including common foods, inhalants like pollen and dust and various drugs. Understanding your allergy triggers can help manage symptoms and avoid allergens effectively. Book Allergy Panel - Food, Inhalant Plus Drug test, if you have adverse reactions to certain foods, environmental factors or medications. Get a FREE home sample collection. ",
   },
   {
     id: "115",
@@ -1447,7 +1456,7 @@ export const products = [
     category: "wireless",
     price: 5150,
     description:
-    "Allergy Panel: Food, Inhalant, Non-Veg Plus a drug test helps one know about foods, inhalants and medicines one may be allergic to and triggers unusual bodily reactions. It identifies specific allergens and provides details about a comprehensive list of things to be avoided. Book Allergy Panel: Food, Inhalant, Non-Veg Plus Drug test, if you have adverse reactions to certain foods, environmental factors or medications. Get a FREE home sample collection.",
+      "Allergy Panel: Food, Inhalant, Non-Veg Plus a drug test helps one know about foods, inhalants and medicines one may be allergic to and triggers unusual bodily reactions. It identifies specific allergens and provides details about a comprehensive list of things to be avoided. Book Allergy Panel: Food, Inhalant, Non-Veg Plus Drug test, if you have adverse reactions to certain foods, environmental factors or medications. Get a FREE home sample collection.",
   },
   {
     id: "116",
@@ -1456,7 +1465,7 @@ export const products = [
     category: "wireless",
     price: 310,
     description:
-    "Unconjugated estriol (E3) is a form of estrogen, which is biologically active. It is exclusively produced during pregnancy, unlike other estrogens. Unconjugated Estriol test is included as part of triple marker and quadruple marker test for antenatal screening for monitoring fetal development and knowing the risk of pregnancy-related complications like premature labor or fetal distress. The level of unconjugated estriol rises during pregnancy, especially in the first trimester. Low levels of unconjugated estriol indicate Down and trisomy-18 syndromes, and neural tube defects. High levels of estriol are observed in cases of congenital adrenal hyperplasia. Take the benefit of free home collection at a much affordable price",
+      "Unconjugated estriol (E3) is a form of estrogen, which is biologically active. It is exclusively produced during pregnancy, unlike other estrogens. Unconjugated Estriol test is included as part of triple marker and quadruple marker test for antenatal screening for monitoring fetal development and knowing the risk of pregnancy-related complications like premature labor or fetal distress. The level of unconjugated estriol rises during pregnancy, especially in the first trimester. Low levels of unconjugated estriol indicate Down and trisomy-18 syndromes, and neural tube defects. High levels of estriol are observed in cases of congenital adrenal hyperplasia. Take the benefit of free home collection at a much affordable price",
   },
   {
     id: "117",
@@ -1465,7 +1474,7 @@ export const products = [
     category: "wireless",
     price: 310,
     description:
-    "Carbamazepine is an anti epileptic drug used to treat seizures. Once administered, its absorption in the body is slow and unpredictable with approximately 2-3% of the applied dose discharged via urine. Its concentration peaks about 4-8 hours after ingestion, but it may take up to 26 hours for it to take effect. Monitoring serum carbamazepine levels is done to find out if the drug level is within the therapeutic range there by reducing the risk of toxicity and minimizing the need for additional anticonvulsant medication.",
+      "Carbamazepine is an anti epileptic drug used to treat seizures. Once administered, its absorption in the body is slow and unpredictable with approximately 2-3% of the applied dose discharged via urine. Its concentration peaks about 4-8 hours after ingestion, but it may take up to 26 hours for it to take effect. Monitoring serum carbamazepine levels is done to find out if the drug level is within the therapeutic range there by reducing the risk of toxicity and minimizing the need for additional anticonvulsant medication.",
   },
   {
     id: "118",
@@ -1481,7 +1490,7 @@ export const products = [
     category: "wireless",
     price: 520,
     description:
-    "Complement 4 is one of the activation proteins taking part in the classical pathway of the complement system involved in innate and adaptive immunity. The activation of pathways is related to the utilization of C4, thereby reducing its concentration. Complement 4 test measures the amount of C4 proteins in the blood. Decreased levels of C4 are generally associated with angioedema, autoimmune hemolytic anemia, lupus, and rheumatoid arthritis. This test is also used to monitor protein levels in people who have already been diagnosed with an autoimmune disease. Thyrocare offers Complement 4 at the most affordable price. Sample collection at home available.",
+      "Complement 4 is one of the activation proteins taking part in the classical pathway of the complement system involved in innate and adaptive immunity. The activation of pathways is related to the utilization of C4, thereby reducing its concentration. Complement 4 test measures the amount of C4 proteins in the blood. Decreased levels of C4 are generally associated with angioedema, autoimmune hemolytic anemia, lupus, and rheumatoid arthritis. This test is also used to monitor protein levels in people who have already been diagnosed with an autoimmune disease. Thyrocare offers Complement 4 at the most affordable price. Sample collection at home available.",
   },
   {
     id: "120",
@@ -1490,7 +1499,7 @@ export const products = [
     category: "wireless",
     price: 670,
     description:
-    "Presence of HBcAg (core Antigen) in the cytoplasm and nucleus may reflect disease activity and predict response to antiviral treatment. Anti HBc IgM appears shortly after HBV infection and can be detected in serum soon after the appearance of circulating HBsAg and HBeAg. The levels are high during acute infection and typically disappear within 6 months, though it can persist in some cases of chronic hepatitis. Anti-HBc (IgG antibody) usually remains detectable for a lifetime. The Hepatitis B Core antigen test is used to detect hepatitis B virus (HBV) infection in an individual. This test also helps to assess the risk of re-infection/reactivation. Anti-HBc is the only serological marker that can detect HBV infection and potentially infectious blood. This test cannot differentiate between acute, chronic, and resolved HBV infection.",
+      "Presence of HBcAg (core Antigen) in the cytoplasm and nucleus may reflect disease activity and predict response to antiviral treatment. Anti HBc IgM appears shortly after HBV infection and can be detected in serum soon after the appearance of circulating HBsAg and HBeAg. The levels are high during acute infection and typically disappear within 6 months, though it can persist in some cases of chronic hepatitis. Anti-HBc (IgG antibody) usually remains detectable for a lifetime. The Hepatitis B Core antigen test is used to detect hepatitis B virus (HBV) infection in an individual. This test also helps to assess the risk of re-infection/reactivation. Anti-HBc is the only serological marker that can detect HBV infection and potentially infectious blood. This test cannot differentiate between acute, chronic, and resolved HBV infection.",
   },
   {
     id: "121",
@@ -1499,7 +1508,7 @@ export const products = [
     category: "wireless",
     price: 820,
     description:
-    "Anti-Hepatitis B Envelop Antigen (Anti-HBe) are antibodies produced by the body in response to the Hepatitis B envelop antigen (HBeAg). When HBeAg appears in blood soon after HBsAg appears or concurrently, it indicates active intrahepatic viral replication which has high chances of transmission.",
+      "Anti-Hepatitis B Envelop Antigen (Anti-HBe) are antibodies produced by the body in response to the Hepatitis B envelop antigen (HBeAg). When HBeAg appears in blood soon after HBsAg appears or concurrently, it indicates active intrahepatic viral replication which has high chances of transmission.",
   },
   {
     id: "122",
@@ -1508,7 +1517,7 @@ export const products = [
     category: "wireless",
     price: 770,
     description:
-    "The steroid hormone, 17-hydroxyprogesterone (17-OHP) is produced as a part of the process of synthesizing the cortisol hormone. This 17-OHP test measures the levels of 17-hydroxyprogesterone in the blood to detect Congenital Adrenal Hyperplasia (CAH), an inherited condition that causes decreased adrenal cortisol and aldosterone, and increased male sex hormone (androgen) production. As a part of routine newborn screening, wherein the infant's sex is unclear (ambiguous genitalia) or when a female has increased growth of facial and body hair (hirsutism) or other symptoms that could be related to elevated male sex hormones, or when a male child has premature sexual development, the 17-OPH test can be performed. Avail this test at the lowest price with a free home collection.",
+      "The steroid hormone, 17-hydroxyprogesterone (17-OHP) is produced as a part of the process of synthesizing the cortisol hormone. This 17-OHP test measures the levels of 17-hydroxyprogesterone in the blood to detect Congenital Adrenal Hyperplasia (CAH), an inherited condition that causes decreased adrenal cortisol and aldosterone, and increased male sex hormone (androgen) production. As a part of routine newborn screening, wherein the infant's sex is unclear (ambiguous genitalia) or when a female has increased growth of facial and body hair (hirsutism) or other symptoms that could be related to elevated male sex hormones, or when a male child has premature sexual development, the 17-OPH test can be performed. Avail this test at the lowest price with a free home collection.",
   },
   {
     id: "123",
@@ -1517,7 +1526,7 @@ export const products = [
     category: "wireless",
     price: 520,
     description:
-    "Human growth hormone (HGH) is a polypeptide hormone that is secreted by the pituitary gland. It stimulates growth, cell reproduction, and cell regeneration in humans thus influences the normal growth and development of the human body. HGH levels in blood peak during childhood to adolescence, after which they decrease steadily. Deficiency of hGH in children and teenagers results in dwarfism and excess secretion can lead to gigantism. Excess secretion of hGH is generally associated with tumors of the pituitary gland. Thyrocare provides HGH tests at the most reasonable price along with home sample collection.",
+      "Human growth hormone (HGH) is a polypeptide hormone that is secreted by the pituitary gland. It stimulates growth, cell reproduction, and cell regeneration in humans thus influences the normal growth and development of the human body. HGH levels in blood peak during childhood to adolescence, after which they decrease steadily. Deficiency of hGH in children and teenagers results in dwarfism and excess secretion can lead to gigantism. Excess secretion of hGH is generally associated with tumors of the pituitary gland. Thyrocare provides HGH tests at the most reasonable price along with home sample collection.",
   },
   {
     id: "124",
@@ -1526,7 +1535,7 @@ export const products = [
     category: "wireless",
     price: 310,
     description:
-    "Cytomegalovirus infection usually goes unnoticed in healthy people, but it can be fatal in immunocompromised people such as HIV-infected people, organ transplant recipients, or newborn babies. Seronegative female patients infected during pregnancy can transmit the disease to the developing fetus, resulting in congenital abnormalities. The Cytomegalovirus-IgG test is important for assessing the patient immunity status and detecting seroconversion. A significant increase in the anti-cytomegalovirus IgG titer is indicative of a recent or past infection or reactivation of a latent infection.",
+      "Cytomegalovirus infection usually goes unnoticed in healthy people, but it can be fatal in immunocompromised people such as HIV-infected people, organ transplant recipients, or newborn babies. Seronegative female patients infected during pregnancy can transmit the disease to the developing fetus, resulting in congenital abnormalities. The Cytomegalovirus-IgG test is important for assessing the patient immunity status and detecting seroconversion. A significant increase in the anti-cytomegalovirus IgG titer is indicative of a recent or past infection or reactivation of a latent infection.",
   },
   {
     id: "125",
@@ -1535,7 +1544,7 @@ export const products = [
     category: "wireless",
     price: 700,
     description:
-    "The complement system important part of the immune system. There are certain plasma proteins involved in the complement system, which destroy the microbes. C3 protein is the critical and most abundant protein in the complement system that helps in killing bacteria and viruses that cause disease. Complement 3 test measures the amount of C3 proteins in the blood. Reduced levels of C3 can help in the diagnosis and monitoring of the treatment of certain diseases. Systemic Lupus Erythematosus (SLE) is one of the autoimmune disorders that often cause abnormal C3 levels. Also, many recurrent bacterial infections are known to occur when there is a deficiency of C3.",
+      "The complement system important part of the immune system. There are certain plasma proteins involved in the complement system, which destroy the microbes. C3 protein is the critical and most abundant protein in the complement system that helps in killing bacteria and viruses that cause disease. Complement 3 test measures the amount of C3 proteins in the blood. Reduced levels of C3 can help in the diagnosis and monitoring of the treatment of certain diseases. Systemic Lupus Erythematosus (SLE) is one of the autoimmune disorders that often cause abnormal C3 levels. Also, many recurrent bacterial infections are known to occur when there is a deficiency of C3.",
   },
   {
     id: "126",
@@ -1544,7 +1553,7 @@ export const products = [
     category: "wireless",
     price: 760,
     description:
-    "Cardiolipin Antibody (ACL) - IgG test detects the presence of Anti Cardiolipin antibodies against cardiolipins. This test is recommended if you have had personal/family history of inappropriate blood clotting, stroke, heart attacks, autoimmune diseases and miscarriages. It is crucial to undergo this test as it can help you prevent some serious health conditions. Elevated levels can indicate the presence of an autoimmune disorder known as antiphospholipid syndrome (APS). Book a test and get free home sample collection",
+      "Cardiolipin Antibody (ACL) - IgG test detects the presence of Anti Cardiolipin antibodies against cardiolipins. This test is recommended if you have had personal/family history of inappropriate blood clotting, stroke, heart attacks, autoimmune diseases and miscarriages. It is crucial to undergo this test as it can help you prevent some serious health conditions. Elevated levels can indicate the presence of an autoimmune disorder known as antiphospholipid syndrome (APS). Book a test and get free home sample collection",
   },
   {
     id: "127",
@@ -1553,7 +1562,7 @@ export const products = [
     category: "wireless",
     price: 520,
     description:
-    "Treponema Pallidum Haemagglutination is a test that detects syphilis (a sexually transmitted disease) by detecting palladium antibodies against Treponema Pallidum bacteria. It takes nearly 21-90 days for first symptoms to occur after contracting the bacteria. So, if you've had uprotected sexual intercourse in the recent past or are experiencing any initial symptoms (rashes, fever, swollen lymph nodes, sore throat, patchy hair loss, headaches, weight loss, muscle aches, or fatigue), it is crucial to get tested immediately for timely treatment",
+      "Treponema Pallidum Haemagglutination is a test that detects syphilis (a sexually transmitted disease) by detecting palladium antibodies against Treponema Pallidum bacteria. It takes nearly 21-90 days for first symptoms to occur after contracting the bacteria. So, if you've had uprotected sexual intercourse in the recent past or are experiencing any initial symptoms (rashes, fever, swollen lymph nodes, sore throat, patchy hair loss, headaches, weight loss, muscle aches, or fatigue), it is crucial to get tested immediately for timely treatment",
   },
   {
     id: "128",
@@ -1562,7 +1571,7 @@ export const products = [
     category: "wireless",
     price: 760,
     description:
-    "This test checks for the presence of cardiolipin antibodies in the blood. Elevated levels are associated with recurrent miscarriage, autoimmune diseases, and abnormal blood clot formation. Cardiolipin Antibody test is available at affordable cost, with a free home collection",
+      "This test checks for the presence of cardiolipin antibodies in the blood. Elevated levels are associated with recurrent miscarriage, autoimmune diseases, and abnormal blood clot formation. Cardiolipin Antibody test is available at affordable cost, with a free home collection",
   },
   {
     id: "129",
@@ -1571,7 +1580,7 @@ export const products = [
     category: "wireless",
     price: 1190,
     description:
-    "Thyroglobulin (TG) is a glycoprotein that is produced by the follicular cells of the thyroid gland when stimulation is received by the Thyroid Stimulating Hormone (TSH). TG is a precursor for the synthesis of Thyroxine (T4) and Triiodothyronine (T3). It is also an important reservoir of iodine for normal physiological needs. TG undergoes metabolism in the liver and is recycled in the thyroid glands. TG levels are monitored to check the functioning of the thyroid gland. TG test is generally recommended to evaluate the effectiveness of anticancer treatment /surgery in patients suffering from thyroid cancer. Book Thyrocare's Thyroglobulin Test at an inexpensive cost with the home collection.",
+      "Thyroglobulin (TG) is a glycoprotein that is produced by the follicular cells of the thyroid gland when stimulation is received by the Thyroid Stimulating Hormone (TSH). TG is a precursor for the synthesis of Thyroxine (T4) and Triiodothyronine (T3). It is also an important reservoir of iodine for normal physiological needs. TG undergoes metabolism in the liver and is recycled in the thyroid glands. TG levels are monitored to check the functioning of the thyroid gland. TG test is generally recommended to evaluate the effectiveness of anticancer treatment /surgery in patients suffering from thyroid cancer. Book Thyrocare's Thyroglobulin Test at an inexpensive cost with the home collection.",
   },
   {
     id: "130",
@@ -1580,7 +1589,7 @@ export const products = [
     category: "wireless",
     price: 540,
     description:
-    "Lithium is used as a medicine to treat psychiatric illnesses such as bipolar disorders, acute mental illness, and other mood disorders. This test is useful to find out the appropriate dose for those who have just started with lithium treatment. It is also used to ensure that the right dosage is being administered throughout the treatment course. Thyrocare offers this test at a discounted price, along with a free home collection facility.",
+      "Lithium is used as a medicine to treat psychiatric illnesses such as bipolar disorders, acute mental illness, and other mood disorders. This test is useful to find out the appropriate dose for those who have just started with lithium treatment. It is also used to ensure that the right dosage is being administered throughout the treatment course. Thyrocare offers this test at a discounted price, along with a free home collection facility.",
   },
   {
     id: "131",
@@ -1589,7 +1598,7 @@ export const products = [
     category: "wireless",
     price: 760,
     description:
-    "Adenosine deaminase (ADA) is a protein produced by body cells and is associated with lymphocyte activation. This test measures the amount of adenosine deaminase in pleural fluid. Elevated ADA levels indicate tuberculosis infection of the pleurae. It also helps to determine infections in other fluids such as peritoneal fluid or cerebrospinal fluid (CSF). Thyrocare now offers an affordable Adenosine Deaminase test with the free home collection.",
+      "Adenosine deaminase (ADA) is a protein produced by body cells and is associated with lymphocyte activation. This test measures the amount of adenosine deaminase in pleural fluid. Elevated ADA levels indicate tuberculosis infection of the pleurae. It also helps to determine infections in other fluids such as peritoneal fluid or cerebrospinal fluid (CSF). Thyrocare now offers an affordable Adenosine Deaminase test with the free home collection.",
   },
   {
     id: "132",
@@ -1598,7 +1607,7 @@ export const products = [
     category: "wireless",
     price: 310,
     description:
-    "Toxoplasma gondii is an intracellular parasitic protozoa that causes Toxoplasmosis. Infection is typically caused by eating contaminated undercooked meat, coming into contact with infected cat feces, or mother-to-child transmission during pregnancy. Most people with the disease have no symptoms, but it can cause serious complications in infants born to infected mothers and immunocompromised people. Toxo Gondii - IgG tests for the presence of IgG antibodies against Toxoplasma gondii and determines whether an individual has previously been infected with the disease. The absence of IgG antibodies before or early in pregnancy identifies women at risk of infection, while the presence of IgG identifies immunocompromised patients at risk of reactivation of a latent infection.",
+      "Toxoplasma gondii is an intracellular parasitic protozoa that causes Toxoplasmosis. Infection is typically caused by eating contaminated undercooked meat, coming into contact with infected cat feces, or mother-to-child transmission during pregnancy. Most people with the disease have no symptoms, but it can cause serious complications in infants born to infected mothers and immunocompromised people. Toxo Gondii - IgG tests for the presence of IgG antibodies against Toxoplasma gondii and determines whether an individual has previously been infected with the disease. The absence of IgG antibodies before or early in pregnancy identifies women at risk of infection, while the presence of IgG identifies immunocompromised patients at risk of reactivation of a latent infection.",
   },
 
   {
@@ -1608,7 +1617,7 @@ export const products = [
     category: "wireless",
     price: 870,
     description:
-    "Antiphospholipid antibodies are autoantibodies that bind to negatively charged phospholipids. Antiphospholipid Syndrome (APS) is an autoimmune condition with a variety of clinical symptoms such as arterial and venous thrombosis, thrombocytopenia, recurrent fetal loss, and livedo reticularis as well as cardiac, hematological, and neurological manifestations. It has a greater impact on young women than on young men. Antiphospholipid antibody IgM tests help in the detection and risk assessment of thrombosis in patients with Systemic Lupus Erythematosus and APS. This test can be ordered if a person shows signs and symptoms of a blood clot, such as pain and swelling in the extremities, shortness of breath, and headaches. It can also be ordered if a woman has history of miscarriage.",
+      "Antiphospholipid antibodies are autoantibodies that bind to negatively charged phospholipids. Antiphospholipid Syndrome (APS) is an autoimmune condition with a variety of clinical symptoms such as arterial and venous thrombosis, thrombocytopenia, recurrent fetal loss, and livedo reticularis as well as cardiac, hematological, and neurological manifestations. It has a greater impact on young women than on young men. Antiphospholipid antibody IgM tests help in the detection and risk assessment of thrombosis in patients with Systemic Lupus Erythematosus and APS. This test can be ordered if a person shows signs and symptoms of a blood clot, such as pain and swelling in the extremities, shortness of breath, and headaches. It can also be ordered if a woman has history of miscarriage.",
   },
   {
     id: "134",
@@ -1617,7 +1626,7 @@ export const products = [
     category: "wireless",
     price: 310,
     description:
-    "Cytomegalovirus infection usually goes unnoticed in healthy people, but it can be fatal in immunocompromised people such as HIV-infected people, organ transplant recipients, or newborn babies. Seronegative female patients infected during pregnancy can transmit the disease to the developing fetus, resulting in congenital abnormalities. The Cytomegalovirus-IgG test is important for assessing the patients immunity status and detecting seroconversion. A significant increase in the anti-cytomegalovirus IgG titer is indicative of a recent or past infection or reactivation of a latent infection.",
+      "Cytomegalovirus infection usually goes unnoticed in healthy people, but it can be fatal in immunocompromised people such as HIV-infected people, organ transplant recipients, or newborn babies. Seronegative female patients infected during pregnancy can transmit the disease to the developing fetus, resulting in congenital abnormalities. The Cytomegalovirus-IgG test is important for assessing the patients immunity status and detecting seroconversion. A significant increase in the anti-cytomegalovirus IgG titer is indicative of a recent or past infection or reactivation of a latent infection.",
   },
   {
     id: "135",
@@ -1626,7 +1635,7 @@ export const products = [
     category: "wireless",
     price: 310,
     description:
-    "Herpes Simplex Virus, also known as HSV, is a member of the alpha herpesviridae subfamily. The virus has a large double-stranded DNA genome, enclosed by an icosapentahedral capsid made up of capsomers. Infection by HSV causes lesions or blisters on the skin, lips or genital tract. Herpes Simplex Virus I (HSV-I)- IgM test detects the presence of lgM antibodies, which indicates the presence of HSV infections.",
+      "Herpes Simplex Virus, also known as HSV, is a member of the alpha herpesviridae subfamily. The virus has a large double-stranded DNA genome, enclosed by an icosapentahedral capsid made up of capsomers. Infection by HSV causes lesions or blisters on the skin, lips or genital tract. Herpes Simplex Virus I (HSV-I)- IgM test detects the presence of lgM antibodies, which indicates the presence of HSV infections.",
   },
   {
     id: "136",
@@ -1635,7 +1644,7 @@ export const products = [
     category: "wireless",
     price: 770,
     description:
-    "Immunoglobulin G (IgG) also known as antibody, is a glycoprotein produced by white blood cells. It is a crucial aspect of our immune response system as it specifically identifies and binds to antigens such as viruses and bacteria and aid in their destruction. IgG is a major class of immunoglobulin that provides primary protection against local and systemic infections of the lower respiratory tract. IgG test measures the level of immunoglobulin G in the blood. Analyzing IgG provides valuable insight into the highly complex humoral immune response. During the initial infection or antigen exposure, specific IgG antibodies are formed, which increase a few weeks later, then decrease and stabilise.",
+      "Immunoglobulin G (IgG) also known as antibody, is a glycoprotein produced by white blood cells. It is a crucial aspect of our immune response system as it specifically identifies and binds to antigens such as viruses and bacteria and aid in their destruction. IgG is a major class of immunoglobulin that provides primary protection against local and systemic infections of the lower respiratory tract. IgG test measures the level of immunoglobulin G in the blood. Analyzing IgG provides valuable insight into the highly complex humoral immune response. During the initial infection or antigen exposure, specific IgG antibodies are formed, which increase a few weeks later, then decrease and stabilise.",
   },
   {
     id: "137",
@@ -1644,7 +1653,7 @@ export const products = [
     category: "wireless",
     price: 870,
     description:
-    "These are antibodies produced against components of the cell membranes called phospholipids. Elevated levels are indicative of anti-phospholipid syndrome which is an autoimmune disease that results in blood clots, miscarriage and stillbirth.",
+      "These are antibodies produced against components of the cell membranes called phospholipids. Elevated levels are indicative of anti-phospholipid syndrome which is an autoimmune disease that results in blood clots, miscarriage and stillbirth.",
   },
   {
     id: "138",
@@ -1661,7 +1670,7 @@ export const products = [
     category: "wireless",
     price: 400,
     description:
-    "Covid antibody test is a sero-surveillance test to understand the immune response against COVID-19 infection. This test detects the presence of IgG antibodies against SARS-CoV-2 virus. However, presence of antibodies indicate an exposure to the virus. Presence of current infection or complete recovery from the infection cannot be interpreted from this test, for which RT-PCR may be opted. Patients medical history, physical findings and other diagnostic procedures should be taken into consideration for interpretation of obtained results.",
+      "Covid antibody test is a sero-surveillance test to understand the immune response against COVID-19 infection. This test detects the presence of IgG antibodies against SARS-CoV-2 virus. However, presence of antibodies indicate an exposure to the virus. Presence of current infection or complete recovery from the infection cannot be interpreted from this test, for which RT-PCR may be opted. Patients medical history, physical findings and other diagnostic procedures should be taken into consideration for interpretation of obtained results.",
   },
   {
     id: "140",
@@ -1670,7 +1679,7 @@ export const products = [
     category: "wireless",
     price: 300,
     description:
-    "Antibody production is the first line of defense against any pathogen. IgM is the first antibody produced in response to attack and is primarily detectable during the early onset of a disease.COVID Antibody IgM is used to semi quantitatively detect these IgM antibodies in blood plasma and serum.If your COVID Antibody IgM test is positive, it indicates that -You have been infected or vaccinated recentlyYour immune system has started responding to the virusesYou may be infected with COVID or recovered recentlyYour body has started responding to the vaccine - Post Vaccination",
+      "Antibody production is the first line of defense against any pathogen. IgM is the first antibody produced in response to attack and is primarily detectable during the early onset of a disease.COVID Antibody IgM is used to semi quantitatively detect these IgM antibodies in blood plasma and serum.If your COVID Antibody IgM test is positive, it indicates that -You have been infected or vaccinated recentlyYour immune system has started responding to the virusesYou may be infected with COVID or recovered recentlyYour body has started responding to the vaccine - Post Vaccination",
   },
   {
     id: "141",
@@ -1679,7 +1688,7 @@ export const products = [
     category: "wireless",
     price: 500,
     description:
-    "COVID Antibodies - Total (C.L.I.A) diagnosis's COVID infection by detecting antibodies in the blood of patients against COVID antigen. This test is specifically recommended for asymptomatic individuals or those with mild symptoms, like cold, cough, flu and loss of smell and taste. Higher levels of IgG in your body indicate a previous infection. Book a test and benefit from free home sample collection",
+      "COVID Antibodies - Total (C.L.I.A) diagnosis's COVID infection by detecting antibodies in the blood of patients against COVID antigen. This test is specifically recommended for asymptomatic individuals or those with mild symptoms, like cold, cough, flu and loss of smell and taste. Higher levels of IgG in your body indicate a previous infection. Book a test and benefit from free home sample collection",
   },
   {
     id: "142",
@@ -1688,7 +1697,7 @@ export const products = [
     category: "wireless",
     price: 1030,
     description:
-    "Interleukin 6 (IL-6) is a protein produced in different cells. It is a part of a large group of molecules called cytokines. Cytokines have multiple roles to play, especially with directing the body’s immune system. It is produced in response to inflammation, infection, autoimmune disorders, cardiovascular diseases, and some cancers. It functions through activation of the acquired immune system (B and T cells) as well as the innate immune system. It contributes to host defense through the stimulation of acute-phase responses, producing new blood cells, and immune reactions. Book IL6 test at an affordable price, with free home collection from Thyrocare.",
+      "Interleukin 6 (IL-6) is a protein produced in different cells. It is a part of a large group of molecules called cytokines. Cytokines have multiple roles to play, especially with directing the body’s immune system. It is produced in response to inflammation, infection, autoimmune disorders, cardiovascular diseases, and some cancers. It functions through activation of the acquired immune system (B and T cells) as well as the innate immune system. It contributes to host defense through the stimulation of acute-phase responses, producing new blood cells, and immune reactions. Book IL6 test at an affordable price, with free home collection from Thyrocare.",
   },
 
   {
@@ -1698,7 +1707,7 @@ export const products = [
     category: "wireless",
     price: 4120,
     description:
-    "The Anti-DNase B (DNB) test checks for past or recent Strep Throat infection. It detects antibodies produced by the body against Group A streptococcus (GAS) bacteria which cause this Strep throat. This test is highly recommended if you have come in direct contact with an infected person or are experiencing symptoms like cough, hoarseness, fever, pain while swallowing, red/swollen tonsils, white patches on the tonsils, tiny red spots on the palate and swollen lymph nodes near the neck. Book the test at the most affordable rates",
+      "The Anti-DNase B (DNB) test checks for past or recent Strep Throat infection. It detects antibodies produced by the body against Group A streptococcus (GAS) bacteria which cause this Strep throat. This test is highly recommended if you have come in direct contact with an infected person or are experiencing symptoms like cough, hoarseness, fever, pain while swallowing, red/swollen tonsils, white patches on the tonsils, tiny red spots on the palate and swollen lymph nodes near the neck. Book the test at the most affordable rates",
   },
   {
     id: "144",
@@ -1707,7 +1716,7 @@ export const products = [
     category: "wireless",
     price: 3910,
     description:
-    "The test measures the quantity of HIV viral RNA present in the body. It tells you about disease progress and the response to ongoing antiretroviral therapy, which helps your doctor recommend a more effective treatment regimen if required. The test is also recommended as a preliminary test to detect the presence of HIV in the body. Book now at affordable rates and get a free home sample collection",
+      "The test measures the quantity of HIV viral RNA present in the body. It tells you about disease progress and the response to ongoing antiretroviral therapy, which helps your doctor recommend a more effective treatment regimen if required. The test is also recommended as a preliminary test to detect the presence of HIV in the body. Book now at affordable rates and get a free home sample collection",
   },
   {
     id: "145",
@@ -1716,7 +1725,7 @@ export const products = [
     category: "wireless",
     price: 3240,
     description:
-    "Hepatitis B Virus (HBV) Qualitative PCR test detects hepatitis infections. The parameters encompass various antigens that evaluate the presence of Hepatitis B virus in your body. This test is typically recommended for individuals who show symptoms such as fatigue, poor appetite, stomach pain, nausea and jaundice. The test also aids in detecting current or past infections, assessing the contagiousness and severity of the infection as well as determining if it has caused liver damage. Get tested for the infection today to mitigate any future complications. Book a test at the most competitive market rates and get from free home sample collection",
+      "Hepatitis B Virus (HBV) Qualitative PCR test detects hepatitis infections. The parameters encompass various antigens that evaluate the presence of Hepatitis B virus in your body. This test is typically recommended for individuals who show symptoms such as fatigue, poor appetite, stomach pain, nausea and jaundice. The test also aids in detecting current or past infections, assessing the contagiousness and severity of the infection as well as determining if it has caused liver damage. Get tested for the infection today to mitigate any future complications. Book a test at the most competitive market rates and get from free home sample collection",
   },
   {
     id: "146",
@@ -1725,7 +1734,7 @@ export const products = [
     category: "wireless",
     price: 3240,
     description:
-    "Hepatitis C Virus (HCV) Qualitative PCR test detects HCV infection by identifying antibodies to HCV in your bloodstream. This test is typically recommended for individuals who show symptoms such as fever, fatigue, decreased appetite, nausea, vomiting, abdominal pain, dark urine, pale stools, joint pain and jaundice. In its chronic stage, this virus can give rise to severe liver problems like cirrhosis and liver cancer. It is advisable to undergo timely testing for early prevention. Book a test and enjoy free home sample collection",
+      "Hepatitis C Virus (HCV) Qualitative PCR test detects HCV infection by identifying antibodies to HCV in your bloodstream. This test is typically recommended for individuals who show symptoms such as fever, fatigue, decreased appetite, nausea, vomiting, abdominal pain, dark urine, pale stools, joint pain and jaundice. In its chronic stage, this virus can give rise to severe liver problems like cirrhosis and liver cancer. It is advisable to undergo timely testing for early prevention. Book a test and enjoy free home sample collection",
   },
   {
     id: "147",
@@ -1734,7 +1743,7 @@ export const products = [
     category: "wireless",
     price: 210,
     description:
-    "TSH - Ultrasensitive is a blood test that measures the TSH levels in your body. Ultrasensitive TSH test diagnoses thyroid hormonal imbalance and disorders and monitors treatment response. It also screens the newborn for congenital hypothyroidism. Ultrasensitive TSH ensures highest sensitive and accuracy on the detection. Book a test now if you notice symptoms like hair fall, skin problems, losing or gaining weight, swollen throat, exhaustion, and blurry vision",
+      "TSH - Ultrasensitive is a blood test that measures the TSH levels in your body. Ultrasensitive TSH test diagnoses thyroid hormonal imbalance and disorders and monitors treatment response. It also screens the newborn for congenital hypothyroidism. Ultrasensitive TSH ensures highest sensitive and accuracy on the detection. Book a test now if you notice symptoms like hair fall, skin problems, losing or gaining weight, swollen throat, exhaustion, and blurry vision",
   },
   {
     id: "148",
@@ -1743,7 +1752,7 @@ export const products = [
     category: "wireless",
     price: 650,
     description:
-    "Cardiac troponin I is a protein found in the cells of your heart muscles. It is released into the bloodstream when your heart muscle is injured. The level of troponin I in the blood can be measured by taking a blood test. In individuals who appear healthy and have no symptoms of cardiovascular disease, the Troponin I Heart Attack Risk helps determine the risk of a future heart attack or other cardiovascular diseases. Add Thyrocare’s Troponin I Heart Attack Risk test to your health checks to help identify your risk of heart.",
+      "Cardiac troponin I is a protein found in the cells of your heart muscles. It is released into the bloodstream when your heart muscle is injured. The level of troponin I in the blood can be measured by taking a blood test. In individuals who appear healthy and have no symptoms of cardiovascular disease, the Troponin I Heart Attack Risk helps determine the risk of a future heart attack or other cardiovascular diseases. Add Thyrocare’s Troponin I Heart Attack Risk test to your health checks to help identify your risk of heart.",
   },
   {
     id: "149",

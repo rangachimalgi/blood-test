@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import FilterSelect from "../components/FilterSelect";
 import SearchBar from "../components/SeachBar/SearchBar";
+import { useNavigate } from "react-router-dom"; // Already probably imported
 import { Fragment, useContext, useEffect, useState, useRef } from "react";
 import { products } from "../utils/products";
 import ShopList from "../components/ShopList";
@@ -9,7 +10,7 @@ import { DataContainer } from "../App";
 import { useParams } from "react-router-dom";
 import CartSummary from "../components/CartSummary";
 import CheckoutForm from "../components/CheckoutForm";
-import "../Styles/Shop.css";  // Import your CSS file here
+import "../Styles/Shop.css"; // Import your CSS file here
 
 const Shop = () => {
   const { addToCart, globalFilterList } = useContext(DataContainer);
@@ -26,10 +27,11 @@ const Shop = () => {
     setFilterList(globalFilterList); // Whenever global filter list changes, update local list
   }, [globalFilterList]);
 
+  const navigate = useNavigate();
+  
   const handleBookNow = () => {
-    setShowCheckout(true);
+    navigate("/cart"); // 🔥 Go to Cart page
   };
-
   const handleCloseCheckout = () => {
     setShowCheckout(false);
   };
@@ -71,7 +73,7 @@ const Shop = () => {
         <CheckoutForm
           show={showCheckout}
           handleClose={handleCloseCheckout}
-          CartItem={filterList}  // This might need to be the selected items in the cart instead
+          CartItem={filterList} // This might need to be the selected items in the cart instead
           setCartItem={() => {}}
         />
       )}
