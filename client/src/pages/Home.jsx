@@ -15,6 +15,8 @@ import {
 import { DataContainer } from "../App";
 import SliderHome from "../components/Slider";
 import HealthConcernsSection from "../components/HealthConcernsSection.jsx";
+import HealthPackagesList from "./HealthPackageList.jsx";
+import "../Styles/HealthPackageList.css";
 
 const Home = () => {
   const { addToCart } = useContext(DataContainer);
@@ -40,7 +42,7 @@ const Home = () => {
           if (toastId.current) {
             toast.dismiss(toastId.current); // Dismiss the toast
             toastId.current = null; // Reset toastId
-          } 
+          }
         }}
       >
         Go to Cart
@@ -74,13 +76,29 @@ const Home = () => {
         productItems={healthConcerns}
         addToCart={handleAddToCart}
       />
-      <Section
+      <section
         id="popular-packages"
-        title="Popular Packages"
-        bgColor="#f6f9fc"
-        productItems={discoutProducts}
-        addToCart={handleAddToCart}
-      />
+        style={{
+          background: "#f6f9fc",
+          padding: "2rem 0",
+          textAlign: "center", // 👈 Center everything inside
+        }}
+      >
+        <div
+          className="packages-list"
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+            padding: "0 1rem",
+          }}
+        >
+          <HealthPackagesList
+            title="Popular Packages"
+            packageIds={["01", "02", "03"]}
+          />
+        </div>
+      </section>
+
       <Section
         id="popular-tests"
         title="Popular Tests"

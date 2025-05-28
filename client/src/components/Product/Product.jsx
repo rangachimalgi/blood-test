@@ -7,7 +7,15 @@ import { toast } from "react-toastify";
 import CheckoutForm from "../CheckoutForm";
 import Highlight from "../../components/Highlight"; // Import Highlight component
 
-const Product = ({ title, productItem, addToCart, showImage = true, desc, enableHoverEffect, isShopList }) => {
+const Product = ({
+  title,
+  productItem,
+  addToCart,
+  showImage = true,
+  desc,
+  enableHoverEffect,
+  isShopList,
+}) => {
   const { setSelectedProduct } = useContext(DataContainer);
   const router = useNavigate();
   const [count, setCount] = useState(0);
@@ -42,16 +50,15 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
     addToCart(productItem); // Only call the addToCart function passed from the parent
     if (isMobile && title === "Popular Tests") {
       setTimeout(() => {
-        router('/cart');
+        router("/cart");
       }, 1000); // Delay to allow the toast message to be seen
     }
   };
-  
 
   const handleBookNow = (pkg) => {
-    setSelectedProduct(pkg);  // Assuming you still want to set the selected product in context or state
-    router(`/shop/${pkg.id}`);  // Navigate to the product-specific page
-};
+    setSelectedProduct(pkg); // Assuming you still want to set the selected product in context or state
+    router(`/shop/${pkg.id}`); // Navigate to the product-specific page
+  };
 
   const handleCloseCheckout = () => {
     setShowCheckout(false);
@@ -60,7 +67,7 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
 
   const extractNumberOfTests = (productName) => {
     const match = productName.match(/\((\d+)\s*Tests\)/i);
-    return match ? match[1] : '';
+    return match ? match[1] : "";
   };
 
   const isPopularPackage = title === "Popular Packages";
@@ -68,24 +75,20 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
 
   if (isShopList) {
     return (
-      <Col
-        lg={12}
-        md={12}
-        sm={12}
-        xs={12}
-        className="product-list-item"
-      >
+      <Col lg={12} md={12} sm={12} xs={12} className="product-list-item">
         <div className="product-info">
-          <h3 onClick={handleClick} style={{ fontSize: '20px', fontWeight: '600' }}>{productItem.productName.toUpperCase()}</h3>
-          <p>{productItem.labName || '\u00A0'}</p>
-          </div>
+          <h3
+            onClick={handleClick}
+            style={{ fontSize: "20px", fontWeight: "600" }}
+          >
+            {productItem.productName.toUpperCase()}
+          </h3>
+          <p>{productItem.labName || "\u00A0"}</p>
+        </div>
         <div className="product-price">
           <h4>&#8377;{productItem.price}</h4>
           <div className="product-buttons">
-            <button
-              className="product-button book-now"
-              onClick={handleClick}
-            >
+            <button className="product-button book-now" onClick={handleClick}>
               Book Now
             </button>
             <button
@@ -105,7 +108,9 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
         md={4}
         sm={6}
         xs={12}
-        className={`product mtop ${enableHoverEffect ? 'hover-enabled' : ''} ${isPopularPackage ? 'popular-packages' : ''}`}
+        className={`product mtop ${enableHoverEffect ? "hover-enabled" : ""} ${
+          isPopularPackage ? "popular-packages" : ""
+        }`}
       >
         {title === "Big Discount" && (
           <span className="discount">{productItem.discount}% Off</span>
@@ -147,10 +152,14 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
               <button
                 aria-label="Add"
                 type="submit"
-                className={`add ${isPopularTest ? 'add-to-cart-full' : ''}`}
+                className={`add ${isPopularTest ? "add-to-cart-full" : ""}`}
                 onClick={handleAddToCart}
               >
-                {isPopularTest ? 'Add to Cart' : <ion-icon name="add"></ion-icon>}
+                {isPopularTest ? (
+                  "Add to Cart"
+                ) : (
+                  <ion-icon name="add"></ion-icon>
+                )}
               </button>
             )}
           </div>
@@ -166,9 +175,17 @@ const Product = ({ title, productItem, addToCart, showImage = true, desc, enable
               </div>
               <div className="extra-details">
                 <ul>
-                  <li><i className="fa fa-check-circle"></i> NABL, CAP, ISO 9001</li>
-                  <li><i className="fa fa-check-circle"></i> Free Home Sample Pickup</li>
-                  <li><i className="fa fa-check-circle"></i> Online Report Delivery</li>
+                  <li>
+                    <i className="fa fa-check-circle"></i> NABL, CAP, ISO 9001
+                  </li>
+                  <li>
+                    <i className="fa fa-check-circle"></i> Free Home Sample
+                    Pickup
+                  </li>
+                  <li>
+                    <i className="fa fa-check-circle"></i> Online Report
+                    Delivery
+                  </li>
                 </ul>
               </div>
             </>

@@ -9,7 +9,7 @@ import Highlight from "../components/Highlight";
 import "../Styles/HealthPackageList.css";
 import logo from "../Images/logo.png";
 
-const HealthPackagesList = ({ packageIds }) => {
+const HealthPackagesList = ({ title, packageIds }) => {
   const { addToCart } = useContext(DataContainer);
   const [showCheckout, setShowCheckout] = useState(false);
   const [selectedPackage, setSelectedPackage] = useState(null);
@@ -45,9 +45,15 @@ const HealthPackagesList = ({ packageIds }) => {
   return (
     <div className="packages-list">
       <ToastContainer />
-      <h2>
-        {packageIds ? "Selected Health Packages" : "Available Health Packages"}
-      </h2>
+      <div style={{ textAlign: "center", marginBottom: "2rem" }}>
+        <h2>
+          {title ||
+            (packageIds
+              ? "Selected Health Packages"
+              : "Available Health Packages")}
+        </h2>
+      </div>
+
       <div className="packages-grid">
         {displayedPackages.map((pkg) => (
           <div key={pkg.id} className="package-card">
