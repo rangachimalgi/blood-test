@@ -7,11 +7,12 @@ import Section from "../components/Section";
 import {
   products,
   discoutProducts,
-  popularTests,
+  
   healthConcerns,
   checkupsMen,
   checkupsWomen,
 } from "../utils/products";
+import { popularTests } from "../utils/popularTests.js";
 import { DataContainer } from "../App";
 import SliderHome from "../components/Slider";
 import HealthConcernsSection from "../components/HealthConcernsSection.jsx";

@@ -99,65 +99,6 @@ export const serviceData = [
   },
 ];
 
-export const popularTests = [
-  {
-    id: "01",
-    productName: "Fasting Blood Sugar (FBS)",
-    imgUrl: bloodTest01,
-    category: "Blood",
-    price: 149,
-    shortDesc:
-      "Fasting Blood Sugar test is generally run to measure the amount of blood sugar after minimum 8 long hours of complete fasting.",
-    description:
-      "Fasting Blood Sugar test is generally run to measure the amount of blood sugar after minimum 8 long hours of complete fasting. After a whole night without any kind of food, this test is run to properly monitor the chances of diabetes in individuals. This test is the fastest and simplest test to detect the probabilities of diabetes. Diseases like Diabetes do not generate any symptoms initially. There lies the importance of this test. This is why this test is recommended for everyone who are above 45 age. You must fast for a whole night before the test or at least for 8 to 12 hours. Following the instructions of your doctor is also necessary even if you are on medication. If your Fasting Blood Sugar level is lower than normal, then it may cause a disease named hypoglycemia.",
-  },
-
-  {
-    id: "02",
-    productName: "HBA1C",
-    imgUrl: bloodTest01,
-    category: "blood",
-    price: 375,
-    shortDesc:
-      "HbA1c Test is used to quickly measure the amount of blood sugar that remains attached with Haemoglobin.",
-    description:
-      "HbA1c Test is used to quickly measure the amount of blood sugar that remains attached with Haemoglobin. Knowingly, the combination of Haemoglobin and glucose is known as HbA1c (glycated or glycosylated haemoglobin). Generally, this test is run to detect the possibilities of diabetes and prediabetes in adults. Everyone should go for this test for at least once in three months because the lifespan of red blood cells is usually 3 months. Your habit of smoking may affect your test results passively. Tests like Glycosylated HB Blood, Diabetes test, A1c Test, H1C test, A1c Haemoglobin test, Glycosylated HB are included in an HbA1c test. No hardcore preparations are needed to go for this test. You just need to follow the instructions given by your doctor before the test. If the value remains greater than 5.7 in your test results, then its normal. HBA1C Test Price is Rs. 375.",
-  },
-
-  {
-    id: "03",
-    productName: "THYROID STIMULATING HORMONE (TSH)",
-    imgUrl: bloodTest01,
-    category: "sofa",
-    price: 173,
-    shortDesc:
-      "This test is merely done to measure the level of Thyroid Stimulating Hormone quickly.",
-    description:
-      "This test is merely done to measure the level of Thyroid Stimulating Hormone quickly. This is one specific kind of pituitary hormone that stimulates the thyroid gland. This test is also necessary for everyone as thyroid disorders are also known for turning incurable if not detected or treated on time. The prime objective of this test is to determine that the thyroid gland is hyperactive or underactive. If you are having any kind of thyroid disorders, then your doctor may suggest you to go for a test. If the thyroid gland starts to produce huge amount of Thyroid Stimulating Hormone, then a specific health condition starts to occur that is known as hypothyroidism. No specific preparations are required for this test. You just need to follow the instructions of your doctor in a proper manner. The thyroid gland functionality remains different in every person, which impacts the test results. Besides, the test results may also vary depending upon age, gender or health condition.",
-  },
-  {
-    id: "04",
-    productName: "ERYTHROCYTE SEDIMENTATION RATE (ESR)",
-    imgUrl: bloodTest01,
-    category: "sofa",
-    price: 200,
-    shortDesc:
-      "An erythrocyte sedimentation rate (ESR) is a type of blood test that measures how quickly erythrocytes (red blood cells) settle at the bottom of a test tube that contains a blood sample.",
-    description:
-      "An erythrocyte sedimentation rate (ESR) is a type of blood test that measures how quickly erythrocytes (red blood cells) settle at the bottom of a test tube that contains a blood sample. Normally, red blood cells settle relatively slowly. A faster-than-normal rate may indicate inflammation in the body.",
-  },
-  {
-    id: "05",
-    productName: "FREE THYROXINE (FT4)",
-    imgUrl: bloodTest01,
-    category: "sofa",
-    price: 310,
-    shortDesc:
-      "FT4 and FT3 are also two of the most important tests. Knowingly, T3 only represents just 5% of normal thyroid hormone.",
-    description:
-      "FT4 and FT3 are also two of the most important tests. Knowingly, T3 only represents just 5% of normal thyroid hormone. Measurement of free triiodothyronine is the prime reason why this test is run. Decreasing amount of FT4 may cause hypothyroidism, which may cause several types of disorders. FT4 is known for comprising a little fraction of total thyroxine that remains available to the body tissues. Free T3 and T4 blood tests are included in all kinds of FT4 tests. You must inform your doctor before the test if you are already on medication or having any kind of allergies. No other specific preparations are needed for these tests. However, 10-12 hours of complete fasting is necessary before appearing for the test. The test results may vary depending upon gender and age or the health condition of the patient.",
-  },
-];
 
 export const healthConcerns = [
   {
