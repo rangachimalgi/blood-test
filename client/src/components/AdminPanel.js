@@ -63,6 +63,25 @@ function AdminDashboard() {
             </Link>
           </div>
           <div className="col-md-3 d-flex align-items-stretch">
+            <Link to="/admin/manage-packages" className="text-decoration-none">
+              <div className="card bg-warning text-dark mb-3 h-100 d-flex align-items-center justify-content-center">
+                <div className="card-body">
+                  <h5 className="card-title">Manage Packages</h5>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div className="col-md-3 d-flex align-items-stretch">
+            <Link to="/admin/manage-tests" className="text-decoration-none">
+              <div className="card bg-warning text-dark mb-3 h-100 d-flex align-items-center justify-content-center">
+                <div className="card-body">
+                  <h5 className="card-title">Manage Tests</h5>
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          {/* <div className="col-md-3 d-flex align-items-stretch">
             <div className="card bg-danger text-white mb-3 h-100 d-flex align-items-center justify-content-center">
               <div className="card-body">
                 <h5 className="card-title">Total Revenue</h5>
@@ -75,7 +94,7 @@ function AdminDashboard() {
                 </h3>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

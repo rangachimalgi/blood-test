@@ -2,65 +2,44 @@ import { Fragment, useContext, useEffect, useState } from "react";
 import Banner from "../components/Banner/Banner";
 import { DataContainer } from "../App";
 import { Col, Container, Row } from "react-bootstrap";
-import ShopList from "../components/ShopList";
-import { products } from "../utils/products";
 import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import EmbeddedCheckoutForm from "../components/EmbeddedCheckoutForm.js";
 import "../Styles/productDetails.css";
 
 const ProductDetails = () => {
-  const [listSelected, setListSelected] = useState("desc");
-  const [relatedProducts, setRelatedProducts] = useState([]);
-  const [includedTests, setIncludedTests] = useState([]);
-  const [expandedCategory, setExpandedCategory] = useState(null);
   const { addToCart } = useContext(DataContainer);
   const { id } = useParams();
-  const [selectedProduct, setSelectedProduct] = useState(null); // Initialize state
-  const [quantity, setQuantity] = useState(1);
+
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [expandedCategory, setExpandedCategory] = useState(null);
+  const [listSelected, setListSelected] = useState("desc");
 
   useEffect(() => {
-    // Retrieve the product from the products array using the ID from the URL
-    const product = products.find((item) => item.id === id);
-    if (product) {
-      setSelectedProduct(product);
-    } else {
-      // Handle the case where the product is not found
-      console.error(`Product with id ${id} not found`);
-    }
+    const fetchProduct = async () => {
+      try {
+        const res = await fetch(`${process.env.REACT_APP_API_URL}/api/tests/${id}`);
+        const data = await res.json();
+        setSelectedProduct(data);
+      } catch (err) {
+        console.error("Failed to fetch product by ID:", err);
+      }
+    };
+
+    fetchProduct();
+    window.scrollTo(0, 0);
   }, [id]);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    if (selectedProduct?.includedTests) {
-      const allTests = selectedProduct.includedTests.flatMap(
-        (category) => category.tests
-      );
-      setIncludedTests(
-        products.filter((product) => allTests.includes(product.id))
-      );
-    }
-    setRelatedProducts(
-      products.filter(
-        (item) =>
-          item.category === selectedProduct?.category &&
-          item.id !== selectedProduct?.id
-      )
-    );
-  }, [selectedProduct]);
-
-  const handleQuantityChange = (event) => {
-    setQuantity(parseInt(event.target.value));
-  };
-
-  const handleAdd = (selectedProduct, quantity) => {
-    addToCart(selectedProduct, quantity);
+  const handleAdd = () => {
+    addToCart(selectedProduct);
     toast.success("Product has been added to cart!");
   };
 
+  if (!selectedProduct) return <h4 className="text-center mt-5">Loading...</h4>;
+
   return (
     <Fragment>
-      <Banner title={selectedProduct?.productName} />
+      <Banner title={selectedProduct.productName} />
       <Container className="product-page">
         <Row>
           <Col md={8}>
@@ -70,111 +49,85 @@ const ProductDetails = () => {
                   <Col md={6}>
                     <img
                       loading="lazy"
-                      src={selectedProduct?.imgUrl}
-                      alt={selectedProduct?.productName}
+                      src={selectedProduct.imgUrl}
+                      alt={selectedProduct.productName}
+                      className="img-fluid"
                     />
                   </Col>
                   <Col md={6}>
-                    <h2>{selectedProduct?.productName}</h2>
+                    <h2>{selectedProduct.productName}</h2>
                     <div className="info">
-                      <span className="price">
-                        &#8377;{selectedProduct?.price}
-                      </span>
-                      <span>Category: {selectedProduct?.category}</span>
+                      <span className="price">₹{selectedProduct.price}</span>
+                      <span>Category: {selectedProduct.category}</span>
                     </div>
-                    <p>{selectedProduct?.shortDesc}</p>
+                    <p>{selectedProduct.shortDesc}</p>
+                    <button className="btn btn-primary mt-3" onClick={handleAdd}>
+                      Add to Cart
+                    </button>
                   </Col>
                 </Row>
               </section>
 
-              {/* Included Tests section */}
-              {selectedProduct?.includedTests &&
-                selectedProduct.includedTests.length > 0 && (
-                  <section className="included-tests">
-                    <h3>Included Tests</h3>
-                    {selectedProduct.includedTests.map((category) => (
-                      <div key={category.categoryName}>
-                        <h4
-                          onClick={() =>
-                            setExpandedCategory(
-                              expandedCategory === category.categoryName
-                                ? null
-                                : category.categoryName
-                            )
-                          }
-                          style={{
-                            cursor: "pointer",
-                            display: "flex",
-                            alignItems: "center",
-                          }}
-                        >
-                          {expandedCategory === category.categoryName ? (
-                            <i
-                              className="fa fa-chevron-down"
-                              style={{ marginRight: "10px" }}
-                            ></i>
-                          ) : (
-                            <i
-                              className="fa fa-chevron-right"
-                              style={{ marginRight: "10px" }}
-                            ></i>
-                          )}
-                          {category.categoryName}
-                        </h4>
-
-                        {expandedCategory === category.categoryName && (
-                          <Row>
-                            {category.tests.map((testId) => {
-                              const test = products.find(
-                                (p) => p.id === testId
-                              );
-                              return (
-                                <Col md={4} key={testId}>
-                                  <div className="test-item">
-                                    <h5>{test.productName}</h5>
-                                    <p>{test.shortDesc}</p>
-                                  </div>
-                                </Col>
-                              );
-                            })}
-                          </Row>
+              {/* Included Tests if it's a package */}
+              {selectedProduct.includedTests?.length > 0 && (
+                <section className="included-tests mt-4">
+                  <h3>Included Tests</h3>
+                  {selectedProduct.includedTests.map((category, i) => (
+                    <div key={i}>
+                      <h4
+                        onClick={() =>
+                          setExpandedCategory(
+                            expandedCategory === category.categoryName ? null : category.categoryName
+                          )
+                        }
+                        style={{
+                          cursor: "pointer",
+                          display: "flex",
+                          alignItems: "center",
+                        }}
+                      >
+                        {expandedCategory === category.categoryName ? (
+                          <i className="fa fa-chevron-down me-2"></i>
+                        ) : (
+                          <i className="fa fa-chevron-right me-2"></i>
                         )}
-                      </div>
-                    ))}
-                  </section>
-                )}
+                        {category.categoryName}
+                      </h4>
+                      {expandedCategory === category.categoryName && (
+                        <ul className="ms-4">
+                          {category.tests.map((test, index) => (
+                            <li key={index}>{test}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  ))}
+                </section>
+              )}
 
-              <section className="product-reviews">
+              <section className="product-reviews mt-4">
                 <ul>
                   <li
                     style={{
                       color: listSelected === "desc" ? "black" : "#9c9b9b",
+                      cursor: "pointer",
                     }}
                     onClick={() => setListSelected("desc")}
                   >
                     Description
                   </li>
                 </ul>
-                {listSelected === "desc" ? (
-                  <p>{selectedProduct?.description}</p>
-                ) : (
-                  <div className="rates">
-                    {selectedProduct?.reviews.map((rate) => (
-                      <div className="rate-comment" key={rate.rating}>
-                        <span>John Doe</span>
-                        <span>{rate.rating} (rating)</span>
-                        <p>{rate.text}</p>
-                      </div>
-                    ))}
-                  </div>
+                {listSelected === "desc" && (
+                  <p className="mt-2">{selectedProduct.description}</p>
                 )}
               </section>
             </div>
           </Col>
+
           <Col md={4}>
             <div className="checkout-box form-container">
               <EmbeddedCheckoutForm
-                CartItem={selectedProduct ? [selectedProduct] : []}
+                CartItem={[selectedProduct]}
                 setCartItem={setSelectedProduct}
               />
             </div>

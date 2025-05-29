@@ -9,6 +9,7 @@ import cors from "cors";
 import authRoutes from "./routes/authRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
 import "./keepAlive.js"
+import testRoutes from "./routes/testRoutes.js"
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -48,6 +49,7 @@ app.use("/api/orders", (req, res, next) => {
   next();
 }, orderRoutes);
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use('/api/tests', testRoutes);
 
 //static files
 app.use(express.static(path.join(__dirname, 'client', 'build')));
