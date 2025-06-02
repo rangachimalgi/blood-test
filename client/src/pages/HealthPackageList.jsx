@@ -1,4 +1,5 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
+import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { healthPackagesArray } from "./HealthPackages";
 import { DataContainer } from "../App";
@@ -13,7 +14,23 @@ const HealthPackagesList = ({ title, packageIds }) => {
   const { addToCart } = useContext(DataContainer);
   const [showCheckout, setShowCheckout] = useState(false);
   const [selectedPackage, setSelectedPackage] = useState(null);
+  const [allPackages, setAllPackages] = useState([]);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const fetchPackages = async () => {
+      try {
+        const res = await axios.get(
+          `${process.env.REACT_APP_API_URL}/api/packages`
+        );
+        setAllPackages(res.data);
+      } catch (err) {
+        console.error("Failed to fetch packages:", err);
+      }
+    };
+
+    fetchPackages();
+  }, []);
 
   const handleAddToCart = (pkg) => {
     addToCart(pkg);
@@ -33,8 +50,8 @@ const HealthPackagesList = ({ title, packageIds }) => {
 
   // Filter packages based on the provided packageIds
   const displayedPackages = packageIds
-    ? healthPackagesArray.filter((pkg) => packageIds.includes(pkg.id))
-    : healthPackagesArray;
+    ? allPackages.filter((pkg) => packageIds.includes(pkg.id))
+    : allPackages;
 
   // Extract the number before the word "Tests"
   const extractNumberOfTests = (productName) => {

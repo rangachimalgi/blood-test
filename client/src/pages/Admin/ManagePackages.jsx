@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Form, Button, Card } from "react-bootstrap";
+import axios from "axios";
 
 const ManagePackages = () => {
   const [packageData, setPackageData] = useState({
@@ -9,6 +10,7 @@ const ManagePackages = () => {
     price: "",
     mrp: "",
     shortDesc: "",
+    description: "",
     includedTests: [],
   });
 
@@ -36,11 +38,50 @@ const ManagePackages = () => {
     setTestList([]);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Submitted Package Data:", packageData);
-    alert("Package data logged in console!");
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const payload = {
+    ...packageData,
+    id: Date.now().toString(),
+    type: "package",
+    imgUrl: "populartest01.avif", // replace with upload logic later
+    overlayTitle: packageData.productName,
+    overlayDetails: packageData.includedTests.map((cat) => cat.categoryName),
+    description: packageData.desc, // ✅ this ensures full desc is mapped
+    discount: 30, // default
+    avgRating: 4.5,
+    reviews: [
+      {
+        rating: 4.7,
+        text: "Highly recommended!",
+      },
+    ],
   };
+
+  try {
+    const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/packages`, payload);
+    alert("✅ Package saved!");
+    console.log("Response:", res.data);
+
+    // Reset form
+    setPackageData({
+      productName: "",
+      desc: "",
+      category: "",
+      price: "",
+      mrp: "",
+      shortDesc: "",
+      includedTests: [],
+    });
+    setTestList([]);
+    setCurrentCategory("");
+  } catch (err) {
+    console.error("❌ Error submitting package:", err.message);
+    alert("❌ Failed to save package");
+  }
+};
+
 
   return (
     <div className="container mt-4">

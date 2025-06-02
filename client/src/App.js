@@ -18,7 +18,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ManagePackages from "./pages/Admin/ManagePackages";
 import ManageTests from "./pages/Admin/ManageTests";
-import BulkUploadProducts from "./pages/Admin/BulkUploadProducts";
 const Home = lazy(() => import("./pages/Home"));
 const Shop = lazy(() => import("./pages/Shop"));
 const Health = lazy(() => import("./pages/HealthPackagesDetails"));
@@ -137,7 +136,6 @@ function App() {
             <Route path="/admin/total-revenue" element={<TotalRevenue />} />
             <Route path="/admin/manage-packages" element={<ManagePackages />} />
             <Route path="/admin/manage-tests" element={<ManageTests />} />
-            <Route path="/admin/bulk-upload" element={<BulkUploadProducts />} />
             <Route path="/user-dashboard" element={<UserDashboard />} />
             <Route
               path="/terms-and-conditions"

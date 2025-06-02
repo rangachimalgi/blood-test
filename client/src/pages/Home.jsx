@@ -95,7 +95,7 @@ const Home = () => {
         >
           <HealthPackagesList
             title="Popular Packages"
-            packageIds={["01", "02", "03"]}
+            packageIds={["01"]}
           />
         </div>
       </section>

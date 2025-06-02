@@ -1,4 +1,5 @@
 import React, { Fragment, useContext, useEffect, useState } from "react";
+import axios from "axios";
 import Banner from "../components/Banner/Banner";
 import { DataContainer } from "../App";
 import { Col, Container, Row, Collapse } from "react-bootstrap";
@@ -14,13 +15,22 @@ const HealthPackageDetails = () => {
   const [openCategoryId, setOpenCategoryId] = useState(null);
   const { id } = useParams();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    const selectedHealthPackage = healthPackagesArray.find(
-      (packageItem) => packageItem.id === id
-    );
-    setSelectedProduct(selectedHealthPackage);
-  }, [id, setSelectedProduct]);
+ useEffect(() => {
+  window.scrollTo(0, 0);
+  
+  const fetchPackageById = async () => {
+    try {
+      const res = await axios.get(
+        `${process.env.REACT_APP_API_URL}/api/packages/${id}`
+      );
+      setSelectedProduct(res.data);
+    } catch (err) {
+      console.error("Failed to fetch package by ID:", err);
+    }
+  };
+
+  fetchPackageById();
+}, [id, setSelectedProduct]);
 
   const handleQuantityChange = (event) => {
     setQuantity(parseInt(event.target.value));
