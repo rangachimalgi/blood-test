@@ -75,43 +75,51 @@ const HealthPackagesList = ({ title, packageIds }) => {
         {displayedPackages.map((pkg) => (
           <div key={pkg.id} className="package-card">
             <Highlight number={extractNumberOfTests(pkg.productName)} />
-            <Link to={`/health/${pkg.id}`} className="package-link">
-              <div className="package-image-container">
+            <div className="package-image-container">
+              <Link to={`/health/${pkg.id}`} className="package-link">
                 <img
                   src={pkg.imgUrl}
                   alt={pkg.productName}
                   className="package-image"
                 />
-                <div className="hover-overlay">
-                  <h2>{pkg.overlayTitle.toUpperCase()}</h2>
-                  <ul>
-                    {pkg.overlayDetails?.map((detail, index) => (
-                      <li key={index}>{detail.toUpperCase()}</li>
-                    ))}
-                  </ul>
+              </Link>
+
+              {/* Move this OUTSIDE the Link */}
+              <div className="hover-overlay">
+                <h2>{pkg.overlayTitle.toUpperCase()}</h2>
+                <ul>
+                  {pkg.overlayDetails?.map((detail, index) => (
+                    <li key={index}>{detail.toUpperCase()}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <Link to={`/health/${pkg.id}`} className="package-link">
+              <div className="package-details">
+                <div className="package-name">
+                  {pkg.productName.toUpperCase()}
+                </div>
+                <div className="package-desc">
+                  {pkg.desc ? pkg.desc.toUpperCase() : ""}
                 </div>
               </div>
             </Link>
-            <div className="package-details">
-              <div className="package-name">
-                {pkg.productName.toUpperCase()}
-              </div>
-              <div className="package-desc">
-                {pkg.desc ? pkg.desc.toUpperCase() : ""}
-              </div>
-            </div>
+
             <div className="price-cart-box">
               <div className="price-box">
                 <span className="mrp">&#8377;{pkg.mrp}</span>
                 <span className="discounted-price">&#8377;{pkg.price}</span>
               </div>
             </div>
+
             <button
               className="book-now-button"
               onClick={() => handleBookNow(pkg)}
             >
               Book Now
             </button>
+
             <div className="extra-details-with-logo">
               <div className="logo-container">
                 <img src={logo} alt="Logo" className="package-logo" />

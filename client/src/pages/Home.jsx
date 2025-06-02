@@ -7,7 +7,6 @@ import Section from "../components/Section";
 import {
   products,
   discoutProducts,
-  
   healthConcerns,
   checkupsMen,
   checkupsWomen,

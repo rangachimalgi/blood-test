@@ -18,6 +18,7 @@
   background-color: #fff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
+  z-index: 1;
   flex-direction: column; /* Flexbox to align elements vertically */
   justify-content: space-between; /* Ensures proper spacing between items */
   height: 100%; /* Ensures consistent height for all cards */
@@ -56,15 +57,19 @@
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align content at the top */
+  justify-content: flex-start;
+  align-items: center;
   text-align: center;
+  padding: 20px;
   opacity: 0;
   transition: opacity 0.3s ease;
-  padding: 20px;
+  pointer-events: none;
+  z-index: 2;
 }
 
 .package-image-container:hover .hover-overlay {
-  opacity: 1;
+  opacity: 1 !important;
+  pointer-events: auto;
 }
 
 .hover-overlay h2 {
