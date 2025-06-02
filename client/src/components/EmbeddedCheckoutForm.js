@@ -32,6 +32,24 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
     }));
   }, [orderData.noOfPersons]);
 
+  useEffect(() => {
+    if (!orderData.appointmentDate) {
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+
+      const defaultDate = tomorrow.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+      });
+
+      setOrderData((prev) => ({
+        ...prev,
+        appointmentDate: defaultDate,
+      }));
+    }
+  }, []);
+
   const checkAvailability = () => {
     if (availablePincodes.includes(orderData.pincode)) {
       setPincodeMessage("Service is available in your pincode!");
@@ -99,9 +117,9 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
   const generateDateOptions = () => {
     const options = [];
     const currentDate = new Date();
-    for (let i = 0; i < 7; i++) {
+    for (let i = 1; i <= 7; i++) {
       const date = new Date();
-      date.setDate(currentDate.getDate() + i);
+      date.setDate(currentDate.getDate() + i); // Start from tomorrow
       const dateString = date.toLocaleDateString("en-US", {
         year: "numeric",
         month: "short",
