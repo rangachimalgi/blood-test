@@ -3,7 +3,13 @@ import axios from "axios";
 import { Modal, Button, InputGroup, Form } from "react-bootstrap";
 import { availablePincodes } from "../components/availablePincodes.js";
 
-const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
+const CheckoutForm = ({
+  show,
+  handleClose,
+  CartItem,
+  setCartItem,
+  setAdditionalTestCost,
+}) => {
   const [orderData, setOrderData] = useState({
     pincode: "",
     name: "",
@@ -17,6 +23,14 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
     tests: [], // Separate tests array for the order
   });
   const [pincodeMessage, setPincodeMessage] = useState("");
+  const testPrices = {
+    "Fasting Blood Sugar (FBS)": 80,
+    "CRP Test": 480,
+    "ESR Test": 120,
+    "Covid Antibody IgG": 400,
+    "Complete Urine Analysis": 510,
+    "Troponin - Heart Attack Risk Test (ACTNI)": 650,
+  };
 
   useEffect(() => {
     const tomorrow = new Date();
@@ -55,6 +69,7 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
 
   const handleTestChange = (test, isChecked) => {
     let updatedTests = [...orderData.tests];
+
     if (isChecked) {
       if (!updatedTests.includes(test)) {
         updatedTests.push(test);
@@ -62,8 +77,27 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
     } else {
       updatedTests = updatedTests.filter((t) => t !== test);
     }
+
+    // recalculate cost
+    const newCost = updatedTests.reduce(
+      (sum, t) => sum + (testPrices[t] || 0),
+      0
+    );
+
     setOrderData({ ...orderData, tests: updatedTests });
+    setAdditionalTestCost(newCost);
   };
+
+  useEffect(() => {
+    // Calculate total additional price when tests or person count changes
+    const totalTestCost =
+      orderData.tests.reduce((sum, test) => sum + (testPrices[test] || 0), 0) *
+      orderData.noOfPersons;
+
+    localStorage.setItem("additionalTests", JSON.stringify(orderData.tests));
+    localStorage.setItem("additionalTestCost", totalTestCost.toString());
+    localStorage.setItem("noOfPersons", orderData.noOfPersons.toString());
+  }, [orderData.tests, orderData.noOfPersons]);
 
   const handleSubmitOrder = async () => {
     if (!availablePincodes.includes(orderData.pincode)) {
@@ -98,6 +132,20 @@ const CheckoutForm = ({ show, handleClose, CartItem, setCartItem }) => {
       );
       if (response.data.success) {
         setCartItem([]);
+        localStorage.removeItem("cartItem"); // clear localStorage cart
+        setOrderData({
+          pincode: "",
+          name: "",
+          email: "",
+          address: "",
+          phoneno: "",
+          age: "",
+          noOfPersons: 1,
+          appointmentDate: "",
+          beneficiaries: [],
+          tests: [],
+        });
+        setAdditionalTestCost?.(0); // reset test cost if passed from parent
         handleClose();
         alert("Order submitted successfully!");
       } else {
