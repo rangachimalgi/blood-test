@@ -42,7 +42,7 @@ import maleadvancepackage from "../Images/maleadvancepackage.jpg";
 import FemaleSeniorCitizen from "../Images/FemaleSeniorCitizen.jpg";
 import seniorcitizen from "../Images/seniorcitizen.jpg";
 import GenaralHealthPackage from "../Images/GenaralHealthPackage.jpg";
-import labtestslider from "../Images/labtestslider.png";
+import banner from "../Images/banner.png";
 import Untitleddesign from "../Images/Untitleddesign.png";
 import fullBody from "../Images/fullBody.png";
 import heart from "../Images/heart.png";
@@ -66,14 +66,14 @@ export const SliderData = [
     id: 1,
     title: "Book Your Test Now",
     desc: "Book Your Test Now near by to your place .",
-    cover: labtestslider,
+    cover: banner,
   },
-  {
-    id: 2,
-    title: "We serve all around the country",
-    desc: "Book your Test now.",
-    cover: Untitleddesign,
-  },
+  // {
+  //   id: 2,
+  //   title: "We serve all around the country",
+  //   desc: "Book your Test now.",
+  //   cover: banner,
+  // },
 ];
 
 export const serviceData = [

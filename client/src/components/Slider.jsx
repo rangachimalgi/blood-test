@@ -19,7 +19,7 @@ const SliderHome = () => {
           <Slider {...settings}>
           {SliderData.map((value, index) => {
             return (
-              <img src={value.cover} alt={value.title} style={{ width: '100%', height: '100%' }} />
+              <img src={value.cover} alt={value.title}  />
             )
           })}
         </Slider>
