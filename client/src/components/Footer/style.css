@@ -1,7 +1,7 @@
 footer {
-  background-color: #305f97;
+  background-color: #899fb3;
   padding: 80px 0;
-  color: #fff;
+  color: #000;
 }
 
 footer .box {
@@ -13,6 +13,7 @@ footer h1 {
   font-size: 25px;
   font-weight: 800;
   width: max-content;
+  color: #333;
 }
 
 footer .logo {

@@ -5,6 +5,7 @@ import { DataContainer } from "../../App";
 import { Link } from "react-router-dom";
 import LoginModal from "../LoginModal";
 import ProductSearchBar from "../SeachBar/SearchBarGlobal";
+import logo from "../../Images/logoReal.png"
 const NavBar = () => {
   const { CartItem, setCartItem } = useContext(DataContainer);
   const [expand, setExpand] = useState(false);
@@ -60,8 +61,8 @@ const NavBar = () => {
     >
       <Container className="navbar-container">
         <Navbar.Brand to="/">
-          <ion-icon name="medkit-outline"></ion-icon>{" "}
-          <h1 className="logo">Fortune Blood Test</h1>
+         <img src={logo} alt="Fortune Blood Test Logo"/>
+          {/* <h1 className="logo">Fortune Blood Test</h1> */}
         </Navbar.Brand>
         {/* Media cart and toggle */}
         <div className="d-flex">

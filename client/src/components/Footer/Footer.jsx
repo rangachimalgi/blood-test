@@ -8,6 +8,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa"; // Importing social media icons
+import logo from "../../Images/logoReal.png"
 
 const Footer = () => {
   return (
@@ -16,8 +17,8 @@ const Footer = () => {
         <Row className="footer-row">
           <Col md={3} sm={5} className="box">
             <div className="logo">
-              <ion-icon name="medkit-outline"></ion-icon>{" "}
-              <h1>Fortune Blood Test</h1>
+             <img src={logo} alt="Fortune Blood Test Logo" className="footer-logo" />
+              {/* <h1>Fortune Blood Test</h1> */}
             </div>
             {/* <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
