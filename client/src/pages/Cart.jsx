@@ -5,7 +5,7 @@ import { Col, Container, Row, Button } from "react-bootstrap";
 import CheckoutForm from "../components/CheckoutForm.js";
 
 const Cart = () => {
-  const { CartItem, setCartItem, addToCart, decreaseQty, deleteProduct } =
+  const { CartItem, setCartItem, addToCart, deleteProduct } =
     useContext(DataContainer);
   const [additionalTestCost, setAdditionalTestCost] = useState(0); // 💥 live update here
 
@@ -13,6 +13,18 @@ const Cart = () => {
   const totalPrice = baseCartTotal + additionalTestCost;
 
   const navigate = useNavigate();
+
+const decreaseQty = (product) => {
+  const updatedCart = CartItem
+    .map((item) =>
+      item.id === product.id ? { ...item, qty: item.qty - 1 } : item
+    )
+    .filter((item) => item.qty > 0);
+
+  setCartItem(updatedCart);
+  localStorage.setItem("cartItem", JSON.stringify(updatedCart));
+};
+
 
   useEffect(() => {
     window.scrollTo(0, 0);

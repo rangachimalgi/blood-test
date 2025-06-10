@@ -20,6 +20,12 @@
   padding: 10px;
 }
 
+.product-col {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 16px;
+}
+
 .discount {
   position: absolute;
   top: 0;
@@ -123,6 +129,53 @@ button.add.add-to-cart-full:hover {
 
 .product:hover .product-like {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .product {
+    margin: 5px;
+    padding: 8px;
+    border-radius: 6px;
+  }
+
+  .product img,
+  .product-image {
+    height: 130px; /* reduce image height */
+  }
+
+  .product h3 {
+    font-size: 14px;
+  }
+
+  .product-description {
+    font-size: 12px;
+  }
+
+  .price h4 {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .price button {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .button.add.add-to-cart-full {
+    width: 80px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .product-button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  #popular-packages .extra-details li {
+    font-size: 12px;
+  }
 }
 
 /* Specific styles for Popular Packages section */

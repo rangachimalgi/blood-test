@@ -103,102 +103,100 @@ const Product = ({
     );
   } else {
     return (
-      <Col
-        lg={3}
-        md={4}
-        sm={6}
-        xs={12}
-        className={`product mtop ${enableHoverEffect ? "hover-enabled" : ""} ${
-          isPopularPackage ? "popular-packages" : ""
-        }`}
-      >
-        {title === "Big Discount" && (
-          <span className="discount">{productItem.discount}% Off</span>
-        )}
-        <div className="product-image-container">
-          {showImage && (
-            <img
-              loading="lazy"
-              onClick={handleClick}
-              src={productItem.imgUrl}
-              alt={productItem.productName}
-              className="product-image"
-            />
+      <Col lg={3} md={4} sm={6} xs={6} className="product-col">
+        <div
+          className={`product mtop ${
+            enableHoverEffect ? "hover-enabled" : ""
+          } ${isPopularPackage ? "popular-packages" : ""}`}
+        >
+          {title === "Big Discount" && (
+            <span className="discount">{productItem.discount}% Off</span>
           )}
-          {enableHoverEffect && (
-            <div className="hover-overlay">
-              <h2>{productItem.overlayTitle}</h2>
-              <ul>
-                {productItem.overlayDetails?.map((detail, index) => (
-                  <li key={index}>{detail}</li>
-                ))}
-              </ul>
-            </div>
-          )}
-        </div>
-        {desc && <p className="product-description">{desc}</p>}
-        {isPopularPackage && (
-          <Highlight number={extractNumberOfTests(productItem.productName)} />
-        )}
-        <div className="product-like">
-          <label>{count}</label> <br />
-          <ion-icon name="heart-outline" onClick={increment}></ion-icon>
-        </div>
-        <div className="product-details">
-          <h3 onClick={handleClick}>{productItem.productName}</h3>
-          <div className="price">
-            <h4>&#8377;{productItem.price}</h4>
-            {!isPopularPackage && (
-              <button
-                aria-label="Add"
-                type="submit"
-                className={`add ${isPopularTest ? "add-to-cart-full" : ""}`}
-                onClick={handleAddToCart}
-              >
-                {isPopularTest ? (
-                  "Add to Cart"
-                ) : (
-                  <ion-icon name="add"></ion-icon>
-                )}
-              </button>
+          <div className="product-image-container">
+            {showImage && (
+              <img
+                loading="lazy"
+                onClick={handleClick}
+                src={productItem.imgUrl}
+                alt={productItem.productName}
+                className="product-image"
+              />
             )}
-          </div>
-          {isPopularPackage && (
-            <>
-              <div className="product-buttons">
-                <button
-                  className="product-button book-now"
-                  onClick={() => handleBookNow(productItem)}
-                >
-                  Book Now
-                </button>
-              </div>
-              <div className="extra-details">
+            {enableHoverEffect && (
+              <div className="hover-overlay">
+                <h2>{productItem.overlayTitle}</h2>
                 <ul>
-                  <li>
-                    <i className="fa fa-check-circle"></i> NABL, CAP, ISO 9001
-                  </li>
-                  <li>
-                    <i className="fa fa-check-circle"></i> Free Home Sample
-                    Pickup
-                  </li>
-                  <li>
-                    <i className="fa fa-check-circle"></i> Online Report
-                    Delivery
-                  </li>
+                  {productItem.overlayDetails?.map((detail, index) => (
+                    <li key={index}>{detail}</li>
+                  ))}
                 </ul>
               </div>
-            </>
+            )}
+          </div>
+          {desc && <p className="product-description">{desc}</p>}
+          {isPopularPackage && (
+            <Highlight number={extractNumberOfTests(productItem.productName)} />
+          )}
+          <div className="product-like">
+            <label>{count}</label> <br />
+            <ion-icon name="heart-outline" onClick={increment}></ion-icon>
+          </div>
+          <div className="product-details">
+            <h3 onClick={handleClick}>{productItem.productName}</h3>
+            <div className="price">
+              <h4>&#8377;{productItem.price}</h4>
+              {!isPopularPackage && (
+                <button
+                  aria-label="Add"
+                  type="submit"
+                  className={`add ${isPopularTest ? "add-to-cart-full" : ""}`}
+                  onClick={handleAddToCart}
+                >
+                  {isPopularTest ? (
+                    "Add to Cart"
+                  ) : (
+                    <ion-icon name="add"></ion-icon>
+                  )}
+                </button>
+              )}
+            </div>
+            {isPopularPackage && (
+              <>
+                <div className="product-buttons">
+                  <button
+                    className="product-button book-now"
+                    onClick={() => handleBookNow(productItem)}
+                  >
+                    Book Now
+                  </button>
+                </div>
+                <div className="extra-details">
+                  <ul>
+                    <li>
+                      <i className="fa fa-check-circle"></i> NABL, CAP, ISO 9001
+                    </li>
+                    <li>
+                      <i className="fa fa-check-circle"></i> Free Home Sample
+                      Pickup
+                    </li>
+                    <li>
+                      <i className="fa fa-check-circle"></i> Online Report
+                      Delivery
+                    </li>
+                  </ul>
+                </div>
+              </>
+            )}
+          </div>
+          {showCheckout && (
+            <CheckoutForm
+              show={showCheckout}
+              handleClose={handleCloseCheckout}
+              CartItem={selectedPackage ? [selectedPackage] : []}
+              setCartItem={() => {}}
+            />
           )}
         </div>
-        {showCheckout && (
-          <CheckoutForm
-            show={showCheckout}
-            handleClose={handleCloseCheckout}
-            CartItem={selectedPackage ? [selectedPackage] : []}
-            setCartItem={() => {}}
-          />
-        )}
       </Col>
     );
   }
