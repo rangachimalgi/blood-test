@@ -60,7 +60,7 @@ const NavBar = () => {
       className={isFixed ? "navbar fixed" : "navbar"}
     >
       <Container className="navbar-container">
-        <Navbar.Brand to="/">
+        <Navbar.Brand as={Link} to="/">
          <img src={logo} alt="Fortune Blood Test Logo"/>
           {/* <h1 className="logo">Fortune Blood Test</h1> */}
         </Navbar.Brand>
