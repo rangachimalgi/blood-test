@@ -70,12 +70,7 @@ const Home = () => {
       <Wrapper />
       {/* <HealthConcernsSection title="Recommended checkups for men" bgColor="#f6f9fc" productItems={checkupsMen} addToCart={handleAddToCart} />
       <HealthConcernsSection title="Recommended checkups for women" bgColor="#f6f9fc" productItems={checkupsWomen} addToCart={handleAddToCart} /> */}
-      <HealthConcernsSection
-        title="Browse by Health Concerns"
-        bgColor="#f6f9fc"
-        productItems={healthConcerns}
-        addToCart={handleAddToCart}
-      />
+
       <section
         id="popular-packages"
         style={{
@@ -92,10 +87,7 @@ const Home = () => {
             padding: "0 1rem",
           }}
         >
-          <HealthPackagesList
-            title="Popular Packages"
-            packageIds={["01"]}
-          />
+          <HealthPackagesList title="Popular Packages" packageIds={["01", "02", "03", "04", "05", "06", "07", "08", "09"]} />
         </div>
       </section>
 
@@ -104,6 +96,13 @@ const Home = () => {
         title="Popular Tests"
         bgColor="#f6f9fc"
         productItems={popularTests}
+        addToCart={handleAddToCart}
+      />
+
+      <HealthConcernsSection
+        title="Browse by Health Concerns"
+        bgColor="#f6f9fc"
+        productItems={healthConcerns}
         addToCart={handleAddToCart}
       />
     </Fragment>
