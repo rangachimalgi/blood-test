@@ -410,8 +410,23 @@ const CheckoutForm = ({
         </Form.Group>
       </Form>
       <div className="mt-3 text-end">
-        <Button variant="primary" onClick={handleSubmitOrder}>
-          Confirm Purchase
+        <Button
+          onClick={handleSubmitOrder}
+          style={{
+            backgroundColor: "#0F3460",
+            border: "none",
+            padding: "10px 20px",
+            borderRadius: "5px",
+            fontSize: "16px",
+            fontWeight: "600",
+            color: "#fff",
+            marginTop: "10px",
+            transition: "all 0.2s ease-in-out",
+          }}
+          onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.03)")}
+          onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+        >
+          ✅ Purchase
         </Button>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React, {useState, useContext, useEffect } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { DataContainer } from "../App";
 import { Col, Container, Row, Button } from "react-bootstrap";
@@ -9,33 +9,40 @@ const Cart = () => {
     useContext(DataContainer);
   const [additionalTestCost, setAdditionalTestCost] = useState(0); // 💥 live update here
 
-  const baseCartTotal = CartItem.reduce((price, item) => price + item.qty * item.price, 0);
+  const baseCartTotal = CartItem.reduce(
+    (price, item) => price + item.qty * item.price,
+    0
+  );
   const totalPrice = baseCartTotal + additionalTestCost;
 
   const navigate = useNavigate();
 
-const decreaseQty = (product) => {
-  const updatedCart = CartItem
-    .map((item) =>
+  const decreaseQty = (product) => {
+    const updatedCart = CartItem.map((item) =>
       item.id === product.id ? { ...item, qty: item.qty - 1 } : item
-    )
-    .filter((item) => item.qty > 0);
+    ).filter((item) => item.qty > 0);
 
-  setCartItem(updatedCart);
-  localStorage.setItem("cartItem", JSON.stringify(updatedCart));
-};
-
+    setCartItem(updatedCart);
+    setTimeout(() => {
+      localStorage.setItem("cartItem", JSON.stringify(updatedCart));
+    }, 0); // 🔥 optional, ensures state has updated first
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    if (CartItem.length === 0) {
-      const storedCart = localStorage.getItem("cartItem");
-      setCartItem(JSON.parse(storedCart) || []);
-    }
-  }, [CartItem, setCartItem]);
+    const storedCart = localStorage.getItem("cartItem");
+    setCartItem(JSON.parse(storedCart) || []);
+  }, []);
 
   const handleAddMoreTests = () => {
     navigate("/shop");
+  };
+
+  const btnStyle = {
+    borderRadius: "8px",
+    fontWeight: "600",
+    padding: "4px 12px",
+    transition: "0.2s ease",
   };
 
   return (
@@ -64,18 +71,29 @@ const decreaseQty = (product) => {
                           ₹{item.price} x {item.qty} = ₹{productQty}
                         </p>
                         <div className="d-flex gap-2">
-                          <Button size="sm" onClick={() => addToCart(item)}>
+                          <Button
+                            size="sm"
+                            variant="outline-success"
+                            style={btnStyle}
+                            onClick={() => addToCart(item)}
+                          >
                             +
-                          </Button>
-                          <Button size="sm" onClick={() => decreaseQty(item)}>
-                            -
                           </Button>
                           <Button
                             size="sm"
-                            variant="danger"
+                            variant="outline-warning"
+                            style={btnStyle}
+                            onClick={() => decreaseQty(item)}
+                          >
+                            –
+                          </Button>
+                          <Button
+                            size="sm"
+                            variant="outline-danger"
+                            style={btnStyle}
                             onClick={() => deleteProduct(item)}
                           >
-                            Remove
+                            🗑
                           </Button>
                         </div>
                       </Col>
