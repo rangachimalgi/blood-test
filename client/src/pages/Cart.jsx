@@ -3,11 +3,12 @@ import { useNavigate } from "react-router-dom";
 import { DataContainer } from "../App";
 import { Col, Container, Row, Button } from "react-bootstrap";
 import CheckoutForm from "../components/CheckoutForm.js";
+import "./Cart.css"; // We'll create this file next
 
 const Cart = () => {
   const { CartItem, setCartItem, addToCart, deleteProduct } =
     useContext(DataContainer);
-  const [additionalTestCost, setAdditionalTestCost] = useState(0); // 💥 live update here
+  const [additionalTestCost, setAdditionalTestCost] = useState(0);
 
   const baseCartTotal = CartItem.reduce(
     (price, item) => price + item.qty * item.price,
@@ -25,7 +26,7 @@ const Cart = () => {
     setCartItem(updatedCart);
     setTimeout(() => {
       localStorage.setItem("cartItem", JSON.stringify(updatedCart));
-    }, 0); // 🔥 optional, ensures state has updated first
+    }, 0);
   };
 
   useEffect(() => {
@@ -38,102 +39,98 @@ const Cart = () => {
     navigate("/shop");
   };
 
-  const btnStyle = {
-    borderRadius: "8px",
-    fontWeight: "600",
-    padding: "4px 12px",
-    transition: "0.2s ease",
-  };
-
   return (
-    <section className="cart-items">
-      <Container>
-        <Row className="justify-content-center">
-          {/* 🛒 Cart Items */}
-          <Col md={8}>
-            {CartItem.length === 0 ? (
-              <h1 className="no-items product">No Items are added in Cart</h1>
-            ) : (
-              CartItem.map((item) => {
-                const productQty = item.price * item.qty;
-                return (
-                  <div
-                    className="cart-list mb-3 p-3 border rounded"
-                    key={item.id}
-                  >
-                    <Row>
-                      <Col sm={4}>
-                        <img src={item.imgUrl} alt="" className="img-fluid" />
-                      </Col>
-                      <Col sm={8}>
-                        <h5>{item.productName}</h5>
-                        <p>
-                          ₹{item.price} x {item.qty} = ₹{productQty}
-                        </p>
-                        <div className="d-flex gap-2">
-                          <Button
-                            size="sm"
-                            variant="outline-success"
-                            style={btnStyle}
-                            onClick={() => addToCart(item)}
-                          >
-                            +
-                          </Button>
-                          <Button
-                            size="sm"
-                            variant="outline-warning"
-                            style={btnStyle}
-                            onClick={() => decreaseQty(item)}
-                          >
-                            –
-                          </Button>
-                          <Button
-                            size="sm"
-                            variant="outline-danger"
-                            style={btnStyle}
-                            onClick={() => deleteProduct(item)}
-                          >
-                            🗑
-                          </Button>
-                        </div>
-                      </Col>
-                    </Row>
-                  </div>
-                );
-              })
-            )}
+    <section className="cart-page">
+      <Container fluid className="px-4 py-2">
+        <Row className="justify-content-center g-4">
+          {/* Checkout Form */}
+          <Col lg={8} className="checkout-form-column">
+            <CheckoutForm
+              show={true}
+              handleClose={() => {}}
+              CartItem={CartItem}
+              setCartItem={setCartItem}
+              setAdditionalTestCost={setAdditionalTestCost}
+            />
           </Col>
 
-          {/* 📋 Checkout Form */}
-          <Col md={4}>
-            <div className="p-4 border rounded bg-light">
-              <h4 className="mb-3">Cart Summary</h4>
-              <p>
-                Total Price: <strong>₹{totalPrice}</strong>
-              </p>
-              <Button
-                onClick={handleAddMoreTests}
-                style={{
-                  marginBottom: "20px",
-                  backgroundColor: "#0F3460",
-                  border: "none",
-                  padding: "10px 20px",
-                  borderRadius: "5px",
-                  fontSize: "16px",
-                }}
-              >
-                Add More Tests
-              </Button>
+          {/* Cart Summary */}
+          <Col lg={4} className="cart-summary-column">
+            <div className="cart-summary-container">
+              <h4 className="cart-summary-title">Order Summary</h4>
+              
+              {CartItem.length === 0 ? (
+                <div className="empty-cart-message">
+                  <h5>Your cart is empty</h5>
+                  <p>Add some tests to get started</p>
+                  <Button
+                    onClick={handleAddMoreTests}
+                    className="add-tests-button"
+                  >
+                    Browse Tests
+                  </Button>
+                </div>
+              ) : (
+                <>
+                  <div className="cart-items-list">
+                    {CartItem.map((item) => {
+                      const productQty = item.price * item.qty;
+                      return (
+                        <div className="cart-item-card" key={item.id}>
+                          <div className="cart-item-image">
+                            <img src={item.imgUrl} alt={item.productName} />
+                          </div>
+                          <div className="cart-item-details">
+                            <h6 className="cart-item-name">{item.productName}</h6>
+                            <p className="cart-item-price">
+                              ₹{item.price} x {item.qty} = ₹{productQty}
+                            </p>
+                            <div className="cart-item-actions">
+                              <Button
+                                size="sm"
+                                variant="outline-success"
+                                className="action-button"
+                                onClick={() => addToCart(item)}
+                              >
+                                +
+                              </Button>
+                              <Button
+                                size="sm"
+                                variant="outline-warning"
+                                className="action-button"
+                                onClick={() => decreaseQty(item)}
+                              >
+                                –
+                              </Button>
+                              <Button
+                                size="sm"
+                                variant="outline-danger"
+                                className="action-button"
+                                onClick={() => deleteProduct(item)}
+                              >
+                                🗑
+                              </Button>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
 
-              <hr className="my-4" />
-
-              <CheckoutForm
-                show={true}
-                handleClose={() => {}}
-                CartItem={CartItem}
-                setCartItem={setCartItem}
-                setAdditionalTestCost={setAdditionalTestCost}
-              />
+                  <div className="cart-summary-footer">
+                    <div className="total-price">
+                      <span>Total Amount:</span>
+                      <span className="price">₹{totalPrice}</span>
+                    </div>
+                    <Button
+                      onClick={handleAddMoreTests}
+                      className="add-more-button"
+                    >
+                      Add More Tests
+                    </Button>
+                  </div>
+                </>
+              )}
             </div>
           </Col>
         </Row>

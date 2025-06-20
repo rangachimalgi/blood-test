@@ -1,0 +1,485 @@
+.checkout-form-container {
+  padding: 1rem;
+}
+
+.checkout-form-wrapper {
+  padding: 1rem;
+}
+
+.form-title {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.modern-form {
+  background: transparent;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.form-group-custom {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.form-group-custom label {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  display: block;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.custom-input,
+.custom-select {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  cursor: pointer;
+}
+
+.custom-input:hover,
+.custom-select:hover {
+  border-color: #3498db;
+  background-color: #fff;
+}
+
+.custom-input:focus,
+.custom-select:focus {
+  border-color: #3498db;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.1);
+  outline: none;
+}
+
+.custom-input::placeholder {
+  color: #95a5a6;
+}
+
+.custom-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%232c3e50' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.2em;
+  padding-right: 2.5rem;
+}
+
+/* Style for select options */
+.custom-select option {
+  background-color: white;
+  color: #2c3e50;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+/* Style for the select when it has a value */
+.custom-select:not([value=""]) {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+/* Style for the select when it's empty */
+.custom-select[value=""] {
+  color: #95a5a6;
+}
+
+/* Style for the select when it's focused */
+.custom-select:focus {
+  border-color: #3498db;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.1);
+}
+
+/* Style for the select when it's disabled */
+.custom-select:disabled {
+  background-color: #f8f9fa;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Style for the select when it's required */
+.custom-select:required {
+  border-left: 3px solid #e74c3c;
+}
+
+/* Style for the select when it's invalid */
+.custom-select:invalid {
+  border-color: #e74c3c;
+}
+
+/* Style for the select when it's valid */
+.custom-select:valid {
+  border-color: #27ae60;
+}
+
+/* Style for the select when it's focused and valid */
+.custom-select:focus:valid {
+  border-color: #27ae60;
+  box-shadow: 0 0 0 4px rgba(39, 174, 96, 0.1);
+}
+
+/* Style for the select when it's focused and invalid */
+.custom-select:focus:invalid {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 4px rgba(231, 76, 60, 0.1);
+}
+
+/* Style for the select when it's focused and empty */
+.custom-select:focus:not([value=""]) {
+  border-color: #3498db;
+  box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.1);
+}
+
+/* Style for the select when it's focused and has a value */
+.custom-select:focus:not([value=""]) {
+  border-color: #3498db;
+  box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.1);
+}
+
+/* Style for the select when it's hovered and has a value */
+.custom-select:hover:not([value=""]) {
+  border-color: #3498db;
+  background-color: #fff;
+}
+
+/* Style for the select when it's hovered and empty */
+.custom-select:hover:not([value=""]) {
+  border-color: #3498db;
+  background-color: #fff;
+}
+
+/* Style for the select when it's hovered and valid */
+.custom-select:hover:valid {
+  border-color: #27ae60;
+  background-color: #fff;
+}
+
+/* Style for the select when it's hovered and invalid */
+.custom-select:hover:invalid {
+  border-color: #e74c3c;
+  background-color: #fff;
+}
+
+/* Style for the select when it's hovered and required */
+.custom-select:hover:required {
+  border-color: #e74c3c;
+  background-color: #fff;
+}
+
+/* Style for the select when it's hovered and disabled */
+.custom-select:hover:disabled {
+  border-color: #e0e0e0;
+  background-color: #f8f9fa;
+  cursor: not-allowed;
+}
+
+/* Style for the select when it's hovered and focused */
+.custom-select:hover:focus {
+  border-color: #3498db;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.1);
+}
+
+/* Style for the select when it's hovered and focused and valid */
+.custom-select:hover:focus:valid {
+  border-color: #27ae60;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(39, 174, 96, 0.1);
+}
+
+/* Style for the select when it's hovered and focused and invalid */
+.custom-select:hover:focus:invalid {
+  border-color: #e74c3c;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(231, 76, 60, 0.1);
+}
+
+/* Style for the select when it's hovered and focused and empty */
+.custom-select:hover:focus:not([value=""]) {
+  border-color: #3498db;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.1);
+}
+
+/* Style for the select when it's hovered and focused and has a value */
+.custom-select:hover:focus:not([value=""]) {
+  border-color: #3498db;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.1);
+}
+
+.custom-input-group {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.check-availability-btn {
+  background-color: #3498db;
+  border: none;
+  padding: 0.85rem 1.5rem;
+  border-radius: 12px;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.check-availability-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.availability-message {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.availability-message.success {
+  color: #27ae60;
+  background-color: rgba(39, 174, 96, 0.1);
+}
+
+.availability-message.error {
+  color: #e74c3c;
+  background-color: rgba(231, 76, 60, 0.1);
+}
+
+.warning-text {
+  color: #f39c12;
+  font-size: 0.9rem;
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  background-color: rgba(243, 156, 18, 0.1);
+  border-radius: 8px;
+}
+
+.beneficiaries-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.section-title {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.beneficiary-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.beneficiary-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.beneficiary-title {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.additional-tests-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.tests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.custom-checkbox {
+  padding: 1rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.custom-checkbox:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-checkbox .form-check-input {
+  margin-right: 0.75rem;
+  width: 1.2em;
+  height: 1.2em;
+  border: 2px solid #3498db;
+  cursor: pointer;
+}
+
+.custom-checkbox .form-check-input:checked {
+  background-color: #3498db;
+  border-color: #3498db;
+}
+
+.custom-checkbox .form-check-label {
+  color: #2c3e50;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.submit-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.submit-button {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  box-shadow: 0 4px 6px rgba(46, 204, 113, 0.2);
+}
+
+.submit-button:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(46, 204, 113, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .checkout-form-container {
+    padding: 1rem;
+  }
+  
+  .checkout-form-wrapper {
+    padding: 1rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .tests-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .custom-input,
+  .custom-select {
+    padding: 0.75rem;
+  }
+}
+
+.select-field {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: white !important;
+  border: 2px solid #e0e0e0 !important;
+  border-radius: 12px !important;
+  padding: 16px 20px !important;
+  line-height: 1.5 !important;
+  font-size: 16px !important;
+  color: #2c3e50 !important;
+  width: 100% !important;
+  cursor: pointer !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%232c3e50' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 16px center !important;
+  background-size: 16px !important;
+  padding-right: 48px !important;
+  transition: all 0.3s ease !important;
+  min-height: 56px !important;
+}
+
+.select-field:hover {
+  border-color: #3498db !important;
+  background-color: #f8f9fa !important;
+}
+
+.select-field:focus {
+  border-color: #3498db !important;
+  box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.1) !important;
+  outline: none !important;
+}
+
+.select-field option {
+  background-color: white !important;
+  color: #2c3e50 !important;
+  padding: 16px !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+}
+
+.select-field option:checked {
+  background-color: #3498db !important;
+  color: white !important;
+}
+
+.select-field option:hover {
+  background-color: #f8f9fa !important;
+}
+
+/* Style for empty/placeholder option */
+.select-field option[value=""] {
+  color: #95a5a6 !important;
+}
+
+/* Style for selected value */
+.select-field:not([value=""]) {
+  color: #2c3e50 !important;
+  font-weight: 500 !important;
+}
+
+/* Style for required fields */
+.select-field:required {
+  border-left: 3px solid #e74c3c !important;
+}
+
+/* Style for invalid fields */
+.select-field:invalid {
+  border-color: #e74c3c !important;
+}
+
+/* Style for valid fields */
+.select-field:valid {
+  border-color: #27ae60 !important;
+}
+
+/* Rest of your existing CSS... */ 
