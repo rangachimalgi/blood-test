@@ -14,6 +14,8 @@ const ProductDetails = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [expandedCategory, setExpandedCategory] = useState(null);
   const [listSelected, setListSelected] = useState("desc");
+  const [likeCount, setLikeCount] = useState(0);
+  const [liked, setLiked] = useState(false);
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -35,6 +37,11 @@ const ProductDetails = () => {
     toast.success("Product has been added to cart!");
   };
 
+  const handleLike = () => {
+    setLikeCount(likeCount + (liked ? -1 : 1));
+    setLiked(!liked);
+  };
+
   if (!selectedProduct) return <h4 className="text-center mt-5">Loading...</h4>;
 
   return (
@@ -43,26 +50,37 @@ const ProductDetails = () => {
       <Container className="product-page">
         <Row>
           <Col md={8}>
-            <div className="product-box">
+            <div className="product-details-modern-card">
               <section>
-                <Row className="justify-content-center">
-                  <Col md={6}>
-                    <img
-                      loading="lazy"
-                      src={selectedProduct.imgUrl}
-                      alt={selectedProduct.productName}
-                      className="img-fluid"
-                    />
-                  </Col>
-                  <Col md={6}>
-                    <h2>{selectedProduct.productName}</h2>
-                    <div className="info">
-                      <span className="price">₹{selectedProduct.price}</span>
-                      <span>Category: {selectedProduct.category}</span>
+                <Row className="align-items-center justify-content-center">
+                  <Col md={6} className="product-details-img-col">
+                    <div className="product-details-img-wrapper">
+                      <img
+                        loading="lazy"
+                        src={selectedProduct.imgUrl}
+                        alt={selectedProduct.productName}
+                        className="product-details-img"
+                      />
+                      <button
+                        className={`product-details-like-btn${liked ? ' liked' : ''}`}
+                        aria-label={liked ? 'Unlike' : 'Like'}
+                        onClick={handleLike}
+                        type="button"
+                      >
+                        <ion-icon name={liked ? 'heart' : 'heart-outline'}></ion-icon>
+                        <span className="like-count">{likeCount}</span>
+                      </button>
                     </div>
-                    <p>{selectedProduct.shortDesc}</p>
-                    <button className="btn btn-primary mt-3" onClick={handleAdd}>
-                      Add to Cart
+                  </Col>
+                  <Col md={6} className="product-details-info-col">
+                    <h2 className="product-details-title">{selectedProduct.productName}</h2>
+                    <div className="product-details-meta">
+                      <span className="product-details-price">₹{selectedProduct.price}</span>
+                      <span className="product-details-category">{selectedProduct.category}</span>
+                    </div>
+                    <p className="product-details-shortdesc">{selectedProduct.shortDesc}</p>
+                    <button className="product-details-add-btn" onClick={handleAdd} aria-label="Add to Cart">
+                      <ion-icon name="cart-outline"></ion-icon> Add to Cart
                     </button>
                   </Col>
                 </Row>
@@ -70,31 +88,33 @@ const ProductDetails = () => {
 
               {/* Included Tests if it's a package */}
               {selectedProduct.includedTests?.length > 0 && (
-                <section className="included-tests mt-4">
+                <section className="included-tests-modern mt-4">
                   <h3>Included Tests</h3>
                   {selectedProduct.includedTests.map((category, i) => (
-                    <div key={i}>
+                    <div key={i} className="included-tests-category">
                       <h4
+                        className="included-tests-category-title"
                         onClick={() =>
                           setExpandedCategory(
                             expandedCategory === category.categoryName ? null : category.categoryName
                           )
                         }
-                        style={{
-                          cursor: "pointer",
-                          display: "flex",
-                          alignItems: "center",
+                        tabIndex={0}
+                        role="button"
+                        aria-label={`Toggle ${category.categoryName}`}
+                        onKeyDown={e => {
+                          if (e.key === 'Enter' || e.key === ' ') {
+                            setExpandedCategory(
+                              expandedCategory === category.categoryName ? null : category.categoryName
+                            );
+                          }
                         }}
                       >
-                        {expandedCategory === category.categoryName ? (
-                          <i className="fa fa-chevron-down me-2"></i>
-                        ) : (
-                          <i className="fa fa-chevron-right me-2"></i>
-                        )}
+                        <ion-icon name={expandedCategory === category.categoryName ? 'chevron-down-outline' : 'chevron-forward-outline'}></ion-icon>
                         {category.categoryName}
                       </h4>
                       {expandedCategory === category.categoryName && (
-                        <ul className="ms-4">
+                        <ul className="included-tests-list">
                           {category.tests.map((test, index) => (
                             <li key={index}>{test}</li>
                           ))}
@@ -105,20 +125,18 @@ const ProductDetails = () => {
                 </section>
               )}
 
-              <section className="product-reviews mt-4">
-                <ul>
+              <section className="product-details-tabs mt-4">
+                <ul className="product-details-tablist">
                   <li
-                    style={{
-                      color: listSelected === "desc" ? "black" : "#9c9b9b",
-                      cursor: "pointer",
-                    }}
+                    className={listSelected === "desc" ? "active" : ""}
+                    style={{ cursor: "pointer" }}
                     onClick={() => setListSelected("desc")}
                   >
                     Description
                   </li>
                 </ul>
                 {listSelected === "desc" && (
-                  <p className="mt-2">{selectedProduct.description}</p>
+                  <p className="product-details-desc mt-2">{selectedProduct.description}</p>
                 )}
               </section>
             </div>
