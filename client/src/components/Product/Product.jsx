@@ -102,15 +102,21 @@ const Product = ({
       </Col>
     );
   } else {
+    // Staggered animation for fade-in
+    const animationDelay = isPopularTest ? `${productItem.id % 4 * 0.15}s` : '0s';
     return (
-      <Col lg={3} md={4} sm={6} xs={6} className="product-col">
+      <Col lg={3} md={4} sm={6} xs={12} className="product-col">
         <div
           className={`product mtop ${
             enableHoverEffect ? "hover-enabled" : ""
-          } ${isPopularPackage ? "popular-packages" : ""}`}
+          } ${isPopularPackage ? "popular-packages" : ""} ${isPopularTest ? "popular-test-card" : ""}`}
+          style={isPopularTest ? { animationDelay } : {}}
         >
-          {title === "Big Discount" && (
-            <span className="discount">{productItem.discount}% Off</span>
+          {/* Glassy floating badge for number of tests */}
+          {isPopularTest && (
+            <div className="popular-tests-badge" aria-label={`${extractNumberOfTests(productItem.productName)} tests`}>
+              <Highlight number={extractNumberOfTests(productItem.productName)} />
+            </div>
           )}
           <div className="product-image-container">
             {showImage && (
@@ -120,73 +126,41 @@ const Product = ({
                 src={productItem.imgUrl}
                 alt={productItem.productName}
                 className="product-image"
+                aria-label={productItem.productName}
               />
             )}
-            {enableHoverEffect && (
-              <div className="hover-overlay">
-                <h2>{productItem.overlayTitle}</h2>
-                <ul>
-                  {productItem.overlayDetails?.map((detail, index) => (
-                    <li key={index}>{detail}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
           </div>
-          {desc && <p className="product-description">{desc}</p>}
-          {isPopularPackage && (
-            <Highlight number={extractNumberOfTests(productItem.productName)} />
+          {/* Like button */}
+          {isPopularTest && (
+            <button
+              className="product-like-btn"
+              aria-label="Like this test"
+              onClick={increment}
+              type="button"
+            >
+              <ion-icon name="heart-outline"></ion-icon>
+              <span className="like-count">{count}</span>
+            </button>
           )}
-          <div className="product-like">
-            <label>{count}</label> <br />
-            <ion-icon name="heart-outline" onClick={increment}></ion-icon>
-          </div>
           <div className="product-details">
-            <h3 onClick={handleClick}>{productItem.productName}</h3>
-            <div className="price">
-              <h4>&#8377;{productItem.price}</h4>
-              {!isPopularPackage && (
+            <h3 onClick={handleClick} tabIndex={0} aria-label={productItem.productName}>
+              {productItem.productName}
+            </h3>
+            {desc && <p className="product-description">{desc}</p>}
+            <div className="price-row">
+              <span className="product-price">₹{productItem.price}</span>
+              {isPopularTest && (
                 <button
-                  aria-label="Add"
-                  type="submit"
-                  className={`add ${isPopularTest ? "add-to-cart-full" : ""}`}
+                  aria-label="Add to Cart"
+                  type="button"
+                  className="add add-to-cart-modern"
                   onClick={handleAddToCart}
                 >
-                  {isPopularTest ? (
-                    "Add to Cart"
-                  ) : (
-                    <ion-icon name="add"></ion-icon>
-                  )}
+                  <ion-icon name="cart-outline"></ion-icon>
+                  <span>Add to Cart</span>
                 </button>
               )}
             </div>
-            {isPopularPackage && (
-              <>
-                <div className="product-buttons">
-                  <button
-                    className="product-button book-now"
-                    onClick={() => handleBookNow(productItem)}
-                  >
-                    Book Now
-                  </button>
-                </div>
-                <div className="extra-details">
-                  <ul>
-                    <li>
-                      <i className="fa fa-check-circle"></i> NABL, CAP, ISO 9001
-                    </li>
-                    <li>
-                      <i className="fa fa-check-circle"></i> Free Home Sample
-                      Pickup
-                    </li>
-                    <li>
-                      <i className="fa fa-check-circle"></i> Online Report
-                      Delivery
-                    </li>
-                  </ul>
-                </div>
-              </>
-            )}
           </div>
           {showCheckout && (
             <CheckoutForm
