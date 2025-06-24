@@ -84,6 +84,14 @@
   margin-bottom: 20px; /* Space between boxes */
 }
 
+.checkout-box {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+
 .embedded-checkout-form {
   margin-top: 20px; /* Adjust this value as needed */
   width: 100%; /* Ensure the form takes up the full width of its container */

@@ -18,56 +18,205 @@
   color: #333; /* Optional: a darker shade for better contrast */
 }
 
+/* --- Modern Embedded Checkout Form Styles --- */
+.embedded-checkout-form {
+  padding: 2.2rem 1.5rem 1.5rem 1.5rem;
+  background: linear-gradient(135deg, #f6f9fc 60%, #e3eefe 100%);
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(15, 52, 96, 0.10);
+  border: 1.5px solid rgba(15, 52, 96, 0.07);
+  margin-bottom: 1.5rem;
+  position: relative;
+  overflow: visible;
+}
+.form-heading {
+  text-align: center;
+  margin-bottom: 1.8rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0F3460;
+  letter-spacing: 0.01em;
+}
+.form-section {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1.5px solid #e3eefe;
+}
+.form-section:last-child {
+  border-bottom: none;
+}
+.form-label, .form-label label {
+  font-weight: 700;
+  color: #0F3460;
+  margin-bottom: 0.4rem;
+  font-size: 1.05rem;
+}
+.form-control, .large-select {
+  padding: 12px 18px;
+  border-radius: 22px;
+  border: 1.5px solid #cfd8dc;
+  background: #fff;
+  font-size: 1.08rem;
+  font-weight: 500;
+  margin-bottom: 1.1rem;
+  box-shadow: 0 1px 4px rgba(15, 52, 96, 0.04) inset;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.form-control:focus, .large-select:focus {
+  border-color: #0F3460;
+  box-shadow: 0 0 0 2px rgba(15, 52, 96, 0.10);
+  outline: none;
+}
+.large-select {
+  height: 48px;
+  min-width: 120px;
+}
+.input-group .form-control {
+  border-radius: 22px 0 0 22px;
+  margin-bottom: 0;
+}
+.input-group .btn {
+  border-radius: 0 22px 22px 0;
+  background: linear-gradient(90deg, #0F3460 0%, #2a5298 100%);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 12px 22px;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.input-group .btn:hover, .input-group .btn:focus {
+  background: linear-gradient(90deg, #2a5298 0%, #0F3460 100%);
+  box-shadow: 0 2px 8px rgba(15, 52, 96, 0.13);
+}
+.confirm-button {
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 22px;
+  background: linear-gradient(90deg, #0F3460 0%, #2a5298 100%);
+  border: none;
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-top: 1.2rem;
+  box-shadow: 0 2px 8px rgba(15, 52, 96, 0.10);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.confirm-button:hover, .confirm-button:focus {
+  background: linear-gradient(90deg, #2a5298 0%, #0F3460 100%);
+  box-shadow: 0 4px 16px rgba(15, 52, 96, 0.18);
+  transform: translateY(-2px) scale(1.04);
+}
+.text-warning {
+  color: #e74c3c !important;
+  font-size: 0.98rem;
+  margin-top: 0.3rem;
+}
+.text-muted {
+  margin-top: 0.5rem;
+  font-size: 0.93rem;
+  color: #666;
+}
+.beneficiaries-section {
+  margin-top: 1.5rem;
+  padding: 1.2rem 1rem;
+  background: #f6f9fc;
+  border-radius: 14px;
+  box-shadow: 0 1px 4px rgba(15, 52, 96, 0.04);
+}
+.beneficiary-card {
+  background: #fff;
+  padding: 1.1rem 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(15, 52, 96, 0.05);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.beneficiary-card:hover {
+  box-shadow: 0 4px 12px rgba(15, 52, 96, 0.10);
+  transform: translateY(-2px);
+}
+.beneficiary-title {
+  color: #0F3460;
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+  font-weight: 600;
+}
+.additional-tests-section {
+  margin-top: 1.5rem;
+  padding: 1.2rem 1rem;
+  background: #f6f9fc;
+  border-radius: 14px;
+  box-shadow: 0 1px 4px rgba(15, 52, 96, 0.04);
+}
+.tests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.7rem;
+}
+.custom-checkbox {
+  padding: 1rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(15, 52, 96, 0.05);
+  transition: box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.custom-checkbox:hover {
+  box-shadow: 0 4px 12px rgba(15, 52, 96, 0.10);
+  transform: translateY(-2px);
+}
+.custom-checkbox .form-check-input {
+  margin-right: 0.75rem;
+  width: 1.2em;
+  height: 1.2em;
+  border: 2px solid #3498db;
+  cursor: pointer;
+}
+.custom-checkbox .form-check-input:checked {
+  background-color: #3498db;
+  border-color: #3498db;
+}
+.custom-checkbox .form-check-label {
+  color: #2c3e50;
+  font-weight: 500;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
   .embedded-checkout-form {
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.1rem 0.3rem;
   }
-  
-  .form-control {
-    padding: 10px 12px;
-    border-radius: 5px;
-    border: 1px solid #000000;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px;
-  }
-  
-  .form-control:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-  }
-  
-  .large-select {
-    height: 50px;
-    padding: 10px 12px;
-  }
-  
-  .confirm-button {
-    width: 100%;
-    padding: 12px;
-    border-radius: 5px;
-    background-color: #007bff;
-    border: none;
-    color: white;
-    font-size: 16px;
-  }
-  
-  .confirm-button:hover {
-    background-color: #0056b3;
-  }
-  
   .form-heading {
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 1.18rem;
   }
-  
-  .text-warning {
-    color: #dc3545 !important;
+  .form-control, .large-select {
+    font-size: 0.98rem;
+    padding: 10px 12px;
   }
-  
-  .text-muted {
-    margin-top: 10px;
-    font-size: 0.875rem;
+  .confirm-button {
+    font-size: 1rem;
+    padding: 10px 0;
   }
+}
+@media (max-width: 480px) {
+  .embedded-checkout-form {
+    padding: 0.7rem 0.1rem;
+  }
+  .form-heading {
+    font-size: 1.05rem;
+  }
+  .form-control, .large-select {
+    font-size: 0.92rem;
+    padding: 8px 8px;
+  }
+  .confirm-button {
+    font-size: 0.95rem;
+    padding: 8px 0;
+  }
+}
   
