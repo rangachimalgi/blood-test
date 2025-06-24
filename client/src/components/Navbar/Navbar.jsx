@@ -2,20 +2,23 @@ import { useContext, useEffect, useState } from "react";
 import { Container, Nav, Navbar, Dropdown } from "react-bootstrap";
 import "./navbar.css";
 import { DataContainer } from "../../App";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import LoginModal from "../LoginModal";
 import ProductSearchBar from "../SeachBar/SearchBarGlobal";
 import logo from "../../Images/logoReal.png"
+
 const NavBar = () => {
   const { CartItem, setCartItem } = useContext(DataContainer);
   const [expand, setExpand] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // To check if the user is logged in
-  const [showLoginModal, setShowLoginModal] = useState(false); // To manage the modal visibility
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [showLoginModal, setShowLoginModal] = useState(false);
   const [userRole, setUserRole] = useState(
     localStorage.getItem("role") || null
   );
   const { setGlobalFilterList } = useContext(DataContainer);
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   const handleLogout = () => {
     localStorage.removeItem("token");
@@ -33,6 +36,7 @@ const NavBar = () => {
     }
   }
   window.addEventListener("scroll", scrollHandler);
+  
   useEffect(() => {
     if (CartItem.length === 0) {
       const storedCart = localStorage.getItem("cartItem");
@@ -40,7 +44,6 @@ const NavBar = () => {
     }
   }, []);
 
-  // This useEffect handles user authentication status and role
   useEffect(() => {
     const token = localStorage.getItem("token");
     const role = localStorage.getItem("role");
@@ -53,11 +56,12 @@ const NavBar = () => {
       setUserRole(role);
     }
   }, []);
+
   return (
     <Navbar
       fixed="top"
       expand="md"
-      className={isFixed ? "navbar fixed" : "navbar"}
+      className={`navbar ${isFixed ? "fixed" : ""} ${isHomePage ? "home-page" : "other-page"}`}
     >
       <Container className="navbar-container">
         <Navbar.Brand as={Link} to="/">

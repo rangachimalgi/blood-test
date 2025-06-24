@@ -1,3 +1,7 @@
+.filter-bar {
+  margin-top: 100px;  /* Add margin below navbar */
+}
+
 .fixed-view-cart-button {
   position: fixed;
   bottom: 20px;

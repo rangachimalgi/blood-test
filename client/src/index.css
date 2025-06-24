@@ -342,3 +342,19 @@ button.delete ion-icon {
     margin: 10px auto;
   }
 }
+
+/* Add margin for main content to account for fixed navbar */
+main, .main-content {
+  margin-top: 80px; /* Height of the navbar */
+}
+
+/* Override margin and padding for slider section */
+section.slider-section {
+  padding: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Add spacing for other pages' first sections */
+.page-content:not(.home-page) section:first-child {
+  margin-top: 80px;
+}

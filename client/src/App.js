@@ -1,6 +1,6 @@
 import { useState, createContext, useEffect, lazy, Suspense } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Routes, Route, useParams } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useParams, useLocation } from "react-router-dom";
 import NavBar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Loader from "./components/Loader/Loader";
@@ -42,6 +42,18 @@ const HealthPackagesListWrapper = () => {
 };
 
 export const DataContainer = createContext();
+
+const PageWrapper = ({ children }) => {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+  
+  return (
+    <div className={`page-content ${isHomePage ? 'home-page' : 'other-page'}`}>
+      {children}
+    </div>
+  );
+};
+
 function App() {
   const [CartItem, setCartItem] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -116,34 +128,37 @@ function App() {
             theme="light"
           />
           <NavBar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route
-              path="/shop/:id"
-              element={<ProductDetails key={window.location.pathname} />}
-            />
-            <Route path="/shop" element={<Shop />} />
-            <Route path="/health-list" element={<HealthList />} />
-            <Route path="/health/:id" element={<Health />} />
-            <Route
-              path="/health-concern/:id"
-              element={<HealthPackagesListWrapper />}
-            />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/admin/*" element={<AdminPanel />} />
-            <Route path="/admin/view-orders" element={<ViewOrders />} />
-            <Route path="/admin/view-users" element={<ViewUsers />} />
-            <Route path="/admin/total-revenue" element={<TotalRevenue />} />
-            <Route path="/admin/manage-packages" element={<ManagePackages />} />
-            <Route path="/admin/manage-tests" element={<ManageTests />} />
-            <Route path="/user-dashboard" element={<UserDashboard />} />
-            <Route
-              path="/terms-and-conditions"
-              element={<TermsAndConditions />}
-            />{" "}
-            {/* New Route for Terms and Conditions */}
-            <Route path="/refund-policy" element={<RefundPolicy />} />
-          </Routes>
+          <PageWrapper>
+            <main className="main-content">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route
+                  path="/shop/:id"
+                  element={<ProductDetails key={window.location.pathname} />}
+                />
+                <Route path="/shop" element={<Shop />} />
+                <Route path="/health-list" element={<HealthList />} />
+                <Route path="/health/:id" element={<Health />} />
+                <Route
+                  path="/health-concern/:id"
+                  element={<HealthPackagesListWrapper />}
+                />
+                <Route path="/cart" element={<Cart />} />
+                <Route path="/admin/*" element={<AdminPanel />} />
+                <Route path="/admin/view-orders" element={<ViewOrders />} />
+                <Route path="/admin/view-users" element={<ViewUsers />} />
+                <Route path="/admin/total-revenue" element={<TotalRevenue />} />
+                <Route path="/admin/manage-packages" element={<ManagePackages />} />
+                <Route path="/admin/manage-tests" element={<ManageTests />} />
+                <Route path="/user-dashboard" element={<UserDashboard />} />
+                <Route
+                  path="/terms-and-conditions"
+                  element={<TermsAndConditions />}
+                />
+                <Route path="/refund-policy" element={<RefundPolicy />} />
+              </Routes>
+            </main>
+          </PageWrapper>
           <Footer />
         </Router>
       </Suspense>

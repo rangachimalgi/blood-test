@@ -1,7 +1,7 @@
-
 /* HealthPackageList.css */
 .packages-list {
   padding: 20px;
+  margin-top: 100px; /* Add margin from navbar */
 }
 
 .packages-grid {
@@ -97,8 +97,6 @@
   margin-bottom: 5px; /* Reduce margin between list items */
 }
 
-
-
 .package-details {
   padding: 15px;
   flex-grow: 1; /* Allows the package details to take up remaining space */
@@ -164,7 +162,6 @@
 .book-now-button:hover {
   background-color: #072a48;
 }
-
 
 .extra-details-with-logo {
   display: flex;
