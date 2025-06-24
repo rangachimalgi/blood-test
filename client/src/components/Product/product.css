@@ -1,184 +1,185 @@
 /* Common styles for Product component */
 .product {
   background: #fff;
-  padding: 10px;
+  padding: 20px;
   position: relative;
-  border-radius: 8px;
-  box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(15, 52, 96, 0.1);
   margin: 10px;
   overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(15, 52, 96, 0.05);
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(15, 52, 96, 0.15);
+}
+
+.product-image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 1rem;
 }
 
 .product img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.product:hover img {
+  transform: scale(1.05);
 }
 
 .product-details {
-  padding: 10px;
+  padding: 15px 0 0;
 }
 
 .product-col {
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-bottom: 16px;
-}
-
-.discount {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #0f3460;
-  padding: 3px 10px;
-  font-size: 12px;
-  border-radius: 50px;
-  color: #fff;
-  margin: 10px;
+  padding: 12px;
+  margin-bottom: 20px;
 }
 
 .product h3 {
-  margin: 10px 0;
-  font-weight: 500;
-  font-size: 17px;
+  margin: 0 0 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
   cursor: pointer;
+  color: #0F3460;
+  line-height: 1.4;
 }
 
-.product .rate i {
-  font-size: 15px;
-  color: #ffcd4e;
-  margin: 5px 5px 5px 0;
+.product-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
-.product .price {
+.price {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: black;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .price h4 {
-  margin: 20px 0 10px;
-}
-
-.price button {
-  background: none;
-  color: #0f3460;
-  font-size: 20px;
-  transition: 0.5s;
-  border: 1px solid rgb(3 0 71 / 9%);
-  width: 35px;
-  height: 35px;
-  border-radius: 5px;
-}
-
-.price button:hover {
-  cursor: pointer;
-  background-color: #0f3460;
-  color: #fff;
-}
-
-button.add {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  border-radius: 50%;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0F3460;
 }
 
 button.add.add-to-cart-full {
-  background-color: #0F3460;
+  background: linear-gradient(45deg, #0F3460, #1a4980);
   color: white;
   border: none;
-  /* padding: 50px 70px; */
-  width: 100px;
-  height: 50px;
-  border-radius: 5px;
+  padding: 12px 24px;
+  min-width: 120px;
+  height: auto;
+  border-radius: 25px;
   cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 button.add.add-to-cart-full:hover {
-  background-color: #072a48;
+  background: linear-gradient(45deg, #1a4980, #0F3460);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(15, 52, 96, 0.2);
 }
 
-.product-like {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 10px;
-  opacity: 0;
-  transition: 0.5s;
+button.add.add-to-cart-full::before {
+  content: '+';
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
-.product-like label {
-  background-color: #0f3460;
-  padding: 1px 10px;
-  font-size: 12px;
-  color: white;
-  border-radius: 50px;
+/* Popular Tests specific styles */
+#popular-tests .product {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-.product-like ion-icon {
-  font-size: 20px;
-  margin: 10px 3px;
-  cursor: pointer;
+#popular-tests .product-image-container {
+  height: 180px;
 }
 
-.product:hover .product-like {
-  opacity: 1;
+#popular-tests .product-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
+#popular-tests .price {
+  margin-top: auto;
+}
+
+/* Responsive styles */
 @media (max-width: 768px) {
   .product {
-    margin: 5px;
-    padding: 8px;
-    border-radius: 6px;
+    padding: 15px;
+    border-radius: 12px;
   }
 
-  .product img,
-  .product-image {
-    height: 130px; /* reduce image height */
+  .product-image-container {
+    height: 150px;
   }
 
   .product h3 {
-    font-size: 14px;
+    font-size: 1rem;
   }
 
   .product-description {
-    font-size: 12px;
+    font-size: 0.85rem;
   }
 
   .price h4 {
-    font-size: 14px;
-    margin: 10px 0;
+    font-size: 1.1rem;
   }
 
-  .price button {
-    width: 30px;
-    height: 30px;
-    font-size: 16px;
-  }
-
-  .button.add.add-to-cart-full {
-    width: 80px;
-    height: 40px;
-    font-size: 12px;
-  }
-
-  .product-button {
-    padding: 8px 16px;
-    font-size: 12px;
-  }
-
-  #popular-packages .extra-details li {
-    font-size: 12px;
+  button.add.add-to-cart-full {
+    padding: 10px 20px;
+    min-width: 100px;
+    font-size: 0.85rem;
   }
 }
 
-/* Specific styles for Popular Packages section */
+/* Animation for new products */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product {
+  animation: fadeInUp 0.6s ease backwards;
+}
+
+.product-col:nth-child(2) .product { animation-delay: 0.2s; }
+.product-col:nth-child(3) .product { animation-delay: 0.4s; }
+.product-col:nth-child(4) .product { animation-delay: 0.6s; }
+
+/* Keep existing styles for popular packages */
 #popular-packages .product {
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }

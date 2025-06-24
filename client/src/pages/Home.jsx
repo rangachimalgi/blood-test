@@ -40,8 +40,8 @@ const Home = () => {
         onClick={() => {
           navigate("/cart");
           if (toastId.current) {
-            toast.dismiss(toastId.current); // Dismiss the toast
-            toastId.current = null; // Reset toastId
+            toast.dismiss(toastId.current);
+            toastId.current = null;
           }
         }}
       >
@@ -50,14 +50,13 @@ const Home = () => {
     </div>
   );
 
-  // Updated addToCart function
   const handleAddToCart = (item) => {
     addToCart(item);
     if (!toast.isActive(toastId.current)) {
       toastId.current = toast.success(<CustomToastWithLink />, {
-        autoClose: false, // Disable the timer for this toast
+        autoClose: false,
         onClose: () => {
-          toastId.current = null; // Reset the toastId after it's closed
+          toastId.current = null;
         },
       });
     }
@@ -73,28 +72,76 @@ const Home = () => {
 
       <section
         id="popular-packages"
+        className="packages-section"
         style={{
-          background: "#f6f9fc",
-          padding: "2rem 0",
-          textAlign: "center", // 👈 Center everything inside
+          background: "linear-gradient(135deg, #f6f9fc 0%, #ffffff 100%)",
+          padding: "4rem 0",
+          position: "relative",
+          overflow: "hidden",
         }}
       >
+        <div className="section-background">
+          <div className="bg-circle" style={{
+            position: "absolute",
+            width: "400px",
+            height: "400px",
+            borderRadius: "50%",
+            background: "linear-gradient(45deg, rgba(15, 52, 96, 0.05), rgba(15, 52, 96, 0.1))",
+            top: "-100px",
+            right: "-100px",
+            zIndex: 0,
+          }}></div>
+          <div className="bg-circle" style={{
+            position: "absolute",
+            width: "300px",
+            height: "300px",
+            borderRadius: "50%",
+            background: "linear-gradient(45deg, rgba(15, 52, 96, 0.05), rgba(15, 52, 96, 0.1))",
+            bottom: "-50px",
+            left: "-50px",
+            zIndex: 0,
+          }}></div>
+        </div>
+
         <div
-          className="packages-list"
+          className="packages-container"
           style={{
             maxWidth: "1200px",
             margin: "0 auto",
             padding: "0 1rem",
+            position: "relative",
+            zIndex: 1,
           }}
         >
-          <HealthPackagesList title="Popular Packages" packageIds={["01", "02", "03", "04", "05", "06", "07", "08", "09"]} />
+          <div className="section-header" style={{
+            textAlign: "center",
+            marginBottom: "3rem",
+          }}>
+            <h2 style={{
+              fontSize: "2.5rem",
+              fontWeight: "700",
+              color: "#0F3460",
+              marginBottom: "1rem",
+            }}>Popular Health Packages</h2>
+            <p style={{
+              fontSize: "1.1rem",
+              color: "#666",
+              maxWidth: "600px",
+              margin: "0 auto",
+            }}>Comprehensive health checkups tailored to your needs</p>
+          </div>
+
+          <HealthPackagesList 
+            packageIds={["01", "02", "03", "04", "05", "06"]} 
+            useLocalData={true}
+          />
         </div>
       </section>
 
       <Section
         id="popular-tests"
         title="Popular Tests"
-        bgColor="#f6f9fc"
+        bgColor="#ffffff"
         productItems={popularTests}
         addToCart={handleAddToCart}
       />

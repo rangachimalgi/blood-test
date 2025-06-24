@@ -10,7 +10,7 @@ import Highlight from "../components/Highlight";
 import "../Styles/HealthPackageList.css";
 import logo from "../Images/logo.png";
 
-const HealthPackagesList = ({ title, packageIds }) => {
+const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
   const { addToCart } = useContext(DataContainer);
   const [showCheckout, setShowCheckout] = useState(false);
   const [selectedPackage, setSelectedPackage] = useState(null);
@@ -19,18 +19,25 @@ const HealthPackagesList = ({ title, packageIds }) => {
 
   useEffect(() => {
     const fetchPackages = async () => {
-      try {
-        const res = await axios.get(
-          `${process.env.REACT_APP_API_URL}/api/packages`
-        );
-        setAllPackages(res.data);
-      } catch (err) {
-        console.error("Failed to fetch packages:", err);
+      if (useLocalData) {
+        // Use local data for home page
+        setAllPackages(healthPackagesArray);
+      } else {
+        try {
+          const res = await axios.get(
+            `${process.env.REACT_APP_API_URL}/api/packages`
+          );
+          setAllPackages(res.data);
+        } catch (err) {
+          console.error("Failed to fetch packages:", err);
+          // Fallback to local data if API fails
+          setAllPackages(healthPackagesArray);
+        }
       }
     };
 
     fetchPackages();
-  }, []);
+  }, [useLocalData]);
 
   const handleAddToCart = (pkg) => {
     addToCart(pkg);
@@ -40,7 +47,7 @@ const HealthPackagesList = ({ title, packageIds }) => {
   const handleBookNow = (pkg) => {
     setSelectedPackage(pkg);
     setShowCheckout(true);
-    navigate(`/health/${pkg.id}`); // Navigate to the health package page
+    navigate(`/health/${pkg.id}`);
   };
 
   const handleCloseCheckout = () => {
@@ -62,13 +69,31 @@ const HealthPackagesList = ({ title, packageIds }) => {
   return (
     <div className="packages-list">
       <ToastContainer />
-      <div style={{ textAlign: "center", marginBottom: "2rem" }}>
-        <h2>
+      <div className="section-header" style={{ 
+        textAlign: "center", 
+        marginBottom: "3rem",
+        padding: "0 1rem"
+      }}>
+        <h2 style={{
+          fontSize: "2.5rem",
+          fontWeight: "700",
+          color: "#0F3460",
+          marginBottom: "1rem",
+          textTransform: "none"
+        }}>
           {title ||
             (packageIds
               ? "Selected Health Packages"
               : "Available Health Packages")}
         </h2>
+        <p style={{
+          fontSize: "1.1rem",
+          color: "#666",
+          maxWidth: "600px",
+          margin: "0 auto",
+        }}>
+          Choose from our comprehensive range of diagnostic packages
+        </p>
       </div>
 
       <div className="packages-grid">
@@ -86,11 +111,16 @@ const HealthPackagesList = ({ title, packageIds }) => {
 
               {/* Move this OUTSIDE the Link */}
               <div className="hover-overlay">
-                <h2>{pkg.overlayTitle.toUpperCase()}</h2>
+                <h2>{pkg.overlayTitle?.toUpperCase() || pkg.productName?.toUpperCase()}</h2>
                 <ul>
                   {pkg.overlayDetails?.map((detail, index) => (
                     <li key={index}>{detail.toUpperCase()}</li>
-                  ))}
+                  )) || 
+                  (pkg.includedTests?.map(category => (
+                    <li key={category.categoryName}>
+                      {`${category.categoryName.split('(')[0]} (${category.tests.length})`}
+                    </li>
+                  )))}
                 </ul>
               </div>
             </div>

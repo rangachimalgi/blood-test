@@ -1,5 +1,6 @@
 import { Container, Row } from "react-bootstrap";
 import Product from "./Product/Product";
+import "./Section.css";
 
 const Section = ({ id, title, bgColor, productItems, addToCart }) => {
   const enableHoverEffect = id === "popular-packages";
@@ -7,10 +8,11 @@ const Section = ({ id, title, bgColor, productItems, addToCart }) => {
   return (
     <section id={id} style={{ background: bgColor }}>
       <Container>
-        <div className="heading">
-          <h1>{title}</h1>
+        <div className="section-header">
+          <h2>{title}</h2>
+          <p>Discover our most requested diagnostic tests</p>
         </div>
-        <Row className="justify-content-center">
+        <Row className="justify-content-center product-grid">
           {productItems.map((productItem) => (
             <Product
               key={productItem.id}

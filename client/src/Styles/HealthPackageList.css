@@ -6,22 +6,29 @@
 
 .packages-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 2rem;
 }
 
 .package-card {
   position: relative;
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
   overflow: hidden;
   background-color: #fff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   display: flex;
   z-index: 1;
-  flex-direction: column; /* Flexbox to align elements vertically */
-  justify-content: space-between; /* Ensures proper spacing between items */
-  height: 100%; /* Ensures consistent height for all cards */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(15, 52, 96, 0.1);
 }
 
 .package-link {
@@ -32,7 +39,7 @@
 .package-image-container {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 220px;
   overflow: hidden;
 }
 
@@ -40,11 +47,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .package-card:hover .package-image {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .hover-overlay {
@@ -53,7 +60,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 52, 96, 0.9),
+    rgba(15, 52, 96, 0.85)
+  );
   color: white;
   display: flex;
   flex-direction: column;
@@ -62,152 +73,234 @@
   text-align: center;
   padding: 20px;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: all 0.3s ease;
   pointer-events: none;
-  z-index: 2;
 }
 
 .package-image-container:hover .hover-overlay {
-  opacity: 1 !important;
+  opacity: 1;
   pointer-events: auto;
 }
 
 .hover-overlay h2 {
+  font-size: 14px;
+  font-weight: 700;
   margin: 0;
   padding: 5px 0;
-  margin-top: -25px;
-  font-size: 12px;
-  font-weight: 900;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
 }
 
 .hover-overlay ul {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  gap: 2px; /* Reduced spacing between columns */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
   list-style: none;
   padding: 0;
-  margin-top: 15px;
-  font-size: 14px;
+  margin: 0;
+  width: 100%;
+  transform: translateY(10px);
+  transition: transform 0.3s ease;
+}
+
+.package-image-container:hover .hover-overlay h2,
+.package-image-container:hover .hover-overlay ul {
+  transform: translateY(0);
 }
 
 .hover-overlay li {
-  text-align: left; /* Align text to the left */
-  font-size: 11px; /* Set font size for the details */
-  font-weight: 700;
-  margin-bottom: 5px; /* Reduce margin between list items */
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+  padding: 4px 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  margin: 0;
+  line-height: 1.4;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
 }
 
+.package-image-container:hover .hover-overlay li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add staggered animation for list items */
+.hover-overlay li:nth-child(1) { transition-delay: 0.1s; }
+.hover-overlay li:nth-child(2) { transition-delay: 0.15s; }
+.hover-overlay li:nth-child(3) { transition-delay: 0.2s; }
+.hover-overlay li:nth-child(4) { transition-delay: 0.25s; }
+.hover-overlay li:nth-child(5) { transition-delay: 0.3s; }
+.hover-overlay li:nth-child(6) { transition-delay: 0.35s; }
+.hover-overlay li:nth-child(7) { transition-delay: 0.4s; }
+.hover-overlay li:nth-child(8) { transition-delay: 0.45s; }
+
 .package-details {
-  padding: 15px;
-  flex-grow: 1; /* Allows the package details to take up remaining space */
+  padding: 1.5rem;
+  flex-grow: 1;
 }
 
 .package-name {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0F3460;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
 }
 
 .package-desc {
-  font-size: 14px;
-  color: #555;
-}
-
-.extra-details {
-  padding: 10px 15px;
-  background-color: #f9f9f9;
-}
-
-.extra-details ul {
-  list-style: none;
-  padding: 0;
-}
-
-.extra-details li {
-  font-size: 14px;
-  margin-bottom: 5px;
-  color: #555;
-}
-
-.extra-details i {
-  color: #0F3460;
-  margin-right: 5px;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
 }
 
 .price-cart-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 15px;
-  background-color: #f9f9f9;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(to right, #f8f9fa, #ffffff);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.package-price {
-  font-size: 16px;
-  font-weight: bold;
+.price-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mrp {
+  font-size: 0.9rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.discounted-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0F3460;
 }
 
 .book-now-button {
-  background-color: #0F3460;
-  color: #fff;
+  background: linear-gradient(45deg, #0F3460, #1a4980);
+  color: white;
   border: none;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
   cursor: pointer;
-  width: 70%; /* Set a smaller fixed width */
-  text-align: center;
-  margin: 20px auto 0; /* Center the button horizontally */
+  transition: all 0.3s ease;
+  margin: 0 1.5rem 1.5rem;
 }
 
 .book-now-button:hover {
-  background-color: #072a48;
+  background: linear-gradient(45deg, #1a4980, #0F3460);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(15, 52, 96, 0.2);
 }
 
 .extra-details-with-logo {
+  padding: 1rem 1.5rem;
+  background: linear-gradient(to right, #f8f9fa, #ffffff);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
   display: flex;
-  align-items: flex-start;
-  padding: 10px 0;
+  align-items: center;
+  gap: 1rem;
 }
 
 .logo-container {
-  margin-right: 15px;
+  flex-shrink: 0;
 }
 
 .package-logo {
-  width: 100px;  /* Adjust the size of the logo */
+  width: 80px;
   height: auto;
-}
-
-.extra-details {
-  flex-grow: 1;
+  opacity: 0.9;
 }
 
 .extra-details ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .extra-details li {
-  margin-bottom: 5px;
-  font-size: 14px;
-}
-
-.price-box {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 
-.mrp {
-  text-decoration: line-through;
-  color: #a1a1a1;
-  margin-right: 10px;
-  font-size: 16px;
+.extra-details i {
+  color: #0F3460;
+  font-size: 1rem;
 }
 
-.discounted-price {
-  color: #ff5722; /* Color for the discounted price */
-  font-weight: bold;
-  font-size: 18px;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .packages-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .package-image-container {
+    height: 180px;
+  }
+
+  .package-name {
+    font-size: 1.1rem;
+  }
+
+  .discounted-price {
+    font-size: 1.2rem;
+  }
+
+  .book-now-button {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Animation for new packages */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.package-card {
+  animation: fadeInUp 0.6s ease backwards;
+}
+
+.package-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.package-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.package-card:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.package-card:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.package-card:nth-child(6) {
+  animation-delay: 1s;
 }
 

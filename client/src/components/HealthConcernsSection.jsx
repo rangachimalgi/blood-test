@@ -3,24 +3,31 @@ import Slider from 'react-slick';
 import HealthProduct from './Product/HealthProduct';
 import { Container } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
+import './HealthConcernsSection.css';
 
 const HealthConcernsSection = ({ title, bgColor, productItems, addToCart }) => {
   const navigate = useNavigate();
   const settings = {
-    dots: false,
-    infinite: false, // Set to false to avoid infinite scrolling
+    dots: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 6,
-    slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    slidesToScroll: 2,
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 992,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: false, // Ensure this is false to avoid infinite scrolling
+          slidesToScroll: 2,
         },
       },
       {
@@ -28,7 +35,6 @@ const HealthConcernsSection = ({ title, bgColor, productItems, addToCart }) => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: false, // Ensure this is false to avoid infinite scrolling
         },
       },
       {
@@ -36,15 +42,7 @@ const HealthConcernsSection = ({ title, bgColor, productItems, addToCart }) => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: false, // Ensure this is false to avoid infinite scrolling
-        },
-      },
-      {
-        breakpoint: 360,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: false, // Ensure this is false to avoid infinite scrolling
+          dots: false,
         },
       },
     ],
@@ -55,46 +53,46 @@ const HealthConcernsSection = ({ title, bgColor, productItems, addToCart }) => {
   };
 
   return (
-    <section style={{ background: bgColor }}>
+    <section className="health-concerns-section" style={{ background: bgColor }}>
       <Container>
-        <h2>{title}</h2>
-        <Slider {...settings}>
-          {productItems.map((productItem) => (
-            <div key={productItem.id}>
-              <HealthProduct
-                title={title}
-                productItem={productItem}
-                addToCart={addToCart}
-                onClick={() => handleHealthConcernClick(productItem.id)}
-              />
-            </div>
-          ))}
-        </Slider>
+        <div className="section-header">
+          <h2>{title}</h2>
+          <p>Find tests and packages based on your health concerns</p>
+        </div>
+        <div className="slider-container">
+          <Slider {...settings}>
+            {productItems.map((productItem) => (
+              <div key={productItem.id} className="slider-item">
+                <HealthProduct
+                  title={title}
+                  productItem={productItem}
+                  addToCart={addToCart}
+                  onClick={() => handleHealthConcernClick(productItem.id)}
+                />
+              </div>
+            ))}
+          </Slider>
+        </div>
       </Container>
     </section>
   );
 };
 
-// Sample arrow components
-const SampleNextArrow = (props) => {
-  const { className, style, onClick } = props;
+const CustomNextArrow = (props) => {
+  const { className, onClick } = props;
   return (
-    <div
-      className={className}
-      style={{ ...style, display: 'block', background: 'black' }}
-      onClick={onClick}
-    />
+    <div className={`${className} custom-arrow next-arrow`} onClick={onClick}>
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </div>
   );
 };
 
-const SamplePrevArrow = (props) => {
-  const { className, style, onClick } = props;
+const CustomPrevArrow = (props) => {
+  const { className, onClick } = props;
   return (
-    <div
-      className={className}
-      style={{ ...style, display: 'block', background: 'black' }}
-      onClick={onClick}
-    />
+    <div className={`${className} custom-arrow prev-arrow`} onClick={onClick}>
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </div>
   );
 };
 
