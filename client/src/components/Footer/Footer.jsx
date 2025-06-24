@@ -8,8 +8,8 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa"; // Importing social media icons
-import logo from "../../Images/logoReal.png"
-import './Footer.css';
+import logo from "../../Images/logoReal.png";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -20,11 +20,13 @@ const Footer = () => {
           <div>
             <h2 className="footer-newsletter-title">Join Fortune Blood Test</h2>
             <p className="footer-newsletter-desc">
-              Get Event Tips, Exclusive Offers & More! Subscribe to receive package updates,
-              planning tips, and special deals for your next big celebration.
+              Book Your Packages and Tests now !!!
             </p>
           </div>
-          <form className="footer-newsletter-form" onSubmit={e => e.preventDefault()}>
+          <form
+            className="footer-newsletter-form"
+            onSubmit={(e) => e.preventDefault()}
+          >
             <input
               type="email"
               placeholder="Your email address"
@@ -51,24 +53,40 @@ const Footer = () => {
           <div className="footer-col">
             <h3 className="footer-col-title">Company</h3>
             <div className="footer-links">
-              <a href="/about" className="footer-link">About Us</a>
-              <a href="/blog" className="footer-link">Blog</a>
-              <a href="/services" className="footer-link">Services</a>
-              <a href="/faqs" className="footer-link">FAQs</a>
-              <a href="/terms" className="footer-link">Terms</a>
-              <a href="/contact" className="footer-link">Contact Us</a>
+              <a href="/about" className="footer-link">
+                About Us
+              </a>
+              <a href="/blog" className="footer-link">
+                Blog
+              </a>
+              <a href="/services" className="footer-link">
+                Services
+              </a>
+              <a href="/faqs" className="footer-link">
+                FAQs
+              </a>
+              <a href="/terms" className="footer-link">
+                Terms
+              </a>
+              <a href="/contact" className="footer-link">
+                Contact Us
+              </a>
             </div>
           </div>
-
-        
 
           {/* Address */}
           <div className="footer-col">
             <h3 className="footer-col-title">Address</h3>
             <div className="footer-links">
-              <span className="footer-link" style={{cursor: 'default'}}>Classic Paradise Layout, Begur, Bangalore, India</span>
-              <a href="mailto:demo@gmail.com" className="footer-link">demo@gmail.com</a>
-              <a href="tel:+919611011266" className="footer-link">+91 96110 11266</a>
+              <span className="footer-link" style={{ cursor: "default" }}>
+                Classic Paradise Layout, Begur, Bangalore, India
+              </span>
+              <a href="mailto:demo@gmail.com" className="footer-link">
+                demo@gmail.com
+              </a>
+              <a href="tel:+919611011266" className="footer-link">
+                +91 96110 11266
+              </a>
             </div>
           </div>
 
@@ -92,9 +110,13 @@ const Footer = () => {
             © 2024 Fortune Blood Test. All rights reserved.
           </p>
           <div className="footer-bottom-links">
-            <a href="/terms-conditions" className="footer-link">Terms & Conditions</a>
+            <a href="/terms-conditions" className="footer-link">
+              Terms & Conditions
+            </a>
             <div className="footer-bottom-dot"></div>
-            <a href="/privacy" className="footer-link">Privacy Notice</a>
+            <a href="/privacy" className="footer-link">
+              Privacy Notice
+            </a>
             {/* <button className="footer-bottom-btn">
               <img src="/images/img_link.svg" alt="Link" />
             </button> */}
