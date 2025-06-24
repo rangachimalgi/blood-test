@@ -51,20 +51,43 @@ const ShopList = ({ productItems }) => {
     return (
       <div>
         <ToastContainer />
-        <Row className="justify-content-center">
-          {productItems.map((productItem) => {
-            return (
-              <Product
-                key={productItem.id}
-                title={null}
-                productItem={productItem}
-                addToCart={addToCart}
-                handleAddToCart={handleAddToCart}
-                showImage={false}
-                isShopList={true} // Pass the prop to indicate this is a ShopList
-              />
-            );
-          })}
+        <Row className="justify-content-center shop-list-grid">
+          {productItems.map((productItem, idx) => (
+            <div className="shop-list-simple-row" key={productItem.id} style={{ animationDelay: `${(idx % 6) * 0.12}s` }}>
+              <div
+                className="shop-list-simple-name"
+                tabIndex={0}
+                role="button"
+                aria-label={`View details for ${productItem.productName}`}
+                onClick={() => navigate(`/shop/${productItem.id}`)}
+                onKeyDown={e => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    navigate(`/shop/${productItem.id}`);
+                  }
+                }}
+                style={{ cursor: 'pointer' }}
+              >
+                {productItem.productName}
+              </div>
+              <div className="shop-list-simple-price">₹{productItem.price}</div>
+              <div className="shop-list-simple-buttons">
+                <button
+                  className="shop-list-book-button"
+                  aria-label="Book Now"
+                  onClick={() => navigate(`/shop/${productItem.id}`)}
+                >
+                  Book Now
+                </button>
+                <button
+                  className="shop-list-add-to-cart-button"
+                  aria-label="Add to Cart"
+                  onClick={() => handleAddToCart(productItem)}
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          ))}
         </Row>
       </div>
     );
