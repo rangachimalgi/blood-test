@@ -32,6 +32,12 @@ section {
   padding-bottom: 60px !important;
 }
 
+/* Override padding for slider section */
+section.slider-section {
+  padding: 0 !important;
+  margin-top: 0 !important;
+}
+
 a {
   text-decoration: none;
   color: black;
