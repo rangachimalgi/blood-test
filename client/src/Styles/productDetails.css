@@ -420,8 +420,9 @@
   gap: 1.1rem;
 }
 .product-details-title {
-  font-size: 2.1rem;
-  font-weight: 800;
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: -0.5px;
   color: #0F3460;
   margin-bottom: 0.5rem;
 }
@@ -430,21 +431,25 @@
   align-items: center;
   gap: 1.1rem;
   margin-bottom: 0.5rem;
+  font-size: 1.08rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
 .product-details-price {
   background: linear-gradient(90deg, #0F3460 0%, #2a5298 100%);
   color: #fff;
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 800;
   border-radius: 14px;
   padding: 0.4rem 1.2rem;
   box-shadow: 0 2px 8px rgba(15, 52, 96, 0.10);
   display: inline-block;
+  letter-spacing: 0.01em;
 }
 .product-details-category {
   background: rgba(15, 52, 96, 0.08);
   color: #0F3460;
-  font-size: 1.05rem;
+  font-size: 1.08rem;
   font-weight: 600;
   border-radius: 8px;
   padding: 0.25rem 0.8rem;
@@ -452,10 +457,11 @@
   box-shadow: 0 1px 4px rgba(15, 52, 96, 0.07);
 }
 .product-details-shortdesc {
-  font-size: 1.08rem;
+  font-size: 1.13rem;
+  font-weight: 400;
   color: #4a5a6a;
   margin-bottom: 0.7rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 .product-details-add-btn {
   background: linear-gradient(90deg, #0F3460 0%, #2a5298 100%);
@@ -472,6 +478,7 @@
   cursor: pointer;
   transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
   margin-top: 1.2rem;
+  letter-spacing: 0.01em;
 }
 .product-details-add-btn:hover, .product-details-add-btn:focus {
   background: linear-gradient(90deg, #2a5298 0%, #0F3460 100%);
@@ -505,6 +512,9 @@
   border: none;
   outline: none;
   transition: color 0.2s;
+  font-size: 1.13rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
 .included-tests-category-title:focus {
   outline: 2px solid #0F3460;
@@ -519,7 +529,9 @@
   margin-bottom: 0.5rem;
 }
 .included-tests-list li {
-  font-size: 1.02rem;
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
   color: #333;
   margin-bottom: 0.2rem;
   position: relative;
@@ -548,7 +560,8 @@
 }
 .product-details-tablist li {
   font-size: 1.08rem;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.01em;
   color: #9c9b9b;
   padding-bottom: 0.5rem;
   cursor: pointer;
@@ -560,9 +573,10 @@
   border-bottom: 2px solid #0F3460;
 }
 .product-details-desc {
-  font-size: 1.08rem;
+  font-size: 1.13rem;
+  font-weight: 400;
   color: #4a5a6a;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 /* Responsive */
 @media (max-width: 992px) {
@@ -608,5 +622,17 @@
     padding: 7px 10px;
     font-size: 0.92rem;
   }
+}
+
+.product-details-mrp {
+  text-decoration: line-through;
+  color: #b0b0b0;
+  font-size: 1.08rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+body, .product-details-modern-card, .product-details-title, .product-details-meta, .product-details-mrp, .product-details-price, .product-details-category, .product-details-shortdesc, .product-details-add-btn, .included-tests-modern, .included-tests-category-title, .included-tests-list, .product-details-tabs, .product-details-tablist, .product-details-desc {
+  font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
 }
 

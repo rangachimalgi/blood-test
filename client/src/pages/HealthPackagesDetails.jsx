@@ -14,23 +14,25 @@ const HealthPackageDetails = () => {
   const { selectedProduct, setSelectedProduct, addToCart } = useContext(DataContainer);
   const [openCategoryId, setOpenCategoryId] = useState(null);
   const { id } = useParams();
+  const [likeCount, setLikeCount] = useState(0);
+  const [liked, setLiked] = useState(false);
 
- useEffect(() => {
-  window.scrollTo(0, 0);
-  
-  const fetchPackageById = async () => {
-    try {
-      const res = await axios.get(
-        `${process.env.REACT_APP_API_URL}/api/packages/${id}`
-      );
-      setSelectedProduct(res.data);
-    } catch (err) {
-      console.error("Failed to fetch package by ID:", err);
-    }
-  };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    
+    const fetchPackageById = async () => {
+      try {
+        const res = await axios.get(
+          `${process.env.REACT_APP_API_URL}/api/packages/${id}`
+        );
+        setSelectedProduct(res.data);
+      } catch (err) {
+        console.error("Failed to fetch package by ID:", err);
+      }
+    };
 
-  fetchPackageById();
-}, [id, setSelectedProduct]);
+    fetchPackageById();
+  }, [id, setSelectedProduct]);
 
   const handleQuantityChange = (event) => {
     setQuantity(parseInt(event.target.value));
@@ -45,98 +47,88 @@ const HealthPackageDetails = () => {
     document.getElementById("checkout-form").scrollIntoView({ behavior: "smooth" });
   };
 
+  const handleLike = () => {
+    setLikeCount(likeCount + (liked ? -1 : 1));
+    setLiked(!liked);
+  };
+
   return (
     <Fragment>
       <Banner title={selectedProduct?.productName} />
       <Container className="product-page">
         <Row>
           <Col md={8}>
-            <div className="product-box">
+            <div className="product-details-modern-card">
               <section>
-                <Row className="justify-content-center">
-                  <Col md={6}>
-                    <img loading="lazy" src={selectedProduct?.imgUrl} alt="" />
-                  </Col>
-                  <Col md={6}>
-                  <h2 style={{ fontSize: '17px', fontWeight: '700' }}>{selectedProduct?.productName}</h2>
-
-                    {/* CHANGED: Display MRP with a strikethrough and discounted price */}
-                    <div className="price-box">
-                      <span className="mrp">&#8377;{selectedProduct?.mrp}</span> {/* MRP with strikethrough */}
-                      <span className="discounted-price">&#8377;{selectedProduct?.price}</span> {/* Discounted price */}
+                <Row className="align-items-center justify-content-center">
+                  <Col md={6} className="product-details-img-col">
+                    <div className="product-details-img-wrapper">
+                      <img loading="lazy" src={selectedProduct?.imgUrl} alt={selectedProduct?.productName} className="product-details-img" />
                     </div>
-
-                    <span>Category: {selectedProduct?.category}</span>
-                    <p>{selectedProduct?.shortDesc}</p>
-
-                    {/* Add Quantity and Add to Cart button here if needed */}
-                    {/* 
-                    <input
-                      className="qty-input"
-                      type="number"
-                      placeholder="Qty"
-                      value={quantity}
-                      onChange={handleQuantityChange}
-                    />
-                    <button
-                      aria-label="Add"
-                      type="submit"
-                      className="add"
-                      onClick={() => handleAdd(selectedProduct, quantity)}
-                    >
-                      Add To Cart
+                  </Col>
+                  <Col md={6} className="product-details-info-col">
+                    <h2 className="product-details-title">{selectedProduct?.productName}</h2>
+                    <div className="product-details-meta">
+                      <span className="product-details-mrp">₹{selectedProduct?.mrp}</span>
+                      <span className="product-details-price">₹{selectedProduct?.price}</span>
+                      <span className="product-details-category">{selectedProduct?.category}</span>
+                    </div>
+                    <p className="product-details-shortdesc">{selectedProduct?.shortDesc}</p>
+                    <button className="product-details-add-btn" onClick={() => handleAdd(selectedProduct, quantity)} aria-label="Add to Cart">
+                      <ion-icon name="cart-outline"></ion-icon> Add to Cart
                     </button>
-                    */}
                   </Col>
                 </Row>
               </section>
 
               {/* Included Tests section */}
-              {selectedProduct?.includedTests &&
-                selectedProduct.includedTests.length > 0 && (
-                  <section className="included-tests">
-                    <Container>
-                      <h3>Included Tests</h3>
-                      {selectedProduct.includedTests.map((category) => (
-                        <div key={category.categoryName} className="category-box">
-                          <h4
-                            onClick={() =>
-                              setOpenCategoryId(
-                                openCategoryId !== category.categoryName
-                                  ? category.categoryName
-                                  : null
-                              )
-                            }
-                            className="category-title"
-                          >
-                            <span className="toggle-icon">
-                              {openCategoryId === category.categoryName ? "-" : "+"}
-                            </span>
-                            {category.categoryName.toUpperCase()}
-                          </h4>
+              {selectedProduct?.includedTests && selectedProduct.includedTests.length > 0 && (
+                <section className="included-tests-modern mt-4">
+                  <h3>Included Tests</h3>
+                  {selectedProduct.includedTests.map((category) => (
+                    <div key={category.categoryName} className="included-tests-category">
+                      <h4
+                        className="included-tests-category-title"
+                        onClick={() =>
+                          setOpenCategoryId(
+                            openCategoryId !== category.categoryName
+                              ? category.categoryName
+                              : null
+                          )
+                        }
+                        tabIndex={0}
+                        role="button"
+                        aria-label={`Toggle ${category.categoryName}`}
+                        onKeyDown={e => {
+                          if (e.key === 'Enter' || e.key === ' ') {
+                            setOpenCategoryId(
+                              openCategoryId !== category.categoryName
+                                ? category.categoryName
+                                : null
+                            );
+                          }
+                        }}
+                      >
+                        <ion-icon name={openCategoryId === category.categoryName ? 'chevron-down-outline' : 'chevron-forward-outline'}></ion-icon>
+                        {category.categoryName.toUpperCase()}
+                      </h4>
+                      <Collapse in={openCategoryId === category.categoryName}>
+                        <ul className="included-tests-list">
+                          {category.tests.map((testName, index) => (
+                            <li key={index}>{testName.toUpperCase()}</li>
+                          ))}
+                        </ul>
+                      </Collapse>
+                    </div>
+                  ))}
+                </section>
+              )}
 
-                          <Collapse in={openCategoryId === category.categoryName}>
-                            <div className="test-list">
-                              {category.tests.map((testName, index) => (
-                                <div key={index} className="test-item">
-                                  {testName.toUpperCase()}
-                                </div>
-                              ))}
-                            </div>
-                          </Collapse>
-                        </div>
-                      ))}
-                    </Container>
-                  </section>
-                )}
-
-              <section className="product-reviews">
-                <Container>
-                  <ul>
-                    <li>Description</li>
-                  </ul>
-                  <p>{selectedProduct?.description}</p>
-                </Container>
+              <section className="product-details-tabs mt-4">
+                <ul className="product-details-tablist">
+                  <li className="active">Description</li>
+                </ul>
+                <p className="product-details-desc mt-2">{selectedProduct?.description}</p>
               </section>
             </div>
           </Col>
