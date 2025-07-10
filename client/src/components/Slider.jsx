@@ -33,13 +33,13 @@ const SliderHome = () => {
                   alt={value.title} 
                   className="slider-image"
                 />
-                <div className="slider-overlay"></div>
+                {/* <div className="slider-overlay"></div> */}
                 <div className="slide-content">
-                  <h1 className="slide-title">{value.title}</h1>
+                  {/* <h1 className="slide-title">{value.title}</h1>
                   <p className="slide-description">{value.desc}</p>
                   <Link to={value.path} className="slide-button">
                     Book Now
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             )
