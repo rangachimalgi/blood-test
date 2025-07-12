@@ -79,8 +79,7 @@ const Footer = () => {
             <h3 className="footer-col-title">Address</h3>
             <div className="footer-links">
               <span className="footer-link" style={{ cursor: "default" }}>
-                Fortune home health care .683,17th cross 26th Main Puttenahalli
-                road jp nagar 6th phase 560076
+               Fortune home health care .683,17th cross 26th Main Puttenahalli road jp nagar 6th phase 560076
               </span>
               {/* <a href="mailto:demo@gmail.com" className="footer-link">
                 demo@gmail.com
