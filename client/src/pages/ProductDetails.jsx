@@ -34,7 +34,7 @@ const ProductDetails = () => {
 
   const handleAdd = () => {
     addToCart(selectedProduct);
-    toast.success("Product has been added to cart!");
+    // Removed toast notification
   };
 
   const handleLike = () => {

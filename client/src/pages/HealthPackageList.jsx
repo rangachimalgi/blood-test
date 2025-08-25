@@ -41,7 +41,7 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
 
   const handleAddToCart = (pkg) => {
     addToCart(pkg);
-    toast.success("Product has been added to cart!");
+    // Removed toast notification
   };
 
   const handleBookNow = (pkg) => {

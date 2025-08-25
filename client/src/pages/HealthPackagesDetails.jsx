@@ -40,7 +40,7 @@ const HealthPackageDetails = () => {
 
   const handleAdd = (selectedProduct, quantity) => {
     addToCart(selectedProduct, quantity);
-    toast.success("Package has been added to cart!");
+    // Removed toast notification
   };
 
   const scrollToCheckoutForm = () => {
