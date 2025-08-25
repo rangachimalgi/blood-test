@@ -87,8 +87,8 @@ const HealthPackageDetails = () => {
                   <h3>Included Tests</h3>
                   {selectedProduct.includedTests.map((category) => (
                     <div key={category.categoryName} className="included-tests-category">
-                      <h4
-                        className="included-tests-category-title"
+                      <div 
+                        className="included-tests-category-header"
                         onClick={() =>
                           setOpenCategoryId(
                             openCategoryId !== category.categoryName
@@ -109,9 +109,14 @@ const HealthPackageDetails = () => {
                           }
                         }}
                       >
-                        <ion-icon name={openCategoryId === category.categoryName ? 'chevron-down-outline' : 'chevron-forward-outline'}></ion-icon>
-                        {category.categoryName.toUpperCase()}
-                      </h4>
+                        <h4 className="included-tests-category-title">
+                          {category.categoryName.toUpperCase()}
+                        </h4>
+                        <ion-icon 
+                          name={openCategoryId === category.categoryName ? 'chevron-down-outline' : 'chevron-forward-outline'}
+                          className="category-toggle-icon"
+                        ></ion-icon>
+                      </div>
                       <Collapse in={openCategoryId === category.categoryName}>
                         <ul className="included-tests-list">
                           {category.tests.map((testName, index) => (
