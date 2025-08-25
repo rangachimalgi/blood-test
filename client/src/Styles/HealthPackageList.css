@@ -1,7 +1,7 @@
 /* HealthPackageList.css */
 .packages-list {
   padding: 20px;
-  margin-top: 100px; /* Add margin from navbar */
+  margin-top: 0; /* Remove margin from navbar for home page */
 }
 
 .packages-grid {

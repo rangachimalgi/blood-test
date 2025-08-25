@@ -113,7 +113,7 @@ const Home = () => {
             zIndex: 1,
           }}
         >
-          <div className="section-header" style={{
+          {/* <div className="section-header" style={{
             textAlign: "center",
             marginBottom: "3rem",
           }}>
@@ -129,7 +129,7 @@ const Home = () => {
               maxWidth: "600px",
               margin: "0 auto",
             }}>Comprehensive health checkups tailored to your needs</p>
-          </div>
+          </div> */}
 
           <HealthPackagesList 
             packageIds={["01", "02", "03", "04", "05", "06"]} 
