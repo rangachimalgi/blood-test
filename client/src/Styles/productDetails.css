@@ -342,10 +342,15 @@
   border: 1.5px solid rgba(15, 52, 96, 0.07);
   box-shadow: 0 6px 32px rgba(15, 52, 96, 0.10);
   border-radius: 20px;
-  padding: 2.5rem 2rem 2rem 2rem;
+  padding: 0 2rem 2rem 2rem;
   margin-bottom: 2rem;
   position: relative;
   overflow: visible;
+}
+
+.product-details-modern-card section {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 .product-details-img-col {
   display: flex;
@@ -425,6 +430,13 @@
   letter-spacing: -0.5px;
   color: #0F3460;
   margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-details-info-full {
+  padding: 0;
 }
 .product-details-meta {
   display: flex;
@@ -436,25 +448,17 @@
   letter-spacing: 0.01em;
 }
 .product-details-price {
-  background: linear-gradient(90deg, #0F3460 0%, #2a5298 100%);
-  color: #fff;
+  color: #0F3460;
   font-size: 1.25rem;
   font-weight: 800;
-  border-radius: 14px;
-  padding: 0.4rem 1.2rem;
-  box-shadow: 0 2px 8px rgba(15, 52, 96, 0.10);
   display: inline-block;
   letter-spacing: 0.01em;
 }
 .product-details-category {
-  background: rgba(15, 52, 96, 0.08);
   color: #0F3460;
   font-size: 1.08rem;
   font-weight: 600;
-  border-radius: 8px;
-  padding: 0.25rem 0.8rem;
   letter-spacing: 0.02em;
-  box-shadow: 0 1px 4px rgba(15, 52, 96, 0.07);
 }
 .product-details-shortdesc {
   font-size: 1.13rem;
@@ -464,37 +468,30 @@
   line-height: 1.6;
 }
 .product-details-add-btn {
-  background: linear-gradient(90deg, #0F3460 0%, #2a5298 100%);
+  background: #0F3460;
   color: #fff;
   border: none;
-  border-radius: 22px;
   padding: 12px 32px;
   font-size: 1.08rem;
   font-weight: 700;
   display: flex;
   align-items: center;
   gap: 10px;
-  box-shadow: 0 2px 8px rgba(15, 52, 96, 0.10);
   cursor: pointer;
-  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
-  margin-top: 1.2rem;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
   letter-spacing: 0.01em;
 }
 .product-details-add-btn:hover, .product-details-add-btn:focus {
-  background: linear-gradient(90deg, #2a5298 0%, #0F3460 100%);
-  box-shadow: 0 4px 16px rgba(15, 52, 96, 0.18);
-  transform: translateY(-2px) scale(1.04);
+  background: #2a5298;
 }
 .product-details-add-btn ion-icon {
   font-size: 1.3rem;
 }
 /* Included Tests Modern */
 .included-tests-modern {
-  background: #f9f9fc;
-  padding: 1.5rem 1.2rem;
-  border-radius: 14px;
-  margin-top: 2rem;
-  box-shadow: 0 2px 8px rgba(15, 52, 96, 0.07);
+  margin-top: 1rem;
+  padding: 0.5rem 0;
 }
 
 .included-tests-modern h2 {
@@ -508,10 +505,7 @@
 }
 .included-tests-category {
   margin-bottom: 1.1rem;
-  background: #ffffff;
   border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   position: relative;
   z-index: 10;
@@ -522,7 +516,6 @@
   justify-content: space-between;
   cursor: pointer;
   padding: 1rem;
-  background: #f8f9fa;
   border-bottom: 1px solid #e0e0e0;
   position: relative;
   z-index: 15;
@@ -551,7 +544,6 @@
 .included-tests-list {
   padding: 1rem;
   margin-bottom: 0;
-  background: #ffffff;
 }
 .included-tests-list li {
   font-size: 1rem;

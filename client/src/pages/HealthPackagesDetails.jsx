@@ -60,25 +60,16 @@ const HealthPackageDetails = () => {
           <Col md={8}>
             <div className="product-details-modern-card">
               <section>
-                <Row className="align-items-center justify-content-center">
-                  <Col md={6} className="product-details-img-col">
-                    <div className="product-details-img-wrapper">
-                      <img loading="lazy" src={selectedProduct?.imgUrl} alt={selectedProduct?.productName} className="product-details-img" />
-                    </div>
-                  </Col>
-                  <Col md={6} className="product-details-info-col">
-                    <h2 className="product-details-title">{selectedProduct?.productName}</h2>
-                    <div className="product-details-meta">
-                      <span className="product-details-mrp">₹{selectedProduct?.mrp}</span>
-                      <span className="product-details-price">₹{selectedProduct?.price}</span>
-                      <span className="product-details-category">{selectedProduct?.category}</span>
-                    </div>
-                    <p className="product-details-shortdesc">{selectedProduct?.shortDesc}</p>
-                    <button className="product-details-add-btn" onClick={() => handleAdd(selectedProduct, quantity)} aria-label="Add to Cart">
-                      <ion-icon name="cart-outline"></ion-icon> Add to Cart
-                    </button>
-                  </Col>
-                </Row>
+                <div className="product-details-info-full">
+                  <h2 className="product-details-title">{selectedProduct?.productName}</h2>
+                  <div className="product-details-meta">
+                    <span className="product-details-mrp">₹{selectedProduct?.mrp}</span>
+                    <span className="product-details-price">₹{selectedProduct?.price}</span>
+                  </div>
+                  <button className="product-details-add-btn" onClick={() => handleAdd(selectedProduct, quantity)} aria-label="Add to Cart">
+                    <ion-icon name="cart-outline"></ion-icon> Add to Cart
+                  </button>
+                </div>
               </section>
 
               {/* Included Tests section */}
