@@ -141,14 +141,13 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
                 <span className="mrp">&#8377;{pkg.mrp}</span>
                 <span className="discounted-price">&#8377;{pkg.price}</span>
               </div>
+              <button
+                className="book-now-button"
+                onClick={() => handleBookNow(pkg)}
+              >
+                Book Now
+              </button>
             </div>
-
-            <button
-              className="book-now-button"
-              onClick={() => handleBookNow(pkg)}
-            >
-              Book Now
-            </button>
 
             <div className="extra-details-with-logo">
               <div className="logo-container">

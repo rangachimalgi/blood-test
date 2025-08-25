@@ -190,12 +190,12 @@
   background: linear-gradient(45deg, #0F3460, #1a4980);
   color: white;
   border: none;
-  padding: 10px 25px;
-  border-radius: 20px;
+  padding: 8px 20px;
+  border-radius: 18px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin: 0 1rem 1rem;
+  font-size: 0.9rem;
 }
 
 .book-now-button:hover {
