@@ -70,6 +70,13 @@ const Home = () => {
       {/* <HealthConcernsSection title="Recommended checkups for men" bgColor="#f6f9fc" productItems={checkupsMen} addToCart={handleAddToCart} />
       <HealthConcernsSection title="Recommended checkups for women" bgColor="#f6f9fc" productItems={checkupsWomen} addToCart={handleAddToCart} /> */}
 
+      <HealthConcernsSection
+        title="Browse by Health Concerns"
+        bgColor="#f6f9fc"
+        productItems={healthConcerns}
+        addToCart={handleAddToCart}
+      />
+      
       <section
         id="popular-packages"
         className="packages-section"
@@ -81,26 +88,34 @@ const Home = () => {
         }}
       >
         <div className="section-background">
-          <div className="bg-circle" style={{
-            position: "absolute",
-            width: "400px",
-            height: "400px",
-            borderRadius: "50%",
-            background: "linear-gradient(45deg, rgba(15, 52, 96, 0.05), rgba(15, 52, 96, 0.1))",
-            top: "-100px",
-            right: "-100px",
-            zIndex: 0,
-          }}></div>
-          <div className="bg-circle" style={{
-            position: "absolute",
-            width: "300px",
-            height: "300px",
-            borderRadius: "50%",
-            background: "linear-gradient(45deg, rgba(15, 52, 96, 0.05), rgba(15, 52, 96, 0.1))",
-            bottom: "-50px",
-            left: "-50px",
-            zIndex: 0,
-          }}></div>
+          <div
+            className="bg-circle"
+            style={{
+              position: "absolute",
+              width: "400px",
+              height: "400px",
+              borderRadius: "50%",
+              background:
+                "linear-gradient(45deg, rgba(15, 52, 96, 0.05), rgba(15, 52, 96, 0.1))",
+              top: "-100px",
+              right: "-100px",
+              zIndex: 0,
+            }}
+          ></div>
+          <div
+            className="bg-circle"
+            style={{
+              position: "absolute",
+              width: "300px",
+              height: "300px",
+              borderRadius: "50%",
+              background:
+                "linear-gradient(45deg, rgba(15, 52, 96, 0.05), rgba(15, 52, 96, 0.1))",
+              bottom: "-50px",
+              left: "-50px",
+              zIndex: 0,
+            }}
+          ></div>
         </div>
 
         <div
@@ -131,8 +146,8 @@ const Home = () => {
             }}>Comprehensive health checkups tailored to your needs</p>
           </div> */}
 
-          <HealthPackagesList 
-            packageIds={["01", "02", "03", "04", "05", "06"]} 
+          <HealthPackagesList
+            packageIds={["01", "02", "03", "04", "05", "06"]}
             useLocalData={true}
           />
         </div>
@@ -143,13 +158,6 @@ const Home = () => {
         title="Popular Tests"
         bgColor="#ffffff"
         productItems={popularTests}
-        addToCart={handleAddToCart}
-      />
-
-      <HealthConcernsSection
-        title="Browse by Health Concerns"
-        bgColor="#f6f9fc"
-        productItems={healthConcerns}
         addToCart={handleAddToCart}
       />
     </Fragment>
