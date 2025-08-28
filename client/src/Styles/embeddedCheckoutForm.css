@@ -22,9 +22,9 @@
 .embedded-checkout-form {
   padding: 2rem;
   background: #ffffff;
-  border: 2px solid #0F3460;
+  border: 2px solid #6c757d;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(15, 52, 96, 0.15);
+  box-shadow: 0 8px 24px rgba(2, 2, 2, 0.15);
   margin-bottom: 1.5rem;
   position: relative;
 }
@@ -68,29 +68,55 @@
   margin-bottom: 0.4rem;
   font-size: 1.05rem;
 }
-.form-control, .large-select {
-  padding: 12px 16px;
-  border-radius: 0;
-  border: 2px solid #e0e0e0;
-  background: #fff;
-  font-size: 1rem;
-  font-weight: 400;
-  margin-bottom: 1rem;
-  transition: border 0.2s, box-shadow 0.2s;
+.embedded-checkout-form .form-control,
+.embedded-checkout-form .large-select,
+.checkout-form-simple .form-control,
+.checkout-form-simple .large-select {
+  padding: 12px 16px !important;
+  border-radius: 0 !important;
+  border: 2px solid #000 !important;
+  background: #ffffff !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  margin-bottom: 1rem !important;
+  transition: border 0.2s, box-shadow 0.2s !important;
 }
-.form-control:focus, .large-select:focus {
-  border-color: #0F3460;
-  box-shadow: 0 0 0 3px rgba(15, 52, 96, 0.1);
-  outline: none;
+.embedded-checkout-form .form-control:focus,
+.embedded-checkout-form .large-select:focus,
+.checkout-form-simple .form-control:focus,
+.checkout-form-simple .large-select:focus {
+  border-color: #262727 !important;
+  box-shadow: 0 0 0 3px rgba(15, 52, 96, 0.1) !important;
+  outline: none !important;
 }
 .large-select {
   height: 48px;
   min-width: 120px;
 }
+.input-group {
+  display: flex;
+  align-items: stretch;
+}
+
+.embedded-checkout-form .input-group {
+  display: flex;
+  align-items: stretch;
+}
+
 .input-group .form-control {
   border-radius: 0;
   margin-bottom: 0;
+  border-right: none;
+  flex: 1;
 }
+
+.embedded-checkout-form .input-group .form-control {
+  border-radius: 0;
+  margin-bottom: 0;
+  border-right: none;
+  flex: 1;
+}
+
 .input-group .btn {
   border-radius: 0;
   background: linear-gradient(90deg, #0F3460 0%, #2a5298 100%);
@@ -99,6 +125,18 @@
   border: none;
   padding: 12px 22px;
   transition: background 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
+}
+
+.embedded-checkout-form .input-group .btn {
+  border-radius: 0;
+  background: linear-gradient(90deg, #0F3460 0%, #2a5298 100%);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 12px 22px;
+  transition: background 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
 }
 .input-group .btn:hover, .input-group .btn:focus {
   background: linear-gradient(90deg, #2a5298 0%, #0F3460 100%);
