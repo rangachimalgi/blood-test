@@ -42,9 +42,9 @@ const Cart = () => {
   return (
     <section className="cart-page">
       <Container fluid className="px-4 py-2">
-        <Row className="justify-content-center g-4">
+        <Row className="justify-content-center g-3">
           {/* Checkout Form */}
-          <Col lg={8} className="checkout-form-column">
+          <Col lg={7} className="checkout-form-column">
             <CheckoutForm
               show={true}
               handleClose={() => {}}

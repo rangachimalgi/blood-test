@@ -90,10 +90,11 @@
   box-shadow: none !important;
   padding: 0 !important;
   margin-bottom: 0 !important;
+  margin-top: -1rem !important;
 }
 
 .embedded-checkout-form {
-  margin-top: 20px; /* Adjust this value as needed */
+  margin-top: 10px; /* Move the form up a bit */
   width: 100%; /* Ensure the form takes up the full width of its container */
 }
 
