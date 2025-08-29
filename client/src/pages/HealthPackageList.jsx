@@ -11,33 +11,35 @@ import "../Styles/HealthPackageList.css";
 import logo from "../Images/logo.png";
 
 const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
-  const { addToCart } = useContext(DataContainer);
+  const { addToCart, cachedPackages, packagesLoading, fetchPackages } = useContext(DataContainer);
   const [showCheckout, setShowCheckout] = useState(false);
   const [selectedPackage, setSelectedPackage] = useState(null);
   const [allPackages, setAllPackages] = useState([]);
+  const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchPackages = async () => {
+    const loadPackages = async () => {
       if (useLocalData) {
         // Use local data for home page
         setAllPackages(healthPackagesArray);
+        setLoading(false);
       } else {
-        try {
-          const res = await axios.get(
-            `${process.env.REACT_APP_API_URL}/api/packages`
-          );
-          setAllPackages(res.data);
-        } catch (err) {
-          console.error("Failed to fetch packages:", err);
-          // Fallback to local data if API fails
-          setAllPackages(healthPackagesArray);
+        // Use cached data or fetch if not available
+        if (cachedPackages.length > 0) {
+          setAllPackages(cachedPackages);
+          setLoading(false);
+        } else {
+          setLoading(true);
+          const data = await fetchPackages();
+          setAllPackages(data);
+          setLoading(false);
         }
       }
     };
 
-    fetchPackages();
-  }, [useLocalData]);
+    loadPackages();
+  }, [useLocalData, cachedPackages, fetchPackages]);
 
   const handleAddToCart = (pkg) => {
     addToCart(pkg);
@@ -70,6 +72,19 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
   // Also check if we're on the health-list route specifically
   const isStandalonePage = !packageIds || window.location.pathname === '/health-list';
   
+  if (loading) {
+    return (
+      <div className={`packages-list ${isStandalonePage ? 'packages-page' : ''}`}>
+        <div style={{ textAlign: 'center', padding: '2rem' }}>
+          <div className="spinner-border text-primary" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+          <p style={{ marginTop: '1rem' }}>Loading packages...</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className={`packages-list ${isStandalonePage ? 'packages-page' : ''}`}>
       <ToastContainer />

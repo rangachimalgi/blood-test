@@ -1,6 +1,7 @@
 import { useState, createContext, useEffect, lazy, Suspense } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route, useParams, useLocation } from "react-router-dom";
+import axios from "axios";
 import NavBar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Loader from "./components/Loader/Loader";
@@ -58,6 +59,10 @@ function App() {
   const [CartItem, setCartItem] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [filterList, setFilterList] = useState([]);
+  const [cachedPackages, setCachedPackages] = useState([]);
+  const [cachedTests, setCachedTests] = useState([]);
+  const [packagesLoading, setPackagesLoading] = useState(false);
+  const [testsLoading, setTestsLoading] = useState(false);
 
   const addToCart = (product, num = 1) => {
     const productExit = CartItem.find((item) => item.id === product.id);
@@ -97,6 +102,44 @@ function App() {
   const deleteProduct = (product) => {
     setCartItem(CartItem.filter((item) => item.id !== product.id));
   };
+
+  // Function to fetch packages with caching
+  const fetchPackages = async () => {
+    if (cachedPackages.length > 0) {
+      return cachedPackages; // Return cached data if available
+    }
+    
+    setPackagesLoading(true);
+    try {
+      const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/packages`);
+      setCachedPackages(res.data);
+      setPackagesLoading(false);
+      return res.data;
+    } catch (err) {
+      console.error("Failed to fetch packages:", err);
+      setPackagesLoading(false);
+      return [];
+    }
+  };
+
+  // Function to fetch tests with caching
+  const fetchTests = async () => {
+    if (cachedTests.length > 0) {
+      return cachedTests; // Return cached data if available
+    }
+    
+    setTestsLoading(true);
+    try {
+      const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/tests`);
+      setCachedTests(res.data);
+      setTestsLoading(false);
+      return res.data;
+    } catch (err) {
+      console.error("Failed to fetch tests:", err);
+      setTestsLoading(false);
+      return [];
+    }
+  };
   useEffect(() => {
     localStorage.setItem("cartItem", JSON.stringify(CartItem));
   }, [CartItem]);
@@ -112,6 +155,12 @@ function App() {
         setSelectedProduct,
         globalFilterList,
         setGlobalFilterList,
+        cachedPackages,
+        cachedTests,
+        packagesLoading,
+        testsLoading,
+        fetchPackages,
+        fetchTests,
       }}
     >
       <Suspense fallback={<Loader />}>

@@ -12,30 +12,34 @@ import CheckoutForm from "../components/CheckoutForm";
 import "../Styles/Shop.css";
 
 const Shop = () => {
-  const { addToCart } = useContext(DataContainer);
+  const { addToCart, cachedTests, testsLoading, fetchTests } = useContext(DataContainer);
   const { id } = useParams();
   const [allProducts, setAllProducts] = useState([]);
   const [filterList, setFilterList] = useState([]);
   const [showCheckout, setShowCheckout] = useState(false);
+  const [loading, setLoading] = useState(true);
   const cartSummaryRef = useRef(null);
   const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const res = await axios.get(
-          `${process.env.REACT_APP_API_URL}/api/tests`
-        );
-        setAllProducts(res.data);
-        setFilterList(res.data); // show all initially
-      } catch (err) {
-        console.error("Failed to fetch tests", err);
+    const loadProducts = async () => {
+      // Use cached data or fetch if not available
+      if (cachedTests.length > 0) {
+        setAllProducts(cachedTests);
+        setFilterList(cachedTests);
+        setLoading(false);
+      } else {
+        setLoading(true);
+        const data = await fetchTests();
+        setAllProducts(data);
+        setFilterList(data);
+        setLoading(false);
       }
     };
 
-    fetchProducts();
+    loadProducts();
     window.scrollTo(0, 0);
-  }, []);
+  }, [cachedTests, fetchTests]);
 
   const handleBookNow = () => navigate("/cart");
 
@@ -46,6 +50,21 @@ const Shop = () => {
       cartSummaryRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  if (loading) {
+    return (
+      <Fragment>
+        <section className="filter-bar">
+          <div style={{ textAlign: 'center', padding: '4rem 2rem' }}>
+            <div className="spinner-border text-primary" role="status">
+              <span className="visually-hidden">Loading...</span>
+            </div>
+            <p style={{ marginTop: '1rem' }}>Loading tests...</p>
+          </div>
+        </section>
+      </Fragment>
+    );
+  }
 
   return (
     <Fragment>
