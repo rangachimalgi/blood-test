@@ -110,10 +110,19 @@ function App() {
     }
     
     setPackagesLoading(true);
+    const startTime = performance.now();
+    
     try {
-      const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/packages`);
+      // Add timeout to prevent hanging requests
+      const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/packages`, {
+        timeout: 5000 // 5 second timeout
+      });
       setCachedPackages(res.data);
       setPackagesLoading(false);
+      
+      const endTime = performance.now();
+      console.log(`Packages loaded in ${(endTime - startTime).toFixed(2)}ms`);
+      
       return res.data;
     } catch (err) {
       console.error("Failed to fetch packages:", err);
@@ -130,7 +139,10 @@ function App() {
     
     setTestsLoading(true);
     try {
-      const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/tests`);
+      // Add timeout to prevent hanging requests
+      const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/tests`, {
+        timeout: 5000 // 5 second timeout
+      });
       setCachedTests(res.data);
       setTestsLoading(false);
       return res.data;
@@ -143,6 +155,14 @@ function App() {
   useEffect(() => {
     localStorage.setItem("cartItem", JSON.stringify(CartItem));
   }, [CartItem]);
+
+  // Preload critical data on app start
+  useEffect(() => {
+    // Preload packages and tests data in background
+    console.log('App starting - preloading data...');
+    fetchPackages();
+    fetchTests();
+  }, []); // Only run once on app start
   return (
     <DataContainer.Provider
       value={{

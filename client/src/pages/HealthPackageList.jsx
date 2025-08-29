@@ -1,7 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
-import { healthPackagesArray } from "./HealthPackages";
 import { DataContainer } from "../App";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -20,17 +19,35 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
 
   useEffect(() => {
     const loadPackages = async () => {
+      console.log('HealthPackageList: Loading packages...', { useLocalData, cachedPackagesLength: cachedPackages.length, packagesLoading });
+      
       if (useLocalData) {
-        // Use local data for home page
-        setAllPackages(healthPackagesArray);
-        setLoading(false);
-      } else {
-        // Use cached data or fetch if not available
+        // For home page, use cached data or fetch if not available
         if (cachedPackages.length > 0) {
+          console.log('HealthPackageList: Using cached packages for home page');
           setAllPackages(cachedPackages);
           setLoading(false);
         } else {
-          setLoading(true);
+          if (!packagesLoading) {
+            setLoading(true);
+          }
+          console.log('HealthPackageList: Fetching packages for home page');
+          const data = await fetchPackages();
+          setAllPackages(data);
+          setLoading(false);
+        }
+      } else {
+        // Use cached data or fetch if not available
+        if (cachedPackages.length > 0) {
+          console.log('HealthPackageList: Using cached packages');
+          setAllPackages(cachedPackages);
+          setLoading(false);
+        } else {
+          // Only show loading if we don't have cached data
+          if (!packagesLoading) {
+            setLoading(true);
+          }
+          console.log('HealthPackageList: Fetching packages');
           const data = await fetchPackages();
           setAllPackages(data);
           setLoading(false);
@@ -39,7 +56,7 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
     };
 
     loadPackages();
-  }, [useLocalData, cachedPackages, fetchPackages]);
+  }, [useLocalData, cachedPackages, fetchPackages, packagesLoading]);
 
   const handleAddToCart = (pkg) => {
     addToCart(pkg);
@@ -125,6 +142,8 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
                   src={pkg.imgUrl}
                   alt={pkg.productName}
                   className="package-image"
+                  loading="lazy"
+                  decoding="async"
                 />
               </Link>
 
