@@ -2,6 +2,10 @@
   margin-top: 100px;  /* Add margin below navbar */
 }
 
+.filter-bar-container {
+  margin-bottom: 2rem;  /* Add space between search bar and product list */
+}
+
 .fixed-view-cart-button {
   position: fixed;
   bottom: 20px;
