@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.e85ffbfa.css",
-    "main.js": "/static/js/main.b5c06639.js",
+    "main.js": "/static/js/main.1ee9e9b2.js",
     "static/css/201.f28befb3.chunk.css": "/static/css/201.f28befb3.chunk.css",
-    "static/js/201.dcb1515c.chunk.js": "/static/js/201.dcb1515c.chunk.js",
+    "static/js/201.fa9580bf.chunk.js": "/static/js/201.fa9580bf.chunk.js",
     "static/css/55.8e33d97f.chunk.css": "/static/css/55.8e33d97f.chunk.css",
-    "static/js/55.324466a3.chunk.js": "/static/js/55.324466a3.chunk.js",
+    "static/js/55.5b86abd0.chunk.js": "/static/js/55.5b86abd0.chunk.js",
     "static/css/782.a144600f.chunk.css": "/static/css/782.a144600f.chunk.css",
-    "static/js/782.0202bfff.chunk.js": "/static/js/782.0202bfff.chunk.js",
+    "static/js/782.d379be50.chunk.js": "/static/js/782.d379be50.chunk.js",
     "static/css/962.8b3bac9a.chunk.css": "/static/css/962.8b3bac9a.chunk.css",
     "static/js/962.b8c5ef0b.chunk.js": "/static/js/962.b8c5ef0b.chunk.js",
     "static/css/970.a144600f.chunk.css": "/static/css/970.a144600f.chunk.css",
@@ -34,7 +34,6 @@
     "static/media/double-sofa-02.png": "/static/media/double-sofa-02.eac56d9c3869030c478e.png",
     "static/media/hero-img.png": "/static/media/hero-img.4cb525f5d6bac4b5af39.png",
     "static/media/double-sofa-01.png": "/static/media/double-sofa-01.183aaa8ba79a197491f7.png",
-    "static/media/MaleHealthPackage.jpg": "/static/media/MaleHealthPackage.f0016d209adf0c6e4442.jpg",
     "static/media/watch-04.jpg": "/static/media/watch-04.887d0313ee3f076ec3f9.jpg",
     "static/media/double-sofa-03.png": "/static/media/double-sofa-03.afb74598f1e42c273506.png",
     "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -63,7 +62,6 @@
     "static/media/thyroid.png": "/static/media/thyroid.6a00aaabf44f359cb727.png",
     "static/media/seniorcitizen.jpg": "/static/media/seniorcitizen.99f71178356a79a80b1a.jpg",
     "static/media/aboveFiftyWomen.png": "/static/media/aboveFiftyWomen.274aa46f70067f09e7f8.png",
-    "static/media/womanhealthpackage.jpg": "/static/media/womanhealthpackage.22a0e86b6e37b5a5b7ff.jpg",
     "static/media/fullBody.png": "/static/media/fullBody.c7cba26888e5d54748c7.png",
     "static/media/fever.png": "/static/media/fever.bf2b29dea332c91c041c.png",
     "static/media/aboveFifty.png": "/static/media/aboveFifty.4eb46b539eb99549144d.png",
@@ -82,13 +80,13 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.e85ffbfa.css.map": "/static/css/main.e85ffbfa.css.map",
-    "main.b5c06639.js.map": "/static/js/main.b5c06639.js.map",
+    "main.1ee9e9b2.js.map": "/static/js/main.1ee9e9b2.js.map",
     "201.f28befb3.chunk.css.map": "/static/css/201.f28befb3.chunk.css.map",
-    "201.dcb1515c.chunk.js.map": "/static/js/201.dcb1515c.chunk.js.map",
+    "201.fa9580bf.chunk.js.map": "/static/js/201.fa9580bf.chunk.js.map",
     "55.8e33d97f.chunk.css.map": "/static/css/55.8e33d97f.chunk.css.map",
-    "55.324466a3.chunk.js.map": "/static/js/55.324466a3.chunk.js.map",
+    "55.5b86abd0.chunk.js.map": "/static/js/55.5b86abd0.chunk.js.map",
     "782.a144600f.chunk.css.map": "/static/css/782.a144600f.chunk.css.map",
-    "782.0202bfff.chunk.js.map": "/static/js/782.0202bfff.chunk.js.map",
+    "782.d379be50.chunk.js.map": "/static/js/782.d379be50.chunk.js.map",
     "962.8b3bac9a.chunk.css.map": "/static/css/962.8b3bac9a.chunk.css.map",
     "962.b8c5ef0b.chunk.js.map": "/static/js/962.b8c5ef0b.chunk.js.map",
     "970.a144600f.chunk.css.map": "/static/css/970.a144600f.chunk.css.map",
@@ -102,6 +100,6 @@
   },
   "entrypoints": [
     "static/css/main.e85ffbfa.css",
-    "static/js/main.b5c06639.js"
+    "static/js/main.1ee9e9b2.js"
   ]
 }

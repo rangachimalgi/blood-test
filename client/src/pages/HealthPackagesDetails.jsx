@@ -3,7 +3,6 @@ import axios from "axios";
 import Banner from "../components/Banner/Banner";
 import { DataContainer } from "../App";
 import { Col, Container, Row, Collapse } from "react-bootstrap";
-import { healthPackagesArray } from "./HealthPackages";
 import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import EmbeddedCheckoutForm from "../components/EmbeddedCheckoutForm.js";

@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { products } from "../../utils/products";
-import { healthPackagesArray } from "../../pages/HealthPackages";
 import { useNavigate } from "react-router-dom";
 import "./searchbarglobal.css";
 
@@ -31,9 +30,8 @@ const ProductSearchBar = () => {
         const dynamicProducts = testsResponse.status === 'fulfilled' ? testsResponse.value.data : [];
         const combinedProducts = [...staticProducts, ...dynamicProducts];
 
-        const staticPackages = healthPackagesArray || [];
         const dynamicPackages = packagesResponse.status === 'fulfilled' ? packagesResponse.value.data : [];
-        const combinedPackages = [...staticPackages, ...dynamicPackages];
+        const combinedPackages = [...dynamicPackages];
 
 
 
@@ -43,7 +41,7 @@ const ProductSearchBar = () => {
         console.error("Error fetching data for search:", error);
         // Fallback to static data only
         setAllProducts(products || []);
-        setAllPackages(healthPackagesArray || []);
+        setAllPackages([]);
       } finally {
         setIsLoading(false);
       }
