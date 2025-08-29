@@ -138,10 +138,25 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
     <Container className="embedded-checkout-form">
       <Row>
         <Col md={12}>
-          <h3 className="form-heading">Booking Form</h3>
+          <h3 className="form-heading">Book Now</h3>
+          <p style={{ fontSize: '14px', color: '#666', marginBottom: '20px' }}>
+            You will get a payment link shortly. You can make the payment ONLINE or pay using UPI/Cash to the technician.
+          </p>
+          
+          <div style={{ 
+            border: '2px dashed #28a745', 
+            padding: '15px', 
+            marginBottom: '20px',
+            backgroundColor: '#f8fff8'
+          }}>
+            <p style={{ margin: 0, fontSize: '14px' }}>
+              Want to add more tests? <span style={{ color: '#007bff', cursor: 'pointer' }}>Click add to cart</span>, else fill up below form.
+            </p>
+          </div>
+          
           <Form>
             <Form.Group controlId="formPincode">
-              <InputGroup>
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
                 <Form.Control
                   type="text"
                   placeholder="Enter Pincode"
@@ -151,11 +166,12 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                   }
                   name="pincode"
                   className="form-control"
+                  style={{ width: '50%' }}
                 />
                 <Button variant="outline-secondary" onClick={checkAvailability}>
                   Check Availability
                 </Button>
-              </InputGroup>
+              </div>
               <Form.Text className="text-muted">{pincodeMessage}</Form.Text>
             </Form.Group>
             <Form.Group controlId="formName">

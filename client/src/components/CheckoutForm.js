@@ -139,7 +139,7 @@ const CheckoutForm = ({ CartItem, setCartItem, setAdditionalTestCost }) => {
       <h3 className="form-heading">Booking Form</h3>
       <Form>
             <Form.Group controlId="formPincode">
-              <InputGroup>
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
                 <Form.Control
                   type="text"
                   placeholder="Enter Pincode"
@@ -149,11 +149,12 @@ const CheckoutForm = ({ CartItem, setCartItem, setAdditionalTestCost }) => {
                   }
                   name="pincode"
                   className="form-control"
+                  style={{ width: '50%' }}
                 />
                 <Button variant="outline-secondary" onClick={checkAvailability}>
                   Check Availability
                 </Button>
-              </InputGroup>
+              </div>
               <Form.Text className="text-muted">{pincodeMessage}</Form.Text>
             </Form.Group>
             <Row>

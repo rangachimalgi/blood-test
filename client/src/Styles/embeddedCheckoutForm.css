@@ -18,15 +18,16 @@
   color: #333; /* Optional: a darker shade for better contrast */
 }
 
-/* --- Modern Embedded Checkout Form Styles --- */
+/* --- Old School Paper Form Styles --- */
 .embedded-checkout-form {
-  padding: 2rem;
+  padding: 1.5rem;
   background: #ffffff;
-  border: 2px solid #6c757d;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(2, 2, 2, 0.15);
+  border: 1px solid #ccc;
+  border-radius: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.5rem;
   position: relative;
+  font-family: 'Times New Roman', serif;
 }
 
 /* --- Simple Checkout Form Styles (no box) --- */
@@ -46,13 +47,14 @@
 }
 .form-heading {
   text-align: center;
-  margin-bottom: 2rem;
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #0F3460;
-  letter-spacing: 0.5px;
-  border-bottom: 2px solid #0F3460;
-  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000;
+  letter-spacing: 0;
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.5rem;
+  font-family: 'Times New Roman', serif;
 }
 .form-section {
   margin-bottom: 1.5rem;
@@ -63,31 +65,33 @@
   border-bottom: none;
 }
 .form-label, .form-label label {
-  font-weight: 700;
-  color: #0F3460;
-  margin-bottom: 0.4rem;
-  font-size: 1.05rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+  font-family: 'Times New Roman', serif;
 }
 .embedded-checkout-form .form-control,
 .embedded-checkout-form .large-select,
 .checkout-form-simple .form-control,
 .checkout-form-simple .large-select {
-  padding: 12px 16px !important;
+  padding: 8px 12px !important;
   border-radius: 0 !important;
-  border: 2px solid #000 !important;
+  border: 1px solid #666 !important;
   background: #ffffff !important;
-  font-size: 1rem !important;
-  font-weight: 400 !important;
-  margin-bottom: 1rem !important;
-  transition: border 0.2s, box-shadow 0.2s !important;
+  font-size: 14px !important;
+  font-weight: normal !important;
+  margin-bottom: 0.8rem !important;
+  transition: none !important;
+  font-family: 'Times New Roman', serif !important;
 }
 .embedded-checkout-form .form-control:focus,
 .embedded-checkout-form .large-select:focus,
 .checkout-form-simple .form-control:focus,
 .checkout-form-simple .large-select:focus {
-  border-color: #262727 !important;
-  box-shadow: 0 0 0 3px rgba(15, 52, 96, 0.1) !important;
-  outline: none !important;
+  border-color: #000 !important;
+  box-shadow: none !important;
+  outline: 1px solid #000 !important;
 }
 .large-select {
   height: 48px;
@@ -96,25 +100,31 @@
 .input-group {
   display: flex;
   align-items: stretch;
+  width: 100%;
 }
 
 .embedded-checkout-form .input-group {
   display: flex;
   align-items: stretch;
+  width: 100%;
 }
 
 .input-group .form-control {
   border-radius: 0;
   margin-bottom: 0;
   border-right: none;
-  flex: 1;
+  flex: 0 0 50%;
+  position: relative;
+  z-index: 0;
 }
 
 .embedded-checkout-form .input-group .form-control {
   border-radius: 0;
   margin-bottom: 0;
   border-right: none;
-  flex: 1;
+  flex: 0 0 50%;
+  position: relative;
+  z-index: 0;
 }
 
 .input-group .btn {
@@ -142,34 +152,59 @@
   background: linear-gradient(90deg, #2a5298 0%, #0F3460 100%);
   box-shadow: 0 2px 8px rgba(15, 52, 96, 0.13);
 }
+
+.check-availability-btn,
+.btn-outline-secondary {
+  border-radius: 0;
+  background: linear-gradient(90deg, #0F3460 0%, #2a5298 100%);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 8px 16px;
+  transition: background 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.check-availability-btn:hover, .check-availability-btn:focus,
+.btn-outline-secondary:hover, .btn-outline-secondary:focus {
+  background: linear-gradient(90deg, #2a5298 0%, #0F3460 100%);
+  box-shadow: 0 2px 8px rgba(15, 52, 96, 0.13);
+}
 .confirm-button {
   width: 100%;
-  padding: 16px 0;
-  border-radius: 8px;
-  background: #0F3460;
-  border: none;
+  padding: 12px 0;
+  border-radius: 0;
+  background: #000;
+  border: 1px solid #000;
   color: white;
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: bold;
   margin-top: 1.5rem;
-  transition: background 0.2s;
+  transition: none;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
+  font-family: 'Times New Roman', serif;
 }
 .confirm-button:hover, .confirm-button:focus {
-  background: #2a5298;
+  background: #333;
 }
 .text-warning {
   color: #e74c3c !important;
-  font-size: 0.98rem;
+  font-size: 12px;
   margin-top: 0.3rem;
+  font-family: 'Times New Roman', serif;
 }
 .text-muted {
   margin-top: 0.5rem;
-  font-size: 0.93rem;
+  font-size: 12px;
   color: #666;
+  font-family: 'Times New Roman', serif;
 }
 .beneficiaries-section {
   margin-top: 1.5rem;
