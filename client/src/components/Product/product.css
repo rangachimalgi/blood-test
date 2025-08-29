@@ -192,7 +192,7 @@ button.add.add-to-cart-full::before {
 #popular-packages .product-image-container {
   position: relative;
   width: 100%;
-  height: 150px; /* Ensure this matches the height of the image */
+  height: 200px; /* Ensure this matches the height of the image */
   overflow: hidden;
 }
 
@@ -226,18 +226,18 @@ button.add.add-to-cart-full::before {
 }
 
 #popular-packages .hover-overlay h2 {
-  font-size: 14px; /* Adjust font size as needed */
-  margin-bottom: 10px; /* Optional: Add margin for spacing */
+  font-size: 10px; /* Adjust font size as needed */
+  margin-bottom: 4px; /* Optional: Add margin for spacing */
 }
 
 #popular-packages .hover-overlay ul {
   padding: 0;
   list-style: none;
-  font-size: 11px; /* Adjust font size for overlayDetails */
+  font-size: 8px; /* Adjust font size for overlayDetails */
 }
 
 #popular-packages .hover-overlay li {
-  margin-bottom: 5px; /* Optional: Add margin for spacing between items */
+  margin-bottom: 1px; /* Optional: Add margin for spacing between items */
 }
 
 #popular-packages .product-description {
@@ -316,7 +316,7 @@ button.add.add-to-cart-full::before {
   left: 18px;
   z-index: 2;
   backdrop-filter: blur(8px);
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.3);
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(15, 52, 96, 0.10);
   padding: 0.3rem 1rem 0.3rem 0.8rem;
