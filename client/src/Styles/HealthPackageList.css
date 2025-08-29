@@ -4,6 +4,11 @@
   margin-top: 120px; /* Add margin to push content below navbar */
 }
 
+/* Remove margin for home page specifically */
+.home-page .packages-list {
+  margin-top: 0; /* Remove margin for home page */
+}
+
 .packages-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

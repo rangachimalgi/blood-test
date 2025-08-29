@@ -66,8 +66,12 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
     return match ? match[1] : "";
   };
 
+  // Check if this is being used as a standalone page (no packageIds means it's the full packages page)
+  // Also check if we're on the health-list route specifically
+  const isStandalonePage = !packageIds || window.location.pathname === '/health-list';
+  
   return (
-    <div className="packages-list">
+    <div className={`packages-list ${isStandalonePage ? 'packages-page' : ''}`}>
       <ToastContainer />
       <div className="section-header" style={{ 
         textAlign: "center", 
