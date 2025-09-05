@@ -40,6 +40,11 @@ export const registerUser = async (req, res) => {
 export const loginUser = async (req, res) => {
     try {
         const { email, password } = req.body;
+        
+        if (!email || !password) {
+            return res.status(400).json({ message: 'Email and password are required' });
+        }
+
         const user = await User.findOne({ email });
         if (!user) return res.status(400).json({ message: 'Invalid email or password.' });
 
@@ -53,7 +58,7 @@ export const loginUser = async (req, res) => {
         res.json({ token, role: user.role });
 
     } catch (error) {
-        console.error('Error during login', error);
-        res.status(500).json({ message: 'Error during login' });
+        console.error('Error during login:', error.message);
+        res.status(500).json({ message: 'Error during login: ' + error.message });
     }
 };

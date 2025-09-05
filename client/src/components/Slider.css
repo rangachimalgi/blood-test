@@ -22,6 +22,19 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+.dark-grey-box {
+  width: 100%;
+  height: 400px; /* Smaller height than the original hero image */
+  background-color: #333; /* Dark grey color */
+  border-radius: 30px 30px 30px 30px; /* Make all corners curvy */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 80px; /* Add margin to move it below the navbar */
+}
+
 /* Custom dots styling */
 .slick-dots {
   bottom: 25px;
@@ -61,12 +74,13 @@
 /* Slide content styling */
 .slide-content {
   position: absolute;
-  left: 10%;
+  right: 10%;
   top: 50%;
   transform: translateY(-50%);
   z-index: 3;
   color: white;
   max-width: 600px;
+  text-align: right;
 }
 
 .slide-title {
@@ -74,9 +88,40 @@
   font-weight: 700;
   margin-bottom: 1rem;
   line-height: 1.2;
+  text-align: right;
   opacity: 0;
   transform: translateY(20px);
   animation: slideUp 0.8s forwards;
+}
+
+.health-categories-button {
+  display: flex;
+  gap: 8px;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.health-category-link {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.health-category-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  color: white;
+  text-decoration: none;
 }
 
 .slide-description {

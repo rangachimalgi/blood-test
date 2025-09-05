@@ -16,6 +16,9 @@ export const hashPassword = async (password) => {
   };
 
   export const generateToken = (userId, role) => {
+    if (!process.env.TOKEN_SECRET) {
+      throw new Error('TOKEN_SECRET environment variable is not set');
+    }
     return jwt.sign({ id: userId, role: role }, process.env.TOKEN_SECRET, { expiresIn: '30d' });
 };
 
@@ -25,6 +28,9 @@ export const authenticate = (req, res, next) => {
     if (!token) return res.status(401).send('Access Denied');
 
     try {
+        if (!process.env.TOKEN_SECRET) {
+            throw new Error('TOKEN_SECRET environment variable is not set');
+        }
         const verified = jwt.verify(token, process.env.TOKEN_SECRET);
         req.user = verified;
         next();

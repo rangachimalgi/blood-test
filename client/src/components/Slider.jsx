@@ -28,18 +28,29 @@ const SliderHome = () => {
           {SliderData.map((value, index) => {
             return (
               <div key={index} className="slider-item">
-                <img 
+                {/* <img 
                   src={value.cover} 
-                  alt={value.title} 
+                  alt={value.title} x`x
                   className="slider-image"
-                />
-                {/* <div className="slider-overlay"></div> */}
-                <div className="slide-content">
-                  {/* <h1 className="slide-title">{value.title}</h1>
-                  <p className="slide-description">{value.desc}</p>
-                  <Link to={value.path} className="slide-button">
-                    Book Now
-                  </Link> */}
+                /> */}
+                <div className="dark-grey-box">
+                  <div className="slide-content">
+                    <h1 className="slide-title">Lab Tests at the Comfort of Your Home</h1>
+                    <div className="health-categories-button">
+                      <Link to="/health-concern/01" className="health-category-link">Full Body Checkups</Link>
+                      <Link to="/health-concern/02" className="health-category-link">Heart</Link>
+                      <Link to="/health-concern/03" className="health-category-link">Diabetes</Link>
+                      <Link to="/health-concern/05" className="health-category-link">Thyroid</Link>
+                      <Link to="/health-concern/06" className="health-category-link">Cancer</Link>
+                      <Link to="/health-concern/04" className="health-category-link">Fever</Link>
+                      <Link to="/health-concern/07" className="health-category-link">Hair and Skin Care</Link>
+                      <Link to="/health-concern/08" className="health-category-link">STD</Link>
+                    </div>
+                    <p className="slide-description">The best of doctors, technology and care you deserve now available for you at your doorstep.</p>
+                    {/* <Link to={value.path} className="slide-button">
+                      Book Now
+                    </Link> */}
+                  </div>
                 </div>
               </div>
             )
