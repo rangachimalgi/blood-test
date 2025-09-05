@@ -102,7 +102,7 @@ const HealthPackageDetails = () => {
                           {category.categoryName.toUpperCase()}
                         </h4>
                         <ion-icon 
-                          name={openCategoryId === category.categoryName ? 'chevron-down-outline' : 'chevron-forward-outline'}
+                          name={openCategoryId === category.categoryName ? 'chevron-up-outline' : 'chevron-down-outline'}
                           className="category-toggle-icon"
                         ></ion-icon>
                       </div>
