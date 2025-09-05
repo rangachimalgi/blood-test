@@ -53,8 +53,7 @@ const HealthPackageDetails = () => {
 
   return (
     <Fragment>
-      <Banner title={selectedProduct?.productName} />
-      <Container className="product-page">
+      <Container className="product-page" style={{ marginTop: '150px' }}>
         <Row>
           <Col md={8}>
             <div className="product-details-modern-card">
