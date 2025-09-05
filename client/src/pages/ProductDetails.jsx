@@ -2,7 +2,7 @@ import { Fragment, useContext, useEffect, useState } from "react";
 import Banner from "../components/Banner/Banner";
 import { DataContainer } from "../App";
 import { Col, Container, Row } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import EmbeddedCheckoutForm from "../components/EmbeddedCheckoutForm.js";
 import "../Styles/productDetails.css";
@@ -10,6 +10,7 @@ import "../Styles/productDetails.css";
 const ProductDetails = () => {
   const { addToCart } = useContext(DataContainer);
   const { id } = useParams();
+  const navigate = useNavigate();
 
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [expandedCategory, setExpandedCategory] = useState(null);
@@ -34,7 +35,8 @@ const ProductDetails = () => {
 
   const handleAdd = () => {
     addToCart(selectedProduct);
-    // Removed toast notification
+    // Navigate to shop page after adding to cart
+    navigate("/shop");
   };
 
   const handleLike = () => {
