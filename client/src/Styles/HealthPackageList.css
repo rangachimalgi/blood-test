@@ -84,7 +84,7 @@
 
 .package-image-container:hover .hover-overlay {
   opacity: 1;
-  pointer-events: auto;
+  pointer-events: none;
 }
 
 .hover-overlay h2 {
