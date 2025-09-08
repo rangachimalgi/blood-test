@@ -1,4 +1,4 @@
-import { useState, createContext, useEffect, lazy, Suspense } from "react";
+import { useState, createContext, useEffect, useCallback, lazy, Suspense } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route, useParams, useLocation } from "react-router-dom";
 import axios from "axios";
@@ -103,8 +103,8 @@ function App() {
     setCartItem(CartItem.filter((item) => item.id !== product.id));
   };
 
-  // Function to fetch packages with caching
-  const fetchPackages = async () => {
+  // Function to fetch packages with caching - memoized to prevent recreation
+  const fetchPackages = useCallback(async () => {
     if (cachedPackages.length > 0) {
       return cachedPackages; // Return cached data if available
     }
@@ -129,7 +129,7 @@ function App() {
       setPackagesLoading(false);
       return [];
     }
-  };
+  }, [cachedPackages.length]); // Only depend on the length, not the entire array
 
   // Function to fetch tests with caching
   const fetchTests = async () => {

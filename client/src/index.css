@@ -358,3 +358,23 @@ section.slider-section {
 .page-content:not(.home-page) section:first-child {
   margin-top: 80px;
 }
+
+/* Remove hover line effects specifically for package details and similar pages */
+.product-details-modern-card *:hover,
+.included-tests-modern *:hover,
+.product-details-tabs *:hover {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* Override Bootstrap default link styles for specific components */
+.product-details-modern-card a:hover,
+.product-details-modern-card a:focus,
+.product-details-modern-card a:active,
+.included-tests-modern a:hover,
+.included-tests-modern a:focus,
+.included-tests-modern a:active {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  outline: none !important;
+}

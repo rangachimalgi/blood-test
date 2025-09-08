@@ -41,6 +41,49 @@
   color: inherit;
 }
 
+/* Remove hover line effects from package list elements */
+.package-link:hover,
+.package-link:focus,
+.package-link:active,
+.package-name:hover,
+.package-name:focus,
+.package-name:active,
+.package-desc:hover,
+.package-desc:focus,
+.package-desc:active {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  outline: none !important;
+}
+
+/* Remove any pseudo-elements that might create lines */
+.package-link::after,
+.package-link::before,
+.package-name::after,
+.package-name::before,
+.package-desc::after,
+.package-desc::before {
+  content: none !important;
+}
+
+/* Remove hover effects from all package card elements */
+.package-card *:hover,
+.package-card *:focus,
+.package-card *:active {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  outline: none !important;
+}
+
+/* Remove any global link hover effects within package cards */
+.package-card a:hover,
+.package-card a:focus,
+.package-card a:active {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  outline: none !important;
+}
+
 .package-image-container {
   position: relative;
   width: 100%;

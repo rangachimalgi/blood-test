@@ -671,3 +671,76 @@ body, .product-details-modern-card, .product-details-title, .product-details-met
   font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
 }
 
+/* Remove hover line effects from package details elements */
+.product-details-title:hover,
+.product-details-category:hover,
+.included-tests-category-title:hover,
+.product-details-tablist li:hover {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* Remove any default link hover effects */
+.product-details-modern-card a:hover,
+.product-details-modern-card a:focus {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* Remove Bootstrap default link hover effects */
+.product-details-modern-card .nav-link:hover,
+.product-details-modern-card .dropdown-toggle:hover {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* More aggressive removal of hover effects - target all possible elements */
+.product-details-modern-card *:hover,
+.product-details-modern-card *:focus,
+.product-details-modern-card *:active {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  outline: none !important;
+}
+
+/* Remove any pseudo-elements that might create lines */
+.product-details-modern-card *::after,
+.product-details-modern-card *::before {
+  content: none !important;
+}
+
+/* Specific targeting for Bootstrap components */
+.product-details-modern-card .btn:hover,
+.product-details-modern-card .btn:focus,
+.product-details-modern-card .btn:active,
+.product-details-modern-card .dropdown-item:hover,
+.product-details-modern-card .dropdown-item:focus {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* Target the specific clickable category header */
+.included-tests-category-header:hover,
+.included-tests-category-header:focus,
+.included-tests-category-header:active {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  outline: none !important;
+}
+
+/* Target the category title specifically */
+.included-tests-category-title:hover,
+.included-tests-category-title:focus,
+.included-tests-category-title:active {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  outline: none !important;
+}
+
+/* Remove any pseudo-elements from category headers */
+.included-tests-category-header::after,
+.included-tests-category-header::before,
+.included-tests-category-title::after,
+.included-tests-category-title::before {
+  content: none !important;
+}

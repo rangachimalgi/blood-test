@@ -56,7 +56,16 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
     };
 
     loadPackages();
-  }, [useLocalData, cachedPackages, fetchPackages, packagesLoading]);
+  }, [useLocalData]); // Removed problematic dependencies that cause re-fetching
+
+  // Separate effect to update packages when cache changes, but don't trigger loading
+  useEffect(() => {
+    if (cachedPackages.length > 0 && allPackages.length === 0) {
+      console.log('HealthPackageList: Updating packages from cache');
+      setAllPackages(cachedPackages);
+      setLoading(false);
+    }
+  }, [cachedPackages, allPackages.length]);
 
   const handleAddToCart = (pkg) => {
     addToCart(pkg);
