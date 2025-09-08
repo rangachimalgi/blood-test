@@ -99,6 +99,32 @@
   }
 }
 
+/* Remove hover line effects from navbar links */
+.navbar-nav .nav-item::after {
+  display: none !important;
+}
+
+.navbar-link:hover {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+.navbar-link:hover .nav-link-label {
+  color: #0f3460 !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:focus {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+.navbar-link {
+  transition: all 0.3s ease;
+}
+
 .navbar-brand {
   display: flex;
   align-items: center;
