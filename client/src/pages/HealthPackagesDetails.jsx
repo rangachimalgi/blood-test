@@ -70,62 +70,27 @@ const HealthPackageDetails = () => {
                 </div>
               </section>
 
-              {/* Included Tests section */}
-              {selectedProduct?.includedTests && selectedProduct.includedTests.length > 0 && (
-                <section className="included-tests-modern mt-4">
-                  <h2>INCLUDED TESTS</h2>
-                  {selectedProduct.includedTests.map((category) => (
-                    <div key={category.categoryName} className="included-tests-category">
-                      <div 
-                        className="included-tests-category-header"
-                        onClick={() =>
-                          setOpenCategoryId(
-                            openCategoryId !== category.categoryName
-                              ? category.categoryName
-                              : null
-                          )
-                        }
-                        tabIndex={0}
-                        role="button"
-                        aria-label={`Toggle ${category.categoryName}`}
-                        onKeyDown={e => {
-                          if (e.key === 'Enter' || e.key === ' ') {
-                            setOpenCategoryId(
-                              openCategoryId !== category.categoryName
-                                ? category.categoryName
-                                : null
-                            );
-                          }
-                        }}
-                      >
-                        <h4 className="included-tests-category-title">
-                          {category.categoryName.toUpperCase()}
-                        </h4>
-                        <ion-icon 
-                          name={openCategoryId === category.categoryName ? 'chevron-up-outline' : 'chevron-down-outline'}
-                          className="category-toggle-icon"
-                        ></ion-icon>
-                      </div>
-                      <Collapse in={openCategoryId === category.categoryName}>
-                        <ul className="included-tests-list">
-                          {category.tests.map((testName, index) => (
-                            <li key={index}>{testName.toUpperCase()}</li>
-                          ))}
-                        </ul>
-                      </Collapse>
-                    </div>
-                  ))}
-                </section>
-              )}
-
+              {/* Description section */}
               <section className="product-details-tabs mt-4">
                 <ul className="product-details-tablist">
-                  <li className="active">Description</li>
+                  <li className="active">About this package</li>
                 </ul>
                 <p className="product-details-desc mt-2">{selectedProduct?.description}</p>
               </section>
 
-              {/* Why Book With Us Section */}
+              {/* Precaution section */}
+              <section className="precaution-section mt-4">
+                <div className="precaution-container">
+                  <div className="precaution-icon">
+                    <ion-icon name="warning-outline"></ion-icon>
+                  </div>
+                  <div className="precaution-content">
+                    <h4 className="precaution-title">Precaution</h4>
+                    <p className="precaution-text">Do not consume anything other than water for 8 - 10 hours before the test.</p>
+                  </div>
+                </div>
+              </section>
+
               <section className="why-book-with-us mt-4">
                 <h3 className="why-book-title">Why book with us?</h3>
                 <div className="why-book-features">
@@ -161,6 +126,57 @@ const HealthPackageDetails = () => {
                   </div>
                 </div>
               </section>
+
+              {/* Included Tests section */}
+              {selectedProduct?.includedTests && selectedProduct.includedTests.length > 0 && (
+                <section className="included-tests-modern mt-4">
+                  <h2>Included tests</h2>
+                  {selectedProduct.includedTests.map((category) => (
+                    <div key={category.categoryName} className="included-tests-category">
+                      <div 
+                        className="included-tests-category-header"
+                        onClick={() =>
+                          setOpenCategoryId(
+                            openCategoryId !== category.categoryName
+                              ? category.categoryName
+                              : null
+                          )
+                        }
+                        tabIndex={0}
+                        role="button"
+                        aria-label={`Toggle ${category.categoryName}`}
+                        onKeyDown={e => {
+                          if (e.key === 'Enter' || e.key === ' ') {
+                            setOpenCategoryId(
+                              openCategoryId !== category.categoryName
+                                ? category.categoryName
+                                : null
+                            );
+                          }
+                        }}
+                      >
+                        <h4 className="included-tests-category-title">
+                          {category.categoryName.charAt(0).toUpperCase() + category.categoryName.slice(1).toLowerCase()}
+                        </h4>
+                        <ion-icon 
+                          name={openCategoryId === category.categoryName ? 'chevron-up-outline' : 'chevron-down-outline'}
+                          className="category-toggle-icon"
+                        ></ion-icon>
+                      </div>
+                      <Collapse in={openCategoryId === category.categoryName}>
+                        <ul className="included-tests-list">
+                          {category.tests.map((testName, index) => (
+                            <li key={index}>{testName.charAt(0).toUpperCase() + testName.slice(1).toLowerCase()}</li>
+                          ))}
+                        </ul>
+                      </Collapse>
+                    </div>
+                  ))}
+                </section>
+              )}
+
+              {/* Why Book With Us Section */}
+              
             </div>
           </Col>
           <Col md={4}>

@@ -501,7 +501,7 @@
   color: #0F3460;
   margin-bottom: 1.5rem;
   font-family: inherit;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.5px;
 }
 .included-tests-category {
@@ -547,7 +547,7 @@
   margin-bottom: 0;
 }
 .included-tests-list li {
-  font-size: 1rem;
+  font-size: 0.7rem !important;
   font-weight: 400;
   color: #333;
   margin-bottom: 0.2rem;
@@ -748,7 +748,7 @@ body, .product-details-modern-card, .product-details-title, .product-details-met
 /* Why Book With Us Section */
 .why-book-with-us {
   background: transparent;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   border-radius: 15px;
   margin-top: 2rem;
   border: none !important;
@@ -760,8 +760,10 @@ body, .product-details-modern-card, .product-details-title, .product-details-met
   font-size: 1.3rem;
   font-weight: 700;
   color: #0F3460;
-  text-align: center;
+  text-align: left;
   margin-bottom: 1.5rem;
+  margin-left: 0;
+  padding-left: 0;
   font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -912,5 +914,108 @@ body, .product-details-modern-card, .product-details-title, .product-details-met
   
   .why-book-text {
     font-size: 0.65rem;
+  }
+}
+
+/* Precaution Section */
+.precaution-section {
+  margin-top: 2rem;
+}
+
+.precaution-container {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.precaution-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 2px solid #0F3460;
+  border-radius: 50%;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.precaution-icon ion-icon {
+  font-size: 1.5rem;
+  color: #0F3460;
+}
+
+.precaution-content {
+  flex: 1;
+}
+
+.precaution-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0F3460;
+  margin: 0 0 0.5rem 0;
+  font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.precaution-text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4a5a6a;
+  margin: 0;
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Responsive design for Precaution section */
+@media (max-width: 768px) {
+  .precaution-container {
+    padding: 1.2rem;
+  }
+  
+  .precaution-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 0.8rem;
+  }
+  
+  .precaution-icon ion-icon {
+    font-size: 1.3rem;
+  }
+  
+  .precaution-title {
+    font-size: 1rem;
+  }
+  
+  .precaution-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .precaution-container {
+    padding: 1rem;
+  }
+  
+  .precaution-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 0.6rem;
+  }
+  
+  .precaution-icon ion-icon {
+    font-size: 1.2rem;
+  }
+  
+  .precaution-title {
+    font-size: 0.95rem;
+  }
+  
+  .precaution-text {
+    font-size: 0.85rem;
   }
 }
