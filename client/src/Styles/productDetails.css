@@ -985,3 +985,178 @@ body, .product-details-modern-card, .product-details-title, .product-details-met
     font-size: 0.85rem;
   }
 }
+
+/* How it works Section */
+.how-it-works-section {
+  margin-top: 3rem;
+}
+
+.how-it-works-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0F3460;
+  margin-bottom: 2rem;
+  text-align: left;
+  font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.how-it-works-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.how-it-works-card {
+  flex: 1;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.how-it-works-card:hover {
+  transform: translateY(-2px);
+}
+
+.how-it-works-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.how-it-works-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.how-it-works-card:hover .how-it-works-img {
+  transform: scale(1.05);
+}
+
+.how-it-works-text {
+  padding: 1.5rem;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Responsive design for How it works section */
+@media (max-width: 992px) {
+  .how-it-works-cards {
+    gap: 1.5rem;
+  }
+  
+  .how-it-works-image {
+    height: 180px;
+  }
+  
+  .how-it-works-text {
+    padding: 1.2rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .how-it-works-cards {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .how-it-works-image {
+    height: 200px;
+  }
+  
+  .how-it-works-text {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .how-it-works-title {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .how-it-works-cards {
+    gap: 1rem;
+  }
+  
+  .how-it-works-image {
+    height: 180px;
+  }
+  
+  .how-it-works-text {
+    padding: 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Why Fortune Blood Test Section */
+.why-fortune-section {
+  margin-top: 3rem;
+}
+
+.why-fortune-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0F3460;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.why-fortune-content {
+  background: transparent;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: none;
+  border: none;
+}
+
+.why-fortune-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.why-fortune-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive design for Why Fortune section */
+@media (max-width: 768px) {
+  .why-fortune-content {
+    padding: 1.5rem;
+  }
+  
+  .why-fortune-text {
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-fortune-title {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .why-fortune-content {
+    padding: 1.2rem;
+  }
+  
+  .why-fortune-text {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+}
