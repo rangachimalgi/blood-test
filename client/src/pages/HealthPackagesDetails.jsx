@@ -124,6 +124,43 @@ const HealthPackageDetails = () => {
                 </ul>
                 <p className="product-details-desc mt-2">{selectedProduct?.description}</p>
               </section>
+
+              {/* Why Book With Us Section */}
+              <section className="why-book-with-us mt-4">
+                <h3 className="why-book-title">Why book with us?</h3>
+                <div className="why-book-features">
+                  <div className="why-book-feature">
+                    <div className="why-book-icon">
+                      <ion-icon name="shield-checkmark-outline"></ion-icon>
+                    </div>
+                    <span className="why-book-text">100% Safe & Hygienic</span>
+                  </div>
+                  <div className="why-book-feature">
+                    <div className="why-book-icon">
+                      <ion-icon name="home-outline"></ion-icon>
+                    </div>
+                    <span className="why-book-text">Free Home Sample Pick Up</span>
+                  </div>
+                  <div className="why-book-feature">
+                    <div className="why-book-icon">
+                      <ion-icon name="pricetag-outline"></ion-icon>
+                    </div>
+                    <span className="why-book-text">Heavy Discounts</span>
+                  </div>
+                  <div className="why-book-feature">
+                    <div className="why-book-icon">
+                      <ion-icon name="document-text-outline"></ion-icon>
+                    </div>
+                    <span className="why-book-text">View Reports Online</span>
+                  </div>
+                  <div className="why-book-feature">
+                    <div className="why-book-icon">
+                      <ion-icon name="card-outline"></ion-icon>
+                    </div>
+                    <span className="why-book-text">Easy Payment Options</span>
+                  </div>
+                </div>
+              </section>
             </div>
           </Col>
           <Col md={4}>

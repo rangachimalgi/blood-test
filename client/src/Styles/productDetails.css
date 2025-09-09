@@ -744,3 +744,173 @@ body, .product-details-modern-card, .product-details-title, .product-details-met
 .included-tests-category-title::before {
   content: none !important;
 }
+
+/* Why Book With Us Section */
+.why-book-with-us {
+  background: transparent;
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin-top: 2rem;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.why-book-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0F3460;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.why-book-features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+.why-book-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  min-width: 120px;
+  height: 100px;
+  padding: 0.8rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  justify-content: center;
+}
+
+.why-book-feature:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.why-book-icon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e3eefe 0%, #f6f9fc 100%);
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.why-book-icon ion-icon {
+  font-size: 1.3rem;
+  color: #0F3460;
+}
+
+.why-book-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #0F3460;
+  line-height: 1.2;
+  font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Responsive design for Why Book With Us section */
+@media (max-width: 992px) {
+  .why-book-features {
+    gap: 0.8rem;
+  }
+  
+  .why-book-feature {
+    min-width: 110px;
+    height: 90px;
+    padding: 0.6rem;
+  }
+  
+  .why-book-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .why-book-icon ion-icon {
+    font-size: 1.2rem;
+  }
+  
+  .why-book-text {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-book-with-us {
+    padding: 1.2rem;
+  }
+  
+  .why-book-title {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .why-book-features {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+  
+  .why-book-feature {
+    min-width: 100px;
+    height: 80px;
+    padding: 0.6rem;
+  }
+  
+  .why-book-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 0.4rem;
+  }
+  
+  .why-book-icon ion-icon {
+    font-size: 1.1rem;
+  }
+  
+  .why-book-text {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-book-with-us {
+    padding: 1rem;
+  }
+  
+  .why-book-title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .why-book-features {
+    gap: 0.6rem;
+  }
+  
+  .why-book-feature {
+    min-width: 90px;
+    height: 70px;
+    padding: 0.5rem;
+  }
+  
+  .why-book-icon {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 0.3rem;
+  }
+  
+  .why-book-icon ion-icon {
+    font-size: 1rem;
+  }
+  
+  .why-book-text {
+    font-size: 0.65rem;
+  }
+}
