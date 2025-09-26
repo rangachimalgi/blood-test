@@ -368,6 +368,7 @@
   align-items: center;
   justify-content: space-between;
   background: #fff;
+  border: 2px solid #6e89a9;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(15, 52, 96, 0.07);
   padding: 1.1rem 1.5rem;
