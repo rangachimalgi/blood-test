@@ -7,6 +7,9 @@ import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import EmbeddedCheckoutForm from "../components/EmbeddedCheckoutForm.js";
 import "../Styles/productDetails.css";
+import HeroImage from "../Images/HeroOr.png";
+import CollectionImage from "../Images/Collection.png";
+import DigitalReportImage from "../Images/DigitalReport.png";
 
 const HealthPackageDetails = () => {
   const [quantity, setQuantity] = useState(1);
@@ -182,7 +185,7 @@ const HealthPackageDetails = () => {
                   <div className="how-it-works-card">
                     <div className="how-it-works-image">
                       <img 
-                        src="/Images/lab-technician.jpg" 
+                        src={HeroImage} 
                         alt="Lab technician" 
                         className="how-it-works-img"
                       />
@@ -194,7 +197,7 @@ const HealthPackageDetails = () => {
                   <div className="how-it-works-card">
                     <div className="how-it-works-image">
                       <img 
-                        src="/Images/sample-collection.jpg" 
+                        src={CollectionImage} 
                         alt="Sample collection" 
                         className="how-it-works-img"
                       />
@@ -206,7 +209,7 @@ const HealthPackageDetails = () => {
                   <div className="how-it-works-card">
                     <div className="how-it-works-image">
                       <img 
-                        src="/Images/digital-report.jpg" 
+                        src={DigitalReportImage} 
                         alt="Digital report" 
                         className="how-it-works-img"
                       />
