@@ -25,14 +25,15 @@
 .dark-grey-box {
   width: 100%;
   height: 400px; /* Smaller height than the original hero image */
-  background-color: #333; /* Dark grey color */
+  background: linear-gradient(135deg, #6b8096 0%, #fefefe 100%); /* Light grey gradient */
   border-radius: 30px 30px 30px 30px; /* Make all corners curvy */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
   margin-top: 80px; /* Add margin to move it below the navbar */
+  padding: 0 2rem;
 }
 
 /* Custom dots styling */
@@ -71,16 +72,30 @@
   border-radius: 0 0 30px 30px;
 }
 
+/* Hero image container styling */
+.hero-image-container {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.hero-image {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  filter: brightness(1.1) contrast(1.1);
+  animation: fadeInLeft 0.8s ease-out;
+}
+
 /* Slide content styling */
 .slide-content {
-  position: absolute;
-  right: 10%;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 3;
-  color: white;
+  flex: 0 0 55%;
+  color: #0F3460;
   max-width: 600px;
   text-align: right;
+  z-index: 3;
 }
 
 .slide-title {
@@ -103,13 +118,13 @@
 }
 
 .health-category-link {
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
+  background: rgba(15, 52, 96, 0.1);
+  color: #0F3460;
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 500;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(15, 52, 96, 0.2);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   text-decoration: none;
@@ -118,9 +133,9 @@
 }
 
 .health-category-link:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(15, 52, 96, 0.2);
   transform: translateY(-2px);
-  color: white;
+  color: #0F3460;
   text-decoration: none;
 }
 
@@ -161,6 +176,17 @@
   }
 }
 
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* Override bootstrap container class */
 .slider-container.container {
   max-width: 100% !important;
@@ -172,9 +198,26 @@
     height: 70vh;
   }
 
+  .dark-grey-box {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .hero-image-container {
+    flex: none;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .hero-image {
+    max-height: 200px;
+  }
+
   .slide-content {
-    left: 5%;
-    max-width: 90%;
+    flex: none;
+    width: 100%;
+    text-align: center;
   }
 
   .slide-title {
@@ -188,5 +231,9 @@
   .slide-button {
     padding: 12px 30px;
     font-size: 1rem;
+  }
+
+  .health-categories-button {
+    justify-content: center;
   }
 } 

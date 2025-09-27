@@ -5,6 +5,7 @@ import { Container } from "react-bootstrap"
 import { SliderData } from "../utils/products"
 import "./Slider.css"
 import { Link } from "react-router-dom"
+import HeroImage from "../Images/HeroOr.png"
 
 const SliderHome = () => {
   const settings = {
@@ -34,6 +35,9 @@ const SliderHome = () => {
                   className="slider-image"
                 /> */}
                 <div className="dark-grey-box">
+                  <div className="hero-image-container">
+                    <img src={HeroImage} alt="Lab scientist" className="hero-image" />
+                  </div>
                   <div className="slide-content">
                     <h1 className="slide-title">Lab Tests at the Comfort of Your Home</h1>
                     <div className="health-categories-button">
