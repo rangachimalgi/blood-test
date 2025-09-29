@@ -160,6 +160,186 @@ const Home = () => {
         productItems={popularTests}
         addToCart={handleAddToCart}
       />
+
+      {/* Why Fortune Blood Test Section */}
+      <section
+        style={{
+          background: "#f8f9fa",
+          padding: "3rem 0",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+            padding: "0 1rem",
+          }}
+        >
+          <div style={{ textAlign: "center", marginBottom: "2rem" }}>
+            <h2
+              style={{
+                fontSize: "2rem",
+                fontWeight: "700",
+                color: "#0F3460",
+                marginBottom: "0.5rem",
+              }}
+            >
+              Why Fortune Blood Test?
+            </h2>
+            <div
+              style={{
+                width: "50px",
+                height: "3px",
+                background: "linear-gradient(90deg, #0F3460, #2a5298)",
+                margin: "0 auto",
+                borderRadius: "2px",
+              }}
+            ></div>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: "3rem",
+              flexWrap: "wrap",
+            }}
+          >
+            {/* Item 1 - Fast Service */}
+            <div style={{ textAlign: "center" }}>
+              <div
+                style={{
+                  width: "60px",
+                  height: "60px",
+                  background: "linear-gradient(135deg, #0F3460, #2a5298)",
+                  borderRadius: "50%",
+                  margin: "0 auto 1rem",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <i
+                  className="fas fa-clock"
+                  style={{
+                    fontSize: "1.5rem",
+                    color: "white",
+                  }}
+                ></i>
+              </div>
+              <h3
+                style={{
+                  fontSize: "1.1rem",
+                  fontWeight: "600",
+                  color: "#0F3460",
+                  marginBottom: "0.5rem",
+                }}
+              >
+                Fast Service
+              </h3>
+              <p
+                style={{
+                  fontSize: "0.9rem",
+                  color: "#666",
+                  lineHeight: "1.4",
+                  margin: 0,
+                }}
+              >
+                Quick sample collection and fast report delivery.
+              </p>
+            </div>
+
+            {/* Item 2 - Accurate Results */}
+            <div style={{ textAlign: "center" }}>
+              <div
+                style={{
+                  width: "60px",
+                  height: "60px",
+                  background: "linear-gradient(135deg, #0F3460, #2a5298)",
+                  borderRadius: "50%",
+                  margin: "0 auto 1rem",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <i
+                  className="fas fa-check-circle"
+                  style={{
+                    fontSize: "1.5rem",
+                    color: "white",
+                  }}
+                ></i>
+              </div>
+              <h3
+                style={{
+                  fontSize: "1.1rem",
+                  fontWeight: "600",
+                  color: "#0F3460",
+                  marginBottom: "0.5rem",
+                }}
+              >
+                98% Accurate Results
+              </h3>
+              <p
+                style={{
+                  fontSize: "0.9rem",
+                  color: "#666",
+                  lineHeight: "1.4",
+                  margin: 0,
+                }}
+              >
+                Reliable results with advanced laboratory equipment.
+              </p>
+            </div>
+
+            {/* Item 3 - Affordable Pricing */}
+            <div style={{ textAlign: "center" }}>
+              <div
+                style={{
+                  width: "60px",
+                  height: "60px",
+                  background: "linear-gradient(135deg, #0F3460, #2a5298)",
+                  borderRadius: "50%",
+                  margin: "0 auto 1rem",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <i
+                  className="fas fa-rupee-sign"
+                  style={{
+                    fontSize: "1.5rem",
+                    color: "white",
+                  }}
+                ></i>
+              </div>
+              <h3
+                style={{
+                  fontSize: "1.1rem",
+                  fontWeight: "600",
+                  color: "#0F3460",
+                  marginBottom: "0.5rem",
+                }}
+              >
+                Affordable Pricing
+              </h3>
+              <p
+                style={{
+                  fontSize: "0.9rem",
+                  color: "#666",
+                  lineHeight: "1.4",
+                  margin: 0,
+                }}
+              >
+                Quality healthcare at budget-friendly rates.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </Fragment>
   );
 };
