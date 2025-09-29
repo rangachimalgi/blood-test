@@ -8,6 +8,7 @@ import CheckoutForm from "../components/CheckoutForm";
 import Highlight from "../components/Highlight";
 import "../Styles/HealthPackageList.css";
 import logo from "../Images/logo.png";
+import defaultPackageImage from "../Images/GenaralHealthPackage.jpg";
 
 const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
   const { addToCart, cachedPackages, packagesLoading, fetchPackages } = useContext(DataContainer);
@@ -148,11 +149,14 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
             <div className="package-image-container">
               <Link to={`/health/${pkg.id}`} className="package-link">
                 <img
-                  src={pkg.imgUrl}
+                  src={pkg.imgUrl ? `/Images/${pkg.imgUrl}` : defaultPackageImage}
                   alt={pkg.productName}
                   className="package-image"
                   loading="lazy"
                   decoding="async"
+                  onError={(e) => {
+                    e.target.src = defaultPackageImage;
+                  }}
                 />
               </Link>
 
