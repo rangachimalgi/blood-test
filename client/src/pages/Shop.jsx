@@ -23,23 +23,34 @@ const Shop = () => {
 
   useEffect(() => {
     const loadProducts = async () => {
+      console.log('Shop: Loading products, cachedTests:', cachedTests.length, 'testsLoading:', testsLoading);
       // Use cached data or fetch if not available
       if (cachedTests.length > 0) {
+        console.log('Shop: Using cached tests');
         setAllProducts(cachedTests);
         setFilterList(cachedTests);
         setLoading(false);
       } else {
+        console.log('Shop: Fetching tests from API');
         setLoading(true);
-        const data = await fetchTests();
-        setAllProducts(data);
-        setFilterList(data);
-        setLoading(false);
+        try {
+          const data = await fetchTests();
+          console.log('Shop: Fetched tests:', data?.length || 0);
+          if (data && data.length > 0) {
+            setAllProducts(data);
+            setFilterList(data);
+          }
+        } catch (error) {
+          console.error('Shop: Error fetching tests:', error);
+        } finally {
+          setLoading(false);
+        }
       }
     };
 
     loadProducts();
     window.scrollTo(0, 0);
-  }, [cachedTests, fetchTests]);
+  }, [cachedTests.length, fetchTests]); // Only depend on length to prevent infinite loops
 
   const handleBookNow = () => navigate("/cart");
 
@@ -50,6 +61,11 @@ const Shop = () => {
       cartSummaryRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  // Debug effect to track filterList changes
+  useEffect(() => {
+    console.log('Shop: filterList updated:', filterList.length, 'items');
+  }, [filterList]);
 
   if (loading) {
     return (

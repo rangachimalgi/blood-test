@@ -123,10 +123,17 @@ const Product = ({
               <img
                 loading="lazy"
                 onClick={handleClick}
-                src={productItem.imgUrl}
+                src={productItem.imgUrl || "/Images/GenaralHealthPackage.jpg"}
                 alt={productItem.productName}
                 className="product-image"
                 aria-label={productItem.productName}
+                onError={(e) => {
+                  console.log('Image failed to load, using fallback:', productItem.productName);
+                  e.target.src = "/Images/GenaralHealthPackage.jpg";
+                }}
+                onLoad={() => {
+                  console.log('Image loaded successfully:', productItem.productName);
+                }}
               />
             )}
           </div>

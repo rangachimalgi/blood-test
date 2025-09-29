@@ -17,6 +17,7 @@ const ProductDetails = () => {
   const [listSelected, setListSelected] = useState("desc");
   const [likeCount, setLikeCount] = useState(0);
   const [liked, setLiked] = useState(false);
+  const [imageError, setImageError] = useState(false);
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -24,6 +25,7 @@ const ProductDetails = () => {
         const res = await fetch(`${process.env.REACT_APP_API_URL}/api/tests/${id}`);
         const data = await res.json();
         setSelectedProduct(data);
+        setImageError(false); // Reset image error when new product loads
       } catch (err) {
         console.error("Failed to fetch product by ID:", err);
       }
@@ -44,6 +46,35 @@ const ProductDetails = () => {
     setLiked(!liked);
   };
 
+  // Helper function to get correct image URL
+  const getImageUrl = (imgUrl) => {
+    if (!imgUrl) return '/Images/blood-test-01.avif'; // Default fallback
+    
+    // If it's a webpack path, convert to public path
+    if (imgUrl.includes('/static/media/')) {
+      const filename = imgUrl.split('/').pop();
+      return `/Images/${filename}`;
+    }
+    
+    // If it already starts with /Images, use as is
+    if (imgUrl.startsWith('/Images/')) {
+      return imgUrl;
+    }
+    
+    // If it's just a filename, add /Images/ prefix
+    if (!imgUrl.startsWith('/')) {
+      return `/Images/${imgUrl}`;
+    }
+    
+    // Default fallback
+    return imgUrl || '/Images/blood-test-01.avif';
+  };
+
+  const handleImageError = () => {
+    console.log('Image failed to load, using fallback');
+    setImageError(true);
+  };
+
   if (!selectedProduct) return <h4 className="text-center mt-5">Loading...</h4>;
 
   return (
@@ -58,9 +89,10 @@ const ProductDetails = () => {
                     <div className="product-details-img-wrapper">
                       <img
                         loading="lazy"
-                        src={selectedProduct.imgUrl}
+                        src={imageError ? '/Images/blood-test-01.avif' : getImageUrl(selectedProduct.imgUrl)}
                         alt={selectedProduct.productName}
                         className="product-details-img"
+                        onError={handleImageError}
                       />
                       <button
                         className={`product-details-like-btn${liked ? ' liked' : ''}`}

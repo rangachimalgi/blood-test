@@ -131,13 +131,15 @@ function App() {
     }
   }, [cachedPackages.length]); // Only depend on the length, not the entire array
 
-  // Function to fetch tests with caching
-  const fetchTests = async () => {
+  // Function to fetch tests with caching - memoized to prevent recreation
+  const fetchTests = useCallback(async () => {
     if (cachedTests.length > 0) {
       return cachedTests; // Return cached data if available
     }
     
     setTestsLoading(true);
+    const startTime = performance.now();
+    
     try {
       // Add timeout to prevent hanging requests
       const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/tests`, {
@@ -145,13 +147,17 @@ function App() {
       });
       setCachedTests(res.data);
       setTestsLoading(false);
+      
+      const endTime = performance.now();
+      console.log(`Tests loaded in ${(endTime - startTime).toFixed(2)}ms`);
+      
       return res.data;
     } catch (err) {
       console.error("Failed to fetch tests:", err);
       setTestsLoading(false);
       return [];
     }
-  };
+  }, [cachedTests.length]); // Only depend on the length, not the entire array
   useEffect(() => {
     localStorage.setItem("cartItem", JSON.stringify(CartItem));
   }, [CartItem]);
