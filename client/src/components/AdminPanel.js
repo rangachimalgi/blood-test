@@ -30,96 +30,139 @@ function AdminDashboard() {
   );
 
   return (
-    <div className="container mt-5">
-      <h2 className="mb-4">Admin Panel</h2>
+    <div className="container" style={{ maxWidth: '1200px', marginTop: '140px' }}>
+      {/* Header */}
+      <div className="mb-5">
+        <h1 className="h3 mb-2" style={{ color: '#333', fontWeight: '600' }}>Admin Dashboard</h1>
+        <p className="text-muted mb-0">Manage your blood test platform</p>
+      </div>
 
-      <div className="row mb-4">
-        <div className="col-md-3 col-lg-5 d-flex align-items-stretch mb-3">
-          <div className="card bg-info text-white mb-3 h-100 d-flex align-items-center justify-content-center">
-            <div className="card-body">
-              <h5 className="card-title">Total Users</h5>
-              <h3>{users.length}</h3>
+      {/* Stats Section */}
+      <div className="row mb-5">
+        <div className="col-md-6 col-lg-4 mb-4">
+          <div className="bg-white p-4 rounded border" style={{ boxShadow: '0 2px 4px rgba(0,0,0,0.05)' }}>
+            <div className="d-flex align-items-center">
+              <div className="flex-shrink-0">
+                <div className="rounded-circle d-flex align-items-center justify-content-center" 
+                     style={{ width: '48px', height: '48px', backgroundColor: '#f8f9fa' }}>
+                  <i className="fas fa-users text-muted"></i>
+                </div>
+              </div>
+              <div className="flex-grow-1 ms-3">
+                <h6 className="mb-1 text-muted">Total Users</h6>
+                <h4 className="mb-0" style={{ color: '#333', fontWeight: '600' }}>{users.length}</h4>
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="row mb-4">
-          <div className="col-md-3 d-flex align-items-stretch">
+      {/* Navigation Section */}
+      <div className="mb-5">
+        <h4 className="mb-4" style={{ color: '#333', fontWeight: '500' }}>Quick Actions</h4>
+        <div className="row g-3">
+          <div className="col-md-6 col-lg-3">
             <Link to="/admin/view-orders" className="text-decoration-none">
-              <div className="card bg-primary text-white mb-3 h-100 d-flex align-items-center justify-content-center">
-                <div className="card-body">
-                  <h5 className="card-title">View Orders</h5>
+              <div className="bg-white p-4 rounded border d-flex align-items-center h-100" 
+                   style={{ 
+                     boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
+                     transition: 'all 0.2s ease',
+                     cursor: 'pointer'
+                   }}
+                   onMouseEnter={(e) => {
+                     e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+                     }}
+                   onMouseLeave={(e) => {
+                     e.currentTarget.style.boxShadow = '0 2px 4px rgba(0,0,0,0.05)';
+                   }}>
+                <div className="flex-shrink-0 me-3">
+                  <i className="fas fa-shopping-cart text-muted" style={{ fontSize: '1.2rem' }}></i>
                 </div>
-              </div>
-            </Link>
-          </div>
-          <div className="col-md-3 d-flex align-items-stretch">
-            <Link to="/admin/view-users" className="text-decoration-none">
-              <div className="card bg-success text-white mb-3 h-100 d-flex align-items-center justify-content-center">
-                <div className="card-body">
-                  <h5 className="card-title">View Users</h5>
-                </div>
-              </div>
-            </Link>
-          </div>
-          <div className="col-md-3 d-flex align-items-stretch">
-            <Link to="/admin/manage-packages" className="text-decoration-none">
-              <div className="card bg-warning text-dark mb-3 h-100 d-flex align-items-center justify-content-center">
-                <div className="card-body">
-                  <h5 className="card-title">Manage Packages</h5>
-                </div>
-              </div>
-            </Link>
-          </div>
-          <div className="col-md-3 d-flex align-items-stretch">
-            <Link to="/admin/manage-tests" className="text-decoration-none">
-              <div className="card bg-warning text-dark mb-3 h-100 d-flex align-items-center justify-content-center">
-                <div className="card-body">
-                  <h5 className="card-title">Manage Tests</h5>
+                <div>
+                  <h6 className="mb-0" style={{ color: '#333' }}>View Orders</h6>
+                  <small className="text-muted">Manage customer orders</small>
                 </div>
               </div>
             </Link>
           </div>
 
-          {/* <div className="col-md-3 d-flex align-items-stretch">
-            <div className="card bg-danger text-white mb-3 h-100 d-flex align-items-center justify-content-center">
-              <div className="card-body">
-                <h5 className="card-title">Total Revenue</h5>
-                <h3>
-                  ₹
-                  {totalRevenue.toLocaleString("en-IN", {
-                    minimumFractionDigits: 2,
-                    maximumFractionDigits: 2,
-                  })}
-                </h3>
+          <div className="col-md-6 col-lg-3">
+            <Link to="/admin/view-users" className="text-decoration-none">
+              <div className="bg-white p-4 rounded border d-flex align-items-center h-100" 
+                   style={{ 
+                     boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
+                     transition: 'all 0.2s ease',
+                     cursor: 'pointer'
+                   }}
+                   onMouseEnter={(e) => {
+                     e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+                   }}
+                   onMouseLeave={(e) => {
+                     e.currentTarget.style.boxShadow = '0 2px 4px rgba(0,0,0,0.05)';
+                   }}>
+                <div className="flex-shrink-0 me-3">
+                  <i className="fas fa-user-friends text-muted" style={{ fontSize: '1.2rem' }}></i>
+                </div>
+                <div>
+                  <h6 className="mb-0" style={{ color: '#333' }}>View Users</h6>
+                  <small className="text-muted">User management</small>
+                </div>
               </div>
-            </div>
-          </div> */}
+            </Link>
+          </div>
+
+          <div className="col-md-6 col-lg-3">
+            <Link to="/admin/manage-packages" className="text-decoration-none">
+              <div className="bg-white p-4 rounded border d-flex align-items-center h-100" 
+                   style={{ 
+                     boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
+                     transition: 'all 0.2s ease',
+                     cursor: 'pointer'
+                   }}
+                   onMouseEnter={(e) => {
+                     e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+                   }}
+                   onMouseLeave={(e) => {
+                     e.currentTarget.style.boxShadow = '0 2px 4px rgba(0,0,0,0.05)';
+                   }}>
+                <div className="flex-shrink-0 me-3">
+                  <i className="fas fa-box text-muted" style={{ fontSize: '1.2rem' }}></i>
+                </div>
+                <div>
+                  <h6 className="mb-0" style={{ color: '#333' }}>Manage Packages</h6>
+                  <small className="text-muted">Health packages</small>
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          <div className="col-md-6 col-lg-3">
+            <Link to="/admin/manage-tests" className="text-decoration-none">
+              <div className="bg-white p-4 rounded border d-flex align-items-center h-100" 
+                   style={{ 
+                     boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
+                     transition: 'all 0.2s ease',
+                     cursor: 'pointer'
+                   }}
+                   onMouseEnter={(e) => {
+                     e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+                   }}
+                   onMouseLeave={(e) => {
+                     e.currentTarget.style.boxShadow = '0 2px 4px rgba(0,0,0,0.05)';
+                   }}>
+                <div className="flex-shrink-0 me-3">
+                  <i className="fas fa-flask text-muted" style={{ fontSize: '1.2rem' }}></i>
+                </div>
+                <div>
+                  <h6 className="mb-0" style={{ color: '#333' }}>Manage Tests</h6>
+                  <small className="text-muted">Individual tests</small>
+                </div>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
 
-      {/* User Table */}
-      <div className="mt-5">
-        <h3>Users List</h3>
-        <table className="table">
-          <thead>
-            <tr>
-              <th scope="col">id</th>
-              <th scope="col">Email</th>
-              <th scope="col">Role</th>
-            </tr>
-          </thead>
-          <tbody>
-            {users.map((user, index) => (
-              <tr key={index}>
-                <th scope="row">{index + 1}</th>
-                <td>{user.email}</td>
-                <td>{user.role}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
     </div>
   );
 }

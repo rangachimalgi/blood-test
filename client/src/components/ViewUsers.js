@@ -18,22 +18,23 @@ const ViewUsers = () => {
     fetchUsers();
   }, []);
   return (
-    <div className="container mt-5">
-      <h3>Users List</h3>
+    <div className="container" style={{ marginTop: '140px', maxWidth: '1200px' }}>
+      <h3 style={{ color: '#333', fontWeight: '500', marginBottom: '2rem' }}>Users List</h3>
+      
       <table className="table">
         <thead>
           <tr>
-            <th scope="col">id</th>
-            <th scope="col">Email</th>
-            <th scope="col">Role</th>
+            <th scope="col" style={{ color: '#666', fontWeight: '500' }}>#</th>
+            <th scope="col" style={{ color: '#666', fontWeight: '500' }}>Email</th>
+            <th scope="col" style={{ color: '#666', fontWeight: '500' }}>Role</th>
           </tr>
         </thead>
         <tbody>
           {users.map((user, index) => (
             <tr key={index}>
-              <th scope="row">{index + 1}</th>
-              <td>{user.email}</td>
-              <td>{user.role}</td>
+              <td style={{ color: '#666', fontWeight: '500' }}>{index + 1}</td>
+              <td style={{ color: '#333', fontWeight: '500' }}>{user.email}</td>
+              <td style={{ color: '#333', fontWeight: '500' }}>{user.role}</td>
             </tr>
           ))}
         </tbody>
