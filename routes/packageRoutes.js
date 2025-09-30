@@ -38,4 +38,40 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+// PUT - update a package
+router.put("/:id", async (req, res) => {
+  try {
+    const updatedPackage = await Package.findOneAndUpdate(
+      { id: req.params.id },
+      req.body,
+      { new: true, runValidators: true }
+    );
+    
+    if (!updatedPackage) {
+      return res.status(404).json({ message: "Package not found" });
+    }
+    
+    res.json(updatedPackage);
+  } catch (err) {
+    console.error("Error updating package:", err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// DELETE - delete a package
+router.delete("/:id", async (req, res) => {
+  try {
+    const deletedPackage = await Package.findOneAndDelete({ id: req.params.id });
+    
+    if (!deletedPackage) {
+      return res.status(404).json({ message: "Package not found" });
+    }
+    
+    res.json({ message: "Package deleted successfully", deletedPackage });
+  } catch (err) {
+    console.error("Error deleting package:", err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
 export default router;

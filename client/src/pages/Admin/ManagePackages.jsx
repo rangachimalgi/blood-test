@@ -24,6 +24,7 @@ const ManagePackages = () => {
   const [allPackages, setAllPackages] = useState([]);
   const [filteredPackages, setFilteredPackages] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [editingPackage, setEditingPackage] = useState(null);
 
   const handleAddTest = () => {
     if (testInput.trim() === "") return;
@@ -104,6 +105,37 @@ const ManagePackages = () => {
     );
   };
 
+  // Edit package
+  const handleEditPackage = (pkg) => {
+    setEditingPackage(pkg);
+    setPackageData({
+      productName: pkg.productName,
+      desc: pkg.description || pkg.desc,
+      category: pkg.category,
+      price: pkg.price.toString(),
+      mrp: pkg.mrp.toString(),
+      shortDesc: pkg.shortDesc,
+      includedTests: pkg.includedTests || [],
+    });
+    setViewMode("create");
+  };
+
+  // Delete package
+  const handleDeletePackage = async (packageId) => {
+    if (!window.confirm("Are you sure you want to delete this package? This action cannot be undone.")) {
+      return;
+    }
+
+    try {
+      await axios.delete(`${process.env.REACT_APP_API_URL}/api/packages/${packageId}`);
+      alert("✅ Package deleted successfully!");
+      fetchPackages(); // Refresh the list
+    } catch (error) {
+      console.error("Error deleting package:", error);
+      alert("❌ Failed to delete package");
+    }
+  };
+
   // Load packages when switching to view mode
   useEffect(() => {
     if (viewMode === "view" && allPackages.length === 0) {
@@ -120,8 +152,8 @@ const ManagePackages = () => {
 const handleSubmit = async (e) => {
   e.preventDefault();
 
-  // Check if package already exists
-  if (checkPackageExists(packageData.productName)) {
+  // Check if package already exists (only for new packages)
+  if (!editingPackage && checkPackageExists(packageData.productName)) {
     alert("⚠️ Package with this name already exists! Please choose a different name.");
     return;
   }
@@ -129,7 +161,7 @@ const handleSubmit = async (e) => {
   const payload = {
     ...packageData,
     category: "Basic", // Always set to Basic automatically
-    id: Date.now().toString(),
+    id: editingPackage ? editingPackage.id : Date.now().toString(),
     type: "package",
     imgUrl: "GenaralHealthPackage.jpg", // Default image for all packages
     overlayTitle: packageData.productName,
@@ -146,8 +178,17 @@ const handleSubmit = async (e) => {
   };
 
   try {
-    const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/packages`, payload);
-    alert("✅ Package saved!");
+    let res;
+    if (editingPackage) {
+      // Update existing package
+      res = await axios.put(`${process.env.REACT_APP_API_URL}/api/packages/${editingPackage.id}`, payload);
+      alert("✅ Package updated successfully!");
+    } else {
+      // Create new package
+      res = await axios.post(`${process.env.REACT_APP_API_URL}/api/packages`, payload);
+      alert("✅ Package saved!");
+    }
+    
     console.log("Response:", res.data);
 
     // Reset form
@@ -162,11 +203,10 @@ const handleSubmit = async (e) => {
     });
     setTestList([]);
     setCurrentCategory("");
+    setEditingPackage(null);
     
-    // Refresh packages list if in view mode
-    if (viewMode === "view") {
-      fetchPackages();
-    }
+    // Refresh packages list
+    fetchPackages();
   } catch (err) {
     console.error("❌ Error submitting package:", err.message);
     alert("❌ Failed to save package");
@@ -212,12 +252,16 @@ const handleSubmit = async (e) => {
       {viewMode === "create" ? (
         <div className="bg-white rounded-3 shadow-sm p-4">
           <div className="d-flex align-items-center mb-4">
-            <div className="bg-primary rounded-circle p-3 me-3">
-              <i className="fas fa-plus text-white"></i>
+            <div className={`rounded-circle p-3 me-3 ${editingPackage ? 'bg-warning' : 'bg-primary'}`}>
+              <i className={`fas ${editingPackage ? 'fa-edit' : 'fa-plus'} text-white`}></i>
             </div>
             <div>
-              <h4 className="mb-1" style={{ color: '#0F3460', fontWeight: '600' }}>Create New Package</h4>
-              <p className="text-muted mb-0">Fill in the details to create a new health package</p>
+              <h4 className="mb-1" style={{ color: '#0F3460', fontWeight: '600' }}>
+                {editingPackage ? `Edit Package: ${editingPackage.productName}` : 'Create New Package'}
+              </h4>
+              <p className="text-muted mb-0">
+                {editingPackage ? 'Update the package details below' : 'Fill in the details to create a new health package'}
+              </p>
             </div>
           </div>
           <Form onSubmit={handleSubmit}>
@@ -368,33 +412,61 @@ const handleSubmit = async (e) => {
         <div className="d-flex justify-content-between align-items-center">
           <Button 
             type="submit" 
-            variant="primary" 
+            variant={editingPackage ? "warning" : "primary"}
             className="px-5 py-3"
             style={{ borderRadius: '8px', fontWeight: '600' }}
           >
-            <i className="fas fa-save me-2"></i>Save Package
+            <i className={`fas ${editingPackage ? 'fa-save' : 'fa-save'} me-2`}></i>
+            {editingPackage ? 'Update Package' : 'Save Package'}
           </Button>
-          <Button 
-            type="button" 
-            variant="outline-secondary"
-            onClick={() => {
-              setPackageData({
-                productName: "",
-                desc: "",
-                category: "Basic", // Reset to Basic default
-                price: "",
-                mrp: "",
-                shortDesc: "",
-                includedTests: [],
-              });
-              setTestList([]);
-              setCurrentCategory("");
-            }}
-            className="px-4 py-3"
-            style={{ borderRadius: '8px', fontWeight: '600' }}
-          >
-            <i className="fas fa-undo me-2"></i>Reset Form
-          </Button>
+          <div className="d-flex gap-2">
+            {editingPackage && (
+              <Button 
+                type="button" 
+                variant="outline-secondary"
+                onClick={() => {
+                  setEditingPackage(null);
+                  setPackageData({
+                    productName: "",
+                    desc: "",
+                    category: "Basic",
+                    price: "",
+                    mrp: "",
+                    shortDesc: "",
+                    includedTests: [],
+                  });
+                  setTestList([]);
+                  setCurrentCategory("");
+                }}
+                className="px-4 py-3"
+                style={{ borderRadius: '8px', fontWeight: '600' }}
+              >
+                <i className="fas fa-times me-2"></i>Cancel Edit
+              </Button>
+            )}
+            <Button 
+              type="button" 
+              variant="outline-secondary"
+              onClick={() => {
+                setPackageData({
+                  productName: "",
+                  desc: "",
+                  category: "Basic", // Reset to Basic default
+                  price: "",
+                  mrp: "",
+                  shortDesc: "",
+                  includedTests: [],
+                });
+                setTestList([]);
+                setCurrentCategory("");
+                setEditingPackage(null);
+              }}
+              className="px-4 py-3"
+              style={{ borderRadius: '8px', fontWeight: '600' }}
+            >
+              <i className="fas fa-undo me-2"></i>Reset Form
+            </Button>
+          </div>
         </div>
       </Form>
 
@@ -508,6 +580,9 @@ const handleSubmit = async (e) => {
                         <th className="px-3 py-3">
                           <i className="fas fa-info me-2"></i>Description
                         </th>
+                        <th className="px-3 py-3">
+                          <i className="fas fa-cogs me-2"></i>Actions
+                        </th>
                       </tr>
                     </thead>
                     <tbody>
@@ -560,6 +635,26 @@ const handleSubmit = async (e) => {
                           </td>
                           <td className="px-3 py-3">
                             <small className="text-muted">{pkg.shortDesc}</small>
+                          </td>
+                          <td className="px-3 py-3">
+                            <div className="d-flex gap-2">
+                              <Button
+                                variant="outline-primary"
+                                size="sm"
+                                onClick={() => handleEditPackage(pkg)}
+                                style={{ borderRadius: '6px' }}
+                              >
+                                <i className="fas fa-edit"></i>
+                              </Button>
+                              <Button
+                                variant="outline-danger"
+                                size="sm"
+                                onClick={() => handleDeletePackage(pkg.id)}
+                                style={{ borderRadius: '6px' }}
+                              >
+                                <i className="fas fa-trash"></i>
+                              </Button>
+                            </div>
                           </td>
                         </tr>
                       ))}
