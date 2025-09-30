@@ -5,9 +5,40 @@
   width: 100%;
   z-index: 1000;
   transition: all 0.3s ease-out 0s !important;
-  padding: 0.75rem 0 !important;
+  padding: 1.5rem 0 !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+}
+
+/* Override Bootstrap navbar flex behavior */
+.navbar > .container,
+.navbar > .container-fluid {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+
+/* Force navbar brand to the left with absolute positioning */
+.navbar .navbar-brand {
+  position: absolute !important;
+  left: 20px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 1000 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Push other elements to the right */
+.navbar .d-flex {
+  margin-left: auto !important;
+  margin-right: 20px !important;
+}
+
+.navbar .search-container {
+  margin-left: auto !important;
+  margin-right: 20px !important;
 }
 
 /* Home page specific styles */
@@ -38,12 +69,22 @@
 }
 
 .navbar-container {
-  display: flex;
-  justify-content: space-between !important;
+  display: flex !important;
+  justify-content: flex-start !important;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+  flex-wrap: nowrap !important;
+  position: relative !important;
+  padding-left: 100px !important;
+}
+
+.navbar .navbar-brand {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  order: -1 !important;
+  flex-shrink: 0 !important;
 }
 
 .navbar-toggler {
@@ -107,6 +148,16 @@
   .navbar-nav .nav-item::after {
     display: none !important;
   }
+
+  .navbar-brand img {
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand img {
+    height: 50px;
+  }
 }
 
 /* Remove hover line effects from navbar links */
@@ -136,11 +187,17 @@
 }
 
 .navbar-brand {
-  display: flex;
+  display: flex !important;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 8px;
   transition: transform 0.3s ease;
+  margin-right: auto !important;
+  margin-left: 0 !important;
+  order: -1 !important;
+  flex-shrink: 0 !important;
+  position: relative !important;
+  z-index: 10 !important;
 }
 
 .navbar-brand:hover {
@@ -148,7 +205,7 @@
 }
 
 .navbar-brand img {
-  height: 45px;
+  height: 80px;
   width: auto;
   transition: all 0.3s ease;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));

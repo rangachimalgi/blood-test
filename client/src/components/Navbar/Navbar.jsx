@@ -5,7 +5,7 @@ import { DataContainer } from "../../App";
 import { Link, useLocation } from "react-router-dom";
 import LoginModal from "../LoginModal";
 import ProductSearchBar from "../SeachBar/SearchBarGlobal";
-import logo from "../../Images/logoReal.png"
+import logo from "../../Images/FortuneLogo.png"
 
 const NavBar = () => {
   const { CartItem, setCartItem } = useContext(DataContainer);

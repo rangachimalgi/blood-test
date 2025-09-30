@@ -8,7 +8,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa"; // Importing social media icons
-import logo from "../../Images/logoReal.png";
+import logo from "../../Images/FortuneLogo.png";
 import "./Footer.css";
 
 const Footer = () => {
