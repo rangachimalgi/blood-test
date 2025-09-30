@@ -212,7 +212,7 @@ const Home = () => {
                 style={{
                   width: "60px",
                   height: "60px",
-                  background: "linear-gradient(135deg, #0F3460, #2a5298)",
+                  background: "linear-gradient(135deg, #fbbf24, #f59e0b)",
                   borderRadius: "50%",
                   margin: "0 auto 1rem",
                   display: "flex",
@@ -224,7 +224,7 @@ const Home = () => {
                   className="fas fa-clock"
                   style={{
                     fontSize: "1.5rem",
-                    color: "#fbbf24",
+                    color: "black",
                   }}
                 ></i>
               </div>
@@ -257,7 +257,7 @@ const Home = () => {
                 style={{
                   width: "60px",
                   height: "60px",
-                  background: "linear-gradient(135deg, #0F3460, #2a5298)",
+                  background: "linear-gradient(135deg, #fbbf24, #f59e0b)",
                   borderRadius: "50%",
                   margin: "0 auto 1rem",
                   display: "flex",
@@ -269,7 +269,7 @@ const Home = () => {
                   className="fas fa-check-circle"
                   style={{
                     fontSize: "1.5rem",
-                    color: "#fbbf24",
+                    color: "black",
                   }}
                 ></i>
               </div>
@@ -302,7 +302,7 @@ const Home = () => {
                 style={{
                   width: "60px",
                   height: "60px",
-                  background: "linear-gradient(135deg, #0F3460, #2a5298)",
+                  background: "linear-gradient(135deg, #fbbf24, #f59e0b)",
                   borderRadius: "50%",
                   margin: "0 auto 1rem",
                   display: "flex",
@@ -314,7 +314,7 @@ const Home = () => {
                   className="fas fa-rupee-sign"
                   style={{
                     fontSize: "1.5rem",
-                    color: "#fbbf24",
+                    color: "black",
                   }}
                 ></i>
               </div>
