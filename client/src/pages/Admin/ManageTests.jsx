@@ -11,6 +11,7 @@ const ManageTests = () => {
   const [loading, setLoading] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [viewMode, setViewMode] = useState("create"); // "create" or "view"
 
   const fetchTests = async () => {
     try {
@@ -89,6 +90,32 @@ const ManageTests = () => {
     setErrorMessage("");
   };
 
+  // Delete test
+  const handleDeleteTest = async (testId) => {
+    console.log("Delete button clicked for test ID:", testId);
+    console.log("API URL:", process.env.REACT_APP_API_URL);
+    
+    if (!window.confirm("Are you sure you want to delete this test? This action cannot be undone.")) {
+      console.log("Delete cancelled by user");
+      return;
+    }
+
+    try {
+      console.log("Starting delete request...");
+      setLoading(true);
+      const response = await axios.delete(`${process.env.REACT_APP_API_URL}/api/tests/${testId}`);
+      console.log("Delete response:", response.data);
+      setSuccessMessage("Test deleted successfully!");
+      fetchTests(); // Refresh the tests list
+    } catch (err) {
+      console.error("Error deleting test:", err);
+      setErrorMessage("Failed to delete test. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+
   return (
     <div 
       className="container-fluid" 
@@ -104,22 +131,50 @@ const ManageTests = () => {
         <div className="row mb-4">
           <div className="col-12">
             <div 
+              className="d-flex justify-content-between align-items-center"
               style={{
                 background: '#ffffff',
                 color: '#333',
                 padding: '2rem',
                 borderRadius: '8px',
-                textAlign: 'center',
                 border: '1px solid #e9ecef'
               }}
             >
-              <h2 style={{ margin: 0, fontSize: '2rem', fontWeight: '600', color: '#333' }}>
-                <i className="fas fa-flask me-3" style={{ color: '#0F3460' }}></i>
-                Manage Tests
-              </h2>
-              <p style={{ margin: '0.5rem 0 0 0', fontSize: '1rem', color: '#666' }}>
-                Add and manage individual health tests
-              </p>
+              <div>
+                <h2 style={{ margin: 0, fontSize: '2rem', fontWeight: '600', color: '#333' }}>
+                  <i className="fas fa-flask me-3" style={{ color: '#0F3460' }}></i>
+                  Manage Tests
+                </h2>
+                <p style={{ margin: '0.5rem 0 0 0', fontSize: '1rem', color: '#666' }}>
+                  Add and manage individual health tests
+                </p>
+              </div>
+              <div className="btn-group shadow-sm" role="group">
+                <Button
+                  variant={viewMode === "create" ? "primary" : "outline-primary"}
+                  onClick={() => setViewMode("create")}
+                  className="px-4 py-2"
+                  style={{ 
+                    borderRadius: viewMode === "create" ? '8px 0 0 8px' : '8px 0 0 8px',
+                    fontWeight: '600',
+                    border: '2px solid #0F3460'
+                  }}
+                >
+                  <i className="fas fa-plus me-2"></i>Create Test
+                </Button>
+                <Button
+                  variant={viewMode === "view" ? "primary" : "outline-primary"}
+                  onClick={() => setViewMode("view")}
+                  className="px-4 py-2"
+                  style={{ 
+                    borderRadius: viewMode === "view" ? '0 8px 8px 0' : '0 8px 8px 0',
+                    fontWeight: '600',
+                    border: '2px solid #0F3460'
+                  }}
+                >
+                  <i className="fas fa-list me-2"></i>View Tests
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -139,22 +194,19 @@ const ManageTests = () => {
           </Alert>
         )}
 
-        {/* Add Test Form */}
-        <Card className="mb-5" style={{ border: '1px solid #e9ecef', boxShadow: 'none' }}>
-          <Card.Header 
-            style={{ 
-              background: '#f8f9fa', 
-              color: '#333',
-              border: 'none',
-              borderRadius: '8px 8px 0 0'
-            }}
-          >
-            <h4 className="mb-0" style={{ color: '#333' }}>
-              <i className="fas fa-plus-circle me-2" style={{ color: '#0F3460' }}></i>
-              Add New Test
-            </h4>
-          </Card.Header>
-          <Card.Body style={{ padding: '2rem' }}>
+
+        {viewMode === "create" ? (
+          <div className="bg-white rounded-3 shadow-sm p-4">
+            <div className="d-flex align-items-center mb-4">
+              <div className="rounded-circle p-3 me-3 bg-primary">
+                <i className="fas fa-plus text-white"></i>
+              </div>
+              <div>
+                <h4 className="mb-1" style={{ color: '#333' }}>Add New Test</h4>
+                <p className="text-muted mb-0">Create a new health test</p>
+              </div>
+            </div>
+            
             <Form>
               <div className="row">
                 <div className="col-md-6 mb-3">
@@ -288,24 +340,20 @@ const ManageTests = () => {
                 </Button>
               </div>
             </Form>
-          </Card.Body>
-        </Card>
-
-        {/* Tests List */}
-        <Card style={{ border: '1px solid #e9ecef', boxShadow: 'none' }}>
-          <Card.Header 
-            style={{ 
-              background: '#f8f9fa', 
-              color: '#333',
-              border: 'none',
-              borderRadius: '8px 8px 0 0'
-            }}
-          >
-            <div className="d-flex justify-content-between align-items-center">
-              <h4 className="mb-0" style={{ color: '#333' }}>
-                <i className="fas fa-list me-2" style={{ color: '#0F3460' }}></i>
-                All Tests ({tests.length})
-              </h4>
+          </div>
+        ) : (
+          <div className="bg-white rounded-3 shadow-sm p-4">
+            <div className="d-flex align-items-center mb-4">
+              <div className="rounded-circle p-3 me-3 bg-info">
+                <i className="fas fa-list text-white"></i>
+              </div>
+              <div>
+                <h4 className="mb-1" style={{ color: '#333' }}>All Tests ({tests.length})</h4>
+                <p className="text-muted mb-0">View and manage all health tests</p>
+              </div>
+            </div>
+            
+            <div className="d-flex justify-content-end mb-3">
               <Button
                 variant="outline-secondary"
                 onClick={fetchTests}
@@ -316,8 +364,7 @@ const ManageTests = () => {
                 Refresh
               </Button>
             </div>
-          </Card.Header>
-          <Card.Body style={{ padding: '0' }}>
+
             {loading ? (
               <div className="text-center py-5">
                 <i className="fas fa-spinner fa-spin fa-2x text-primary mb-3"></i>
@@ -337,6 +384,7 @@ const ManageTests = () => {
                       <th style={{ border: 'none', padding: '1rem', fontWeight: '500', color: '#333' }}>Test Name</th>
                       <th style={{ border: 'none', padding: '1rem', fontWeight: '500', color: '#333' }}>Price</th>
                       <th style={{ border: 'none', padding: '1rem', fontWeight: '500', color: '#333' }}>Image</th>
+                      <th style={{ border: 'none', padding: '1rem', fontWeight: '500', color: '#333' }}>Actions</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -398,6 +446,22 @@ const ManageTests = () => {
                             </div>
                           )}
                         </td>
+                        <td style={{ padding: '1rem' }}>
+                          <Button
+                            variant="outline-danger"
+                            size="sm"
+                            onClick={() => handleDeleteTest(test.id)}
+                            disabled={loading}
+                            style={{
+                              borderRadius: '4px',
+                              fontSize: '0.85rem',
+                              padding: '6px 12px'
+                            }}
+                          >
+                            <i className="fas fa-trash me-1"></i>
+                            Delete
+                          </Button>
+                        </td>
                       </tr>
                       );
                     })}
@@ -405,8 +469,8 @@ const ManageTests = () => {
                 </Table>
               </div>
             )}
-          </Card.Body>
-        </Card>
+          </div>
+        )}
       </div>
     </div>
   );

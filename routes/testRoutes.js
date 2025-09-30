@@ -55,6 +55,20 @@ router.post('/bulk', async (req, res) => {
   }
 });
 
-
+// DELETE - delete a test
+router.delete("/:id", async (req, res) => {
+  try {
+    const deletedTest = await Test.findOneAndDelete({ id: req.params.id });
+    
+    if (!deletedTest) {
+      return res.status(404).json({ message: "Test not found" });
+    }
+    
+    res.json({ message: "Test deleted successfully", deletedTest });
+  } catch (err) {
+    console.error("Error deleting test:", err);
+    res.status(500).json({ error: err.message });
+  }
+});
 
 export default router;
