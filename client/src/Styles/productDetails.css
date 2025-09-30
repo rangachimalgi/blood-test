@@ -109,24 +109,26 @@
 }
 
 .confirm-button {
-  background-color: #0F3460; /* Blue background */
-  border: none; /* Remove default border */
-  color: white; /* White text */
+  background-color: #fbbf24; /* Yellowish background */
+  border: 2px solid transparent; /* Transparent border */
+  color: black; /* Black text */
   padding: 10px 20px; /* Padding */
   font-size: 16px; /* Font size */
   border-radius: 8px; /* Rounded corners */
   cursor: pointer; /* Pointer cursor on hover */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  box-shadow: 0 4px 6px rgba(245, 158, 11, 0.3); /* Slight shadow for depth */
   transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
 }
 
 .confirm-button:hover {
-  background-color: #0F3460; /* Darker blue on hover */
+  background-color: #f59e0b; /* Darker yellowish on hover */
+  color: black; /* Keep text black */
   transform: translateY(-2px); /* Slight lift on hover */
 }
 
 .confirm-button:active {
-  background-color: #0F3460; /* Even darker blue on click */
+  background-color: #f59e0b; /* Even darker yellowish on click */
+  color: black; /* Keep text black */
   transform: translateY(0); /* Remove lift on click */
 }
 
@@ -294,24 +296,26 @@
 }
 
 .confirm-button {
-  background-color: #0F3460; /* Blue background */
-  border: none; /* Remove default border */
-  color: white; /* White text */
+  background-color: #fbbf24; /* Yellowish background */
+  border: 2px solid transparent; /* Transparent border */
+  color: black; /* Black text */
   padding: 10px 20px; /* Padding */
   font-size: 16px; /* Font size */
   border-radius: 8px; /* Rounded corners */
   cursor: pointer; /* Pointer cursor on hover */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  box-shadow: 0 4px 6px rgba(245, 158, 11, 0.3); /* Slight shadow for depth */
   transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
 }
 
 .confirm-button:hover {
-  background-color: #0F3460; /* Darker blue on hover */
+  background-color: #f59e0b; /* Darker yellowish on hover */
+  color: black; /* Keep text black */
   transform: translateY(-2px); /* Slight lift on hover */
 }
 
 .confirm-button:active {
-  background-color: #0F3460; /* Even darker blue on click */
+  background-color: #f59e0b; /* Even darker yellowish on click */
+  color: black; /* Keep text black */
   transform: translateY(0); /* Remove lift on click */
 }
 
@@ -429,7 +433,7 @@
   font-size: 2.2rem;
   font-weight: 900;
   letter-spacing: -0.5px;
-  color: #0F3460;
+  color: black;
   margin-bottom: 0.5rem;
   white-space: nowrap;
   overflow: hidden;
@@ -449,14 +453,14 @@
   letter-spacing: 0.01em;
 }
 .product-details-price {
-  color: #0F3460;
+  color: black;
   font-size: 1.25rem;
   font-weight: 800;
   display: inline-block;
   letter-spacing: 0.01em;
 }
 .product-details-category {
-  color: #0F3460;
+  color: black;
   font-size: 1.08rem;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -464,14 +468,14 @@
 .product-details-shortdesc {
   font-size: 1.13rem;
   font-weight: 400;
-  color: #4a5a6a;
+  color: black;
   margin-bottom: 0.7rem;
   line-height: 1.6;
 }
 .product-details-add-btn {
-  background: #0F3460;
-  color: #fff;
-  border: none;
+  background: #fbbf24;
+  color: black;
+  border: 2px solid transparent;
   padding: 12px 32px;
   font-size: 1.08rem;
   font-weight: 700;
@@ -484,7 +488,8 @@
   letter-spacing: 0.01em;
 }
 .product-details-add-btn:hover, .product-details-add-btn:focus {
-  background: #2a5298;
+  background: #f59e0b;
+  color: black;
 }
 .product-details-add-btn ion-icon {
   font-size: 1.3rem;
@@ -497,7 +502,7 @@
 .included-tests-modern h2 {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #0F3460;
+  color: black;
   margin-bottom: 1.5rem;
   text-align: left;
 }
@@ -520,7 +525,7 @@
 .included-tests-category-title {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #0F3460;
+  color: black;
   margin: 0;
 }
 
@@ -536,7 +541,7 @@
 
 .included-tests-list li {
   font-size: 0.8rem;
-  color: #333;
+  color: black;
   margin-bottom: 0.3rem;
   padding-left: 1rem;
 }
@@ -563,20 +568,20 @@
   font-size: 1.08rem;
   font-weight: 700;
   letter-spacing: 0.01em;
-  color: #9c9b9b;
+  color: black;
   padding-bottom: 0.5rem;
   cursor: pointer;
   transition: color 0.2s, border-bottom 0.2s;
   border-bottom: 2px solid transparent;
 }
 .product-details-tablist li.active {
-  color: #0F3460;
-  border-bottom: 2px solid #0F3460;
+  color: black;
+  border-bottom: 2px solid black;
 }
 .product-details-desc {
   font-size: 1.13rem;
   font-weight: 400;
-  color: #4a5a6a;
+  color: black;
   line-height: 1.7;
 }
 /* Responsive */
@@ -725,7 +730,7 @@ body, .product-details-modern-card, .product-details-title, .product-details-met
 .why-book-title {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #0F3460;
+  color: black;
   text-align: left;
   margin-bottom: 1.5rem;
   margin-left: 0;
@@ -781,7 +786,7 @@ body, .product-details-modern-card, .product-details-title, .product-details-met
 .why-book-text {
   font-size: 0.8rem;
   font-weight: 600;
-  color: #0F3460;
+  color: black;
   line-height: 1.2;
   font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
@@ -923,7 +928,7 @@ body, .product-details-modern-card, .product-details-title, .product-details-met
 .precaution-title {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #0F3460;
+  color: black;
   margin: 0 0 0.5rem 0;
   font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
@@ -931,7 +936,7 @@ body, .product-details-modern-card, .product-details-title, .product-details-met
 .precaution-text {
   font-size: 1rem;
   font-weight: 400;
-  color: #4a5a6a;
+  color: black;
   margin: 0;
   line-height: 1.5;
   font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
@@ -994,7 +999,7 @@ body, .product-details-modern-card, .product-details-title, .product-details-met
 .how-it-works-title {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #0F3460;
+  color: black;
   margin-bottom: 2rem;
   text-align: left;
   font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
@@ -1040,7 +1045,7 @@ body, .product-details-modern-card, .product-details-title, .product-details-met
 .how-it-works-text {
   padding: 1.5rem;
   font-size: 1rem;
-  color: #333;
+  color: black;
   line-height: 1.6;
   margin: 0;
   font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
@@ -1106,7 +1111,7 @@ body, .product-details-modern-card, .product-details-title, .product-details-met
 .why-fortune-title {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #0F3460;
+  color: black;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   text-align: left;
@@ -1123,7 +1128,7 @@ body, .product-details-modern-card, .product-details-title, .product-details-met
 
 .why-fortune-text {
   font-size: 1rem;
-  color: #333;
+  color: black;
   line-height: 1.7;
   margin-bottom: 1.5rem;
   font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;

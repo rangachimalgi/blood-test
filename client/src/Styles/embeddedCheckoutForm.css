@@ -50,9 +50,9 @@
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
   font-weight: bold;
-  color: #000;
+  color: black;
   letter-spacing: 0;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid black;
   padding-bottom: 0.5rem;
   font-family: 'Times New Roman', serif;
 }
@@ -66,7 +66,7 @@
 }
 .form-label, .form-label label {
   font-weight: bold;
-  color: #000;
+  color: black;
   margin-bottom: 0.3rem;
   font-size: 1rem;
   font-family: 'Times New Roman', serif;
@@ -129,10 +129,10 @@
 
 .input-group .btn {
   border-radius: 0;
-  background: linear-gradient(90deg, #0F3460 0%, #2a5298 100%);
-  color: #fff;
+  background: #fbbf24;
+  color: black;
   font-weight: 600;
-  border: none;
+  border: 2px solid transparent;
   padding: 12px 22px;
   transition: background 0.2s, box-shadow 0.2s;
   white-space: nowrap;
@@ -140,26 +140,27 @@
 
 .embedded-checkout-form .input-group .btn {
   border-radius: 0;
-  background: linear-gradient(90deg, #0F3460 0%, #2a5298 100%);
-  color: #fff;
+  background: #fbbf24;
+  color: black;
   font-weight: 600;
-  border: none;
+  border: 2px solid transparent;
   padding: 12px 22px;
   transition: background 0.2s, box-shadow 0.2s;
   white-space: nowrap;
 }
 .input-group .btn:hover, .input-group .btn:focus {
-  background: linear-gradient(90deg, #2a5298 0%, #0F3460 100%);
-  box-shadow: 0 2px 8px rgba(15, 52, 96, 0.13);
+  background: #f59e0b;
+  color: black;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
 }
 
 .check-availability-btn,
 .btn-outline-secondary {
   border-radius: 0;
-  background: linear-gradient(90deg, #0F3460 0%, #2a5298 100%);
-  color: #fff;
+  background: #fbbf24;
+  color: black;
   font-weight: 600;
-  border: none;
+  border: 2px solid transparent;
   padding: 8px 16px;
   transition: background 0.2s, box-shadow 0.2s;
   white-space: nowrap;
@@ -171,16 +172,17 @@
 
 .check-availability-btn:hover, .check-availability-btn:focus,
 .btn-outline-secondary:hover, .btn-outline-secondary:focus {
-  background: linear-gradient(90deg, #2a5298 0%, #0F3460 100%);
-  box-shadow: 0 2px 8px rgba(15, 52, 96, 0.13);
+  background: #f59e0b;
+  color: black;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
 }
 .confirm-button {
   width: 100%;
   padding: 12px 0;
   border-radius: 0;
-  background: #000;
-  border: 1px solid #000;
-  color: white;
+  background: #fbbf24;
+  border: 2px solid transparent;
+  color: black;
   font-size: 16px;
   font-weight: bold;
   margin-top: 1.5rem;
@@ -192,7 +194,8 @@
   font-family: 'Times New Roman', serif;
 }
 .confirm-button:hover, .confirm-button:focus {
-  background: #333;
+  background: #f59e0b;
+  color: black;
 }
 .text-warning {
   color: #e74c3c !important;
@@ -226,7 +229,7 @@
   transform: translateY(-2px);
 }
 .beneficiary-title {
-  color: #0F3460;
+  color: black;
   font-size: 1.1rem;
   margin-bottom: 0.7rem;
   font-weight: 600;
@@ -269,7 +272,7 @@
   border-color: #3498db;
 }
 .custom-checkbox .form-check-label {
-  color: #2c3e50;
+  color: black;
   font-weight: 500;
   cursor: pointer;
 }

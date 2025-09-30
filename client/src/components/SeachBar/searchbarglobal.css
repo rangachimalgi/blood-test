@@ -12,21 +12,21 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    border: 2px solid rgba(74, 85, 104, 0.2);
+    border: 2px solid rgba(220, 38, 38, 0.3);
     outline: none;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navbar .search-container:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-    border-color: rgba(74, 85, 104, 0.4);
+    box-shadow: 0 8px 25px rgba(220, 38, 38, 0.15);
+    border-color: rgba(220, 38, 38, 0.5);
 }
 
 .navbar .search-container:focus-within {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    border-color: rgba(74, 85, 104, 0.6);
+    box-shadow: 0 8px 25px rgba(220, 38, 38, 0.2);
+    border-color: rgba(220, 38, 38, 0.7);
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 249, 250, 0.9));
 }
 

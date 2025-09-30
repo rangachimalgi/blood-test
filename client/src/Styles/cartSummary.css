@@ -19,7 +19,7 @@
 }
 
 .cart-summary-title {
-  color: #2c3e50;
+  color: black;
   font-size: 1.25rem;
   font-weight: 600;
   margin: 0;
@@ -109,12 +109,12 @@
 .cart-item-name {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #2c3e50;
+  color: black;
   margin-bottom: 0.25rem;
 }
 
 .cart-item-price {
-  color: #6c757d;
+  color: black;
   font-size: 0.85rem;
   margin-bottom: 0.5rem;
 }
@@ -146,28 +146,29 @@
   align-items: center;
   margin-bottom: 0.75rem;
   font-size: 1rem;
-  color: #2c3e50;
+  color: black;
 }
 
 .total-price .price {
   font-weight: 600;
-  color: #2ecc71;
+  color: black;
 }
 
 .add-more-button {
   width: 100%;
-  background-color: #0F3460;
-  border: none;
+  background-color: #fbbf24;
+  border: 2px solid transparent;
   padding: 0.6rem;
   border-radius: 8px;
-  color: white;
+  color: black;
   font-weight: 500;
   font-size: 0.9rem;
   transition: all 0.3s ease;
 }
 
 .add-more-button:hover {
-  background-color: #0a2647;
+  background-color: #f59e0b;
+  color: black;
   transform: translateY(-1px);
 }
 

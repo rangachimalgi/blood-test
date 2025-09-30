@@ -24,7 +24,7 @@
   border-radius: 12px;
   margin-bottom: 1rem;
 }
-
+  
 .product img {
   width: 100%;
   height: 100%;
@@ -51,13 +51,13 @@
   font-weight: 600;
   font-size: 1.1rem;
   cursor: pointer;
-  color: #0F3460;
+  color: black;
   line-height: 1.4;
 }
 
 .product-description {
   font-size: 0.9rem;
-  color: #666;
+  color: black;
   margin-bottom: 1rem;
   line-height: 1.6;
 }
@@ -75,13 +75,13 @@
   margin: 0;
   font-size: 1.25rem;
   font-weight: 700;
-  color: #0F3460;
+  color: black;
 }
 
 button.add.add-to-cart-full {
-  background: linear-gradient(45deg, #0F3460, #1a4980);
-  color: white;
-  border: none;
+  background: #fbbf24;
+  color: black;
+  border: 2px solid transparent;
   padding: 12px 24px;
   min-width: 120px;
   height: auto;
@@ -97,9 +97,10 @@ button.add.add-to-cart-full {
 }
 
 button.add.add-to-cart-full:hover {
-  background: linear-gradient(45deg, #1a4980, #0F3460);
+  background: #f59e0b;
+  color: black;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(15, 52, 96, 0.2);
+  box-shadow: 0 5px 15px rgba(245, 158, 11, 0.3);
 }
 
 button.add.add-to-cart-full::before {
@@ -294,9 +295,9 @@ button.add.add-to-cart-full::before {
 
 /* --- Modern Popular Tests Card Styles --- */
 .popular-test-card {
-  background: linear-gradient(135deg, #f6f9fc 60%, #e3eefe 100%);
-  border: 1.5px solid rgba(15, 52, 96, 0.07);
-  box-shadow: 0 6px 32px rgba(15, 52, 96, 0.10);
+  background: linear-gradient(135deg, #ffffff 60%, #fef2f2 100%);
+  border: 1px solid transparent;
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   position: relative;
   overflow: visible;
@@ -306,7 +307,7 @@ button.add.add-to-cart-full::before {
 }
 
 .popular-test-card:hover {
-  box-shadow: 0 12px 40px rgba(15, 52, 96, 0.18);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
   transform: translateY(-8px) scale(1.025);
 }
 
@@ -316,9 +317,9 @@ button.add.add-to-cart-full::before {
   left: 18px;
   z-index: 2;
   backdrop-filter: blur(8px);
-  background: rgba(255,255,255,0.3);
+  background: rgba(245, 158, 11, 0.1);
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(15, 52, 96, 0.10);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 0.3rem 1rem 0.3rem 0.8rem;
   display: flex;
   align-items: center;
@@ -327,7 +328,7 @@ button.add.add-to-cart-full::before {
 
 .popular-tests-badge .highlight {
   background: transparent;
-  color: #0F3460;
+  color: #f59e0b;
   padding: 0;
   border-radius: 0;
   box-shadow: none;
@@ -350,8 +351,8 @@ button.add.add-to-cart-full::before {
   overflow: hidden;
   border-radius: 16px;
   margin-bottom: 1.2rem;
-  background: linear-gradient(120deg, #e3eefe 0%, #f6f9fc 100%);
-  box-shadow: 0 2px 12px rgba(15, 52, 96, 0.07);
+  background: linear-gradient(120deg, #fef2f2 0%, #ffffff 100%);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
 
 .popular-test-card .product-image {
@@ -420,7 +421,7 @@ button.add.add-to-cart-full::before {
 .product-details h3 {
   font-size: 1.08rem;
   font-weight: 700;
-  color: #0F3460;
+  color: black;
   margin: 0 0 0.5rem 0;
   line-height: 1.3;
   cursor: pointer;
@@ -433,7 +434,7 @@ button.add.add-to-cart-full::before {
 
 .product-description {
   font-size: 0.93rem;
-  color: #4a5a6a;
+  color: black;
   margin-bottom: 0.7rem;
   line-height: 1.5;
   min-height: 38px;
@@ -451,13 +452,13 @@ button.add.add-to-cart-full::before {
 .product-price {
   font-size: 1.18rem;
   font-weight: 700;
-  color: #0F3460;
+  color: black;
 }
 
 .add-to-cart-modern {
-  background: linear-gradient(90deg, #0F3460 0%, #2a5298 100%);
-  color: #fff;
-  border: none;
+  background: #fbbf24;
+  color: black;
+  border: 2px solid transparent;
   border-radius: 22px;
   padding: 10px 22px;
   font-size: 0.98rem;
@@ -465,14 +466,16 @@ button.add.add-to-cart-full::before {
   display: flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 0 2px 8px rgba(15, 52, 96, 0.10);
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
   cursor: pointer;
   transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 
 .add-to-cart-modern:hover, .add-to-cart-modern:focus {
-  background: linear-gradient(90deg, #2a5298 0%, #0F3460 100%);
-  box-shadow: 0 4px 16px rgba(15, 52, 96, 0.18);
+  background: #f59e0b;
+  color: black;
+  border-color: transparent;
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.4);
   transform: translateY(-2px) scale(1.04);
 }
 

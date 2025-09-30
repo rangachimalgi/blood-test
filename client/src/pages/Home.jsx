@@ -179,8 +179,8 @@ const Home = () => {
             <h2
               style={{
                 fontSize: "2rem",
-                fontWeight: "700",
-                color: "#0F3460",
+                fontWeight: "800",
+                color: "#f87171",
                 marginBottom: "0.5rem",
               }}
             >
@@ -224,15 +224,15 @@ const Home = () => {
                   className="fas fa-clock"
                   style={{
                     fontSize: "1.5rem",
-                    color: "white",
+                    color: "#fbbf24",
                   }}
                 ></i>
               </div>
               <h3
                 style={{
                   fontSize: "1.1rem",
-                  fontWeight: "600",
-                  color: "#0F3460",
+                  fontWeight: "800",
+                  color: "#f87171",
                   marginBottom: "0.5rem",
                 }}
               >
@@ -241,7 +241,8 @@ const Home = () => {
               <p
                 style={{
                   fontSize: "0.9rem",
-                  color: "#666",
+                  fontWeight: "700",
+                  color: "#f87171",
                   lineHeight: "1.4",
                   margin: 0,
                 }}
@@ -268,15 +269,15 @@ const Home = () => {
                   className="fas fa-check-circle"
                   style={{
                     fontSize: "1.5rem",
-                    color: "white",
+                    color: "#fbbf24",
                   }}
                 ></i>
               </div>
               <h3
                 style={{
                   fontSize: "1.1rem",
-                  fontWeight: "600",
-                  color: "#0F3460",
+                  fontWeight: "800",
+                  color: "#f87171",
                   marginBottom: "0.5rem",
                 }}
               >
@@ -285,7 +286,8 @@ const Home = () => {
               <p
                 style={{
                   fontSize: "0.9rem",
-                  color: "#666",
+                  fontWeight: "700",
+                  color: "#f87171",
                   lineHeight: "1.4",
                   margin: 0,
                 }}
@@ -312,15 +314,15 @@ const Home = () => {
                   className="fas fa-rupee-sign"
                   style={{
                     fontSize: "1.5rem",
-                    color: "white",
+                    color: "#fbbf24",
                   }}
                 ></i>
               </div>
               <h3
                 style={{
                   fontSize: "1.1rem",
-                  fontWeight: "600",
-                  color: "#0F3460",
+                  fontWeight: "800",
+                  color: "#f87171",
                   marginBottom: "0.5rem",
                 }}
               >
@@ -329,7 +331,8 @@ const Home = () => {
               <p
                 style={{
                   fontSize: "0.9rem",
-                  color: "#666",
+                  fontWeight: "700",
+                  color: "#f87171",
                   lineHeight: "1.4",
                   margin: 0,
                 }}

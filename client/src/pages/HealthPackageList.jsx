@@ -123,7 +123,7 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
         <h2 style={{
           fontSize: "2.5rem",
           fontWeight: "700",
-          color: "#0F3460",
+          color: "#f87171",
           marginBottom: "1rem",
           textTransform: "none"
         }}>

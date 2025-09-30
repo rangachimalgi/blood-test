@@ -42,9 +42,9 @@
 /* Button styles specific to ShopList */
 .shop-list-book-button,
 .shop-list-add-to-cart-button {
-  background-color: #0F3460;
-  color: white;
-  border: none;
+  background-color: #fbbf24;
+  color: black;
+  border: 2px solid transparent;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
@@ -54,7 +54,8 @@
 
 .shop-list-book-button:hover,
 .shop-list-add-to-cart-button:hover {
-  background-color: #072a48;
+  background-color: #f59e0b;
+  color: black;
 }
 
 .shop-list-buttons {
@@ -94,9 +95,9 @@
 }
 
 .product-button {
-  background-color: #0F3460;  /* Match the Cart Summary button background */
-  border: none;  /* Remove border */
-  color: white;  /* White text color */
+  background-color: #fbbf24;  /* Yellowish background */
+  border: 2px solid transparent;  /* Transparent border */
+  color: black;  /* Black text color */
   padding: 10px 20px;  /* Padding */
   border-radius: 5px;  /* Border radius */
   cursor: pointer;
@@ -105,18 +106,22 @@
 }
 
 .product-button:hover {
-  background-color: #072a48;  /* Darker shade on hover */
-  color: white;  /* Keep the text color white */
+  background-color: #f59e0b;  /* Darker yellowish on hover */
+  color: black;  /* Keep the text color black */
 }
 
 /* Specific styles for the Book Now button */
 .book-now {
-  background-color: #0F3460;
+  background-color: #fbbf24;
+  border: 2px solid transparent;
+  color: black;
 }
 
 /* Specific styles for the Add To Cart button */
 .add-to-cart {
-  background-color: #0F3460;
+  background-color: #fbbf24;
+  border: 2px solid transparent;
+  color: black;
 }
 
 /* Mobile view adjustments */
@@ -384,7 +389,7 @@
 }
 .shop-list-simple-name {
   flex: 2 1 0;
-  color: #0F3460;
+  color: black;
   font-size: 1.13rem;
   font-weight: 700;
   margin-right: 1.2rem;
@@ -395,7 +400,7 @@
 }
 .shop-list-simple-price {
   flex: 0 0 110px;
-  color: #2a5298;
+  color: black;
   font-size: 1.08rem;
   font-weight: 600;
   text-align: right;
@@ -407,9 +412,9 @@
 }
 .shop-list-book-button,
 .shop-list-add-to-cart-button {
-  background: linear-gradient(90deg, #0F3460 0%, #2a5298 100%);
-  color: white;
-  border: none;
+  background: #fbbf24;
+  color: black;
+  border: 2px solid transparent;
   padding: 8px 18px;
   border-radius: 22px;
   cursor: pointer;
@@ -419,8 +424,9 @@
 }
 .shop-list-book-button:hover, .shop-list-add-to-cart-button:hover,
 .shop-list-book-button:focus, .shop-list-add-to-cart-button:focus {
-  background: linear-gradient(90deg, #2a5298 0%, #0F3460 100%);
-  box-shadow: 0 4px 16px rgba(15, 52, 96, 0.13);
+  background: #f59e0b;
+  color: black;
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.3);
   transform: translateY(-1px) scale(1.03);
 }
 @media (max-width: 768px) {
