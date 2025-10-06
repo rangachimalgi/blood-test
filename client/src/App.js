@@ -105,7 +105,7 @@ function App() {
 
   // Function to fetch packages with caching - memoized to prevent recreation
   const fetchPackages = useCallback(async () => {
-d    console.log('🔍 fetchPackages called - cachedPackages.length:', cachedPackages.length);
+    console.log('🔍 fetchPackages called - cachedPackages.length:', cachedPackages.length);
     
     if (cachedPackages.length > 0) {
       console.log('📦 Using cached packages:', cachedPackages.length);
