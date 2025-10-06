@@ -111,7 +111,7 @@ const NavBar = () => {
           </Navbar.Toggle>
         </div>
         <ProductSearchBar setFilterList={setGlobalFilterList} />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" className="navbar-collapse">
           <Nav className="justify-content-end flex-grow-1 pe-3">
             <Nav.Item>
               <Link
