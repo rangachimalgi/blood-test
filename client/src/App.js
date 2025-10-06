@@ -113,9 +113,9 @@ function App() {
     const startTime = performance.now();
     
     try {
-      // Add timeout to prevent hanging requests
+      // Add timeout to prevent hanging requests - increased for mobile
       const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/packages`, {
-        timeout: 5000 // 5 second timeout
+        timeout: 15000 // 15 second timeout for mobile devices
       });
       setCachedPackages(res.data);
       setPackagesLoading(false);
@@ -126,6 +126,12 @@ function App() {
       return res.data;
     } catch (err) {
       console.error("Failed to fetch packages:", err);
+      console.error("Error details:", {
+        message: err.message,
+        code: err.code,
+        response: err.response?.status,
+        isMobile: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+      });
       setPackagesLoading(false);
       return [];
     }
@@ -141,9 +147,9 @@ function App() {
     const startTime = performance.now();
     
     try {
-      // Add timeout to prevent hanging requests
+      // Add timeout to prevent hanging requests - increased for mobile
       const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/tests`, {
-        timeout: 5000 // 5 second timeout
+        timeout: 15000 // 15 second timeout for mobile devices
       });
       setCachedTests(res.data);
       setTestsLoading(false);
@@ -154,6 +160,12 @@ function App() {
       return res.data;
     } catch (err) {
       console.error("Failed to fetch tests:", err);
+      console.error("Error details:", {
+        message: err.message,
+        code: err.code,
+        response: err.response?.status,
+        isMobile: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+      });
       setTestsLoading(false);
       return [];
     }
