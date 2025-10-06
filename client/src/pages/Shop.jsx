@@ -50,7 +50,7 @@ const Shop = () => {
 
     loadProducts();
     window.scrollTo(0, 0);
-  }, [cachedTests.length, fetchTests]); // Only depend on length to prevent infinite loops
+  }, [cachedTests.length]); // Removed fetchTests dependency to prevent infinite loops
 
   const handleBookNow = () => navigate("/cart");
 

@@ -113,8 +113,16 @@ function App() {
     const startTime = performance.now();
     
     try {
+      // Check if API URL is available
+      const apiUrl = process.env.REACT_APP_API_URL;
+      if (!apiUrl) {
+        console.error("REACT_APP_API_URL is not defined");
+        setPackagesLoading(false);
+        return [];
+      }
+      
       // Add timeout to prevent hanging requests - increased for mobile
-      const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/packages`, {
+      const res = await axios.get(`${apiUrl}/api/packages`, {
         timeout: 15000 // 15 second timeout for mobile devices
       });
       setCachedPackages(res.data);
@@ -130,6 +138,7 @@ function App() {
         message: err.message,
         code: err.code,
         response: err.response?.status,
+        apiUrl: process.env.REACT_APP_API_URL,
         isMobile: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
       });
       setPackagesLoading(false);
@@ -147,8 +156,16 @@ function App() {
     const startTime = performance.now();
     
     try {
+      // Check if API URL is available
+      const apiUrl = process.env.REACT_APP_API_URL;
+      if (!apiUrl) {
+        console.error("REACT_APP_API_URL is not defined");
+        setTestsLoading(false);
+        return [];
+      }
+      
       // Add timeout to prevent hanging requests - increased for mobile
-      const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/tests`, {
+      const res = await axios.get(`${apiUrl}/api/tests`, {
         timeout: 15000 // 15 second timeout for mobile devices
       });
       setCachedTests(res.data);
@@ -164,6 +181,7 @@ function App() {
         message: err.message,
         code: err.code,
         response: err.response?.status,
+        apiUrl: process.env.REACT_APP_API_URL,
         isMobile: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
       });
       setTestsLoading(false);

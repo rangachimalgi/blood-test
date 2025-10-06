@@ -57,7 +57,7 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
     };
 
     loadPackages();
-  }, [useLocalData]); // Removed problematic dependencies that cause re-fetching
+  }, [useLocalData, cachedPackages.length, packagesLoading]); // Fixed dependencies
 
   // Separate effect to update packages when cache changes, but don't trigger loading
   useEffect(() => {
@@ -149,7 +149,7 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
             <div className="package-image-container">
               <Link to={`/health/${pkg.id}`} className="package-link">
                 <img
-                  src={pkg.imgUrl ? `/Images/${pkg.imgUrl}` : defaultPackageImage}
+                  src={pkg.imgUrl ? `${process.env.PUBLIC_URL}/Images/${pkg.imgUrl}` : defaultPackageImage}
                   alt={pkg.productName}
                   className="package-image"
                   loading="lazy"
