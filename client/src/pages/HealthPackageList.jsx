@@ -113,7 +113,7 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
   }
 
   return (
-    <div className={`packages-list ${isStandalonePage ? 'packages-page' : ''}`}>
+    <div className={`packages-list ${isStandalonePage ? 'packages-page' : ''}`} style={{ marginTop: window.innerWidth <= 768 ? '180px' : '140px' }}>
       <ToastContainer />
       <div className="section-header" style={{ 
         textAlign: "center", 

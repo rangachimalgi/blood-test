@@ -84,7 +84,7 @@ const Shop = () => {
 
   return (
     <Fragment>
-      <section className="filter-bar">
+      <section className="filter-bar" style={{ marginTop: window.innerWidth <= 768 ? '180px' : '140px' }}>
         <Container className="filter-bar-container">
           <Row className="justify-content-center">
             <Col md={12}>
