@@ -105,31 +105,41 @@ function App() {
 
   // Function to fetch packages with caching - memoized to prevent recreation
   const fetchPackages = useCallback(async () => {
+d    console.log('🔍 fetchPackages called - cachedPackages.length:', cachedPackages.length);
+    
     if (cachedPackages.length > 0) {
+      console.log('📦 Using cached packages:', cachedPackages.length);
       return cachedPackages; // Return cached data if available
     }
     
+    console.log('🌐 Fetching packages from API...');
     setPackagesLoading(true);
     const startTime = performance.now();
     
     try {
+      const apiUrl = `${process.env.REACT_APP_API_URL}/api/packages`;
+      console.log('🚀 Making request to:', apiUrl);
+      
       // Add timeout to prevent hanging requests - increased for mobile
-      const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/packages`, {
+      const res = await axios.get(apiUrl, {
         timeout: 15000 // 15 second timeout for mobile devices
       });
+      
+      console.log('✅ Packages response received:', res.data?.length || 0, 'items');
       setCachedPackages(res.data);
       setPackagesLoading(false);
       
       const endTime = performance.now();
-      console.log(`Packages loaded in ${(endTime - startTime).toFixed(2)}ms`);
+      console.log(`📊 Packages loaded in ${(endTime - startTime).toFixed(2)}ms`);
       
       return res.data;
     } catch (err) {
-      console.error("Failed to fetch packages:", err);
+      console.error("❌ Failed to fetch packages:", err);
       console.error("Error details:", {
         message: err.message,
         code: err.code,
         response: err.response?.status,
+        apiUrl: process.env.REACT_APP_API_URL,
         isMobile: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
       });
       setPackagesLoading(false);
@@ -139,31 +149,41 @@ function App() {
 
   // Function to fetch tests with caching - memoized to prevent recreation
   const fetchTests = useCallback(async () => {
+    console.log('🔍 fetchTests called - cachedTests.length:', cachedTests.length);
+    
     if (cachedTests.length > 0) {
+      console.log('🧪 Using cached tests:', cachedTests.length);
       return cachedTests; // Return cached data if available
     }
     
+    console.log('🌐 Fetching tests from API...');
     setTestsLoading(true);
     const startTime = performance.now();
     
     try {
+      const apiUrl = `${process.env.REACT_APP_API_URL}/api/tests`;
+      console.log('🚀 Making request to:', apiUrl);
+      
       // Add timeout to prevent hanging requests - increased for mobile
-      const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/tests`, {
+      const res = await axios.get(apiUrl, {
         timeout: 15000 // 15 second timeout for mobile devices
       });
+      
+      console.log('✅ Tests response received:', res.data?.length || 0, 'items');
       setCachedTests(res.data);
       setTestsLoading(false);
       
       const endTime = performance.now();
-      console.log(`Tests loaded in ${(endTime - startTime).toFixed(2)}ms`);
+      console.log(`📊 Tests loaded in ${(endTime - startTime).toFixed(2)}ms`);
       
       return res.data;
     } catch (err) {
-      console.error("Failed to fetch tests:", err);
+      console.error("❌ Failed to fetch tests:", err);
       console.error("Error details:", {
         message: err.message,
         code: err.code,
         response: err.response?.status,
+        apiUrl: process.env.REACT_APP_API_URL,
         isMobile: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
       });
       setTestsLoading(false);
@@ -178,6 +198,11 @@ function App() {
   useEffect(() => {
     // Preload packages and tests data in background
     console.log('App starting - preloading data...');
+    console.log('Environment check:', {
+      NODE_ENV: process.env.NODE_ENV,
+      REACT_APP_API_URL: process.env.REACT_APP_API_URL,
+      currentURL: window.location.href
+    });
     fetchPackages();
     fetchTests();
   }, []); // Only run once on app start
