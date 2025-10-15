@@ -129,14 +129,16 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     opacity: 0;
     transform: translateY(-10px) scale(0.95);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    pointer-events: none;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: auto;
+    display: none;
 }
 
-.search-container:focus-within .search-dropdown {
+.search-dropdown:has(.search-result-item),
+.search-dropdown:has(.search-no-results) {
+    display: block;
     opacity: 1;
     transform: translateY(0) scale(1);
-    pointer-events: auto;
 }
 
 .search-result-item {

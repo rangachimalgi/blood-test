@@ -114,6 +114,15 @@ const ProductSearchBar = () => {
 
     // Combine and limit results
     const combinedResults = [...filteredProducts, ...filteredPackages].slice(0, 10);
+    
+    console.log('🔍 Search results:', {
+      term,
+      products: filteredProducts.length,
+      packages: filteredPackages.length,
+      total: combinedResults.length,
+      results: combinedResults.map(r => ({ id: r.id, type: r.type, name: r.productName || r.name }))
+    });
+    
     setSearchResults(combinedResults);
   };
 
@@ -133,6 +142,9 @@ const ProductSearchBar = () => {
   };
 
   const handleProductClick = (item) => {
+    console.log('🔍 Search item clicked:', item);
+    console.log('📍 Navigating to:', item.type === "package" ? `/health/${item.id}` : `/shop/${item.id}`);
+    
     if (item.type === "package") {
       navigate(`/health/${item.id}`);
     } else if (item.type === "product") {
