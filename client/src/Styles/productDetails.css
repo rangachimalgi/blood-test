@@ -435,9 +435,9 @@
   letter-spacing: -0.5px;
   color: black;
   margin-bottom: 0.5rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.3;
 }
 
 .product-details-info-full {
