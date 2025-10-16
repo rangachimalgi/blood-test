@@ -11,9 +11,10 @@
 
 .packages-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 20px;
   margin-top: 2rem;
+  max-width: 100%;
 }
 
 .package-card {
@@ -88,7 +89,7 @@
 .package-image-container {
   position: relative;
   width: 100%;
-  height: 170px;
+  height: 220px;
   overflow: hidden;
 }
 
@@ -111,10 +112,10 @@
   height: 100%;
   background: linear-gradient(
     to bottom,
-    rgba(220, 38, 38, 0.9),
-    rgba(185, 28, 28, 0.85)
+    rgba(255, 255, 255, 0.95),
+    rgba(248, 248, 248, 0.9)
   );
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -133,12 +134,12 @@
 
 .hover-overlay h2 {
   font-size: 10px;
-  font-weight: 700;
+  font-weight: 900;
   margin: 0;
   padding: 2px 0;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   text-transform: uppercase;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
   transform: translateY(-10px);
   transition: transform 0.3s ease;
 }
@@ -161,14 +162,14 @@
 }
 
 .hover-overlay li {
-  font-size: 8px;
-  font-weight: 600;
+  font-size: 9px;
+  font-weight: 900;
   text-align: left;
-  padding: 1px 2px;
+  padding: 2px 4px;
   background: none;
   border-radius: 0;
   margin: 0;
-  line-height: 1.1;
+  line-height: 1.3;
   opacity: 0;
   transform: translateY(10px);
   transition: all 0.3s ease;
@@ -195,7 +196,7 @@
 }
 
 .package-name {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: #f59e0b;
   margin-bottom: 0.3rem;
@@ -203,7 +204,7 @@
 }
 
 .package-desc {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: #374151;
   line-height: 1.4;
 }
