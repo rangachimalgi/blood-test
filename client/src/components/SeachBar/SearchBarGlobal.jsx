@@ -172,13 +172,15 @@ const ProductSearchBar = () => {
         value={inputValue}
         onChange={handleChange}
         disabled={isLoading}
+        aria-label="Search for tests and health packages"
+        role="searchbox"
       />
       {isLoading && (
         <div className="search-loading">
-          <ion-icon name="reload-outline" class="search-icon loading"></ion-icon>
+          <ion-icon name="reload-outline" class="search-icon loading" aria-hidden="true"></ion-icon>
         </div>
       )}
-      <div className="search-dropdown">
+      <div className="search-dropdown" role="listbox" aria-label="Search results">
         {inputValue && hasSearched && (
           <>
             {searchResults.length > 0 ? (
@@ -187,13 +189,22 @@ const ProductSearchBar = () => {
                   key={`${item.type}-${item.id}`} 
                   className="search-result-item"
                   onClick={() => handleProductClick(item)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      handleProductClick(item);
+                    }
+                  }}
+                  tabIndex={0}
+                  role="option"
+                  aria-label={`${getDisplayName(item)} - ${getDisplayType(item)}`}
                 >
                   <div className="search-result-name">{getDisplayName(item)}</div>
                   <div className="search-result-type">{getDisplayType(item)}</div>
                 </div>
               ))
             ) : (
-              <div className="search-no-results">
+              <div className="search-no-results" role="status">
                 No results found for "{inputValue}"
               </div>
             )}

@@ -31,8 +31,10 @@ const Footer = () => {
               type="email"
               placeholder="Your email address"
               className="footer-newsletter-input"
+              aria-label="Enter your email address"
+              required
             />
-            <button className="footer-newsletter-btn" type="submit">
+            <button className="footer-newsletter-btn" type="submit" aria-label="Submit enquiry">
               Enquire
             </button>
           </form>

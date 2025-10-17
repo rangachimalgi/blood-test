@@ -180,7 +180,7 @@ const Home = () => {
               style={{
                 fontSize: "2rem",
                 fontWeight: "800",
-                color: "#f87171",
+                color: "#dc2626",
                 marginBottom: "0.5rem",
               }}
             >
@@ -219,6 +219,7 @@ const Home = () => {
                   alignItems: "center",
                   justifyContent: "center",
                 }}
+                aria-hidden="true"
               >
                 <i
                   className="fas fa-clock"
@@ -226,13 +227,14 @@ const Home = () => {
                     fontSize: "1.5rem",
                     color: "black",
                   }}
+                  aria-hidden="true"
                 ></i>
               </div>
               <h3
                 style={{
                   fontSize: "1.1rem",
                   fontWeight: "800",
-                  color: "#f87171",
+                  color: "#dc2626",
                   marginBottom: "0.5rem",
                 }}
               >
@@ -242,7 +244,7 @@ const Home = () => {
                 style={{
                   fontSize: "0.9rem",
                   fontWeight: "700",
-                  color: "#f87171",
+                  color: "#dc2626",
                   lineHeight: "1.4",
                   margin: 0,
                 }}
@@ -264,6 +266,7 @@ const Home = () => {
                   alignItems: "center",
                   justifyContent: "center",
                 }}
+                aria-hidden="true"
               >
                 <i
                   className="fas fa-check-circle"
@@ -271,13 +274,14 @@ const Home = () => {
                     fontSize: "1.5rem",
                     color: "black",
                   }}
+                  aria-hidden="true"
                 ></i>
               </div>
               <h3
                 style={{
                   fontSize: "1.1rem",
                   fontWeight: "800",
-                  color: "#f87171",
+                  color: "#dc2626",
                   marginBottom: "0.5rem",
                 }}
               >
@@ -287,7 +291,7 @@ const Home = () => {
                 style={{
                   fontSize: "0.9rem",
                   fontWeight: "700",
-                  color: "#f87171",
+                  color: "#dc2626",
                   lineHeight: "1.4",
                   margin: 0,
                 }}
@@ -309,6 +313,7 @@ const Home = () => {
                   alignItems: "center",
                   justifyContent: "center",
                 }}
+                aria-hidden="true"
               >
                 <i
                   className="fas fa-rupee-sign"
@@ -316,13 +321,14 @@ const Home = () => {
                     fontSize: "1.5rem",
                     color: "black",
                   }}
+                  aria-hidden="true"
                 ></i>
               </div>
               <h3
                 style={{
                   fontSize: "1.1rem",
                   fontWeight: "800",
-                  color: "#f87171",
+                  color: "#dc2626",
                   marginBottom: "0.5rem",
                 }}
               >
@@ -332,7 +338,7 @@ const Home = () => {
                 style={{
                   fontSize: "0.9rem",
                   fontWeight: "700",
-                  color: "#f87171",
+                  color: "#dc2626",
                   lineHeight: "1.4",
                   margin: 0,
                 }}

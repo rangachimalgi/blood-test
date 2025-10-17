@@ -145,12 +145,23 @@ const Product = ({
               onClick={increment}
               type="button"
             >
-              <ion-icon name="heart-outline"></ion-icon>
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
               <span className="like-count">{count}</span>
             </button>
           )}
           <div className="product-details">
-            <h3 onClick={handleClick} tabIndex={0} aria-label={productItem.productName}>
+            <h3 
+              onClick={handleClick}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  handleClick();
+                }
+              }}
+              tabIndex={0}
+              role="button"
+              aria-label={`View details for ${productItem.productName}`}
+            >
               {productItem.productName}
             </h3>
             {desc && <p className="product-description">{desc}</p>}
@@ -158,12 +169,12 @@ const Product = ({
               <span className="product-price">₹{productItem.price}</span>
               {isPopularTest && (
                 <button
-                  aria-label="Add to Cart"
+                  aria-label={`Add ${productItem.productName} to cart`}
                   type="button"
                   className="add add-to-cart-modern"
                   onClick={handleAddToCart}
                 >
-                  <ion-icon name="cart-outline"></ion-icon>
+                  <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
                   <span>Add to Cart</span>
                 </button>
               )}

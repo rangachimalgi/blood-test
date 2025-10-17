@@ -123,7 +123,7 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
         <h2 style={{
           fontSize: "2.5rem",
           fontWeight: "700",
-          color: "#f87171",
+          color: "#dc2626",
           marginBottom: "1rem",
           textTransform: "none"
         }}>
@@ -195,6 +195,7 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
               <button
                 className="book-now-button"
                 onClick={() => handleBookNow(pkg)}
+                aria-label={`Book ${pkg.productName} now`}
               >
                 Book Now
               </button>
@@ -202,19 +203,19 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
 
             <div className="extra-details-with-logo">
               <div className="logo-container">
-                <img src={logo} alt="Logo" className="package-logo" />
+                <img src={logo} alt="Fortune Blood Test Logo" className="package-logo" />
               </div>
               <div className="extra-details">
                 <ul>
                   <li>
-                    <i className="fa fa-check-circle"></i> NABL, CAP, ISO 9001
+                    <i className="fa fa-check-circle" aria-hidden="true"></i> NABL, CAP, ISO 9001
                   </li>
                   <li>
-                    <i className="fa fa-check-circle"></i> Free Home Sample
+                    <i className="fa fa-check-circle" aria-hidden="true"></i> Free Home Sample
                     Pickup
                   </li>
                   <li>
-                    <i className="fa fa-check-circle"></i> Online Report
+                    <i className="fa fa-check-circle" aria-hidden="true"></i> Online Report
                     Delivery
                   </li>
                 </ul>

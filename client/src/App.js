@@ -1,4 +1,4 @@
-import { useState, createContext, useEffect, useCallback, lazy, Suspense } from "react";
+import { useState, createContext, useEffect, useRef, useCallback, lazy, Suspense } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route, useParams, useLocation } from "react-router-dom";
 import axios from "axios";
@@ -47,9 +47,22 @@ export const DataContainer = createContext();
 const PageWrapper = ({ children }) => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
+  const mainContentRef = useRef(null);
+  
+  useEffect(() => {
+    // Move focus to main content on route change for accessibility (WCAG 2.4.3)
+    if (mainContentRef.current) {
+      mainContentRef.current.focus();
+    }
+  }, [location.pathname]);
   
   return (
-    <div className={`page-content ${isHomePage ? 'home-page' : 'other-page'}`}>
+    <div 
+      ref={mainContentRef}
+      tabIndex={-1}
+      className={`page-content ${isHomePage ? 'home-page' : 'other-page'}`}
+      aria-label="Main content"
+    >
       {children}
     </div>
   );
@@ -241,7 +254,7 @@ function App() {
           />
           <NavBar />
           <PageWrapper>
-            <main className="main-content">
+            <main className="main-content" role="main">
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route

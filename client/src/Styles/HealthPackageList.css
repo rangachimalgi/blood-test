@@ -45,17 +45,23 @@
 
 /* Remove hover line effects from package list elements */
 .package-link:hover,
-.package-link:focus,
 .package-link:active,
 .package-name:hover,
-.package-name:focus,
 .package-name:active,
 .package-desc:hover,
-.package-desc:focus,
 .package-desc:active {
   text-decoration: none !important;
   border-bottom: none !important;
-  outline: none !important;
+}
+
+/* Accessible focus styles */
+.package-link:focus,
+.package-name:focus,
+.package-desc:focus {
+  outline: 2px solid #dc2626 !important;
+  outline-offset: 2px !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
 }
 
 /* Remove any pseudo-elements that might create lines */
@@ -70,20 +76,24 @@
 
 /* Remove hover effects from all package card elements */
 .package-card *:hover,
-.package-card *:focus,
 .package-card *:active {
   text-decoration: none !important;
   border-bottom: none !important;
-  outline: none !important;
+}
+
+/* Accessible focus for package card elements */
+.package-card button:focus,
+.package-card a:focus {
+  outline: 2px solid #dc2626 !important;
+  outline-offset: 2px !important;
+  text-decoration: none !important;
 }
 
 /* Remove any global link hover effects within package cards */
 .package-card a:hover,
-.package-card a:focus,
 .package-card a:active {
   text-decoration: none !important;
   border-bottom: none !important;
-  outline: none !important;
 }
 
 .package-image-container {
@@ -256,6 +266,11 @@
   border-color: transparent;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(245, 158, 11, 0.4);
+}
+
+.book-now-button:focus {
+  outline: 3px solid #3b82f6;
+  outline-offset: 3px;
 }
 
 .extra-details-with-logo {
