@@ -212,7 +212,7 @@ const NavBar = () => {
 
             {/* Here's the dropdown addition */}
             {isLoggedIn && (
-              <Dropdown alignRight>
+              <Dropdown align="start">
                 <Dropdown.Toggle
                   variant="link"
                   className="navbar-link"

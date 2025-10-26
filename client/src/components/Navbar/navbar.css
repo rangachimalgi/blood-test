@@ -259,7 +259,7 @@
 
 .navbar-brand img {
   height: 80px;
-  width: auto;
+  width: 120px;
   transition: all 0.3s ease;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
@@ -655,6 +655,9 @@
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(15, 52, 96, 0.1) !important;
+  right: 0 !important;
+  left: auto !important;
+  transform: none !important;
 }
 
 .dropdown-item {
