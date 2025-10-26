@@ -92,7 +92,7 @@
 /* Slide content styling */
 .slide-content {
   flex: 0 0 55%;
-  color: #f87171;
+  color: #dc2626;
   max-width: 600px;
   text-align: right;
   z-index: 3;
@@ -104,7 +104,7 @@
   margin-bottom: 1rem;
   line-height: 1.2;
   text-align: right;
-  color: #f87171;
+  color: #dc2626;
   opacity: 0;
   transform: translateY(20px);
   animation: slideUp 0.8s forwards;
@@ -119,13 +119,13 @@
 }
 
 .health-category-link {
-  background: rgba(248, 113, 113, 0.1);
-  color: #f87171;
+  background: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 700;
-  border: 1px solid rgba(248, 113, 113, 0.2);
+  border: 1px solid rgba(220, 38, 38, 0.2);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   text-decoration: none;
@@ -134,16 +134,16 @@
 }
 
 .health-category-link:hover {
-  background: rgba(248, 113, 113, 0.2);
+  background: rgba(220, 38, 38, 0.2);
   transform: translateY(-2px);
-  color: #f87171;
+  color: #dc2626;
   text-decoration: none;
 }
 
 .slide-description {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #f87171;
+  color: #dc2626;
   margin-bottom: 2rem;
   opacity: 0;
   transform: translateY(20px);
