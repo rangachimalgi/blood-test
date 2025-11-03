@@ -4,6 +4,7 @@ import path, { dirname } from "path";
 import multer from "multer";
 import bodyParser from "body-parser";
 import { fileURLToPath } from "url";
+import { existsSync } from "fs";
 import connectDB from "./config/db.js";
 import cors from "cors";
 import authRoutes from "./routes/authRoutes.js";
@@ -15,6 +16,16 @@ import Package from "./models/Package.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+
+// Check if build folder exists
+const buildPath = path.join(__dirname, "client", "build");
+if (!existsSync(buildPath)) {
+  console.warn("⚠️  WARNING: client/build folder not found!");
+  console.warn("   Make sure to run 'npm run build' before starting the server.");
+  console.warn("   For Render deployment, set Build Command to: npm run build");
+} else {
+  console.log("✅ Client build folder found");
+}
 
 const storage = multer.memoryStorage(); // This stores the file in memory as buffer
 const upload = multer({ storage: storage });
