@@ -8,7 +8,7 @@ import connectDB from "./config/db.js";
 import cors from "cors";
 import authRoutes from "./routes/authRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
-import "./keepAlive.js";
+import { startKeepAlive } from "./keepAlive.js";
 import testRoutes from "./routes/testRoutes.js";
 import packageRoutes from "./routes/packageRoutes.js";
 import Package from "./models/Package.js";
@@ -85,4 +85,7 @@ const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
+  // Start keepAlive after server is listening to prevent Render free tier from spinning down
+  // This runs AFTER server starts, so it won't block deployment
+  startKeepAlive();
 });
