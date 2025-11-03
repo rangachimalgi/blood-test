@@ -11,6 +11,7 @@ import orderRoutes from "./routes/orderRoutes.js";
 import "./keepAlive.js";
 import testRoutes from "./routes/testRoutes.js";
 import packageRoutes from "./routes/packageRoutes.js";
+import thyrocareRoutes from "./routes/thyrocareRoutes.js";
 import Package from "./models/Package.js";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -68,6 +69,7 @@ app.use(
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 app.use("/api/tests", testRoutes);
 app.use("/api/packages", packageRoutes);
+app.use("/api/thyrocare", thyrocareRoutes);
 app.delete("/api/packages/clear", async (req, res) => {
   await Package.deleteMany({});
   res.send("Cleared all packages");

@@ -65,8 +65,16 @@ const Product = ({
     setSelectedPackage(null);
   };
 
-  const extractNumberOfTests = (productName) => {
-    const match = productName.match(/\((\d+)\s*Tests\)/i);
+  const extractNumberOfTests = (productItem) => {
+    // If it's a package with includedTests, calculate total from all categories
+    if (productItem.includedTests && productItem.includedTests.length > 0) {
+      const totalTests = productItem.includedTests.reduce((sum, category) => {
+        return sum + (category.tests?.length || 0);
+      }, 0);
+      return totalTests > 0 ? totalTests.toString() : "";
+    }
+    // Fallback: try to extract from productName if includedTests not available
+    const match = productItem.productName?.match(/\((\d+)\s*Tests\)/i);
     return match ? match[1] : "";
   };
 
@@ -114,8 +122,8 @@ const Product = ({
         >
           {/* Glassy floating badge for number of tests */}
           {isPopularTest && (
-            <div className="popular-tests-badge" aria-label={`${extractNumberOfTests(productItem.productName)} tests`}>
-              <Highlight number={extractNumberOfTests(productItem.productName)} />
+            <div className="popular-tests-badge" aria-label={`${extractNumberOfTests(productItem)} tests`}>
+              <Highlight number={extractNumberOfTests(productItem)} />
             </div>
           )}
           <div className="product-image-container">

@@ -62,7 +62,11 @@ const HealthPackageDetails = () => {
             <div className="product-details-modern-card">
               <section>
                 <div className="product-details-info-full">
-                  <h2 className="product-details-title">{selectedProduct?.productName}</h2>
+                  <h2 className="product-details-title">
+                    {selectedProduct?.productName?.split(' ').map(word => 
+                      word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+                    ).join(' ') || selectedProduct?.productName}
+                  </h2>
                   <div className="product-details-meta">
                     <span className="product-details-mrp">₹{selectedProduct?.mrp}</span>
                     <span className="product-details-price">₹{selectedProduct?.price}</span>
@@ -159,7 +163,13 @@ const HealthPackageDetails = () => {
                         }}
                       >
                         <h4 className="included-tests-category-title">
-                          {category.categoryName.charAt(0).toUpperCase() + category.categoryName.slice(1).toLowerCase()}
+                          {category.categoryName?.replace(/\b(includes|tests?)\b/gi, (match) => {
+                            // Capitalize "Includes" and "Tests" properly
+                            if (match.toLowerCase() === 'includes') return 'Includes';
+                            if (match.toLowerCase() === 'test') return 'Test';
+                            if (match.toLowerCase() === 'tests') return 'Tests';
+                            return match;
+                          }) || category.categoryName}
                         </h4>
                         <ion-icon 
                           name={openCategoryId === category.categoryName ? 'chevron-up-outline' : 'chevron-down-outline'}

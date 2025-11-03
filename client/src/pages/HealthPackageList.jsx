@@ -89,9 +89,17 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
     ? allPackages.filter((pkg) => packageIds.includes(pkg.id))
     : allPackages;
 
-  // Extract the number before the word "Tests"
-  const extractNumberOfTests = (productName) => {
-    const match = productName.match(/(\d+)\s*Tests/i);
+  // Calculate total number of tests from includedTests array
+  const extractNumberOfTests = (pkg) => {
+    // If package has includedTests, sum all tests from all categories
+    if (pkg.includedTests && pkg.includedTests.length > 0) {
+      const totalTests = pkg.includedTests.reduce((sum, category) => {
+        return sum + (category.tests?.length || 0);
+      }, 0);
+      return totalTests > 0 ? totalTests.toString() : "";
+    }
+    // Fallback: try to extract from productName if includedTests not available
+    const match = pkg.productName?.match(/(\d+)\s*Tests/i);
     return match ? match[1] : "";
   };
 
@@ -145,7 +153,7 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
       <div className="packages-grid">
         {displayedPackages.map((pkg) => (
           <div key={pkg.id} className="package-card">
-            <Highlight number={extractNumberOfTests(pkg.productName)} />
+            <Highlight number={extractNumberOfTests(pkg)} />
             <div className="package-image-container">
               <Link to={`/health/${pkg.id}`} className="package-link">
                 <img
