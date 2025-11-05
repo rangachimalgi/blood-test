@@ -175,6 +175,12 @@ const ProductSearchBar = () => {
         aria-label="Search for tests and health packages"
         role="searchbox"
       />
+      <div className="search-icon-decorative" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.35-4.35"></path>
+        </svg>
+      </div>
       {isLoading && (
         <div className="search-loading">
           <ion-icon name="reload-outline" class="search-icon loading" aria-hidden="true"></ion-icon>
