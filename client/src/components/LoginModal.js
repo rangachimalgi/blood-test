@@ -23,8 +23,9 @@ function LoginModal(props) {
             props.setIsLoggedIn(true); // This will cause a re-render
 
             if (response.data.role) {
-                localStorage.setItem('role', response.data.role);
-                props.setUserRole(response.data.role); // This too will cause a re-render
+                const role = response.data.role.trim();
+                localStorage.setItem('role', role);
+                props.setUserRole(role); // This too will cause a re-render
             }
             
             props.onHide(); // Close the modal

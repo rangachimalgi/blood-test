@@ -10,6 +10,343 @@
   -webkit-backdrop-filter: blur(10px);
 }
 
+/* Secondary Navigation Bar */
+.navbar-secondary {
+  position: fixed !important;
+  top: 122px !important; /* Position below main navbar */
+  width: 100% !important;
+  height: 50px !important;
+  min-height: 50px !important;
+  z-index: 999 !important; /* Below main navbar (1000) but above content */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: none !important; /* Remove transition to prevent gap on scroll */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.99) !important;
+  border-top: 1px solid rgba(129, 87, 87, 0.2) !important;
+  border-bottom: 1px solid rgba(8, 4, 4, 0.1) !important;
+  will-change: transform; /* Optimize for fixed positioning */
+  visibility: visible !important;
+  opacity: 1 !important;
+  overflow: visible !important;
+}
+
+/* Make all states use the same styling - no variations */
+.navbar-secondary.home-page,
+.navbar-secondary.other-page,
+.navbar-secondary.fixed,
+.navbar-secondary.home-page.fixed,
+.navbar-secondary.other-page.fixed {
+  background: rgba(255, 255, 255, 0.99) !important;
+  border-top: 1px solid rgba(129, 87, 87, 0.2) !important;
+  border-bottom: 1px solid rgba(8, 4, 4, 0.1) !important;
+  box-shadow: none !important; /* Ensure no shadow differences */
+}
+
+.navbar-secondary.fixed {
+  top: 122px !important; /* Keep same position when scrolling - no gap */
+  /* Remove box-shadow to keep consistent appearance */
+  box-shadow: none !important;
+}
+
+.navbar-secondary-container {
+  display: flex !important;
+  align-items: center !important;
+  height: 100% !important;
+  min-height: 50px !important;
+  padding: 0 1rem !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  overflow: visible !important;
+}
+
+.navbar-secondary-wrapper {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.navbar-secondary-nav {
+  display: flex !important;
+  align-items: center !important;
+  gap: 1.5rem !important;
+  height: 100% !important;
+  min-height: 50px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex-direction: row !important;
+  list-style: none !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  flex-wrap: nowrap !important;
+  overflow: visible !important;
+}
+
+.navbar-secondary-nav-left {
+  justify-content: center !important;
+  flex: 1 !important;
+}
+
+.navbar-secondary-nav-right {
+  justify-content: flex-end !important;
+}
+
+.navbar-secondary-nav .nav-item {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100% !important;
+  min-height: 50px !important;
+  list-style: none !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  flex-shrink: 0 !important;
+}
+
+.navbar-secondary-link {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100% !important;
+  min-height: 50px !important;
+  padding: 0 1.2rem !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #1a202c !important;
+  position: relative;
+  white-space: nowrap;
+  cursor: pointer;
+  vertical-align: middle !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  flex-shrink: 0 !important;
+}
+
+.navbar-secondary-link:hover {
+  color: #dc2626 !important;
+  text-decoration: none !important;
+}
+
+.navbar-secondary-link .nav-link-label {
+  color: #1a202c !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  line-height: 1 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100% !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Force visibility of all child elements */
+.navbar-secondary * {
+  visibility: visible !important;
+}
+
+.navbar-secondary span,
+.navbar-secondary .nav-link-label {
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: flex !important;
+  color: #1a202c !important;
+}
+
+/* Override Bootstrap Nav styles that might hide items */
+.navbar-secondary-nav.nav,
+.navbar-secondary-nav {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  flex-direction: row !important;
+}
+
+.navbar-secondary-nav .nav-item {
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: flex !important;
+}
+
+.navbar-secondary-nav a,
+.navbar-secondary-nav .navbar-secondary-link,
+.navbar-secondary-nav .nav-item a,
+.navbar-secondary-nav .nav-item .navbar-secondary-link {
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: flex !important;
+  color: #1a202c !important;
+}
+
+/* Ensure Bootstrap Nav doesn't hide items */
+.navbar-secondary-container .nav,
+.navbar-secondary-container .navbar-nav {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.navbar-secondary.home-page .navbar-secondary-link,
+.navbar-secondary.home-page .navbar-secondary-link .nav-link-label {
+  color: #1a202c !important;
+}
+
+.navbar-secondary.home-page .navbar-secondary-link:hover,
+.navbar-secondary.home-page .navbar-secondary-link:hover .nav-link-label {
+  color: #dc2626 !important;
+}
+
+.navbar-secondary-link:hover .nav-link-label {
+  color: #dc2626 !important;
+}
+
+/* Dropdown styling in secondary navbar */
+.navbar-secondary-nav .dropdown-toggle {
+  background: none !important;
+  border: none !important;
+  color: #1a202c !important;
+  font-weight: 600 !important;
+  padding: 0 1.2rem !important;
+  border-radius: 0 !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+  display: flex !important;
+  align-items: center !important;
+  height: 100% !important;
+  flex-shrink: 0 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.navbar-secondary-nav .dropdown-toggle:hover {
+  color: #dc2626 !important;
+  background: transparent !important;
+}
+
+.navbar-secondary-nav .dropdown-toggle::after {
+  margin-left: 0.5rem;
+  border-top: 0.3em solid #1a202c;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  transition: all 0.3s ease !important;
+}
+
+.navbar-secondary-nav .dropdown-toggle:hover::after {
+  border-top-color: #dc2626;
+}
+
+/* Icon styling in secondary navbar */
+.navbar-secondary-nav button.navbar-secondary-link,
+.navbar-secondary-nav .cart-icon-wrapper {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100% !important;
+  position: relative !important;
+}
+
+.navbar-secondary-nav button.navbar-secondary-link:hover,
+.navbar-secondary-nav .cart-icon-wrapper:hover {
+  background: transparent !important;
+}
+
+.navbar-secondary-nav button.navbar-secondary-link:focus,
+.navbar-secondary-nav .cart-icon-wrapper:focus {
+  outline: none !important;
+}
+
+/* Cart icon with badge in secondary navbar */
+.navbar-secondary-nav .cart-icon-wrapper::before {
+  content: attr(data-num);
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+  font-weight: 700;
+  color: white;
+  z-index: 5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid white;
+}
+
+.navbar-secondary-nav .cart-icon-wrapper[data-num="0"]::before {
+  display: none;
+}
+
+.navbar-secondary-nav .nav-icon {
+  width: 24px;
+  height: 24px;
+  fill: #1a202c !important;
+  transition: all 0.3s ease;
+}
+
+.navbar-secondary-nav .navbar-secondary-link:hover .nav-icon {
+  fill: #dc2626 !important;
+}
+
+.navbar-secondary-nav .dropdown-menu {
+  border: none !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12) !important;
+  border-radius: 12px !important;
+  padding: 0.5rem !important;
+  background: rgba(255, 255, 255, 0.98) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(15, 52, 96, 0.1) !important;
+  right: 0 !important;
+  left: auto !important;
+  transform: none !important;
+  margin-top: 0.5rem !important;
+}
+
+.navbar-secondary-nav .dropdown-item {
+  border-radius: 8px !important;
+  padding: 0.75rem 1rem !important;
+  transition: all 0.3s ease !important;
+  color: #4a5568 !important;
+  font-weight: 500 !important;
+}
+
+.navbar-secondary-nav .dropdown-item:hover {
+  background: rgba(0, 0, 0, 0.05) !important;
+  transform: translateX(5px);
+  color: #1a202c !important;
+}
+
+/* Adjust body padding to account for both navbars */
+body {
+  padding-top: 172px !important; /* Main navbar (122px) + secondary navbar (50px) = 172px to ensure content is fully visible below navbars */
+}
+
 /* Override Bootstrap navbar flex behavior */
 .navbar > .container,
 .navbar > .container-fluid {
@@ -51,6 +388,22 @@
   flex: none !important;
   max-width: 1000px !important;
   transform: translateX(-10%) !important;
+}
+
+.navbar-right-logo {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  margin-left: auto !important;
+  flex-shrink: 0 !important;
+  padding-left: 1rem !important;
+}
+
+.thyrocare-logo {
+  height: 50px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  max-height: 100% !important;
 }
 
 /* Home page specific styles */
@@ -158,6 +511,203 @@
     font-size: 1.4rem !important;
     padding: 1rem 0 !important;
   }
+  
+  .navbar-secondary {
+    top: 92px !important; /* Adjust for mobile navbar (logo 60px + padding 32px = 92px) */
+    height: 45px !important;
+    min-height: 45px !important;
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 997 !important; /* Below main navbar (1000) and navbar-collapse (999) but above content */
+    position: fixed !important;
+    width: 100% !important;
+    background: rgba(255, 255, 255, 0.99) !important;
+    overflow: visible !important;
+  }
+  
+  .navbar-secondary {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background: rgba(255, 255, 255, 0.99) !important; /* Ensure background is visible */
+  }
+
+  .navbar-secondary-container {
+    min-height: 45px !important;
+    overflow: visible !important;
+    padding: 0 0.5rem !important;
+    display: flex !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    flex-direction: row !important;
+  }
+
+  /* Override Bootstrap Container defaults */
+  .navbar-secondary nav .container,
+  .navbar-secondary .container-fluid {
+    max-width: 100% !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  
+  .navbar-secondary-wrapper {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 45px !important;
+    overflow: visible !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    flex-wrap: nowrap !important;
+    position: relative !important;
+    z-index: 1 !important;
+  }
+  
+  .navbar-secondary-nav {
+    min-height: 45px !important;
+    gap: 0.5rem !important; /* Reduce gap for mobile */
+    display: flex !important;
+    visibility: visible !important;
+    flex-wrap: nowrap !important;
+    overflow: visible !important;
+    align-items: center !important;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    opacity: 1 !important;
+  }
+  
+  .navbar-secondary-nav-left {
+    justify-content: center !important;
+    flex: 1 !important;
+    min-width: 0 !important; /* Allow flex shrinking */
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  .navbar-secondary-nav-right {
+    justify-content: flex-end !important;
+    flex-shrink: 0 !important;
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  .navbar-secondary-nav .nav-item {
+    min-height: 45px !important;
+    display: flex !important;
+    visibility: visible !important;
+    flex-shrink: 0 !important;
+    opacity: 1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  .navbar-secondary-link {
+    font-size: 12px !important;
+    padding: 0 0.4rem !important; /* Reduce padding for mobile */
+    min-height: 45px !important;
+    display: flex !important;
+    visibility: visible !important;
+    flex-shrink: 0 !important;
+    opacity: 1 !important;
+    width: auto !important;
+    height: auto !important;
+  }
+  
+  .navbar-secondary-link .nav-link-label {
+    font-size: 12px !important;
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    white-space: nowrap !important;
+  }
+  
+  .navbar-secondary-nav .dropdown-toggle {
+    padding: 0 0.4rem !important;
+    flex-shrink: 0 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: flex !important;
+  }
+  
+  .navbar-secondary-nav .nav-icon {
+    width: 20px !important;
+    height: 20px !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  /* Cart badge on mobile */
+  .navbar-secondary-nav .cart-icon-wrapper::before {
+    width: 16px !important;
+    height: 16px !important;
+    font-size: 9px !important;
+    right: -6px !important;
+    top: -6px !important;
+    display: flex !important;
+    visibility: visible !important;
+  }
+
+  /* Override Bootstrap Nav defaults that might hide items */
+  .navbar-secondary-container .nav,
+  .navbar-secondary-container .navbar-nav {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .navbar-secondary-nav * {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  /* Ensure Bootstrap Nav component is visible */
+  .navbar-secondary-container .nav.navbar-secondary-nav,
+  .navbar-secondary-container .navbar-nav.navbar-secondary-nav {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    flex-direction: row !important;
+  }
+
+  /* Ensure all child elements are visible */
+  .navbar-secondary-container .nav.navbar-secondary-nav li,
+  .navbar-secondary-container .nav.navbar-secondary-nav .nav-item,
+  .navbar-secondary-container .navbar-nav.navbar-secondary-nav li,
+  .navbar-secondary-container .navbar-nav.navbar-secondary-nav .nav-item {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .navbar-secondary-container .nav.navbar-secondary-nav a,
+  .navbar-secondary-container .nav.navbar-secondary-nav button,
+  .navbar-secondary-container .navbar-nav.navbar-secondary-nav a,
+  .navbar-secondary-container .navbar-nav.navbar-secondary-nav button {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .navbar-secondary-container .nav.navbar-secondary-nav span,
+  .navbar-secondary-container .navbar-nav.navbar-secondary-nav span {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  body {
+    padding-top: 137px !important; /* Adjust for mobile (92px navbar + 45px secondary = 137px) */
+  }
 
   .navbar-container {
     padding: 0 0.5rem !important;
@@ -196,6 +746,11 @@
     flex: none !important;
     order: 3 !important;
     width: 100% !important;
+    z-index: 1 !important; /* Ensure it doesn't cover secondary navbar */
+  }
+  
+  .navbar-right-logo {
+    display: none !important; /* Hide on mobile to save space */
   }
 }
 
@@ -210,6 +765,28 @@
 
   .navbar .d-flex {
     gap: 0.25rem !important;
+  }
+
+  .navbar-secondary-container {
+    padding: 0 0.25rem !important;
+  }
+
+  .navbar-secondary-nav {
+    gap: 0.25rem !important;
+  }
+
+  .navbar-secondary-link {
+    font-size: 11px !important;
+    padding: 0 0.3rem !important;
+  }
+
+  .navbar-secondary-link .nav-link-label {
+    font-size: 11px !important;
+  }
+
+  .navbar-secondary-nav .nav-icon {
+    width: 18px !important;
+    height: 18px !important;
   }
 }
 
@@ -556,6 +1133,11 @@
     order: 1 !important;
   }
 
+  /* Hide signup/login icon on mobile */
+  .mobile-hide-signup {
+    display: none !important;
+  }
+
   .navbar-collapse {
     position: absolute !important;
     top: 100% !important;
@@ -566,7 +1148,7 @@
     -webkit-backdrop-filter: blur(20px) !important;
     border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
-    z-index: 999 !important;
+    z-index: 1001 !important; /* Above main navbar to appear when expanded */
   }
 
   .navbar-nav {
@@ -689,6 +1271,15 @@
   
   .navbar .d-flex {
     margin-left: 0 !important;
+  }
+
+  /* Ensure mobile menu items are completely hidden on desktop */
+  .navbar-collapse.mobile-only-menu {
+    display: none !important;
+  }
+
+  .navbar-collapse.mobile-only-menu .navbar-nav {
+    display: none !important;
   }
 }
 

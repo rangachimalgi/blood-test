@@ -32,7 +32,7 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-  margin-top: 80px; /* Add margin to move it below the navbar */
+  margin-top: 0; /* No extra margin needed - body padding accounts for navbars */
   padding: 0 2rem;
 }
 

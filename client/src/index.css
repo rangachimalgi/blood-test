@@ -350,7 +350,7 @@ button.delete ion-icon {
 
 /* Add margin for main content to account for fixed navbar */
 main, .main-content {
-  margin-top: 80px; /* Height of the navbar */
+  margin-top: 0; /* No extra margin needed - body padding accounts for navbars */
 }
 
 /* Override margin and padding for slider section */
@@ -359,9 +359,16 @@ section.slider-section {
   margin-top: 0 !important;
 }
 
+/* Ensure first section on home page has proper top spacing */
+.page-content.home-page section:first-of-type,
+.page-content.home-page .slider-section {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
 /* Add spacing for other pages' first sections */
 .page-content:not(.home-page) section:first-child {
-  margin-top: 80px;
+  margin-top: 0; /* No extra margin needed - body padding accounts for navbars */
 }
 
 /* Remove hover line effects specifically for package details and similar pages */

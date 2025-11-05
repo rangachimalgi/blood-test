@@ -1,5 +1,5 @@
 .filter-bar {
-  margin-top: 140px;  /* Add margin below navbar */
+  margin-top: 0;  /* No extra margin needed - body padding accounts for navbars */
 }
 
 .filter-bar-container {
@@ -127,14 +127,14 @@
 /* Mobile view adjustments */
 @media (max-width: 768px) {
   .filter-bar {
-    margin-top: 180px !important; /* Increased margin for mobile navbar visibility */
-    padding-top: 20px !important; /* Reduced padding */
+    margin-top: 0 !important; /* No extra margin needed - body padding accounts for navbars */
+    padding-top: 70px !important; /* Ensure search bar is visible below navbar */
   }
   
   /* More specific selector to override any conflicting styles */
   section.filter-bar {
-    margin-top: 180px !important;
-    padding-top: 20px !important;
+    margin-top: 0 !important; /* Remove excessive margin */
+    padding-top: 70px !important; /* Ensure search bar is visible below navbar */
   }
 
   .product-list-item {

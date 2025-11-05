@@ -1,7 +1,7 @@
 /* HealthPackageList.css */
 .packages-list {
   padding: 15px;
-  margin-top: 140px; /* Add margin to push content below navbar */
+  margin-top: 0; /* No extra margin needed - body padding accounts for navbars */
 }
 
 /* Remove margin for home page specifically */
@@ -315,14 +315,28 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .packages-list {
-    margin-top: 180px !important; /* Increased margin for mobile navbar visibility */
-    padding-top: 20px !important; /* Reduced padding */
+    margin-top: 0 !important;
+    padding-top: 50px !important; /* Ensure content is visible below navbar */
+    scroll-margin-top: 137px !important; /* Account for fixed navbar */
   }
   
   /* More specific selector to override any conflicting styles */
   div.packages-list {
-    margin-top: 180px !important;
-    padding-top: 20px !important;
+    margin-top: 0 !important;
+    padding-top: 50px !important; /* Ensure content is visible below navbar */
+    scroll-margin-top: 137px !important; /* Account for fixed navbar */
+  }
+  
+  /* Ensure section header is visible */
+  .packages-list .section-header {
+    margin-bottom: 2rem !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  /* Reduce packages grid margin on mobile */
+  .packages-list .packages-grid {
+    margin-top: 1rem !important;
   }
 
   .packages-grid {

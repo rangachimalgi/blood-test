@@ -1,5 +1,5 @@
 .homeSlide .box {
-    margin-top: 80px;
+    margin-top: 0; /* No extra margin needed - body padding accounts for navbars */
     padding: 0 40px 60px;
 }
 
