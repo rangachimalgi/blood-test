@@ -279,17 +279,28 @@
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 1rem;
 }
 
 .logo-container {
   flex-shrink: 0;
+  width: auto;
+  height: auto;
+  background: transparent;
 }
 
 .package-logo {
-  width: 60px;
+  width: 120px !important;
   height: auto;
   opacity: 0.9;
+  background: transparent;
+  mix-blend-mode: darken;
+  filter: contrast(1.1);
+}
+
+.extra-details {
+  margin-left: auto;
 }
 
 .extra-details ul {
