@@ -9,6 +9,7 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa"; // Importing social media icons
 import logo from "../../Images/FortuneLogo.png";
+import thyrocareLogo from "../../Images/ThyrocareLogo.png";
 import "./Footer.css";
 
 const Footer = () => {
@@ -51,6 +52,14 @@ const Footer = () => {
       {/* Main Footer Content */}
       <div className="footer-main">
         <div className="footer-main-inner">
+          {/* Logos */}
+          <div className="footer-col footer-logos">
+            <Link to="/" className="footer-logo-link">
+              <img src={logo} alt="Fortune Blood Test Logo" className="footer-logo" />
+            </Link>
+            <img src={thyrocareLogo} alt="Thyrocare Logo" className="footer-thyrocare-logo" />
+          </div>
+          
           {/* Company */}
           <div className="footer-col">
             <h3 className="footer-col-title">Company</h3>
