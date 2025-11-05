@@ -323,14 +323,14 @@ const Home = () => {
                 }}
                 aria-hidden="true"
               >
-                <i
-                  className="fas fa-rupee-sign"
+                <span
                   style={{
                     fontSize: "1.5rem",
                     color: "black",
+                    fontWeight: "bold",
                   }}
                   aria-hidden="true"
-                ></i>
+                >₹</span>
               </div>
               <h3
                 style={{
