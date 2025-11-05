@@ -15,8 +15,8 @@
   position: fixed !important;
   top: 122px !important; /* Position below main navbar */
   width: 100% !important;
-  height: 50px !important;
-  min-height: 50px !important;
+  height: 65px !important;
+  min-height: 65px !important;
   z-index: 999 !important; /* Below main navbar (1000) but above content */
   display: flex !important;
   align-items: center !important;
@@ -24,9 +24,12 @@
   transition: none !important; /* Remove transition to prevent gap on scroll */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.99) !important;
+  background: #4A5568 !important;
   border-top: 1px solid rgba(129, 87, 87, 0.2) !important;
   border-bottom: 1px solid rgba(8, 4, 4, 0.1) !important;
+  box-shadow: none !important;
+  filter: none !important;
+  text-shadow: none !important;
   will-change: transform; /* Optimize for fixed positioning */
   visibility: visible !important;
   opacity: 1 !important;
@@ -39,15 +42,35 @@
 .navbar-secondary.fixed,
 .navbar-secondary.home-page.fixed,
 .navbar-secondary.other-page.fixed {
-  background: rgba(255, 255, 255, 0.99) !important;
+  background: #4A5568 !important;
   border-top: 1px solid rgba(129, 87, 87, 0.2) !important;
   border-bottom: 1px solid rgba(8, 4, 4, 0.1) !important;
-  box-shadow: none !important; /* Ensure no shadow differences */
+  box-shadow: none !important;
+  filter: none !important;
+  text-shadow: none !important;
+}
+
+.navbar-secondary::before,
+.navbar-secondary::after {
+  box-shadow: none !important;
+  filter: none !important;
 }
 
 .navbar-secondary.fixed {
   top: 122px !important; /* Keep same position when scrolling - no gap */
   /* Remove box-shadow to keep consistent appearance */
+  box-shadow: none !important;
+  filter: none !important;
+  text-shadow: none !important;
+}
+
+/* Remove all shadows from secondary navbar and its children */
+.navbar-secondary,
+.navbar-secondary *,
+.navbar-secondary-container,
+.navbar-secondary-wrapper,
+.navbar-secondary-nav,
+.navbar-secondary-nav * {
   box-shadow: none !important;
 }
 
@@ -55,7 +78,7 @@
   display: flex !important;
   align-items: center !important;
   height: 100% !important;
-  min-height: 50px !important;
+  min-height: 65px !important;
   padding: 0 1rem !important;
   max-width: 100% !important;
   width: 100% !important;
@@ -78,7 +101,7 @@
   align-items: center !important;
   gap: 1.5rem !important;
   height: 100% !important;
-  min-height: 50px !important;
+  min-height: 65px !important;
   margin: 0 !important;
   padding: 0 !important;
   flex-direction: row !important;
@@ -105,7 +128,7 @@
   align-items: center !important;
   justify-content: center !important;
   height: 100% !important;
-  min-height: 50px !important;
+  min-height: 65px !important;
   list-style: none !important;
   visibility: visible !important;
   opacity: 1 !important;
@@ -117,13 +140,13 @@
   align-items: center !important;
   justify-content: center !important;
   height: 100% !important;
-  min-height: 50px !important;
+  min-height: 65px !important;
   padding: 0 1.2rem !important;
   text-decoration: none !important;
   transition: all 0.3s ease !important;
   font-size: 16px !important;
   font-weight: 600 !important;
-  color: #1a202c !important;
+  color: #ffffff !important;
   position: relative;
   white-space: nowrap;
   cursor: pointer;
@@ -139,7 +162,7 @@
 }
 
 .navbar-secondary-link .nav-link-label {
-  color: #1a202c !important;
+  color: #ffffff !important;
   font-size: 16px !important;
   font-weight: 600 !important;
   transition: all 0.3s ease !important;
@@ -164,7 +187,7 @@
   visibility: visible !important;
   opacity: 1 !important;
   display: flex !important;
-  color: #1a202c !important;
+  color: #ffffff !important;
 }
 
 /* Override Bootstrap Nav styles that might hide items */
@@ -189,7 +212,7 @@
   visibility: visible !important;
   opacity: 1 !important;
   display: flex !important;
-  color: #1a202c !important;
+  color: #ffffff !important;
 }
 
 /* Ensure Bootstrap Nav doesn't hide items */
@@ -202,7 +225,7 @@
 
 .navbar-secondary.home-page .navbar-secondary-link,
 .navbar-secondary.home-page .navbar-secondary-link .nav-link-label {
-  color: #1a202c !important;
+  color: #ffffff !important;
 }
 
 .navbar-secondary.home-page .navbar-secondary-link:hover,
@@ -218,7 +241,7 @@
 .navbar-secondary-nav .dropdown-toggle {
   background: none !important;
   border: none !important;
-  color: #1a202c !important;
+  color: #ffffff !important;
   font-weight: 600 !important;
   padding: 0 1.2rem !important;
   border-radius: 0 !important;
@@ -239,7 +262,7 @@
 
 .navbar-secondary-nav .dropdown-toggle::after {
   margin-left: 0.5rem;
-  border-top: 0.3em solid #1a202c;
+  border-top: 0.3em solid #ffffff;
   border-right: 0.3em solid transparent;
   border-bottom: 0;
   border-left: 0.3em solid transparent;
@@ -305,7 +328,7 @@
 .navbar-secondary-nav .nav-icon {
   width: 24px;
   height: 24px;
-  fill: #1a202c !important;
+  fill: #ffffff !important;
   transition: all 0.3s ease;
 }
 
@@ -339,7 +362,7 @@
 .navbar-secondary-nav .dropdown-item:hover {
   background: rgba(0, 0, 0, 0.05) !important;
   transform: translateX(5px);
-  color: #1a202c !important;
+  color: #ffffff !important;
 }
 
 /* Adjust body padding to account for both navbars */
