@@ -17,18 +17,24 @@ const ProductDetails = () => {
   const [listSelected, setListSelected] = useState("desc");
 
   useEffect(() => {
+    // Scroll to top immediately
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    
     const fetchProduct = async () => {
       try {
         const res = await fetch(`${process.env.REACT_APP_API_URL}/api/tests/${id}`);
         const data = await res.json();
         setSelectedProduct(data);
+        // Scroll to top again after content loads
+        requestAnimationFrame(() => {
+          window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+        });
       } catch (err) {
         console.error("Failed to fetch product by ID:", err);
       }
     };
 
     fetchProduct();
-    window.scrollTo(0, 0);
   }, [id]);
 
   const handleAdd = () => {

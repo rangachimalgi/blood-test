@@ -50,10 +50,26 @@ const PageWrapper = ({ children }) => {
   const mainContentRef = useRef(null);
   
   useEffect(() => {
+    // Disable browser scroll restoration to prevent auto-scroll on refresh
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    
+    // Scroll to top immediately on route change
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    
+    // Also scroll after a brief delay to ensure content is rendered
+    // This handles cases where content loads asynchronously
+    const scrollTimeout = setTimeout(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }, 0);
+    
     // Move focus to main content on route change for accessibility (WCAG 2.4.3)
     if (mainContentRef.current) {
       mainContentRef.current.focus();
     }
+    
+    return () => clearTimeout(scrollTimeout);
   }, [location.pathname]);
   
   return (
@@ -209,6 +225,11 @@ function App() {
 
   // Preload critical data on app start
   useEffect(() => {
+    // Disable browser scroll restoration globally to prevent auto-scroll on refresh
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    
     // Preload packages and tests data in background
     console.log('App starting - preloading data...');
     console.log('Environment check:', {

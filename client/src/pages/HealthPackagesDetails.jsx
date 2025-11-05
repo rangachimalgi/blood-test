@@ -20,7 +20,8 @@ const HealthPackageDetails = () => {
   const [liked, setLiked] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // Scroll to top immediately
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     
     const fetchPackageById = async () => {
       try {
@@ -28,6 +29,10 @@ const HealthPackageDetails = () => {
           `${process.env.REACT_APP_API_URL}/api/packages/${id}`
         );
         setSelectedProduct(res.data);
+        // Scroll to top again after content loads
+        requestAnimationFrame(() => {
+          window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+        });
       } catch (err) {
         console.error("Failed to fetch package by ID:", err);
       }

@@ -49,7 +49,15 @@ const Shop = () => {
     };
 
     loadProducts();
-    window.scrollTo(0, 0);
+    // Scroll to top immediately
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    
+    // Also scroll after content loads to handle async data
+    const scrollTimeout = setTimeout(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }, 100);
+    
+    return () => clearTimeout(scrollTimeout);
   }, [cachedTests.length, fetchTests]); // Only depend on length to prevent infinite loops
 
   const handleBookNow = () => navigate("/cart");

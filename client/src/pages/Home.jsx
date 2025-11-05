@@ -27,7 +27,15 @@ const Home = () => {
   const bestSales = products.filter((item) => item.category === "Blood");
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // Scroll to top immediately on mount
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    
+    // Also scroll after content renders to handle any layout shifts
+    const scrollTimeout = setTimeout(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }, 100);
+    
+    return () => clearTimeout(scrollTimeout);
   }, []);
 
   // Unique toast ID
