@@ -5,6 +5,7 @@ import axios from "axios";
 import NavBar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Loader from "./components/Loader/Loader";
+import WhatsAppButton from "./components/WhatsAppButton/WhatsAppButton";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import DataComponent from "./components/DataComponent";
@@ -306,6 +307,7 @@ function App() {
             </main>
           </PageWrapper>
           <Footer />
+          <WhatsAppButton />
         </Router>
       </Suspense>
     </DataContainer.Provider>
