@@ -477,11 +477,7 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
             </div>
           </div>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="primary" onClick={() => setShowContactModal(false)}>
-            Close
-          </Button>
-        </Modal.Footer>
+        
       </Modal>
     </Container>
   );
