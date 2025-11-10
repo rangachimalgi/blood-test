@@ -299,8 +299,6 @@
 
 .shop-list-book-button,
 .shop-list-add-to-cart-button {
-  background: linear-gradient(90deg, #0F3460 0%, #2a5298 100%);
-  color: white;
   border: none;
   padding: 10px 22px;
   border-radius: 22px;
@@ -311,14 +309,33 @@
   align-items: center;
   gap: 8px;
   box-shadow: 0 2px 8px rgba(15, 52, 96, 0.10);
-  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s, color 0.2s;
 }
 
-.shop-list-book-button:hover, .shop-list-add-to-cart-button:hover,
-.shop-list-book-button:focus, .shop-list-add-to-cart-button:focus {
-  background: linear-gradient(90deg, #2a5298 0%, #0F3460 100%);
-  box-shadow: 0 4px 16px rgba(15, 52, 96, 0.18);
+.shop-list-book-button {
+  background: linear-gradient(90deg, #f6c453 0%, #C37D14 100%);
+  color: #1f2937;
+}
+
+.shop-list-add-to-cart-button {
+  background: linear-gradient(90deg, #ff4d6a 0%, #ff1c49 100%);
+  color: #111827;
+}
+
+.shop-list-book-button:hover,
+.shop-list-book-button:focus {
+  background: linear-gradient(90deg, #e5ad3a 0%, #a6630f 100%);
+  box-shadow: 0 4px 16px rgba(163, 99, 15, 0.25);
   transform: translateY(-2px) scale(1.04);
+  color: #111827;
+}
+
+.shop-list-add-to-cart-button:hover,
+.shop-list-add-to-cart-button:focus {
+  background: linear-gradient(90deg, #ff2550 0%, #c40027 100%);
+  box-shadow: 0 4px 16px rgba(196, 0, 39, 0.3);
+  transform: translateY(-2px) scale(1.04);
+  color: #0f172a;
 }
 
 .shop-list-book-button ion-icon,
@@ -423,21 +440,34 @@
 }
 .shop-list-book-button,
 .shop-list-add-to-cart-button {
-  background: #fbbf24;
-  color: black;
   border: 2px solid transparent;
   padding: 8px 18px;
   border-radius: 22px;
   cursor: pointer;
   font-size: 0.98rem;
   font-weight: 600;
-  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s, color 0.2s;
 }
-.shop-list-book-button:hover, .shop-list-add-to-cart-button:hover,
-.shop-list-book-button:focus, .shop-list-add-to-cart-button:focus {
-  background: #f59e0b;
-  color: black;
-  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.3);
+.shop-list-book-button {
+  background: #f6c453;
+  color: #1f2937;
+}
+.shop-list-add-to-cart-button {
+  background: #ff1544;
+  color: #e3e5ea;
+}
+.shop-list-book-button:hover,
+.shop-list-book-button:focus {
+  background: #e5ad3a;
+  color: #111827;
+  box-shadow: 0 4px 16px rgba(163, 99, 15, 0.25);
+  transform: translateY(-1px) scale(1.03);
+}
+.shop-list-add-to-cart-button:hover,
+.shop-list-add-to-cart-button:focus {
+  background: #c40027;
+  color: #0f172a;
+  box-shadow: 0 4px 16px rgba(196, 0, 39, 0.3);
   transform: translateY(-1px) scale(1.03);
 }
 @media (max-width: 768px) {
