@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button, InputGroup, Form, Container, Row, Col } from "react-bootstrap";
+import { Button, Form, Container, Row, Col, Modal } from "react-bootstrap";
 import axios from "axios";
 import { availablePincodes } from "../components/availablePincodes.js";
 import "../Styles/embeddedCheckoutForm.css";
@@ -20,6 +20,13 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
     tests: [], // Separate tests array for the order
   });
   const [pincodeMessage, setPincodeMessage] = useState("");
+  const [pincodeStatus, setPincodeStatus] = useState(null);
+  const [showContactModal, setShowContactModal] = useState(false);
+
+  const CONTACT_PHONE = "+91 98442 11811";
+  const CONTACT_EMAIL = "support@fortunebloodtest.com";
+  const CONTACT_ADDRESS =
+    "Fortune Home Health Care, 683, 17th Cross, 26th Main, Puttenahalli Road, JP Nagar 6th Phase, Bengaluru 560076";
 
   useEffect(() => {
     setOrderData((prevState) => ({
@@ -53,8 +60,10 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
   const checkAvailability = () => {
     if (availablePincodes.includes(orderData.pincode)) {
       setPincodeMessage("Service is available in your pincode!");
+      setPincodeStatus("success");
     } else {
       setPincodeMessage("Sorry, service is not available in your pincode.");
+      setPincodeStatus("error");
     }
   };
 
@@ -172,7 +181,28 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
                   Check Availability
                 </Button>
               </div>
-              <Form.Text className="text-muted">{pincodeMessage}</Form.Text>
+              {pincodeMessage && (
+                <div
+                  className={`pincode-status-message ${
+                    pincodeStatus ? `status-${pincodeStatus}` : ""
+                  }`}
+                >
+                  <span>{pincodeMessage}</span>
+                  {pincodeStatus === "error" && (
+                    <button
+                      type="button"
+                      className="pincode-info-button"
+                      onClick={() => setShowContactModal(true)}
+                      aria-label="Contact us for availability information"
+                    >
+                      <ion-icon
+                        name="information-circle-outline"
+                        class="pincode-info-icon"
+                      ></ion-icon>
+                    </button>
+                  )}
+                </div>
+              )}
             </Form.Group>
             <Form.Group controlId="formName">
               <Form.Label>Name :</Form.Label>
@@ -408,6 +438,51 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
           </Form>
         </Col>
       </Row>
+
+      <Modal
+        show={showContactModal}
+        onHide={() => setShowContactModal(false)}
+        centered
+        aria-labelledby="contact-info-modal-title"
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contact-info-modal-title">
+            Contact for Availability
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p className="contact-modal-text">
+            Our team can check if we can assist you in this location. Reach out
+            and we will get back as soon as possible.
+          </p>
+          <div className="contact-modal-details">
+            <div className="contact-modal-row">
+              <span className="contact-modal-label">Phone / WhatsApp:</span>
+              <a
+                href={`tel:${CONTACT_PHONE.replace(/\s+/g, "")}`}
+                className="contact-modal-link"
+              >
+                {CONTACT_PHONE}
+              </a>
+            </div>
+            <div className="contact-modal-row">
+              <span className="contact-modal-label">Email:</span>
+              <a href={`mailto:${CONTACT_EMAIL}`} className="contact-modal-link">
+                {CONTACT_EMAIL}
+              </a>
+            </div>
+            <div className="contact-modal-row contact-modal-address">
+              <span className="contact-modal-label">Address:</span>
+              <span>{CONTACT_ADDRESS}</span>
+            </div>
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="primary" onClick={() => setShowContactModal(false)}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </Container>
   );
 };
