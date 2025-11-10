@@ -3,9 +3,7 @@ import { Col } from "react-bootstrap";
 import "./product.css";
 import { useNavigate } from "react-router-dom";
 import { DataContainer } from "../../App";
-import { toast } from "react-toastify";
 import CheckoutForm from "../CheckoutForm";
-import Highlight from "../../components/Highlight"; // Import Highlight component
 
 const Product = ({
   title,
@@ -18,7 +16,6 @@ const Product = ({
 }) => {
   const { setSelectedProduct } = useContext(DataContainer);
   const router = useNavigate();
-  const [count, setCount] = useState(0);
   const [showCheckout, setShowCheckout] = useState(false);
   const [selectedPackage, setSelectedPackage] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
@@ -33,10 +30,6 @@ const Product = ({
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  const increment = () => {
-    setCount(count + 1);
-  };
 
   const handleClick = () => {
     setSelectedProduct(productItem);
@@ -55,27 +48,9 @@ const Product = ({
     }
   };
 
-  const handleBookNow = (pkg) => {
-    setSelectedProduct(pkg); // Assuming you still want to set the selected product in context or state
-    router(`/shop/${pkg.id}`); // Navigate to the product-specific page
-  };
-
   const handleCloseCheckout = () => {
     setShowCheckout(false);
     setSelectedPackage(null);
-  };
-
-  const extractNumberOfTests = (productItem) => {
-    // If it's a package with includedTests, calculate total from all categories
-    if (productItem.includedTests && productItem.includedTests.length > 0) {
-      const totalTests = productItem.includedTests.reduce((sum, category) => {
-        return sum + (category.tests?.length || 0);
-      }, 0);
-      return totalTests > 0 ? totalTests.toString() : "";
-    }
-    // Fallback: try to extract from productName if includedTests not available
-    const match = productItem.productName?.match(/\((\d+)\s*Tests\)/i);
-    return match ? match[1] : "";
   };
 
   const isPopularPackage = title === "Popular Packages";
@@ -120,12 +95,6 @@ const Product = ({
           } ${isPopularPackage ? "popular-packages" : ""} ${isPopularTest ? "popular-test-card" : ""}`}
           style={isPopularTest ? { animationDelay } : {}}
         >
-          {/* Glassy floating badge for number of tests */}
-          {isPopularTest && (
-            <div className="popular-tests-badge" aria-label={`${extractNumberOfTests(productItem)} tests`}>
-              <Highlight number={extractNumberOfTests(productItem)} />
-            </div>
-          )}
           <div className="product-image-container">
             {showImage && (
               <img
@@ -145,18 +114,6 @@ const Product = ({
               />
             )}
           </div>
-          {/* Like button */}
-          {isPopularTest && (
-            <button
-              className="product-like-btn"
-              aria-label="Like this test"
-              onClick={increment}
-              type="button"
-            >
-              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-              <span className="like-count">{count}</span>
-            </button>
-          )}
           <div className="product-details">
             <h3 
               onClick={handleClick}
@@ -172,7 +129,6 @@ const Product = ({
             >
               {productItem.productName}
             </h3>
-            {desc && <p className="product-description">{desc}</p>}
             <div className="price-row">
               <span className="product-price">₹{productItem.price}</span>
               {isPopularTest && (
