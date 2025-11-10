@@ -57,40 +57,36 @@
 
 /* Custom Arrows */
 .custom-arrow {
-  width: 40px;
-  height: 40px;
-  background: #fff;
+  width: 34px;
+  height: 34px;
+  background: rgba(255, 255, 255, 0.78);
   border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(15, 52, 96, 0.1);
+  border: 1px solid rgba(15, 52, 96, 0.18);
+  box-shadow: 0 4px 12px rgba(15, 52, 96, 0.08);
   display: flex !important;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
   z-index: 2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.custom-arrow:hover {
-  background: #0F3460;
-  color: white;
-}
 
 .custom-arrow ion-icon {
-  font-size: 1.5rem;
-  color: #0F3460;
-  transition: color 0.3s ease;
+  font-size: 1.05rem;
+  color: #1f2937;
 }
 
-.custom-arrow:hover ion-icon {
-  color: white;
-}
 
 .next-arrow {
-  right: 0;
+  right: -22px;
 }
 
 .prev-arrow {
-  left: 0;
+  left: -22px;
 }
 
 /* Dots styling */
@@ -139,8 +135,16 @@
   }
 
   .custom-arrow {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .next-arrow {
+    right: -12px;
+  }
+
+  .prev-arrow {
+    left: -12px;
   }
 }
 
@@ -155,5 +159,18 @@
 
   .slider-container {
     padding: 0 15px;
+  }
+
+  .custom-arrow {
+    width: 28px;
+    height: 28px;
+  }
+
+  .next-arrow {
+    right: -8px;
+  }
+
+  .prev-arrow {
+    left: -8px;
   }
 } 
