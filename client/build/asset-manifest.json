@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.7cb8ed74.css",
-    "main.js": "/static/js/main.9f948ee5.js",
-    "static/css/49.9b3aa49b.chunk.css": "/static/css/49.9b3aa49b.chunk.css",
+    "main.js": "/static/js/main.9386ea22.js",
+    "static/css/49.30b54d03.chunk.css": "/static/css/49.30b54d03.chunk.css",
     "static/js/49.e46077e3.chunk.js": "/static/js/49.e46077e3.chunk.js",
     "static/css/55.1338ff48.chunk.css": "/static/css/55.1338ff48.chunk.css",
     "static/js/55.937ac9e2.chunk.js": "/static/js/55.937ac9e2.chunk.js",
@@ -36,6 +36,7 @@
     "static/media/double-sofa-02.png": "/static/media/double-sofa-02.eac56d9c3869030c478e.png",
     "static/media/hero-img.png": "/static/media/hero-img.4cb525f5d6bac4b5af39.png",
     "static/media/DigitalReport.png": "/static/media/DigitalReport.a22c3774b1c1c287ea8d.png",
+    "static/media/fullBody.png": "/static/media/fullBody.af5735088305b31c04ef.png",
     "static/media/double-sofa-01.png": "/static/media/double-sofa-01.183aaa8ba79a197491f7.png",
     "static/media/watch-04.jpg": "/static/media/watch-04.887d0313ee3f076ec3f9.jpg",
     "static/media/double-sofa-03.png": "/static/media/double-sofa-03.afb74598f1e42c273506.png",
@@ -65,7 +66,6 @@
     "static/media/thyroid.png": "/static/media/thyroid.6a00aaabf44f359cb727.png",
     "static/media/seniorcitizen.jpg": "/static/media/seniorcitizen.99f71178356a79a80b1a.jpg",
     "static/media/aboveFiftyWomen.png": "/static/media/aboveFiftyWomen.274aa46f70067f09e7f8.png",
-    "static/media/fullBody.png": "/static/media/fullBody.c7cba26888e5d54748c7.png",
     "static/media/fever.png": "/static/media/fever.bf2b29dea332c91c041c.png",
     "static/media/aboveFifty.png": "/static/media/aboveFifty.4eb46b539eb99549144d.png",
     "static/media/FortuneLogo.png": "/static/media/FortuneLogo.16adc346f37c5a9a13f2.png",
@@ -85,8 +85,8 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.7cb8ed74.css.map": "/static/css/main.7cb8ed74.css.map",
-    "main.9f948ee5.js.map": "/static/js/main.9f948ee5.js.map",
-    "49.9b3aa49b.chunk.css.map": "/static/css/49.9b3aa49b.chunk.css.map",
+    "main.9386ea22.js.map": "/static/js/main.9386ea22.js.map",
+    "49.30b54d03.chunk.css.map": "/static/css/49.30b54d03.chunk.css.map",
     "49.e46077e3.chunk.js.map": "/static/js/49.e46077e3.chunk.js.map",
     "55.1338ff48.chunk.css.map": "/static/css/55.1338ff48.chunk.css.map",
     "55.937ac9e2.chunk.js.map": "/static/js/55.937ac9e2.chunk.js.map",
@@ -105,6 +105,6 @@
   },
   "entrypoints": [
     "static/css/main.7cb8ed74.css",
-    "static/js/main.9f948ee5.js"
+    "static/js/main.9386ea22.js"
   ]
 }
