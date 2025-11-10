@@ -115,8 +115,17 @@ const NavBar = () => {
         className={`navbar navbar-top ${isFixed ? "fixed" : ""} ${isHomePage ? "home-page" : "other-page"}`}
       >
         <Container className="navbar-container">
-          <Navbar.Brand as={Link} to="/">
-            <img src={logo} alt="Fortune Blood Test Logo"/>
+          <Navbar.Brand as={Link} to="/" className="navbar-brand">
+            <img
+              src={logo}
+              alt="Fortune Blood Test Logo"
+              className="fortune-logo"
+            />
+            <img
+              src={thyrocareLogo}
+              alt="Thyrocare Logo"
+              className="thyrocare-logo"
+            />
           </Navbar.Brand>
           {/* Media cart and toggle */}
           <div className="d-flex">
@@ -169,9 +178,6 @@ const NavBar = () => {
             </Navbar.Toggle>
           </div>
           <ProductSearchBar setFilterList={setGlobalFilterList} />
-          <div className="navbar-right-logo">
-            <img src={thyrocareLogo} alt="Thyrocare Logo" className="thyrocare-logo" />
-          </div>
           <Navbar.Collapse id="basic-navbar-nav" className="navbar-collapse mobile-only-menu" ref={collapseRef}>
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Item>

@@ -413,22 +413,6 @@ body {
   transform: translateX(-10%) !important;
 }
 
-.navbar-right-logo {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-end !important;
-  margin-left: auto !important;
-  flex-shrink: 0 !important;
-  padding-left: 1rem !important;
-}
-
-.thyrocare-logo {
-  height: 50px !important;
-  width: auto !important;
-  object-fit: contain !important;
-  max-height: 100% !important;
-}
-
 /* Home page specific styles */
 .navbar.home-page {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(248, 249, 250, 0.1)) !important;
@@ -748,16 +732,22 @@ body {
 
   .navbar .d-flex {
     gap: 0.5rem !important;
+    align-items: center !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
   }
 
   .navbar-toggler {
-    order: 2 !important;
-    margin-left: auto !important;
+    order: 3 !important;
+    margin-left: 0 !important;
+    padding: 0.25rem !important;
   }
 
   .media-cart {
-    order: 1 !important;
-    margin-right: 0.5rem !important;
+    order: 2 !important;
+    margin-right: 0 !important;
+    display: flex !important;
+    align-items: center !important;
   }
 
   /* Reset search container for mobile */
@@ -778,6 +768,10 @@ body {
 }
 
 @media (max-width: 480px) {
+  .navbar-brand {
+    margin-left: 0 !important;
+  }
+
   .navbar-brand img {
     height: 50px;
   }
@@ -858,10 +852,22 @@ body {
 }
 
 .navbar-brand img {
-  height: 80px;
-  width: 120px;
   transition: all 0.3s ease;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.navbar-brand .fortune-logo {
+  height: 80px;
+  width: 90px;
+  max-width: 140px;
+  object-fit: contain;
+}
+
+.navbar-brand .thyrocare-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  margin-left: 16px;
 }
 
 .navbar.home-page .navbar-brand img {
@@ -1107,7 +1113,7 @@ body {
 @media (max-width: 767px) {
   .navbar-toggler {
     border: none !important;
-    padding: 0.5rem !important;
+    padding: 0.25rem !important;
     background: transparent !important;
     order: 2 !important;
   }

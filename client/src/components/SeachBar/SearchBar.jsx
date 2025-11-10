@@ -39,7 +39,7 @@ const SearchBar = ({ allProducts = [], setFilterList }) => {
     <form onSubmit={handleSubmit} className="search-container">
       <input
         type="text"
-        placeholder="Search tests and packages..."
+        placeholder="Search tests"
         value={inputValue}
         onChange={handleChange}
         aria-label="Search tests and packages"
