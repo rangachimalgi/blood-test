@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.ed26138a.css",
-    "main.js": "/static/js/main.afef7bde.js",
+    "main.css": "/static/css/main.88e4f199.css",
+    "main.js": "/static/js/main.1b44f1ed.js",
     "static/css/49.9b3aa49b.chunk.css": "/static/css/49.9b3aa49b.chunk.css",
     "static/js/49.3e855427.chunk.js": "/static/js/49.3e855427.chunk.js",
     "static/css/55.1338ff48.chunk.css": "/static/css/55.1338ff48.chunk.css",
-    "static/js/55.0d138731.chunk.js": "/static/js/55.0d138731.chunk.js",
+    "static/js/55.653513cb.chunk.js": "/static/js/55.653513cb.chunk.js",
     "static/css/782.20430667.chunk.css": "/static/css/782.20430667.chunk.css",
     "static/js/782.f793e927.chunk.js": "/static/js/782.f793e927.chunk.js",
     "static/css/962.3918a5c0.chunk.css": "/static/css/962.3918a5c0.chunk.css",
@@ -35,7 +35,6 @@
     "static/media/HeroOr.png": "/static/media/HeroOr.ecbec5a9656372d9b059.png",
     "static/media/watch-01.jpg": "/static/media/watch-01.edc39b7f8f5435c24e41.jpg",
     "static/media/double-sofa-02.png": "/static/media/double-sofa-02.eac56d9c3869030c478e.png",
-    "static/media/FortuneLogo.png": "/static/media/FortuneLogo.854f54edd98f399ed506.png",
     "static/media/hero-img.png": "/static/media/hero-img.4cb525f5d6bac4b5af39.png",
     "static/media/double-sofa-01.png": "/static/media/double-sofa-01.183aaa8ba79a197491f7.png",
     "static/media/watch-04.jpg": "/static/media/watch-04.887d0313ee3f076ec3f9.jpg",
@@ -69,6 +68,7 @@
     "static/media/fullBody.png": "/static/media/fullBody.c7cba26888e5d54748c7.png",
     "static/media/fever.png": "/static/media/fever.bf2b29dea332c91c041c.png",
     "static/media/aboveFifty.png": "/static/media/aboveFifty.4eb46b539eb99549144d.png",
+    "static/media/FortuneLogo.png": "/static/media/FortuneLogo.16adc346f37c5a9a13f2.png",
     "static/media/underTwentyFive.png": "/static/media/underTwentyFive.e83ef4fd9a755280a327.png",
     "static/media/twentyFive.png": "/static/media/twentyFive.c2e6d97b5ce423889047.png",
     "static/media/underTwentyFiveWomen.png": "/static/media/underTwentyFiveWomen.e67dd9c8e440ea72926c.png",
@@ -84,12 +84,12 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.ed26138a.css.map": "/static/css/main.ed26138a.css.map",
-    "main.afef7bde.js.map": "/static/js/main.afef7bde.js.map",
+    "main.88e4f199.css.map": "/static/css/main.88e4f199.css.map",
+    "main.1b44f1ed.js.map": "/static/js/main.1b44f1ed.js.map",
     "49.9b3aa49b.chunk.css.map": "/static/css/49.9b3aa49b.chunk.css.map",
     "49.3e855427.chunk.js.map": "/static/js/49.3e855427.chunk.js.map",
     "55.1338ff48.chunk.css.map": "/static/css/55.1338ff48.chunk.css.map",
-    "55.0d138731.chunk.js.map": "/static/js/55.0d138731.chunk.js.map",
+    "55.653513cb.chunk.js.map": "/static/js/55.653513cb.chunk.js.map",
     "782.20430667.chunk.css.map": "/static/css/782.20430667.chunk.css.map",
     "782.f793e927.chunk.js.map": "/static/js/782.f793e927.chunk.js.map",
     "962.3918a5c0.chunk.css.map": "/static/css/962.3918a5c0.chunk.css.map",
@@ -104,7 +104,7 @@
     "954.d332bba0.chunk.css.map": "/static/css/954.d332bba0.chunk.css.map"
   },
   "entrypoints": [
-    "static/css/main.ed26138a.css",
-    "static/js/main.afef7bde.js"
+    "static/css/main.88e4f199.css",
+    "static/js/main.1b44f1ed.js"
   ]
 }
