@@ -357,6 +357,45 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <section
+        style={{
+          background: "linear-gradient(135deg, #f6f9fc 0%, #edf2fb 100%)",
+          padding: "3rem 0",
+          borderTop: "1px solid rgba(15, 52, 96, 0.08)",
+          borderBottom: "1px solid rgba(15, 52, 96, 0.08)",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1100px",
+            margin: "0 auto",
+            padding: "0 1.5rem",
+            textAlign: "center",
+          }}
+        >
+          <h2
+            style={{
+              fontSize: "2rem",
+              fontWeight: 800,
+              color: "#0F3460",
+              marginBottom: "1.5rem",
+            }}
+          >
+            Our Presence
+          </h2>
+          <p
+            style={{
+              fontSize: "1rem",
+              fontWeight: 600,
+              color: "#1f2937",
+              lineHeight: 1.8,
+            }}
+          >
+            Agra | Ahmedabad | Aligarh | Bareilly | Bengaluru | Bhopal | Bhubaneswar | Bilaspur | Chennai | Chhattisgarh | Coimbatore | Dadar | Delhi | Dhanbad | Ernakulam | Faridabad | Ghaziabad | Goa | Gonda | Greater Noida | Gurgaon | Gwalior | Hyderabad | Indore | Jabalpur | Jaipur | Jamshedpur | Jhansi | Jodhpur | Kalyan | Kerala | Kochi | Kolkata | Kota | Lucknow | Ludhiana | Mangalore | Mulund | Mumbai | Navi Mumbai | Nizamabad | Noida | Panaji | Patiala | Patna | Pune | Rajkot | Ranchi | Ratnagiri | South Delhi | Surat | Tirupati | Udaipur | Varanasi | Venkateswara nagar | Vijayavada | Visakhapatnam | West Bengal | West Delhi
+          </p>
+        </div>
+      </section>
     </Fragment>
   );
 };

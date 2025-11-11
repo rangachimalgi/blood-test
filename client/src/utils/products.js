@@ -80,7 +80,7 @@ export const serviceData = [
   {
     icon: <ion-icon name="globe-outline"></ion-icon>,
     title: "Book Your Test Online",
-    bg: "#fdefe6",
+    bg: "#d6e5fb",
   },
   {
     icon: <ion-icon name="home-outline"></ion-icon>,
@@ -90,12 +90,12 @@ export const serviceData = [
   {
     icon: <ion-icon name="shield-half-outline"></ion-icon>,
     title: "We Process in NABL AND ISO Certified Labs",
-    bg: "#e2f2b2",
+    bg: "#d6e5fb",
   },
   {
     icon: <ion-icon name="newspaper-outline"></ion-icon>,
     title: "View Your Reports Online",
-    bg: "#d6e5fb",
+    bg: "#ceebe9",
   },
 ];
 
