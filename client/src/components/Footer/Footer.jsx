@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
-import { Col, Container, Row } from "react-bootstrap";
 import {
   FaFacebookF,
   FaTwitter,
@@ -64,9 +63,9 @@ const Footer = () => {
           <div className="footer-col">
             <h3 className="footer-col-title">Company</h3>
             <div className="footer-links">
-              <a href="/about" className="footer-link">
+              <Link to="/about" className="footer-link">
                 About Us
-              </a>
+              </Link>
               <a href="/blog" className="footer-link">
                 Blog
               </a>

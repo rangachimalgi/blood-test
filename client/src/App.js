@@ -29,6 +29,7 @@ const Cart = lazy(() => import("./pages/Cart"));
 const ProductDetails = lazy(() => import("./pages/ProductDetails"));
 const TermsAndConditions = lazy(() => import("./pages/TermsAndConditions"));
 const RefundPolicy = lazy(() => import("./pages/RefundPolicy"));
+const AboutThyrocare = lazy(() => import("./pages/AboutThyrocare"));
 
 const HealthPackagesListWrapper = () => {
   const { id } = useParams();
@@ -290,6 +291,7 @@ function App() {
                   path="/health-concern/:id"
                   element={<HealthPackagesListWrapper />}
                 />
+                <Route path="/about" element={<AboutThyrocare />} />
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/admin/*" element={<AdminPanel />} />
                 <Route path="/admin/view-orders" element={<ViewOrders />} />
