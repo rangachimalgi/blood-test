@@ -17,6 +17,8 @@ import SliderHome from "../components/Slider";
 import HealthConcernsSection from "../components/HealthConcernsSection.jsx";
 import HealthPackagesList from "./HealthPackageList.jsx";
 import "../Styles/HealthPackageList.css";
+import "../Styles/HealthTips.css";
+import "../Styles/Accreditations.css";
 
 const Home = () => {
   const { addToCart } = useContext(DataContainer);
@@ -353,6 +355,139 @@ const Home = () => {
               >
                 Quality healthcare at budget-friendly rates.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Health Tips Section */}
+      <section className="health-tips-section">
+        <div className="health-tips-container">
+          <div className="health-tips-header">
+            <h2 className="health-tips-title">Health Tips</h2>
+            <div className="health-tips-divider"></div>
+          </div>
+
+          <div className="health-tips-grid">
+            {/* Card 1: Heart Attacks */}
+            <div className="health-tip-card health-tip-card-1">
+              <div className="health-tip-image">
+                <div className="health-tip-image-icon">❤️</div>
+              </div>
+              <div className="health-tip-content">
+                <h3 className="health-tip-title">
+                  Why Are Heart Attacks Increasing Among Young Indians? Early Signs and Prevention Tips
+                </h3>
+                <p className="health-tip-description">
+                  Heart attacks, once an ailment of the elderly, are increasingly striking young Indians. If this trend scares you, take a moment to understand why it's happening, what are the early signs of heart attack and how to prevent it.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 2: Cancer Risk */}
+            <div className="health-tip-card health-tip-card-2">
+              <div className="health-tip-image">
+                <div className="health-tip-image-icon">🎗️</div>
+              </div>
+              <div className="health-tip-content">
+                <h3 className="health-tip-title">
+                  Top 5 Lifestyle Changes to Lower Your Cancer Risk
+                </h3>
+                <p className="health-tip-description">
+                  Cancer is a major health concern in India, with 1.5 million new cases reported in 2022. Up to 50% of cancers are preventable by adopting a healthy lifestyle. This blog provides practical tips for Indian families to reduce their cancer risk.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 3: Regular Screenings */}
+            <div className="health-tip-card health-tip-card-3">
+              <div className="health-tip-image">
+                <div className="health-tip-image-icon">🏥</div>
+              </div>
+              <div className="health-tip-content">
+                <h3 className="health-tip-title">
+                  How do Regular Screenings Help in Preventive Healthcare and Early Detection?
+                </h3>
+                <p className="health-tip-description">
+                  Regular health screenings are crucial for early disease detection and effective management. Many people only seek medical attention when they experience symptoms, but routine check-ups can identify issues before they become severe.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Accreditations Section */}
+      <section className="accreditations-section">
+        <div className="accreditations-container">
+          <div className="accreditations-header">
+            <h2 className="accreditations-title">Accreditations</h2>
+            <div className="accreditations-divider"></div>
+          </div>
+
+          <div className="accreditations-content">
+            {/* Video Section */}
+            <div className="accreditations-video">
+              <iframe
+                src="https://www.youtube.com/embed/M0Wk8d3VMcs"
+                title="Thyrocare - India's Largest Lab"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+
+            {/* Badges Section */}
+            <div className="accreditations-badges">
+              <div className="accreditation-badge-wrapper">
+                <div className="accreditation-badge">
+                  <img 
+                    src="/Images/icmr.png" 
+                    alt="ICMR Approved" 
+                    className="accreditation-badge-icon"
+                  />
+                </div>
+                <div className="accreditation-badge-text">ICMR Approved</div>
+              </div>
+              <div className="accreditation-badge-wrapper">
+                <div className="accreditation-badge">
+                  <img 
+                    src="/Images/nabl.jpg" 
+                    alt="NABL Accredited" 
+                    className="accreditation-badge-icon"
+                  />
+                </div>
+                <div className="accreditation-badge-text">NABL Accredited</div>
+              </div>
+              <div className="accreditation-badge-wrapper">
+                <div className="accreditation-badge">
+                  <img 
+                    src="/Images/cap.jpg" 
+                    alt="CAP Accredited" 
+                    className="accreditation-badge-icon"
+                  />
+                </div>
+                <div className="accreditation-badge-text">CAP Accredited</div>
+              </div>
+              <div className="accreditation-badge-wrapper">
+                <div className="accreditation-badge">
+                  <img 
+                    src="/Images/ngsp.jpeg" 
+                    alt="NGSP Certified" 
+                    className="accreditation-badge-icon"
+                  />
+                </div>
+                <div className="accreditation-badge-text">NGSP Certified</div>
+              </div>
+              <div className="accreditation-badge-wrapper accreditation-badge-bottom">
+                <div className="accreditation-badge">
+                  <img 
+                    src="/Images/iso.png" 
+                    alt="ISO Certified" 
+                    className="accreditation-badge-icon"
+                  />
+                </div>
+                <div className="accreditation-badge-text">ISO Certified</div>
+              </div>
             </div>
           </div>
         </div>
