@@ -10,6 +10,20 @@ import "../Styles/HealthPackageList.css";
 import logo from "../Images/logo.png";
 import defaultPackageImage from "../Images/GenaralHealthPackage.jpg";
 
+// Array of images to cycle through (including the default image)
+const packageImages = [
+  "/Images/GenaralHealthPackage.jpg", // Default image
+  "/Images/bloodtestone.jpg",
+  "/Images/bloodtesttwo.jpg",
+  "/Images/bloodtestthree.jpg",
+  "/Images/bloodtestfour.jpg",
+  "/Images/bloodtestfive.jpg",
+  "/Images/bloodtestsix.jpg",
+  "/Images/bloodtestseven.jpg",
+  "/Images/bloodtesteight.jpg",
+  "/Images/bloodtestnine.jpg"
+];
+
 const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
   const { addToCart, cachedPackages, packagesLoading, fetchPackages } = useContext(DataContainer);
   const [showCheckout, setShowCheckout] = useState(false);
@@ -151,13 +165,18 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
       </div>
 
       <div className="packages-grid">
-        {displayedPackages.map((pkg) => (
+        {displayedPackages.map((pkg, index) => {
+          // Cycle through the image array for all packages
+          const imageIndex = index % packageImages.length;
+          const imageSrc = packageImages[imageIndex];
+          
+          return (
           <div key={pkg.id} className="package-card">
             <Highlight number={extractNumberOfTests(pkg)} />
             <div className="package-image-container">
               <Link to={`/health/${pkg.id}`} className="package-link">
                 <img
-                  src={pkg.imgUrl ? `/Images/${pkg.imgUrl}` : defaultPackageImage}
+                  src={imageSrc}
                   alt={pkg.productName}
                   className="package-image"
                   loading="lazy"
@@ -230,7 +249,8 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
               </div>
             </div>
           </div>
-        ))}
+          );
+        })}
       </div>
       {showCheckout && selectedPackage && (
         <CheckoutForm
