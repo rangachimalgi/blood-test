@@ -20,6 +20,7 @@ import "../Styles/HealthPackageList.css";
 import "../Styles/HealthTips.css";
 import "../Styles/Accreditations.css";
 import "../Styles/FAQ.css";
+import "../Styles/Statistics.css";
 
 const Home = () => {
   const { addToCart } = useContext(DataContainer);
@@ -357,6 +358,38 @@ const Home = () => {
               >
                 Quality healthcare at budget-friendly rates.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Statistics Section */}
+      <section className="statistics-section">
+        <div className="statistics-container">
+          <div className="statistics-grid">
+            <div className="statistic-item">
+              <div className="statistic-number">30+</div>
+              <div className="statistic-description">
+                Regional Processing Labs in major cities of India
+              </div>
+            </div>
+            <div className="statistic-item">
+              <div className="statistic-number">2L Sq. ft.</div>
+              <div className="statistic-description">
+                Central Processing Lab in Navi Mumbai
+              </div>
+            </div>
+            <div className="statistic-item">
+              <div className="statistic-number">1L+</div>
+              <div className="statistic-description">
+                Samples Processed Daily
+              </div>
+            </div>
+            <div className="statistic-item">
+              <div className="statistic-number">17 Crore+</div>
+              <div className="statistic-description">
+                Samples Processed Till Date
+              </div>
             </div>
           </div>
         </div>
