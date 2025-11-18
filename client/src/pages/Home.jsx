@@ -1,4 +1,4 @@
-import React, { Fragment, useContext, useEffect, useRef } from "react";
+import React, { Fragment, useContext, useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -19,10 +19,12 @@ import HealthPackagesList from "./HealthPackageList.jsx";
 import "../Styles/HealthPackageList.css";
 import "../Styles/HealthTips.css";
 import "../Styles/Accreditations.css";
+import "../Styles/FAQ.css";
 
 const Home = () => {
   const { addToCart } = useContext(DataContainer);
   const navigate = useNavigate();
+  const [openFAQ, setOpenFAQ] = useState(null);
   const newArrivalData = products.filter(
     (item) => item.category === "mobile" || item.category === "wireless"
   );
@@ -489,6 +491,289 @@ const Home = () => {
                   />
                 </div>
                 <div className="accreditation-badge-text">ISO Certified</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="faq-section">
+        <div className="faq-container">
+          <div className="faq-header">
+            <h2 className="faq-title">Frequently Asked Questions</h2>
+            <div className="faq-divider"></div>
+          </div>
+
+          <div className="faq-list">
+            <div className="faq-item">
+              <div
+                className={`faq-question ${openFAQ === 0 ? 'active' : ''}`}
+                onClick={() => setOpenFAQ(openFAQ === 0 ? null : 0)}
+              >
+                <span>How can I trust Thyrocare's quality?</span>
+                <span className="faq-icon"><i className="fas fa-chevron-down"></i></span>
+              </div>
+              <div className={`faq-answer ${openFAQ === 0 ? 'active' : ''}`}>
+                <div className="faq-answer-content">
+                  Thyrocare is one of the first Indian diagnostic laboratories to obtain internationally renowned quality accreditations and certifications such as NABL- and CAP-accredited, NGSP- and ISO-certified, and ICMR-approved.
+                </div>
+              </div>
+            </div>
+
+            <div className="faq-item">
+              <div
+                className={`faq-question ${openFAQ === 1 ? 'active' : ''}`}
+                onClick={() => setOpenFAQ(openFAQ === 1 ? null : 1)}
+              >
+                <span>What are Thyrocare's USPs and trust checks?</span>
+                <span className="faq-icon"><i className="fas fa-chevron-down"></i></span>
+              </div>
+              <div className={`faq-answer ${openFAQ === 1 ? 'active' : ''}`}>
+                <div className="faq-answer-content">
+                  <ul style={{ margin: 0, paddingLeft: '1.5rem' }}>
+                    <li>Trained & certified technicians</li>
+                    <li>Temperature-controlled sample logistics</li>
+                    <li>Unique barcode tracking for every sample</li>
+                    <li>Fully automated machines inspected daily</li>
+                    <li>Abnormal values rechecked twice</li>
+                    <li>Report verified by expert pathologists</li>
+                    <li>QR code verification of reports</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="faq-item">
+              <div
+                className={`faq-question ${openFAQ === 2 ? 'active' : ''}`}
+                onClick={() => setOpenFAQ(openFAQ === 2 ? null : 2)}
+              >
+                <span>What are the timings for sample collection at home?</span>
+                <span className="faq-icon"><i className="fas fa-chevron-down"></i></span>
+              </div>
+              <div className={`faq-answer ${openFAQ === 2 ? 'active' : ''}`}>
+                <div className="faq-answer-content">
+                  For tests/profiles requiring prior fasting, 6:00 AM to 11:00 AM is an ideal time-slot for sample collection, whereas for non-fasting tests/profiles, you can choose any time-slot till 7:00 PM. If you book your test in the first half of the day, our technicians will reach your home in 60 mins from the time of booking. Sample collections on Sundays/Holidays are not available in all the cities.
+                </div>
+              </div>
+            </div>
+
+            <div className="faq-item">
+              <div
+                className={`faq-question ${openFAQ === 3 ? 'active' : ''}`}
+                onClick={() => setOpenFAQ(openFAQ === 3 ? null : 3)}
+              >
+                <span>Does Thyrocare provide PET-CT scans?</span>
+                <span className="faq-icon"><i className="fas fa-chevron-down"></i></span>
+              </div>
+              <div className={`faq-answer ${openFAQ === 3 ? 'active' : ''}`}>
+                <div className="faq-answer-content">
+                  Our subsidiary Nueclear offers PET-CT scans at many metro cities in India at the lowest cost in the market. For more details, visit www.nueclear.com, mail at crm@nueclear.com or call our helpline number 022-4128 9999 or 022-4128 2888 (between 7.00 AM and 10.00 PM).
+                </div>
+              </div>
+            </div>
+
+            <div className="faq-item">
+              <div
+                className={`faq-question ${openFAQ === 4 ? 'active' : ''}`}
+                onClick={() => setOpenFAQ(openFAQ === 4 ? null : 4)}
+              >
+                <span>Does transportation affect the quality of reports? Are the samples stable during transit?</span>
+                <span className="faq-icon"><i className="fas fa-chevron-down"></i></span>
+              </div>
+              <div className={`faq-answer ${openFAQ === 4 ? 'active' : ''}`}>
+                <div className="faq-answer-content">
+                  We follow a triple packaging system as per WHO guidelines, wherein a barcoded vial is the primary receptacle, a thermocol box with frozen cool packs is the secondary receptacle and an outer cardboard box is the tertiary receptacle. The samples are transported in sealed containers and evaluated for factors such as temperature, hemolysis, clotting, non-barcoded samples, leakages, lipemia and wrong vials. Only samples passing through pre-analytical checks are processed.
+                </div>
+              </div>
+            </div>
+
+            <div className="faq-item">
+              <div
+                className={`faq-question ${openFAQ === 5 ? 'active' : ''}`}
+                onClick={() => setOpenFAQ(openFAQ === 5 ? null : 5)}
+              >
+                <span>How do I know if the reports belong to me?</span>
+                <span className="faq-icon"><i className="fas fa-chevron-down"></i></span>
+              </div>
+              <div className={`faq-answer ${openFAQ === 5 ? 'active' : ''}`}>
+                <div className="faq-answer-content">
+                  All the samples are barcoded upon collection. These barcodes are registered in the system against the order booked at Thyrocare by the service provider. We follow a triple packaging system defined by WHO. Every process in the laboratory is approved by accrediting bodies. The laboratory is fully automated for avoiding any human intervention/error. The reports are QR-coded and directly printed in accordance with the barcode. For your perusal, you are advised to note down the barcode when sample(s) are collected and cross-check the same with report(s).
+                </div>
+              </div>
+            </div>
+
+            <div className="faq-item">
+              <div
+                className={`faq-question ${openFAQ === 6 ? 'active' : ''}`}
+                onClick={() => setOpenFAQ(openFAQ === 6 ? null : 6)}
+              >
+                <span>Is the deputed phlebotomist qualified to do sample collection?</span>
+                <span className="faq-icon"><i className="fas fa-chevron-down"></i></span>
+              </div>
+              <div className={`faq-answer ${openFAQ === 6 ? 'active' : ''}`}>
+                <div className="faq-answer-content">
+                  The technicians or phlebotomists assigned for specimen collections are qualified, and their experience in the field is ensured before they are assigned this task.
+                </div>
+              </div>
+            </div>
+
+            <div className="faq-item">
+              <div
+                className={`faq-question ${openFAQ === 7 ? 'active' : ''}`}
+                onClick={() => setOpenFAQ(openFAQ === 7 ? null : 7)}
+              >
+                <span>Can I cancel the prepaid booking and get a refund?</span>
+                <span className="faq-icon"><i className="fas fa-chevron-down"></i></span>
+              </div>
+              <div className={`faq-answer ${openFAQ === 7 ? 'active' : ''}`}>
+                <div className="faq-answer-content">
+                  The entire amount paid will be refunded in the following scenarios:
+                  <ul style={{ marginTop: '0.5rem', paddingLeft: '1.5rem' }}>
+                    <li>If booking is done, but there is no service provider available in that area</li>
+                    <li>If a customer has done multiple bookings due to system error</li>
+                    <li>If the service provider has not made any adequate attempts to provide the service</li>
+                  </ul>
+                  In all other scenarios, except these three, Rs 100 will be deducted as cancellation charges. The refund will be processed within 7-10 working days directly in your source account, from where the booking was made.
+                </div>
+              </div>
+            </div>
+
+            <div className="faq-item">
+              <div
+                className={`faq-question ${openFAQ === 8 ? 'active' : ''}`}
+                onClick={() => setOpenFAQ(openFAQ === 8 ? null : 8)}
+              >
+                <span>What if any of my tests are cancelled?</span>
+                <span className="faq-icon"><i className="fas fa-chevron-down"></i></span>
+              </div>
+              <div className={`faq-answer ${openFAQ === 8 ? 'active' : ''}`}>
+                <div className="faq-answer-content">
+                  One or more tests booked may be cancelled by the laboratory due to clinical/technical or pre-analytical reasons. You will receive information about the same via email and SMS. In such cases, our service provider shall be advised to collect the fresh specimen and process the unreported test(s) free of cost. Our team will coordinate with you for scheduling re-collection of samples and ensure that complete reports are provided on time.
+                  <br /><br />
+                  Alternatively, you can ask for a refund if you do not wish to go for re-collection. The refund shall be granted in full, if all tests are cancelled. The refund will be granted partially if some tests are processed and reports are released, whereas other tests are cancelled. For partial refund, the amount is calculated as per the catalogue rate of the unreported test(s) and corrected to its weighted average in the total order value. Refunds will be credited to the account of the beneficiary directly.
+                </div>
+              </div>
+            </div>
+
+            <div className="faq-item">
+              <div
+                className={`faq-question ${openFAQ === 9 ? 'active' : ''}`}
+                onClick={() => setOpenFAQ(openFAQ === 9 ? null : 9)}
+              >
+                <span>I have got a coupon with a special offer, how can I avail the same?</span>
+                <span className="faq-icon"><i className="fas fa-chevron-down"></i></span>
+              </div>
+              <div className={`faq-answer ${openFAQ === 9 ? 'active' : ''}`}>
+                <div className="faq-answer-content">
+                  You can follow the instructions given on the coupon to avail the services. You can send us the image of the coupon on WhatsApp at 9870666333 (24x7). In case of any difficulty, please call us on 02230900000 or send an email on customersupport@thyrocare.com.
+                </div>
+              </div>
+            </div>
+
+            <div className="faq-item">
+              <div
+                className={`faq-question ${openFAQ === 10 ? 'active' : ''}`}
+                onClick={() => setOpenFAQ(openFAQ === 10 ? null : 10)}
+              >
+                <span>How can I register a complaint?</span>
+                <span className="faq-icon"><i className="fas fa-chevron-down"></i></span>
+              </div>
+              <div className={`faq-answer ${openFAQ === 10 ? 'active' : ''}`}>
+                <div className="faq-answer-content">
+                  You can register a complaint by writing to us at complaints@thyrocare.com or calling our helpline numbers 02230900000. You can WhatsApp us at 9870666333 (24x7). If your query is not resolved, please forward the same thread to redressals@thyrocare.com. TAT for closure of complaints is 24-48 hours depending upon the nature of the complaint and resolution needs to be given.
+                </div>
+              </div>
+            </div>
+
+            <div className="faq-item">
+              <div
+                className={`faq-question ${openFAQ === 11 ? 'active' : ''}`}
+                onClick={() => setOpenFAQ(openFAQ === 11 ? null : 11)}
+              >
+                <span>I have booked a test but did not get any call from you. What should I do?</span>
+                <span className="faq-icon"><i className="fas fa-chevron-down"></i></span>
+              </div>
+              <div className={`faq-answer ${openFAQ === 11 ? 'active' : ''}`}>
+                <div className="faq-answer-content">
+                  Please write to us at orders@thyrocare.com or WhatsApp us at 9870666333. In case your query is not resolved, you can register your complaints at complaints@thyrocare.com. You can also call our helpline numbers 02230900000 or 02241252525 between 7.00 AM and 10.00 PM Monday-Sunday.
+                </div>
+              </div>
+            </div>
+
+            <div className="faq-item">
+              <div
+                className={`faq-question ${openFAQ === 12 ? 'active' : ''}`}
+                onClick={() => setOpenFAQ(openFAQ === 12 ? null : 12)}
+              >
+                <span>I did not receive a hard copy of the reports. How can I get it?</span>
+                <span className="faq-icon"><i className="fas fa-chevron-down"></i></span>
+              </div>
+              <div className={`faq-answer ${openFAQ === 12 ? 'active' : ''}`}>
+                <div className="faq-answer-content">
+                  If you opted for a hard copy of reports and have not received it after 3 to 5 days of releasing the reports, kindly email us at orders@thyrocare.com. We will ensure that report delivery is expedited and share tracking details once the report(s) are dispatched. You can receive the report PDF on WhatsApp by requesting the same along with barcodes/order ID from the registered mobile number on 9870666333. Please note that hard report comes on an additional cost if Rs 75.
+                </div>
+              </div>
+            </div>
+
+            <div className="faq-item">
+              <div
+                className={`faq-question ${openFAQ === 13 ? 'active' : ''}`}
+                onClick={() => setOpenFAQ(openFAQ === 13 ? null : 13)}
+              >
+                <span>I did not receive a soft copy of the reports. How can I get it?</span>
+                <span className="faq-icon"><i className="fas fa-chevron-down"></i></span>
+              </div>
+              <div className={`faq-answer ${openFAQ === 13 ? 'active' : ''}`}>
+                <div className="faq-answer-content">
+                  Soft copy of the reports will automatically be sent to the mentioned email ID (if provided). In case, you have not received the same or your email ID was not updated, please email us at softcopy@thyrocare.com to get the reports. If your tests have not been processed yet, the soft copy may not be generated.
+                </div>
+              </div>
+            </div>
+
+            <div className="faq-item">
+              <div
+                className={`faq-question ${openFAQ === 14 ? 'active' : ''}`}
+                onClick={() => setOpenFAQ(openFAQ === 14 ? null : 14)}
+              >
+                <span>Is a doctor's prescription needed to avail the testing service?</span>
+                <span className="faq-icon"><i className="fas fa-chevron-down"></i></span>
+              </div>
+              <div className={`faq-answer ${openFAQ === 14 ? 'active' : ''}`}>
+                <div className="faq-answer-content">
+                  A doctor's prescription is not required for availing any preventive healthcare package. However, in case of any illness, the patient is advised to consult their physician before booking tests/profiles.
+                </div>
+              </div>
+            </div>
+
+            <div className="faq-item">
+              <div
+                className={`faq-question ${openFAQ === 15 ? 'active' : ''}`}
+                onClick={() => setOpenFAQ(openFAQ === 15 ? null : 15)}
+              >
+                <span>How will the reports be delivered to me?</span>
+                <span className="faq-icon"><i className="fas fa-chevron-down"></i></span>
+              </div>
+              <div className={`faq-answer ${openFAQ === 15 ? 'active' : ''}`}>
+                <div className="faq-answer-content">
+                  Softcopy of reports will be sent to your registered email ID within 24 to 48 hours of sample collection depending upon the transit time. If you have opted for hard copy reports by paying extra at the time of booking (exclusive of the test/package cost), the reports would be delivered in 3 to 5 days after samples are processed. You would be notified via SMS once the soft copy of report(s) is sent to your registered email ID and hard copy report(s) are dispatched to your address with tracking details.
+                </div>
+              </div>
+            </div>
+
+            <div className="faq-item">
+              <div
+                className={`faq-question ${openFAQ === 16 ? 'active' : ''}`}
+                onClick={() => setOpenFAQ(openFAQ === 16 ? null : 16)}
+              >
+                <span>How soon will I get reports?</span>
+                <span className="faq-icon"><i className="fas fa-chevron-down"></i></span>
+              </div>
+              <div className={`faq-answer ${openFAQ === 16 ? 'active' : ''}`}>
+                <div className="faq-answer-content">
+                  Once the specimen(s) are collected, including transit time and processing time, soft copy reports would be sent to your registered email ID within 24 to 48 hours. If you have opted for hard copy reports by paying extra at the time of booking (exclusive of the test/package cost), the reports would be delivered in 3 to 5 days after samples are processed. You would be notified via SMS once the soft copy of report(s) is sent to your registered email ID and hard copy report(s) are dispatched to your address with tracking details.
+                </div>
               </div>
             </div>
           </div>
