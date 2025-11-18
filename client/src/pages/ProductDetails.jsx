@@ -316,23 +316,18 @@ const ProductDetails = () => {
               </section>
 
               <section className="why-fortune-section mt-4">
-                <h3 className="why-fortune-title">About Fortune Blood Test</h3>
+                <h3 className="why-fortune-title">About Thyrocare</h3>
                 <div className="why-fortune-content">
                   <p className="why-fortune-text">
-                    Fortune Blood Test partners with NABL accredited
-                    laboratories and follows stringent quality protocols to
-                    ensure reliable results every time.
-                  </p>
-                  <p className="why-fortune-text">
-                    Our end-to-end digital experience—from online booking and
-                    secure payments to doorstep sample collection and digital
-                    reports—keeps diagnostics effortless and transparent.
-                  </p>
-                  <p className="why-fortune-text">
-                    Backed by experienced healthcare professionals, we provide
-                    proactive reminders, report interpretation support, and
-                    dedicated customer assistance to keep you informed about
-                    your health.
+                    Thyrocare has an IT-enabled, 24*7, fully automated
+                    diagnostic laboratory set up spanning over 200,000 sq. ft.
+                    area for conducting error-free processing of 100,000+
+                    specimens and 400,000+ clinical chemistry investigations per
+                    night. A combination of air-cargo logistics and IT-enabled
+                    barcoded bi-directional operating systems ensure quick
+                    turnaround time for processing of samples that arrive at any
+                    time of the day or night from various parts of the country
+                    and help achieve this unmatched speed factor.
                   </p>
                 </div>
               </section>
