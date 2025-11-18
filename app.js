@@ -44,8 +44,12 @@ app.use(bodyParser.json({ limit: "10mb" })); // Adjust the limit as needed
 app.use(bodyParser.urlencoded({ limit: "10mb", extended: true })); // Adjust the limit as needed
 app.use(express.json());
 app.use((req, res, next) => {
-  res.setHeader("Cross-Origin-Embedder-Policy", "require-corp");
-  res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
+  // Only apply strict COEP for specific routes that need it
+  // Allow YouTube embeds by using unsafe-none for pages with iframes
+  if (req.path.startsWith('/api/')) {
+    res.setHeader("Cross-Origin-Embedder-Policy", "require-corp");
+    res.setHeader("Cross-Origin-Opener-Policy", "same-origin");
+  }
   next();
 });
 

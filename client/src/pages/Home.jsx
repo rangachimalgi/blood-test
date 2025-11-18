@@ -429,10 +429,12 @@ const Home = () => {
             {/* Video Section */}
             <div className="accreditations-video">
               <iframe
-                src="https://www.youtube.com/embed/M0Wk8d3VMcs"
+                src="https://www.youtube.com/embed/M0Wk8d3VMcs?rel=0&modestbranding=1"
                 title="Thyrocare - India's Largest Lab"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
+                loading="lazy"
+                frameBorder="0"
               ></iframe>
             </div>
 
