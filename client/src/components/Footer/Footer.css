@@ -135,10 +135,11 @@
 }
 .footer-col-title {
   font-size: 1.25rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #ffffff;
   text-transform: capitalize;
+  letter-spacing: 0.5px;
 }
 .footer-links {
   display: flex;
@@ -146,10 +147,12 @@
   gap: 0.75rem;
 }
 .footer-link {
-  color: #fff;
-  font-size: 1rem;
+  color: #b0b0b0;
+  font-size: 0.95rem;
+  font-weight: 400;
   text-decoration: none;
   transition: color 0.2s;
+  line-height: 1.6;
 }
 .footer-link:hover {
   color: #3468ac;

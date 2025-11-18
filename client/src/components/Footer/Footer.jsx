@@ -34,7 +34,11 @@ const Footer = () => {
               aria-label="Enter your email address"
               required
             />
-            <button className="footer-newsletter-btn" type="submit" aria-label="Submit enquiry">
+            <button
+              className="footer-newsletter-btn"
+              type="submit"
+              aria-label="Submit enquiry"
+            >
               Enquire
             </button>
           </form>
@@ -54,11 +58,73 @@ const Footer = () => {
           {/* Logos */}
           <div className="footer-col footer-logos">
             <Link to="/" className="footer-logo-link">
-              <img src={logo} alt="Fortune Blood Test Logo" className="footer-logo" />
+              <img
+                src={logo}
+                alt="Fortune Blood Test Logo"
+                className="footer-logo"
+              />
             </Link>
-            <img src={thyrocareLogo} alt="Thyrocare Logo" className="footer-thyrocare-logo" />
+            <img
+              src={thyrocareLogo}
+              alt="Thyrocare Logo"
+              className="footer-thyrocare-logo"
+            />
           </div>
-          
+
+          {/* Most Booked Test */}
+          <div className="footer-col">
+            <h3 className="footer-col-title">Most Booked </h3>
+            <div className="footer-links">
+              <Link to="/health/01" className="footer-link">
+                Aarogyam A
+              </Link>
+              <Link to="/health/03" className="footer-link">
+                Aarogyam C
+              </Link>
+              <Link to="/health/04" className="footer-link">
+                Aarogyam 1.1
+              </Link>
+              <Link to="/health/05" className="footer-link">
+                Aarogyam 1.2
+              </Link>
+              <Link to="/health/06" className="footer-link">
+                Aarogyam 1.3
+              </Link>
+              <Link to="/health/42" className="footer-link">
+                Aarogyam Xl With Utsh
+              </Link>
+              <Link to="/health/28" className="footer-link">
+                Jaanch - Tumour Panel (female)
+              </Link>
+            </div>
+          </div>
+          <div className="footer-col">
+            <h3 className="footer-col-title">Most Booked Tests</h3>
+            <div className="footer-links">
+              <Link to="/shop/18" className="footer-link">
+                Insulin - Fasting
+              </Link>
+              <Link to="/shop/10" className="footer-link">
+                Prostate Specific Antigen (psa)
+              </Link>
+              <Link to="/shop/2" className="footer-link">
+                Hba1c
+              </Link>
+              <Link to="/shop/5" className="footer-link">
+                Free Thyroxine (ft4)
+              </Link>
+              <Link to="/shop/6" className="footer-link">
+                C-reactive Protein (crp)
+              </Link>
+              <Link to="/shop/42" className="footer-link">
+                Rubella - Igm
+              </Link>
+              <Link to="/shop/28" className="footer-link">
+                Carcino Embryonic Antigen (cea)
+              </Link>
+            </div>
+          </div>
+
           {/* Company */}
           <div className="footer-col">
             <h3 className="footer-col-title">Company</h3>
@@ -89,7 +155,8 @@ const Footer = () => {
             <h3 className="footer-col-title">Address</h3>
             <div className="footer-links">
               <span className="footer-link" style={{ cursor: "default" }}>
-               Fortune home health care .683,17th cross 26th Main Puttenahalli road jp nagar 6th phase 560076
+                Fortune home health care .683,17th cross 26th Main Puttenahalli
+                road jp nagar 6th phase 560076
               </span>
               {/* <a href="mailto:demo@gmail.com" className="footer-link">
                 demo@gmail.com
