@@ -405,7 +405,13 @@ const Home = () => {
 
           <div className="health-tips-grid">
             {/* Card 1: Heart Attacks */}
-            <div className="health-tip-card health-tip-card-1">
+            <a 
+              href="https://blog.thyrocare.com/why-are-heart-attacks-increasing-among-young-indians-early-signs-and-prevention-tips/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="health-tip-card health-tip-card-1"
+              style={{ textDecoration: 'none', color: 'inherit' }}
+            >
               <div className="health-tip-image">
                 <div className="health-tip-image-icon">❤️</div>
               </div>
@@ -417,10 +423,16 @@ const Home = () => {
                   Heart attacks, once an ailment of the elderly, are increasingly striking young Indians. If this trend scares you, take a moment to understand why it's happening, what are the early signs of heart attack and how to prevent it.
                 </p>
               </div>
-            </div>
+            </a>
 
             {/* Card 2: Cancer Risk */}
-            <div className="health-tip-card health-tip-card-2">
+            <a 
+              href="https://blog.thyrocare.com/top-5-lifestyle-changes-to-lower-your-cancer-risk-insights-for-indian-families/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="health-tip-card health-tip-card-2"
+              style={{ textDecoration: 'none', color: 'inherit' }}
+            >
               <div className="health-tip-image">
                 <div className="health-tip-image-icon">🎗️</div>
               </div>
@@ -432,10 +444,16 @@ const Home = () => {
                   Cancer is a major health concern in India, with 1.5 million new cases reported in 2022. Up to 50% of cancers are preventable by adopting a healthy lifestyle. This blog provides practical tips for Indian families to reduce their cancer risk.
                 </p>
               </div>
-            </div>
+            </a>
 
             {/* Card 3: Regular Screenings */}
-            <div className="health-tip-card health-tip-card-3">
+            <a 
+              href="https://blog.thyrocare.com/how-do-regular-screenings-help-in-preventive-healthcare-and-early-detection/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="health-tip-card health-tip-card-3"
+              style={{ textDecoration: 'none', color: 'inherit' }}
+            >
               <div className="health-tip-image">
                 <div className="health-tip-image-icon">🏥</div>
               </div>
@@ -447,7 +465,7 @@ const Home = () => {
                   Regular health screenings are crucial for early disease detection and effective management. Many people only seek medical attention when they experience symptoms, but routine check-ups can identify issues before they become severe.
                 </p>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
