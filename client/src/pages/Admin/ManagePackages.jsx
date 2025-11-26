@@ -160,7 +160,7 @@ const handleSubmit = async (e) => {
 
   const payload = {
     ...packageData,
-    category: "Basic", // Always set to Basic automatically
+    category: packageData.category || "Basic", // Use selected category or default to Basic
     id: editingPackage ? editingPackage.id : Date.now().toString(),
     type: "package",
     imgUrl: "GenaralHealthPackage.jpg", // Default image for all packages
@@ -195,7 +195,7 @@ const handleSubmit = async (e) => {
     setPackageData({
       productName: "",
       desc: "",
-      category: "Basic", // Keep Basic as default
+      category: "Basic", // Reset to Basic as default
       price: "",
       mrp: "",
       shortDesc: "",
@@ -339,6 +339,21 @@ const handleSubmit = async (e) => {
             </Form.Group>
           </div>
         </div>
+        
+        <Form.Group className="mb-3">
+          <Form.Label className="fw-semibold" style={{ color: '#0F3460' }}>Category</Form.Label>
+          <Form.Select
+            value={packageData.category}
+            onChange={(e) =>
+              setPackageData({ ...packageData, category: e.target.value })
+            }
+            className="border-2"
+            style={{ borderRadius: '8px' }}
+          >
+            <option value="Basic">Basic (Regular Package)</option>
+            <option value="Offer">Offer (Special Offer Package)</option>
+          </Form.Select>
+        </Form.Group>
 
         <Card className="mb-4 border-0 shadow-sm" style={{ borderRadius: '12px' }}>
           <Card.Header className="bg-light border-0" style={{ borderRadius: '12px 12px 0 0' }}>

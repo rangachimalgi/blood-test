@@ -24,6 +24,7 @@ const Home = lazy(() => import("./pages/Home"));
 const Shop = lazy(() => import("./pages/Shop"));
 const Health = lazy(() => import("./pages/HealthPackagesDetails"));
 const HealthList = lazy(() => import("./pages/HealthPackageList"));
+const OffersList = lazy(() => import("./pages/OffersList"));
 
 const Cart = lazy(() => import("./pages/Cart"));
 const ProductDetails = lazy(() => import("./pages/ProductDetails"));
@@ -286,6 +287,7 @@ function App() {
                 />
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/health-list" element={<HealthList />} />
+                <Route path="/offers-list" element={<OffersList />} />
                 <Route path="/health/:id" element={<Health />} />
                 <Route
                   path="/health-concern/:id"

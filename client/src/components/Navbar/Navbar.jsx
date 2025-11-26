@@ -216,6 +216,17 @@ const NavBar = () => {
                   <span className="nav-link-label">Book a Package</span>
                 </Nav.Link>
               </Nav.Item>
+              <Nav.Item>
+                <Nav.Link
+                  as={Link}
+                  to="/offers-list"
+                  eventKey="offers-list"
+                  className="navbar-link"
+                  onClick={closeMobileMenu}
+                >
+                  <span className="nav-link-label">Offers</span>
+                </Nav.Link>
+              </Nav.Item>
             </Nav>
           </Navbar.Collapse>
           <LoginModal
@@ -262,6 +273,15 @@ const NavBar = () => {
                   to="/health-list"
                 >
                   <span className="nav-link-label">Book a Package</span>
+                </Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Link
+                  aria-label="Go to Offers Page"
+                  className="navbar-secondary-link"
+                  to="/offers-list"
+                >
+                  <span className="nav-link-label">Offers</span>
                 </Link>
               </Nav.Item>
             </Nav>
