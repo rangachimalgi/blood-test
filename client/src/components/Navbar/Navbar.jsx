@@ -121,11 +121,14 @@ const NavBar = () => {
               alt="Fortune Blood Test Logo"
               className="fortune-logo"
             />
-            <img
-              src={thyrocareLogo}
-              alt="Thyrocare Logo"
-              className="thyrocare-logo"
-            />
+            <div className="thyrocare-container">
+              <span className="association-text">In association with</span>
+              <img
+                src={thyrocareLogo}
+                alt="Thyrocare Logo"
+                className="thyrocare-logo"
+              />
+            </div>
           </Navbar.Brand>
           {/* Media cart and toggle */}
           <div className="d-flex">
