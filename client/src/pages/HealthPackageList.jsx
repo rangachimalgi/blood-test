@@ -208,9 +208,9 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
                 <div className="package-name">
                   {pkg.productName.toUpperCase()}
                 </div>
-                <div className="package-desc">
+                {/* <div className="package-desc">
                   {pkg.desc ? pkg.desc.toUpperCase() : ""}
-                </div>
+                </div> */}
               </div>
             </Link>
 
