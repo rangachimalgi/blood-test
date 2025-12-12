@@ -238,12 +238,11 @@ const HealthPackageDetails = () => {
                 <h3 className="how-it-works-title">How it works?</h3>
                 <div className="how-it-works-cards">
                   <div className="how-it-works-card">
-                    <div className="how-it-works-image">
-                      <img
-                        src={HeroImage}
-                        alt="Lab technician"
-                        className="how-it-works-img"
-                      />
+                    <div className="how-it-works-icon-wrapper">
+                      <div className="how-it-works-step-number">1</div>
+                      <div className="how-it-works-icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                      </div>
                     </div>
                     <p className="how-it-works-text">
                       Technician will be assigned for a free home sample
@@ -251,12 +250,11 @@ const HealthPackageDetails = () => {
                     </p>
                   </div>
                   <div className="how-it-works-card">
-                    <div className="how-it-works-image">
-                      <img
-                        src={CollectionImage}
-                        alt="Sample collection"
-                        className="how-it-works-img"
-                      />
+                    <div className="how-it-works-icon-wrapper">
+                      <div className="how-it-works-step-number">2</div>
+                      <div className="how-it-works-icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                      </div>
                     </div>
                     <p className="how-it-works-text">
                       Sample will be collected by our technician at your address
@@ -264,12 +262,11 @@ const HealthPackageDetails = () => {
                     </p>
                   </div>
                   <div className="how-it-works-card">
-                    <div className="how-it-works-image">
-                      <img
-                        src={DigitalReportImage}
-                        alt="Digital report"
-                        className="how-it-works-img"
-                      />
+                    <div className="how-it-works-icon-wrapper">
+                      <div className="how-it-works-step-number">3</div>
+                      <div className="how-it-works-icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                      </div>
                     </div>
                     <p className="how-it-works-text">
                       Soft copy reports will be sent to your email address
