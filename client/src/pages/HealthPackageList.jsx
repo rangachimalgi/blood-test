@@ -151,7 +151,7 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
         }}>
           {title ||
             (packageIds
-              ? "Selected Health Packages"
+              ? "Popular Packages"
               : "Available Health Packages")}
         </h2>
         <p style={{
