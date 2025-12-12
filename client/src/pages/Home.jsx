@@ -79,7 +79,7 @@ const Home = () => {
     <Fragment>
       <ToastContainer />
       <SliderHome />
-      <Wrapper />
+      {/* <Wrapper /> */}
       {/* <HealthConcernsSection title="Recommended checkups for men" bgColor="#f6f9fc" productItems={checkupsMen} addToCart={handleAddToCart} />
       <HealthConcernsSection title="Recommended checkups for women" bgColor="#f6f9fc" productItems={checkupsWomen} addToCart={handleAddToCart} /> */}
 
