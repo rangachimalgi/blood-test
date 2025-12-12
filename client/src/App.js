@@ -6,8 +6,9 @@ import NavBar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Loader from "./components/Loader/Loader";
 import WhatsAppButton from "./components/WhatsAppButton/WhatsAppButton";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { NotificationProvider, useNotification } from "./components/Notification/NotificationManager";
 import DataComponent from "./components/DataComponent";
 import AdminPanel from "./components/AdminPanel";
 import ViewOrders from "./components/ViewOrders";
@@ -87,7 +88,8 @@ const PageWrapper = ({ children }) => {
   );
 };
 
-function App() {
+// Inner component that can use the notification hook
+function AppContent() {
   const [CartItem, setCartItem] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [filterList, setFilterList] = useState([]);
@@ -95,6 +97,7 @@ function App() {
   const [cachedTests, setCachedTests] = useState([]);
   const [packagesLoading, setPackagesLoading] = useState(false);
   const [testsLoading, setTestsLoading] = useState(false);
+  const notify = useNotification();
 
   const addToCart = (product, num = 1) => {
     const productExit = CartItem.find((item) => item.id === product.id);
@@ -106,8 +109,16 @@ function App() {
             : item
         )
       );
+      notify.success(`${product.productName || product.packageName || 'Item'} added to cart!`, {
+        duration: 3000,
+        position: "top-right",
+      });
     } else {
       setCartItem([...CartItem, { ...product, qty: num }]);
+      notify.success(`${product.productName || product.packageName || 'Item'} added to cart!`, {
+        duration: 3000,
+        position: "top-right",
+      });
     }
   };
 
@@ -116,6 +127,10 @@ function App() {
     // If product quantity == 1 then we have to remove it
     if (productExit.qty === 1) {
       setCartItem(CartItem.filter((item) => item.id !== product.id));
+      notify.info(`${product.productName || product.packageName || 'Item'} removed from cart`, {
+        duration: 2000,
+        position: "top-right",
+      });
     }
     //else we just decrease the quantity
     else {
@@ -126,6 +141,10 @@ function App() {
             : item
         )
       );
+      notify.info(`Quantity updated for ${product.productName || product.packageName || 'Item'}`, {
+        duration: 2000,
+        position: "top-right",
+      });
     }
   };
 
@@ -133,6 +152,10 @@ function App() {
 
   const deleteProduct = (product) => {
     setCartItem(CartItem.filter((item) => item.id !== product.id));
+    notify.error(`${product.productName || product.packageName || 'Item'} removed from cart`, {
+      duration: 2000,
+      position: "top-right",
+    });
   };
 
   // Function to fetch packages with caching - memoized to prevent recreation
@@ -243,6 +266,7 @@ function App() {
     fetchPackages();
     fetchTests();
   }, []); // Only run once on app start
+  
   return (
     <DataContainer.Provider
       value={{
@@ -265,17 +289,7 @@ function App() {
     >
       <Suspense fallback={<Loader />}>
         <Router>
-          <ToastContainer
-            position="top-right"
-            autoClose={5000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            theme="light"
-          />
+          {/* ToastContainer removed - using custom notifications instead */}
           <NavBar />
           <PageWrapper>
             <main className="main-content" role="main">
@@ -315,6 +329,14 @@ function App() {
         </Router>
       </Suspense>
     </DataContainer.Provider>
+  );
+}
+
+function App() {
+  return (
+    <NotificationProvider>
+      <AppContent />
+    </NotificationProvider>
   );
 }
 

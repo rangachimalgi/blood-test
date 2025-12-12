@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Button, Form, Container, Row, Col, Modal } from "react-bootstrap";
 import axios from "axios";
+import { useNotification } from "./Notification/NotificationManager";
 import { availablePincodes } from "../components/availablePincodes.js";
 import "../Styles/embeddedCheckoutForm.css";
 
 const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
+  const notify = useNotification();
   const [orderData, setOrderData] = useState({
     pincode: "",
     name: "",
@@ -113,13 +115,22 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
       );
       if (response.data.success) {
         setCartItem([]);
-        alert("Order submitted successfully!");
+        notify.success("Order submitted successfully! 🎉", {
+          duration: 5000,
+          position: "top-right",
+        });
       } else {
-        alert("Error submitting order. Please try again.");
+        notify.error("Error submitting order. Please try again.", {
+          duration: 4000,
+          position: "top-right",
+        });
       }
     } catch (error) {
       console.error("Error submitting order:", error);
-      alert("Error submitting order. Please try again.");
+      notify.error("Error submitting order. Please try again.", {
+        duration: 4000,
+        position: "top-right",
+      });
     }
   };
 
