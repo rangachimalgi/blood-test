@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Button, Form, Container, Row, Col, Modal } from "react-bootstrap";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import { useNotification } from "./Notification/NotificationManager";
 import { availablePincodes } from "../components/availablePincodes.js";
 import "../Styles/embeddedCheckoutForm.css";
 
 const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
+  const navigate = useNavigate();
   const notify = useNotification();
   const [orderData, setOrderData] = useState({
     pincode: "",
@@ -170,7 +172,18 @@ const EmbeddedCheckoutForm = ({ CartItem, setCartItem }) => {
             backgroundColor: '#f8fff8'
           }}>
             <p style={{ margin: 0, fontSize: '14px' }}>
-              Want to add more tests? <span style={{ color: '#007bff', cursor: 'pointer' }}>Click add to cart</span>, else fill up below form.
+              Want to add more tests? <span 
+                style={{ color: '#007bff', cursor: 'pointer' }} 
+                onClick={() => navigate('/shop')}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    navigate('/shop');
+                  }
+                }}
+                role="button"
+                tabIndex={0}
+              >Add Tests</span>, else fill up below form.
             </p>
           </div>
           
