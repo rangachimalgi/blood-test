@@ -203,16 +203,29 @@ const HealthPackagesList = ({ title, packageIds, useLocalData = false }) => {
               </div>
             </div>
 
-            <Link to={`/health/${pkg.id}`} className="package-link">
-              <div className="package-details">
-                <div className="package-name">
-                  {pkg.productName.toUpperCase()}
+            <div className="package-details">
+              <div className="package-name">
+                {pkg.productName.toUpperCase()}
+              </div>
+              {/* <Link to={`/health/${pkg.id}`} className="package-link">
+                <div className="package-name-container">
+                  <button
+                    className="view-details-button"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      navigate(`/health/${pkg.id}`);
+                    }}
+                    aria-label={`View details for ${pkg.productName}`}
+                  >
+                    View Details
+                  </button>
                 </div>
                 <div className="package-desc">
                   {pkg.desc ? pkg.desc.toUpperCase() : ""}
                 </div>
-              </div>
-            </Link>
+              </Link> */}
+            </div>
 
             <div className="price-cart-box">
               <div className="price-box">
